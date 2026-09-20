@@ -1,0 +1,25 @@
+{
+  "@@locale": "en",
+  "appTitle": "N Keto Tracker",
+  "@appTitle": {
+    "description": "Brand name; identical in every locale (MASTER_PROMPT 0.2)."
+  },
+  "navToday": "Today",
+  "@navToday": { "description": "Bottom navigation tab 1: daily overview." },
+  "navLog": "Log",
+  "@navLog": { "description": "Bottom navigation tab 2: chronological timeline." },
+  "navPlan": "Plan",
+  "@navPlan": { "description": "Bottom navigation tab 3: weekly meal planning." },
+  "navTrends": "Trends",
+  "@navTrends": { "description": "Bottom navigation tab 4: charts." },
+  "navGuide": "Guide",
+  "@navGuide": { "description": "Bottom navigation tab 5: education and sources." },
+  "pageUnderConstruction": "This screen is being built.",
+  "@pageUnderConstruction": {
+    "description": "Placeholder body text for not-yet-implemented screens."
+  },
+  "generalInfoDisclaimer": "For general information only; not medical advice.",
+  "@generalInfoDisclaimer": {
+    "description": "Short footer shown wherever health data is interpreted (MASTER_PROMPT 1.3)."
+  }
+}

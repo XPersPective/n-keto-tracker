@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** Aşama 0 tamam (T1–T3). Sıradaki: T4 Flutter iskelet + CI + offline kanıtı.
-> **Phase:** BUILD · **Next:** T4 · **Updated:** 2026-09-20 · **Synced@:** 27cd167
+> **Status:** T4 tamam: Flutter iskeleti (5 sekme, TR/EN, offline kanıtı, CI) analiz+test temiz. Sıradaki: T5 depo dosyaları.
+> **Phase:** BUILD · **Next:** T5 · **Updated:** 2026-09-20 · **Synced@:** 9556b19
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -179,17 +179,17 @@ test/  integration_test/  tool/  docs/
 
 ## 3. CURRENT ARCHITECTURE
 
-Şablon checkout'ı (`napp_app_template` → origin `github.com/XPersPective/n-keto-tracker`, tek commit `5bfb890`). Flutter projesi henüz yok (pubspec/lib yok). Mevcutlar:
-- `tool/new_app.dart` — şablonun uygulama üretici betiği (flutter create + platform ayarları + napp paketleri; `--ads/--pro/--data` bayraklı)
-- `tool/brand/generate_icons.py` — tek kaynaktan ikon/splash üretici
-- `tool/templates/` — main/app_test şablonları
-- `.github/workflows/ci.yml` — şablon CI'ı (T4'te bu projeye uyarlanır)
-- `LICENSE` — GPL-3.0 tam metni (standart §2)
-- `ORTAK_UYGULAMA_STANDARDI.md`, `docs/MASTER_PROMPT.md`, `README.md` (şablon README'si; T5'te uygulama README'si olur), `AGENTS.md` (beyin işaretçisi)
-- `.gitignore` + `.gitleaks.toml` + `.env.example` + `android/key.properties.example` — standart §1.1 sır hijyeni
+Şablon checkout'ı + Aşama 0 dokümanları + Flutter iskeleti (T4). Mevcut kod:
+- **Flutter iskeleti** (T4): `lib/main.dart` (ProviderScope), `lib/app/app.dart` (Material3 router, TR/EN, localeOverride test kancası), `lib/app/router.dart` (go_router StatefulShellRoute, 5 sekme placeholder), `lib/app/app_shell.dart` (NavigationBar 5 hedef), `lib/app/theme/app_theme.dart` (tek üretici, seed #00696B, açık/koyu), `lib/app/l10n/{app_en,app_tr}.arb` + `l10n.yaml` (generate: true, çıktı gitignore'lu), `lib/core/config/{app_config,env_config}.dart` (marka tek nokta + dart-define)
+- **Bağımlılıklar** (kilitli): flutter_riverpod 3.4.3, go_router 18.0.1, drift 2.35.0, fl_chart 1.2.0, freezed_annotation 3.1.0, json_annotation 4.12.0, intl 0.20.3; dev: drift_dev 2.35.0, build_runner 2.16.1, freezed 4.0.2, json_serializable 6.14.1
+- **Offline sertleştirme**: 3 manifest'te de INTERNET yok; usesCleartextTraffic=false; dataExtractionRules/fullBackupContent (database + secure storage hariç); R8 minify+shrink + proguard taban; kotlin.incremental=false
+- **CI** `.github/workflows/ci.yml`: gitleaks → pub get + check_offline + format + analyze --fatal-infos + test → release APK
+- **Testler**: 3 smoke widget (5 sekme, sekme geçişi, TR) + 3 l10n bütünlük (anahtar eşitliği, boş değer, marka sabiti)
+- **Offline kanıtı**: `tool/check_offline.sh` (manifest + yasaklı paket taraması) exit 0
+- Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
+- `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README hâlâ şablon README'si (T5'te değişir)
 
-GAP: Aşama 0 dokümanları tamam (T1–T3); Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
-GAP: Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
+GAP: Depo topluluk dosyaları (README/CONTRIBUTING/SECURITY/THIRD_PARTY/şablonlar) yok → T5–T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
@@ -205,9 +205,9 @@ GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
 n-keto-tracker/
   .github/
     workflows/
-      ci.yml            # şablon CI; T4'te uyarlanır
-  android/
-    key.properties.example
+      ci.yml            # T4: gitleaks → offline+format+analyze+test → release APK
+  android/              # T4: flutter create + ORTAK §1.4 sertleştirme (backup xml, R8, proguard)
+  ios/                  # T4: flutter create (görünen ad N Keto Tracker)
   assets/
     brand/
       example_source_icon.png
@@ -216,17 +216,32 @@ n-keto-tracker/
     REQUIREMENTS_MATRIX.md  # T3: 105 REQ satırı, AC+görev eşlemeli
     MASTER_PROMPT.md    # ürün spec'i v1.1 (normatif)
     research/           # T1: COMPETITIVE_LANDSCAPE, USER_REVIEW_THEMES, UX_BENCHMARK, PRODUCT_POSITIONING; T2: EVIDENCE_VERIFICATION
+  lib/
+    app/
+      app.dart          # Material3 router kökü, TR/EN
+      app_shell.dart    # 5 sekmeli NavigationBar
+      router.dart       # go_router: today/log/plan/trends/guide
+      l10n/             # app_en.arb + app_tr.arb (generated/ gitignore'lu)
+      theme/app_theme.dart  # tek tema üreticisi (seed #00696B)
+    core/
+      config/           # app_config (marka tek nokta), env_config (dart-define)
+    main.dart           # ProviderScope girişi
   test/
+    app/
+      app_smoke_test.dart        # 5 sekme smoke + TR yerel ayar
+      l10n_completeness_test.dart  # ARB anahtar eşitliği
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
   tool/
     brand/
       generate_icons.py # ikon/splash üretici
-    templates/
-      app_test.dart.template  # new_app.dart şablonu
-      main.dart.template      # new_app.dart şablonu
-    new_app.dart        # şablon uygulama üretici betiği
+    templates/          # new_app.dart şablonları (kullanılmıyor)
+    check_offline.sh    # T4: INTERNET + yasaklı paket taraması
+    new_app.dart        # şablon üretici (T4'te reddedildi, bkz. §6)
+  pubspec.yaml          # T4: kilitli bağımlılık zinciri
+  pubspec.lock          # T4: çözülmüş sürümler
+  l10n.yaml             # gen-l10n yapılandırması
   .env.example
   .gitattributes
   .gitignore            # standart §1.1; zayıflatılmaz
@@ -254,11 +269,10 @@ n-keto-tracker/
   - Note: master §13 "26 tablo" yazar ama 27 isim sayar — numaralandırma yetkili kabul edildi (bkz. §6 ASSUMPTION)
 
 ### Aşama 0b — İskelet ve depo
-- [ ] T4 [M] Flutter iskelet + CI + offline kanıtı
-  - Where: `pubspec.yaml`, `lib/app/{app.dart,router.dart,theme/,l10n/}`, `lib/core/config/env_config.dart`, `.github/workflows/ci.yml`, `tool/check_offline.sh` (yeni)
-  - Do: 1) `tool/new_app.dart`'ı oku; `--ads no --pro no --data local` bu projenin şartlarına (reklam yok, internet izni yok) temiz uyuyorsa kullan, uymuyorsa `flutter create --org app.nketo --project-name n_keto_tracker --platforms android,ios .` + elle platform ayarı; seçimi §6'ya yaz; 2) pubspec'e flutter_riverpod, go_router, drift (+dev: drift_dev, build_runner), fl_chart, freezed (+dev), json_serializable, intl + flutter_localizations ekle; `flutter pub get` ile çöz, `pubspec.lock` commit'le; her paket lisansı GPL-3.0 uyumlu mu kontrol et; 3) Material 3 tek tema üreticisi (açık/koyu/sistem), go_router 5 sekmeli shell (Bugün/Günlük/Plan/Trendler/Rehber placeholder), `l10n.yaml` + `app_tr.arb` + `app_en.arb`, eksik anahtar testi; 4) AndroidManifest'ten `INTERNET` iznini kaldır; `tool/check_offline.sh`: manifest'te INTERNET + pubspec doğrudan bağımlılıklarında `firebase|analytics|admob|crashlytics|http|dio|web_view` taraması, bulursa exit 1; 5) ci.yml: gitleaks, `flutter analyze --fatal-infos`, `dart format --set-exit-if-changed`, `flutter test`, check_offline.sh, release APK build adımı
+- [x] T4 (2026-09-20, GLM-5.3) Flutter iskelet + CI + offline kanıtı
   - Done when: `flutter analyze` temiz; `flutter test` geçer (5 sekme smoke widget testi dahil); `bash tool/check_offline.sh` exit 0; AndroidManifest'te `grep -c INTERNET` = 0
-  - Needs: T1, T2
+  - → analyze "No issues"; 6 test yeşil (3 smoke + 3 l10n); check_offline exit 0; manifest'lerde INTERNET=0 (main+debug+profile). flutter create (app.nketo) + elle ORTAK §1.4 sertleştirme; Riverpod 3.4.3/go_router 18.0.1/drift 2.35.0/fl_chart 1.2.0/freezed 4.0.2 zinciri kilitlendi
+  - Note: debug/profile manifest'lerinden INTERNET kaldırıldı → debug attach (hot reload) emülatörde T30'da doğrulanacak; sorun çıkarsa yerel (commit dışı) geçici çözüm + görev
 - [ ] T5 [L] Depo topluluk dosyaları
   - Where: `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_LICENSES.md`, `CHANGELOG.md`, `.github/ISSUE_TEMPLATE/{bug_report.yml,feature_request.yml}`, `.github/pull_request_template.md` (çoğu yeni; README üzerine yaz)
   - Do: 1) README'yi uygulama README'si yap: ürün amacı, ekran görüntüsü yer tutucu, özellikler, offline mimari, sağlık uyarısı, hızlı kurulum, desteklenen Flutter sürümü, kod üretimi, test komutları, katkı bağlantısı, GPL-3.0 lisansı + "ad ve logo markadır, lisansa dahil değildir" notu, keystore yedekleme anlatımı (değer yok); 2) CONTRIBUTING: ortam, branch/commit beklentisi, test+çeviri katkısı, bilimsel içerikte kaynak/provenance şartı + ORTAK §2'deki kısa katkı lisans sözleşmesi; 3) SECURITY: sağlık verisi mahremiyeti, açık bildirim yolu — uydurma adres YOK, "proje sahibi ekleyecek" yer tutucusu; 4) CODE_OF_CONDUCT: Contributor Covenant v2.1 (atıflı); 5) THIRD_PARTY dosyaları: her paket/font/görsel için ad+sürüm+lisans+URL+kullanım; 6) issue/PR şablonları: PR'de test kanıtı, ekran görüntüsü, erişilebilirlik, mahremiyet/offline, lisans kontrol kutuları
@@ -432,6 +446,8 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 | Date | Type | What | Why / evidence |
 |---|---|---|---|
+| 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
+| 2026-09-20 | DECISION | T4: debug/profile manifest'lerinden de INTERNET kaldırıldı (yalnız main değil) | MASTER §14.1/AC3 manifest'lerde izin yokluğu ister; check_offline.sh üçünü de tarar. Debug attach riski T30 emülatör smoke'unda doğrulanacak |
 | 2026-09-20 | DECISION | Beyin skill formatında yeniden kuruldu; şablonun 10 satırlık stub PROJECT_BRAIN.md'si değiştirildi | Eski beyin skill formatında değildi (NOT_SKILL_FORMAT); içeriği ("kurallar ORTAK'ta") §1 normatif kaynaklarına taşındı |
 | 2026-09-20 | DECISION | `ORTAK_UYGULAMA_STANDARDI.md` ve `docs/MASTER_PROMPT.md` beyne ADOPT edilmedi, repoda normatif doküman olarak kalıyor | scan ikisini de ADOPT önerdi; ama ikisi de plan/takip dosyası değil bağlayıcı spec. Silmeleri görevlerin Where/Do referanslarını ve sahibin standart kaynağını yok ederdi; checklist'leri §1 AC'lere aktarıldı. `brain.py check` kalıcı "leftover legacy" WARN verebilir — bilinçli kabul |
 | 2026-09-20 | DECISION | REKLAM=HAYIR, PRO=HAYIR, VERİ=YEREL | ORTAK §0 varsayılanları EVET/EVET/YEREL; ama MASTER §1.2 reklam SDK'sını ve hesabı açıkça yasaklıyor, §0.4 promotion'ı reklamsız konumlandırıyor. Sahibin projeye özel talimatı = ayarın açık HAYIR'a çevrilmesi. Gelir modeli yok, uygulama tamamen ücretsiz |
@@ -451,7 +467,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T3 kapatıldı — REQUIREMENTS_MATRIX.md (105 REQ), THREAT_MODEL.md, docs/EVIDENCE_SCHEMA.md; A3 kilometre denetimi temiz.
-Devam: T4 (Flutter iskelet + CI + check_offline; Needs T1+T2 tamam) → T5, T6.
-Kritik düzeltme: 5. kaynak ilk yazarı **Amaral LJ**; Meidenbauer divisor 18,016 vs spec 18,0 (EVIDENCE_VERIFICATION'da); §13 sayım 27 tablo.
-Uyarı: `brain.py check` üç bilinçli WARN (legacy×2 + map yanlış pozitifi).
+Son: T4 kapatıldı — Flutter iskeleti çalışır durumda (analyze temiz, 6 test yeşil, check_offline exit 0, manifestlerde INTERNET=0).
+Devam: T5 (depo topluluk dosyaları) → T6 (gitleaks CI + dependabot) → T7 (Drift şeması).
+Uyarı: debug attach (hot reload) INTERNET kaldırmasıyla emülatörde doğrulanmadı — T30 smoke'ında kanıtlanacak.
+Kritik düzeltme (T2): 5. kaynak ilk yazarı **Amaral LJ**; §13 sayım 27 tablo.

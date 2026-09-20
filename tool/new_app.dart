@@ -16,15 +16,16 @@ const _testAdmobAppIdIos = 'ca-app-pub-3940256099942544~1458002511';
 
 /// Satır sonlarını LF'e indirger (flutter create Windows'ta CRLF üretir).
 String _normalize(String text) => text.replaceAll(
-      String.fromCharCode(13) + String.fromCharCode(10),
-      String.fromCharCode(10),
-    );
+  String.fromCharCode(13) + String.fromCharCode(10),
+  String.fromCharCode(10),
+);
 
 Future<void> main(List<String> args) async {
   final options = _Options.parse(args);
   _section('napp kurulum: ${options.name}');
   stdout.writeln(
-      'ads=${options.ads} pro=${options.pro} data=${options.dataLabel}');
+    'ads=${options.ads} pro=${options.pro} data=${options.dataLabel}',
+  );
 
   await _run('flutter', [
     'create',
@@ -68,9 +69,11 @@ Future<void> main(List<String> args) async {
   await _run('flutter', ['build', 'apk', '--release']);
 
   _section('KURULUM TAMAM');
-  stdout.writeln('Şimdi: 1) PROJECT_BRAIN.md bölüm 0 tablosunu kontrol et, '
-      '2) gizlilik politikası bağlantısını doldur, '
-      '3) mağazada ürün kimliğini oluştur: ${options.productId}');
+  stdout.writeln(
+    'Şimdi: 1) PROJECT_BRAIN.md bölüm 0 tablosunu kontrol et, '
+    '2) gizlilik politikası bağlantısını doldur, '
+    '3) mağazada ürün kimliğini oluştur: ${options.productId}',
+  );
 }
 
 class _Options {
@@ -120,10 +123,12 @@ class _Options {
     final ads = value('--ads').toLowerCase() == 'yes';
     final pro = value('--pro').toLowerCase() == 'yes';
     final dataCloud = value('--data').toLowerCase() == 'cloud';
-    final sourceIcon =
-        args.contains('--source-icon') ? value('--source-icon') : null;
-    final kitRef =
-        args.contains('--kit-ref') ? value('--kit-ref') : 'core-v1.0.0';
+    final sourceIcon = args.contains('--source-icon')
+        ? value('--source-icon')
+        : null;
+    final kitRef = args.contains('--kit-ref')
+        ? value('--kit-ref')
+        : 'core-v1.0.0';
     final kitPath = args.contains('--kit-path') ? value('--kit-path') : null;
     final force = args.contains('--force');
 
@@ -175,8 +180,9 @@ void _writeFile(String path, String content, {required bool force}) {
 
 Future<void> _run(String executable, List<String> arguments) async {
   // Windows'ta Process.start PATH uzantılarını çözümlemez.
-  final exe =
-      Platform.isWindows && executable == 'flutter' ? 'flutter.bat' : executable;
+  final exe = Platform.isWindows && executable == 'flutter'
+      ? 'flutter.bat'
+      : executable;
   _section('$exe ${arguments.first} …');
   final process = await Process.start(
     exe,
@@ -199,9 +205,9 @@ void _androidManifest(_Options o) {
     manifest = manifest.replaceFirst(
       '</application>',
       '        <meta-data\n'
-      '            android:name="com.google.android.gms.ads.APPLICATION_ID"\n'
-      '            android:value="\${admobAppId}" />\n'
-      '    </application>',
+          '            android:name="com.google.android.gms.ads.APPLICATION_ID"\n'
+          '            android:value="\${admobAppId}" />\n'
+          '    </application>',
     );
   }
   // Yalnızca HTTPS (1.4).
@@ -213,8 +219,8 @@ void _androidManifest(_Options o) {
   manifest = manifest.replaceFirst(
     '<application',
     '<application\n'
-    '        android:dataExtractionRules="@xml/data_extraction_rules"\n'
-    '        android:fullBackupContent="@xml/backup_rules"',
+        '        android:dataExtractionRules="@xml/data_extraction_rules"\n'
+        '        android:fullBackupContent="@xml/backup_rules"',
   );
   File(path).writeAsStringSync(manifest);
   stdout.writeln('güncellendi: $path');
@@ -236,9 +242,9 @@ void _androidManifest(_Options o) {
   _writeFile(
     'android/app/src/main/res/xml/backup_rules.xml',
     '<?xml version="1.0" encoding="utf-8"?>\n'
-    '<full-backup-content>\n'
-    '    <exclude domain="sharedpref" path="FlutterSecureStorage"/>\n'
-    '</full-backup-content>\n',
+        '<full-backup-content>\n'
+        '    <exclude domain="sharedpref" path="FlutterSecureStorage"/>\n'
+        '</full-backup-content>\n',
     force: o.force,
   );
 }
@@ -250,7 +256,8 @@ void _gradleRelease(_Options o) {
   if (props.existsSync() &&
       !props.readAsStringSync().contains('kotlin.incremental')) {
     props.writeAsStringSync(
-        props.readAsStringSync() + 'kotlin.incremental=false\n');
+      '${props.readAsStringSync()}kotlin.incremental=false\n',
+    );
   }
   final path = 'android/app/build.gradle.kts';
   var gradle = _normalize(File(path).readAsStringSync());
@@ -259,29 +266,29 @@ void _gradleRelease(_Options o) {
   gradle = gradle.replaceFirst(
     'android {',
     'import java.util.Properties\n'
-    '\n'
-    'val keystoreProperties = Properties().apply {\n'
-    '    val file = rootProject.file("key.properties")\n'
-    '    if (file.exists()) file.inputStream().use { load(it) }\n'
-    '}\n'
-    'val admobAppId = keystoreProperties.getProperty(\n'
-    '    "admobAppId",\n'
-    '    "$_testAdmobAppIdAndroid",\n'
-    ')\n'
-    '\n'
-    'android {',
+        '\n'
+        'val keystoreProperties = Properties().apply {\n'
+        '    val file = rootProject.file("key.properties")\n'
+        '    if (file.exists()) file.inputStream().use { load(it) }\n'
+        '}\n'
+        'val admobAppId = keystoreProperties.getProperty(\n'
+        '    "admobAppId",\n'
+        '    "$_testAdmobAppIdAndroid",\n'
+        ')\n'
+        '\n'
+        'android {',
   );
 
   // Sürüm derlemesi: R8 küçültme + keep kuralları + key.properties imzası.
   gradle = gradle.replaceFirst(
     '        release {',
     '        release {\n'
-    '            isMinifyEnabled = true\n'
-    '            isShrinkResources = true\n'
-    '            proguardFiles(\n'
-    '                getDefaultProguardFile("proguard-android-optimize.txt"),\n'
-    '                "proguard-rules.pro",\n'
-    '            )',
+        '            isMinifyEnabled = true\n'
+        '            isShrinkResources = true\n'
+        '            proguardFiles(\n'
+        '                getDefaultProguardFile("proguard-android-optimize.txt"),\n'
+        '                "proguard-rules.pro",\n'
+        '            )',
   );
 
   if (o.ads) {
@@ -289,7 +296,7 @@ void _gradleRelease(_Options o) {
     gradle = gradle.replaceFirst(
       'defaultConfig {',
       'defaultConfig {\n'
-      '        manifestPlaceholders["admobAppId"] = admobAppId',
+          '        manifestPlaceholders["admobAppId"] = admobAppId',
     );
   }
 
@@ -299,12 +306,12 @@ void _gradleRelease(_Options o) {
   _writeFile(
     'android/app/proguard-rules.pro',
     "# WorkManager'ın Room veritabanı R8 tarafından silinmesin\n"
-    '# (ORTAK_UYGULAMA_STANDARDI.md 8).\n'
-    '-keep class androidx.work.impl.WorkDatabase { *; }\n'
-    '-keep class androidx.work.impl.WorkDatabase_Impl { *; }\n'
-    '-keep class androidx.work.impl.model.** { *; }\n'
-    '-keep class * extends androidx.work.ListenableWorker { *; }\n'
-    '-keep class androidx.room.** { *; }\n',
+        '# (ORTAK_UYGULAMA_STANDARDI.md 8).\n'
+        '-keep class androidx.work.impl.WorkDatabase { *; }\n'
+        '-keep class androidx.work.impl.WorkDatabase_Impl { *; }\n'
+        '-keep class androidx.work.impl.model.** { *; }\n'
+        '-keep class * extends androidx.work.ListenableWorker { *; }\n'
+        '-keep class androidx.room.** { *; }\n',
     force: o.force,
   );
 }
@@ -316,8 +323,8 @@ void _iosPlist(_Options o) {
     plist = plist.replaceFirst(
       '<dict>',
       '<dict>\n'
-      '\t<key>GADApplicationIdentifier</key>\n'
-      '\t<string>\$(ADMOB_APP_ID)</string>',
+          '\t<key>GADApplicationIdentifier</key>\n'
+          '\t<string>\$(ADMOB_APP_ID)</string>',
     );
     File(path).writeAsStringSync(plist);
     stdout.writeln('güncellendi: $path');
@@ -349,13 +356,20 @@ void _pubspec(_Options o) {
   if (o.ads) {
     deps.write(dep('napp_ads', _refFor(o.kitRef, 'ads')));
   }
-  final flutterBlock = ['dependencies:', '  flutter:', '    sdk: flutter', '']
-      .join('\n');
-  final localizationsDep = '  flutter_localizations:\n'
+  final flutterBlock = [
+    'dependencies:',
+    '  flutter:',
+    '    sdk: flutter',
+    '',
+  ].join('\n');
+  final localizationsDep =
+      '  flutter_localizations:\n'
       '    sdk: flutter\n';
   if (!pubspec.contains('napp_core:')) {
     pubspec = pubspec.replaceFirst(
-        flutterBlock, flutterBlock + deps.toString() + localizationsDep);
+      flutterBlock,
+      flutterBlock + deps.toString() + localizationsDep,
+    );
   }
 
   // Lokal geliştirme: --kit-path verilirse bağımlılıklar yerel kopyaya
@@ -372,7 +386,7 @@ void _pubspec(_Options o) {
     }
     pubspec = pubspec.replaceFirst(
       'dev_dependencies:',
-      overrides.toString() + 'dev_dependencies:',
+      '${overrides.toString()}dev_dependencies:',
     );
   }
 
@@ -384,10 +398,10 @@ String _refFor(String coreRef, String package) =>
     coreRef.replaceFirst('core-', '$package-');
 
 void _writeExampleFiles(_Options o) {
-  final mainTemplate =
-      File('tool/templates/main.dart.template').readAsStringSync();
-  final testTemplate =
-      File('tool/templates/app_test.dart.template').readAsStringSync();
+  final mainTemplate = File('tool/templates/main.dart.template')
+      .readAsStringSync();
+  final testTemplate = File('tool/templates/app_test.dart.template')
+      .readAsStringSync();
   final substitutions = <String, String>{
     '@@APP_NAME@@': o.name,
     '@@PACKAGE_NAME@@': o.packageName,
@@ -425,16 +439,18 @@ void _writeExampleFiles(_Options o) {
   _writeFile(
     'android/key.properties.example',
     'storeFile=XXXX.jks\n'
-    'storePassword=XXXX\n'
-    'keyAlias=XXXX\n'
-    'keyPassword=XXXX\n'
-    'admobAppId=ca-app-pub-XXXX~XXXX\n',
+        'storePassword=XXXX\n'
+        'keyAlias=XXXX\n'
+        'keyPassword=XXXX\n'
+        'admobAppId=ca-app-pub-XXXX~XXXX\n',
     force: o.force,
   );
 }
 
 void _projectBrain(_Options o) {
-  final adsRow = o.ads ? 'bölüm 5.2 uygulanır' : 'hiçbir reklam paketi eklenmez';
+  final adsRow = o.ads
+      ? 'bölüm 5.2 uygulanır'
+      : 'hiçbir reklam paketi eklenmez';
   final proRow = o.pro
       ? 'bölüm 5.1 uygulanır; ürün kimliği: ${o.productId}'
       : 'satın alma paketi eklenmez';
@@ -442,37 +458,37 @@ void _projectBrain(_Options o) {
   _writeFile(
     'PROJECT_BRAIN.md',
     '# PROJECT BRAIN — ${o.name}\n'
-    '\n'
-    '> **Status:** şablon kuruldu (tool/new_app.dart); geliştirme başlıyor\n'
-    '> **Phase:** BUILD · **Next:** T2 · **Updated:** '
-    '${DateTime.now().toIso8601String().substring(0, 10)} · **Synced@:** none\n'
-    '> **Goal:** v1 #PENDING · **Goal status:** DRAFT\n'
-    '\n'
-    '## 0. PROJE AYARLARI (ORTAK_UYGULAMA_STANDARDI.md bölüm 0)\n'
-    '\n'
-    '| Ayar | Değer | Anlamı |\n'
-    '|---|---|---|\n'
-    '| **REKLAM** | `${o.ads ? 'EVET' : 'HAYIR'}` | $adsRow |\n'
-    '| **PRO (ömür boyu)** | `${o.pro ? 'EVET' : 'HAYIR'}` | $proRow |\n'
-    '| **VERİ** | `${o.dataLabel}` | $dataRow |\n'
-    '\n'
-    '## 1. GOAL\n'
-    '\n'
-    '(Doldurun: uygulamanın amacı, kabul kriterleri, kısıtlar.)\n'
-    '\n'
-    '## 2. TARGET ARCHITECTURE\n'
-    '\n'
-    '(Projeye özel mimari: napp paketleri + uygulamanızın katmanları.)\n'
-    '\n'
-    '## 3. CURRENT ARCHITECTURE\n'
-    '\n'
-    '${o.name} şablonu: napp_core (${o.pro ? '+ napp_pro, ' : ''}'
-    '${o.ads ? '+ napp_ads, ' : ''}dart-define ile AppIdentity), tema,\n'
-    'çok dil, kalıcı ayarlar.\n'
-    '\n'
-    '## 4. FILE MAP / 5. TASKS / 6. DECISION LOG / 7. HANDOFF\n'
-    '\n'
-    '(project-brain protokolü: PROJECT_BRAIN.md şablonuna bakın.)\n',
+        '\n'
+        '> **Status:** şablon kuruldu (tool/new_app.dart); geliştirme başlıyor\n'
+        '> **Phase:** BUILD · **Next:** T2 · **Updated:** '
+        '${DateTime.now().toIso8601String().substring(0, 10)} · **Synced@:** none\n'
+        '> **Goal:** v1 #PENDING · **Goal status:** DRAFT\n'
+        '\n'
+        '## 0. PROJE AYARLARI (ORTAK_UYGULAMA_STANDARDI.md bölüm 0)\n'
+        '\n'
+        '| Ayar | Değer | Anlamı |\n'
+        '|---|---|---|\n'
+        '| **REKLAM** | `${o.ads ? 'EVET' : 'HAYIR'}` | $adsRow |\n'
+        '| **PRO (ömür boyu)** | `${o.pro ? 'EVET' : 'HAYIR'}` | $proRow |\n'
+        '| **VERİ** | `${o.dataLabel}` | $dataRow |\n'
+        '\n'
+        '## 1. GOAL\n'
+        '\n'
+        '(Doldurun: uygulamanın amacı, kabul kriterleri, kısıtlar.)\n'
+        '\n'
+        '## 2. TARGET ARCHITECTURE\n'
+        '\n'
+        '(Projeye özel mimari: napp paketleri + uygulamanızın katmanları.)\n'
+        '\n'
+        '## 3. CURRENT ARCHITECTURE\n'
+        '\n'
+        '${o.name} şablonu: napp_core (${o.pro ? '+ napp_pro, ' : ''}'
+        '${o.ads ? '+ napp_ads, ' : ''}dart-define ile AppIdentity), tema,\n'
+        'çok dil, kalıcı ayarlar.\n'
+        '\n'
+        '## 4. FILE MAP / 5. TASKS / 6. DECISION LOG / 7. HANDOFF\n'
+        '\n'
+        '(project-brain protokolü: PROJECT_BRAIN.md şablonuna bakın.)\n',
     force: o.force,
   );
 }

@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** Beyin commit'lendi; A0+A1 denetimleri temiz. T1 pazar araştırması yapılıyor.
-> **Phase:** BUILD · **Next:** T1 · **Updated:** 2026-09-20 · **Synced@:** 5bfb890
+> **Status:** T1 tamam: 12 ürünlü pazar araştırması + konumlandırma doğrulandı. Sıradaki: T2 kaynak doğrulama.
+> **Phase:** BUILD · **Next:** T2 · **Updated:** 2026-09-20 · **Synced@:** decc989
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -188,7 +188,7 @@ test/  integration_test/  tool/  docs/
 - `ORTAK_UYGULAMA_STANDARDI.md`, `docs/MASTER_PROMPT.md`, `README.md` (şablon README'si; T5'te uygulama README'si olur), `AGENTS.md` (beyin işaretçisi)
 - `.gitignore` + `.gitleaks.toml` + `.env.example` + `android/key.properties.example` — standart §1.1 sır hijyeni
 
-GAP: Araştırma/doğrulama dokümanları yok → T1–T3
+GAP: Bilimsel kaynak doğrulama, gereksinim matrisi, tehdit modeli, kanıt şeması yok → T2–T3
 GAP: Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
@@ -213,6 +213,7 @@ n-keto-tracker/
       example_source_icon.png
   docs/
     MASTER_PROMPT.md    # ürün spec'i v1.1 (normatif)
+    research/           # T1: COMPETITIVE_LANDSCAPE, USER_REVIEW_THEMES, UX_BENCHMARK, PRODUCT_POSITIONING
   tool/
     brand/
       generate_icons.py # ikon/splash üretici
@@ -234,10 +235,10 @@ n-keto-tracker/
 ## 5. TASKS
 
 ### Aşama 0 — Araştırma ve kararlar
-- [ ] T1 [H] Güncel pazar/rakip araştırması
-  - Where: `docs/research/COMPETITIVE_LANDSCAPE.md`, `USER_REVIEW_THEMES.md`, `UX_BENCHMARK.md`, `PRODUCT_POSITIONING.md` (yeni)
-  - Do: 1) `docs/MASTER_PROMPT.md` §0.3 ve §22'yi oku; 2) §22.2'deki 9 ürünü resmi mağaza/ürün sayfalarından güncelle (puan, yorum sayısı, indirme; tarih 2026-09-20 + URL); 3) listeyi 8–12 ürüne tamamla (gerekirse Türkçe mağaza sonucu, açık kaynak örnek ekle); 4) her ürün için §0.3 matris alanlarını doldur; 5) ≥100 yakın tarihli kullanıcı yorumundan sürtünme temalarını USER_REVIEW_THEMES.md'de sınıflandır (gerçek görüşme yapılmadığını açıkça yaz); 6) UX_BENCHMARK.md: onboarding uzunluğu, öğün kaydı adım sayısı, grafik hiyerarşisi karşılaştırması; 7) PRODUCT_POSITIONING.md: §22.5 konumlandırmayı güncel bulgularla doğrula/reddet
+- [x] T1 (2026-09-20, GLM-5.3) Güncel pazar/rakip araştırması
   - Done when: 4 dosya var; her ürün satırında araştırma tarihi + en az bir resmi URL; `grep -c "http" docs/research/COMPETITIVE_LANDSCAPE.md` ≥ 12; dosyalarda "2026-09" geçiyor
+  - → 12 ürün (9 §22.2 + OpenNutriTracker, Waistline, Eduven TR), hepsi 2026-09-20 tarihli resmi mağaza/API verisiyle; grep http=29; konumlandırma DOĞRULANDI (offline+açık kaynak+GKI+TR/EN kombinasyonu boş)
+  - Note: ≥100 yorum şartı web vitrini kısıtı nedeniyle 35 doğrudan yorum + agregat kaynaklarla karşılandı; yöntem USER_REVIEW_THEMES.md'de açıkça beyan edildi (bkz. §6 ASSUMPTION)
 - [ ] T2 [H] Bilimsel kaynak doğrulama + GKI test vektörleri
   - Where: `docs/research/EVIDENCE_VERIFICATION.md` (yeni), `test/fixtures/gki_reference_cases.json` (yeni)
   - Do: 1) MASTER_PROMPT §21'deki 7 kaynağın DOI/PMID/PMCID'sini `https://doi.org/<doi>` ve PubMed üzerinden doğrula; başlık/dergi/yıl uyuşmazlıklarını raporla; 2) Meidenbauer 2015'ten GKI formülünü ve Duraj 2024 bölge önerilerini (≤1, ≤2) alıntıyla kaydet; 3) fixture'a ≥12 vektör: 90mg/dL+2.5→2.0; 180mg/dL→10.0 mmol/L; mmol/L doğrudan giriş (çift dönüşüm yok); BHB=0; BHB<0; glukoz≤0; "2,5" virgül ayrıştırma; ara yuvarlama yasak örneği; NaN/Infinity reddi
@@ -437,12 +438,13 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 | 2026-09-20 | ASSUMPTION | Paket/org adı geçici `app.nketo` (T4) | Google Play paket adı kalıcı; mağaza kaydı ve kesin paket adı sahibin yayın adımında kesinleşir |
 | 2026-09-20 | ASSUMPTION | Bu dizin uygulama reposunun kendisi (şablon klonu değil) | origin = github.com/XPersPective/n-keto-tracker.git; dizin adı n-keto-tracker |
 | 2026-09-20 | ASSUMPTION | `brain.py check`'in "listed but missing: .gitignore/.gitattributes/.gitleaks.toml" WARN'ı yanlış pozitif; dosyalar diskte ve git'te mevcut (`git ls-files` kanıtlı), map aracı bu üçünü kendi dışlama listesinde tutuyor | §4 satırları gerçek dosyaları anlatıyor; kaldırılmaz, WARN bilinçli kabul edilir |
+| 2026-09-20 | ASSUMPTION | T1 yorum örneklemi: 35 doğrudan mağaza yorumu + agregat kaynaklar (Reddit başlıkları, 2026-08-11 r/keto derlemesi [COI notlu], sahibin §22.3 taraması); "≥100 yorum" harfiyen karşılanmadı çünkü oturumsuz web vitrinleri uygulama başına yalnızca birkaç yorum gösterir | Yöntem ve sayılar USER_REVIEW_THEMES.md'de açıkça beyan; temalar kaynaklar arası tutarlı. Daha derin örnekleme gerekirse tarayıcı oturumlu ayrı görev açılır |
 | 2026-09-20 | AUDIT | **A0 yaratma denetimi**: check FAIL yok; §3'ün 3 iddiası açılarak doğrulandı (`tool/new_app.dart` — flutter create + --ads/--pro/--data üreticisi; `.github/workflows/ci.yml` — melos/examples kullanan şablon CI, T4'te uyarlancak; `LICENSE` — GPL-3.0 tam metni); izlenebilirlik: 11 AC'nin tümü ≥1 T-id'ye bağlı, §2 bileşenlerinin tümü §3 GAP satırlarıyla görevli; ilk 5 görevin (T1–T5) yürütülebilirlik yoklaması temiz | Protokol §0.4 A0; bulgu yok, görev açılmadı |
 | 2026-09-20 | AUDIT | **A1 takeover (derin)**: eskalasyon nedeni — önceki AUDIT satırı yoktu ve init commit bekliyordu. Kapanmış görev örneklemi yok (34 görevin tümü açık); test paketi yok (Flutter projesi henüz yok — T4 kuruyor); §3↔kod nokta kontrolü A0'da yapıldı; tek commit `5bfb890` (şablon, protokol dışı değil); goal hash PENDING'den `0f6c3256`'ya sabitlendi | Protokol §0.4 A1; bulgu yok, görev açılmadı |
 
 ## 7. HANDOFF
 
-Son: beyin init commit + push; A0 ve A1 (derin) denetimleri geçti, bulgu yok.
-Devam: T1 (pazar araştırması) — MASTER §0.3+§22'yi oku, `docs/research/` 4 dosyasını üret; ardından T2, T3.
+Son: T1 kapatıldı — `docs/research/` 4 dosya (12 ürün, 2026-09-20 mağaza verileri; konumlandırma doğrulandı).
+Devam: T2 (bilimsel kaynak doğrulama + GKI fixture) → T3 (gereksinim matrisi/threat model/kanıt şeması) → T4 (Flutter iskelet).
 Uyarı: `brain.py check` üç bilinçli WARN verir: ORTAK+MASTER_PROMPT "legacy" (spec dosyaları, silinmez), .gitignore ailesi "missing" (map aracı yanlış pozitifi).
-Doğrulanmadı: T2'deki 7 kaynağın DOI/PMID'si henüz doğrulanmadı — içerik yazmadan önce T2 şart.
+Doğrulanmadı: T2'deki 7 kaynağın DOI/PMID'si doğrulanmadan bilimsel içerik yazılmaz (T25 bunlara bağlı).

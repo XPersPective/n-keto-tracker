@@ -395,5 +395,9 @@
         "type": "String"
       }
     }
-  }
+  },
+  "goalLegendResearch": "Research range used in a study",
+  "goalLegendClinician": "My clinician's target",
+  "goalLegendPersonal": "My personal tracking goal",
+  "goalLegendPersonalNote": "A personal tracking goal is not a medical target."
 }

@@ -325,5 +325,9 @@
         "type": "String"
       }
     }
-  }
+  },
+  "goalLegendResearch": "Araştırmada kullanılan bölge",
+  "goalLegendClinician": "Uzmanımın hedefi",
+  "goalLegendPersonal": "Kişisel takip hedefim",
+  "goalLegendPersonalNote": "Kişisel takip hedefi tıbbi hedef değildir."
 }

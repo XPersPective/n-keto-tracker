@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T20 tamam: deterministik plan üretici + alışveriş birleştirme + risk kilidi entegre; 131 test. Sıradaki: T21 enerji + hedefler.
-> **Phase:** BUILD · **Next:** T21 · **Updated:** 2026-09-20 · **Synced@:** 5903fd9
+> **Status:** T21 tamam: Mifflin–St Jeor motoru + üç hedef türü lejantı; 140 test. Aşama 4 bitti → A3. Sıradaki: T22 ağırlık.
+> **Phase:** BUILD · **Next:** T22 · **Updated:** 2026-09-20 · **Synced@:** e2bb022
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Enerji tahmini + üç hedef türü UI'sı yok → T21; Plan/alışveriş UI ekranları T24 öncesi
+GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
@@ -234,7 +234,8 @@ n-keto-tracker/
                         # T12/T15: measurements_repository, food_seeder, providers
     privacy/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
-    units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
+    units/              # T11/T16/T20/T21: gki, glucose, formula_version,
+                        #       serving, matching, plan_generator+models, energy
     features/
       dashboard/        # T14: today_page (hızlı eylemler + boş durumlar)
       measurements/     # T12–T13: measurement_session_form, log_page, log_view_model
@@ -257,6 +258,10 @@ n-keto-tracker/
     features/
       recipes/
         recipe_detail_test.dart    # T19: 1 detay widget testi
+      settings/
+        goal_legend_test.dart      # T21: 3 lejant widget testi
+      core/
+        database/goal_types_test.dart  # T21: AC9 tür dönüşmezliği
       evidence/
         guide_content_lint_test.dart  # T17: 4 içerik lint testi
         guide_page_test.dart          # T17: 2 rehber widget testi
@@ -275,6 +280,9 @@ n-keto-tracker/
       formula_single_source_test.dart  # T11: formül tekrar yasağı grep
       serving_test.dart                # T16: 6 ölçekleme testi
       matching_engine_test.dart        # T12: 8 eşleştirme testi
+      plan_repository_test.dart        # T20: 6 plan/birleştirme/kilit testi
+      energy_test.dart                 # T21: 5 enerji testi
+      meal_relation_test.dart          # T18: 6 ilişki testi
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
@@ -396,11 +404,9 @@ n-keto-tracker/
   - Done when: üretici determinizm testi (aynı girdi → aynı çıktı), birleştirme birim testleri, plan→liste integration testi geçer
   - → PlanGenerator (deterministik, alerjen/kategori filtreleri, uygun yoksa null — kural gevşetme yok, enerji açığı/fasting üretmez) 4 test; ShoppingMerger (gram toplama, adet/dilim ayrı satır) + PlanRepository (savePlan/collectIngredients/createShoppingList + manuel madde koruması) 2 test; risk kilidi T10 entegrasyon testi (kilitliyken PlanLockedException); 131 toplam yeşil
   - Note: Plan UI ekranı T24 öncesi tamamlanacak; şimdilik motor+repo+test katmanı tamam. Kopyala/taşı/değiştir savePlanEntry ile desteklenir (UI T24)
-- [ ] T21 [M] Enerji tahmini + üç hedef türü
-  - Where: `lib/core/units/energy.dart`, `lib/features/settings/` (hedefler), Goal tablosu (T7)
-  - Do: MASTER §7 + §6.5: Mifflin–St Jeor (erkek +5 / kadın −161), aktivite katsayıları kaynaklı sürümlenmiş içerikte; sonuç "genel tahmin" etiketi + sağlıklı yetişkin kapsamı açıklaması; 18 yaş altı/gebelik-emzirme/kapsam dışı → hesap üretme; Goal'da `researchReference`/`clinicianTarget`/`personalTrackingGoal` ayrı türler, asla birleşmez; klinisyen hedefi "kim/ne zaman" alanlı, uygulama üretmez/doğrulamaz; grafik lejantı üç ayrı günlük-dil etiket; hedefe erişememe alarmı/suçluluk dili yok
+- [x] T21 (2026-09-20, GLM-5.3) Enerji tahmini + üç hedef türü
   - Done when: REE/TDEE birim testleri (iki katsayı + aktivite çarpanı), tür dönüşmezliği testi, lejant widget testi geçer
-  - Needs: T11
+  - → restingEnergy/totalEnergy (Mifflin–St Jeor, iki katsayı, aktivite çarpanları sürümlenmiş) 5 test — 18 yaş altı/katsayı atlandı/gebelik → EnergyEstimateNotAllowed; GoalLegend widget (üç ayrı etiket+şekil, yalnız kayıtlı türler) 3 test; AC9 tür dönüşmezliği DB testi 1; 140 toplam yeşil
 
 ### Aşama 5 — Ağırlık, semptom, trendler
 - [ ] T22 [M] Ağırlık takibi
@@ -483,6 +489,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 4 kapandı: T19–T21)**: analyze temiz; 140 test yeşil (tarif 5+1, plan 6, enerji 5, lejant 3, AC9 1 + önceki 119); check_offline exit 0. Bilinen açık işler: plan/alışveriş UI ekranları + hedefler yönetim ekranı (T24 öncesi/ile); onboarding profil → UserProfile yazımı hâlâ açık (T21 notu) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 3 kapandı: T15–T18)**: analyze temiz; 119 test yeşil (seed 6, ölçekleme 6, öğün repo 5, form 2, rehber 6, ilişki 6, lint 4 + önceki 84); check_offline exit 0; GAP: Aşama 3 satırları silindi. Bulgu yok; bilinen açık işler: analiz penceresi kullanıcı seçimi T21 ayarlarında; ölçüm detay ekranı ayrı sayfa değil kart içi (yeterli — detay ekranı T24 trendler bağlamında genişler) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 2 kapandı: T11–T14)**: analyze temiz; 84 test yeşil (GKI motoru 25, eşleştirme 8, oturum repo 4, form 3, log 3, Bugün 3 + önceki 38); check_offline exit 0; AC2 çekirdeği tamam (90+2,5→2,0 referansı tüm katmanlarda aynı motor). Bulgu yok; önceden bilinen açık işler: bağlam etiketleri UI seçimi (T12 formunda alan var, liste T18'de), öğün/ağırlık/semptom coming-soon yolları T16/T22/T23'te dolacak | Protokol §0.4 A3 |
 | 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
@@ -506,7 +513,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T20 kapatıldı — PlanGenerator + ShoppingMerger + PlanRepository; 131 test yeşil.
-Devam: T21 (Mifflin–St Jeor + üç hedef türü UI'sı; UserProfile'a onboarding yazımı) → Aşama 4 A3.
+Son: T21 kapatıldı — enerji motoru + GoalLegend + AC9 testi; Aşama 4 bitti, A3 temiz; 140 test yeşil.
+Devam: T22 (ağırlık takibi: kg/lb normalize, 7/30 gün değişim) → T23 semptom → T24 trendler.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

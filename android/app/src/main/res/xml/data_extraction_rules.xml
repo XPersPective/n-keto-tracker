@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- N Keto Tracker: sağlık verisi bulut yedeğine/taşınmasına girmesin
+     (MASTER_PROMPT §14.2). Uygulama sandbox'ındaki veritabanı ve
+     SharedPreferences yedekleme kapsamı dışında tutulur. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="FlutterSecureStorage"/>
+        <exclude domain="database"/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="FlutterSecureStorage"/>
+        <exclude domain="database"/>
+    </device-transfer>
+</data-extraction-rules>

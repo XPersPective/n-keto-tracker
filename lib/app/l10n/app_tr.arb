@@ -1,0 +1,25 @@
+{
+  "@@locale": "tr",
+  "appTitle": "N Keto Tracker",
+  "@appTitle": {
+    "description": "Marka adı; her dilde aynıdır (MASTER_PROMPT 0.2)."
+  },
+  "navToday": "Bugün",
+  "@navToday": { "description": "Alt navigasyon sekmesi 1: günlük genel bakış." },
+  "navLog": "Günlük",
+  "@navLog": { "description": "Alt navigasyon sekmesi 2: kronolojik zaman çizelgesi." },
+  "navPlan": "Plan",
+  "@navPlan": { "description": "Alt navigasyon sekmesi 3: haftalık yemek planı." },
+  "navTrends": "Trendler",
+  "@navTrends": { "description": "Alt navigasyon sekmesi 4: grafikler." },
+  "navGuide": "Rehber",
+  "@navGuide": { "description": "Alt navigasyon sekmesi 5: eğitim ve kaynaklar." },
+  "pageUnderConstruction": "Bu ekran geliştiriliyor.",
+  "@pageUnderConstruction": {
+    "description": "Henüz uygulanmamış ekranlar için yer tutucu metin."
+  },
+  "generalInfoDisclaimer": "Genel bilgi içindir; tıbbi tavsiye değildir.",
+  "@generalInfoDisclaimer": {
+    "description": "Sağlık verisi yorumlanan her yerde gösterilen kısa alt bilgi (MASTER_PROMPT 1.3)."
+  }
+}

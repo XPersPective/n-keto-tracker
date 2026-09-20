@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- N Keto Tracker tamamen çevrimdışıdır (MASTER_PROMPT §14.1): hiçbir
+         build türünde ağ izni yoktur.
+    -->
+</manifest>

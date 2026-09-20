@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eski Android sürümleri için yedekleme dışlama (MASTER_PROMPT §14.2). -->
+<full-backup-content>
+    <exclude domain="sharedpref" path="FlutterSecureStorage"/>
+    <exclude domain="database"/>
+</full-backup-content>

@@ -114,13 +114,16 @@ void main() {
     await tester.pageBack();
     await tester.pumpAndSettle();
 
-    // Ağırlık/semptom T22/T23'e kadar dürüst yer tutucu.
-    for (final label in ['Add weight', 'Add symptom']) {
-      await tester.tap(find.text(label));
-      await tester.pumpAndSettle();
-      expect(find.text('Coming in an upcoming update'), findsOneWidget);
-      await tester.pageBack();
-      await tester.pumpAndSettle();
-    }
+    // Ağırlık gerçek form (T22).
+    await tester.tap(find.text('Add weight'));
+    await tester.pumpAndSettle();
+    expect(find.text('Weight (kg)'), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
+    // Semptom T23'e kadar dürüst yer tutucu.
+    await tester.tap(find.text('Add symptom'));
+    await tester.pumpAndSettle();
+    expect(find.text('Coming in an upcoming update'), findsOneWidget);
   });
 }

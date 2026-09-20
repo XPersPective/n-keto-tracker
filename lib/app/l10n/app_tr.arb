@@ -329,5 +329,15 @@
   "goalLegendResearch": "Araştırmada kullanılan bölge",
   "goalLegendClinician": "Uzmanımın hedefi",
   "goalLegendPersonal": "Kişisel takip hedefim",
-  "goalLegendPersonalNote": "Kişisel takip hedefi tıbbi hedef değildir."
+  "goalLegendPersonalNote": "Kişisel takip hedefi tıbbi hedef değildir.",
+  "weightValueLabel": "Ağırlık ({unit})",
+  "weightConditionLabel": "Koşul (isteğe bağlı; sabah, antrenman sonrası…)",
+  "weightSave": "Ağırlığı kaydet",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  }
 }

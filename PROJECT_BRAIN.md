@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T21 tamam: Mifflin–St Jeor motoru + üç hedef türü lejantı; 140 test. Aşama 4 bitti → A3. Sıradaki: T22 ağırlık.
-> **Phase:** BUILD · **Next:** T22 · **Updated:** 2026-09-20 · **Synced@:** e2bb022
+> **Status:** T22 tamam: ağırlık normalize + pencere testleri + form; 149 test. Sıradaki: T23 semptom.
+> **Phase:** BUILD · **Next:** T23 · **Updated:** 2026-09-20 · **Synced@:** d6d909c
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -192,7 +192,7 @@ test/  integration_test/  tool/  docs/
 
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
-GAP: Ağırlık/semptom/trend yok → T22–T24
+GAP: Semptom takibi ve trendler yok → T23–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
@@ -258,6 +258,8 @@ n-keto-tracker/
     features/
       recipes/
         recipe_detail_test.dart    # T19: 1 detay widget testi
+      weight/
+        weight_form_test.dart      # T22: 3 ağırlık form testi
       settings/
         goal_legend_test.dart      # T21: 3 lejant widget testi
       core/
@@ -282,6 +284,7 @@ n-keto-tracker/
       matching_engine_test.dart        # T12: 8 eşleştirme testi
       plan_repository_test.dart        # T20: 6 plan/birleştirme/kilit testi
       energy_test.dart                 # T21: 5 enerji testi
+      weight_test.dart                 # T22: 6 normalize/pencere testi
       meal_relation_test.dart          # T18: 6 ilişki testi
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
@@ -409,11 +412,9 @@ n-keto-tracker/
   - → restingEnergy/totalEnergy (Mifflin–St Jeor, iki katsayı, aktivite çarpanları sürümlenmiş) 5 test — 18 yaş altı/katsayı atlandı/gebelik → EnergyEstimateNotAllowed; GoalLegend widget (üç ayrı etiket+şekil, yalnız kayıtlı türler) 3 test; AC9 tür dönüşmezliği DB testi 1; 140 toplam yeşil
 
 ### Aşama 5 — Ağırlık, semptom, trendler
-- [ ] T22 [M] Ağırlık takibi
-  - Where: `lib/features/weight/`
-  - Do: MASTER §11.1: kg/lb giriş, normalize kg; tarih-saat, not, ölçüm koşulu; 7/30 gün değişim, yetersiz veride trend gösterme; hızlı/istemsiz kayıpta tanısız profesyonel değerlendirme önerisi; rozet/seri/kilo-baskısı dili yok
+- [x] T22 (2026-09-20, GLM-5.3) Ağırlık takibi
   - Done when: normalize + değişim penceresi birim testleri ve widget testleri geçer
-  - Needs: T7
+  - → lbToKg/kgToLb + WeightValue normalize + changeOverWindow (yetersiz veride null — trend yok) 6 birim test; WeightForm (/weight/new) 3 widget testi (lb→kg normalize, geçersiz red, TR virgül+koşul); Bugün testi gerçek forma uyarlandı; 149 toplam yeşil
 - [ ] T23 [M] Semptom takibi
   - Where: `lib/features/symptoms/`
   - Do: MASTER §11.2: yerel düzenlenebilir liste (bulantı, kusma, iştahsızlık, kabızlık, ishal, yorgunluk, baş ağrısı, baş dönmesi, nöbet olayı, uyku sorunu, diğer); şiddet 0–10, başlangıç, süre, not; ciddi/yeni belirtide teşhis yok → kendi sağlık planı + gerektiğinde yerel acil hizmet yönlendirmesi; öğün/GKI ile birlikte gösterim yalnız zamansal
@@ -513,7 +514,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T21 kapatıldı — enerji motoru + GoalLegend + AC9 testi; Aşama 4 bitti, A3 temiz; 140 test yeşil.
-Devam: T22 (ağırlık takibi: kg/lb normalize, 7/30 gün değişim) → T23 semptom → T24 trendler.
+Son: T22 kapatıldı — ağırlık normalize + değişim penceresi + form; 149 test yeşil.
+Devam: T23 (semptom takibi: yerel liste, şiddet 0–10, yönlendirme mesajı) → T24 trendler → Aşama 5 A3.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

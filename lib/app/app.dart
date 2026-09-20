@@ -10,7 +10,8 @@ import 'theme/app_theme.dart';
 /// yönlendirici. Marka adı tek yapılandırma noktasından gelir.
 ///
 /// [localeOverride] yalnızca testlerde kullanılır; üretimde sistem/ilk
-/// açılış seçimi (T9) belirler.
+/// açılış seçimi (T9) belirler. Testler global [appRouter]'ı yeniden
+/// kullanır (durumu pump'lar arası korunur).
 class NKetoApp extends StatelessWidget {
   const NKetoApp({super.key, this.localeOverride});
 

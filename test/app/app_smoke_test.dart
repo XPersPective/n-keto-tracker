@@ -3,27 +3,40 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:n_keto_tracker/app/app.dart';
+import 'package:n_keto_tracker/app/router.dart';
 
 void main() {
-  testWidgets('Bugün sekmesi ilk ekran; 5 sekmeli navigasyon var', (
+  testWidgets('İlk yol onboarding ilk adımı (dil seçimi)', (tester) async {
+    await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Choose your language'), findsOneWidget);
+    expect(find.text('Türkçe'), findsOneWidget);
+    expect(find.text('English'), findsOneWidget);
+    expect(find.byType(NavigationBar), findsNothing);
+  });
+
+  testWidgets('Ana kabuk: /today yolunda 5 sekme + Bugün placeholder', (
     tester,
   ) async {
     await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
     await tester.pumpAndSettle();
+    appRouter.go('/today');
+    await tester.pumpAndSettle();
 
     expect(find.byType(NavigationBar), findsOneWidget);
-    // EN varsayılan test yerel ayarı: 5 sekme etiketi görünür.
     expect(find.text('Today'), findsWidgets);
     expect(find.text('Log'), findsWidgets);
     expect(find.text('Plan'), findsWidgets);
     expect(find.text('Trends'), findsOneWidget);
     expect(find.text('Guide'), findsOneWidget);
-    // Bugün placeholder'ı yerinde.
     expect(find.text('This screen is being built.'), findsOneWidget);
   });
 
   testWidgets('Her sekme dokunuşla açılır', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
+    await tester.pumpAndSettle();
+    appRouter.go('/today');
     await tester.pumpAndSettle();
 
     // Sıra, turun 'Today' ile bitmesiyle router durumunu geri bırakır.
@@ -34,18 +47,20 @@ void main() {
     }
   });
 
-  testWidgets('TR yerel ayarında sekmeler Türkçe', (tester) async {
+  testWidgets('TR yerel ayarında onboarding Türkçe', (tester) async {
+    // Global router önceki testlerde /today'e taşınmış olabilir.
+    appRouter.go('/onboarding');
     await tester.pumpWidget(
       const ProviderScope(child: NKetoApp(localeOverride: Locale('tr'))),
     );
+    await tester.pump(); // locale çözümlemesi için ilk kare
     await tester.pumpAndSettle();
 
-    expect(find.text('Bugün'), findsWidgets);
-    expect(find.text('Günlük'), findsWidgets);
-    expect(find.text('Trendler'), findsWidgets);
-    expect(find.text('Rehber'), findsWidgets);
-    // IndexedStack ziyaret edilmiş dalları ağaçta tutabildiğinden en-az-bir
-    // eşleşme kullanılır.
-    expect(find.text('Bu ekran geliştiriliyor.'), findsWidgets);
+    expect(find.text('Dilinizi seçin'), findsOneWidget);
+    expect(
+      find.text('Kabul ediyorum'),
+      findsNothing,
+      reason: 'onam kutusu yalnız son adımda',
+    );
   });
 }

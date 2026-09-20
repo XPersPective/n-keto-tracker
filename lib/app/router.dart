@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../features/onboarding/onboarding_page.dart';
 import 'app_shell.dart';
 import 'l10n/generated/app_localizations.dart';
 
-/// 5 sekmeli uygulama yönlendiricisi (MASTER_PROMPT §5):
-/// Bugün / Günlük / Plan / Trendler / Rehber. Profil, ayarlar ve veri
-/// yönetimi sonraki görevlerde üst menüye bağlanır.
+/// Uygulama yönlendiricisi (MASTER_PROMPT §5): 5 sekmeli ana kabuk +
+/// onboarding akışı. Profil, ayarlar ve veri yönetimi sonraki görevlerde
+/// üst menüye bağlanır.
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/today',
+  initialLocation: '/onboarding',
   routes: [
+    GoRoute(
+      path: '/onboarding',
+      builder: (context, state) => const OnboardingPage(),
+    ),
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) =>
           AppShell(navigationShell: navigationShell),

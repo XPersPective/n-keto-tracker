@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T8 tamam: SQLCipher şifreleme gerçek (code 26 kanıtlı) + ADR. Sıradaki: T9 onboarding.
-> **Phase:** BUILD · **Next:** T9 · **Updated:** 2026-09-20 · **Synced@:** 052020b
+> **Status:** T9 tamam: 8 adımlı onboarding + onam kaydı, 34 test yeşil. Sıradaki: T10 risk kilidi.
+> **Phase:** BUILD · **Next:** T10 · **Updated:** 2026-09-20 · **Synced@:** 77c259e
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -190,7 +190,7 @@ test/  integration_test/  tool/  docs/
 - Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
-GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
+GAP: Risk kilidi yok → T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
@@ -231,13 +231,22 @@ n-keto-tracker/
     core/
       config/           # app_config (marka tek nokta), env_config (dart-define)
       database/         # T7–T8: tables.dart (27 tablo), database.dart (şifreli), .g.dart
+    features/
+      onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
   test/
     app/
       app_smoke_test.dart        # 5 sekme smoke + TR yerel ayar
       l10n_completeness_test.dart  # ARB anahtar eşitliği
     core/
-      database/database_test.dart  # T7: 9 DB testi
+      database/
+        database_test.dart         # T7: 9 DB testi
+        encrypted_open_test.dart   # T8: 4 şifreleme testi
+    features/
+      onboarding/
+        onboarding_controller_test.dart  # T9: 5 birim test
+        consent_repository_test.dart     # T9: 5 onam testi
+        onboarding_page_test.dart        # T9: 4 widget testi
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
@@ -304,11 +313,10 @@ n-keto-tracker/
   - Done when: ADR dosyası karar + gerekçe içeriyor; şifreleme uygulandıysa DB dosyası düz metin `sqlite3` ile açılamıyor (test/komut kanıtı), açılış testi geçiyor
   - → ADR-0001; sqlcipher build hook (`hooks.user_defines.sqlite3.source: sqlcipher`) + flutter_secure_storage (BSD-3) anahtar yönetimi; 4 test kanıtı: anahtar üretim/saklama, rastgelelik, düz sqlite3 açılışı code 26 "file is not a database" fırlatır (şifreleme GERÇEK), drift PRAGMA key açılışı çalışıyor; Android debug APK hook'la derlendi (494,9s)
   - Note: sqlcipher_flutter_libs EKLENMEDİ (pub.dev: 0.7.0+ no-op, sqlite3 2.x dönemine ait — ADR'de belgelendi)
-- [ ] T9 [M] Onboarding akışı
-  - Where: `lib/features/onboarding/`, `lib/app/router.dart`, ARB dosyaları
-  - Do: MASTER §4'teki 8 adım: 1) dil seçimi (TR/EN, ilk açılışta cihaz dili); 2) offline gizlilik özeti; 3) "tıbbi tavsiye değildir" bilgilendirmesi; 4) kullanım amacı çoklu seçim (hastalık modu YOK); 5) profil: yaş/boy/kilo/birim/aktivite (ad zorunlu değil, sonra tamamlanabilir); 6) enerji katsayısı seçimi — cinsiyet kimliği olmadığı saygılı dille açıklanır, atlanabilir; 7) güvenlik taraması (§4.7 listesi); 8) veri kalıcılığı uyarısı; onam ConsentRecords'a sürüm+dil+tarih+metin hash'iyle; tüm metinler ARB'de
+- [x] T9 (2026-09-20, GLM-5.3) Onboarding akışı
   - Done when: her adımın widget testi + ileri akış testi geçer; onam hash'i DB'de; onboarding ARB + ekranlarında hastalık adı lint'i temiz
-  - Needs: T7
+  - → 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı[saygılı dil+atlanabilir]→risk taraması→veri+onam); consent_repository (sürüm 1.0.0+SHA-256 hash, eski sürüm → yeniden onam); 14 yeni test (controller 5, consent 5, widget 4) dahil 34 test yeşil; OnboardingController Riverpod 3 Notifier; RadioGroup API (3.32+); ARB 47 anahtar TR/EN eşit
+  - Note: profil/katsayı alanları henüz yalnız controller'da; UserProfile'a yazım T10/T21 ile birlikte (DB yazma akışı user profile repository'siyle)
 - [ ] T10 [M] Risk kilidi
   - Where: `lib/features/onboarding/`, `lib/core/` (kilit provider'ı)
   - Do: 1) RiskScreening'de herhangi bir risk → plan üretimi ve otomatik hedef üretimi kilitlenir (FeatureLock provider); kilitliyken yalnız kayıt+eğitim + uzman değerlendirmesi mesajı; 2) tarama düzenlenince yeniden değerlendirme; 3) birim + widget testleri
@@ -477,7 +485,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T8 kapatıldı — SQLCipher (pubspec hooks) + flutter_secure_storage anahtar; 4 şifreleme testi (düz sqlite3 code 26 fırlatır = gerçek şifre); ADR-0001.
-Devam: T9 (onboarding 8 adım + ConsentRecords onam hash'i) → T10 (risk kilidi).
-Teknik not: DB şimdi şifreli; testlerde AppDatabase.forTesting (şifresiz bellek içi) kullanılır; yeni TEXT PK tablo = primaryKey override + build_runner.
+Son: T9 kapatıldı — onboarding 8 adım + consent repository (hash'li onam) + 14 yeni test; 34 toplam yeşil.
+Devam: T10 (FeatureLock: risk varken plan/hedef üretimi kilitli; RiskScreening'e yazım + yeniden değerlendirme) → T11 (GKI motoru).
+Teknik not: Riverpod 3 → Notifier API (StateNotifier yok); RadioGroup 3.32+ API; global appRouter testler arasında durum taşır (test başında go('/onboarding')).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

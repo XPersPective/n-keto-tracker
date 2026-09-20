@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T19 tamam: 20 tarif seed + seeder + detay sayfası; 125 test. Sıradaki: T20 haftalık plan + alışveriş.
-> **Phase:** BUILD · **Next:** T20 · **Updated:** 2026-09-20 · **Synced@:** 94a2efc
+> **Status:** T20 tamam: deterministik plan üretici + alışveriş birleştirme + risk kilidi entegre; 131 test. Sıradaki: T21 enerji + hedefler.
+> **Phase:** BUILD · **Next:** T21 · **Updated:** 2026-09-20 · **Synced@:** 5903fd9
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Plan/alışveriş/enerji/hedefler yok → T20–T21
+GAP: Enerji tahmini + üç hedef türü UI'sı yok → T21; Plan/alışveriş UI ekranları T24 öncesi
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
@@ -392,11 +392,10 @@ n-keto-tracker/
   - Done when: ölçekleme birim testi + tarif detay widget testi geçer; kontrol scripti: her malzemenin foodId'si foods.json'da var
   - → 20 seed tarif (tool/gen_recipes_seed.py; TR/EN başlık+adım, gram malzeme foods.json referanslı, porsiyon başı makrolar hesaplı, alerjen/süre/saklama); RecipeSeeder idempotent (5 test: malzeme-foodId bütünlüğü, idempotency, porsiyon-başı doğrulama, FK); RecipeDetailPage + widget test; 125 toplam yeşil
   - Note: porsiyon değişiminde ölçekleme scaleItem ile deterministik (T16 testleri); testlerde rootBundle YOK — seedFromJsonString(File) kullan
-- [ ] T20 [M] Haftalık plan + taslak üretici + alışveriş listesi
-  - Where: `lib/features/meal_plans/`, `lib/features/shopping/`
-  - Do: MASTER §10.2–10.3: elle plan + deterministik yerel taslak üretici (filtreler: alerji, hariç gıda, dil/kültür, öğün sayısı, kayıtlı kişisel/uzman hedefleri; çelişki/uygun tarif yoksa dürüst "uygun plan oluşturulamadı", kural gevşetme yok; enerji açığı/fasting/terapötik oran üretmez); kopyala/taşı/değiştir; alışveriş: tarih aralığından birleştir, canonical besin+uyumlu birim topla, çevrilemeyen birim ayrı, manuel madde korunur, kategori grupla, işaretle/düzenle; paylaşım yalnız kullanıcının açtığı sistem paylaşımı; risk kilidi (T10) aktifse üretici kilitli
+- [x] T20 (2026-09-20, GLM-5.3) Haftalık plan + taslak üretici + alışveriş listesi
   - Done when: üretici determinizm testi (aynı girdi → aynı çıktı), birleştirme birim testleri, plan→liste integration testi geçer
-  - Needs: T19, T10
+  - → PlanGenerator (deterministik, alerjen/kategori filtreleri, uygun yoksa null — kural gevşetme yok, enerji açığı/fasting üretmez) 4 test; ShoppingMerger (gram toplama, adet/dilim ayrı satır) + PlanRepository (savePlan/collectIngredients/createShoppingList + manuel madde koruması) 2 test; risk kilidi T10 entegrasyon testi (kilitliyken PlanLockedException); 131 toplam yeşil
+  - Note: Plan UI ekranı T24 öncesi tamamlanacak; şimdilik motor+repo+test katmanı tamam. Kopyala/taşı/değiştir savePlanEntry ile desteklenir (UI T24)
 - [ ] T21 [M] Enerji tahmini + üç hedef türü
   - Where: `lib/core/units/energy.dart`, `lib/features/settings/` (hedefler), Goal tablosu (T7)
   - Do: MASTER §7 + §6.5: Mifflin–St Jeor (erkek +5 / kadın −161), aktivite katsayıları kaynaklı sürümlenmiş içerikte; sonuç "genel tahmin" etiketi + sağlıklı yetişkin kapsamı açıklaması; 18 yaş altı/gebelik-emzirme/kapsam dışı → hesap üretme; Goal'da `researchReference`/`clinicianTarget`/`personalTrackingGoal` ayrı türler, asla birleşmez; klinisyen hedefi "kim/ne zaman" alanlı, uygulama üretmez/doğrulamaz; grafik lejantı üç ayrı günlük-dil etiket; hedefe erişememe alarmı/suçluluk dili yok
@@ -507,7 +506,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T19 kapatıldı — 20 tarif seed + seeder + detay sayfası; 125 test yeşil.
-Devam: T20 (haftalık plan + deterministik taslak üretici + alışveriş listesi; risk kilidi T10 entegre) → T21 (enerji tahmini + üç hedef türü).
-Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur.
+Son: T20 kapatıldı — PlanGenerator + ShoppingMerger + PlanRepository; 131 test yeşil.
+Devam: T21 (Mifflin–St Jeor + üç hedef türü UI'sı; UserProfile'a onboarding yazımı) → Aşama 4 A3.
+Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

@@ -1,25 +1,120 @@
 {
   "@@locale": "en",
   "appTitle": "N Keto Tracker",
-  "@appTitle": {
-    "description": "Brand name; identical in every locale (MASTER_PROMPT 0.2)."
-  },
   "navToday": "Today",
-  "@navToday": { "description": "Bottom navigation tab 1: daily overview." },
   "navLog": "Log",
-  "@navLog": { "description": "Bottom navigation tab 2: chronological timeline." },
   "navPlan": "Plan",
-  "@navPlan": { "description": "Bottom navigation tab 3: weekly meal planning." },
   "navTrends": "Trends",
-  "@navTrends": { "description": "Bottom navigation tab 4: charts." },
   "navGuide": "Guide",
-  "@navGuide": { "description": "Bottom navigation tab 5: education and sources." },
   "pageUnderConstruction": "This screen is being built.",
-  "@pageUnderConstruction": {
-    "description": "Placeholder body text for not-yet-implemented screens."
-  },
   "generalInfoDisclaimer": "For general information only; not medical advice.",
-  "@generalInfoDisclaimer": {
-    "description": "Short footer shown wherever health data is interpreted (MASTER_PROMPT 1.3)."
+  "onboardingLanguageTitle": "Choose your language",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Your data stays on your device",
+  "onboardingPrivacyBody": "N Keto Tracker works fully offline. Your measurements, meals and notes are stored only in this app on your device. There is no account, no advertising and no internet connection. Deleting the app deletes your data; you can export a backup anytime.",
+  "onboardingMedicalTitle": "Not medical advice",
+  "onboardingMedicalBody": "This app is for general information and personal tracking. It is not medical advice, diagnosis or treatment, and it does not replace care from qualified health professionals.",
+  "onboardingPurposeTitle": "What do you want to track?",
+  "onboardingPurposeLearn": "Learn about ketogenic nutrition",
+  "onboardingPurposeMeals": "Plan meals",
+  "onboardingPurposeMacros": "Track macros and net carbs",
+  "onboardingPurposeMeasure": "Track glucose, ketones and GKI",
+  "onboardingProfileTitle": "About you (optional)",
+  "onboardingProfileBody": "You can skip this and add it later in settings. It is used only for a general energy estimate.",
+  "onboardingBirthYear": "Birth year",
+  "onboardingHeightCm": "Height (cm)",
+  "onboardingWeightKg": "Weight (kg)",
+  "onboardingEnergyCoeffTitle": "Energy estimate coefficient",
+  "onboardingEnergyCoeffBody": "The general energy estimate uses one of two published coefficients. This is not about your gender identity — it is just which equation version fits you best. You can also skip energy estimates entirely.",
+  "onboardingEnergyCoeffSkip": "Skip energy estimates",
+  "onboardingScreeningTitle": "A few safety questions",
+  "onboardingScreeningBody": "These questions do not diagnose anything. They only turn off automatic plan and goal suggestions when extra care is needed.",
+  "onboardingScreeningDiabetes": "Have diabetes",
+  "onboardingScreeningMedication": "Use glucose-lowering medication or insulin",
+  "onboardingScreeningPregnancy": "Am pregnant or breastfeeding",
+  "onboardingScreeningOrgan": "Have kidney, liver or pancreas disease",
+  "onboardingScreeningEatingDisorder": "Have a history of an eating disorder",
+  "onboardingScreeningWeightLoss": "Have had significant unintentional weight loss",
+  "onboardingScreeningUnder18": "Am under 18 years old",
+  "onboardingScreeningLockedNote": "Because of your answers, automatic plan and goal creation stays off. Recording and learning features remain available. Please review this with a qualified health professional.",
+  "onboardingDataTitle": "Your data",
+  "onboardingDataBody": "Your records stay only on this device. If you lose or uninstall the app without a backup export, the data cannot be recovered.",
+  "onboardingConsentTitle": "Consent",
+  "onboardingConsentBody": "I have read and accept the privacy summary and the notice that this app is not medical advice. I understand my data stays on this device only.",
+  "onboardingConsentCheckbox": "I accept",
+  "onboardingNext": "Next",
+  "onboardingBack": "Back",
+  "onboardingFinish": "Start using the app",
+  "onboardingStepOf": "Step {current} of {total}",
+  "@onboardingLanguageTitle": {
+    "description": "Onboarding step 1: language selection."
+  },
+  "@onboardingPrivacyTitle": {
+    "description": "Onboarding step 2: offline privacy summary."
+  },
+  "@onboardingPrivacyBody": {
+    "description": "Offline privacy summary (MASTER_PROMPT 4 step 2/8)."
+  },
+  "@onboardingMedicalTitle": {
+    "description": "Onboarding step 3: non-medical notice."
+  },
+  "@onboardingMedicalBody": {
+    "description": "Non-medical notice (MASTER_PROMPT 4 step 3)."
+  },
+  "@onboardingPurposeTitle": {
+    "description": "Onboarding step 4: usage purpose (multi-select)."
+  },
+  "@onboardingProfileTitle": {
+    "description": "Onboarding step 5: profile, skippable."
+  },
+  "@onboardingProfileBody": {
+    "description": "Profile explainer."
+  },
+  "@onboardingEnergyCoeffTitle": {
+    "description": "Onboarding step 6: Mifflin-St Jeor coefficient choice, skippable."
+  },
+  "@onboardingEnergyCoeffBody": {
+    "description": "Respectful coefficient explanation (MASTER_PROMPT 4 step 6)."
+  },
+  "@onboardingEnergyCoeffSkip": {
+    "description": "Skip energy estimates entirely."
+  },
+  "@onboardingScreeningTitle": {
+    "description": "Onboarding step 7: safety screening."
+  },
+  "@onboardingScreeningBody": {
+    "description": "Screening explainer (MASTER_PROMPT 4 step 7)."
+  },
+  "@onboardingScreeningLockedNote": {
+    "description": "Shown when any risk is present (MASTER_PROMPT 4 step 7)."
+  },
+  "@onboardingDataTitle": {
+    "description": "Onboarding step 8: data persistence notice."
+  },
+  "@onboardingDataBody": {
+    "description": "Data persistence notice (MASTER_PROMPT 4 step 8)."
+  },
+  "@onboardingConsentTitle": {
+    "description": "Onboarding consent step title."
+  },
+  "@onboardingConsentBody": {
+    "description": "Consent statement accepted at onboarding end."
+  },
+  "@onboardingConsentCheckbox": {
+    "description": "Consent checkbox label."
+  },
+  "@onboardingFinish": {
+    "description": "Final onboarding button."
+  },
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
   }
 }

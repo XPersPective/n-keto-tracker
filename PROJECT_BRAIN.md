@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T16 tamam: öğün formu + toplamlar + hızlı tekrar; 103 test. Sıradaki: T17 gıda rehberi.
-> **Phase:** BUILD · **Next:** T17 · **Updated:** 2026-09-20 · **Synced@:** 93a7fd3
+> **Status:** T17 tamam: 3 gruplu gıda rehberi + içerik lint'i; 109 test. Sıradaki: T18 öğün-ölçüm ilişkisi.
+> **Phase:** BUILD · **Next:** T18 · **Updated:** 2026-09-20 · **Synced@:** 58f40cc
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Gıda rehberi, öğün-ölçüm ilişkisi yok → T17–T18
+GAP: Öğün-ölçüm ilişkisi yok → T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
@@ -255,6 +255,9 @@ n-keto-tracker/
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
+      evidence/
+        guide_content_lint_test.dart  # T17: 4 içerik lint testi
+        guide_page_test.dart          # T17: 2 rehber widget testi
       measurements/
         measurement_session_form_test.dart  # T12: 3 form testi
         log_page_test.dart                  # T13: 3 çizelge/grafik testi
@@ -371,10 +374,10 @@ n-keto-tracker/
   - Done when: net karb + ölçekleme birim testleri ve arama→ekle→toplam güncellenir widget testi geçer
   - → scalePer100g/scaleItem saf ölçekleme (6 tablo testi, kayan nokta tuzağı dahil); MealRepository (çoklu besin transaction, günlük toplamlar SQL birleşimi, kullanıcı beyanı geçersiz kılması, quickRepeat+repeatMeal, TR/EN arama) 5 test; MealForm widget 2 test (arama→ekle→kaydet DB kanıtı, öğesiz red); 103 toplam yeşil
   - Note: Meal.isFavorite eklendi (v1 şema, yayın öncesi); özel besin girişi arayüzü T17 ile; Bugün testi gerçek forma uyarlandı
-- [ ] T17 [M] Gıda rehberi
-  - Where: `lib/features/evidence/` (rehber görünümü) + seed içerik
-  - Do: MASTER §9: üç grup (genellikle tercih edilebilir / porsiyon-sıklık sınırlı / ketojenik hedefle genellikle uyumsuz); her kart: Neden? + tipik porsiyon + yaklaşık net karb + veri kaynağı + alternatifler + kanıt etiketi; Türkiye + uluslararası besinler; ahlaki/korkutucu dil yok
+- [x] T17 (2026-09-20, GLM-5.3) Gıda rehberi
   - Done when: rehber widget testi geçer; içerik lint'i ("zehir", "mucize", "kesinlikle yasak" vb.) temiz
+  - → food_guide.json (12 kart, 3 grup; Neden?+porsiyon+alternatif+E6 etiket); GuidePage Rehber sekmesinde (grup başlıkları + açılır kartlar + alt bilgi); 4 içerik lint testi (yasaklı dil TR/EN, E6 zorunlu) + 2 widget testi; 109 toplam yeşil
+  - Note: rehber yükleme guideCardsProvider'a taşındı (FutureBuilder'ın ardışık test rootBundle tuzağı); test override deseni AsyncValue.data
   - Needs: T15
 - [ ] T18 [M] Öğün–ölçüm ilişkisi
   - Where: `lib/features/measurements/`, `lib/features/dashboard/`
@@ -502,7 +505,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T16 kapatıldı — MealForm (arama→ekle→kaydet), günlük toplamlar, hızlı tekrar/favori; 103 test yeşil.
-Devam: T17 (gıda rehberi: üç grup, Neden? kartları, ahlaki dil lint'i) → T18 (öğün-ölçüm ilişkisi) → Aşama 3 A3.
-Teknik not: MealForm Navigator.pop yapar (testte toast iddiası yok, DB kanıt); /meals/new artık gerçek form.
+Son: T17 kapatıldı — gıda rehberi (12 kart/3 grup) + içerik lint'i; 109 test yeşil.
+Devam: T18 (öğün-ölçüm ilişkisi; Aşama 3'ün son görevi → A3) → T19 tarifler.
+Teknik not: seed JSON yüklemeleri provider'a taşı; testlerde override; rootBundle ardışık test tuzaklı.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

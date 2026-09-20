@@ -220,5 +220,48 @@
         "type": "String"
       }
     }
+  },
+  "guideGroupPrefer": "Genellikle tercih edilebilir",
+  "guideGroupLimit": "Porsiyon/sıklık sınırı gerekebilir",
+  "guideGroupAvoid": "Ketojenik hedefle genellikle uyumsuz",
+  "guideWhyHeading": "Neden?",
+  "guideTypicalPortion": "Tipik porsiyon: {portion} (~{grams} g)",
+  "guideAlternatives": "Alternatifler: {value}",
+  "guideDataSource": "Veri kaynağı: {value}",
+  "guideCardMeatFishEggs": "Et, balık ve yumurta",
+  "guideCardLowCarbVegetables": "Düşük karbonhidratlı sebzeler",
+  "guideCardFatsOils": "Yağlar ve yağlı tohumlar",
+  "guideCardNutsSeeds": "Kuruyemiş ve çekirdekler",
+  "guideCardBerries": "Çilek/Ahududu gibi meyveler",
+  "guideCardDairy": "Tam yağlı süt ürünleri",
+  "guideCardFruit": "Meyveler",
+  "guideCardLegumes": "Baklagiller",
+  "guideCardMilkDrinks": "Süt ve tatlı içecekler",
+  "guideCardSugaryDrinks": "Şekerli içecekler",
+  "guideCardStarches": "Ekmek, pirinç, patates",
+  "guideCardSweets": "Tatlılar ve tatlı atıştırmalıklar",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

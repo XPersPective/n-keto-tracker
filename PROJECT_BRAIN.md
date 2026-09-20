@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T4 tamam: Flutter iskeleti (5 sekme, TR/EN, offline kanıtı, CI) analiz+test temiz. Sıradaki: T5 depo dosyaları.
-> **Phase:** BUILD · **Next:** T5 · **Updated:** 2026-09-20 · **Synced@:** 9556b19
+> **Status:** T5 tamam: 11 topluluk dosyası + lisans kayıtları. Sıradaki: T6 gitleaks+dependabot.
+> **Phase:** BUILD · **Next:** T6 · **Updated:** 2026-09-20 · **Synced@:** fb48ebe
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -189,7 +189,7 @@ test/  integration_test/  tool/  docs/
 - Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README hâlâ şablon README'si (T5'te değişir)
 
-GAP: Depo topluluk dosyaları (README/CONTRIBUTING/SECURITY/THIRD_PARTY/şablonlar) yok → T5–T6
+GAP: gitleaks CI adımı + dependabot eksik → T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
@@ -273,11 +273,10 @@ n-keto-tracker/
   - Done when: `flutter analyze` temiz; `flutter test` geçer (5 sekme smoke widget testi dahil); `bash tool/check_offline.sh` exit 0; AndroidManifest'te `grep -c INTERNET` = 0
   - → analyze "No issues"; 6 test yeşil (3 smoke + 3 l10n); check_offline exit 0; manifest'lerde INTERNET=0 (main+debug+profile). flutter create (app.nketo) + elle ORTAK §1.4 sertleştirme; Riverpod 3.4.3/go_router 18.0.1/drift 2.35.0/fl_chart 1.2.0/freezed 4.0.2 zinciri kilitlendi
   - Note: debug/profile manifest'lerinden INTERNET kaldırıldı → debug attach (hot reload) emülatörde T30'da doğrulanacak; sorun çıkarsa yerel (commit dışı) geçici çözüm + görev
-- [ ] T5 [L] Depo topluluk dosyaları
-  - Where: `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_LICENSES.md`, `CHANGELOG.md`, `.github/ISSUE_TEMPLATE/{bug_report.yml,feature_request.yml}`, `.github/pull_request_template.md` (çoğu yeni; README üzerine yaz)
-  - Do: 1) README'yi uygulama README'si yap: ürün amacı, ekran görüntüsü yer tutucu, özellikler, offline mimari, sağlık uyarısı, hızlı kurulum, desteklenen Flutter sürümü, kod üretimi, test komutları, katkı bağlantısı, GPL-3.0 lisansı + "ad ve logo markadır, lisansa dahil değildir" notu, keystore yedekleme anlatımı (değer yok); 2) CONTRIBUTING: ortam, branch/commit beklentisi, test+çeviri katkısı, bilimsel içerikte kaynak/provenance şartı + ORTAK §2'deki kısa katkı lisans sözleşmesi; 3) SECURITY: sağlık verisi mahremiyeti, açık bildirim yolu — uydurma adres YOK, "proje sahibi ekleyecek" yer tutucusu; 4) CODE_OF_CONDUCT: Contributor Covenant v2.1 (atıflı); 5) THIRD_PARTY dosyaları: her paket/font/görsel için ad+sürüm+lisans+URL+kullanım; 6) issue/PR şablonları: PR'de test kanıtı, ekran görüntüsü, erişilebilirlik, mahremiyet/offline, lisans kontrol kutuları
+- [x] T5 (2026-09-20, GLM-5.3) Depo topluluk dosyaları
   - Done when: dosyalar mevcut; README'de "N Keto Tracker" ve "n-keto-tracker" geçiyor; `git ls-files | grep -c "^LICENSE$"` = 1 (GPL-3.0 korunuyor); SECURITY.md'de `@` içeren adres yok
-  - Needs: T4
+  - → 11 dosya (README, CONTRIBUTING+lisans sözleşmesi, SECURITY, CoC v2.1 atıflı, THIRD_PARTY×2 pub-cache kanıtlı lisanslarla, CHANGELOG, issue×2 + PR şablonu); README marka/trademark notlu, keystore uyarılı; ek temizlik: cupertino_icons pubspec'ten kaldırıldı, .zcodeignore takipten çıkarıldı + ignore'landı
+  - Note: CoC Enforcement iletişim yeri ve SECURITY adresi bilinçli yer tutucu — sahibin onayıyla doldurulacak
 - [ ] T6 [L] gitleaks + dependabot + gizli tarama
   - Where: `.gitleaks.toml` (var), `.github/dependabot.yml` (yeni), pre-commit kancası talimatı `CONTRIBUTING.md`'de
   - Do: 1) ci.yml'e gitleaks adımı (T4 ile çakışıyorsa oraya ekle); 2) dependabot.yml: pub, gradle, github-actions (haftalık); 3) pre-commit gitleaks kurulumunu CONTRIBUTING'e yaz; 4) `gitleaks detect` yerelde temiz çalıştığını doğrula
@@ -467,7 +466,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T4 kapatıldı — Flutter iskeleti çalışır durumda (analyze temiz, 6 test yeşil, check_offline exit 0, manifestlerde INTERNET=0).
-Devam: T5 (depo topluluk dosyaları) → T6 (gitleaks CI + dependabot) → T7 (Drift şeması).
-Uyarı: debug attach (hot reload) INTERNET kaldırmasıyla emülatörde doğrulanmadı — T30 smoke'ında kanıtlanacak.
+Son: T5 kapatıldı — README/CONTRIBUTING/SECURITY/CoC/THIRD_PARTY×2/CHANGELOG/issue+PR şablonları; cupertino_icons temizlendi; .zcodeignore untrack.
+Devam: T6 (gitleaks CI adımı zaten var — dependabot.yml + yerel doğrulama) → T7 (Drift şeması, 27 tablo).
+Uyarı: SECURITY/CoC adres alanları yer tutucu (sahip dolduracak). Debug attach T30'da doğrulanacak.
 Kritik düzeltme (T2): 5. kaynak ilk yazarı **Amaral LJ**; §13 sayım 27 tablo.

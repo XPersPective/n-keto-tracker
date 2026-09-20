@@ -30,7 +30,8 @@ void main() {
     expect(find.text('Plan'), findsWidgets);
     expect(find.text('Trends'), findsOneWidget);
     expect(find.text('Guide'), findsOneWidget);
-    expect(find.text('This screen is being built.'), findsOneWidget);
+    // Bugün artık gerçek ekran: hızlı eylemler görünür.
+    expect(find.text('Add measurement'), findsOneWidget);
   });
 
   testWidgets('Her sekme dokunuşla açılır', (tester) async {

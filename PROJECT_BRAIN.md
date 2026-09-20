@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T10 tamam: risk kilidi (kilit + üretim reddi + yeniden değerlendirme). Aşama 1 bitti → A3. Sıradaki: T11 GKI motoru.
-> **Phase:** BUILD · **Next:** T11 · **Updated:** 2026-09-20 · **Synced@:** 46ccd96
+> **Status:** T11 tamam: GKI motoru + 18 vektör yeşil (AC2 çekirdeği), 63 test. Sıradaki: T12 ölçüm girişi.
+> **Phase:** BUILD · **Next:** T12 · **Updated:** 2026-09-20 · **Synced@:** a52efd9
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
+GAP: Ölçüm girişi, eşleştirme, günlük, Bugün ekranı yok → T12–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
@@ -233,6 +233,7 @@ n-keto-tracker/
       database/         # T7–T8: tables.dart (27 tablo), database.dart (şifreli), .g.dart
     privacy/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
+    units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
     features/
       onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
@@ -249,6 +250,10 @@ n-keto-tracker/
         onboarding_controller_test.dart  # T9: 5 birim test
         consent_repository_test.dart     # T9: 5 onam testi
         onboarding_page_test.dart        # T9: 4 widget testi
+      privacy/risk_lock_test.dart  # T10: 4 kilit testi
+    units/
+      gki_engine_test.dart             # T11: 25 test (18 fixture vektörü dahil)
+      formula_single_source_test.dart  # T11: formül tekrar yasağı grep
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
@@ -324,11 +329,10 @@ n-keto-tracker/
   - → riskLockProvider + guardPlanGeneration kapısı (PlanLockedException); 4 birim test (kilit aç/kapa, yeniden değerlendirme, üretim reddi); kilit mesajı gösterimi T9 widget testinde kanıtlı ('risk işaretlendiğinde kilit notu görünür'); 38 toplam test yeşil
 
 ### Aşama 2 — Ölçüm ve GKI
-- [ ] T11 [H] GKI saf hesap motoru
-  - Where: `lib/core/units/{gki.dart,glucose.dart,formula_version.dart}`, `test/core/units/`
-  - Do: 1) mg/dL→mmol/L (÷18.0, ara yuvarlama yok), GKI=mmol/L÷BHB; BHB≤0, glukoz≤0, NaN/Infinity → doğrulama hatası (sessiz clamp yok); 2) TR virgül/EN nokta ondalık ayrıştırıcı; 3) FORMULA_VERSION sabiti her hesap sonucuna etiketlenir; 4) `test/fixtures/gki_reference_cases.json` (T2) parametreli test olarak koşar; 5) formülün bu modül dışında tekrarını yasaklayan grep testi
+- [x] T11 (2026-09-20, GLM-5.3) GKI saf hesap motoru
   - Done when: `flutter test test/core/units/` geçer; 90mg/dL+2.5mmol/L=2.0 dahil tüm fixture'lar yeşil
-  - Needs: T2, T7
+  - → GkiEngine (saf, fromMmolL/fromRaw, GkiResult+formulaVersion etiketi), GlucoseValue (ham+birim+normalize, mmol/L'de çift dönüşüm yok), parseDecimal (TR virgül/EN nokta/binlik ayraç), BHB≤0/glukoz≤0/NaN/Inf/boş girişte sealed hata türleri; 25 birim test: 18 fixture vektörü parametreli yeşil + ara yuvarlama ayrıştırma + formül tek-kaynak grep testi; toplam 63 test yeşil
+  - Note: fixture formulaVersion "gki-v1" string'ine hizalandı (T2'de sayısaldı; anlamsal değişiklik yok). Ara yuvarlama testi 97/2.9 vakasıyla yanlış yolu (1.8620…) ayrıştırıyor
 - [ ] T12 [M] Ölçüm girişi + eşleştirme
   - Where: `lib/features/measurements/`
   - Do: 1) birleşik ölçüm oturumu formu (glukoz mg/dL|mmol/L, kan BHB mmol/L, kaynak türü, bağlam etiketi, not); idrar/nefes ketonu ayrı tür, GKI'ye girmez; 2) ayrı kayıtlarda eşleştirme önerisi: pencere varsayılan ±5 dk (ayar 1–15), en küçük |Δt|, eşitlikte erken zaman, ölçüm tek oturumda, onay olmadan GKI yok, pencere dışı otomatik eşleşme yok; 3) düzenlemede GKI deterministik yeniden hesap, silmede geçersizleştir + bildir; 4) çift kayıt uyarısı (zaman/değer benzerliği, yine kaydedilebilir); 5) birim + widget testleri (MASTER §16.1 eşleştirme maddeleri)
@@ -486,7 +490,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T10 kapatıldı — riskLockProvider + guardPlanGeneration; Aşama 1 (T7–T10: veri katmanı + onboarding) bitti, 38 test yeşil.
-Devam: T11 (GKI saf motoru: mg/dL↔mmol/L, T2'nin 18 vektörü parametreli test, FORMULA_VERSION, formül-tekrarı grep testi).
-Teknik not: Riverpod 3 → Notifier; RadioGroup 3.32+; global appRouter test durumunu taşır; DB şifreli (testler bellek içi şifresiz).
+Son: T11 kapatıldı — GkiEngine saf motor, 18 referans vektörü parametreli test, formül tek-kaynak grep testi; 63 test yeşil. AC2 çekirdeği tamam.
+Devam: T12 (ölçüm oturumu formu + eşleştirme: ±5 dk pencere, en küçük |Δt|, tek oturum, onaysız GKI yok, düzenlemede yeniden hesap/silmede geçersizleştirme).
+Teknik not: GKI/birim hesabı yalnız lib/core/units; grep testi ihlali build'i düşürür. Fixture formulaVersion "gki-v1" (string).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

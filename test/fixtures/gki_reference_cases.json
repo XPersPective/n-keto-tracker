@@ -1,6 +1,6 @@
 {
   "$comment": "N Keto Tracker — GKI referans test vektörleri. Formül (MASTER_PROMPT §2.4, normatif): glucoseMmolL = glucoseMgDl / 18.0; GKI = glucoseMmolL / bhbMmolL. Kaynak doğrulama: docs/research/EVIDENCE_VERIFICATION.md (Meidenbauer 2015 tam metni 18.016 kullanır; spec 18.0'ı sabitler — bkz. EVIDENCE_VERIFICATION.md 'Dönüşüm katsayısı kaydı'). Beklenen değerler tam hassasiyetle yazılmıştır; testler 1e-9 toleransla karşılaştırır ve ARA YUVARLAMA YASAKTIR.",
-  "formulaVersion": 1,
+  "formulaVersion": "gki-v1",
   "glucoseMgDlToMmolLDivisor": 18.0,
   "errorCodes": {
     "BHB_MUST_BE_POSITIVE": "BHB <= 0 oldugunda GKI hesaplanmaz (bolme yok)",

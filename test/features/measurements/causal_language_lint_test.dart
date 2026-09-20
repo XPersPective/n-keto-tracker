@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
-
 /// T18 nedensel dil lint'i (MASTER_PROMPT §8.3): öğün-ölçüm ilişkisi
 /// yalnızca zamansal anlatılabilir; nedensellik iddiası içeren ifadeler
 /// ARB'ye sızmaz.

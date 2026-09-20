@@ -1,0 +1,828 @@
+{
+  "$comment": "N Keto Tracker seed tarifleri. Malzemeler foods.json kayitlarina referanslidir; porsiyon basi degerler malzemelerden hesaplandi (netCarb = max(0, total - fiber)).",
+  "contentVersion": "recipe-seed-v1.0",
+  "releasedAt": "2026-09-20",
+  "count": 20,
+  "recipes": [
+    {
+      "id": "seed-recipe-menemen",
+      "titleTr": "Menemen (ekmeksiz)",
+      "titleEn": "Menemen (no bread)",
+      "mealType": "breakfast",
+      "servings": 2,
+      "prepMinutes": 15,
+      "allergens": [
+        "süt ürünü/jumurta"
+      ],
+      "stepsTr": "Yumurtayı yağda pişirin; sebzeleri ekleyip karıştırın. Tuz ve karabiberle servis edin.",
+      "stepsEn": "Crack eggs into hot oil; add vegetables and stir until set. Season with salt and pepper.",
+      "storageTr": "Buzdolabında 1 gün.",
+      "storageEn": "Ekmek yerine yeşillik tabağıyla servis edin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 165.4,
+        "proteinG": 10.1,
+        "fatG": 12.3,
+        "carbohydrateTotalG": 3.6,
+        "fiberG": 1.0,
+        "netCarbG": 2.6
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-egg",
+          "grams": 150
+        },
+        {
+          "foodId": "seed-tomato",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-green-pepper",
+          "grams": 50
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 10
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-salmon-broccoli",
+      "titleTr": "Izgara somon ve brokoli",
+      "titleEn": "Grilled salmon with broccoli",
+      "mealType": "dinner",
+      "servings": 2,
+      "prepMinutes": 20,
+      "allergens": [
+        "balık"
+      ],
+      "stepsTr": "Somonu baharatlayıp ızgarada pişirin; buharda brokoliyi yanına alın.",
+      "stepsEn": "Season and grill the salmon; steam broccoli as a side.",
+      "storageTr": "Aynı gün tüketin.",
+      "storageEn": "Limon ve zeytinyağı ile tatlandırın.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 390.2,
+        "proteinG": 33.4,
+        "fatG": 25.5,
+        "carbohydrateTotalG": 6.6,
+        "fiberG": 2.6,
+        "netCarbG": 4.0
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-salmon",
+          "grams": 300
+        },
+        {
+          "foodId": "seed-broccoli",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 10
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-chicken-salad",
+      "titleTr": "Tavuklu yeşil salata",
+      "titleEn": "Chicken green salad",
+      "mealType": "lunch",
+      "servings": 2,
+      "prepMinutes": 25,
+      "allergens": [
+        "yumurta"
+      ],
+      "stepsTr": "Izgara tavuğu dilimleyin; yeşillikler ve zeytinyağıyla karıştırın.",
+      "stepsEn": "Slice grilled chicken; toss with greens and olive oil.",
+      "storageTr": "Sosuz buzdolabında 1 gün.",
+      "storageEn": "Avokado ekleyebilirsiniz.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 288.6,
+        "proteinG": 39.7,
+        "fatG": 12.2,
+        "carbohydrateTotalG": 3.5,
+        "fiberG": 1.3,
+        "netCarbG": 2.2
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-chicken-breast",
+          "grams": 250
+        },
+        {
+          "foodId": "seed-lettuce",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-cucumber",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 15
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-cheese-omelette",
+      "titleTr": "Peynirli omlet",
+      "titleEn": "Cheese omelette",
+      "mealType": "breakfast",
+      "servings": 1,
+      "prepMinutes": 10,
+      "allergens": [
+        "yumurta"
+      ],
+      "stepsTr": "Yumurtaları çırpın; tavada pişirin; peyniri ekleyip katlayın.",
+      "stepsEn": "Whisk eggs; cook in a pan; add cheese and fold.",
+      "storageTr": "Aynı gün tüketin.",
+      "storageEn": "Yeşil biber ekleyin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 306.0,
+        "proteinG": 18.4,
+        "fatG": 24.5,
+        "carbohydrateTotalG": 2.3,
+        "fiberG": 0.0,
+        "netCarbG": 2.3
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-egg",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-white-cheese",
+          "grams": 40
+        },
+        {
+          "foodId": "seed-butter",
+          "grams": 8
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-beef-saute",
+      "titleTr": "Et sote",
+      "titleEn": "Beef sauté",
+      "mealType": "dinner",
+      "servings": 3,
+      "prepMinutes": 30,
+      "allergens": [
+        "et"
+      ],
+      "stepsTr": "Etleri kendi suyunca pişirin; biber ve baharat ekleyin.",
+      "stepsEn": "Cook beef in its juices; add peppers and spices.",
+      "storageTr": "Buzdolabında 2 gün.",
+      "storageEn": "Kabak da ekleyebilirsiniz.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 233.5,
+        "proteinG": 28.8,
+        "fatG": 12.1,
+        "carbohydrateTotalG": 1.5,
+        "fiberG": 0.6,
+        "netCarbG": 1.0
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-beef-ground-lean",
+          "grams": 400
+        },
+        {
+          "foodId": "seed-green-pepper",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 15
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-cauliflower-mash-meatballs",
+      "titleTr": "Karnabahar püresi ve köfte",
+      "titleEn": "Cauliflower mash with meatballs",
+      "mealType": "dinner",
+      "servings": 2,
+      "prepMinutes": 35,
+      "allergens": [
+        "et"
+      ],
+      "stepsTr": "Karnabaharı haşlayıp ezip tereyağıyla püre yapın; köfteleri ayrı tavada pişirin.",
+      "stepsEn": "Boil and mash cauliflower with butter; pan-fry meatballs.",
+      "storageTr": "Buzdolabında 2 gün.",
+      "storageEn": "Püreye sarımsak ekleyin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 327.2,
+        "proteinG": 36.0,
+        "fatG": 16.7,
+        "carbohydrateTotalG": 10.0,
+        "fiberG": 4.0,
+        "netCarbG": 6.0
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-cauliflower",
+          "grams": 400
+        },
+        {
+          "foodId": "seed-butter",
+          "grams": 20
+        },
+        {
+          "foodId": "seed-beef-ground-lean",
+          "grams": 300
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-walnut-yogurt",
+      "titleTr": "Cevizli süzme yoğurt",
+      "titleEn": "Strained yogurt with walnuts",
+      "mealType": "snack",
+      "servings": 1,
+      "prepMinutes": 5,
+      "allergens": [
+        "süt ürünü"
+      ],
+      "stepsTr": "Yoğurdu kaseye alın; ceviz ve tarçınla süsleyin.",
+      "stepsEn": "Spoon yogurt into a bowl; top with walnuts.",
+      "storageTr": "Taze tüketin.",
+      "storageEn": "Tatlılık için tarçıyin yeterli; bal EKLEMEYİN.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 390.8,
+        "proteinG": 17.0,
+        "fatG": 30.0,
+        "carbohydrateTotalG": 11.7,
+        "fiberG": 1.3,
+        "netCarbG": 10.4
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-greek-yogurt",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-walnut",
+          "grams": 20
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-chicken-soup",
+      "titleTr": "Tavuk çorbası",
+      "titleEn": "Chicken soup",
+      "mealType": "lunch",
+      "servings": 4,
+      "prepMinutes": 25,
+      "allergens": [
+        "et"
+      ],
+      "stepsTr": "Kemik suyunu kaynatın; tavuk ve sebzeleri ekleyip 15 dk pişirin.",
+      "stepsEn": "Simmer broth; add chicken and vegetables, cook 15 min.",
+      "storageTr": "Buzdolabında 3 gün.",
+      "storageEn": "Yumurta ekleyerek proteinini artırın.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 120.0,
+        "proteinG": 19.5,
+        "fatG": 2.7,
+        "carbohydrateTotalG": 3.8,
+        "fiberG": 0.7,
+        "netCarbG": 3.1
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-bone-broth",
+          "grams": 800
+        },
+        {
+          "foodId": "seed-chicken-breast",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-carrot",
+          "grams": 50
+        },
+        {
+          "foodId": "seed-celeriac",
+          "grams": 80
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-avocado-egg",
+      "titleTr": "Avokadolu yumurta tabağı",
+      "titleEn": "Avocado and egg plate",
+      "mealType": "breakfast",
+      "servings": 1,
+      "prepMinutes": 15,
+      "allergens": [
+        "yumurta"
+      ],
+      "stepsTr": "Avokadoyu dilimleyin; yanına haşlanmış yumurtaları alın.",
+      "stepsEn": "Slice avocado; serve with boiled eggs.",
+      "storageTr": "Taze tüketin.",
+      "storageEn": "Üzerine pul biber.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 303.0,
+        "proteinG": 14.6,
+        "fatG": 24.2,
+        "carbohydrateTotalG": 9.2,
+        "fiberG": 6.7,
+        "netCarbG": 2.5
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-avocado",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-egg",
+          "grams": 100
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-baked-thigh-zucchini",
+      "titleTr": "Fırın tavuk but ve kabak",
+      "titleEn": "Baked chicken thigh with zucchini",
+      "mealType": "dinner",
+      "servings": 2,
+      "prepMinutes": 45,
+      "allergens": [
+        "tavuk"
+      ],
+      "stepsTr": "Hepsini tepsiye alıp zeytinyağı ve baharatla 200°C'de pişirin.",
+      "stepsEn": "Place everything in a tray with olive oil and spices; bake at 200°C.",
+      "storageTr": "Buzdolabında 2 gün.",
+      "storageEn": "Kabakları büyük kesin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 396.8,
+        "proteinG": 40.2,
+        "fatG": 24.2,
+        "carbohydrateTotalG": 3.1,
+        "fiberG": 1.0,
+        "netCarbG": 2.1
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-chicken-thigh",
+          "grams": 300
+        },
+        {
+          "foodId": "seed-zucchini",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 15
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-tuna-salad",
+      "titleTr": "Ton balıklı salata",
+      "titleEn": "Tuna salad",
+      "mealType": "lunch",
+      "servings": 2,
+      "prepMinutes": 10,
+      "allergens": [
+        "balık"
+      ],
+      "stepsTr": "Tonu süzüp yeşilliklerle karıştırın; zeytinyağı ekleyin.",
+      "stepsEn": "Drain tuna; mix with greens and olive oil.",
+      "storageTr": "Taze tüketin.",
+      "storageEn": "Zeytin ekleyin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 155.7,
+        "proteinG": 20.1,
+        "fatG": 6.8,
+        "carbohydrateTotalG": 3.2,
+        "fiberG": 1.5,
+        "netCarbG": 1.7
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-tuna-canned",
+          "grams": 150
+        },
+        {
+          "foodId": "seed-lettuce",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-tomato",
+          "grams": 80
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 12
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-cheese-walnut-plate",
+      "titleTr": "Peynir ve ceviz tabağı",
+      "titleEn": "Cheese and walnut plate",
+      "mealType": "snack",
+      "servings": 1,
+      "prepMinutes": 5,
+      "allergens": [
+        "süt ürünü"
+      ],
+      "stepsTr": "Peynirleri dilimleyip cevizle servis edin.",
+      "stepsEn": "Slice cheeses; serve with walnuts.",
+      "storageTr": "Taze tüketin.",
+      "storageEn": "Zeytin de ekleyin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 487.8,
+        "proteinG": 24.5,
+        "fatG": 41.7,
+        "carbohydrateTotalG": 6.6,
+        "fiberG": 1.3,
+        "netCarbG": 5.2
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-kasar-cheese",
+          "grams": 60
+        },
+        {
+          "foodId": "seed-white-cheese",
+          "grams": 50
+        },
+        {
+          "foodId": "seed-walnut",
+          "grams": 20
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-veggie-omelette",
+      "titleTr": "Sebzeli omlet",
+      "titleEn": "Vegetable omelette",
+      "mealType": "breakfast",
+      "servings": 1,
+      "prepMinutes": 15,
+      "allergens": [
+        "yumurta"
+      ],
+      "stepsTr": "Sebzeleri soteleyin; çırpılmış yumurtayı ekleyip pişirin.",
+      "stepsEn": "Sauté vegetables; pour whisked eggs and cook.",
+      "storageTr": "Aynı gün tüketin.",
+      "storageEn": "Mantar da olur.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 256.1,
+        "proteinG": 15.9,
+        "fatG": 19.9,
+        "carbohydrateTotalG": 4.5,
+        "fiberG": 1.7,
+        "netCarbG": 2.8
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-egg",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-spinach",
+          "grams": 50
+        },
+        {
+          "foodId": "seed-mushroom",
+          "grams": 60
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 10
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-shrimp-pan",
+      "titleTr": "Karides tavası",
+      "titleEn": "Shrimp pan",
+      "mealType": "dinner",
+      "servings": 2,
+      "prepMinutes": 15,
+      "allergens": [
+        "deniz ürünü"
+      ],
+      "stepsTr": "Karidesi tereyağında sarımsakla pişirin.",
+      "stepsEn": "Cook shrimp in butter with garlic.",
+      "storageTr": "Aynı gün tüketin.",
+      "storageEn": "Limon sıkın.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 181.2,
+        "proteinG": 30.2,
+        "fatG": 6.5,
+        "carbohydrateTotalG": 1.1,
+        "fiberG": 0.1,
+        "netCarbG": 1.0
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-shrimp",
+          "grams": 250
+        },
+        {
+          "foodId": "seed-butter",
+          "grams": 15
+        },
+        {
+          "foodId": "seed-garlic",
+          "grams": 5
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-baked-lamb",
+      "titleTr": "Kuzu but (fırın) ve yeşillik",
+      "titleEn": "Roasted lamb leg with greens",
+      "mealType": "dinner",
+      "servings": 4,
+      "prepMinutes": 90,
+      "allergens": [
+        "et"
+      ],
+      "stepsTr": "Kuzuyu baharatlayıp 180°C'de pişirin; yeşillikle servis edin.",
+      "stepsEn": "Season lamb; roast at 180°C; serve with greens.",
+      "storageTr": "Buzdolabında 2 gün.",
+      "storageEn": "Pişme süresi ağırlığa göre değişir.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 389.1,
+        "proteinG": 41.9,
+        "fatG": 23.2,
+        "carbohydrateTotalG": 0.7,
+        "fiberG": 0.3,
+        "netCarbG": 0.4
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-lamb-leg-roast",
+          "grams": 600
+        },
+        {
+          "foodId": "seed-arugula",
+          "grams": 80
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 15
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-almond-bread",
+      "titleTr": "Badem unlu ekmek",
+      "titleEn": "Almond flour bread",
+      "mealType": "breakfast",
+      "servings": 8,
+      "prepMinutes": 35,
+      "allergens": [
+        "yumurta, kuruyemiş"
+      ],
+      "stepsTr": "Malzemeleri karıştırıp kalıpta 180°C'de 30 dk pişirin.",
+      "stepsEn": "Mix ingredients; bake in a loaf pan at 180°C for 30 min.",
+      "storageTr": "Dilimleyip dondurun.",
+      "storageEn": "Tost makinesinde ısıtın.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 196.4,
+        "proteinG": 7.7,
+        "fatG": 17.3,
+        "carbohydrateTotalG": 5.4,
+        "fiberG": 2.7,
+        "netCarbG": 2.7
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-almond-flour",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-egg",
+          "grams": 150
+        },
+        {
+          "foodId": "seed-butter",
+          "grams": 30
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-chicken-mushroom",
+      "titleTr": "Mantarlı tavuk sote",
+      "titleEn": "Chicken with mushrooms",
+      "mealType": "lunch",
+      "servings": 2,
+      "prepMinutes": 25,
+      "allergens": [
+        "tavuk"
+      ],
+      "stepsTr": "Tavuğu soteleyin; mantarı ekleyip suyunu çekene dek pişirin.",
+      "stepsEn": "Sauté chicken; add mushrooms and cook until dry.",
+      "storageTr": "Buzdolabında 2 gün.",
+      "storageEn": "Krema ekleyebilirsiniz.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 275.8,
+        "proteinG": 41.1,
+        "fatG": 10.7,
+        "carbohydrateTotalG": 2.5,
+        "fiberG": 0.8,
+        "netCarbG": 1.7
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-chicken-breast",
+          "grams": 250
+        },
+        {
+          "foodId": "seed-mushroom",
+          "grams": 150
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 12
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-spinach-eggs",
+      "titleTr": "Ispanaklı yumurta",
+      "titleEn": "Eggs with spinach",
+      "mealType": "breakfast",
+      "servings": 1,
+      "prepMinutes": 12,
+      "allergens": [
+        "yumurta"
+      ],
+      "stepsTr": "Ispanağı soteleyin; üzerine yumurta kırıp pişirin.",
+      "stepsEn": "Sauté spinach; crack eggs on top and cook.",
+      "storageTr": "Aynı gün tüketin.",
+      "storageEn": "Peynir serpin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 265.9,
+        "proteinG": 16.9,
+        "fatG": 20.1,
+        "carbohydrateTotalG": 6.1,
+        "fiberG": 3.3,
+        "netCarbG": 2.8
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-spinach",
+          "grams": 150
+        },
+        {
+          "foodId": "seed-egg",
+          "grams": 100
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 10
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-salmon-salad",
+      "titleTr": "Somon salata",
+      "titleEn": "Salmon salad",
+      "mealType": "lunch",
+      "servings": 2,
+      "prepMinutes": 15,
+      "allergens": [
+        "balık"
+      ],
+      "stepsTr": "Pişmiş somonu yeşilliklerle karıştırın.",
+      "stepsEn": "Flake cooked salmon over greens.",
+      "storageTr": "Taze tüketin.",
+      "storageEn": "Avokado ekleyin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 299.0,
+        "proteinG": 21.4,
+        "fatG": 22.2,
+        "carbohydrateTotalG": 3.4,
+        "fiberG": 2.5,
+        "netCarbG": 0.9
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-salmon",
+          "grams": 200
+        },
+        {
+          "foodId": "seed-lettuce",
+          "grams": 80
+        },
+        {
+          "foodId": "seed-avocado",
+          "grams": 50
+        },
+        {
+          "foodId": "seed-olive-oil",
+          "grams": 10
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    },
+    {
+      "id": "seed-recipe-broccoli-soup",
+      "titleTr": "Brokoli çorbası",
+      "titleEn": "Broccoli soup",
+      "mealType": "lunch",
+      "servings": 3,
+      "prepMinutes": 20,
+      "allergens": [
+        "sebze"
+      ],
+      "stepsTr": "Brokoli ve soğanı kemik suyunda yumuşayana dek pişirin; blenderdan geçirin.",
+      "stepsEn": "Simmer broccoli and onion in broth until soft; blend.",
+      "storageTr": "Buzdolabında 3 gün.",
+      "storageEn": "Krema ile servis edin.",
+      "netCarbMethodNote": "Net karbonhidrat = toplam karbonhidrat - lif; malzeme değerleri foods.json kaynaklı, porsiyona göre ölçeklenir.",
+      "perServing": {
+        "kcal": 136.7,
+        "proteinG": 8.0,
+        "fatG": 7.4,
+        "carbohydrateTotalG": 12.5,
+        "fiberG": 3.9,
+        "netCarbG": 8.6
+      },
+      "ingredients": [
+        {
+          "foodId": "seed-broccoli",
+          "grams": 400
+        },
+        {
+          "foodId": "seed-onion",
+          "grams": 80
+        },
+        {
+          "foodId": "seed-bone-broth",
+          "grams": 600
+        },
+        {
+          "foodId": "seed-heavy-cream",
+          "grams": 50
+        }
+      ],
+      "isUserCreated": false,
+      "contentVersion": "recipe-seed-v1.0"
+    }
+  ]
+}

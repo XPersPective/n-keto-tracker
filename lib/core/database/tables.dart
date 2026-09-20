@@ -258,16 +258,17 @@ class KetoneMeasurement extends Table {
 class MeasurementSession extends Table {
   IntColumn get id => integer().autoIncrement()();
   // Oturum, ölçümlere referans verir (MASTER §13). Ölçüm silinirse oturum
-  // boş kalmasın → RESTRICT; geçersizleştirme iş mantığı T12'de.
-  IntColumn get glucoseId => integer().references(
+  // satırı KALIR: FK SET NULL + isValid=false ile geçersizleştirilir ve
+  // kullanıcıya bildirilir (MASTER §6.3) — denetim izi korunur.
+  IntColumn get glucoseId => integer().nullable().references(
     GlucoseMeasurement,
     #id,
-    onDelete: KeyAction.restrict,
+    onDelete: KeyAction.setNull,
   )();
-  IntColumn get ketoneId => integer().references(
+  IntColumn get ketoneId => integer().nullable().references(
     KetoneMeasurement,
     #id,
-    onDelete: KeyAction.restrict,
+    onDelete: KeyAction.setNull,
   )();
   RealColumn get gkiValue => real()();
   TextColumn get formulaVersion => text()();

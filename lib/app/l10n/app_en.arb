@@ -116,5 +116,55 @@
         "type": "int"
       }
     }
+  },
+  "formGlucoseLabel": "Glucose ({unit})",
+  "formBhbLabel": "Blood ketone BHB (mmol/L)",
+  "formSourceType": "Source type",
+  "formNote": "Note (optional)",
+  "formPickTime": "Measurement time",
+  "formSaveSession": "Save measurement session",
+  "formInvalidValue": "Please enter a valid positive number.",
+  "gkiResultHeading": "Your GKI",
+  "gkiResultValue": "GKI: {value}",
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "gkiMeasurements": "Measured at: {time}",
+  "gkiFormulaVersion": "Calculation version: {version}",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
   }
 }

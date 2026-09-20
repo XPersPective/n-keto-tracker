@@ -46,5 +46,55 @@
   "onboardingNext": "İleri",
   "onboardingBack": "Geri",
   "onboardingFinish": "Uygulamayı kullanmaya başla",
-  "onboardingStepOf": "Adım {current}/{total}"
+  "onboardingStepOf": "Adım {current}/{total}",
+  "formGlucoseLabel": "Glukoz ({unit})",
+  "formBhbLabel": "Kan ketonu BHB (mmol/L)",
+  "formSourceType": "Kaynak türü",
+  "formNote": "Not (isteğe bağlı)",
+  "formPickTime": "Ölçüm zamanı",
+  "formSaveSession": "Ölçüm oturumunu kaydet",
+  "formInvalidValue": "Lütfen geçerli bir pozitif sayı girin.",
+  "gkiResultHeading": "GKI'niz",
+  "gkiResultValue": "GKI: {value}",
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "gkiMeasurements": "Ölçüm zamanı: {time}",
+  "gkiFormulaVersion": "Hesap sürümü: {version}",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
 }

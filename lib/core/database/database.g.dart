@@ -7955,11 +7955,11 @@ class $MeasurementSessionTable extends MeasurementSession
   late final GeneratedColumn<int> glucoseId = GeneratedColumn<int>(
     'glucose_id',
     aliasedName,
-    false,
+    true,
     type: DriftSqlType.int,
-    requiredDuringInsert: true,
+    requiredDuringInsert: false,
     defaultConstraints: GeneratedColumn.constraintIsAlways(
-      'REFERENCES glucose_measurement (id) ON DELETE RESTRICT',
+      'REFERENCES glucose_measurement (id) ON DELETE SET NULL',
     ),
   );
   static const VerificationMeta _ketoneIdMeta = const VerificationMeta(
@@ -7969,11 +7969,11 @@ class $MeasurementSessionTable extends MeasurementSession
   late final GeneratedColumn<int> ketoneId = GeneratedColumn<int>(
     'ketone_id',
     aliasedName,
-    false,
+    true,
     type: DriftSqlType.int,
-    requiredDuringInsert: true,
+    requiredDuringInsert: false,
     defaultConstraints: GeneratedColumn.constraintIsAlways(
-      'REFERENCES ketone_measurement (id) ON DELETE RESTRICT',
+      'REFERENCES ketone_measurement (id) ON DELETE SET NULL',
     ),
   );
   static const VerificationMeta _gkiValueMeta = const VerificationMeta(
@@ -8093,16 +8093,12 @@ class $MeasurementSessionTable extends MeasurementSession
         _glucoseIdMeta,
         glucoseId.isAcceptableOrUnknown(data['glucose_id']!, _glucoseIdMeta),
       );
-    } else if (isInserting) {
-      context.missing(_glucoseIdMeta);
     }
     if (data.containsKey('ketone_id')) {
       context.handle(
         _ketoneIdMeta,
         ketoneId.isAcceptableOrUnknown(data['ketone_id']!, _ketoneIdMeta),
       );
-    } else if (isInserting) {
-      context.missing(_ketoneIdMeta);
     }
     if (data.containsKey('gki_value')) {
       context.handle(
@@ -8184,11 +8180,11 @@ class $MeasurementSessionTable extends MeasurementSession
       glucoseId: attachedDatabase.typeMapping.read(
         DriftSqlType.int,
         data['${effectivePrefix}glucose_id'],
-      )!,
+      ),
       ketoneId: attachedDatabase.typeMapping.read(
         DriftSqlType.int,
         data['${effectivePrefix}ketone_id'],
-      )!,
+      ),
       gkiValue: attachedDatabase.typeMapping.read(
         DriftSqlType.double,
         data['${effectivePrefix}gki_value'],
@@ -8229,8 +8225,8 @@ class $MeasurementSessionTable extends MeasurementSession
 class MeasurementSessionRow extends DataClass
     implements Insertable<MeasurementSessionRow> {
   final int id;
-  final int glucoseId;
-  final int ketoneId;
+  final int? glucoseId;
+  final int? ketoneId;
   final double gkiValue;
   final String formulaVersion;
   final int? matchDifferenceMinutes;
@@ -8240,8 +8236,8 @@ class MeasurementSessionRow extends DataClass
   final bool isValid;
   const MeasurementSessionRow({
     required this.id,
-    required this.glucoseId,
-    required this.ketoneId,
+    this.glucoseId,
+    this.ketoneId,
     required this.gkiValue,
     required this.formulaVersion,
     this.matchDifferenceMinutes,
@@ -8254,8 +8250,12 @@ class MeasurementSessionRow extends DataClass
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
     map['id'] = Variable<int>(id);
-    map['glucose_id'] = Variable<int>(glucoseId);
-    map['ketone_id'] = Variable<int>(ketoneId);
+    if (!nullToAbsent || glucoseId != null) {
+      map['glucose_id'] = Variable<int>(glucoseId);
+    }
+    if (!nullToAbsent || ketoneId != null) {
+      map['ketone_id'] = Variable<int>(ketoneId);
+    }
     map['gki_value'] = Variable<double>(gkiValue);
     map['formula_version'] = Variable<String>(formulaVersion);
     if (!nullToAbsent || matchDifferenceMinutes != null) {
@@ -8271,8 +8271,12 @@ class MeasurementSessionRow extends DataClass
   MeasurementSessionCompanion toCompanion(bool nullToAbsent) {
     return MeasurementSessionCompanion(
       id: Value(id),
-      glucoseId: Value(glucoseId),
-      ketoneId: Value(ketoneId),
+      glucoseId: glucoseId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(glucoseId),
+      ketoneId: ketoneId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(ketoneId),
       gkiValue: Value(gkiValue),
       formulaVersion: Value(formulaVersion),
       matchDifferenceMinutes: matchDifferenceMinutes == null && nullToAbsent
@@ -8292,8 +8296,8 @@ class MeasurementSessionRow extends DataClass
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return MeasurementSessionRow(
       id: serializer.fromJson<int>(json['id']),
-      glucoseId: serializer.fromJson<int>(json['glucoseId']),
-      ketoneId: serializer.fromJson<int>(json['ketoneId']),
+      glucoseId: serializer.fromJson<int?>(json['glucoseId']),
+      ketoneId: serializer.fromJson<int?>(json['ketoneId']),
       gkiValue: serializer.fromJson<double>(json['gkiValue']),
       formulaVersion: serializer.fromJson<String>(json['formulaVersion']),
       matchDifferenceMinutes: serializer.fromJson<int?>(
@@ -8310,8 +8314,8 @@ class MeasurementSessionRow extends DataClass
     serializer ??= driftRuntimeOptions.defaultSerializer;
     return <String, dynamic>{
       'id': serializer.toJson<int>(id),
-      'glucoseId': serializer.toJson<int>(glucoseId),
-      'ketoneId': serializer.toJson<int>(ketoneId),
+      'glucoseId': serializer.toJson<int?>(glucoseId),
+      'ketoneId': serializer.toJson<int?>(ketoneId),
       'gkiValue': serializer.toJson<double>(gkiValue),
       'formulaVersion': serializer.toJson<String>(formulaVersion),
       'matchDifferenceMinutes': serializer.toJson<int?>(matchDifferenceMinutes),
@@ -8324,8 +8328,8 @@ class MeasurementSessionRow extends DataClass
 
   MeasurementSessionRow copyWith({
     int? id,
-    int? glucoseId,
-    int? ketoneId,
+    Value<int?> glucoseId = const Value.absent(),
+    Value<int?> ketoneId = const Value.absent(),
     double? gkiValue,
     String? formulaVersion,
     Value<int?> matchDifferenceMinutes = const Value.absent(),
@@ -8335,8 +8339,8 @@ class MeasurementSessionRow extends DataClass
     bool? isValid,
   }) => MeasurementSessionRow(
     id: id ?? this.id,
-    glucoseId: glucoseId ?? this.glucoseId,
-    ketoneId: ketoneId ?? this.ketoneId,
+    glucoseId: glucoseId.present ? glucoseId.value : this.glucoseId,
+    ketoneId: ketoneId.present ? ketoneId.value : this.ketoneId,
     gkiValue: gkiValue ?? this.gkiValue,
     formulaVersion: formulaVersion ?? this.formulaVersion,
     matchDifferenceMinutes: matchDifferenceMinutes.present
@@ -8419,8 +8423,8 @@ class MeasurementSessionRow extends DataClass
 class MeasurementSessionCompanion
     extends UpdateCompanion<MeasurementSessionRow> {
   final Value<int> id;
-  final Value<int> glucoseId;
-  final Value<int> ketoneId;
+  final Value<int?> glucoseId;
+  final Value<int?> ketoneId;
   final Value<double> gkiValue;
   final Value<String> formulaVersion;
   final Value<int?> matchDifferenceMinutes;
@@ -8442,8 +8446,8 @@ class MeasurementSessionCompanion
   });
   MeasurementSessionCompanion.insert({
     this.id = const Value.absent(),
-    required int glucoseId,
-    required int ketoneId,
+    this.glucoseId = const Value.absent(),
+    this.ketoneId = const Value.absent(),
     required double gkiValue,
     required String formulaVersion,
     this.matchDifferenceMinutes = const Value.absent(),
@@ -8451,9 +8455,7 @@ class MeasurementSessionCompanion
     required bool confirmedByUser,
     required DateTime computedAtUtc,
     this.isValid = const Value.absent(),
-  }) : glucoseId = Value(glucoseId),
-       ketoneId = Value(ketoneId),
-       gkiValue = Value(gkiValue),
+  }) : gkiValue = Value(gkiValue),
        formulaVersion = Value(formulaVersion),
        matchKind = Value(matchKind),
        confirmedByUser = Value(confirmedByUser),
@@ -8487,8 +8489,8 @@ class MeasurementSessionCompanion
 
   MeasurementSessionCompanion copyWith({
     Value<int>? id,
-    Value<int>? glucoseId,
-    Value<int>? ketoneId,
+    Value<int?>? glucoseId,
+    Value<int?>? ketoneId,
     Value<double>? gkiValue,
     Value<String>? formulaVersion,
     Value<int?>? matchDifferenceMinutes,
@@ -14664,6 +14666,20 @@ abstract class _$AppDatabase extends GeneratedDatabase {
     ),
     WritePropagation(
       on: TableUpdateQuery.onTableName(
+        'glucose_measurement',
+        limitUpdateKind: UpdateKind.delete,
+      ),
+      result: [TableUpdate('measurement_session', kind: UpdateKind.update)],
+    ),
+    WritePropagation(
+      on: TableUpdateQuery.onTableName(
+        'ketone_measurement',
+        limitUpdateKind: UpdateKind.delete,
+      ),
+      result: [TableUpdate('measurement_session', kind: UpdateKind.update)],
+    ),
+    WritePropagation(
+      on: TableUpdateQuery.onTableName(
         'meal_plan',
         limitUpdateKind: UpdateKind.delete,
       ),
@@ -20419,8 +20435,8 @@ typedef $$KetoneMeasurementTableProcessedTableManager =
 typedef $$MeasurementSessionTableCreateCompanionBuilder =
     MeasurementSessionCompanion Function({
       Value<int> id,
-      required int glucoseId,
-      required int ketoneId,
+      Value<int?> glucoseId,
+      Value<int?> ketoneId,
       required double gkiValue,
       required String formulaVersion,
       Value<int?> matchDifferenceMinutes,
@@ -20432,8 +20448,8 @@ typedef $$MeasurementSessionTableCreateCompanionBuilder =
 typedef $$MeasurementSessionTableUpdateCompanionBuilder =
     MeasurementSessionCompanion Function({
       Value<int> id,
-      Value<int> glucoseId,
-      Value<int> ketoneId,
+      Value<int?> glucoseId,
+      Value<int?> ketoneId,
       Value<double> gkiValue,
       Value<String> formulaVersion,
       Value<int?> matchDifferenceMinutes,
@@ -20460,9 +20476,9 @@ final class $$MeasurementSessionTableReferences
       .glucoseMeasurement
       .createAlias('measurement_session__glucose_id__glucose_measurement__id');
 
-  $$GlucoseMeasurementTableProcessedTableManager get glucoseId {
-    final $_column = $_itemColumn<int>('glucose_id')!;
-
+  $$GlucoseMeasurementTableProcessedTableManager? get glucoseId {
+    final $_column = $_itemColumn<int>('glucose_id');
+    if ($_column == null) return null;
     final manager = $$GlucoseMeasurementTableTableManager(
       $_db,
       $_db.glucoseMeasurement,
@@ -20478,9 +20494,9 @@ final class $$MeasurementSessionTableReferences
       .ketoneMeasurement
       .createAlias('measurement_session__ketone_id__ketone_measurement__id');
 
-  $$KetoneMeasurementTableProcessedTableManager get ketoneId {
-    final $_column = $_itemColumn<int>('ketone_id')!;
-
+  $$KetoneMeasurementTableProcessedTableManager? get ketoneId {
+    final $_column = $_itemColumn<int>('ketone_id');
+    if ($_column == null) return null;
     final manager = $$KetoneMeasurementTableTableManager(
       $_db,
       $_db.ketoneMeasurement,
@@ -20809,8 +20825,8 @@ class $$MeasurementSessionTableTableManager
           updateCompanionCallback:
               ({
                 Value<int> id = const Value.absent(),
-                Value<int> glucoseId = const Value.absent(),
-                Value<int> ketoneId = const Value.absent(),
+                Value<int?> glucoseId = const Value.absent(),
+                Value<int?> ketoneId = const Value.absent(),
                 Value<double> gkiValue = const Value.absent(),
                 Value<String> formulaVersion = const Value.absent(),
                 Value<int?> matchDifferenceMinutes = const Value.absent(),
@@ -20833,8 +20849,8 @@ class $$MeasurementSessionTableTableManager
           createCompanionCallback:
               ({
                 Value<int> id = const Value.absent(),
-                required int glucoseId,
-                required int ketoneId,
+                Value<int?> glucoseId = const Value.absent(),
+                Value<int?> ketoneId = const Value.absent(),
                 required double gkiValue,
                 required String formulaVersion,
                 Value<int?> matchDifferenceMinutes = const Value.absent(),

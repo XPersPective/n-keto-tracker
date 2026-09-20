@@ -265,13 +265,15 @@ void main() {
     expect(session.formulaVersion, 'gki-v1');
     expect(session.isValid, isTrue);
 
-    // Kullanımdaki ölçüm silinemez (RESTRICT) — geçersizleştirme T12 işi.
-    expect(
-      () => (db.delete(
-        db.glucoseMeasurement,
-      )..where((g) => g.id.equals(glucoseId))).go(),
-      throwsA(isA<Exception>()),
-    );
+    // Ölçüm silinince FK SET NULL referansı temizler; isValid=false
+    // bayrağını MeasurementsRepository.updateGlucose/deleteGlucose uygular
+    // (bkz. measurements_repository_test).
+    await (db.delete(
+      db.glucoseMeasurement,
+    )..where((g) => g.id.equals(glucoseId))).go();
+    final afterDelete = await db.select(db.measurementSession).getSingle();
+    expect(afterDelete.glucoseId, isNull);
+    expect(afterDelete.ketoneId, ketoneId);
   });
 
   test('Üç hedef türü aynı tabloda ayrık tür alanıyla saklanır', () async {

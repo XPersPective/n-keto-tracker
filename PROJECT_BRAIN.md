@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T11 tamam: GKI motoru + 18 vektör yeşil (AC2 çekirdeği), 63 test. Sıradaki: T12 ölçüm girişi.
-> **Phase:** BUILD · **Next:** T12 · **Updated:** 2026-09-20 · **Synced@:** a52efd9
+> **Status:** T12 tamam: eşleştirme motoru + oturum repository + form; 78 test yeşil. Sıradaki: T13 günlük+grafikler.
+> **Phase:** BUILD · **Next:** T13 · **Updated:** 2026-09-20 · **Synced@:** ac0c32c
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Ölçüm girişi, eşleştirme, günlük, Bugün ekranı yok → T12–T14
+GAP: Günlük zaman çizelgesi, grafikler, Bugün ekranı yok → T13–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
@@ -235,6 +235,7 @@ n-keto-tracker/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
     features/
+      measurements/     # T12: measurement_session_form (birleşik oturum formu)
       onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
   test/
@@ -245,6 +246,9 @@ n-keto-tracker/
       database/
         database_test.dart         # T7: 9 DB testi
         encrypted_open_test.dart   # T8: 4 şifreleme testi
+        measurements_repository_test.dart  # T12: 4 oturum akış testi
+    units/
+      matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
       onboarding/
         onboarding_controller_test.dart  # T9: 5 birim test
@@ -333,11 +337,10 @@ n-keto-tracker/
   - Done when: `flutter test test/core/units/` geçer; 90mg/dL+2.5mmol/L=2.0 dahil tüm fixture'lar yeşil
   - → GkiEngine (saf, fromMmolL/fromRaw, GkiResult+formulaVersion etiketi), GlucoseValue (ham+birim+normalize, mmol/L'de çift dönüşüm yok), parseDecimal (TR virgül/EN nokta/binlik ayraç), BHB≤0/glukoz≤0/NaN/Inf/boş girişte sealed hata türleri; 25 birim test: 18 fixture vektörü parametreli yeşil + ara yuvarlama ayrıştırma + formül tek-kaynak grep testi; toplam 63 test yeşil
   - Note: fixture formulaVersion "gki-v1" string'ine hizalandı (T2'de sayısaldı; anlamsal değişiklik yok). Ara yuvarlama testi 97/2.9 vakasıyla yanlış yolu (1.8620…) ayrıştırıyor
-- [ ] T12 [M] Ölçüm girişi + eşleştirme
-  - Where: `lib/features/measurements/`
-  - Do: 1) birleşik ölçüm oturumu formu (glukoz mg/dL|mmol/L, kan BHB mmol/L, kaynak türü, bağlam etiketi, not); idrar/nefes ketonu ayrı tür, GKI'ye girmez; 2) ayrı kayıtlarda eşleştirme önerisi: pencere varsayılan ±5 dk (ayar 1–15), en küçük |Δt|, eşitlikte erken zaman, ölçüm tek oturumda, onay olmadan GKI yok, pencere dışı otomatik eşleşme yok; 3) düzenlemede GKI deterministik yeniden hesap, silmede geçersizleştir + bildir; 4) çift kayıt uyarısı (zaman/değer benzerliği, yine kaydedilebilir); 5) birim + widget testleri (MASTER §16.1 eşleştirme maddeleri)
+- [x] T12 (2026-09-20, GLM-5.3) Ölçüm girişi + eşleştirme
   - Done when: eşleştirme birim testleri (pencere içi/dışı/eşitlik/yeniden kullanım/düzenleme/silme) + form widget testleri geçer
-  - Needs: T11
+  - → MatchingEngine (pencere 1–15 clamp, en küçük |Δt|, eşitlikte erken, kullanılmış ölçüm dışarı) 8 test; MeasurementsRepository (onaysız GKI reddi, düzenlemede deterministik yeniden hesap, silmede SET NULL+isValid=false geçersizleştirme, çift kayıt tespiti+kayıt edilebilirlik) 4 test; MeasurementSessionForm widget 3 test (90+2,5→GKI 2,0 kartı [formül+saat+sürüm], geçersiz/BHB=0 reddi); 78 test yeşil
+  - Note: MeasurementSession FK'leri RESTRICT→SET NULL revize edildi (§6.3 geçersizleştirme+denetim izi şartı; database_test güncellendi). appDatabaseProvider core/database/providers.dart'a taşındı
 - [ ] T13 [M] Günlük zaman çizelgesi + temel grafikler
   - Where: `lib/features/measurements/` (Günlük), grafikler fl_chart
   - Do: 1) Günlük: tek kronolojik zaman çizelgesi (ölçüm/ağırlık/semptom/not; öğünler T16'da eklenir), bağlam etiketleri, yerel filtre/arama, silme açık onaylı veya geri alınabilir; 2) GKI/glukoz/BHB ayrı küçük grafikler (MASTER §22.4), eksik gün = boşluk, tooltip: değer+birim+zaman+bağlam+eşleşme farkı; 3) GKI araştırma bantları varsayılan KAPALI, aç/kapat + kaynak bağlantısı + §6.4 kalıcı açıklama metni; düşük GKI "yeşil başarı" değil; 4) widget/golden testler
@@ -490,7 +493,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T11 kapatıldı — GkiEngine saf motor, 18 referans vektörü parametreli test, formül tek-kaynak grep testi; 63 test yeşil. AC2 çekirdeği tamam.
-Devam: T12 (ölçüm oturumu formu + eşleştirme: ±5 dk pencere, en küçük |Δt|, tek oturum, onaysız GKI yok, düzenlemede yeniden hesap/silmede geçersizleştirme).
-Teknik not: GKI/birim hesabı yalnız lib/core/units; grep testi ihlali build'i düşürür. Fixture formulaVersion "gki-v1" (string).
+Son: T12 kapatıldı — MatchingEngine + MeasurementsRepository + oturum formu (GKI kartı); 78 test yeşil.
+Devam: T13 (Günlük kronolojik çizelgesi + ayrı küçük grafikler + bantlar kapalı) → T14 (Bugün ekranı, ≤3 dokunuş hızlı eylemler).
+Teknik not: oturum FK'leri SET NULL (silme → isValid=false + bildirim); drift'te select filtresi `..where`; extension'lar drift.dart importu ister.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

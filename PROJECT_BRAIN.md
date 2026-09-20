@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T12 tamam: eşleştirme motoru + oturum repository + form; 78 test yeşil. Sıradaki: T13 günlük+grafikler.
-> **Phase:** BUILD · **Next:** T13 · **Updated:** 2026-09-20 · **Synced@:** ac0c32c
+> **Status:** T13 tamam: Günlük çizelgesi + grafikler + kapalı bantlar; 81 test yeşil. Sıradaki: T14 Bugün ekranı.
+> **Phase:** BUILD · **Next:** T14 · **Updated:** 2026-09-20 · **Synced@:** 07512fc
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Günlük zaman çizelgesi, grafikler, Bugün ekranı yok → T13–T14
+GAP: Bugün ekranı yok → T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
@@ -235,7 +235,7 @@ n-keto-tracker/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
     features/
-      measurements/     # T12: measurement_session_form (birleşik oturum formu)
+      measurements/     # T12–T13: measurement_session_form, log_page, log_view_model
       onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
   test/
@@ -250,6 +250,9 @@ n-keto-tracker/
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
+      measurements/
+        measurement_session_form_test.dart  # T12: 3 form testi
+        log_page_test.dart                  # T13: 3 çizelge/grafik testi
       onboarding/
         onboarding_controller_test.dart  # T9: 5 birim test
         consent_repository_test.dart     # T9: 5 onam testi
@@ -341,11 +344,10 @@ n-keto-tracker/
   - Done when: eşleştirme birim testleri (pencere içi/dışı/eşitlik/yeniden kullanım/düzenleme/silme) + form widget testleri geçer
   - → MatchingEngine (pencere 1–15 clamp, en küçük |Δt|, eşitlikte erken, kullanılmış ölçüm dışarı) 8 test; MeasurementsRepository (onaysız GKI reddi, düzenlemede deterministik yeniden hesap, silmede SET NULL+isValid=false geçersizleştirme, çift kayıt tespiti+kayıt edilebilirlik) 4 test; MeasurementSessionForm widget 3 test (90+2,5→GKI 2,0 kartı [formül+saat+sürüm], geçersiz/BHB=0 reddi); 78 test yeşil
   - Note: MeasurementSession FK'leri RESTRICT→SET NULL revize edildi (§6.3 geçersizleştirme+denetim izi şartı; database_test güncellendi). appDatabaseProvider core/database/providers.dart'a taşındı
-- [ ] T13 [M] Günlük zaman çizelgesi + temel grafikler
-  - Where: `lib/features/measurements/` (Günlük), grafikler fl_chart
-  - Do: 1) Günlük: tek kronolojik zaman çizelgesi (ölçüm/ağırlık/semptom/not; öğünler T16'da eklenir), bağlam etiketleri, yerel filtre/arama, silme açık onaylı veya geri alınabilir; 2) GKI/glukoz/BHB ayrı küçük grafikler (MASTER §22.4), eksik gün = boşluk, tooltip: değer+birim+zaman+bağlam+eşleşme farkı; 3) GKI araştırma bantları varsayılan KAPALI, aç/kapat + kaynak bağlantısı + §6.4 kalıcı açıklama metni; düşük GKI "yeşil başarı" değil; 4) widget/golden testler
+- [x] T13 (2026-09-20, GLM-5.3) Günlük zaman çizelgesi + temel grafikler
   - Done when: zaman çizelgesi + grafik widget testleri geçer; bant varsayılan-kapalı ve açıklama metni testte doğrulanıyor
-  - Needs: T12
+  - → LogPage (Günlük sekmesi): timelineProvider + chartSeriesProvider (GKI/glukoz/BHB ayrı küçük grafikler, fl_chart, bağımsız eksen), bantlar varsayılan KAPALI + kalıcı açıklama GKI grafiği altında + bilinçli anahtar, /log/session'da oturum formu; 3 widget testi; 81 toplam yeşil
+  - Note: zaman çizelgesi şimdilik oturum girdileri; öğün (T16), ağırlık (T22), semptom (T23) sonra birleşecek. Boş grafik başlığı çizelge boşuyla aynı metni paylaşıyor (findsWidgets)
 - [ ] T14 [M] Bugün ekranı
   - Where: `lib/features/dashboard/`
   - Do: MASTER §5.1: son glukoz/BHB/GKI kartları (saat + eşzamanlı/yaklaşık eşleşme durumu), günlük besin toplamları (T16'dan önce boş durum), son ağırlık + 7/30 gün değişim (T22'den önce boş durum), bugünün semptomu, 4 hızlı eylem (≤3 dokunuş), planlı öğünler + tamamlanma, "genel bilgi; tıbbi tavsiye değildir" alt bilgisi
@@ -493,7 +495,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T12 kapatıldı — MatchingEngine + MeasurementsRepository + oturum formu (GKI kartı); 78 test yeşil.
-Devam: T13 (Günlük kronolojik çizelgesi + ayrı küçük grafikler + bantlar kapalı) → T14 (Bugün ekranı, ≤3 dokunuş hızlı eylemler).
-Teknik not: oturum FK'leri SET NULL (silme → isValid=false + bildirim); drift'te select filtresi `..where`; extension'lar drift.dart importu ister.
+Son: T13 kapatıldı — Günlük ekranı (çizelge + 3 ayrı grafik + kapalı bantlar); 81 test yeşil.
+Devam: T14 (Bugün ekranı: son ölçüm kartları, toplamlar, 4 hızlı eylem ≤3 dokunuş) — Aşama 2 T14 ile kapanır → A3.
+Teknik not: lazy ListView testlerinde scrollUntilVisible şart; autoDispose provider + DB kapatma sırası: önce ağacı sök.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

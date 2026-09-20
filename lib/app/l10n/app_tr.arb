@@ -96,5 +96,26 @@
         "type": "String"
       }
     }
+  },
+  "logEmptyTitle": "Henüz ölçüm yok",
+  "logEmptyBody": "İlk glukoz ve keton ölçümünüzü eklediğinizde burada görünecek.",
+  "logBandsToggle": "Okuduğunuz makaledeki araştırma aralıklarını göster",
+  "bandsDisclaimer": "Bu bantlar klinik normal aralık veya kanıtlanmış tedavi hedefi değildir. Belirli bir araştırma çerçevesindeki temsili, reçete niteliğinde olmayan önerilerdir. GKI tek başına sağlığı, hastalık yanıtını veya güvenliği göstermez. Kaynağı görmek için dokunun.",
+  "logBandOptimal": "Önerilen optimal araştırma bölgesi (GKI ≤ 1,0)",
+  "logBandTherapeutic": "Önerilen terapötik araştırma bölgesi (1,0 < GKI ≤ 2,0)",
+  "logBandOutside": "Önerilen ≤ 2,0 araştırma bölgesinin dışında",
+  "logMatchSimultaneous": "eşzamanlı",
+  "logMatchApproximate": "yaklaşık eşleşme",
+  "logTimelineHeading": "Zaman çizelgesi",
+  "logChartsHeading": "Grafikler",
+  "logGlucoseChart": "Glukoz (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kaynak bağlantısını kopyala",
+  "@logBandsToggle": {
+    "description": "Optional research bands toggle; default OFF (MASTER 6.4)."
+  },
+  "@bandsDisclaimer": {
+    "description": "Permanent band disclaimer text (MASTER 6.4)."
   }
 }

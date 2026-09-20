@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../features/measurements/log_page.dart';
+import '../features/measurements/measurement_session_form.dart';
 import '../features/onboarding/onboarding_page.dart';
 import 'app_shell.dart';
 import 'l10n/generated/app_localizations.dart';
@@ -33,8 +35,16 @@ final GoRouter appRouter = GoRouter(
           routes: [
             GoRoute(
               path: '/log',
-              builder: (context, state) =>
-                  _PlaceholderPage(title: AppLocalizations.of(context)!.navLog),
+              builder: (context, state) => const LogPage(),
+              routes: [
+                GoRoute(
+                  path: 'session',
+                  builder: (context, state) => Scaffold(
+                    appBar: AppBar(),
+                    body: const MeasurementSessionForm(),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

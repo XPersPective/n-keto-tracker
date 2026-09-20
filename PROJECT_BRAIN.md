@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T22 tamam: ağırlık normalize + pencere testleri + form; 149 test. Sıradaki: T23 semptom.
-> **Phase:** BUILD · **Next:** T23 · **Updated:** 2026-09-20 · **Synced@:** d6d909c
+> **Status:** T23 tamam: semptom CRUD + yönlendirme kuralı + form; 156 test. Sıradaki: T24 trendler.
+> **Phase:** BUILD · **Next:** T24 · **Updated:** 2026-09-20 · **Synced@:** cc0a10c
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -192,7 +192,7 @@ test/  integration_test/  tool/  docs/
 
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
-GAP: Semptom takibi ve trendler yok → T23–T24
+GAP: Trendler ekranı yok → T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
@@ -253,6 +253,7 @@ n-keto-tracker/
         food_seeder_test.dart      # T15: 6 seeder testi
         meal_repository_test.dart  # T16: 5 öğün iş akışı testi
         recipe_seeder_test.dart    # T19: 5 tarif seeder testi
+        symptom_repository_test.dart  # T23: 5 CRUD/kural testi
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
@@ -260,6 +261,8 @@ n-keto-tracker/
         recipe_detail_test.dart    # T19: 1 detay widget testi
       weight/
         weight_form_test.dart      # T22: 3 ağırlık form testi
+      symptoms/
+        symptom_form_test.dart     # T23: 2 semptom form testi
       settings/
         goal_legend_test.dart      # T21: 3 lejant widget testi
       core/
@@ -415,11 +418,9 @@ n-keto-tracker/
 - [x] T22 (2026-09-20, GLM-5.3) Ağırlık takibi
   - Done when: normalize + değişim penceresi birim testleri ve widget testleri geçer
   - → lbToKg/kgToLb + WeightValue normalize + changeOverWindow (yetersiz veride null — trend yok) 6 birim test; WeightForm (/weight/new) 3 widget testi (lb→kg normalize, geçersiz red, TR virgül+koşul); Bugün testi gerçek forma uyarlandı; 149 toplam yeşil
-- [ ] T23 [M] Semptom takibi
-  - Where: `lib/features/symptoms/`
-  - Do: MASTER §11.2: yerel düzenlenebilir liste (bulantı, kusma, iştahsızlık, kabızlık, ishal, yorgunluk, baş ağrısı, baş dönmesi, nöbet olayı, uyku sorunu, diğer); şiddet 0–10, başlangıç, süre, not; ciddi/yeni belirtide teşhis yok → kendi sağlık planı + gerektiğinde yerel acil hizmet yönlendirmesi; öğün/GKI ile birlikte gösterim yalnız zamansal
+- [x] T23 (2026-09-20, GLM-5.3) Semptom takibi
   - Done when: CRUD birim + widget testleri geçer; yönlendirme mesajı testte doğrulanıyor
-  - Needs: T7
+  - → SymptomRepository (11 varsayılan tanım idempotent, kullanıcı tanımı, CRUD, şiddet 0–10 doğrulaması, needsGuidance kuralı: nöbet olayı veya şiddet ≥7) 5 test; SymptomForm (/symptoms/new) 2 widget testi (düşük şiddet kayıt + şiddet 8'de yönlendirme mesajı); Bugün testi gerçek forma uyarlandı; 156 toplam yeşil
 - [ ] T24 [M] Trendler ekranı
   - Where: `lib/features/dashboard/` (Trendler sekmesi)
   - Do: MASTER §5.4 + §12: GKI/glukoz/BHB/ağırlık/net karb/enerji/semptom trendleri; 7/30/90 gün + özel aralık; ham nokta ile hareketli özet ayrı; veri yoksa çizgi uydurma yok; isteğe bağlı öğün işaretleri + bağlam katmanı; her grafiğin metinsel özeti (ekran okuyucu) + "Bu grafik ne anlatır/ne anlatmaz" açıklaması; aykırı değer korunur, görünüm filtresi kullanıcıda; GKI araştırma bantları aç/kapat + kaynak
@@ -514,7 +515,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T22 kapatıldı — ağırlık normalize + değişim penceresi + form; 149 test yeşil.
-Devam: T23 (semptom takibi: yerel liste, şiddet 0–10, yönlendirme mesajı) → T24 trendler → Aşama 5 A3.
+Son: T23 kapatıldı — semptom CRUD + yönlendirme (nöbet/şiddet≥7) + form; 156 test yeşil.
+Devam: T24 (trendler ekranı: 7/30/90 gün, metinsel özet, ayrı grafikler) → Aşama 5 A3.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

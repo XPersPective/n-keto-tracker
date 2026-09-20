@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../features/dashboard/today_page.dart';
 import '../features/evidence/guide_page.dart';
 import '../features/nutrition/meal_form.dart';
+import '../features/symptoms/symptom_form.dart';
 import '../features/weight/weight_form.dart';
 import '../features/measurements/log_page.dart';
 import '../features/measurements/measurement_session_form.dart';
@@ -87,45 +88,12 @@ final GoRouter appRouter = GoRouter(
     ),
     GoRoute(
       path: '/symptoms/new',
-      builder: (context, state) =>
-          _ComingSoonPage(title: AppLocalizations.of(context)!.todayAddSymptom),
+      builder: (context, state) => const SymptomForm(),
     ),
   ],
 );
 
-/// Henüz uygulanmamış formlar için dürüst yer tutucu (T16/T22/T23).
-class _ComingSoonPage extends StatelessWidget {
-  const _ComingSoonPage({required this.title});
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.comingSoonTitle,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            const SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Text(l10n.comingSoonBody, textAlign: TextAlign.center),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// Sekme yer tutucusu: gerçek ekranlar kendi özellik görevlerinde (T13+)
-/// bu yolların builder'larını değiştirir.
+/// Sekme yer tutucusu: henüz uygulanmamış sekmeler için (T24'te Trendler).
 class _PlaceholderPage extends StatelessWidget {
   const _PlaceholderPage({required this.title});
 

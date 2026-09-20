@@ -121,9 +121,9 @@ void main() {
     await tester.pageBack();
     await tester.pumpAndSettle();
 
-    // Semptom T23'e kadar dürüst yer tutucu.
+    // Semptom gerçek form (T23).
     await tester.tap(find.text('Add symptom'));
     await tester.pumpAndSettle();
-    expect(find.text('Coming in an upcoming update'), findsOneWidget);
+    expect(find.text('Log a symptom'), findsOneWidget);
   });
 }

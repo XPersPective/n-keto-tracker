@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T1 tamam: 12 ürünlü pazar araştırması + konumlandırma doğrulandı. Sıradaki: T2 kaynak doğrulama.
-> **Phase:** BUILD · **Next:** T2 · **Updated:** 2026-09-20 · **Synced@:** decc989
+> **Status:** T2 tamam: 7 kaynak doğrulandı (Amaral düzeltmesi + Duraj PMID + 18,016 nüansı belgelendi), 18 GKI vektörü. Sıradaki: T3.
+> **Phase:** BUILD · **Next:** T3 · **Updated:** 2026-09-20 · **Synced@:** ba6c9f3
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -188,7 +188,7 @@ test/  integration_test/  tool/  docs/
 - `ORTAK_UYGULAMA_STANDARDI.md`, `docs/MASTER_PROMPT.md`, `README.md` (şablon README'si; T5'te uygulama README'si olur), `AGENTS.md` (beyin işaretçisi)
 - `.gitignore` + `.gitleaks.toml` + `.env.example` + `android/key.properties.example` — standart §1.1 sır hijyeni
 
-GAP: Bilimsel kaynak doğrulama, gereksinim matrisi, tehdit modeli, kanıt şeması yok → T2–T3
+GAP: Gereksinim matrisi, tehdit modeli, kanıt şeması yok → T3
 GAP: Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
@@ -213,7 +213,10 @@ n-keto-tracker/
       example_source_icon.png
   docs/
     MASTER_PROMPT.md    # ürün spec'i v1.1 (normatif)
-    research/           # T1: COMPETITIVE_LANDSCAPE, USER_REVIEW_THEMES, UX_BENCHMARK, PRODUCT_POSITIONING
+    research/           # T1: COMPETITIVE_LANDSCAPE, USER_REVIEW_THEMES, UX_BENCHMARK, PRODUCT_POSITIONING; T2: EVIDENCE_VERIFICATION
+  test/
+    fixtures/
+      gki_reference_cases.json  # T2: 18 GKI referans vektörü
   tool/
     brand/
       generate_icons.py # ikon/splash üretici
@@ -239,10 +242,9 @@ n-keto-tracker/
   - Done when: 4 dosya var; her ürün satırında araştırma tarihi + en az bir resmi URL; `grep -c "http" docs/research/COMPETITIVE_LANDSCAPE.md` ≥ 12; dosyalarda "2026-09" geçiyor
   - → 12 ürün (9 §22.2 + OpenNutriTracker, Waistline, Eduven TR), hepsi 2026-09-20 tarihli resmi mağaza/API verisiyle; grep http=29; konumlandırma DOĞRULANDI (offline+açık kaynak+GKI+TR/EN kombinasyonu boş)
   - Note: ≥100 yorum şartı web vitrini kısıtı nedeniyle 35 doğrudan yorum + agregat kaynaklarla karşılandı; yöntem USER_REVIEW_THEMES.md'de açıkça beyan edildi (bkz. §6 ASSUMPTION)
-- [ ] T2 [H] Bilimsel kaynak doğrulama + GKI test vektörleri
-  - Where: `docs/research/EVIDENCE_VERIFICATION.md` (yeni), `test/fixtures/gki_reference_cases.json` (yeni)
-  - Do: 1) MASTER_PROMPT §21'deki 7 kaynağın DOI/PMID/PMCID'sini `https://doi.org/<doi>` ve PubMed üzerinden doğrula; başlık/dergi/yıl uyuşmazlıklarını raporla; 2) Meidenbauer 2015'ten GKI formülünü ve Duraj 2024 bölge önerilerini (≤1, ≤2) alıntıyla kaydet; 3) fixture'a ≥12 vektör: 90mg/dL+2.5→2.0; 180mg/dL→10.0 mmol/L; mmol/L doğrudan giriş (çift dönüşüm yok); BHB=0; BHB<0; glukoz≤0; "2,5" virgül ayrıştırma; ara yuvarlama yasak örneği; NaN/Infinity reddi
+- [x] T2 (2026-09-20, GLM-5.3) Bilimsel kaynak doğrulama + GKI test vektörleri
   - Done when: EVIDENCE_VERIFICATION.md'de 7 kaynağın her biri için erişilen URL + tarih + doğrulama sonucu; `python -c "import json;d=json.load(open('test/fixtures/gki_reference_cases.json',encoding='utf-8'));assert len(d['cases'])>=12"` exit 0
+  - → 7 kaynak doğrulandı (EUtils/EuropePMC, 2026-09-20); BULGULAR: 5. kaynağın ilk yazarı "Klein P" değil **Amaral LJ** (DOI/PMID aynı); Duraj PMID/PMCID eklendi (39639257/PMC11622503); Meidenbauer tam metni divisor 18,016 kullanıyor — spec 18,0 sabit, fark belgelendi; formül+bölge alıntıları tam metinden alındı. Fixture: 18 vektör, 8 sayısal Python'la birebir doğrulandı
 - [ ] T3 [M] Gereksinim matrisi + tehdit modeli + kanıt şeması
   - Where: `docs/REQUIREMENTS_MATRIX.md`, `THREAT_MODEL.md`, `docs/EVIDENCE_SCHEMA.md` (yeni)
   - Do: 1) MASTER_PROMPT §1–§16'daki her zorunlu gereksinimi REQ-xxx satırına dök, bölüm + AC eşleşmesi yaz; 2) THREAT_MODEL.md: varlıklar (sağlık verisi, profil), tehditler (cihaz kaybı, bulut yedek sızıntısı, import enjeksiyonu, kopya uygulama), kontroller, kalan risk — MASTER §14 + ORTAK §1'e dayalı; 3) EVIDENCE_SCHEMA.md: MASTER §2.3 alan listesinin tamamını JSON şeması olarak yaz, E1–E6 → görünür etiket eşlemesiyle
@@ -444,7 +446,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T1 kapatıldı — `docs/research/` 4 dosya (12 ürün, 2026-09-20 mağaza verileri; konumlandırma doğrulandı).
-Devam: T2 (bilimsel kaynak doğrulama + GKI fixture) → T3 (gereksinim matrisi/threat model/kanıt şeması) → T4 (Flutter iskelet).
-Uyarı: `brain.py check` üç bilinçli WARN verir: ORTAK+MASTER_PROMPT "legacy" (spec dosyaları, silinmez), .gitignore ailesi "missing" (map aracı yanlış pozitifi).
-Doğrulanmadı: T2'deki 7 kaynağın DOI/PMID'si doğrulanmadan bilimsel içerik yazılmaz (T25 bunlara bağlı).
+Son: T2 kapatıldı — EVIDENCE_VERIFICATION.md (7 kaynak, alıntılar) + gki_reference_cases.json (18 vektör).
+Devam: T3 (gereksinim matrisi/threat model/kanıt şeması) → T4 (Flutter iskelet; T1+T2 Needs'leri tamam).
+Kritik düzeltme: 5. kaynak ilk yazarı **Amaral LJ** ("Klein P" değil) — T25/T33 künyelerinde buna uyulacak; Meidenbauer divisor 18,016 vs spec 18,0 EVIDENCE_VERIFICATION'da belgelendi.
+Uyarı: `brain.py check` üç bilinçli WARN (legacy×2 + map yanlış pozitifi) verir.

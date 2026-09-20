@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T5 tamam: 11 topluluk dosyası + lisans kayıtları. Sıradaki: T6 gitleaks+dependabot.
-> **Phase:** BUILD · **Next:** T6 · **Updated:** 2026-09-20 · **Synced@:** fb48ebe
+> **Status:** Aşama 0b kapandı (T4–T6, A3 temiz). Sıradaki: T7 Drift şeması (27 tablo).
+> **Phase:** BUILD · **Next:** T7 · **Updated:** 2026-09-20 · **Synced@:** 28c0591
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -187,9 +187,8 @@ test/  integration_test/  tool/  docs/
 - **Testler**: 3 smoke widget (5 sekme, sekme geçişi, TR) + 3 l10n bütünlük (anahtar eşitliği, boş değer, marka sabiti)
 - **Offline kanıtı**: `tool/check_offline.sh` (manifest + yasaklı paket taraması) exit 0
 - Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
-- `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README hâlâ şablon README'si (T5'te değişir)
+- `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
-GAP: gitleaks CI adımı + dependabot eksik → T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
@@ -204,6 +203,9 @@ GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
 ```text
 n-keto-tracker/
   .github/
+    dependabot.yml     # T6: pub+gradle+actions haftalık
+    ISSUE_TEMPLATE/    # T5: bug_report.yml + feature_request.yml
+    pull_request_template.md  # T5: test/erişilebilirlik/mahremiyet/lisans kutuları
     workflows/
       ci.yml            # T4: gitleaks → offline+format+analyze+test → release APK
   android/              # T4: flutter create + ORTAK §1.4 sertleştirme (backup xml, R8, proguard)
@@ -247,10 +249,16 @@ n-keto-tracker/
   .gitignore            # standart §1.1; zayıflatılmaz
   .gitleaks.toml
   AGENTS.md             # beyin işaretçisi
+  CHANGELOG.md          # T5: sürüm değişiklikleri
+  CODE_OF_CONDUCT.md    # T5: Contributor Covenant v2.1 (atıflı)
+  CONTRIBUTING.md       # T5: ortam/branch/test/çeviri/bilimsel provenance + lisans sözleşmesi
   LICENSE               # GPL-3.0 (standart §2)
   ORTAK_UYGULAMA_STANDARDI.md  # sahibin bağlayıcı standardı (normatif)
   PROJECT_BRAIN.md      # bu dosya
-  README.md             # şablon README; T5'te uygulama README'si
+  README.md             # T5: uygulama README'si
+  SECURITY.md           # T5: mahremiyet + bildirim (adres yer tutucu)
+  THIRD_PARTY_LICENSES.md  # T5: lisans özetleri
+  THIRD_PARTY_NOTICES.md   # T5: bağımlılık kayıtları (pub-cache kanıtlı)
 ```
 
 ## 5. TASKS
@@ -277,11 +285,9 @@ n-keto-tracker/
   - Done when: dosyalar mevcut; README'de "N Keto Tracker" ve "n-keto-tracker" geçiyor; `git ls-files | grep -c "^LICENSE$"` = 1 (GPL-3.0 korunuyor); SECURITY.md'de `@` içeren adres yok
   - → 11 dosya (README, CONTRIBUTING+lisans sözleşmesi, SECURITY, CoC v2.1 atıflı, THIRD_PARTY×2 pub-cache kanıtlı lisanslarla, CHANGELOG, issue×2 + PR şablonu); README marka/trademark notlu, keystore uyarılı; ek temizlik: cupertino_icons pubspec'ten kaldırıldı, .zcodeignore takipten çıkarıldı + ignore'landı
   - Note: CoC Enforcement iletişim yeri ve SECURITY adresi bilinçli yer tutucu — sahibin onayıyla doldurulacak
-- [ ] T6 [L] gitleaks + dependabot + gizli tarama
-  - Where: `.gitleaks.toml` (var), `.github/dependabot.yml` (yeni), pre-commit kancası talimatı `CONTRIBUTING.md`'de
-  - Do: 1) ci.yml'e gitleaks adımı (T4 ile çakışıyorsa oraya ekle); 2) dependabot.yml: pub, gradle, github-actions (haftalık); 3) pre-commit gitleaks kurulumunu CONTRIBUTING'e yaz; 4) `gitleaks detect` yerelde temiz çalıştığını doğrula
+- [x] T6 (2026-09-20, GLM-5.3) gitleaks + dependabot + gizli tarama
   - Done when: dependabot.yml geçerli YAML; CI tanımında gitleaks adımı var; yerel `gitleaks detect --no-git` exit 0
-  - Needs: T4
+  - → dependabot.yml (pub+gradle+github-actions haftalık, python-yaml ile doğrulandı); CI'da gitleaks adımı T4'ten beri mevcut (grep=2); yerel gitleaks 8.0: "no leaks found", exit 0. Pre-commit talimatı CONTRIBUTING'de (T5)
 
 ### Aşama 1 — Veri katmanı ve onboarding
 - [ ] T7 [H] Drift şeması + migration altyapısı
@@ -445,6 +451,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 | Date | Type | What | Why / evidence |
 |---|---|---|---|
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
 | 2026-09-20 | DECISION | T4: debug/profile manifest'lerinden de INTERNET kaldırıldı (yalnız main değil) | MASTER §14.1/AC3 manifest'lerde izin yokluğu ister; check_offline.sh üçünü de tarar. Debug attach riski T30 emülatör smoke'unda doğrulanacak |
 | 2026-09-20 | DECISION | Beyin skill formatında yeniden kuruldu; şablonun 10 satırlık stub PROJECT_BRAIN.md'si değiştirildi | Eski beyin skill formatında değildi (NOT_SKILL_FORMAT); içeriği ("kurallar ORTAK'ta") §1 normatif kaynaklarına taşındı |
@@ -466,7 +473,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T5 kapatıldı — README/CONTRIBUTING/SECURITY/CoC/THIRD_PARTY×2/CHANGELOG/issue+PR şablonları; cupertino_icons temizlendi; .zcodeignore untrack.
-Devam: T6 (gitleaks CI adımı zaten var — dependabot.yml + yerel doğrulama) → T7 (Drift şeması, 27 tablo).
+Son: T6 kapatıldı (dependabot + gitleaks yerel temiz) → Aşama 0b (T4–T6) bitti, A3 temiz; release APK derlemesi arka planda kanıtlandı.
+Devam: T7 (Drift şeması: 27 tablo, FK, cascade kararları, migration altyapısı, CRUD/FK/rollback testleri).
 Uyarı: SECURITY/CoC adres alanları yer tutucu (sahip dolduracak). Debug attach T30'da doğrulanacak.
 Kritik düzeltme (T2): 5. kaynak ilk yazarı **Amaral LJ**; §13 sayım 27 tablo.

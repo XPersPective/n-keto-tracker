@@ -1,0 +1,139 @@
+{
+  "$comment": "N Keto Tracker — GKI referans test vektörleri. Formül (MASTER_PROMPT §2.4, normatif): glucoseMmolL = glucoseMgDl / 18.0; GKI = glucoseMmolL / bhbMmolL. Kaynak doğrulama: docs/research/EVIDENCE_VERIFICATION.md (Meidenbauer 2015 tam metni 18.016 kullanır; spec 18.0'ı sabitler — bkz. EVIDENCE_VERIFICATION.md 'Dönüşüm katsayısı kaydı'). Beklenen değerler tam hassasiyetle yazılmıştır; testler 1e-9 toleransla karşılaştırır ve ARA YUVARLAMA YASAKTIR.",
+  "formulaVersion": 1,
+  "glucoseMgDlToMmolLDivisor": 18.0,
+  "errorCodes": {
+    "BHB_MUST_BE_POSITIVE": "BHB <= 0 oldugunda GKI hesaplanmaz (bolme yok)",
+    "GLUCOSE_MUST_BE_POSITIVE": "glukoz <= 0 oldugunda hesap yapilmaz",
+    "NOT_A_FINITE_NUMBER": "NaN, Infinity veya ayristirilamayan girdi reddedilir",
+    "EMPTY_INPUT": "bos/whitespace girdi reddedilir"
+  },
+  "cases": [
+    {
+      "id": "gki-2-0-exact",
+      "description": "MASTER_PROMPT §2.4 referans vektörü: 90 mg/dL + 2.5 mmol/L -> tam 2.0",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": 2.5,
+      "expected": { "glucoseMmolL": 5.0, "gki": 2.0 }
+    },
+    {
+      "id": "conversion-180-clean",
+      "description": "180 mg/dL -> tam 10.0 mmol/L (MASTER §16.1)",
+      "glucose": { "value": 180.0, "unit": "mg_dL" },
+      "bhbMmolL": 5.0,
+      "expected": { "glucoseMmolL": 10.0, "gki": 2.0 }
+    },
+    {
+      "id": "mmol-direct-no-double-conversion",
+      "description": "mmol/L dogrudan girdide 18.0 bölmesi TEKRAR uygulanmamali (MASTER §16.1)",
+      "glucose": { "value": 5.0, "unit": "mmol_L" },
+      "bhbMmolL": 2.5,
+      "expected": { "glucoseMmolL": 5.0, "gki": 2.0 }
+    },
+    {
+      "id": "mmol-direct-gki-1",
+      "description": "4.0 mmol/L + 4.0 mmol/L -> 1.0 (Duraj 2024 'optimal' ornek degerinin formül dogrulamasi)",
+      "glucose": { "value": 4.0, "unit": "mmol_L" },
+      "bhbMmolL": 4.0,
+      "expected": { "glucoseMmolL": 4.0, "gki": 1.0 }
+    },
+    {
+      "id": "high-values-full-precision",
+      "description": "300 mg/dL + 4.0 -> tam hassasiyet: 16.666666666666668 / 4 (sunum 1 ondalik: 4.2)",
+      "glucose": { "value": 300.0, "unit": "mg_dL" },
+      "bhbMmolL": 4.0,
+      "expected": { "glucoseMmolL": 16.666666666666668, "gki": 4.166666666666667 }
+    },
+    {
+      "id": "low-glucose-repeating-decimal",
+      "description": "72 mg/dL -> tam 4.0 mmol/L; 4/0.9 tekrarli ondalik",
+      "glucose": { "value": 72.0, "unit": "mg_dL" },
+      "bhbMmolL": 0.9,
+      "expected": { "glucoseMmolL": 4.0, "gki": 4.444444444444445 }
+    },
+    {
+      "id": "no-intermediate-rounding",
+      "description": "97 mg/dL + 2.9: dogru sonuc 485/261 = 1.8582375478927203. ARA ADIMDA 1 ondaliga yuvarlansaydi (5.4/2.9) 1.8620689655174152 cikardi; test ara yuvarlamayi yakalamali",
+      "glucose": { "value": 97.0, "unit": "mg_dL" },
+      "bhbMmolL": 2.9,
+      "expected": { "glucoseMmolL": 5.388888888888889, "gki": 1.8582375478927204 }
+    },
+    {
+      "id": "no-intermediate-rounding-2",
+      "description": "113 mg/dL + 3.7: 113/18 = 6.2777... ; GKI = 1.6966966966966965 (ara yuvarlama 6.3/3.7 = 1.7027027027027026 ile ayristirir)",
+      "glucose": { "value": 113.0, "unit": "mg_dL" },
+      "bhbMmolL": 3.7,
+      "expected": { "glucoseMmolL": 6.277777777777778, "gki": 1.6966966966966965 }
+    },
+    {
+      "id": "bhb-zero-rejected",
+      "description": "BHB = 0 -> dogrulama hatasi; GKI yoktur (MASTER §15)",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": 0.0,
+      "expectError": "BHB_MUST_BE_POSITIVE"
+    },
+    {
+      "id": "bhb-negative-rejected",
+      "description": "BHB < 0 -> dogrulama hatasi",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": -2.5,
+      "expectError": "BHB_MUST_BE_POSITIVE"
+    },
+    {
+      "id": "glucose-zero-rejected",
+      "description": "glukoz = 0 -> dogrulama hatasi",
+      "glucose": { "value": 0.0, "unit": "mg_dL" },
+      "bhbMmolL": 2.5,
+      "expectError": "GLUCOSE_MUST_BE_POSITIVE"
+    },
+    {
+      "id": "glucose-negative-rejected",
+      "description": "glukoz < 0 -> dogrulama hatasi",
+      "glucose": { "value": -90.0, "unit": "mg_dL" },
+      "bhbMmolL": 2.5,
+      "expectError": "GLUCOSE_MUST_BE_POSITIVE"
+    },
+    {
+      "id": "nan-rejected",
+      "description": "NaN girdi -> dogrulama hatasi (MASTER §16.1)",
+      "glucose": { "value": "NaN", "unit": "mg_dL" },
+      "bhbMmolL": 2.5,
+      "expectError": "NOT_A_FINITE_NUMBER"
+    },
+    {
+      "id": "infinity-rejected",
+      "description": "Infinity girdi -> dogrulama hatasi",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": "Infinity",
+      "expectError": "NOT_A_FINITE_NUMBER"
+    },
+    {
+      "id": "turkish-comma-parse",
+      "description": "TR virgullu ondalik '2,5' -> 2.5 (MASTER §3.3)",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": "2,5",
+      "expected": { "glucoseMmolL": 5.0, "gki": 2.0 }
+    },
+    {
+      "id": "english-dot-parse",
+      "description": "EN noktali ondalik '2.5' -> 2.5",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": "2.5",
+      "expected": { "glucoseMmolL": 5.0, "gki": 2.0 }
+    },
+    {
+      "id": "empty-input-rejected",
+      "description": "bos girdi -> dogrulama hatasi",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": "  ",
+      "expectError": "EMPTY_INPUT"
+    },
+    {
+      "id": "garbage-input-rejected",
+      "description": "sayi olmayan girdi -> dogrulama hatasi",
+      "glucose": { "value": 90.0, "unit": "mg_dL" },
+      "bhbMmolL": "2,5abc",
+      "expectError": "NOT_A_FINITE_NUMBER"
+    }
+  ]
+}

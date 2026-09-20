@@ -99,8 +99,9 @@ void main() {
     expect(find.text('Save measurement session'), findsOneWidget);
   });
 
-  testWidgets('Öğün: gerçek form; Ağırlık/Semptom: dürüst coming-soon (≤3)',
-      (tester) async {
+  testWidgets('Öğün: gerçek form; Ağırlık/Semptom: dürüst coming-soon (≤3)', (
+    tester,
+  ) async {
     db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() => gracefulTeardown(tester));
     await tester.pumpWidget(scope());

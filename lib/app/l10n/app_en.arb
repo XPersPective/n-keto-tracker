@@ -290,5 +290,48 @@
         "type": "String"
       }
     }
+  },
+  "guideGroupPrefer": "Generally a good fit",
+  "guideGroupLimit": "May need portion or frequency limits",
+  "guideGroupAvoid": "Generally incompatible with ketogenic targets",
+  "guideWhyHeading": "Why?",
+  "guideTypicalPortion": "Typical portion: {portion} (~{grams} g)",
+  "guideAlternatives": "Alternatives: {value}",
+  "guideDataSource": "Data source: {value}",
+  "guideCardMeatFishEggs": "Meat, fish, and eggs",
+  "guideCardLowCarbVegetables": "Low-carb vegetables",
+  "guideCardFatsOils": "Fats and oils",
+  "guideCardNutsSeeds": "Nuts and seeds",
+  "guideCardBerries": "Berries",
+  "guideCardDairy": "Full-fat dairy",
+  "guideCardFruit": "Fruits",
+  "guideCardLegumes": "Legumes",
+  "guideCardMilkDrinks": "Milk and sweet drinks",
+  "guideCardSugaryDrinks": "Sugary drinks",
+  "guideCardStarches": "Bread, rice, potato",
+  "guideCardSweets": "Sweets and desserts",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

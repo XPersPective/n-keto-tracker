@@ -378,5 +378,8 @@
         "type": "String"
       }
     }
-  }
+  },
+  "evidenceDiseaseFilter": "Hastalıklara özel araştırmaları göster (seçerek okuduğunuz kaynaklar)",
+  "evidenceSectionTitle": "Bilimsel kaynaklar ve makaleler",
+  "guideCopyLink": "Kaynak bağlantısını kopyala"
 }

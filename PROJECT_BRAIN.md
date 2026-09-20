@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** Aşama 0b kapandı (T4–T6, A3 temiz). Sıradaki: T7 Drift şeması (27 tablo).
-> **Phase:** BUILD · **Next:** T7 · **Updated:** 2026-09-20 · **Synced@:** 28c0591
+> **Status:** T7 tamam: 27 tablolu Drift şeması + 9 DB testi yeşil. Sıradaki: T8 şifreleme.
+> **Phase:** BUILD · **Next:** T8 · **Updated:** 2026-09-20 · **Synced@:** ff7fe42
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -182,9 +182,10 @@ test/  integration_test/  tool/  docs/
 Şablon checkout'ı + Aşama 0 dokümanları + Flutter iskeleti (T4). Mevcut kod:
 - **Flutter iskeleti** (T4): `lib/main.dart` (ProviderScope), `lib/app/app.dart` (Material3 router, TR/EN, localeOverride test kancası), `lib/app/router.dart` (go_router StatefulShellRoute, 5 sekme placeholder), `lib/app/app_shell.dart` (NavigationBar 5 hedef), `lib/app/theme/app_theme.dart` (tek üretici, seed #00696B, açık/koyu), `lib/app/l10n/{app_en,app_tr}.arb` + `l10n.yaml` (generate: true, çıktı gitignore'lu), `lib/core/config/{app_config,env_config}.dart` (marka tek nokta + dart-define)
 - **Bağımlılıklar** (kilitli): flutter_riverpod 3.4.3, go_router 18.0.1, drift 2.35.0, fl_chart 1.2.0, freezed_annotation 3.1.0, json_annotation 4.12.0, intl 0.20.3; dev: drift_dev 2.35.0, build_runner 2.16.1, freezed 4.0.2, json_serializable 6.14.1
+- **Veri katmanı** (T7): `lib/core/database/tables.dart` (27 tablo, DataClassName, bilinçli cascade/RESTRICT, TEXT PK seed vs autoincrement kullanıcı ayrımı, UTC+offset zaman alanları), `database.dart` (schemaVersion 1, FK pragma, LazyDatabase+path_provider), `database.g.dart` (üretilmiş); path_provider 2.1.6 (ADR-0002)
 - **Offline sertleştirme**: 3 manifest'te de INTERNET yok; usesCleartextTraffic=false; dataExtractionRules/fullBackupContent (database + secure storage hariç); R8 minify+shrink + proguard taban; kotlin.incremental=false
 - **CI** `.github/workflows/ci.yml`: gitleaks → pub get + check_offline + format + analyze --fatal-infos + test → release APK
-- **Testler**: 3 smoke widget (5 sekme, sekme geçişi, TR) + 3 l10n bütünlük (anahtar eşitliği, boş değer, marka sabiti)
+- **Testler**: 3 smoke widget (5 sekme, sekme geçişi, TR) + 3 l10n bütünlük + 9 DB testi (T7: 27 tablo/FK/CASCADE/RESTRICT/rollback/oturum/hedef türleri)
 - **Offline kanıtı**: `tool/check_offline.sh` (manifest + yasaklı paket taraması) exit 0
 - Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
@@ -214,6 +215,7 @@ n-keto-tracker/
     brand/
       example_source_icon.png
   docs/
+    adr/0002-path-provider.md  # T7: path_provider gerekçe ADR'si
     EVIDENCE_SCHEMA.md   # T3: kanıt içerik JSON şeması + E1–E6 etiketler
     REQUIREMENTS_MATRIX.md  # T3: 105 REQ satırı, AC+görev eşlemeli
     MASTER_PROMPT.md    # ürün spec'i v1.1 (normatif)
@@ -227,11 +229,14 @@ n-keto-tracker/
       theme/app_theme.dart  # tek tema üreticisi (seed #00696B)
     core/
       config/           # app_config (marka tek nokta), env_config (dart-define)
+      database/         # T7: tables.dart (27 tablo), database.dart, .g.dart
     main.dart           # ProviderScope girişi
   test/
     app/
       app_smoke_test.dart        # 5 sekme smoke + TR yerel ayar
       l10n_completeness_test.dart  # ARB anahtar eşitliği
+    core/
+      database/database_test.dart  # T7: 9 DB testi
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
@@ -290,11 +295,10 @@ n-keto-tracker/
   - → dependabot.yml (pub+gradle+github-actions haftalık, python-yaml ile doğrulandı); CI'da gitleaks adımı T4'ten beri mevcut (grep=2); yerel gitleaks 8.0: "no leaks found", exit 0. Pre-commit talimatı CONTRIBUTING'de (T5)
 
 ### Aşama 1 — Veri katmanı ve onboarding
-- [ ] T7 [H] Drift şeması + migration altyapısı
-  - Where: `lib/core/database/{database.dart,tables.dart}`, `test/core/database/`
-  - Do: 1) MASTER §13'teki 26 tabloyu Drift ile tanımla (AppSettings, ConsentRecords, UserProfile, RiskScreening, EnergyEstimate, Goal, Food, ServingOption, Recipe, RecipeIngredient, Meal, MealItem, GlucoseMeasurement, KetoneMeasurement, MeasurementSession, WeightEntry, SymptomDefinition, SymptomEntry, ContextTag, MealPlan, MealPlanEntry, ShoppingList, ShoppingListItem, EvidenceSource, EvidenceClaim, ContentVersion, ExportHistory); FK'ler aktif, her tabloda bilinçli cascade; 2) MeasurementSession glukoz+BHB referansı + formulaVersion; ölçümlerde ham değer+ham birim+normalize değer+yerel offset; 3) seed ile kullanıcı içeriği id çakışmaz (seed string id / kullanıcı autoincrement); 4) schemaVersion=1, migration test altyapısı (iki eski şema fixture'ı sonraki sürümlerde; şimdilik v1 doğrulaması); 5) CRUD + FK ihlali + rollback birim testleri
+- [x] T7 (2026-09-20, GLM-5.3) Drift şeması + migration altyapısı
   - Done when: `flutter test test/core/database/` geçer; testte 26 tablo create ediliyor; FK ihlali hata veriyor
-  - Needs: T4
+  - → 9 DB testi yeşil (27 tablo, FK pragma=1, CRUD, FK ihlali, CASCADE, RESTRICT, transaction rollback, oturum+formül sürümü, üç hedef türü ayrık); tam paket 15 test yeşil, analyze temiz
+  - Note: TEXT PK'li seed tablolarına `primaryKey => {id}` override'ı eklendi (drift FK mismatch'ini önler); testler snake_case fiziksel tablo adlarını doğrular; path_provider ADR-0002 ile eklendi (BSD-3)
 - [ ] T8 [H] Veritabanı şifreleme (standart §6.1)
   - Where: `lib/core/database/`, `docs/adr/0001-db-encryption.md` (yeni)
   - Do: 1) sqlcipher_flutter_libs + flutter_secure_storage uyumluluğunu ve lisansını doğrula (GPL-3.0 uyumlu olmalı; değilse alternatif ya da gerekçeli vazgeçme ADR'si); 2) Drift veritabanını sqlcipher ile aç, anahtarı flutter_secure_storage'da üret/sakla; 3) PRIVACY açısından doğruluk: şifreleme GERÇEKTEN varsa söylenir (MASTER §14.2); 4) şifreli açılış + yanlış anahtar davranışı testi
@@ -473,7 +477,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T6 kapatıldı (dependabot + gitleaks yerel temiz) → Aşama 0b (T4–T6) bitti, A3 temiz; release APK derlemesi arka planda kanıtlandı.
-Devam: T7 (Drift şeması: 27 tablo, FK, cascade kararları, migration altyapısı, CRUD/FK/rollback testleri).
+Son: T7 kapatıldı — 27 tablo (cascade/RESTRICT kararları yorumlu), FK pragma, 9 DB testi; tam paket 15 test yeşil.
+Devam: T8 (DB şifreleme kararı: sqlcipher_flutter_libs + flutter_secure_storage uyumluluğu/lisansı; ADR) → T9 onboarding.
+Teknik not: yeni TEXT PK tablo = tables.dart'ta primaryKey override + build_runner; companion adları `<Tablo>Companion`, satır sınıfları `<Tablo>Row`.
 Uyarı: SECURITY/CoC adres alanları yer tutucu (sahip dolduracak). Debug attach T30'da doğrulanacak.
-Kritik düzeltme (T2): 5. kaynak ilk yazarı **Amaral LJ**; §13 sayım 27 tablo.

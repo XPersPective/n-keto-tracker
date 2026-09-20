@@ -117,5 +117,40 @@
   },
   "@bandsDisclaimer": {
     "description": "Permanent band disclaimer text (MASTER 6.4)."
+  },
+  "todayQuickActions": "Hızlı eylemler",
+  "todayAddMeasurement": "Ölçüm ekle",
+  "todayAddMeal": "Öğün ekle",
+  "todayAddWeight": "Ağırlık ekle",
+  "todayAddSymptom": "Semptom ekle",
+  "todayLatestTitle": "Son ölçümler",
+  "todayLatestEmpty": "Henüz ölçüm yok. Glukoz ve kan ketonu BHB'yi birlikte kaydetmek için 'Ölçüm ekle'yi kullanın.",
+  "todayNutritionTitle": "Bugünün besinleri",
+  "todayNutritionEmpty": "Bugün kayıtlı öğün yok. Öğünler Plan sekmesinden girilir.",
+  "todayWeightTitle": "Ağırlık",
+  "todayWeightEmpty": "Henüz ağırlık kaydı yok.",
+  "todaySymptomsTitle": "Bugünün semptomları",
+  "todaySymptomsEmpty": "Bugün kayıtlı semptom yok.",
+  "todayPlansTitle": "Planlı öğünler",
+  "todayPlansEmpty": "Bugün için öğün planı yok.",
+  "comingSoonTitle": "Yakındaki bir güncellemede",
+  "comingSoonBody": "Bu giriş formu geliştiriliyor. İlerlemeyi proje deposundan izleyebilirsiniz.",
+  "@todayQuickActions": {
+    "description": "Quick actions section heading (MASTER 5.1)."
+  },
+  "@todayLatestEmpty": {
+    "description": "Empty state for latest measurements."
+  },
+  "@todayNutritionEmpty": {
+    "description": "Empty state for daily nutrition totals."
+  },
+  "@todayWeightEmpty": {
+    "description": "Empty state for weight."
+  },
+  "@todaySymptomsEmpty": {
+    "description": "Empty state for symptoms."
+  },
+  "@todayPlansEmpty": {
+    "description": "Empty state for planned meals."
   }
 }

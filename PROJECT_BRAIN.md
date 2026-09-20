@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T13 tamam: Günlük çizelgesi + grafikler + kapalı bantlar; 81 test yeşil. Sıradaki: T14 Bugün ekranı.
-> **Phase:** BUILD · **Next:** T14 · **Updated:** 2026-09-20 · **Synced@:** 07512fc
+> **Status:** T14 tamam: Bugün ekranı (≤3 dokunuş eylemler + boş durumlar). Aşama 2 bitti → A3. Sıradaki: T15 seed besinler.
+> **Phase:** BUILD · **Next:** T15 · **Updated:** 2026-09-20 · **Synced@:** b740da4
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Bugün ekranı yok → T14
+GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
@@ -235,6 +235,7 @@ n-keto-tracker/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
     features/
+      dashboard/        # T14: today_page (hızlı eylemler + boş durumlar)
       measurements/     # T12–T13: measurement_session_form, log_page, log_view_model
       onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
@@ -258,6 +259,8 @@ n-keto-tracker/
         consent_repository_test.dart     # T9: 5 onam testi
         onboarding_page_test.dart        # T9: 4 widget testi
       privacy/risk_lock_test.dart  # T10: 4 kilit testi
+    dashboard/
+      today_page_test.dart             # T14: 3 Bugün ekranı testi
     units/
       gki_engine_test.dart             # T11: 25 test (18 fixture vektörü dahil)
       formula_single_source_test.dart  # T11: formül tekrar yasağı grep
@@ -348,11 +351,10 @@ n-keto-tracker/
   - Done when: zaman çizelgesi + grafik widget testleri geçer; bant varsayılan-kapalı ve açıklama metni testte doğrulanıyor
   - → LogPage (Günlük sekmesi): timelineProvider + chartSeriesProvider (GKI/glukoz/BHB ayrı küçük grafikler, fl_chart, bağımsız eksen), bantlar varsayılan KAPALI + kalıcı açıklama GKI grafiği altında + bilinçli anahtar, /log/session'da oturum formu; 3 widget testi; 81 toplam yeşil
   - Note: zaman çizelgesi şimdilik oturum girdileri; öğün (T16), ağırlık (T22), semptom (T23) sonra birleşecek. Boş grafik başlığı çizelge boşuyla aynı metni paylaşıyor (findsWidgets)
-- [ ] T14 [M] Bugün ekranı
-  - Where: `lib/features/dashboard/`
-  - Do: MASTER §5.1: son glukoz/BHB/GKI kartları (saat + eşzamanlı/yaklaşık eşleşme durumu), günlük besin toplamları (T16'dan önce boş durum), son ağırlık + 7/30 gün değişim (T22'den önce boş durum), bugünün semptomu, 4 hızlı eylem (≤3 dokunuş), planlı öğünler + tamamlanma, "genel bilgi; tıbbi tavsiye değildir" alt bilgisi
+- [x] T14 (2026-09-20, GLM-5.3) Bugün ekranı
   - Done when: widget testi: her hızlı eylem ana ekrandan ≤3 dokunuşta ilgili formu açıyor; boş durumlar render ediliyor
-  - Needs: T12
+  - → TodayPage: 4 hızlı eylem (ilk ekran, 2. dokunuşta hedef; Ölçüm→gerçek form, öğün/ağırlık/semptom→dürüst coming-soon sayfası), son ölçüm kartı (GKI+eşleşme türü), 5 boş durum kartı, alt bilgi; 3 widget testi; 84 toplam yeşil
+  - Note: öğün/ağırlık/semptom formları T16/T22/T23'te gelir; coming-soon yolları o zaman gerçek formlarla değişir (router'da işaretli)
 
 ### Aşama 3 — Beslenme
 - [ ] T15 [M] Seed besin veri seti
@@ -474,6 +476,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 2 kapandı: T11–T14)**: analyze temiz; 84 test yeşil (GKI motoru 25, eşleştirme 8, oturum repo 4, form 3, log 3, Bugün 3 + önceki 38); check_offline exit 0; AC2 çekirdeği tamam (90+2,5→2,0 referansı tüm katmanlarda aynı motor). Bulgu yok; önceden bilinen açık işler: bağlam etiketleri UI seçimi (T12 formunda alan var, liste T18'de), öğün/ağırlık/semptom coming-soon yolları T16/T22/T23'te dolacak | Protokol §0.4 A3 |
 | 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
 | 2026-09-20 | DECISION | T4: debug/profile manifest'lerinden de INTERNET kaldırıldı (yalnız main değil) | MASTER §14.1/AC3 manifest'lerde izin yokluğu ister; check_offline.sh üçünü de tarar. Debug attach riski T30 emülatör smoke'unda doğrulanacak |
 | 2026-09-20 | DECISION | Beyin skill formatında yeniden kuruldu; şablonun 10 satırlık stub PROJECT_BRAIN.md'si değiştirildi | Eski beyin skill formatında değildi (NOT_SKILL_FORMAT); içeriği ("kurallar ORTAK'ta") §1 normatif kaynaklarına taşındı |
@@ -495,7 +498,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T13 kapatıldı — Günlük ekranı (çizelge + 3 ayrı grafik + kapalı bantlar); 81 test yeşil.
-Devam: T14 (Bugün ekranı: son ölçüm kartları, toplamlar, 4 hızlı eylem ≤3 dokunuş) — Aşama 2 T14 ile kapanır → A3.
-Teknik not: lazy ListView testlerinde scrollUntilVisible şart; autoDispose provider + DB kapatma sırası: önce ağacı sök.
+Son: T14 kapatıldı — Bugün ekranı; Aşama 2 (T11–T14) bitti, A3 temiz; 84 test yeşil.
+Devam: T15 (seed besin veri seti: lisans doğrulaması — USDA FDC kamu malı, ≥150 besin, provenance dokümanı, idempotent seeder) → T16–T18.
+Teknik not: coming-soon yolları (/meals/new vb.) T16/T22/T23'te gerçek formlarla değişecek; lazy ListView testlerinde scrollUntilVisible şart.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

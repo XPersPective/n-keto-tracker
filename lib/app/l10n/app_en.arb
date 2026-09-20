@@ -187,5 +187,40 @@
   },
   "@bandsDisclaimer": {
     "description": "Permanent band disclaimer text (MASTER 6.4)."
+  },
+  "todayQuickActions": "Quick actions",
+  "todayAddMeasurement": "Add measurement",
+  "todayAddMeal": "Add meal",
+  "todayAddWeight": "Add weight",
+  "todayAddSymptom": "Add symptom",
+  "todayLatestTitle": "Latest measurements",
+  "todayLatestEmpty": "No measurements yet. Use 'Add measurement' to record glucose and ketone BHB together.",
+  "todayNutritionTitle": "Today's nutrition",
+  "todayNutritionEmpty": "No meals recorded today. Meals are logged from the Plan tab.",
+  "todayWeightTitle": "Weight",
+  "todayWeightEmpty": "No weight entries yet.",
+  "todaySymptomsTitle": "Today's symptoms",
+  "todaySymptomsEmpty": "No symptoms recorded today.",
+  "todayPlansTitle": "Planned meals",
+  "todayPlansEmpty": "No meal plan for today.",
+  "comingSoonTitle": "Coming in an upcoming update",
+  "comingSoonBody": "This entry form is being built. You can follow progress in the project repository.",
+  "@todayQuickActions": {
+    "description": "Quick actions section heading (MASTER 5.1)."
+  },
+  "@todayLatestEmpty": {
+    "description": "Empty state for latest measurements."
+  },
+  "@todayNutritionEmpty": {
+    "description": "Empty state for daily nutrition totals."
+  },
+  "@todayWeightEmpty": {
+    "description": "Empty state for weight."
+  },
+  "@todaySymptomsEmpty": {
+    "description": "Empty state for symptoms."
+  },
+  "@todayPlansEmpty": {
+    "description": "Empty state for planned meals."
   }
 }

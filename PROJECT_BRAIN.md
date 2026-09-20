@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T9 tamam: 8 adımlı onboarding + onam kaydı, 34 test yeşil. Sıradaki: T10 risk kilidi.
-> **Phase:** BUILD · **Next:** T10 · **Updated:** 2026-09-20 · **Synced@:** 77c259e
+> **Status:** T10 tamam: risk kilidi (kilit + üretim reddi + yeniden değerlendirme). Aşama 1 bitti → A3. Sıradaki: T11 GKI motoru.
+> **Phase:** BUILD · **Next:** T11 · **Updated:** 2026-09-20 · **Synced@:** 46ccd96
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -231,6 +231,8 @@ n-keto-tracker/
     core/
       config/           # app_config (marka tek nokta), env_config (dart-define)
       database/         # T7–T8: tables.dart (27 tablo), database.dart (şifreli), .g.dart
+    privacy/
+      risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     features/
       onboarding/       # T9: onboarding_page, onboarding_controller, consent_repository
     main.dart           # ProviderScope girişi
@@ -317,11 +319,9 @@ n-keto-tracker/
   - Done when: her adımın widget testi + ileri akış testi geçer; onam hash'i DB'de; onboarding ARB + ekranlarında hastalık adı lint'i temiz
   - → 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı[saygılı dil+atlanabilir]→risk taraması→veri+onam); consent_repository (sürüm 1.0.0+SHA-256 hash, eski sürüm → yeniden onam); 14 yeni test (controller 5, consent 5, widget 4) dahil 34 test yeşil; OnboardingController Riverpod 3 Notifier; RadioGroup API (3.32+); ARB 47 anahtar TR/EN eşit
   - Note: profil/katsayı alanları henüz yalnız controller'da; UserProfile'a yazım T10/T21 ile birlikte (DB yazma akışı user profile repository'siyle)
-- [ ] T10 [M] Risk kilidi
-  - Where: `lib/features/onboarding/`, `lib/core/` (kilit provider'ı)
-  - Do: 1) RiskScreening'de herhangi bir risk → plan üretimi ve otomatik hedef üretimi kilitlenir (FeatureLock provider); kilitliyken yalnız kayıt+eğitim + uzman değerlendirmesi mesajı; 2) tarama düzenlenince yeniden değerlendirme; 3) birim + widget testleri
+- [x] T10 (2026-09-20, GLM-5.3) Risk kilidi
   - Done when: risk=evet senaryosunda plan üretici çağrısının reddi ve mesaj gösterimi testte doğrulanıyor
-  - Needs: T9
+  - → riskLockProvider + guardPlanGeneration kapısı (PlanLockedException); 4 birim test (kilit aç/kapa, yeniden değerlendirme, üretim reddi); kilit mesajı gösterimi T9 widget testinde kanıtlı ('risk işaretlendiğinde kilit notu görünür'); 38 toplam test yeşil
 
 ### Aşama 2 — Ölçüm ve GKI
 - [ ] T11 [H] GKI saf hesap motoru
@@ -464,6 +464,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 | Date | Type | What | Why / evidence |
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
 | 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
 | 2026-09-20 | DECISION | T4: debug/profile manifest'lerinden de INTERNET kaldırıldı (yalnız main değil) | MASTER §14.1/AC3 manifest'lerde izin yokluğu ister; check_offline.sh üçünü de tarar. Debug attach riski T30 emülatör smoke'unda doğrulanacak |
 | 2026-09-20 | DECISION | Beyin skill formatında yeniden kuruldu; şablonun 10 satırlık stub PROJECT_BRAIN.md'si değiştirildi | Eski beyin skill formatında değildi (NOT_SKILL_FORMAT); içeriği ("kurallar ORTAK'ta") §1 normatif kaynaklarına taşındı |
@@ -485,7 +486,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T9 kapatıldı — onboarding 8 adım + consent repository (hash'li onam) + 14 yeni test; 34 toplam yeşil.
-Devam: T10 (FeatureLock: risk varken plan/hedef üretimi kilitli; RiskScreening'e yazım + yeniden değerlendirme) → T11 (GKI motoru).
-Teknik not: Riverpod 3 → Notifier API (StateNotifier yok); RadioGroup 3.32+ API; global appRouter testler arasında durum taşır (test başında go('/onboarding')).
+Son: T10 kapatıldı — riskLockProvider + guardPlanGeneration; Aşama 1 (T7–T10: veri katmanı + onboarding) bitti, 38 test yeşil.
+Devam: T11 (GKI saf motoru: mg/dL↔mmol/L, T2'nin 18 vektörü parametreli test, FORMULA_VERSION, formül-tekrarı grep testi).
+Teknik not: Riverpod 3 → Notifier; RadioGroup 3.32+; global appRouter test durumunu taşır; DB şifreli (testler bellek içi şifresiz).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

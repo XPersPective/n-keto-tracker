@@ -99,20 +99,25 @@ void main() {
     expect(find.text('Save measurement session'), findsOneWidget);
   });
 
-  testWidgets('Öğün/Ağırlık/Semptom ekle: hedef sayfaları açılır (≤3)', (
-    tester,
-  ) async {
+  testWidgets('Öğün: gerçek form; Ağırlık/Semptom: dürüst coming-soon (≤3)',
+      (tester) async {
     db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() => gracefulTeardown(tester));
     await tester.pumpWidget(scope());
     await tester.pumpAndSettle();
 
-    for (final label in ['Add meal', 'Add weight', 'Add symptom']) {
+    // Öğün artık gerçek form (T16).
+    await tester.tap(find.text('Add meal'));
+    await tester.pumpAndSettle();
+    expect(find.text('Log a meal'), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
+    // Ağırlık/semptom T22/T23'e kadar dürüst yer tutucu.
+    for (final label in ['Add weight', 'Add symptom']) {
       await tester.tap(find.text(label));
       await tester.pumpAndSettle();
-      // Dürüst yer tutucu: form T16/T22/T23'te gelir.
       expect(find.text('Coming in an upcoming update'), findsOneWidget);
-      // Geri dön, sıradaki eylem için.
       await tester.pageBack();
       await tester.pumpAndSettle();
     }

@@ -152,5 +152,73 @@
   },
   "@todayPlansEmpty": {
     "description": "Empty state for planned meals."
+  },
+  "mealFormTitle": "Öğün kaydet",
+  "mealSearchLabel": "Besin ara",
+  "mealTypeLabel": "Öğün türü",
+  "mealTypeBreakfast": "Kahvaltı",
+  "mealTypeLunch": "Öğle",
+  "mealTypeDinner": "Akşam",
+  "mealTypeSnack": "Ara öğün",
+  "mealTypeCustom": "Özel",
+  "mealGramsLabel": "Miktar (g)",
+  "mealAddItem": "Besin ekle",
+  "mealNoteLabel": "Not (isteğe bağlı)",
+  "mealFavoriteToggle": "Favori olarak işaretle",
+  "mealRepeatSection": "Hızlı tekrar",
+  "mealRepeatFavorites": "Favoriler",
+  "mealRepeatRecent": "Son kullanılanlar",
+  "mealSave": "Öğünü kaydet",
+  "mealItemsHeading": "Öğeler",
+  "mealSavedToast": "Öğün kaydedildi.",
+  "mealNeedsItem": "Önce en az bir besin ekleyin.",
+  "mealTotalsHeading": "Günlük toplamlar",
+  "mealTotalsKcal": "Enerji: {value} kcal",
+  "mealTotalsNetCarb": "Net karbonhidrat: {value} g",
+  "mealTotalsTotalCarb": "Toplam karbonhidrat: {value} g",
+  "mealTotalsFiber": "Lif: {value} g",
+  "mealTotalsProtein": "Protein: {value} g",
+  "mealTotalsFat": "Yağ: {value} g",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T15 tamam: 152 besinlik provenance'lı seed + idempotent seeder; 90 test. Sıradaki: T16 yemek günlüğü.
-> **Phase:** BUILD · **Next:** T16 · **Updated:** 2026-09-20 · **Synced@:** 1c6f8d1
+> **Status:** T16 tamam: öğün formu + toplamlar + hızlı tekrar; 103 test. Sıradaki: T17 gıda rehberi.
+> **Phase:** BUILD · **Next:** T17 · **Updated:** 2026-09-20 · **Synced@:** 93a7fd3
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Yemek günlüğü, gıda rehberi, öğün-ölçüm ilişkisi yok → T16–T18
+GAP: Gıda rehberi, öğün-ölçüm ilişkisi yok → T17–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
@@ -251,6 +251,7 @@ n-keto-tracker/
         encrypted_open_test.dart   # T8: 4 şifreleme testi
         measurements_repository_test.dart  # T12: 4 oturum akış testi
         food_seeder_test.dart      # T15: 6 seeder testi
+        meal_repository_test.dart  # T16: 5 öğün iş akışı testi
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
@@ -267,6 +268,8 @@ n-keto-tracker/
     units/
       gki_engine_test.dart             # T11: 25 test (18 fixture vektörü dahil)
       formula_single_source_test.dart  # T11: formül tekrar yasağı grep
+      serving_test.dart                # T16: 6 ölçekleme testi
+      matching_engine_test.dart        # T12: 8 eşleştirme testi
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
   THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
@@ -364,11 +367,10 @@ n-keto-tracker/
   - Done when: foods.json şema doğrulama + seeder idempotency testi geçer; `python -c` kontrolü: her kayıtta license ve dataSource dolu
   - → 152 besin (TR+uluslararası, keto-relevanslı); tool/gen_foods_seed.py ile tekrar üretilebilir; netCarb=max(0,total−fiber) üretici+test doğrulamalı; FoodSeeder idempotent (6 test: şema, tam ekleme, 2. koşum 0, kullanıcı besini korunur, user-id yasağı, ContentVersion); provenance dokümanı USDA kamu malı + dürüst derleme beyanı; 90 test yeşil
   - Note: sourceRecordId 'FDC-SR-transcribed:<slug>' — tek kayıt API doğrulaması yayın öncesi uzman incelemesiyle (FOOD_DATA_PROVENANCE.md açık konu; release gate'i değil)
-- [ ] T16 [M] Yemek günlüğü
-  - Where: `lib/features/nutrition/`
-  - Do: 1) besin arama (yerel, TR/EN), porsiyon/gram, öğün türü (kahvaltı/öğle/akşam/ara/özel), çoklu besin, saat, not; 2) günlük toplamlar: enerji, toplam karb, lif, net karb, protein, yağ; hedefte hangi karb'ın kullanıldığı ayarlarda görünür; 3) hızlı tekrar / favori / son kullanılanlar; 4) özel besin (isUserCreated; kaynaklı veriden görünür ayrı); 5) porsiyon ölçekleme kayan nokta birim testleri
+- [x] T16 (2026-09-20, GLM-5.3) Yemek günlüğü
   - Done when: net karb + ölçekleme birim testleri ve arama→ekle→toplam güncellenir widget testi geçer
-  - Needs: T15
+  - → scalePer100g/scaleItem saf ölçekleme (6 tablo testi, kayan nokta tuzağı dahil); MealRepository (çoklu besin transaction, günlük toplamlar SQL birleşimi, kullanıcı beyanı geçersiz kılması, quickRepeat+repeatMeal, TR/EN arama) 5 test; MealForm widget 2 test (arama→ekle→kaydet DB kanıtı, öğesiz red); 103 toplam yeşil
+  - Note: Meal.isFavorite eklendi (v1 şema, yayın öncesi); özel besin girişi arayüzü T17 ile; Bugün testi gerçek forma uyarlandı
 - [ ] T17 [M] Gıda rehberi
   - Where: `lib/features/evidence/` (rehber görünümü) + seed içerik
   - Do: MASTER §9: üç grup (genellikle tercih edilebilir / porsiyon-sıklık sınırlı / ketojenik hedefle genellikle uyumsuz); her kart: Neden? + tipik porsiyon + yaklaşık net karb + veri kaynağı + alternatifler + kanıt etiketi; Türkiye + uluslararası besinler; ahlaki/korkutucu dil yok
@@ -500,7 +502,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T15 kapatıldı — 152 besinlik USDA kaynaklı seed + idempotent seeder + provenance dokümanı; 90 test yeşil.
-Devam: T16 (yemek günlüğü: besin arama, porsiyon ölçekleme, öğün türleri, günlük toplamlar; /meals/new coming-soon yolunu gerçek form yap) → T17, T18.
-Teknik not: seed değişimi yalnız yeni sürümle (contentVersion); FoodSeeder testleri dosyadan okur (rootBundle gerekmez).
+Son: T16 kapatıldı — MealForm (arama→ekle→kaydet), günlük toplamlar, hızlı tekrar/favori; 103 test yeşil.
+Devam: T17 (gıda rehberi: üç grup, Neden? kartları, ahlaki dil lint'i) → T18 (öğün-ölçüm ilişkisi) → Aşama 3 A3.
+Teknik not: MealForm Navigator.pop yapar (testte toast iddiası yok, DB kanıt); /meals/new artık gerçek form.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

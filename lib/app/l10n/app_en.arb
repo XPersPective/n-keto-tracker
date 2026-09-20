@@ -333,5 +333,25 @@
         "type": "String"
       }
     }
+  },
+  "logMealRelation": "Recorded {hours} h after {mealType} meal — timing context only, not an effect.",
+  "logNoMealRelation": "No meal recorded within the analysis window before this reading.",
+  "logRelationWindowLabel": "Meal relation window",
+  "logConfoundersHeading": "What else can affect readings?",
+  "mealTypeShortBreakfast": "breakfast",
+  "mealTypeShortLunch": "lunch",
+  "mealTypeShortDinner": "dinner",
+  "mealTypeShortSnack": "snack",
+  "mealTypeShortCustom": "meal",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    },
+    "description": "Non-causal meal relation line (MASTER 8.3)."
   }
 }

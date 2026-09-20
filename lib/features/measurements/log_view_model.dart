@@ -29,6 +29,8 @@ class MeasurementTimelineEntry extends TimelineEntry {
     required this.isValid,
     required this.matchKind,
     this.matchDifferenceMinutes,
+    this.relatedMealType,
+    this.relatedMealHoursAfter,
   });
 
   final int sessionId;
@@ -40,6 +42,11 @@ class MeasurementTimelineEntry extends TimelineEntry {
   final bool isValid;
   final String matchKind; // simultaneous | approximate
   final int? matchDifferenceMinutes;
+
+  /// En yakın önceki öğün (pencere içinde) — yalnızca zamansal bağlam
+  /// (MASTER §8.3). Null ise pencerede öğün yok.
+  final String? relatedMealType;
+  final double? relatedMealHoursAfter;
 }
 
 class NoteTimelineEntry extends TimelineEntry {

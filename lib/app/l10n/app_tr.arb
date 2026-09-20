@@ -263,5 +263,25 @@
         "type": "String"
       }
     }
+  },
+  "logMealRelation": "Bu {mealType} öğününden {hours} saat sonra kaydedilen değer — yalnızca zaman bağlamı, etki beyanı değildir.",
+  "logNoMealRelation": "Bu ölçümden önce analiz penceresi içinde kayıtlı öğün yok.",
+  "logRelationWindowLabel": "Öğün ilişki penceresi",
+  "logConfoundersHeading": "Ölçümleri başka neler etkileyebilir?",
+  "mealTypeShortBreakfast": "kahvaltı",
+  "mealTypeShortLunch": "öğle",
+  "mealTypeShortDinner": "akşam",
+  "mealTypeShortSnack": "ara öğün",
+  "mealTypeShortCustom": "öğün",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    },
+    "description": "Non-causal meal relation line (MASTER 8.3)."
   }
 }

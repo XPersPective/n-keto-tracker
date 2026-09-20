@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T17 tamam: 3 gruplu gıda rehberi + içerik lint'i; 109 test. Sıradaki: T18 öğün-ölçüm ilişkisi.
-> **Phase:** BUILD · **Next:** T18 · **Updated:** 2026-09-20 · **Synced@:** 58f40cc
+> **Status:** Aşama 3 bitti (T15–T18, A3 temiz; 119 test). Sıradaki: T19 tarifler (Aşama 4).
+> **Phase:** BUILD · **Next:** T19 · **Updated:** 2026-09-20 · **Synced@:** caf6507
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,7 +191,6 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Öğün-ölçüm ilişkisi yok → T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
@@ -483,6 +482,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 3 kapandı: T15–T18)**: analyze temiz; 119 test yeşil (seed 6, ölçekleme 6, öğün repo 5, form 2, rehber 6, ilişki 6, lint 4 + önceki 84); check_offline exit 0; GAP: Aşama 3 satırları silindi. Bulgu yok; bilinen açık işler: analiz penceresi kullanıcı seçimi T21 ayarlarında; ölçüm detay ekranı ayrı sayfa değil kart içi (yeterli — detay ekranı T24 trendler bağlamında genişler) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 2 kapandı: T11–T14)**: analyze temiz; 84 test yeşil (GKI motoru 25, eşleştirme 8, oturum repo 4, form 3, log 3, Bugün 3 + önceki 38); check_offline exit 0; AC2 çekirdeği tamam (90+2,5→2,0 referansı tüm katmanlarda aynı motor). Bulgu yok; önceden bilinen açık işler: bağlam etiketleri UI seçimi (T12 formunda alan var, liste T18'de), öğün/ağırlık/semptom coming-soon yolları T16/T22/T23'te dolacak | Protokol §0.4 A3 |
 | 2026-09-20 | DECISION | T4: `tool/new_app.dart` KULLANILMADI; `flutter create --org app.nketo --project-name n_keto_tracker` + elle ORTAK §1.4 sertleştirme seçildi | new_app.dart koşulsuz `napp_core` git bağımlılığı ekliyor (onaylı set dışında; napp_kit reposu — MASTER §3.1 "yeni bağımlılık ADR gerekçesiyle"), PROJECT_BRAIN.md'yi stub'la eziyor, admob/kit kalıntıları taşıyor. Faydalı platform mantığı (cleartext/backup/R8/kotlin.incremental) elle taşındı; iki string-interpolation lint'i düzeltildi |
 | 2026-09-20 | DECISION | T4: debug/profile manifest'lerinden de INTERNET kaldırıldı (yalnız main değil) | MASTER §14.1/AC3 manifest'lerde izin yokluğu ister; check_offline.sh üçünü de tarar. Debug attach riski T30 emülatör smoke'unda doğrulanacak |
@@ -505,7 +505,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T17 kapatıldı — gıda rehberi (12 kart/3 grup) + içerik lint'i; 109 test yeşil.
-Devam: T18 (öğün-ölçüm ilişkisi; Aşama 3'ün son görevi → A3) → T19 tarifler.
-Teknik not: seed JSON yüklemeleri provider'a taşı; testlerde override; rootBundle ardışık test tuzaklı.
+Son: T18 kapatıldı — öğün-ölçüm ilişkisi (zamansal dil) + karıştırıcı eğitim kartı; Aşama 3 bitti, A3 temiz; 119 test.
+Devam: T19 (tarifler: foods.json referanslı ≥20 seed tarif, deterministik ölçekleme, /plan yer tutucu yoluna bağlama) → T20, T21.
+Teknik not: seed JSON yüklemeleri provider'a taşı; testlerde override; rootBundle ardışık test tuzaklı; lazy list + scrollUntilVisible.
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

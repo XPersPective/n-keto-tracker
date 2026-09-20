@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../core/units/meal_measurement_relation.dart';
 import 'log_view_model.dart';
 
 /// Günlük ekranı (MASTER_PROMPT §5.2): tek kronolojik zaman çizelgesi +
@@ -63,6 +64,29 @@ class LogPage extends ConsumerWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
             const SizedBox(height: 8),
+            // Karıştırıcı etkenler eğitim kartı (MASTER §8.3).
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.logConfoundersHeading,
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
+                    const SizedBox(height: 8),
+                    for (final (tr, en) in confoundingFactors)
+                      Text(
+                        Localizations.localeOf(context).languageCode == 'tr'
+                            ? tr
+                            : en,
+                      ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
             if (list.isEmpty)
               Column(
                 children: [
@@ -96,13 +120,32 @@ class _EntryCard extends StatelessWidget {
     final matchLabel = entry.matchKind == 'simultaneous'
         ? l10n.logMatchSimultaneous
         : l10n.logMatchApproximate;
+    final relationLine = entry.relatedMealType == null
+        ? l10n.logNoMealRelation
+        : l10n.logMealRelation(
+            (entry.relatedMealHoursAfter ?? 0).toStringAsFixed(1),
+            switch (entry.relatedMealType) {
+              'breakfast' => l10n.mealTypeShortBreakfast,
+              'lunch' => l10n.mealTypeShortLunch,
+              'dinner' => l10n.mealTypeShortDinner,
+              'snack' => l10n.mealTypeShortSnack,
+              _ => l10n.mealTypeShortCustom,
+            },
+          );
     return Card(
       child: ListTile(
         // Renk tek başına anlam taşımaz; metin etiketi var (§12).
         title: Text('GKI ${entry.gki.toStringAsFixed(1)}'),
-        subtitle: Text(
-          '${entry.glucoseMmolL.toStringAsFixed(1)} mmol/L · '
-          '${entry.bhbMmolL.toStringAsFixed(1)} mmol/L · $matchLabel',
+        subtitle: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              '${entry.glucoseMmolL.toStringAsFixed(1)} mmol/L · '
+              '${entry.bhbMmolL.toStringAsFixed(1)} mmol/L · $matchLabel',
+            ),
+            const SizedBox(height: 4),
+            Text(relationLine, style: Theme.of(context).textTheme.bodySmall),
+          ],
         ),
       ),
     );

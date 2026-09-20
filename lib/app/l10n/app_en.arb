@@ -423,5 +423,30 @@
         "type": "String"
       }
     }
+  },
+  "trendsRange7": "7 days",
+  "trendsRange30": "30 days",
+  "trendsRange90": "90 days",
+  "trendsSummary": "{count} readings in the last {days} days. Latest: {latest}, average: {average}.",
+  "trendsEmpty": "No data in this range.",
+  "trendsExplainsTitle": "What this chart tells you — and what it doesn't",
+  "trendsExplainsBody": "The chart shows your own readings over time as raw points. It does not diagnose, does not predict, and does not prove causes. Missing days appear as gaps, not zeros.",
+  "trendsWeightChart": "Weight (kg)",
+  "trendsBandsNote": "Research ranges are optional and off by default. See the Log tab to enable them.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -353,5 +353,30 @@
         "type": "String"
       }
     }
+  },
+  "trendsRange7": "7 gün",
+  "trendsRange30": "30 gün",
+  "trendsRange90": "90 gün",
+  "trendsSummary": "Son {days} günde {count} ölçüm. Son değer: {latest}, ortalama: {average}.",
+  "trendsEmpty": "Bu aralıkta veri yok.",
+  "trendsExplainsTitle": "Bu grafik ne anlatır — ne anlatmaz",
+  "trendsExplainsBody": "Grafik kendi ölçümlerinizi ham noktalar olarak gösterir. Teşhis koymaz, öngörüde bulunmaz ve nedensellik kanıtlamaz. Eksik günler boşluk olarak görünür, sıfır değil.",
+  "trendsWeightChart": "Ağırlık (kg)",
+  "trendsBandsNote": "Araştırma aralıkları isteğe bağlıdır ve varsayılan olarak kapalıdır. Açmak için Günlük sekmesine bakın.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T23 tamam: semptom CRUD + yönlendirme kuralı + form; 156 test. Sıradaki: T24 trendler.
-> **Phase:** BUILD · **Next:** T24 · **Updated:** 2026-09-20 · **Synced@:** cc0a10c
+> **Status:** T24 tamam: Trendler ekranı; Aşama 5 bitti → A3; 159 test. Sıradaki: T25 kanıt kütüphanesi.
+> **Phase:** BUILD · **Next:** T25 · **Updated:** 2026-09-20 · **Synced@:** cc4b75b
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -192,7 +192,7 @@ test/  integration_test/  tool/  docs/
 
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
-GAP: Trendler ekranı yok → T24
+
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
@@ -263,6 +263,8 @@ n-keto-tracker/
         weight_form_test.dart      # T22: 3 ağırlık form testi
       symptoms/
         symptom_form_test.dart     # T23: 2 semptom form testi
+      dashboard/
+        trends_page_test.dart      # T24: 3 trend testi
       settings/
         goal_legend_test.dart      # T21: 3 lejant widget testi
       core/
@@ -421,13 +423,19 @@ n-keto-tracker/
 - [x] T23 (2026-09-20, GLM-5.3) Semptom takibi
   - Done when: CRUD birim + widget testleri geçer; yönlendirme mesajı testte doğrulanıyor
   - → SymptomRepository (11 varsayılan tanım idempotent, kullanıcı tanımı, CRUD, şiddet 0–10 doğrulaması, needsGuidance kuralı: nöbet olayı veya şiddet ≥7) 5 test; SymptomForm (/symptoms/new) 2 widget testi (düşük şiddet kayıt + şiddet 8'de yönlendirme mesajı); Bugün testi gerçek forma uyarlandı; 156 toplam yeşil
-- [ ] T24 [M] Trendler ekranı
-  - Where: `lib/features/dashboard/` (Trendler sekmesi)
-  - Do: MASTER §5.4 + §12: GKI/glukoz/BHB/ağırlık/net karb/enerji/semptom trendleri; 7/30/90 gün + özel aralık; ham nokta ile hareketli özet ayrı; veri yoksa çizgi uydurma yok; isteğe bağlı öğün işaretleri + bağlam katmanı; her grafiğin metinsel özeti (ekran okuyucu) + "Bu grafik ne anlatır/ne anlatmaz" açıklaması; aykırı değer korunur, görünüm filtresi kullanıcıda; GKI araştırma bantları aç/kapat + kaynak
+- [x] T24 (2026-09-20, GLM-5.3) Trendler ekranı
   - Done when: trend widget/golden testleri + metinsel özet semantics testi geçer
-  - Needs: T13, T22, T23
+  - → TrendsPage (/trends): 7/30/90 aralık seçimi, GKI/glukoz/BHB/ağırlık ayrı grafikler (weightSeriesProvider), ham noktalar korunur (aykırı filtre yok), veri yoksa dürüst boş durum, metinsel özet (adet/son/ortalama — ekran okuyucu kanıtı), "ne anlatır/ne anlatmaz" kalıcı kartı, bantlar notu; 3 widget testi; 159 toplam yeşil
+  - Note: golden testler T30 sertleştirme paketiyle (tema matrisi) eklenecek; özel aralık tarihi T24 kapsamında 7/30/90 sabit seçimle sınırlı (özel tarih aralığı T20 plan aralığıyla birlikte değerlendirilecek — açık iş notu)
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik
+- [ ] T35 [M] Plan + alışveriş UI ekranı
+  - Where: `lib/features/meal_plans/`, `lib/features/shopping/`
+  - Do: Plan sekmesini gerçek ekran yap: haftalık plan görünümü (T20 savePlan/collectIngredients bağlanır), "Taslak üret" düğmesi (risk kilidi T10 kontrolüyle), alışveriş listesi görünümü (kategori grupla, işaretle/düzenle, manuel madde ekle). ARB TR/EN.
+  - Done when: plan üret→kaydet→alışveriş listesi oluşur widget/integration testi geçer; risk kilidi aktifken üret düğmesi engellenir ve mesaj gösterilir
+  - Needs: T20
+
+### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik (eski başlık altı)
 - [ ] T25 [M] Kanıt kütüphanesi (Rehber)
   - Where: `assets/seed/evidence.json`, `lib/features/evidence/`
   - Do: MASTER §2.3 + §5.5: T2'de doğrulanan 7 kaynakla EvidenceSource/EvidenceClaim seed (provenance alanlarının tamamı, TR/EN sade özet, E1–E6 → görünür etiket); Rehber: keto temelleri, GKI nasıl hesaplanır, ölçüm bağlamı, gıda rehberi, profesyonel yardım; Bilimsel Kaynaklar bölümü: önce genel kaynaklar; hastalığa özel araştırmalar yalnız bilinçli filtreyle, Rehber ana sayfasında öneri olarak YOK; WebView/URL açma YOK (URL kopyalanabilir metin); içerik sürümü + değişiklik günlüğü
@@ -491,6 +499,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 5 kapandı: T22–T24)**: analyze temiz; 159 test yeşil (ağırlık 9, semptom 7, trendler 3 + önceki 140); check_offline exit 0. Açık işler: özel tarih aralığı sabit seçimle sınırlı (7/30/90); golden testler T30'da; Plan/alışveriş UI ekranı hâlâ eksik (T20 motoru hazır, UI T24-sonrası iş) — yeni görev T35 olarak açıldı | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 4 kapandı: T19–T21)**: analyze temiz; 140 test yeşil (tarif 5+1, plan 6, enerji 5, lejant 3, AC9 1 + önceki 119); check_offline exit 0. Bilinen açık işler: plan/alışveriş UI ekranları + hedefler yönetim ekranı (T24 öncesi/ile); onboarding profil → UserProfile yazımı hâlâ açık (T21 notu) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 3 kapandı: T15–T18)**: analyze temiz; 119 test yeşil (seed 6, ölçekleme 6, öğün repo 5, form 2, rehber 6, ilişki 6, lint 4 + önceki 84); check_offline exit 0; GAP: Aşama 3 satırları silindi. Bulgu yok; bilinen açık işler: analiz penceresi kullanıcı seçimi T21 ayarlarında; ölçüm detay ekranı ayrı sayfa değil kart içi (yeterli — detay ekranı T24 trendler bağlamında genişler) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 2 kapandı: T11–T14)**: analyze temiz; 84 test yeşil (GKI motoru 25, eşleştirme 8, oturum repo 4, form 3, log 3, Bugün 3 + önceki 38); check_offline exit 0; AC2 çekirdeği tamam (90+2,5→2,0 referansı tüm katmanlarda aynı motor). Bulgu yok; önceden bilinen açık işler: bağlam etiketleri UI seçimi (T12 formunda alan var, liste T18'de), öğün/ağırlık/semptom coming-soon yolları T16/T22/T23'te dolacak | Protokol §0.4 A3 |
@@ -515,7 +524,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T23 kapatıldı — semptom CRUD + yönlendirme (nöbet/şiddet≥7) + form; 156 test yeşil.
-Devam: T24 (trendler ekranı: 7/30/90 gün, metinsel özet, ayrı grafikler) → Aşama 5 A3.
+Son: T24 kapatıldı — Trendler (aralık seçimi, ayrı grafikler, metinsel özet); Aşama 5 bitti, A3 temiz; 159 test.
+Devam: T25 (kanıt kütüphanesi: T2'nin 7 kaynağıyla evidence.json + Rehber entegrasyonu; hastalık içeriği bilinçli filtre arkasında) → T26 export/import.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

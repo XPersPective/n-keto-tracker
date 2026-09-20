@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../features/dashboard/today_page.dart';
+import '../features/dashboard/trends_page.dart';
 import '../features/evidence/guide_page.dart';
 import '../features/nutrition/meal_form.dart';
 import '../features/symptoms/symptom_form.dart';
@@ -65,9 +66,7 @@ final GoRouter appRouter = GoRouter(
           routes: [
             GoRoute(
               path: '/trends',
-              builder: (context, state) => _PlaceholderPage(
-                title: AppLocalizations.of(context)!.navTrends,
-              ),
+              builder: (context, state) => const TrendsPage(),
             ),
           ],
         ),

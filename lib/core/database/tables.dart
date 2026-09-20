@@ -197,6 +197,8 @@ class Meal extends Table {
   DateTimeColumn get eatenAtUtc => dateTime()();
   IntColumn get localOffsetMinutes => integer()();
   TextColumn get note => text().nullable()();
+  // Hızlı tekrar/favori (MASTER §8.2): kullanıcı işaretler.
+  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
 }
 
 // ─── 12. MealItem ───────────────────────────────────────────────────────────

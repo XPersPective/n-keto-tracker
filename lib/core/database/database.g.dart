@@ -5933,6 +5933,21 @@ class $MealTable extends Meal with TableInfo<$MealTable, MealRow> {
     type: DriftSqlType.string,
     requiredDuringInsert: false,
   );
+  static const VerificationMeta _isFavoriteMeta = const VerificationMeta(
+    'isFavorite',
+  );
+  @override
+  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
+    'is_favorite',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("is_favorite" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
   @override
   List<GeneratedColumn> get $columns => [
     id,
@@ -5941,6 +5956,7 @@ class $MealTable extends Meal with TableInfo<$MealTable, MealRow> {
     eatenAtUtc,
     localOffsetMinutes,
     note,
+    isFavorite,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -5999,6 +6015,12 @@ class $MealTable extends Meal with TableInfo<$MealTable, MealRow> {
         note.isAcceptableOrUnknown(data['note']!, _noteMeta),
       );
     }
+    if (data.containsKey('is_favorite')) {
+      context.handle(
+        _isFavoriteMeta,
+        isFavorite.isAcceptableOrUnknown(data['is_favorite']!, _isFavoriteMeta),
+      );
+    }
     return context;
   }
 
@@ -6032,6 +6054,10 @@ class $MealTable extends Meal with TableInfo<$MealTable, MealRow> {
         DriftSqlType.string,
         data['${effectivePrefix}note'],
       ),
+      isFavorite: attachedDatabase.typeMapping.read(
+        DriftSqlType.bool,
+        data['${effectivePrefix}is_favorite'],
+      )!,
     );
   }
 
@@ -6048,6 +6074,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
   final DateTime eatenAtUtc;
   final int localOffsetMinutes;
   final String? note;
+  final bool isFavorite;
   const MealRow({
     required this.id,
     required this.mealType,
@@ -6055,6 +6082,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
     required this.eatenAtUtc,
     required this.localOffsetMinutes,
     this.note,
+    required this.isFavorite,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -6069,6 +6097,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
     if (!nullToAbsent || note != null) {
       map['note'] = Variable<String>(note);
     }
+    map['is_favorite'] = Variable<bool>(isFavorite);
     return map;
   }
 
@@ -6082,6 +6111,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
       eatenAtUtc: Value(eatenAtUtc),
       localOffsetMinutes: Value(localOffsetMinutes),
       note: note == null && nullToAbsent ? const Value.absent() : Value(note),
+      isFavorite: Value(isFavorite),
     );
   }
 
@@ -6097,6 +6127,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
       eatenAtUtc: serializer.fromJson<DateTime>(json['eatenAtUtc']),
       localOffsetMinutes: serializer.fromJson<int>(json['localOffsetMinutes']),
       note: serializer.fromJson<String?>(json['note']),
+      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
     );
   }
   @override
@@ -6109,6 +6140,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
       'eatenAtUtc': serializer.toJson<DateTime>(eatenAtUtc),
       'localOffsetMinutes': serializer.toJson<int>(localOffsetMinutes),
       'note': serializer.toJson<String?>(note),
+      'isFavorite': serializer.toJson<bool>(isFavorite),
     };
   }
 
@@ -6119,6 +6151,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
     DateTime? eatenAtUtc,
     int? localOffsetMinutes,
     Value<String?> note = const Value.absent(),
+    bool? isFavorite,
   }) => MealRow(
     id: id ?? this.id,
     mealType: mealType ?? this.mealType,
@@ -6126,6 +6159,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
     eatenAtUtc: eatenAtUtc ?? this.eatenAtUtc,
     localOffsetMinutes: localOffsetMinutes ?? this.localOffsetMinutes,
     note: note.present ? note.value : this.note,
+    isFavorite: isFavorite ?? this.isFavorite,
   );
   MealRow copyWithCompanion(MealCompanion data) {
     return MealRow(
@@ -6141,6 +6175,9 @@ class MealRow extends DataClass implements Insertable<MealRow> {
           ? data.localOffsetMinutes.value
           : this.localOffsetMinutes,
       note: data.note.present ? data.note.value : this.note,
+      isFavorite: data.isFavorite.present
+          ? data.isFavorite.value
+          : this.isFavorite,
     );
   }
 
@@ -6152,7 +6189,8 @@ class MealRow extends DataClass implements Insertable<MealRow> {
           ..write('customName: $customName, ')
           ..write('eatenAtUtc: $eatenAtUtc, ')
           ..write('localOffsetMinutes: $localOffsetMinutes, ')
-          ..write('note: $note')
+          ..write('note: $note, ')
+          ..write('isFavorite: $isFavorite')
           ..write(')'))
         .toString();
   }
@@ -6165,6 +6203,7 @@ class MealRow extends DataClass implements Insertable<MealRow> {
     eatenAtUtc,
     localOffsetMinutes,
     note,
+    isFavorite,
   );
   @override
   bool operator ==(Object other) =>
@@ -6175,7 +6214,8 @@ class MealRow extends DataClass implements Insertable<MealRow> {
           other.customName == this.customName &&
           other.eatenAtUtc == this.eatenAtUtc &&
           other.localOffsetMinutes == this.localOffsetMinutes &&
-          other.note == this.note);
+          other.note == this.note &&
+          other.isFavorite == this.isFavorite);
 }
 
 class MealCompanion extends UpdateCompanion<MealRow> {
@@ -6185,6 +6225,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
   final Value<DateTime> eatenAtUtc;
   final Value<int> localOffsetMinutes;
   final Value<String?> note;
+  final Value<bool> isFavorite;
   const MealCompanion({
     this.id = const Value.absent(),
     this.mealType = const Value.absent(),
@@ -6192,6 +6233,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
     this.eatenAtUtc = const Value.absent(),
     this.localOffsetMinutes = const Value.absent(),
     this.note = const Value.absent(),
+    this.isFavorite = const Value.absent(),
   });
   MealCompanion.insert({
     this.id = const Value.absent(),
@@ -6200,6 +6242,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
     required DateTime eatenAtUtc,
     required int localOffsetMinutes,
     this.note = const Value.absent(),
+    this.isFavorite = const Value.absent(),
   }) : mealType = Value(mealType),
        eatenAtUtc = Value(eatenAtUtc),
        localOffsetMinutes = Value(localOffsetMinutes);
@@ -6210,6 +6253,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
     Expression<DateTime>? eatenAtUtc,
     Expression<int>? localOffsetMinutes,
     Expression<String>? note,
+    Expression<bool>? isFavorite,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -6219,6 +6263,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
       if (localOffsetMinutes != null)
         'local_offset_minutes': localOffsetMinutes,
       if (note != null) 'note': note,
+      if (isFavorite != null) 'is_favorite': isFavorite,
     });
   }
 
@@ -6229,6 +6274,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
     Value<DateTime>? eatenAtUtc,
     Value<int>? localOffsetMinutes,
     Value<String?>? note,
+    Value<bool>? isFavorite,
   }) {
     return MealCompanion(
       id: id ?? this.id,
@@ -6237,6 +6283,7 @@ class MealCompanion extends UpdateCompanion<MealRow> {
       eatenAtUtc: eatenAtUtc ?? this.eatenAtUtc,
       localOffsetMinutes: localOffsetMinutes ?? this.localOffsetMinutes,
       note: note ?? this.note,
+      isFavorite: isFavorite ?? this.isFavorite,
     );
   }
 
@@ -6261,6 +6308,9 @@ class MealCompanion extends UpdateCompanion<MealRow> {
     if (note.present) {
       map['note'] = Variable<String>(note.value);
     }
+    if (isFavorite.present) {
+      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    }
     return map;
   }
 
@@ -6272,7 +6322,8 @@ class MealCompanion extends UpdateCompanion<MealRow> {
           ..write('customName: $customName, ')
           ..write('eatenAtUtc: $eatenAtUtc, ')
           ..write('localOffsetMinutes: $localOffsetMinutes, ')
-          ..write('note: $note')
+          ..write('note: $note, ')
+          ..write('isFavorite: $isFavorite')
           ..write(')'))
         .toString();
   }
@@ -18785,6 +18836,7 @@ typedef $$MealTableCreateCompanionBuilder = MealCompanion Function({
   required DateTime eatenAtUtc,
   required int localOffsetMinutes,
   Value<String?> note,
+  Value<bool> isFavorite,
 });
 typedef $$MealTableUpdateCompanionBuilder = MealCompanion Function({
   Value<int> id,
@@ -18793,6 +18845,7 @@ typedef $$MealTableUpdateCompanionBuilder = MealCompanion Function({
   Value<DateTime> eatenAtUtc,
   Value<int> localOffsetMinutes,
   Value<String?> note,
+  Value<bool> isFavorite,
 });
 
 final class $$MealTableReferences
@@ -18853,6 +18906,11 @@ class $$MealTableFilterComposer extends Composer<_$AppDatabase, $MealTable> {
 
   ColumnFilters<String> get note => $composableBuilder(
     column: $table.note,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<bool> get isFavorite => $composableBuilder(
+    column: $table.isFavorite,
     builder: (column) => ColumnFilters(column),
   );
 
@@ -18919,6 +18977,11 @@ class $$MealTableOrderingComposer extends Composer<_$AppDatabase, $MealTable> {
     column: $table.note,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<bool> get isFavorite => $composableBuilder(
+    column: $table.isFavorite,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$MealTableAnnotationComposer
@@ -18953,6 +19016,11 @@ class $$MealTableAnnotationComposer
 
   GeneratedColumn<String> get note =>
       $composableBuilder(column: $table.note, builder: (column) => column);
+
+  GeneratedColumn<bool> get isFavorite => $composableBuilder(
+    column: $table.isFavorite,
+    builder: (column) => column,
+  );
 
   Expression<T> mealItemRefs<T extends Object>(
     Expression<T> Function($$MealItemTableAnnotationComposer a) f,
@@ -19014,6 +19082,7 @@ class $$MealTableTableManager
                 Value<DateTime> eatenAtUtc = const Value.absent(),
                 Value<int> localOffsetMinutes = const Value.absent(),
                 Value<String?> note = const Value.absent(),
+                Value<bool> isFavorite = const Value.absent(),
               }) => MealCompanion(
                 id: id,
                 mealType: mealType,
@@ -19021,6 +19090,7 @@ class $$MealTableTableManager
                 eatenAtUtc: eatenAtUtc,
                 localOffsetMinutes: localOffsetMinutes,
                 note: note,
+                isFavorite: isFavorite,
               ),
           createCompanionCallback:
               ({
@@ -19030,6 +19100,7 @@ class $$MealTableTableManager
                 required DateTime eatenAtUtc,
                 required int localOffsetMinutes,
                 Value<String?> note = const Value.absent(),
+                Value<bool> isFavorite = const Value.absent(),
               }) => MealCompanion.insert(
                 id: id,
                 mealType: mealType,
@@ -19037,6 +19108,7 @@ class $$MealTableTableManager
                 eatenAtUtc: eatenAtUtc,
                 localOffsetMinutes: localOffsetMinutes,
                 note: note,
+                isFavorite: isFavorite,
               ),
           withReferenceMapper: (p0) => p0
               .map(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../features/dashboard/today_page.dart';
+import '../features/nutrition/meal_form.dart';
 import '../features/measurements/log_page.dart';
 import '../features/measurements/measurement_session_form.dart';
 import '../features/onboarding/onboarding_page.dart';
@@ -79,11 +80,7 @@ final GoRouter appRouter = GoRouter(
         ),
       ],
     ),
-    GoRoute(
-      path: '/meals/new',
-      builder: (context, state) =>
-          _ComingSoonPage(title: AppLocalizations.of(context)!.todayAddMeal),
-    ),
+    GoRoute(path: '/meals/new', builder: (context, state) => const MealForm()),
     GoRoute(
       path: '/weight/new',
       builder: (context, state) =>

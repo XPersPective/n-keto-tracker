@@ -222,5 +222,73 @@
   },
   "@todayPlansEmpty": {
     "description": "Empty state for planned meals."
+  },
+  "mealFormTitle": "Log a meal",
+  "mealSearchLabel": "Search food",
+  "mealTypeLabel": "Meal type",
+  "mealTypeBreakfast": "Breakfast",
+  "mealTypeLunch": "Lunch",
+  "mealTypeDinner": "Dinner",
+  "mealTypeSnack": "Snack",
+  "mealTypeCustom": "Custom",
+  "mealGramsLabel": "Amount (g)",
+  "mealAddItem": "Add food",
+  "mealNoteLabel": "Note (optional)",
+  "mealFavoriteToggle": "Mark as favorite",
+  "mealRepeatSection": "Quick repeat",
+  "mealRepeatFavorites": "Favorites",
+  "mealRepeatRecent": "Recent",
+  "mealSave": "Save meal",
+  "mealItemsHeading": "Items",
+  "mealSavedToast": "Meal saved.",
+  "mealNeedsItem": "Add at least one food first.",
+  "mealTotalsHeading": "Daily totals",
+  "mealTotalsKcal": "Energy: {value} kcal",
+  "mealTotalsNetCarb": "Net carbs: {value} g",
+  "mealTotalsTotalCarb": "Total carbs: {value} g",
+  "mealTotalsFiber": "Fiber: {value} g",
+  "mealTotalsProtein": "Protein: {value} g",
+  "mealTotalsFat": "Fat: {value} g",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

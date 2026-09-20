@@ -4,6 +4,7 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/database/database.dart';
+import '../../core/database/providers.dart';
 import '../../app/l10n/generated/app_localizations.dart';
 
 /// Onam metninin sürümü: kritik onam metni değişirse bu sürüm artar ve
@@ -58,10 +59,3 @@ class ConsentRepository {
 final consentRepositoryProvider = Provider<ConsentRepository>(
   (ref) => ConsentRepository(ref.watch(appDatabaseProvider)),
 );
-
-/// Ana veritabanı sağlayıcısı (testlerde override edilir).
-final appDatabaseProvider = Provider<AppDatabase>((ref) {
-  throw UnimplementedError(
-    'appDatabaseProvider uygulama başlangıcında override edilmelidir',
-  );
-});

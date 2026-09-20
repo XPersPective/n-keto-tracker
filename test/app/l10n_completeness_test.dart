@@ -22,14 +22,14 @@ void main() {
   test('Hiçbir anahtar boş değer taşımaz', () {
     for (final entry in en.entries) {
       expect(
-        (entry.value as String).trim().isNotEmpty,
+        entry.value.trim().isNotEmpty,
         isTrue,
         reason: 'EN boş değer: ${entry.key}',
       );
     }
     for (final entry in tr.entries) {
       expect(
-        (entry.value as String).trim().isNotEmpty,
+        entry.value.trim().isNotEmpty,
         isTrue,
         reason: 'TR boş değer: ${entry.key}',
       );

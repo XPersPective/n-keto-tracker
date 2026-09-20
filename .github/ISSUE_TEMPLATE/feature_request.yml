@@ -1,0 +1,35 @@
+name: Özellik isteği
+description: Yeni işlev veya iyileştirme öner
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi sorun bunu çözüyor?
+      description: Çözülecek kullanıcı ihtiyacını anlat (özellik değil).
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerdiğin çözüm
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Ürün sınırlarıyla uyum
+      options:
+        - label: "Çevrimdışı ilkeye uyuyor (ağ/hesap/bulut gerektirmiyor)"
+          required: true
+        - label: "Tıbbi tavsiye/tanı/tedavi/doz önerisi içermiyor"
+          required: true
+        - label: "Hastalık çağrışımı ana akışa taşımıyor (yalnız isteğe bağlı kaynaklar bölümü)"
+          required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Bilimsel içerik gerektiriyorsa kaynak
+      description: "Sağlık/kanıt iddiası varsa: DOI/PMID + erişim tarihi + kanıt sınıfı (E1–E6). Zorunlu."
+    validations:
+      required: false

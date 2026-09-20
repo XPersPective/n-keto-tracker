@@ -1,0 +1,56 @@
+name: Hata bildirimi
+description: Uygulamada bir hata davranışı raporla
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Ne oldu?
+      description: Beklenen ve gerçekleşen davranışı ayrı ayrı yaz.
+      placeholder: |
+        Beklenen: ...
+        Gerçekleşen: ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Uygulama sürümü
+      placeholder: "ör. 1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - İkisi
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Yeniden üretim adımları
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Ek bilgi / ekran görüntüsü
+      description: Kişisel sağlık verisi içeren görüntü/paylaşım YAPMA.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Kontrol listesi
+      options:
+        - label: Kişisel sağlık verisi veya sır içermiyor
+          required: true
+        - label: Aynı hata zaten bildirilmiş değil (arama yaptım)
+          required: true

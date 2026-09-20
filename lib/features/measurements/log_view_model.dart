@@ -148,6 +148,18 @@ final chartSeriesProvider = FutureProvider.autoDispose<ChartSeries>((
   return ChartSeries(gki: gki, glucose: glucose, bhb: bhb);
 }, dependencies: [appDatabaseProvider]);
 
+/// Ağırlık serisi (T24).
+final weightSeriesProvider = FutureProvider.autoDispose<List<ChartPoint>>((
+  ref,
+) async {
+  final db = ref.watch(appDatabaseProvider);
+  final rows = await db.select(db.weightEntry).get();
+  final points =
+      rows.map((r) => ChartPoint(atUtc: r.measuredAtUtc, value: r.kg)).toList()
+        ..sort((a, b) => a.atUtc.compareTo(b.atUtc));
+  return points;
+}, dependencies: [appDatabaseProvider]);
+
 /// Araştırma bantları: varsayılan KAPALI (MASTER_PROMPT §6.4). Kullanıcı
 /// kaynağı okuyup bilinçli açar; açıklama metni her durumda görünür.
 class BandSettings extends Notifier<bool> {

@@ -353,5 +353,47 @@
       }
     },
     "description": "Non-causal meal relation line (MASTER 8.3)."
+  },
+  "recipePerServing": "{value} servings",
+  "recipePrepMinutes": "Prep: {value} min",
+  "recipeAllergens": "Allergens: {value}",
+  "recipeIngredientsHeading": "Ingredients",
+  "recipeGrams": "{value} g",
+  "recipeStepsHeading": "Steps",
+  "recipeStorage": "Storage: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

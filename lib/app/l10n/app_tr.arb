@@ -283,5 +283,47 @@
       }
     },
     "description": "Non-causal meal relation line (MASTER 8.3)."
+  },
+  "recipePerServing": "{value} porsiyon",
+  "recipePrepMinutes": "Hazırlama: {value} dk",
+  "recipeAllergens": "Alerjenler: {value}",
+  "recipeIngredientsHeading": "Malzemeler",
+  "recipeGrams": "{value} g",
+  "recipeStepsHeading": "Yapılışı",
+  "recipeStorage": "Saklama: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
   }
 }

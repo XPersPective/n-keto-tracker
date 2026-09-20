@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T14 tamam: Bugün ekranı (≤3 dokunuş eylemler + boş durumlar). Aşama 2 bitti → A3. Sıradaki: T15 seed besinler.
-> **Phase:** BUILD · **Next:** T15 · **Updated:** 2026-09-20 · **Synced@:** b740da4
+> **Status:** T15 tamam: 152 besinlik provenance'lı seed + idempotent seeder; 90 test. Sıradaki: T16 yemek günlüğü.
+> **Phase:** BUILD · **Next:** T16 · **Updated:** 2026-09-20 · **Synced@:** 1c6f8d1
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -191,8 +191,7 @@ test/  integration_test/  tool/  docs/
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
 GAP: Risk kilidi yok → T10
-GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
-GAP: Beslenme günlüğü ve gıda rehberi yok → T15–T18
+GAP: Yemek günlüğü, gıda rehberi, öğün-ölçüm ilişkisi yok → T16–T18
 GAP: Tarif/plan/alışveriş/enerji/hedefler yok → T19–T21
 GAP: Ağırlık/semptom/trend yok → T22–T24
 GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
@@ -212,6 +211,8 @@ n-keto-tracker/
   android/              # T4: flutter create + ORTAK §1.4 sertleştirme (backup xml, R8, proguard)
   ios/                  # T4: flutter create (görünen ad N Keto Tracker)
   assets/
+    seed/
+      foods.json        # T15: 152 besin (USDA kamu malı, provenance'lı)
     brand/
       example_source_icon.png
   docs/
@@ -231,6 +232,7 @@ n-keto-tracker/
     core/
       config/           # app_config (marka tek nokta), env_config (dart-define)
       database/         # T7–T8: tables.dart (27 tablo), database.dart (şifreli), .g.dart
+                        # T12/T15: measurements_repository, food_seeder, providers
     privacy/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     units/              # T11: gki.dart, glucose.dart, formula_version.dart (saf motor)
@@ -248,6 +250,7 @@ n-keto-tracker/
         database_test.dart         # T7: 9 DB testi
         encrypted_open_test.dart   # T8: 4 şifreleme testi
         measurements_repository_test.dart  # T12: 4 oturum akış testi
+        food_seeder_test.dart      # T15: 6 seeder testi
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
@@ -357,11 +360,10 @@ n-keto-tracker/
   - Note: öğün/ağırlık/semptom formları T16/T22/T23'te gelir; coming-soon yolları o zaman gerçek formlarla değişir (router'da işaretli)
 
 ### Aşama 3 — Beslenme
-- [ ] T15 [M] Seed besin veri seti
-  - Where: `assets/seed/foods.json`, `docs/FOOD_DATA_PROVENANCE.md`, seeder `lib/core/database/`
-  - Do: 1) lisansı açık kaynakla uyumlu kaynak seç (ör. USDA FoodData Central, kamu malı — doğrula); Türkiye'de yaygın besinler dahil ≥150 besin, MASTER §8.1 alanlarının tamamı (dataSource, sourceVersion, sourceRecordId, license, lastReviewedAt); 2) `netCarb = max(0, totalCarb − fiber)`; şeker alkolü otomatik çıkarımı YOK; kullanıcı beyanı ayrı saklanır; 3) provenance dokümanı: kaynak URL + indirme tarihi + lisans; 4) idempotent seeder + testi
+- [x] T15 (2026-09-20, GLM-5.3) Seed besin veri seti
   - Done when: foods.json şema doğrulama + seeder idempotency testi geçer; `python -c` kontrolü: her kayıtta license ve dataSource dolu
-  - Needs: T7
+  - → 152 besin (TR+uluslararası, keto-relevanslı); tool/gen_foods_seed.py ile tekrar üretilebilir; netCarb=max(0,total−fiber) üretici+test doğrulamalı; FoodSeeder idempotent (6 test: şema, tam ekleme, 2. koşum 0, kullanıcı besini korunur, user-id yasağı, ContentVersion); provenance dokümanı USDA kamu malı + dürüst derleme beyanı; 90 test yeşil
+  - Note: sourceRecordId 'FDC-SR-transcribed:<slug>' — tek kayıt API doğrulaması yayın öncesi uzman incelemesiyle (FOOD_DATA_PROVENANCE.md açık konu; release gate'i değil)
 - [ ] T16 [M] Yemek günlüğü
   - Where: `lib/features/nutrition/`
   - Do: 1) besin arama (yerel, TR/EN), porsiyon/gram, öğün türü (kahvaltı/öğle/akşam/ara/özel), çoklu besin, saat, not; 2) günlük toplamlar: enerji, toplam karb, lif, net karb, protein, yağ; hedefte hangi karb'ın kullanıldığı ayarlarda görünür; 3) hızlı tekrar / favori / son kullanılanlar; 4) özel besin (isUserCreated; kaynaklı veriden görünür ayrı); 5) porsiyon ölçekleme kayan nokta birim testleri
@@ -498,7 +500,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T14 kapatıldı — Bugün ekranı; Aşama 2 (T11–T14) bitti, A3 temiz; 84 test yeşil.
-Devam: T15 (seed besin veri seti: lisans doğrulaması — USDA FDC kamu malı, ≥150 besin, provenance dokümanı, idempotent seeder) → T16–T18.
-Teknik not: coming-soon yolları (/meals/new vb.) T16/T22/T23'te gerçek formlarla değişecek; lazy ListView testlerinde scrollUntilVisible şart.
+Son: T15 kapatıldı — 152 besinlik USDA kaynaklı seed + idempotent seeder + provenance dokümanı; 90 test yeşil.
+Devam: T16 (yemek günlüğü: besin arama, porsiyon ölçekleme, öğün türleri, günlük toplamlar; /meals/new coming-soon yolunu gerçek form yap) → T17, T18.
+Teknik not: seed değişimi yalnız yeni sürümle (contentVersion); FoodSeeder testleri dosyadan okur (rootBundle gerekmez).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

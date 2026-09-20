@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T2 tamam: 7 kaynak doğrulandı (Amaral düzeltmesi + Duraj PMID + 18,016 nüansı belgelendi), 18 GKI vektörü. Sıradaki: T3.
-> **Phase:** BUILD · **Next:** T3 · **Updated:** 2026-09-20 · **Synced@:** ba6c9f3
+> **Status:** Aşama 0 tamam (T1–T3). Sıradaki: T4 Flutter iskelet + CI + offline kanıtı.
+> **Phase:** BUILD · **Next:** T4 · **Updated:** 2026-09-20 · **Synced@:** 27cd167
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -188,7 +188,7 @@ test/  integration_test/  tool/  docs/
 - `ORTAK_UYGULAMA_STANDARDI.md`, `docs/MASTER_PROMPT.md`, `README.md` (şablon README'si; T5'te uygulama README'si olur), `AGENTS.md` (beyin işaretçisi)
 - `.gitignore` + `.gitleaks.toml` + `.env.example` + `android/key.properties.example` — standart §1.1 sır hijyeni
 
-GAP: Gereksinim matrisi, tehdit modeli, kanıt şeması yok → T3
+GAP: Aşama 0 dokümanları tamam (T1–T3); Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
 GAP: Flutter iskeleti, CI uyarlama, depo dosyaları yok → T4–T6
 GAP: Veri katmanı (Drift, şifreleme) ve onboarding yok → T7–T10
 GAP: GKI motoru, ölçüm, günlük, Bugün ekranı yok → T11–T14
@@ -212,11 +212,14 @@ n-keto-tracker/
     brand/
       example_source_icon.png
   docs/
+    EVIDENCE_SCHEMA.md   # T3: kanıt içerik JSON şeması + E1–E6 etiketler
+    REQUIREMENTS_MATRIX.md  # T3: 105 REQ satırı, AC+görev eşlemeli
     MASTER_PROMPT.md    # ürün spec'i v1.1 (normatif)
     research/           # T1: COMPETITIVE_LANDSCAPE, USER_REVIEW_THEMES, UX_BENCHMARK, PRODUCT_POSITIONING; T2: EVIDENCE_VERIFICATION
   test/
     fixtures/
       gki_reference_cases.json  # T2: 18 GKI referans vektörü
+  THREAT_MODEL.md       # T3: varlıklar/tehditler/kontroller/kalan riskler
   tool/
     brand/
       generate_icons.py # ikon/splash üretici
@@ -245,10 +248,10 @@ n-keto-tracker/
 - [x] T2 (2026-09-20, GLM-5.3) Bilimsel kaynak doğrulama + GKI test vektörleri
   - Done when: EVIDENCE_VERIFICATION.md'de 7 kaynağın her biri için erişilen URL + tarih + doğrulama sonucu; `python -c "import json;d=json.load(open('test/fixtures/gki_reference_cases.json',encoding='utf-8'));assert len(d['cases'])>=12"` exit 0
   - → 7 kaynak doğrulandı (EUtils/EuropePMC, 2026-09-20); BULGULAR: 5. kaynağın ilk yazarı "Klein P" değil **Amaral LJ** (DOI/PMID aynı); Duraj PMID/PMCID eklendi (39639257/PMC11622503); Meidenbauer tam metni divisor 18,016 kullanıyor — spec 18,0 sabit, fark belgelendi; formül+bölge alıntıları tam metinden alındı. Fixture: 18 vektör, 8 sayısal Python'la birebir doğrulandı
-- [ ] T3 [M] Gereksinim matrisi + tehdit modeli + kanıt şeması
-  - Where: `docs/REQUIREMENTS_MATRIX.md`, `THREAT_MODEL.md`, `docs/EVIDENCE_SCHEMA.md` (yeni)
-  - Do: 1) MASTER_PROMPT §1–§16'daki her zorunlu gereksinimi REQ-xxx satırına dök, bölüm + AC eşleşmesi yaz; 2) THREAT_MODEL.md: varlıklar (sağlık verisi, profil), tehditler (cihaz kaybı, bulut yedek sızıntısı, import enjeksiyonu, kopya uygulama), kontroller, kalan risk — MASTER §14 + ORTAK §1'e dayalı; 3) EVIDENCE_SCHEMA.md: MASTER §2.3 alan listesinin tamamını JSON şeması olarak yaz, E1–E6 → görünür etiket eşlemesiyle
+- [x] T3 (2026-09-20, GLM-5.3) Gereksinim matrisi + tehdit modeli + kanıt şeması
   - Done when: REQUIREMENTS_MATRIX.md ≥40 REQ satırı ve her satırda master bölüm referansı; `grep -l "pmcid" docs/EVIDENCE_SCHEMA.md` ve `grep -l "kalan risk\|residual" THREAT_MODEL.md` boş değil
+  - → 105 REQ satırı (§0–§21 kapsam, 0 boş bölüm ref'i); THREAT_MODEL: 14 tehdit + 6 kalın risk + doğrulama planı; EVIDENCE_SCHEMA: §2.3 alanlarının tamamı JSON Schema + E1–E6 etiket eşlemesi + T2 sınıf atamaları
+  - Note: master §13 "26 tablo" yazar ama 27 isim sayar — numaralandırma yetkili kabul edildi (bkz. §6 ASSUMPTION)
 
 ### Aşama 0b — İskelet ve depo
 - [ ] T4 [M] Flutter iskelet + CI + offline kanıtı
@@ -440,13 +443,15 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 | 2026-09-20 | ASSUMPTION | Paket/org adı geçici `app.nketo` (T4) | Google Play paket adı kalıcı; mağaza kaydı ve kesin paket adı sahibin yayın adımında kesinleşir |
 | 2026-09-20 | ASSUMPTION | Bu dizin uygulama reposunun kendisi (şablon klonu değil) | origin = github.com/XPersPective/n-keto-tracker.git; dizin adı n-keto-tracker |
 | 2026-09-20 | ASSUMPTION | `brain.py check`'in "listed but missing: .gitignore/.gitattributes/.gitleaks.toml" WARN'ı yanlış pozitif; dosyalar diskte ve git'te mevcut (`git ls-files` kanıtlı), map aracı bu üçünü kendi dışlama listesinde tutuyor | §4 satırları gerçek dosyaları anlatıyor; kaldırılmaz, WARN bilinçli kabul edilir |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0 kapandı)**: test/build paketi henüz yok (T4 kuruyor — koşulacak şey yok, not edildi); §3↔§2 karşılaştırma: T1–T3 GAP satırı çözüldü ve yeni GAP (T4–T6) yazıldı; üç teslimatın Done-when grep'leri yeniden koşuldu (105 REQ/0 boş ref; pmcid; residual; 18 vektör; http=29). Bulgu yok | Protokol §0.4 A3; görev açılmadı |
+| 2026-09-20 | ASSUMPTION | Master §13 "26 tablo" yazar ama 27 isim listeler; T7 27 tanımlar | Numaralandırma yetkili: sayım 27 (AppSettings…ExportHistory); T7 Done-when "26 tablo create" ifadesi 27 olarak okunur |
 | 2026-09-20 | ASSUMPTION | T1 yorum örneklemi: 35 doğrudan mağaza yorumu + agregat kaynaklar (Reddit başlıkları, 2026-08-11 r/keto derlemesi [COI notlu], sahibin §22.3 taraması); "≥100 yorum" harfiyen karşılanmadı çünkü oturumsuz web vitrinleri uygulama başına yalnızca birkaç yorum gösterir | Yöntem ve sayılar USER_REVIEW_THEMES.md'de açıkça beyan; temalar kaynaklar arası tutarlı. Daha derin örnekleme gerekirse tarayıcı oturumlu ayrı görev açılır |
 | 2026-09-20 | AUDIT | **A0 yaratma denetimi**: check FAIL yok; §3'ün 3 iddiası açılarak doğrulandı (`tool/new_app.dart` — flutter create + --ads/--pro/--data üreticisi; `.github/workflows/ci.yml` — melos/examples kullanan şablon CI, T4'te uyarlancak; `LICENSE` — GPL-3.0 tam metni); izlenebilirlik: 11 AC'nin tümü ≥1 T-id'ye bağlı, §2 bileşenlerinin tümü §3 GAP satırlarıyla görevli; ilk 5 görevin (T1–T5) yürütülebilirlik yoklaması temiz | Protokol §0.4 A0; bulgu yok, görev açılmadı |
 | 2026-09-20 | AUDIT | **A1 takeover (derin)**: eskalasyon nedeni — önceki AUDIT satırı yoktu ve init commit bekliyordu. Kapanmış görev örneklemi yok (34 görevin tümü açık); test paketi yok (Flutter projesi henüz yok — T4 kuruyor); §3↔kod nokta kontrolü A0'da yapıldı; tek commit `5bfb890` (şablon, protokol dışı değil); goal hash PENDING'den `0f6c3256`'ya sabitlendi | Protokol §0.4 A1; bulgu yok, görev açılmadı |
 
 ## 7. HANDOFF
 
-Son: T2 kapatıldı — EVIDENCE_VERIFICATION.md (7 kaynak, alıntılar) + gki_reference_cases.json (18 vektör).
-Devam: T3 (gereksinim matrisi/threat model/kanıt şeması) → T4 (Flutter iskelet; T1+T2 Needs'leri tamam).
-Kritik düzeltme: 5. kaynak ilk yazarı **Amaral LJ** ("Klein P" değil) — T25/T33 künyelerinde buna uyulacak; Meidenbauer divisor 18,016 vs spec 18,0 EVIDENCE_VERIFICATION'da belgelendi.
-Uyarı: `brain.py check` üç bilinçli WARN (legacy×2 + map yanlış pozitifi) verir.
+Son: T3 kapatıldı — REQUIREMENTS_MATRIX.md (105 REQ), THREAT_MODEL.md, docs/EVIDENCE_SCHEMA.md; A3 kilometre denetimi temiz.
+Devam: T4 (Flutter iskelet + CI + check_offline; Needs T1+T2 tamam) → T5, T6.
+Kritik düzeltme: 5. kaynak ilk yazarı **Amaral LJ**; Meidenbauer divisor 18,016 vs spec 18,0 (EVIDENCE_VERIFICATION'da); §13 sayım 27 tablo.
+Uyarı: `brain.py check` üç bilinçli WARN (legacy×2 + map yanlış pozitifi).

@@ -166,5 +166,26 @@
         "type": "String"
       }
     }
+  },
+  "logEmptyTitle": "No measurements yet",
+  "logEmptyBody": "Add your first glucose and ketone reading to see it here.",
+  "logBandsToggle": "Show research ranges from the article you read",
+  "bandsDisclaimer": "These ranges are not clinical normal ranges or proven treatment targets. They are representative, non-prescriptive suggestions from a specific research framework. GKI alone does not show health, disease response, or safety. Tap to see the source.",
+  "logBandOptimal": "Suggested optimal research range (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Suggested therapeutic research range (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Outside the suggested ≤ 2.0 research range",
+  "logMatchSimultaneous": "simultaneous",
+  "logMatchApproximate": "approximate match",
+  "logTimelineHeading": "Timeline",
+  "logChartsHeading": "Charts",
+  "logGlucoseChart": "Glucose (mmol/L)",
+  "logBhbChart": "Ketone BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Copy source link",
+  "@logBandsToggle": {
+    "description": "Optional research bands toggle; default OFF (MASTER 6.4)."
+  },
+  "@bandsDisclaimer": {
+    "description": "Permanent band disclaimer text (MASTER 6.4)."
   }
 }

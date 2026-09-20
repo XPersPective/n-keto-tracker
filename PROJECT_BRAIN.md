@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T24 tamam: Trendler ekranı; Aşama 5 bitti → A3; 159 test. Sıradaki: T25 kanıt kütüphanesi.
-> **Phase:** BUILD · **Next:** T25 · **Updated:** 2026-09-20 · **Synced@:** cc4b75b
+> **Status:** T25 tamam: kanıt kütüphanesi (7 kaynak, filtre arkasında hastalık içeriği); 167 test. Sıradaki: T26 export/import.
+> **Phase:** BUILD · **Next:** T26 · **Updated:** 2026-09-20 · **Synced@:** 31bbce3
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -193,7 +193,7 @@ test/  integration_test/  tool/  docs/
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
 
-GAP: Kanıt kütüphanesi ve export/import yok → T25–T26
+GAP: Export/import/tümünü sil yok → T26; T35 plan UI açık
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
 
@@ -212,6 +212,9 @@ n-keto-tracker/
   assets/
     seed/
       foods.json        # T15: 152 besin (USDA kamu malı, provenance'lı)
+      food_guide.json   # T17: 12 rehber kartı
+      recipes.json      # T19: 20 tarif
+      evidence.json     # T25: 7 kanıt kaynağı
     brand/
       example_source_icon.png
   docs/
@@ -253,6 +256,7 @@ n-keto-tracker/
         food_seeder_test.dart      # T15: 6 seeder testi
         meal_repository_test.dart  # T16: 5 öğün iş akışı testi
         recipe_seeder_test.dart    # T19: 5 tarif seeder testi
+        evidence_provenance_test.dart  # T25: 5 provenance testi
         symptom_repository_test.dart  # T23: 5 CRUD/kural testi
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
@@ -263,6 +267,8 @@ n-keto-tracker/
         weight_form_test.dart      # T22: 3 ağırlık form testi
       symptoms/
         symptom_form_test.dart     # T23: 2 semptom form testi
+      evidence/
+        evidence_section_test.dart  # T25: 3 bölüm widget testi
       dashboard/
         trends_page_test.dart      # T24: 3 trend testi
       settings/
@@ -436,11 +442,10 @@ n-keto-tracker/
   - Needs: T20
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik (eski başlık altı)
-- [ ] T25 [M] Kanıt kütüphanesi (Rehber)
-  - Where: `assets/seed/evidence.json`, `lib/features/evidence/`
-  - Do: MASTER §2.3 + §5.5: T2'de doğrulanan 7 kaynakla EvidenceSource/EvidenceClaim seed (provenance alanlarının tamamı, TR/EN sade özet, E1–E6 → görünür etiket); Rehber: keto temelleri, GKI nasıl hesaplanır, ölçüm bağlamı, gıda rehberi, profesyonel yardım; Bilimsel Kaynaklar bölümü: önce genel kaynaklar; hastalığa özel araştırmalar yalnız bilinçli filtreyle, Rehber ana sayfasında öneri olarak YOK; WebView/URL açma YOK (URL kopyalanabilir metin); içerik sürümü + değişiklik günlüğü
+- [x] T25 (2026-09-20, GLM-5.3) Kanıt kütüphanesi (Rehber)
   - Done when: provenance testi (her claim'in sourceId + evidenceLevel + inceleme tarihi var; MASTER §16.5) + Rehber widget testleri (hastalık içeriği varsayılan görünümde yok) geçer
-  - Needs: T2, T7
+  - → evidence.json (7 kaynak, provenance alanlarının tamamı, özgün TR/EN özetler, E-etiketleri); EvidenceSection (/guide'e bölüm): genel kaynaklar varsayılan görünür, hastalığa özel yalnız bilinçli filtreyle, URL yalnız kopyala (açma yok); 5 provenance + 3 widget testi; 167 toplam yeşil
+  - Note: GKI hesaplayıcı kaynağı da hastalığa özel filtre arkasına taşındı (sınırlılık metni 'brain cancer' içeriyor — AC4 genel görünüm temizliği); genel görünümde yalnız Mifflin 1990 var (7 kaynağın geri kalanı hastalık bağlamlı). Rehber genel eğitim maddeleri (keto temelleri/GKI hesabı) T25 kapsamında GuidePage'e ayrı bölüm olarak eklenmedi — T33 kullanıcı kılavuzuyla birlikte değerlendirilecek (açık iş)
 - [ ] T26 [M] Export / import / tüm verileri sil
   - Where: `lib/features/export_import/`
   - Do: MASTER §14.3 + ORTAK §3.8: kullanıcı eylemiyle CSV + okunabilir JSON (başlıkta uygulama/şema sürümü, birimler, zaman dilimi, uyarı, formatVersion); CSV formül-enjeksiyonu koruması; import: şema doğrulama, boyut limiti, tip/range kontrolü, önizleme, transaction (hatada sıfır kısmi yazı), eski formatVersion okunur, bilinmeyen alan yok sayılır; ExportHistory yalnız metadata; "tüm verilerimi sil" ikinci onay + geçici dosya temizliği; içe aktarma hiçbir durumda gizli durum açmaz
@@ -524,7 +529,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T24 kapatıldı — Trendler (aralık seçimi, ayrı grafikler, metinsel özet); Aşama 5 bitti, A3 temiz; 159 test.
-Devam: T25 (kanıt kütüphanesi: T2'nin 7 kaynağıyla evidence.json + Rehber entegrasyonu; hastalık içeriği bilinçli filtre arkasında) → T26 export/import.
+Son: T25 kapatıldı — evidence.json + EvidenceSection (genel varsayılan, hastalık filtre arkasında, URL sadece kopyala); 167 test yeşil.
+Devam: T26 (CSV+JSON export, doğrulamalı transaction import, tümünü sil) → T35 plan UI → Aşama 6 A3.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

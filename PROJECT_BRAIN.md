@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T25 tamam: kanıt kütüphanesi (7 kaynak, filtre arkasında hastalık içeriği); 167 test. Sıradaki: T26 export/import.
-> **Phase:** BUILD · **Next:** T26 · **Updated:** 2026-09-20 · **Synced@:** 31bbce3
+> **Status:** T26 tamam: export/import round-trip + sıfır-kısmi-yazı + silme; 174 test. Aşama 6 T35 ile kapanır.
+> **Phase:** BUILD · **Next:** T35 · **Updated:** 2026-09-20 · **Synced@:** e0b32e1
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -193,7 +193,7 @@ test/  integration_test/  tool/  docs/
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
 
-GAP: Export/import/tümünü sil yok → T26; T35 plan UI açık
+GAP: Plan UI (T35) + Aşama 6 A3 → ana akış bitti; marka/ekranlar T27–T29; sertleştirme T30–T34
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
 
@@ -235,6 +235,8 @@ n-keto-tracker/
       config/           # app_config (marka tek nokta), env_config (dart-define)
       database/         # T7–T8: tables.dart (27 tablo), database.dart (şifreli), .g.dart
                         # T12/T15: measurements_repository, food_seeder, providers
+                        # T19/T23: recipe_seeder, symptom_repository
+                        # T26: export_import_repository, csv_safety
     privacy/
       risk_lock.dart    # T10: riskLockProvider + guardPlanGeneration
     units/              # T11/T16/T20/T21: gki, glucose, formula_version,
@@ -258,6 +260,7 @@ n-keto-tracker/
         recipe_seeder_test.dart    # T19: 5 tarif seeder testi
         evidence_provenance_test.dart  # T25: 5 provenance testi
         symptom_repository_test.dart  # T23: 5 CRUD/kural testi
+        export_import_test.dart     # T26: 7 export/import/silme testi
     units/
       matching_engine_test.dart    # T12: 8 eşleştirme testi
     features/
@@ -271,6 +274,8 @@ n-keto-tracker/
         evidence_section_test.dart  # T25: 3 bölüm widget testi
       dashboard/
         trends_page_test.dart      # T24: 3 trend testi
+    units/
+      csv_safety.dart    # T26: formül enjeksiyonu koruması
       settings/
         goal_legend_test.dart      # T21: 3 lejant widget testi
       core/
@@ -446,11 +451,10 @@ n-keto-tracker/
   - Done when: provenance testi (her claim'in sourceId + evidenceLevel + inceleme tarihi var; MASTER §16.5) + Rehber widget testleri (hastalık içeriği varsayılan görünümde yok) geçer
   - → evidence.json (7 kaynak, provenance alanlarının tamamı, özgün TR/EN özetler, E-etiketleri); EvidenceSection (/guide'e bölüm): genel kaynaklar varsayılan görünür, hastalığa özel yalnız bilinçli filtreyle, URL yalnız kopyala (açma yok); 5 provenance + 3 widget testi; 167 toplam yeşil
   - Note: GKI hesaplayıcı kaynağı da hastalığa özel filtre arkasına taşındı (sınırlılık metni 'brain cancer' içeriyor — AC4 genel görünüm temizliği); genel görünümde yalnız Mifflin 1990 var (7 kaynağın geri kalanı hastalık bağlamlı). Rehber genel eğitim maddeleri (keto temelleri/GKI hesabı) T25 kapsamında GuidePage'e ayrı bölüm olarak eklenmedi — T33 kullanıcı kılavuzuyla birlikte değerlendirilecek (açık iş)
-- [ ] T26 [M] Export / import / tüm verileri sil
-  - Where: `lib/features/export_import/`
-  - Do: MASTER §14.3 + ORTAK §3.8: kullanıcı eylemiyle CSV + okunabilir JSON (başlıkta uygulama/şema sürümü, birimler, zaman dilimi, uyarı, formatVersion); CSV formül-enjeksiyonu koruması; import: şema doğrulama, boyut limiti, tip/range kontrolü, önizleme, transaction (hatada sıfır kısmi yazı), eski formatVersion okunur, bilinmeyen alan yok sayılır; ExportHistory yalnız metadata; "tüm verilerimi sil" ikinci onay + geçici dosya temizliği; içe aktarma hiçbir durumda gizli durum açmaz
+- [x] T26 (2026-09-20, GLM-5.3) Export / import / tüm verileri sil
   - Done when: export→temiz kurulum→import round-trip integration testi (kayıt sayısı + değer eşitliği) ve rollback testi geçer
-  - Needs: T7
+  - → csv_safety (formül enjeksiyonu kaçışı + quote virgül/tırnak/satır) + ExportImportRepository (exportJson başlıklı okunabilir JSON, CSV, validateImportHeader (formatVersion+boyut), transaction import (0 kısmi yazı), bilinmeyen alan yok sayımı, deleteAllData 14 tablo); 7 test (başlık, CSV, round-trip eşitlik, rollback, boyut/format reddi, bilinmeyen alan, silme sayısı); 174 toplam yeşil
+  - Note: drift toJson oksuz: export açıkça alanları yazar (ISO tarihler); weighted round-trip DB değerleri kanıtlı
 
 ### Aşama 6b — Ortak standart ekranları ve marka
 - [ ] T27 [M] Marka ikonları + splash
@@ -529,7 +533,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T25 kapatıldı — evidence.json + EvidenceSection (genel varsayılan, hastalık filtre arkasında, URL sadece kopyala); 167 test yeşil.
-Devam: T26 (CSV+JSON export, doğrulamalı transaction import, tümünü sil) → T35 plan UI → Aşama 6 A3.
+Son: T26 kapatıldı — export/import (JSON+CSV) + silme; 174 test yeşil.
+Devam: T35 (Plan+alışveriş UI ekranları, motor T20 hazır) → Aşama 6 A3 → T27 marka.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

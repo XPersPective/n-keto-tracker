@@ -1,9 +1,12 @@
+import 'package:drift/native.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:n_keto_tracker/app/app.dart';
 import 'package:n_keto_tracker/app/router.dart';
+import 'package:n_keto_tracker/core/database/database.dart';
+import 'package:n_keto_tracker/core/database/providers.dart';
 
 void main() {
   testWidgets('İlk yol onboarding ilk adımı (dil seçimi)', (tester) async {
@@ -16,10 +19,21 @@ void main() {
     expect(find.byType(NavigationBar), findsNothing);
   });
 
+  ProviderScope dbScope(Widget child) {
+    final db = AppDatabase.forTesting(NativeDatabase.memory());
+    addTearDown(() async {
+      await (db).close();
+    });
+    return ProviderScope(
+      overrides: [appDatabaseProvider.overrideWithValue(db)],
+      child: child,
+    );
+  }
+
   testWidgets('Ana kabuk: /today yolunda 5 sekme + Bugün placeholder', (
     tester,
   ) async {
-    await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
+    await tester.pumpWidget(dbScope(const NKetoApp()));
     await tester.pumpAndSettle();
     appRouter.go('/today');
     await tester.pumpAndSettle();
@@ -35,7 +49,7 @@ void main() {
   });
 
   testWidgets('Her sekme dokunuşla açılır', (tester) async {
-    await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
+    await tester.pumpWidget(dbScope(const NKetoApp()));
     await tester.pumpAndSettle();
     appRouter.go('/today');
     await tester.pumpAndSettle();

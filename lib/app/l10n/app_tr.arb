@@ -381,5 +381,24 @@
   },
   "evidenceDiseaseFilter": "Hastalıklara özel araştırmaları göster (seçerek okuduğunuz kaynaklar)",
   "evidenceSectionTitle": "Bilimsel kaynaklar ve makaleler",
-  "guideCopyLink": "Kaynak bağlantısını kopyala"
+  "guideCopyLink": "Kaynak bağlantısını kopyala",
+  "planTitle": "Haftalık plan",
+  "planGenerateDraft": "Taslak üret",
+  "planDraftLockedNote": "Otomatik plan üretimi kapalı: lütfen önce uygun bir sağlık uzmanıyla görüşün.",
+  "planCreatedToast": "Haftalık plan oluşturuldu.",
+  "planItemDay": "{day}. gün",
+  "planToShopping": "Plandan alışveriş listesi oluştur",
+  "shoppingTitle": "Alışveriş listesi",
+  "shoppingUndo": "Geri al",
+  "shoppingAddManual": "Manuel madde ekle",
+  "shoppingCheckedToggle": "İşaretle",
+  "shoppingEmpty": "Henüz alışveriş listesi yok.",
+  "planEmpty": "Henüz haftalık plan yok. Başlamak için tariflerinizden taslak üretin.",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  }
 }

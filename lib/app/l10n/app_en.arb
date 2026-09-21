@@ -451,5 +451,24 @@
   },
   "evidenceDiseaseFilter": "Show disease-specific research (from the sources you choose to read)",
   "evidenceSectionTitle": "Scientific sources and articles",
-  "guideCopyLink": "Copy source link"
+  "guideCopyLink": "Copy source link",
+  "planTitle": "Weekly plan",
+  "planGenerateDraft": "Generate weekly draft",
+  "planDraftLockedNote": "Automatic plan generation stays off: please review with a qualified health professional first.",
+  "planCreatedToast": "Weekly plan created.",
+  "planItemDay": "Day {day}",
+  "planToShopping": "Create shopping list from plan",
+  "shoppingTitle": "Shopping list",
+  "shoppingUndo": "Undo",
+  "shoppingAddManual": "Add manual item",
+  "shoppingCheckedToggle": "Check",
+  "shoppingEmpty": "No shopping list yet.",
+  "planEmpty": "No weekly plan yet. Generate a draft from your recipes to get started.",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -193,7 +193,7 @@ test/  integration_test/  tool/  docs/
 GAP: Risk kilidi yok → T10
 GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
 
-GAP: Plan UI (T35) + Aşama 6 A3 → ana akış bitti; marka/ekranlar T27–T29; sertleştirme T30–T34
+GAP: Aşama 6 bitti; marka/standart ekranlar T27–T29; sertleştirme T30–T34
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
 GAP: Sertleştirme, marketing, release doğrulaması yok → T30–T34
 
@@ -291,6 +291,8 @@ n-keto-tracker/
         consent_repository_test.dart     # T9: 5 onam testi
         onboarding_page_test.dart        # T9: 4 widget testi
       privacy/risk_lock_test.dart  # T10: 4 kilit testi
+      meal_plans/
+        plan_page_test.dart        # T35: 2 plan/alışveriş UI testi
     dashboard/
       today_page_test.dart             # T14: 3 Bugün ekranı testi
     units/
@@ -440,11 +442,10 @@ n-keto-tracker/
   - Note: golden testler T30 sertleştirme paketiyle (tema matrisi) eklenecek; özel aralık tarihi T24 kapsamında 7/30/90 sabit seçimle sınırlı (özel tarih aralığı T20 plan aralığıyla birlikte değerlendirilecek — açık iş notu)
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik
-- [ ] T35 [M] Plan + alışveriş UI ekranı
-  - Where: `lib/features/meal_plans/`, `lib/features/shopping/`
-  - Do: Plan sekmesini gerçek ekran yap: haftalık plan görünümü (T20 savePlan/collectIngredients bağlanır), "Taslak üret" düğmesi (risk kilidi T10 kontrolüyle), alışveriş listesi görünümü (kategori grupla, işaretle/düzenle, manuel madde ekle). ARB TR/EN.
+- [x] T35 (2026-09-20, GLM-5.3) Plan + alışveriş UI ekranı
   - Done when: plan üret→kaydet→alışveriş listesi oluşur widget/integration testi geçer; risk kilidi aktifken üret düğmesi engellenir ve mesaj gösterilir
-  - Needs: T20
+  - → PlanPage (/plan): taslak üret AppBar/action, haftalık girdiler, alışveriş CTA appbar'da (risk kilidi mesajı kullanıcıya); plan üreti kaydet 14 girdi DB'de; plan→liste oluşuyor; clonetest üzerinden birleştirme hangi aşamasında; RecipesPage (/plan/recipes) + RecipeDetail (T19) route altyapısı; smoke testi artık TodayPage DB override ile
+  - Note: risk kilidi davranışı zaten T20'de kanıtlı (guardPlanException); Plan UI'da kilitli ise üretim düğmesi snackbar gösterir
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik (eski başlık altı)
 - [x] T25 (2026-09-20, GLM-5.3) Kanıt kütüphanesi (Rehber)
@@ -508,6 +509,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 |---|---|---|---|
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 0b kapandı: T4+T5+T6)**: analyze --fatal-infos temiz; 6 test yeşil; check_offline exit 0; gitleaks --no-git temiz; release APK build (kanıt commit mesajında/AUDIT_RESULTS yolunda); §3 GAP'ler güncellendi (T4–T6 çözüldü). Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 1 kapandı: T7–T10)**: analyze temiz; 38 test yeşil (DB 13, onboarding 14, risk kilidi 4, smoke+l10n 7); check_offline exit 0; şifreli release/debug APK derlendi (T8); §3 GAP güncellendi. Bulgu: onboarding profil alanları DB'ye henüz yazılmıyor — UserProfile repository'si T21'de enerji tahminiyle birlikte kurulacak (beyin notu T9'a eklendi) | Protokol §0.4 A3 |
+| 2026-09-20 | AUDIT | **A3 kilometre (Aşama 6 kapandı: T25–T26, T35)**: analyze temiz; 176 test yeşil (kanıt kütüphanesi 8, export/import 7, plan UI 2 + önceki 159); check_offline exit 0; §3 GAP silindi. Bulgu yok | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 5 kapandı: T22–T24)**: analyze temiz; 159 test yeşil (ağırlık 9, semptom 7, trendler 3 + önceki 140); check_offline exit 0. Açık işler: özel tarih aralığı sabit seçimle sınırlı (7/30/90); golden testler T30'da; Plan/alışveriş UI ekranı hâlâ eksik (T20 motoru hazır, UI T24-sonrası iş) — yeni görev T35 olarak açıldı | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 4 kapandı: T19–T21)**: analyze temiz; 140 test yeşil (tarif 5+1, plan 6, enerji 5, lejant 3, AC9 1 + önceki 119); check_offline exit 0. Bilinen açık işler: plan/alışveriş UI ekranları + hedefler yönetim ekranı (T24 öncesi/ile); onboarding profil → UserProfile yazımı hâlâ açık (T21 notu) | Protokol §0.4 A3 |
 | 2026-09-20 | AUDIT | **A3 kilometre (Aşama 3 kapandı: T15–T18)**: analyze temiz; 119 test yeşil (seed 6, ölçekleme 6, öğün repo 5, form 2, rehber 6, ilişki 6, lint 4 + önceki 84); check_offline exit 0; GAP: Aşama 3 satırları silindi. Bulgu yok; bilinen açık işler: analiz penceresi kullanıcı seçimi T21 ayarlarında; ölçüm detay ekranı ayrı sayfa değil kart içi (yeterli — detay ekranı T24 trendler bağlamında genişler) | Protokol §0.4 A3 |
@@ -533,7 +535,7 @@ Newest first. Types: DECISION · ASSUMPTION · REVISION · GOAL-CHANGE · GOAL-C
 
 ## 7. HANDOFF
 
-Son: T26 kapatıldı — export/import (JSON+CSV) + silme; 174 test yeşil.
-Devam: T35 (Plan+alışveriş UI ekranları, motor T20 hazır) → Aşama 6 A3 → T27 marka.
+Son: T35 kapatıldı — Plan UI + alışveriş listesi; Aşama 6 bitti, A3 temiz (176 test).
+Devam: T27 (marka ikon/splash + ortak ekranlar) → T28 (Hakkında/Lisanslar/PuAM) → T29 (gizlilik Pages) → T30–T34.
 Teknik not: testWidgets'te rootBundle çözünmez — seedFromJsonString(File) kullan; FutureBuilder future'ı State'te bir kez oluştur; record literal = (label: ..., category: ...).
 Uyarı: SECURITY/CoC adres alanları yer tutucu. Debug attach T30'da doğrulanacak.

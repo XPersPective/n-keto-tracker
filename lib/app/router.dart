@@ -7,11 +7,14 @@ import '../features/evidence/guide_page.dart';
 import '../features/nutrition/meal_form.dart';
 import '../features/symptoms/symptom_form.dart';
 import '../features/weight/weight_form.dart';
+import '../features/meal_plans/plan_page.dart';
 import '../features/measurements/log_page.dart';
+import '../features/recipes/recipe_detail_page.dart';
+import '../features/recipes/recipes_page.dart';
+import '../features/shopping/shopping_list_page.dart';
 import '../features/measurements/measurement_session_form.dart';
 import '../features/onboarding/onboarding_page.dart';
 import 'app_shell.dart';
-import 'l10n/generated/app_localizations.dart';
 
 /// Uygulama yönlendiricisi (MASTER_PROMPT §5): 5 sekmeli ana kabuk +
 /// onboarding akışı. Profil, ayarlar ve veri yönetimi sonraki görevlerde
@@ -56,9 +59,25 @@ final GoRouter appRouter = GoRouter(
           routes: [
             GoRoute(
               path: '/plan',
-              builder: (context, state) => _PlaceholderPage(
-                title: AppLocalizations.of(context)!.navPlan,
-              ),
+              builder: (context, state) => const PlanPage(),
+              routes: [
+                GoRoute(
+                  path: 'recipes',
+                  builder: (context, state) => const RecipesPage(),
+                  routes: [
+                    GoRoute(
+                      path: ':id',
+                      builder: (context, state) => RecipeDetailPage(
+                        recipeId: state.pathParameters['id']!,
+                      ),
+                    ),
+                  ],
+                ),
+                GoRoute(
+                  path: 'shopping',
+                  builder: (context, state) => const ShoppingListPage(),
+                ),
+              ],
             ),
           ],
         ),
@@ -91,34 +110,3 @@ final GoRouter appRouter = GoRouter(
     ),
   ],
 );
-
-/// Sekme yer tutucusu: henüz uygulanmamış sekmeler için (T24'te Trendler).
-class _PlaceholderPage extends StatelessWidget {
-  const _PlaceholderPage({required this.title});
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(title, style: Theme.of(context).textTheme.headlineSmall),
-            const SizedBox(height: 8),
-            Text(l10n.pageUnderConstruction),
-            const SizedBox(height: 24),
-            Text(
-              l10n.generalInfoDisclaimer,
-              style: Theme.of(context).textTheme.bodySmall,
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}

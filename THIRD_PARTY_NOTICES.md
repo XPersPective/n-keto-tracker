@@ -41,7 +41,8 @@ kendi deposu.
 
 | Varlık | Lisans | Not |
 |---|---|---|
-| `assets/brand/example_source_icon.png` | yalnızca şablon örneği | Yayın öncesi kaldırılacak/özgün ikonla değiştirilecek (T27) |
+| `assets/brand/brand_icon_1024.png` + platform türevleri | Proje kendi varlığı (GPL-3.0 dağıtımına dahil) | T27: özgün üretim (tool/gen_brand_icon.py); dış kaynak yok |
+| `assets/brand/example_source_icon.png` | yalnızca şablon örneği | Silinecek (kalıntı) |
 | Material Icons | Apache-2.0 | Flutter SDK ile gelir |
 
 ## Uyumluluk beyanı

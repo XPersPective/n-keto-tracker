@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:drift/drift.dart' show Value;
 import 'package:drift/native.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -22,10 +21,10 @@ void main() {
       await db1
           .into(db1.contextTag)
           .insert(
-            const ContextTagCompanion.insert(
-              id: Value('fasting'),
-              labelTr: Value('Açlık'),
-              labelEn: Value('Fasting'),
+            ContextTagCompanion.insert(
+              id: 'fasting',
+              labelTr: 'Açlık',
+              labelEn: 'Fasting',
             ),
           );
       await db1.close();

@@ -18,6 +18,16 @@ Changelog'a yakın tutulur; tarihler ISO 8601.
 - GKI referans test vektörleri (`test/fixtures/gki_reference_cases.json`,
   18 vektör; 90 mg/dL + 2,5 mmol/L → 2,0 referans vakası dahil).
 
+- Özgün marka ikon seti (tüm platform boyutları, monokrom, splash).
+- Ayarlar > Hakkında: sürüm, açık kaynak lisansları, gizlilik, tıbbi
+  feragat, paylaş.
+- TR/EN gizlilik politikası (`PRIVACY.md`), bilimsel içerik politikası
+  (`SCIENTIFIC_CONTENT.md`), kullanıcı kılavuzu (`docs/USER_GUIDE_TR.md`,
+  `docs/USER_GUIDE_EN.md`).
+- Mağaza/pazarlama paketi (`docs/marketing/`).
+- Release sertleştirmesi: `--obfuscate --split-debug-info` (semboller repo
+  dışında); entegrasyon, erişilebilirlik ve migration testleri.
+
 ### İçerik veri sürümü
 
 - `evidence` içerik paketi: henüz yayınlanmadı (T25'te v1.0).

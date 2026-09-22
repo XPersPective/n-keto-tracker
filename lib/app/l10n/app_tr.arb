@@ -400,5 +400,29 @@
         "type": "String"
       }
     }
-  }
+  },
+  "aboutTitle": "Hakkında",
+  "aboutVersion": "Sürüm {value}",
+  "aboutOpenSourceHeading": "Açık kaynak",
+  "aboutOpenSourceBody": "N Keto Tracker, GPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır. Kodu aynı lisans koşullarıyla inceleyebilir, değiştirebilir ve dağıtabilirsiniz.",
+  "aboutPrivacyHeading": "Gizlilik",
+  "aboutPrivacyBody": "Tüm veriler yalnızca bu cihazda saklanır. Hesap yok, reklam yok, analitik yok, internet bağlantısı yok.",
+  "aboutDisclaimerHeading": "Feragat",
+  "aboutDisclaimerBody": "Bu uygulama genel bilgilendirme ve kişisel takip içindir. Tıbbi tavsiye, teşhis veya tedavi değildir.",
+  "aboutLicensesButton": "Lisanslar",
+  "aboutShareButton": "Bu uygulamayı paylaş",
+  "aboutOtherAppsButton": "Diğer uygulamalar",
+  "aboutCopiedToast": "Panoya kopyalandı.",
+  "licensesTitle": "Lisanslar",
+  "otherAppsTitle": "Diğer uygulamalar",
+  "otherAppsEmpty": "Henüz listelenen başka uygulama yok.",
+  "settingsTitle": "Ayarlar",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutShareText": "Tamamen çevrimdışı keto günlüğü; glukoz, keton ve GKI takibi. Açık kaynak, hesap gerekmez."
 }

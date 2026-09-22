@@ -43,6 +43,7 @@ dependencies:
   path_provider: ^2.1.6
   flutter_secure_storage: ^11.2.0
   crypto: ^3.0.7
+  share_plus: ^13.3.0
 
 dev_dependencies:
   flutter_test:
@@ -80,6 +81,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/brand/
     - assets/seed/
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -5,7 +5,6 @@ import 'package:integration_test/integration_test.dart';
 
 import 'package:drift/native.dart';
 import 'package:n_keto_tracker/app/app.dart';
-import 'package:n_keto_tracker/app/router.dart';
 import 'package:n_keto_tracker/core/database/database.dart';
 import 'package:n_keto_tracker/core/database/providers.dart';
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
@@ -135,6 +136,11 @@ class AboutPage extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 12),
+          ListTile(
+            leading: const Icon(Icons.storage_outlined),
+            title: Text(l10n.dataManagementTitle),
+            onTap: () => context.push('/settings/data'),
+          ),
           ListTile(
             leading: const Icon(Icons.description_outlined),
             title: Text(l10n.aboutLicensesButton),

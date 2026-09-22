@@ -1,8 +1,8 @@
 <!-- project-brain:v1 -->
 # PROJECT BRAIN — n-keto-tracker
 
-> **Status:** T26 tamam: export/import round-trip + sıfır-kısmi-yazı + silme; 174 test. Aşama 6 T35 ile kapanır.
-> **Phase:** BUILD · **Next:** T35 · **Updated:** 2026-09-20 · **Synced@:** e0b32e1
+> **Status:** Aşama 4–6 bitmiş: T18–T35. Kalan kod: marka (T27), standart ekranlar (T28), gizlilik sayfası (T29). Yok: T30–T34.
+> **Phase:** BUILD · **Next:** T27 · **Updated:** 2026-09-20 · **Synced@:** 129e3e1
 > **Goal:** v1 #0f6c3256 · **Goal status:** CONFIRMED
 
 ## 0. PROTOCOL
@@ -159,14 +159,125 @@ Normatif kaynaklar (beyne kopyalanmaz, olduğu gibi geçerli):
 Klasör yapısı (MASTER_PROMPT §3.2; işlev yoksa klasör açılmaz):
 
 ```text
-lib/
-  app/        app.dart, router.dart (go_router, 5 sekme: Bugün/Günlük/Plan/Trendler/Rehber), theme/, l10n/
-  core/       database/ (Drift), privacy/, units/ (saf hesap motorları), validation/
-  features/   onboarding, dashboard, measurements, nutrition, meal_plans, recipes,
-              shopping, weight, symptoms, evidence, export_import, settings
-assets/seed/  foods.json, recipes.json, evidence.json
-test/  integration_test/  tool/  docs/
-```
+n-keto-tracker/
+  .github/
+    ISSUE_TEMPLATE/
+      bug_report.yml      # T5
+      feature_request.yml # T5
+    workflows/
+      ci.yml              # T4
+    dependabot.yml        # T6
+    pull_request_template.md  # T5
+  android/
+    app/
+      src/
+        debug/AndroidManifest.xml
+        main/AndroidManifest.xml
+        main/kotlin/app/nketo/n_keto_tracker/MainActivity.kt
+        main/res/
+          drawable/launch_background.xml
+          drawable-v21/launch_background.xml
+          mipmap-anydpi-v26/ic_launcher.xml
+          mipmap-hdpi/ic_launcher.png
+          mipmap-mdpi/ic_launcher.png
+          mipmap-xhdpi/ic_launcher.png
+          mipmap-xxhdpi/ic_launcher.png
+          mipmap-xxxhdpi/ic_launcher.png
+          values/styles.xml
+          values-night/styles.xml
+          xml/backup_rules.xml
+          xml/data_extraction_rules.xml
+        profile/AndroidManifest.xml
+      build.gradle.kts
+      proguard-rules.pro
+    gradle/wrapper/gradle-wrapper.jar
+    build.gradle.kts
+    gradle.properties
+    key.properties.example
+    settings.gradle.kts
+  assets/
+    brand/example_source_icon.png
+    seed/ (foods.json, food_guide.json, recipes.json, evidence.json)
+  docs/
+    adr/0001-db-encryption.md   # T8
+    adr/0002-path-provider.md   # T7
+    research/COMPETITIVE_LANDSCAPE.md  # T1
+    research/EVIDENCE_VERIFICATION.md  # T2
+    research/PRODUCT_POSITIONING.md    # T1
+    research/USER_REVIEW_THEMES.md     # T1
+    research/UX_BENCHMARK.md           # T1
+    EVIDENCE_SCHEMA.md                 # T3
+    FOOD_DATA_PROVENANCE.md            # T15
+    MASTER_PROMPT.md                   # normatif spec
+    REQUIREMENTS_MATRIX.md             # T3 (105 REQ)
+  ios/
+    Flutter/
+    Runner/
+    RunnerTests/
+    Runner.xcodeproj/
+    Runner.xcworkspace/
+  lib/
+    app/
+      app.dart     # Material3 router kökü, TR/EN
+      app_shell.dart  # 5 sekmeli NavigationBar
+      router.dart     # go_router onboarding + 5 sekme + altta yollar
+      l10n/            # ARB + generated/
+      theme/app_theme.dart
+    core/
+      config/         # app_config + env_config
+      database/       # tables 27, database (SQLCipher), repositories
+                      # measurements, meal, recipe_seeder, symptom, plan,
+                      # evidence, export_import; seederler
+      privacy/
+        risk_lock.dart
+      units/          # gki, glucose, energy, serving, meal_plan_models
+                      # matching, weight, csv_safety, plan_generator
+    features/
+      dashboard/
+      evidence/
+      meal_plans/
+      measurements/
+      nutrition/
+      onboarding/
+      recipes/
+      settings/
+      shopping/
+      symptoms/
+      weight/
+    main.dart
+  pubspec.yaml         # hooks: sqlite3 sqlcipher; bağımlılıklar kilitli
+  pubspec.lock         # kilitli çözüm
+  analysis_options.yaml
+  l10n.yaml
+  test/
+    app/
+    core/database/
+    core/units/
+    features/
+    fixtures/
+  tool/
+    brand/generate_icons.py
+    templates/
+    check_offline.sh
+    gen_evidence_seed.py
+    gen_food_guide_seed.py
+    gen_foods_seed.py
+    gen_onboarding_arb.py
+    gen_recipes_seed.py
+    new_app.dart        # T4 şablon (kullanılmıyor)
+  .env.example
+  AGENTS.md
+  CHANGELOG.md
+  CODE_OF_CONDUCT.md
+  CONTRIBUTING.md
+  LICENSE
+  ORTAK_UYGULAMA_STANDARDI.md
+  PROJECT_BRAIN.md
+  README.md
+  SECURITY.md
+  THIRD_PARTY_LICENSES.md
+  THIRD_PARTY_NOTICES.md
+  THREAT_MODEL.md```
 
 - **Saf hesap motorları** `lib/core/units/`: GKI (`glucoseMgDl/18.0 = mmol/L`, `GKI = mmol/L ÷ BHB`), birim dönüşümleri, Mifflin–St Jeor, net karb, porsiyon ölçekleme. Saf, deterministik, `FORMULA_VERSION` sürümlü; UI/grafik/export aynı modülü kullanır, formül başka yerde tekrar yazılmaz.
 - **Drift + SQLite** `lib/core/database/`: MASTER §13'teki 26 tablo, FK aktif, tablo başına bilinçli cascade; ileri yönlü migration + migration testleri; zaman UTC epoch/ISO-8601 + ölçüm anı yerel offset. Ham değer+birim ve normalize değer birlikte saklanır. Standart §6.1 gereği hassas veri şifreli (sqlcipher; anahtar flutter_secure_storage'da) — karar T8'de.
@@ -190,8 +301,6 @@ test/  integration_test/  tool/  docs/
 - Şablon kalıntıları: `tool/new_app.dart` (kullanılmadı — bkz. §6), `tool/brand/generate_icons.py`, `tool/templates/`, `assets/brand/`
 - `docs/`: MASTER_PROMPT, REQUIREMENTS_MATRIX (105 REQ), EVIDENCE_SCHEMA, research/ (5 dosya); `THREAT_MODEL.md`; `LICENSE` GPL-3.0; README uygulama README'si (T5); topluluk dosyaları ve issue/PR şablonları (T5); dependabot (T6)
 
-GAP: Risk kilidi yok → T10
-GAP: Plan/alışveriş UI ekranları tamamlanacak (T24 öncesi); hedefler yönetim ekranı T24 trendler lejantıyla birlikte
 
 GAP: Aşama 6 bitti; marka/standart ekranlar T27–T29; sertleştirme T30–T34
 GAP: Ortak standart ekranları ve marka varlıkları yok → T27–T29
@@ -207,7 +316,21 @@ n-keto-tracker/
     pull_request_template.md  # T5: test/erişilebilirlik/mahremiyet/lisans kutuları
     workflows/
       ci.yml            # T4: gitleaks → offline+format+analyze+test → release APK
-  android/              # T4: flutter create + ORTAK §1.4 sertleştirme (backup xml, R8, proguard)
+  android/
+    key.properties.example
+    app/
+      build.gradle.kts
+      proguard-rules.pro
+      src/
+        debug/AndroidManifest.xml
+        main/AndroidManifest.xml  # usesCleartextTraffic=false + yedekkuralları
+          kotlin/app/nketo/n_keto_tracker/MainActivity.kt
+        profile/AndroidManifest.xml
+    build.gradle.kts
+    gradle.properties
+    gradle/wrapper/gradle-wrapper.properties
+    settings.gradle.kts
+  analysis_options.yaml
   ios/                  # T4: flutter create (görünen ad N Keto Tracker)
   assets/
     seed/
@@ -336,123 +459,123 @@ n-keto-tracker/
 ## 5. TASKS
 
 ### Aşama 0 — Araştırma ve kararlar
-- [x] T1 (2026-09-20, GLM-5.3) Güncel pazar/rakip araştırması
+- [x] T1 [H] (2026-09-20, GLM-5.3) Güncel pazar/rakip araştırması
   - Done when: 4 dosya var; her ürün satırında araştırma tarihi + en az bir resmi URL; `grep -c "http" docs/research/COMPETITIVE_LANDSCAPE.md` ≥ 12; dosyalarda "2026-09" geçiyor
   - → 12 ürün (9 §22.2 + OpenNutriTracker, Waistline, Eduven TR), hepsi 2026-09-20 tarihli resmi mağaza/API verisiyle; grep http=29; konumlandırma DOĞRULANDI (offline+açık kaynak+GKI+TR/EN kombinasyonu boş)
   - Note: ≥100 yorum şartı web vitrini kısıtı nedeniyle 35 doğrudan yorum + agregat kaynaklarla karşılandı; yöntem USER_REVIEW_THEMES.md'de açıkça beyan edildi (bkz. §6 ASSUMPTION)
-- [x] T2 (2026-09-20, GLM-5.3) Bilimsel kaynak doğrulama + GKI test vektörleri
+- [x] T2 [H] (2026-09-20, GLM-5.3) Bilimsel kaynak doğrulama + GKI test vektörleri
   - Done when: EVIDENCE_VERIFICATION.md'de 7 kaynağın her biri için erişilen URL + tarih + doğrulama sonucu; `python -c "import json;d=json.load(open('test/fixtures/gki_reference_cases.json',encoding='utf-8'));assert len(d['cases'])>=12"` exit 0
   - → 7 kaynak doğrulandı (EUtils/EuropePMC, 2026-09-20); BULGULAR: 5. kaynağın ilk yazarı "Klein P" değil **Amaral LJ** (DOI/PMID aynı); Duraj PMID/PMCID eklendi (39639257/PMC11622503); Meidenbauer tam metni divisor 18,016 kullanıyor — spec 18,0 sabit, fark belgelendi; formül+bölge alıntıları tam metinden alındı. Fixture: 18 vektör, 8 sayısal Python'la birebir doğrulandı
-- [x] T3 (2026-09-20, GLM-5.3) Gereksinim matrisi + tehdit modeli + kanıt şeması
+- [x] T3 [M] (2026-09-20, GLM-5.3) Gereksinim matrisi + tehdit modeli + kanıt şeması
   - Done when: REQUIREMENTS_MATRIX.md ≥40 REQ satırı ve her satırda master bölüm referansı; `grep -l "pmcid" docs/EVIDENCE_SCHEMA.md` ve `grep -l "kalan risk\|residual" THREAT_MODEL.md` boş değil
   - → 105 REQ satırı (§0–§21 kapsam, 0 boş bölüm ref'i); THREAT_MODEL: 14 tehdit + 6 kalın risk + doğrulama planı; EVIDENCE_SCHEMA: §2.3 alanlarının tamamı JSON Schema + E1–E6 etiket eşlemesi + T2 sınıf atamaları
   - Note: master §13 "26 tablo" yazar ama 27 isim sayar — numaralandırma yetkili kabul edildi (bkz. §6 ASSUMPTION)
 
 ### Aşama 0b — İskelet ve depo
-- [x] T4 (2026-09-20, GLM-5.3) Flutter iskelet + CI + offline kanıtı
+- [x] T4 [M] (2026-09-20, GLM-5.3) Flutter iskelet + CI + offline kanıtı
   - Done when: `flutter analyze` temiz; `flutter test` geçer (5 sekme smoke widget testi dahil); `bash tool/check_offline.sh` exit 0; AndroidManifest'te `grep -c INTERNET` = 0
   - → analyze "No issues"; 6 test yeşil (3 smoke + 3 l10n); check_offline exit 0; manifest'lerde INTERNET=0 (main+debug+profile). flutter create (app.nketo) + elle ORTAK §1.4 sertleştirme; Riverpod 3.4.3/go_router 18.0.1/drift 2.35.0/fl_chart 1.2.0/freezed 4.0.2 zinciri kilitlendi
   - Note: debug/profile manifest'lerinden INTERNET kaldırıldı → debug attach (hot reload) emülatörde T30'da doğrulanacak; sorun çıkarsa yerel (commit dışı) geçici çözüm + görev
-- [x] T5 (2026-09-20, GLM-5.3) Depo topluluk dosyaları
+- [x] T5 [L] (2026-09-20, GLM-5.3) Depo topluluk dosyaları
   - Done when: dosyalar mevcut; README'de "N Keto Tracker" ve "n-keto-tracker" geçiyor; `git ls-files | grep -c "^LICENSE$"` = 1 (GPL-3.0 korunuyor); SECURITY.md'de `@` içeren adres yok
   - → 11 dosya (README, CONTRIBUTING+lisans sözleşmesi, SECURITY, CoC v2.1 atıflı, THIRD_PARTY×2 pub-cache kanıtlı lisanslarla, CHANGELOG, issue×2 + PR şablonu); README marka/trademark notlu, keystore uyarılı; ek temizlik: cupertino_icons pubspec'ten kaldırıldı, .zcodeignore takipten çıkarıldı + ignore'landı
   - Note: CoC Enforcement iletişim yeri ve SECURITY adresi bilinçli yer tutucu — sahibin onayıyla doldurulacak
-- [x] T6 (2026-09-20, GLM-5.3) gitleaks + dependabot + gizli tarama
+- [x] T6 [L] (2026-09-20, GLM-5.3) gitleaks + dependabot + gizli tarama
   - Done when: dependabot.yml geçerli YAML; CI tanımında gitleaks adımı var; yerel `gitleaks detect --no-git` exit 0
   - → dependabot.yml (pub+gradle+github-actions haftalık, python-yaml ile doğrulandı); CI'da gitleaks adımı T4'ten beri mevcut (grep=2); yerel gitleaks 8.0: "no leaks found", exit 0. Pre-commit talimatı CONTRIBUTING'de (T5)
 
 ### Aşama 1 — Veri katmanı ve onboarding
-- [x] T7 (2026-09-20, GLM-5.3) Drift şeması + migration altyapısı
+- [x] T7 [H] (2026-09-20, GLM-5.3) Drift şeması + migration altyapısı
   - Done when: `flutter test test/core/database/` geçer; testte 26 tablo create ediliyor; FK ihlali hata veriyor
   - → 9 DB testi yeşil (27 tablo, FK pragma=1, CRUD, FK ihlali, CASCADE, RESTRICT, transaction rollback, oturum+formül sürümü, üç hedef türü ayrık); tam paket 15 test yeşil, analyze temiz
   - Note: TEXT PK'li seed tablolarına `primaryKey => {id}` override'ı eklendi (drift FK mismatch'ini önler); testler snake_case fiziksel tablo adlarını doğrular; path_provider ADR-0002 ile eklendi (BSD-3)
-- [x] T8 (2026-09-20, GLM-5.3) Veritabanı şifreleme (standart §6.1)
+- [x] T8 [H] (2026-09-20, GLM-5.3) Veritabanı şifreleme (standart §6.1)
   - Done when: ADR dosyası karar + gerekçe içeriyor; şifreleme uygulandıysa DB dosyası düz metin `sqlite3` ile açılamıyor (test/komut kanıtı), açılış testi geçiyor
   - → ADR-0001; sqlcipher build hook (`hooks.user_defines.sqlite3.source: sqlcipher`) + flutter_secure_storage (BSD-3) anahtar yönetimi; 4 test kanıtı: anahtar üretim/saklama, rastgelelik, düz sqlite3 açılışı code 26 "file is not a database" fırlatır (şifreleme GERÇEK), drift PRAGMA key açılışı çalışıyor; Android debug APK hook'la derlendi (494,9s)
   - Note: sqlcipher_flutter_libs EKLENMEDİ (pub.dev: 0.7.0+ no-op, sqlite3 2.x dönemine ait — ADR'de belgelendi)
-- [x] T9 (2026-09-20, GLM-5.3) Onboarding akışı
+- [x] T9 [M] (2026-09-20, GLM-5.3) Onboarding akışı
   - Done when: her adımın widget testi + ileri akış testi geçer; onam hash'i DB'de; onboarding ARB + ekranlarında hastalık adı lint'i temiz
   - → 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı[saygılı dil+atlanabilir]→risk taraması→veri+onam); consent_repository (sürüm 1.0.0+SHA-256 hash, eski sürüm → yeniden onam); 14 yeni test (controller 5, consent 5, widget 4) dahil 34 test yeşil; OnboardingController Riverpod 3 Notifier; RadioGroup API (3.32+); ARB 47 anahtar TR/EN eşit
   - Note: profil/katsayı alanları henüz yalnız controller'da; UserProfile'a yazım T10/T21 ile birlikte (DB yazma akışı user profile repository'siyle)
-- [x] T10 (2026-09-20, GLM-5.3) Risk kilidi
+- [x] T10 [M] (2026-09-20, GLM-5.3) Risk kilidi
   - Done when: risk=evet senaryosunda plan üretici çağrısının reddi ve mesaj gösterimi testte doğrulanıyor
   - → riskLockProvider + guardPlanGeneration kapısı (PlanLockedException); 4 birim test (kilit aç/kapa, yeniden değerlendirme, üretim reddi); kilit mesajı gösterimi T9 widget testinde kanıtlı ('risk işaretlendiğinde kilit notu görünür'); 38 toplam test yeşil
 
 ### Aşama 2 — Ölçüm ve GKI
-- [x] T11 (2026-09-20, GLM-5.3) GKI saf hesap motoru
+- [x] T11 [H] (2026-09-20, GLM-5.3) GKI saf hesap motoru
   - Done when: `flutter test test/core/units/` geçer; 90mg/dL+2.5mmol/L=2.0 dahil tüm fixture'lar yeşil
   - → GkiEngine (saf, fromMmolL/fromRaw, GkiResult+formulaVersion etiketi), GlucoseValue (ham+birim+normalize, mmol/L'de çift dönüşüm yok), parseDecimal (TR virgül/EN nokta/binlik ayraç), BHB≤0/glukoz≤0/NaN/Inf/boş girişte sealed hata türleri; 25 birim test: 18 fixture vektörü parametreli yeşil + ara yuvarlama ayrıştırma + formül tek-kaynak grep testi; toplam 63 test yeşil
   - Note: fixture formulaVersion "gki-v1" string'ine hizalandı (T2'de sayısaldı; anlamsal değişiklik yok). Ara yuvarlama testi 97/2.9 vakasıyla yanlış yolu (1.8620…) ayrıştırıyor
-- [x] T12 (2026-09-20, GLM-5.3) Ölçüm girişi + eşleştirme
+- [x] T12 [M] (2026-09-20, GLM-5.3) Ölçüm girişi + eşleştirme
   - Done when: eşleştirme birim testleri (pencere içi/dışı/eşitlik/yeniden kullanım/düzenleme/silme) + form widget testleri geçer
   - → MatchingEngine (pencere 1–15 clamp, en küçük |Δt|, eşitlikte erken, kullanılmış ölçüm dışarı) 8 test; MeasurementsRepository (onaysız GKI reddi, düzenlemede deterministik yeniden hesap, silmede SET NULL+isValid=false geçersizleştirme, çift kayıt tespiti+kayıt edilebilirlik) 4 test; MeasurementSessionForm widget 3 test (90+2,5→GKI 2,0 kartı [formül+saat+sürüm], geçersiz/BHB=0 reddi); 78 test yeşil
   - Note: MeasurementSession FK'leri RESTRICT→SET NULL revize edildi (§6.3 geçersizleştirme+denetim izi şartı; database_test güncellendi). appDatabaseProvider core/database/providers.dart'a taşındı
-- [x] T13 (2026-09-20, GLM-5.3) Günlük zaman çizelgesi + temel grafikler
+- [x] T13 [M] (2026-09-20, GLM-5.3) Günlük zaman çizelgesi + temel grafikler
   - Done when: zaman çizelgesi + grafik widget testleri geçer; bant varsayılan-kapalı ve açıklama metni testte doğrulanıyor
   - → LogPage (Günlük sekmesi): timelineProvider + chartSeriesProvider (GKI/glukoz/BHB ayrı küçük grafikler, fl_chart, bağımsız eksen), bantlar varsayılan KAPALI + kalıcı açıklama GKI grafiği altında + bilinçli anahtar, /log/session'da oturum formu; 3 widget testi; 81 toplam yeşil
   - Note: zaman çizelgesi şimdilik oturum girdileri; öğün (T16), ağırlık (T22), semptom (T23) sonra birleşecek. Boş grafik başlığı çizelge boşuyla aynı metni paylaşıyor (findsWidgets)
-- [x] T14 (2026-09-20, GLM-5.3) Bugün ekranı
+- [x] T14 [M] (2026-09-20, GLM-5.3) Bugün ekranı
   - Done when: widget testi: her hızlı eylem ana ekrandan ≤3 dokunuşta ilgili formu açıyor; boş durumlar render ediliyor
   - → TodayPage: 4 hızlı eylem (ilk ekran, 2. dokunuşta hedef; Ölçüm→gerçek form, öğün/ağırlık/semptom→dürüst coming-soon sayfası), son ölçüm kartı (GKI+eşleşme türü), 5 boş durum kartı, alt bilgi; 3 widget testi; 84 toplam yeşil
   - Note: öğün/ağırlık/semptom formları T16/T22/T23'te gelir; coming-soon yolları o zaman gerçek formlarla değişir (router'da işaretli)
 
 ### Aşama 3 — Beslenme
-- [x] T15 (2026-09-20, GLM-5.3) Seed besin veri seti
+- [x] T15 [M] (2026-09-20, GLM-5.3) Seed besin veri seti
   - Done when: foods.json şema doğrulama + seeder idempotency testi geçer; `python -c` kontrolü: her kayıtta license ve dataSource dolu
   - → 152 besin (TR+uluslararası, keto-relevanslı); tool/gen_foods_seed.py ile tekrar üretilebilir; netCarb=max(0,total−fiber) üretici+test doğrulamalı; FoodSeeder idempotent (6 test: şema, tam ekleme, 2. koşum 0, kullanıcı besini korunur, user-id yasağı, ContentVersion); provenance dokümanı USDA kamu malı + dürüst derleme beyanı; 90 test yeşil
-  - Note: sourceRecordId 'FDC-SR-transcribed:<slug>' — tek kayıt API doğrulaması yayın öncesi uzman incelemesiyle (FOOD_DATA_PROVENANCE.md açık konu; release gate'i değil)
-- [x] T16 (2026-09-20, GLM-5.3) Yemek günlüğü
+  - Note: sourceRecordId 'FDC-SR-transcribed:slug' — tek kayıt API doğrulaması yayın öncesi uzman incelemesiyle (FOOD_DATA_PROVENANCE.md açık konu; release gate'i değil)
+- [x] T16 [M] (2026-09-20, GLM-5.3) Yemek günlüğü
   - Done when: net karb + ölçekleme birim testleri ve arama→ekle→toplam güncellenir widget testi geçer
   - → scalePer100g/scaleItem saf ölçekleme (6 tablo testi, kayan nokta tuzağı dahil); MealRepository (çoklu besin transaction, günlük toplamlar SQL birleşimi, kullanıcı beyanı geçersiz kılması, quickRepeat+repeatMeal, TR/EN arama) 5 test; MealForm widget 2 test (arama→ekle→kaydet DB kanıtı, öğesiz red); 103 toplam yeşil
   - Note: Meal.isFavorite eklendi (v1 şema, yayın öncesi); özel besin girişi arayüzü T17 ile; Bugün testi gerçek forma uyarlandı
-- [x] T17 (2026-09-20, GLM-5.3) Gıda rehberi
+- [x] T17 [M] (2026-09-20, GLM-5.3) Gıda rehberi
   - Done when: rehber widget testi geçer; içerik lint'i ("zehir", "mucize", "kesinlikle yasak" vb.) temiz
   - → food_guide.json (12 kart, 3 grup; Neden?+porsiyon+alternatif+E6 etiket); GuidePage Rehber sekmesinde (grup başlıkları + açılır kartlar + alt bilgi); 4 içerik lint testi (yasaklı dil TR/EN, E6 zorunlu) + 2 widget testi; 109 toplam yeşil
   - Note: rehber yükleme guideCardsProvider'a taşındı (FutureBuilder'ın ardışık test rootBundle tuzağı); test override deseni AsyncValue.data
   - Needs: T15
-- [ ] T18 [M] Öğün–ölçüm ilişkisi
+- [x] T18 [M] (2026-09-20, GLM-5.3) Öğün–ölçüm ilişkisi
   - Where: `lib/features/measurements/`, `lib/features/dashboard/`
   - Do: MASTER §8.3: ölçüm detayında en yakın önceki öğün; analiz penceresi seçimi (1/2/3/4 saat); öncesi/sonrası karşılaştırma yalnız bağlam etiketiyle; "Bu öğünden X saat sonra kaydedilen değer" dili; karıştırıcı etkenler (steroid, egzersiz, uyku, stres, hastalık, ölçüm hatası) eğitim kartı; yetersiz tekrarlı veride korelasyon/öneri üretme yok
   - Done when: ilişki görünümü widget testi + nedensel dil lint'i ("bozdu", "yükseltti" yok) geçer
   - Needs: T16, T13
 
 ### Aşama 4 — Planlama
-- [x] T19 (2026-09-20, GLM-5.3) Tarifler
+- [x] T19 [M] (2026-09-20, GLM-5.3) Tarifler
   - Done when: ölçekleme birim testi + tarif detay widget testi geçer; kontrol scripti: her malzemenin foodId'si foods.json'da var
   - → 20 seed tarif (tool/gen_recipes_seed.py; TR/EN başlık+adım, gram malzeme foods.json referanslı, porsiyon başı makrolar hesaplı, alerjen/süre/saklama); RecipeSeeder idempotent (5 test: malzeme-foodId bütünlüğü, idempotency, porsiyon-başı doğrulama, FK); RecipeDetailPage + widget test; 125 toplam yeşil
   - Note: porsiyon değişiminde ölçekleme scaleItem ile deterministik (T16 testleri); testlerde rootBundle YOK — seedFromJsonString(File) kullan
-- [x] T20 (2026-09-20, GLM-5.3) Haftalık plan + taslak üretici + alışveriş listesi
+- [x] T20 [M] (2026-09-20, GLM-5.3) Haftalık plan + taslak üretici + alışveriş listesi
   - Done when: üretici determinizm testi (aynı girdi → aynı çıktı), birleştirme birim testleri, plan→liste integration testi geçer
   - → PlanGenerator (deterministik, alerjen/kategori filtreleri, uygun yoksa null — kural gevşetme yok, enerji açığı/fasting üretmez) 4 test; ShoppingMerger (gram toplama, adet/dilim ayrı satır) + PlanRepository (savePlan/collectIngredients/createShoppingList + manuel madde koruması) 2 test; risk kilidi T10 entegrasyon testi (kilitliyken PlanLockedException); 131 toplam yeşil
   - Note: Plan UI ekranı T24 öncesi tamamlanacak; şimdilik motor+repo+test katmanı tamam. Kopyala/taşı/değiştir savePlanEntry ile desteklenir (UI T24)
-- [x] T21 (2026-09-20, GLM-5.3) Enerji tahmini + üç hedef türü
+- [x] T21 [M] (2026-09-20, GLM-5.3) Enerji tahmini + üç hedef türü
   - Done when: REE/TDEE birim testleri (iki katsayı + aktivite çarpanı), tür dönüşmezliği testi, lejant widget testi geçer
   - → restingEnergy/totalEnergy (Mifflin–St Jeor, iki katsayı, aktivite çarpanları sürümlenmiş) 5 test — 18 yaş altı/katsayı atlandı/gebelik → EnergyEstimateNotAllowed; GoalLegend widget (üç ayrı etiket+şekil, yalnız kayıtlı türler) 3 test; AC9 tür dönüşmezliği DB testi 1; 140 toplam yeşil
 
 ### Aşama 5 — Ağırlık, semptom, trendler
-- [x] T22 (2026-09-20, GLM-5.3) Ağırlık takibi
+- [x] T22 [M] (2026-09-20, GLM-5.3) Ağırlık takibi
   - Done when: normalize + değişim penceresi birim testleri ve widget testleri geçer
   - → lbToKg/kgToLb + WeightValue normalize + changeOverWindow (yetersiz veride null — trend yok) 6 birim test; WeightForm (/weight/new) 3 widget testi (lb→kg normalize, geçersiz red, TR virgül+koşul); Bugün testi gerçek forma uyarlandı; 149 toplam yeşil
-- [x] T23 (2026-09-20, GLM-5.3) Semptom takibi
+- [x] T23 [M] (2026-09-20, GLM-5.3) Semptom takibi
   - Done when: CRUD birim + widget testleri geçer; yönlendirme mesajı testte doğrulanıyor
   - → SymptomRepository (11 varsayılan tanım idempotent, kullanıcı tanımı, CRUD, şiddet 0–10 doğrulaması, needsGuidance kuralı: nöbet olayı veya şiddet ≥7) 5 test; SymptomForm (/symptoms/new) 2 widget testi (düşük şiddet kayıt + şiddet 8'de yönlendirme mesajı); Bugün testi gerçek forma uyarlandı; 156 toplam yeşil
-- [x] T24 (2026-09-20, GLM-5.3) Trendler ekranı
+- [x] T24 [M] (2026-09-20, GLM-5.3) Trendler ekranı
   - Done when: trend widget/golden testleri + metinsel özet semantics testi geçer
   - → TrendsPage (/trends): 7/30/90 aralık seçimi, GKI/glukoz/BHB/ağırlık ayrı grafikler (weightSeriesProvider), ham noktalar korunur (aykırı filtre yok), veri yoksa dürüst boş durum, metinsel özet (adet/son/ortalama — ekran okuyucu kanıtı), "ne anlatır/ne anlatmaz" kalıcı kartı, bantlar notu; 3 widget testi; 159 toplam yeşil
   - Note: golden testler T30 sertleştirme paketiyle (tema matrisi) eklenecek; özel aralık tarihi T24 kapsamında 7/30/90 sabit seçimle sınırlı (özel tarih aralığı T20 plan aralığıyla birlikte değerlendirilecek — açık iş notu)
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik
-- [x] T35 (2026-09-20, GLM-5.3) Plan + alışveriş UI ekranı
+- [x] T35 [M] (2026-09-20, GLM-5.3) Plan + alışveriş UI ekranı
   - Done when: plan üret→kaydet→alışveriş listesi oluşur widget/integration testi geçer; risk kilidi aktifken üret düğmesi engellenir ve mesaj gösterilir
   - → PlanPage (/plan): taslak üret AppBar/action, haftalık girdiler, alışveriş CTA appbar'da (risk kilidi mesajı kullanıcıya); plan üreti kaydet 14 girdi DB'de; plan→liste oluşuyor; clonetest üzerinden birleştirme hangi aşamasında; RecipesPage (/plan/recipes) + RecipeDetail (T19) route altyapısı; smoke testi artık TodayPage DB override ile
   - Note: risk kilidi davranışı zaten T20'de kanıtlı (guardPlanException); Plan UI'da kilitli ise üretim düğmesi snackbar gösterir
 
 ### Aşama 6 — Kanıt kütüphanesi ve taşınabilirlik (eski başlık altı)
-- [x] T25 (2026-09-20, GLM-5.3) Kanıt kütüphanesi (Rehber)
+- [x] T25 [M] (2026-09-20, GLM-5.3) Kanıt kütüphanesi (Rehber)
   - Done when: provenance testi (her claim'in sourceId + evidenceLevel + inceleme tarihi var; MASTER §16.5) + Rehber widget testleri (hastalık içeriği varsayılan görünümde yok) geçer
   - → evidence.json (7 kaynak, provenance alanlarının tamamı, özgün TR/EN özetler, E-etiketleri); EvidenceSection (/guide'e bölüm): genel kaynaklar varsayılan görünür, hastalığa özel yalnız bilinçli filtreyle, URL yalnız kopyala (açma yok); 5 provenance + 3 widget testi; 167 toplam yeşil
   - Note: GKI hesaplayıcı kaynağı da hastalığa özel filtre arkasına taşındı (sınırlılık metni 'brain cancer' içeriyor — AC4 genel görünüm temizliği); genel görünümde yalnız Mifflin 1990 var (7 kaynağın geri kalanı hastalık bağlamlı). Rehber genel eğitim maddeleri (keto temelleri/GKI hesabı) T25 kapsamında GuidePage'e ayrı bölüm olarak eklenmedi — T33 kullanıcı kılavuzuyla birlikte değerlendirilecek (açık iş)
-- [x] T26 (2026-09-20, GLM-5.3) Export / import / tüm verileri sil
+- [x] T26 [M] (2026-09-20, GLM-5.3) Export / import / tüm verileri sil
   - Done when: export→temiz kurulum→import round-trip integration testi (kayıt sayısı + değer eşitliği) ve rollback testi geçer
   - → csv_safety (formül enjeksiyonu kaçışı + quote virgül/tırnak/satır) + ExportImportRepository (exportJson başlıklı okunabilir JSON, CSV, validateImportHeader (formatVersion+boyut), transaction import (0 kısmi yazı), bilinmeyen alan yok sayımı, deleteAllData 14 tablo); 7 test (başlık, CSV, round-trip eşitlik, rollback, boyut/format reddi, bilinmeyen alan, silme sayısı); 174 toplam yeşil
   - Note: drift toJson oksuz: export açıkça alanları yazar (ISO tarihler); weighted round-trip DB değerleri kanıtlı

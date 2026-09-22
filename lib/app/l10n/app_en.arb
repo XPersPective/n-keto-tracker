@@ -494,5 +494,35 @@
       }
     }
   },
-  "aboutShareText": "Fully offline keto journal with glucose, ketone and GKI tracking. Open source, no account needed."
+  "aboutShareText": "Fully offline keto journal with glucose, ketone and GKI tracking. Open source, no account needed.",
+  "dataManagementTitle": "Data management",
+  "dataExportJson": "Export data (JSON)",
+  "dataExportCsv": "Export measurements (CSV)",
+  "dataImportLabel": "Paste exported JSON here",
+  "dataImportButton": "Import data",
+  "dataImportSuccess": "Imported {glucose} glucose and {weight} weight records.",
+  "dataImportInvalid": "Import failed: file invalid or unsupported.",
+  "dataDeleteAll": "Delete all my data",
+  "dataDeleteConfirm1": "Delete ALL data? This includes measurements, meals, plans and settings. This cannot be undone.",
+  "dataDeleteConfirm2": "Are you really sure? Type DELETE to confirm.",
+  "dataDeleteTypeDelete": "Type DELETE",
+  "dataDeleteDone": "All data deleted ({count} records).",
+  "dataExportShared": "Export file ready — choose where to save it.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  }
 }

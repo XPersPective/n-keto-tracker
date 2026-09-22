@@ -12,6 +12,7 @@ import '../features/measurements/log_page.dart';
 import '../features/recipes/recipe_detail_page.dart';
 import '../features/recipes/recipes_page.dart';
 import '../features/settings/about_page.dart';
+import '../features/settings/data_management_page.dart';
 import '../features/shopping/shopping_list_page.dart';
 import '../features/measurements/measurement_session_form.dart';
 import '../features/onboarding/onboarding_page.dart';
@@ -101,6 +102,10 @@ final GoRouter appRouter = GoRouter(
       ],
     ),
     GoRoute(path: '/meals/new', builder: (context, state) => const MealForm()),
+    GoRoute(
+      path: '/settings/data',
+      builder: (context, state) => const DataManagementPage(),
+    ),
     GoRoute(
       path: '/settings/about',
       builder: (context, state) => const AboutPage(),

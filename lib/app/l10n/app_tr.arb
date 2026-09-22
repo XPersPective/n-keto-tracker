@@ -424,5 +424,35 @@
       }
     }
   },
-  "aboutShareText": "Tamamen çevrimdışı keto günlüğü; glukoz, keton ve GKI takibi. Açık kaynak, hesap gerekmez."
+  "aboutShareText": "Tamamen çevrimdışı keto günlüğü; glukoz, keton ve GKI takibi. Açık kaynak, hesap gerekmez.",
+  "dataManagementTitle": "Veri yönetimi",
+  "dataExportJson": "Verileri dışa aktar (JSON)",
+  "dataExportCsv": "Ölçümleri dışa aktar (CSV)",
+  "dataImportLabel": "Dışa aktarılan JSON'u buraya yapıştırın",
+  "dataImportButton": "Verileri içe aktar",
+  "dataImportSuccess": "{glucose} glukoz ve {weight} ağırlık kaydı içe aktarıldı.",
+  "dataImportInvalid": "İçe aktarma başarısız: dosya geçersiz veya desteklenmiyor.",
+  "dataDeleteAll": "Tüm verilerimi sil",
+  "dataDeleteConfirm1": "TÜM veriler silinsin mi? Ölçümler, öğünler, planlar ve ayarlar dahil. Bu işlem geri alınamaz.",
+  "dataDeleteConfirm2": "Gerçekten emin misiniz? Onaylamak için DELETE yazın.",
+  "dataDeleteTypeDelete": "DELETE yazın",
+  "dataDeleteDone": "Tüm veriler silindi ({count} kayıt).",
+  "dataExportShared": "Dışa aktarma hazır — kaydedeceğiniz yeri seçin.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  }
 }

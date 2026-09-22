@@ -92,6 +92,10 @@ bakın. **Keystore yedekleme uyarısı:** yayın imzalama anahtarını kaybeders
 Google Play'de aynı uygulama kimliğiyle güncelleme yapamazsınız — keystore'u
 güvenli ve yedekli saklayın (değeri yoktur, yeniden üretilemez).
 
+## Gizlilik
+
+Gizlilik politikası: `docs/privacy/index.md` (GitHub Pages yayınlanır).
+
 ## Katkı
 
 Katkı rehberi: [CONTRIBUTING.md](CONTRIBUTING.md) · Davranış kuralları:

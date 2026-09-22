@@ -18,7 +18,16 @@ class TodayPage extends ConsumerWidget {
     final timeline = ref.watch(timelineProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.navToday)),
+      appBar: AppBar(
+        title: Text(l10n.navToday),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_outlined),
+            tooltip: l10n.settingsTitle,
+            onPressed: () => context.push('/settings/about'),
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [

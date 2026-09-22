@@ -470,5 +470,29 @@
         "type": "String"
       }
     }
-  }
+  },
+  "aboutTitle": "About",
+  "aboutVersion": "Version {value}",
+  "aboutOpenSourceHeading": "Open source",
+  "aboutOpenSourceBody": "N Keto Tracker is free and open-source software licensed under GPL-3.0. You can inspect, modify, and redistribute the code under the same license.",
+  "aboutPrivacyHeading": "Privacy",
+  "aboutPrivacyBody": "All data stays on this device. No account, no ads, no analytics, no internet connection.",
+  "aboutDisclaimerHeading": "Disclaimer",
+  "aboutDisclaimerBody": "This app is for general information and personal tracking. It is not medical advice, diagnosis, or treatment.",
+  "aboutLicensesButton": "Licenses",
+  "aboutShareButton": "Share this app",
+  "aboutOtherAppsButton": "Other apps",
+  "aboutCopiedToast": "Copied to clipboard.",
+  "licensesTitle": "Licenses",
+  "otherAppsTitle": "Other apps",
+  "otherAppsEmpty": "No other apps listed yet.",
+  "settingsTitle": "Settings",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutShareText": "Fully offline keto journal with glucose, ketone and GKI tracking. Open source, no account needed."
 }

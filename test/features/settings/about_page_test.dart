@@ -21,6 +21,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('N Keto Tracker'), findsOneWidget);
+    expect(find.text('Fully offline keto journal'), findsOneWidget);
     expect(find.text('Version dev'), findsOneWidget);
     expect(find.textContaining('GPL-3.0'), findsOneWidget);
     expect(
@@ -43,6 +44,14 @@ void main() {
       scrollable: find.byType(Scrollable).first,
     );
     expect(share, findsOneWidget);
+    // ORTAK §3.6: Diğer uygulamalar girişi canlı (PB-009).
+    final otherApps = find.text('Other apps');
+    await tester.scrollUntilVisible(
+      otherApps,
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    expect(otherApps, findsOneWidget);
     // Repo bağlantısı kopyalanabilir metin olarak görünür.
     expect(
       find.textContaining('github.com/XPersPective/n-keto-tracker'),

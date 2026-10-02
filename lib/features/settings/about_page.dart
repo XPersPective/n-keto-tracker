@@ -59,6 +59,10 @@ class AboutPage extends ConsumerWidget {
                   l10n.appTitle,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
+                Text(
+                  l10n.aboutSlogan,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
                 Text(l10n.aboutVersion(version)),
               ],
             ),
@@ -166,7 +170,7 @@ class AboutPage extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.apps_outlined),
             title: Text(l10n.aboutOtherAppsButton),
-            onTap: () {},
+            onTap: () => context.push('/settings/other-apps'),
           ),
         ],
       ),

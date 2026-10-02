@@ -75,7 +75,11 @@ TR/EN, tamamen offline).
 - evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
   kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
 - recipes: RecipesPage + RecipeDetailPage
-- settings: GoalLegend (üç hedef türü)
+- settings: GoalLegend (üç hedef türü), about_page (ORTAK §3.3: sürüm+
+  slogan, açık kaynak, gizlilik, feragat, Lisanslar, Paylaş), data_
+  management_page, other_apps_page (ORTAK §3.6 çevrimdışı uyarlama —
+  gömülü assets/apps.json, ADR-PB-009; bozuk JSON çökmez, URL yalnız
+  kopyala)
 - privacy: risk_lock.dart (riskLockProvider + guardPlanGeneration →
   PlanLockedException)
 

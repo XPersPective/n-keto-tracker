@@ -402,6 +402,7 @@
     }
   },
   "aboutTitle": "Hakkında",
+  "aboutSlogan": "Tamamen çevrimdışı keto günlüğü",
   "aboutVersion": "Sürüm {value}",
   "aboutOpenSourceHeading": "Açık kaynak",
   "aboutOpenSourceBody": "N Keto Tracker, GPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır. Kodu aynı lisans koşullarıyla inceleyebilir, değiştirebilir ve dağıtabilirsiniz.",
@@ -416,6 +417,7 @@
   "licensesTitle": "Lisanslar",
   "otherAppsTitle": "Diğer uygulamalar",
   "otherAppsEmpty": "Henüz listelenen başka uygulama yok.",
+  "otherAppsCopyLink": "Mağaza bağlantısını kopyala",
   "settingsTitle": "Ayarlar",
   "@aboutVersion": {
     "placeholders": {

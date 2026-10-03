@@ -72,6 +72,7 @@ silme zinciri emülatörde uçtan uca koşturuldu.
 | Ekran okuyucu temel akışlar | Semantics etiketleri (uiautomator content-desc okumaları bu yürüyüşte kullanıldı); Trends metinsel özet (`dod-08`) |
 | Grafiklerin metinsel alternatifi | Grafik altı özet satırları: "Son 7 günde 3 ölçüm. Son değer: 2,1, ortalama: 2,0." (`dod-08-trends-summaries.png`) |
 | Boş/hata/yükleme durumları | "Henüz ölçüm yok…" boş durumlar (`dod-02`); geçersiz değer hata mesajları (`weight_form_test`, `measurement_session_form_test`) |
+| Tablet/yatay düzen (ORTAK §8) | Yatay doğrulama (emülatör, release APK): alt navigasyon kenar rayına uyum sağlar; Bugün/Günlük/öğün formu düzenli, taşma yok, tüm denetimler erişilebilir (`docs/evidence/screenshots/landscape-*.png`). Tablet genişliği tasarım gereği uyarlanabilir ray + kaydırılabilir listelerle desteklenir |
 | Unit/widget/integration + static analysis | 195 test yeşil; `flutter analyze --fatal-infos` temiz; `dart format --set-exit-if-changed` temiz |
 | Android release build temiz kurulum | Bu yürüyüş (taze uninstall → install → uçak modu açılışı) |
 

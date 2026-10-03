@@ -27,6 +27,27 @@ Changelog'a yakın tutulur; tarihler ISO 8601.
 - Mağaza/pazarlama paketi (`docs/marketing/`).
 - Release sertleştirmesi: `--obfuscate --split-debug-info` (semboller repo
   dışında); entegrasyon, erişilebilirlik ve migration testleri.
+- Hakkında > Diğer uygulamalar (ORTAK §3.6): tamamen çevrimdışı gömülü
+  katalog; bozuk veri çökmez, mağaza bağlantısı yalnız kopyalanır.
+- Hakkında başlığında kısa slogan (TR/EN).
+
+### Düzeltildi (sürüm adayı doğrulaması, 2026-10-03)
+
+- Taze kurulumda uygulama hiçbir akışta çökmez: üretim veritabanı
+  bağlantısı ve gömülü içerik (besin/tarif/kanıt) açılışta yüklenir;
+  besin araması ilk günden çalışır.
+- Uygulama geç tepki verme (ANR) giderildi: veritabanı işlemleri arka
+  plan izolesinde çalışır.
+- Onboarding her açılışta tekrar edilmez; geçerli onam varsa doğrudan
+  Bugün açılır.
+- Onboarding'de seçilen dil sonraki açılışlarda uygulanır (cihaz dili
+  Türkçe değilse bile).
+- Kayıt sonrası sekmeler ve Bugün kartları anında güncel veriyi
+  gösterir; günlükte ölçümün en yakın önceki öğüne zamansal bağı
+  ("X saat sonra — yalnızca zaman bağlamı, etki beyanı değildir")
+  görünür.
+- Semptom kaydı onay metni doğru ("Semptom kaydedildi."); haftalık plan
+  satırlarında okunur tarif başlıkları gösterilir.
 
 ### İçerik veri sürümü
 

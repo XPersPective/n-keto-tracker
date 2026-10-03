@@ -99,7 +99,9 @@ LazyDatabase _openConnection() {
     final dir = await getApplicationSupportDirectory();
     final file = File('${dir.path}${Platform.pathSeparator}n_keto_tracker.db');
     final key = await loadOrCreateDatabaseKey();
-    return NativeDatabase(
+    // Arka plan izolesinde çalışır: SQLCipher anahtar türetme (PBKDF2) ve
+    // yoğun sorgular ana thread'i bloke etmez (PB-010; ANR düzeltmesi).
+    return NativeDatabase.createInBackground(
       file,
       setup: (rawDb) {
         // SQLCipher derlemesinde key, açılışın ilk işlemi olmalıdır.

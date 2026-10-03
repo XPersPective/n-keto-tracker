@@ -46,6 +46,7 @@ class PlanPage extends ConsumerStatefulWidget {
 class _PlanPageState extends ConsumerState<PlanPage> {
   MealPlanRow? _plan;
   List<MealPlanEntryRow> _entries = [];
+  Map<String, String> _recipeTitles = const {};
 
   Future<void> _load() async {
     final db = ref.read(appDatabaseProvider);
@@ -55,10 +56,15 @@ class _PlanPageState extends ConsumerState<PlanPage> {
     final entries = await (db.select(
       db.mealPlanEntry,
     )..where((e) => e.mealPlanId.equals(latest.id))).get();
+    final titles = <String, String>{
+      for (final r in await db.select(db.recipe).get())
+        r.id: (r.titleTr ?? r.titleEn ?? r.id),
+    };
     if (!mounted) return;
     setState(() {
       _plan = latest;
       _entries = entries;
+      _recipeTitles = titles;
     });
   }
 
@@ -154,7 +160,10 @@ class _PlanPageState extends ConsumerState<PlanPage> {
               ListTile(
                 dense: true,
                 title: Text(l10n.planItemDay((e.dayOffset + 1).toString())),
-                subtitle: Text('${e.mealType} · ${e.servings}'),
+                // Tarif başlığı okunur etiket; eksikse kısa id (PB-011).
+                subtitle: Text(
+                  '${_recipeTitles[e.recipeId] ?? e.recipeId} · ${e.mealType} · ${e.servings}',
+                ),
               ),
           ],
         ],

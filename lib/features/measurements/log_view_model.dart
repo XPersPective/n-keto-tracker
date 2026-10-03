@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
 import '../../core/database/providers.dart';
+import '../../core/units/meal_measurement_relation.dart';
 
 /// Günlük ekranı veri modeli: tek kronolojik çizelge girdileri
 /// (MASTER_PROMPT §5.2). Öğünler T16'da, ağırlık T22'de, semptom T23'te
@@ -79,6 +80,12 @@ final timelineProvider = FutureProvider.autoDispose<List<TimelineEntry>>((
             ..orderBy([(s) => OrderingTerm.desc(s.computedAtUtc)]))
           .get();
   final entries = <TimelineEntry>[];
+  // Öğün bağlamı (MASTER §8.3): yalnızca zamansal ilişki — en yakın
+  // ÖNCEKİ öğün, seçili pencere içinde; nedensellik iddiası yok.
+  final mealRows = await db.select(db.meal).get();
+  final meals = [
+    for (final m in mealRows) (id: m.id, atUtc: m.eatenAtUtc, type: m.mealType),
+  ];
   for (final s in rows) {
     if (s.glucoseId == null || s.ketoneId == null) continue;
     final g = await (db.select(
@@ -87,6 +94,13 @@ final timelineProvider = FutureProvider.autoDispose<List<TimelineEntry>>((
     final k = await (db.select(
       db.ketoneMeasurement,
     )..where((t) => t.id.equals(s.ketoneId!))).getSingle();
+    final relation = nearestPreviousMeal(
+      measuredAtUtc: g.measuredAtUtc,
+      meals: [for (final m in meals) MealReference(id: m.id, atUtc: m.atUtc)],
+    );
+    final relatedMeal = relation == null
+        ? null
+        : meals.where((m) => m.id == relation.id).first;
     entries.add(
       MeasurementTimelineEntry(
         atUtc: g.measuredAtUtc,
@@ -100,11 +114,18 @@ final timelineProvider = FutureProvider.autoDispose<List<TimelineEntry>>((
         isValid: s.isValid,
         matchKind: s.matchKind,
         matchDifferenceMinutes: s.matchDifferenceMinutes,
+        relatedMealType: relatedMeal?.type,
+        relatedMealHoursAfter: relation == null
+            ? null
+            : hoursAfter(
+                MealReference(id: relation.id, atUtc: relation.atUtc),
+                g.measuredAtUtc,
+              ),
       ),
     );
   }
   return entries;
-});
+}, dependencies: [appDatabaseProvider]);
 
 /// Grafik serileri: GKI, glukoz (mmol/L), BHB — ayrı ayrı (§22.4).
 class ChartSeries {

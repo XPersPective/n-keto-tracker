@@ -345,6 +345,7 @@
   "symptomSeverityLabel": "Şiddet: {value}/10",
   "symptomNoteLabel": "Not (isteğe bağlı)",
   "symptomSave": "Semptomu kaydet",
+  "symptomSavedToast": "Semptom kaydedildi.",
   "symptomGuidance": "Belirgin bir belirti işaretlediniz. Bu uygulama teşhis koymaz. Kendi sağlık planınızı izleyin; kendinizi iyi hissetmiyorsanız veya belirtiler şiddetliyse yerel acil sağlık hizmetlerine başvurun.",
   "symptomSeizureGuidance": "Nöbet olayı kaydettiniz. Bu uygulama teşhis koymaz. Lütfen sağlık planınızı izleyin ve sağlık uzmanınıza başvurun; acilse yerel acil sağlık hizmetlerini arayın.",
   "@symptomSeverityLabel": {

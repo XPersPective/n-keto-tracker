@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../core/database/settings_repository.dart';
 import 'consent_repository.dart';
 import 'onboarding_controller.dart';
 
@@ -18,13 +19,44 @@ class OnboardingPage extends ConsumerStatefulWidget {
 
 class _OnboardingPageState extends ConsumerState<OnboardingPage> {
   int _step = 0;
+  bool _consentChecked = false;
 
   static const _stepCount = onboardingStepCount;
+
+  @override
+  void initState() {
+    super.initState();
+    // Onam koruması (PB-010): geçerli onamı olan kullanıcı her açılışta
+    // onboarding'e düşmez — doğrudan Bugün'e devam eder. Router global
+    // statik olduğu için yönlendirme burada, veritabanı okumasıyla yapılır.
+    WidgetsBinding.instance.addPostFrameCallback((_) => _redirectIfConsented());
+  }
+
+  Future<void> _redirectIfConsented() async {
+    bool ok;
+    try {
+      ok = await ref.read(consentRepositoryProvider).hasValidConsent();
+    } catch (_) {
+      // DB okunamazsa güvenli yol: onboarding'i göster (testler ve
+      // ilk açılış dahil).
+      ok = false;
+    }
+    if (!mounted) return;
+    if (ok) {
+      context.go('/today');
+    } else {
+      setState(() => _consentChecked = true);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final state = ref.watch(onboardingControllerProvider);
+    if (!_consentChecked) {
+      // Onam kontrolü tamamlanana kadar kısa bekleme görünümü.
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.onboardingStepOf(_step + 1, _stepCount))),
@@ -333,6 +365,12 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
       l10n: l10n,
       languageCode: state.languageCode,
     );
+    // Dil tercihi kalıcı: sonraki açılışlarda AppSettings'ten uygulanır
+    // (ORTAK §3.1; PB-010). Invalidate, yeni tercihi yerel ayara taşır.
+    await ref
+        .read(settingsRepositoryProvider)
+        .saveOnboardingResult(languageCode: state.languageCode);
+    ref.invalidate(appSettingsProvider);
     if (mounted) context.go('/today');
   }
 }

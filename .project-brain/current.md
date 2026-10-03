@@ -8,12 +8,25 @@ TR/EN, tamamen offline).
 ## Runtime
 
 - Flutter stable 3.47.2, Dart 3.13.2 (VERIFIED: `flutter --version`)
-- Giriş: `lib/main.dart` → ProviderScope → `lib/app/app.dart`
+- Giriş: `lib/main.dart` → şifreli `AppDatabase()` + idempotent içerik
+  tohumu (Food/Recipe/EvidenceSeeder) → ProviderScope override
+  (`appDatabaseProvider`) → ProviderScope → `lib/app/app.dart`
+  (VERIFIED: PB-010 emülatör yürüyüşü — taze kurulum çökmeden açılır)
+- DB bağlantısı: `NativeDatabase.createInBackground` (arka plan izolesi;
+  SQLCipher PRAGMA key setup içinde — ana izole ANR'si giderildi)
+- Yerel ayar: onboarding dil seçimi `AppSettings.languageCode`'a yazılır
+  (`settings_repository.dart`); `appLocaleProvider` okur; onboarding
+  bitişinde invalidate (ORTAK §3.1; VERIFIED: relaunch Türkçe açılış)
+- Onam koruması: OnboardingPage `hasValidConsent()` → `/today` redirect
+  (her açılış onboarding'e düşmez); DB hatasında onboarding'e düşer
 - Router: go_router (`lib/app/router.dart`) — `/onboarding` + 5 sekme
   (today/log/plan/trends/guide) + alt rotalar (/log/session,
-  /meals/new, /weight/new, /symptoms/new, /plan/recipes/{id})
+  /meals/new, /weight/new, /symptoms/new, /plan/recipes/{id},
+  /settings/about, /settings/data, /settings/other-apps)
 - Veri: Drift + SQLite, SQLCipher şifreli (`pubspec.yaml` hooks:
   sqlite3 source sqlcipher), anahtar flutter_secure_storage
+- Kayıt → okuma tazeliği: kayıt noktaları ilgili FutureProvider'ları
+  invalidate eder (IndexedStack sekmeleri canlı tuttuğu için; PB-010)
 - CI: `.github/workflows/ci.yml` (gitleaks → offline+format+analyze+test
   → release APK)
 
@@ -65,12 +78,18 @@ TR/EN, tamamen offline).
 - onboarding: 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı→
   risk taraması→veri+onam); consent_repository (sürüm+SHA-256 hash)
 - dashboard: TodayPage (4 hızlı eylem, boş durumlar)
-- measurements: MeasurementSessionForm (GKI kartı), LogPage (çizelge +
-  3 ayrı grafik + bantlar varsayılan KAPALI + karıştırıcı eğitim kartı)
-- nutrition: MealForm (arama→ekle→kaydet)
-- symptoms: SymptomForm (yönlendirme mesajı nöbet/şiddet≥7)
+- measurements: MeasurementSessionForm (GKI kartı, kayıt sonrası
+  timeline/chart invalidate), LogPage (çizelge + 3 ayrı grafik + bantlar
+  varsayılan KAPALI + karıştırıcı eğitim kartı + öğün-ölçüm zamansal
+  ilişki satırı — nearestPreviousMeal bağlı, VERIFIED emülatörde
+  "1.9 saat sonra… etki beyanı değildir")
+- nutrition: MealForm (arama→ekle→kaydet; üretim tohumuyla besin araması
+  çalışır — VERIFIED)
+- symptoms: SymptomForm (yönlendirme mesajı nöbet/şiddet≥7; onay metni
+  symptomSavedToast)
 - weight: WeightForm (kg/lb)
-- meal_plans: PlanPage (taslak üret AppBar CTA, risk kilidi), shopping:
+- meal_plans: PlanPage (taslak üret AppBar CTA, risk kilidi; satır
+  alt başlıkları okunur tarif başlığı — PB-011), shopping:
   ShoppingListPage
 - evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
   kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
@@ -103,8 +122,13 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
 ## Known Unknowns
 
 - Debug attach (hot reload) INTERNET izni kaldırılınca emülatörde
-  doğrulanmadı (T30'da test edilecek)
+  doğrulanmadı
 - Onboarding profil alanları UserProfile tablosuna henüz yazılmıyor
   (repo yok; T21 notu)
 - Alerjen değerleri tarif seed'inde serbest metin; gıda rehberi E6
   etiketli (uzman incelemesi yayın öncesi şart)
+- Tema seçimi (ORTAK §3.2) UI'sız: AppSettings.themeMode alanı var,
+  ayar ekranı yok (gerekirse ayrı görev)
+- Emülatör içe aktarma UI girişi adb input özel-karakter kısıtıyla
+  elle yürütülemedi; import doğrulaması test süitine dayanır
+  (docs/RELEASE_EVIDENCE.md dürüst not)

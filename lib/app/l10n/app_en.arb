@@ -415,6 +415,7 @@
   "symptomSeverityLabel": "Severity: {value}/10",
   "symptomNoteLabel": "Note (optional)",
   "symptomSave": "Save symptom",
+  "symptomSavedToast": "Symptom saved.",
   "symptomGuidance": "You marked a significant symptom. This app does not diagnose. Follow your own health plan, and contact your local emergency services if you feel unwell or symptoms are severe.",
   "symptomSeizureGuidance": "You recorded a seizure event. This app does not diagnose. Please follow your health plan and contact your healthcare professional; call local emergency services if urgent.",
   "@symptomSeverityLabel": {

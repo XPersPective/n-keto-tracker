@@ -6,6 +6,7 @@ import '../../core/database/measurements_repository.dart';
 import '../../core/database/providers.dart';
 import '../../core/units/gki.dart';
 import '../../core/units/glucose.dart';
+import 'log_view_model.dart';
 
 /// Sağlayanların kaydı: testler override eder.
 final measurementsRepositoryProvider = Provider<MeasurementsRepository>(
@@ -86,6 +87,11 @@ class _MeasurementSessionFormState
         note: _noteController.text.isEmpty ? null : _noteController.text,
       );
       if (!mounted) return;
+      // Kayıt sonrası önbellekteki okumaları tazele (IndexedStack sekmeler
+      // canlı tuttuğundan invalidation olmadan bayat veri görünür, PB-010).
+      ref
+        ..invalidate(timelineProvider)
+        ..invalidate(chartSeriesProvider);
       final result = GkiEngine.fromRaw(glucose: g, bhbMmolL: bhb);
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(l10n.generalInfoDisclaimer)));

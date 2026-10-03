@@ -6,6 +6,7 @@ import '../../app/l10n/generated/app_localizations.dart';
 import '../../core/database/database.dart';
 import '../../core/database/providers.dart';
 import '../../core/units/weight.dart';
+import '../measurements/log_view_model.dart';
 
 /// Ağırlık kayıt formu (MASTER_PROMPT §11.1, T22): kg/lb giriş (normalize
 /// kg saklanır), tarih-saat, not, ölçüm koşulu. Rozet/seri/kilo baskısı
@@ -63,6 +64,9 @@ class _WeightFormState extends ConsumerState<WeightForm> {
           ),
         );
     if (!mounted) return;
+    // Ağırlık serisi önbelleğini tazele (IndexedStack sekme canlılığı,
+    // PB-010).
+    ref.invalidate(weightSeriesProvider);
     Navigator.of(context).pop();
   }
 

@@ -1,0 +1,5 @@
+Export JSON share evidence (release APK, emulator-5554, airplane mode):
+03:17:54 ActivityTaskManager: Displayed com.android.intentresolver/.ChooserActivityLauncher for user 0: +8s539ms
+03:17:54 ChooserActivity: onListRebuilt / app target loading time 2703 ms
+03:19:05 ChooserHelper: PAUSE (dismissed by tester tap)
+=> SharePlus sheet opened with exported JSON file.

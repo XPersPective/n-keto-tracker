@@ -9,16 +9,6 @@ import 'package:n_keto_tracker/core/database/database.dart';
 import 'package:n_keto_tracker/core/database/providers.dart';
 
 void main() {
-  testWidgets('İlk yol onboarding ilk adımı (dil seçimi)', (tester) async {
-    await tester.pumpWidget(const ProviderScope(child: NKetoApp()));
-    await tester.pumpAndSettle();
-
-    expect(find.text('Choose your language'), findsOneWidget);
-    expect(find.text('Türkçe'), findsOneWidget);
-    expect(find.text('English'), findsOneWidget);
-    expect(find.byType(NavigationBar), findsNothing);
-  });
-
   ProviderScope dbScope(Widget child) {
     final db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() async {
@@ -29,6 +19,16 @@ void main() {
       child: child,
     );
   }
+
+  testWidgets('İlk yol onboarding ilk adımı (dil seçimi)', (tester) async {
+    await tester.pumpWidget(dbScope(const NKetoApp()));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Choose your language'), findsOneWidget);
+    expect(find.text('Türkçe'), findsOneWidget);
+    expect(find.text('English'), findsOneWidget);
+    expect(find.byType(NavigationBar), findsNothing);
+  });
 
   testWidgets('Ana kabuk: /today yolunda 5 sekme + Bugün placeholder', (
     tester,

@@ -120,7 +120,7 @@ class _SymptomFormState extends ConsumerState<SymptomForm> {
               if (_saved)
                 Padding(
                   padding: const EdgeInsets.only(top: 12),
-                  child: Text(l10n.mealSavedToast),
+                  child: Text(l10n.symptomSavedToast),
                 ),
             ],
           );

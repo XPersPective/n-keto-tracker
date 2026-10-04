@@ -19,3 +19,13 @@ final appLocaleProvider = Provider<Locale?>((ref) {
   }
   return Locale(code);
 });
+
+/// Kayıtlı tema tercihi ('light' | 'dark'; kayıt yoksa sistem).
+final appThemeModeProvider = Provider<ThemeMode>((ref) {
+  final mode = ref.watch(appSettingsProvider).value?.themeMode;
+  return switch (mode) {
+    'light' => ThemeMode.light,
+    'dark' => ThemeMode.dark,
+    _ => ThemeMode.system,
+  };
+});

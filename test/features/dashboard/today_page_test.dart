@@ -28,6 +28,15 @@ void main() {
     );
   }
 
+  // Premium hero kartı içeriği aşağı iter; lazy ListView'in tüm bölümleri
+  // kurması için yüksek ekran kullanılır.
+  void tallScreen(WidgetTester tester) {
+    tester.view.physicalSize = const Size(800, 3200);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+  }
+
   Future<void> gracefulTeardown(WidgetTester tester) async {
     await tester.pumpWidget(const SizedBox.shrink());
     await db.close();
@@ -36,6 +45,7 @@ void main() {
   testWidgets('boş durumlar + tıbbi-olmayan alt bilgisi render ediliyor', (
     tester,
   ) async {
+    tallScreen(tester);
     db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() => gracefulTeardown(tester));
     await tester.pumpWidget(scope());
@@ -86,6 +96,7 @@ void main() {
   testWidgets('Ölçüm ekle: 2. dokunuşta oturum formu açılır (≤3)', (
     tester,
   ) async {
+    tallScreen(tester);
     db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() => gracefulTeardown(tester));
     await tester.pumpWidget(scope());
@@ -102,6 +113,7 @@ void main() {
   testWidgets('Öğün: gerçek form; Ağırlık/Semptom: dürüst coming-soon (≤3)', (
     tester,
   ) async {
+    tallScreen(tester);
     db = AppDatabase.forTesting(NativeDatabase.memory());
     addTearDown(() => gracefulTeardown(tester));
     await tester.pumpWidget(scope());

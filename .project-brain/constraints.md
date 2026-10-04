@@ -9,6 +9,11 @@ Sağlık verisi hiçbir ağ çağrısına girmez. `INTERNET` yalnız reklam +
 YASAK. `tool/check_offline.sh` izin listesini zorlar, exit 0 her commit'te.
 Sağlık ekranlarında reklam yok.
 
+### C-050: Atıf
+
+Commit mesajları, PR açıklamaları ve dosyalar hiçbir yapay zeka adı/ortak yazar
+satırı içermez; katkıcı listesinde yalnız proje sahibi görünür.
+
 ## Compatibility
 
 ### C-010: Flutter stable 3.47.2

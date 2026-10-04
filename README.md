@@ -1,7 +1,7 @@
 # N Keto Tracker
 
-**Private, open-source and fully offline keto, glucose, ketone and GKI tracking.**
-(Tamamen offline çalışan, açık kaynaklı keto günlüğü; glukoz, keton ve GKI takibi.)
+**Private, open-source keto, glucose, ketone and GKI tracking — your health data never leaves your device.**
+(Gizliliğe önem veren, açık kaynaklı keto günlüğü; glukoz, keton ve GKI takibi.)
 
 [![Ekran görüntüleri yer tutucu — ilk sürümde eklenecek](https://img.shields.io/badge/screenshots-placeholder-lightgrey)](#)
 
@@ -11,17 +11,18 @@
 
 ## Neden bu uygulama?
 
-- **Tamamen çevrimdışı.** Hesap yok, reklam yok, bulut yok, telemetri yok.
-  Android bildirim dosyalarında ağ izni bile yoktur (`tool/check_offline.sh`
-  bunu her derlemede kanıtlar). Verileriniz yalnızca cihazınızda, uygulama
-  sandbox'ındaki veritabanında tutulur.
+- **Sağlık verisi cihazdan çıkmaz.** Hesap yok, bulut yok, telemetri yok.
+  Ağ yalnızca kişiselleştirilmemiş reklam (AdMob) ve Premium satın alma
+  (Play Faturalandırma) içindir; ağ kodu yalnızca `lib/core/monetization/`
+  içindedir ve `tool/check_offline.sh` bunu her derlemede kanıtlar.
+  Verileriniz yalnızca cihazınızda, şifreli veritabanında tutulur.
 - **Açık kaynak.** Tüm kod GPL-3.0 ile incelenebilir; GKI hesabı sürümlenmiş
   tek bir saf modüldedir ve referans test vektörleriyle kilitlenmiştir.
 - **Keto günlüğü:** öğün, makro, net karbonhidrat takibi (planlanan).
 - **Glukoz + kan ketonu (BHB) + GKI:** mg/dL veya mmol/L girişte birim
   dönüşümü testlidir; 90 mg/dL + 2,5 mmol/L → tam 2,0 GKI referans vakası
   olarak sabitlenmiştir.
-- **Türkçe ve İngilizce** birinci sınıf destek.
+- **18 dil**, açık/koyu/sistem teması.
 
 ## Özellik durumu
 
@@ -77,7 +78,7 @@ Yerelleştirme (ARB → Dart) `flutter pub get` ile otomatik üretilir
 
 ```bash
 bash tool/check_offline.sh
-# Android manifest'lerinde INTERNET izni yok
+# Manifest izinleri allowlist'te; ağ kodu yalnız monetization içinde
 # pubspec doğrudan bağımlılıkları yasaklı desen içermiyor
 ```
 

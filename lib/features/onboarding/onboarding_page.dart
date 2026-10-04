@@ -117,8 +117,13 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
           title: l10n.onboardingLanguageTitle,
           child: RadioGroup<String>(
             groupValue: state.languageCode,
-            onChanged: (v) {
-              if (v != null) controller.setLanguage(v);
+            onChanged: (v) async {
+              if (v == null) return;
+              controller.setLanguage(v);
+              // Seçim arayüze anında yansır (kayıt satırı onboarding bitişinde
+              // tamamlanma bayrağıyla birlikte güncellenir).
+              await ref.read(settingsRepositoryProvider).saveLanguage(v);
+              ref.invalidate(appSettingsProvider);
             },
             child: Column(
               children: [

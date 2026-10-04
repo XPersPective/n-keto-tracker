@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/l10n/language_names.dart';
 import '../../core/database/settings_repository.dart';
 import 'consent_repository.dart';
 import 'onboarding_controller.dart';
@@ -121,14 +122,8 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
             },
             child: Column(
               children: [
-                RadioListTile<String>(
-                  title: Text(l10n.onboardingLanguageTurkish),
-                  value: 'tr',
-                ),
-                RadioListTile<String>(
-                  title: Text(l10n.onboardingLanguageEnglish),
-                  value: 'en',
-                ),
+                for (final e in languageEndonyms.entries)
+                  RadioListTile<String>(title: Text(e.value), value: e.key),
               ],
             ),
           ),

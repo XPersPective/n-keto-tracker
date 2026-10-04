@@ -17,15 +17,19 @@ void main() {
   testWidgets('ad, sürüm, açık kaynak ve gizlilik bölümleri render', (
     tester,
   ) async {
+    tester.view.physicalSize = const Size(800, 3200);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
     await tester.pumpWidget(scope());
     await tester.pumpAndSettle();
 
     expect(find.text('N Keto Tracker'), findsOneWidget);
-    expect(find.text('Fully offline keto journal'), findsOneWidget);
+    expect(find.text('Private keto journal'), findsOneWidget);
     expect(find.text('Version dev'), findsOneWidget);
     expect(find.textContaining('GPL-3.0'), findsOneWidget);
     expect(
-      find.textContaining('All data stays on this device'),
+      find.textContaining('Your health data stays on this device'),
       findsOneWidget,
     );
     expect(find.textContaining('not medical advice'), findsOneWidget);

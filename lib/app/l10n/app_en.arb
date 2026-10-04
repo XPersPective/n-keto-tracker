@@ -527,5 +527,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "settingsAppearance": "Appearance",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "settingsLanguage": "Language",
+  "settingsMore": "More"
 }

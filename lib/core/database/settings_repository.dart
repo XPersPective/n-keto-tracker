@@ -36,6 +36,23 @@ class SettingsRepository {
     }
   }
 
+  /// Tema tercihi: 'system' | 'light' | 'dark'.
+  Future<void> saveThemeMode(String mode) =>
+      _upsert(AppSettingsCompanion(themeMode: Value(mode)));
+
+  /// Uygulama içinden dil değişimi (ORTAK §3.1).
+  Future<void> saveLanguage(String languageCode) =>
+      _upsert(AppSettingsCompanion(languageCode: Value(languageCode)));
+
+  Future<void> _upsert(AppSettingsCompanion values) async {
+    final updated = await (_db.update(
+      _db.appSettings,
+    )..where((s) => s.id.equals(1))).write(values);
+    if (updated == 0) {
+      await _db.into(_db.appSettings).insert(values);
+    }
+  }
+
   /// Ayar satırını okur; satır yoksa null (kurulum öncesi).
   /// Tabloda birden çok satır olsa da çökmez (en küçük id alınır).
   Future<AppSettingsRow?> readSettings() {

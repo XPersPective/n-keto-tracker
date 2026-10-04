@@ -457,5 +457,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "settingsAppearance": "Görünüm",
+  "themeSystem": "Sistem",
+  "themeLight": "Açık",
+  "themeDark": "Koyu",
+  "settingsLanguage": "Dil",
+  "settingsMore": "Diğer"
 }

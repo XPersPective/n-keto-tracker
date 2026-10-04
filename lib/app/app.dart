@@ -27,7 +27,7 @@ class NKetoApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
-      themeMode: ThemeMode.system,
+      themeMode: ref.watch(appThemeModeProvider),
       locale: localeOverride ?? ref.watch(appLocaleProvider),
       localizationsDelegates: const [
         AppLocalizations.delegate,

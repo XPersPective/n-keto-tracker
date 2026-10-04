@@ -3,12 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/l10n/language_names.dart';
 import '../../app/locale_provider.dart';
 import '../../core/database/settings_repository.dart';
-
-/// Dillerin kendi adıyla (endonym) gösterimi; liste destekli yerel
-/// ayarlardan türetilir, adı bilinmeyen kod olduğu gibi gösterilir.
-const Map<String, String> languageEndonyms = {'en': 'English', 'tr': 'Türkçe'};
 
 /// Ayarlar: görünüm (Sistem/Açık/Koyu), dil, veri yönetimi, hakkında.
 /// Tercihler AppSettings'e yazılır ve anında uygulanır.
@@ -93,14 +90,11 @@ class SettingsPage extends ConsumerWidget {
                     },
                     child: Column(
                       children: [
-                        for (final loc in AppLocalizations.supportedLocales)
+                        for (final code in languageEndonyms.keys)
                           RadioListTile<String>(
                             contentPadding: EdgeInsets.zero,
-                            value: loc.languageCode,
-                            title: Text(
-                              languageEndonyms[loc.languageCode] ??
-                                  loc.languageCode,
-                            ),
+                            value: code,
+                            title: Text(languageEndonyms[code]!),
                           ),
                       ],
                     ),

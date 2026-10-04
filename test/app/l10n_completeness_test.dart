@@ -36,6 +36,23 @@ void main() {
     }
   });
 
+  test('Tüm diller EN ile aynı anahtar kümesine sahip', () {
+    final files = Directory('lib/app/l10n')
+        .listSync()
+        .whereType<File>()
+        .where((f) => f.path.endsWith('.arb'));
+    expect(files.length, greaterThanOrEqualTo(18));
+    for (final f in files) {
+      final keys = _readKeys(f.path);
+      expect(
+        keys.keys.toSet(),
+        en.keys.toSet(),
+        reason: '${f.path} anahtarları EN ile eşit olmalı',
+      );
+      expect(keys.values.every((v) => v.trim().isNotEmpty), isTrue);
+    }
+  });
+
   test('Marka adı her iki dilde aynı', () {
     expect(en['appTitle'], 'N Keto Tracker');
     expect(tr['appTitle'], 'N Keto Tracker');

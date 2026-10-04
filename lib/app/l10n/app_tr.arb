@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Verileriniz cihazınızda kalır",
-  "onboardingPrivacyBody": "N Keto Tracker tamamen çevrimdışı çalışır. Ölçümleriniz, öğünleriniz ve notlarınız yalnızca cihazınızdaki bu uygulamada saklanır. Hesap, reklam ve internet bağlantısı yoktur. Uygulamayı silmek verilerinizi siler; dilediğiniz zaman yedek dışa aktarabilirsiniz.",
+  "onboardingPrivacyBody": "N Keto Tracker ölçümlerinizi, öğünlerinizi ve notlarınızı yalnızca cihazınızdaki bu uygulamada saklar. Hesap yoktur ve sağlık verileriniz hiçbir yere gönderilmez. Ücretsiz sürüm, klinik olmayan birkaç ekranda kişiselleştirilmemiş reklam gösterir; Premium bunları kaldırır. Uygulamayı silmek verilerinizi siler; istediğiniz an yedek dışa aktarabilirsiniz.",
   "onboardingMedicalTitle": "Tıbbi tavsiye değildir",
   "onboardingMedicalBody": "Bu uygulama genel bilgilendirme ve kişisel takip içindir. Tıbbi tavsiye, teşhis veya tedavi değildir; uygun sağlık uzmanlarının bakımının yerini almaz.",
   "onboardingPurposeTitle": "Neyi takip etmek istiyorsunuz?",
@@ -403,12 +403,12 @@
     }
   },
   "aboutTitle": "Hakkında",
-  "aboutSlogan": "Tamamen çevrimdışı keto günlüğü",
+  "aboutSlogan": "Gizliliğe önem veren keto günlüğü",
   "aboutVersion": "Sürüm {value}",
   "aboutOpenSourceHeading": "Açık kaynak",
   "aboutOpenSourceBody": "N Keto Tracker, GPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır. Kodu aynı lisans koşullarıyla inceleyebilir, değiştirebilir ve dağıtabilirsiniz.",
   "aboutPrivacyHeading": "Gizlilik",
-  "aboutPrivacyBody": "Tüm veriler yalnızca bu cihazda saklanır. Hesap yok, reklam yok, analitik yok, internet bağlantısı yok.",
+  "aboutPrivacyBody": "Sağlık verileriniz bu cihazda kalır. Hesap yok, analitik yok. Ücretsiz sürümde kişiselleştirilmemiş reklam gösterilir; Premium bunları kaldırır.",
   "aboutDisclaimerHeading": "Feragat",
   "aboutDisclaimerBody": "Bu uygulama genel bilgilendirme ve kişisel takip içindir. Tıbbi tavsiye, teşhis veya tedavi değildir.",
   "aboutLicensesButton": "Lisanslar",
@@ -427,7 +427,7 @@
       }
     }
   },
-  "aboutShareText": "Tamamen çevrimdışı keto günlüğü; glukoz, keton ve GKI takibi. Açık kaynak, hesap gerekmez.",
+  "aboutShareText": "Glukoz, keton ve GKI takibi yapan, gizliliğe önem veren keto günlüğü. Açık kaynak, hesap gerekmez.",
   "dataManagementTitle": "Veri yönetimi",
   "dataExportJson": "Verileri dışa aktar (JSON)",
   "dataExportCsv": "Ölçümleri dışa aktar (CSV)",
@@ -463,5 +463,21 @@
   "themeLight": "Açık",
   "themeDark": "Koyu",
   "settingsLanguage": "Dil",
-  "settingsMore": "Diğer"
+  "settingsMore": "Diğer",
+  "premiumTitle": "Premium",
+  "premiumHeading": "Reklamsız kullanın",
+  "premiumBody": "Tek seferlik satın alımla reklamları kaldırın ve geliştirmeyi destekleyin. Sağlık verileriniz cihazınızdan asla çıkmaz.",
+  "premiumBuy": "Reklamları kaldır — {price}",
+  "premiumRestore": "Satın alımı geri yükle",
+  "premiumActive": "Premium etkin — reklamlar kaldırıldı. Teşekkürler!",
+  "premiumUnavailable": "Satın alma şu anda kullanılamıyor.",
+  "adsPrivacyOptions": "Reklam gizlilik seçenekleri",
+  "adLabel": "Reklam",
+  "@premiumBuy": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  }
 }

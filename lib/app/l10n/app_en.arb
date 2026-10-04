@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Your data stays on your device",
-  "onboardingPrivacyBody": "N Keto Tracker works fully offline. Your measurements, meals and notes are stored only in this app on your device. There is no account, no advertising and no internet connection. Deleting the app deletes your data; you can export a backup anytime.",
+  "onboardingPrivacyBody": "N Keto Tracker keeps your measurements, meals and notes only in this app on your device. There is no account, and your health data is never sent anywhere. The free version shows non-personalized ads on a few non-clinical screens; Premium removes them. Deleting the app deletes your data; you can export a backup anytime.",
   "onboardingMedicalTitle": "Not medical advice",
   "onboardingMedicalBody": "This app is for general information and personal tracking. It is not medical advice, diagnosis or treatment, and it does not replace care from qualified health professionals.",
   "onboardingPurposeTitle": "What do you want to track?",
@@ -473,12 +473,12 @@
     }
   },
   "aboutTitle": "About",
-  "aboutSlogan": "Fully offline keto journal",
+  "aboutSlogan": "Private keto journal",
   "aboutVersion": "Version {value}",
   "aboutOpenSourceHeading": "Open source",
   "aboutOpenSourceBody": "N Keto Tracker is free and open-source software licensed under GPL-3.0. You can inspect, modify, and redistribute the code under the same license.",
   "aboutPrivacyHeading": "Privacy",
-  "aboutPrivacyBody": "All data stays on this device. No account, no ads, no analytics, no internet connection.",
+  "aboutPrivacyBody": "Your health data stays on this device. No account, no analytics. The free version shows non-personalized ads; Premium removes them.",
   "aboutDisclaimerHeading": "Disclaimer",
   "aboutDisclaimerBody": "This app is for general information and personal tracking. It is not medical advice, diagnosis, or treatment.",
   "aboutLicensesButton": "Licenses",
@@ -497,7 +497,7 @@
       }
     }
   },
-  "aboutShareText": "Fully offline keto journal with glucose, ketone and GKI tracking. Open source, no account needed.",
+  "aboutShareText": "Private keto journal with glucose, ketone and GKI tracking. Open source, no account needed.",
   "dataManagementTitle": "Data management",
   "dataExportJson": "Export data (JSON)",
   "dataExportCsv": "Export measurements (CSV)",
@@ -533,5 +533,21 @@
   "themeLight": "Light",
   "themeDark": "Dark",
   "settingsLanguage": "Language",
-  "settingsMore": "More"
+  "settingsMore": "More",
+  "premiumTitle": "Premium",
+  "premiumHeading": "Go ad-free",
+  "premiumBody": "Remove ads and support development with a one-time purchase. Your health data never leaves your device.",
+  "premiumBuy": "Remove ads — {price}",
+  "premiumRestore": "Restore purchase",
+  "premiumActive": "Premium is active — ads removed. Thank you!",
+  "premiumUnavailable": "Purchases are not available right now.",
+  "adsPrivacyOptions": "Ad privacy options",
+  "adLabel": "Ad",
+  "@premiumBuy": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  }
 }

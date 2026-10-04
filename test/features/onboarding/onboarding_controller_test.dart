@@ -12,9 +12,10 @@ void main() {
     addTearDown(container.dispose);
   });
 
-  test('varsayılan durum: TR, onam kabul edilmedi, katsayı atlandı', () {
+  test('varsayılan durum: cihaz dili (yoksa EN), onam kabul edilmedi, katsayı atlandı', () {
     final s = container.read(onboardingControllerProvider);
-    expect(s.languageCode, 'tr');
+    // Test ortamı cihaz dili 'en' → desteklenen → 'en'; desteklenmeyen de 'en'.
+    expect(s.languageCode, anyOf('en', 'tr'));
     expect(s.consentAccepted, isFalse);
     expect(s.energyCoefficient, EnergyCoefficient.skipped);
     expect(s.riskAnswers.hasAnyRisk, isFalse);

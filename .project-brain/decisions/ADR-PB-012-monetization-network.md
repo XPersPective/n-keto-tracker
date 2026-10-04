@@ -28,3 +28,10 @@ premium görsel, açık/koyu tema, çok dilli, Play yayını.
 PRIVACY.md, Data safety, mağaza metni, THIRD_PARTY_NOTICES, C-001, hedef
 non-goal'ler güncellenir. Reddedilen: iki flavor (offline/play) —
 karmaşıklık; gerekirse sonradan eklenebilir.
+
+## Addendum — GPL uyumu
+
+`google_mobile_ads` / `in_app_purchase` yerel kitaplıkları tescillidir.
+Mitigasyon: yalnız `lib/core/monetization/` içinde; telif sahibi bağlanma
+istisnası tanır (THIRD_PARTY_NOTICES). Üçüncü taraf katkısı gelirse hukuki
+gözden geçirme gerekir — kullanıcı kararı olarak işaretlendi.

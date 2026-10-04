@@ -7,5 +7,5 @@
 5. (15–19s) Haftalık plan → alışveriş listesi.
 6. (19–25s) Verim: yalnız cihazda, dışa aktar, kopyala.
 
-Müzik: yok. Sözel: "Offline, açık kaynaklı, kendi verininizi koruyor."
+Müzik: yok. Sözel: "Açık kaynaklı; sağlık verileriniz cihazınızda kalır."
 Sonu: marka adı N Keto Tracker büyük metin üzerinde.

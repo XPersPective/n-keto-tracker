@@ -1,4 +1,8 @@
+import 'dart:ui' show PlatformDispatcher;
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../app/l10n/language_names.dart';
 
 /// Onboarding adım sayısı: dil → gizlilik → tıbbi-olmayan → amaç → profil
 /// → enerji katsayısı → risk taraması → veri kalıcılığı + onam (MASTER §4).
@@ -138,7 +142,13 @@ class OnboardingState {
 /// Onboarding durum denetleyicisi (Riverpod 3 Notifier).
 class OnboardingController extends Notifier<OnboardingState> {
   @override
-  OnboardingState build() => const OnboardingState();
+  OnboardingState build() {
+    // İlk açılış: cihaz dili destekleniyorsa o, değilse İngilizce (ORTAK §3.1).
+    final device = PlatformDispatcher.instance.locale.languageCode;
+    return OnboardingState(
+      languageCode: languageEndonyms.containsKey(device) ? device : 'en',
+    );
+  }
 
   void setLanguage(String code) => state = state.copyWith(languageCode: code);
 

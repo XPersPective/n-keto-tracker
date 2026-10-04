@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/surfaces.dart';
 import '../../core/database/measurements_repository.dart';
 import '../../core/database/providers.dart';
 import '../../core/units/gki.dart';
@@ -174,39 +175,43 @@ class _MeasurementSessionFormState
           if (_savedGki != null) ...[
             const SizedBox(height: 24),
             // Hesap kartı: formül + iki ölçüm saati (MASTER §6.2).
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l10n.gkiResultHeading,
-                      style: Theme.of(context).textTheme.titleMedium,
+            HeroCard(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.gkiResultHeading,
+                    style: Theme.of(context).textTheme.labelLarge
+                        ?.copyWith(color: Colors.white70, letterSpacing: 0.4),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.gkiResultValue(_savedGki!.value.toStringAsFixed(1)),
+                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      l10n.gkiResultValue(_savedGki!.value.toStringAsFixed(1)),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.gkiFormula(
+                      _savedGki!.glucoseMmolL.toStringAsFixed(1),
+                      _savedGki!.bhbMmolL.toStringAsFixed(1),
                     ),
-                    Text(
-                      l10n.gkiFormula(
-                        _savedGki!.glucoseMmolL.toStringAsFixed(1),
-                        _savedGki!.bhbMmolL.toStringAsFixed(1),
-                      ),
+                  ),
+                  Text(
+                    l10n.gkiMeasurements(
+                      MaterialLocalizations.of(context).formatFullDate(_at),
                     ),
-                    Text(
-                      l10n.gkiMeasurements(
-                        MaterialLocalizations.of(context).formatFullDate(_at),
-                      ),
-                    ),
-                    Text(l10n.gkiFormulaVersion(_savedGki!.formulaVersion)),
-                    const SizedBox(height: 8),
-                    Text(
-                      l10n.generalInfoDisclaimer,
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                  ],
-                ),
+                  ),
+                  Text(l10n.gkiFormulaVersion(_savedGki!.formulaVersion)),
+                  const SizedBox(height: 10),
+                  Text(
+                    l10n.generalInfoDisclaimer,
+                    style: Theme.of(context).textTheme.bodySmall
+                        ?.copyWith(color: Colors.white70),
+                  ),
+                ],
               ),
             ),
           ],

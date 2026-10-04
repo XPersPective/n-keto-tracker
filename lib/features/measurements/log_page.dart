@@ -1,9 +1,10 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/charts.dart';
+import '../../app/theme/surfaces.dart';
 import '../../core/units/meal_measurement_relation.dart';
 import 'log_view_model.dart';
 
@@ -170,48 +171,37 @@ class _MetricChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(title, style: Theme.of(context).textTheme.labelLarge),
-        const SizedBox(height: 4),
-        SizedBox(
-          height: 120,
-          child: points.isEmpty
-              ? Center(child: Text(AppLocalizations.of(context)!.logEmptyTitle))
-              : LineChart(
-                  LineChartData(
-                    // Eksik veri için çizgi uydurma yok: noktalar arası
-                    // doğal boşluk korunur (§12).
-                    lineBarsData: [
-                      LineChartBarData(
-                        spots: [
-                          for (var i = 0; i < points.length; i++)
-                            FlSpot(i.toDouble(), points[i].value),
-                        ],
-                        dotData: const FlDotData(show: true),
-                      ),
-                    ],
-                    // Araştırma bantları yalnız GKI grafiğinde, açık ve
-                    // yumuşak tonlu (§6.4).
-                    betweenBarsData: bandsOn
-                        ? [
-                            BetweenBarsData(
-                              fromIndex: 0,
-                              toIndex: 0,
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .surfaceContainerHighest,
-                            ),
-                          ]
-                        : const [],
-                  ),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: SectionCard(
+        title: title,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (points.isEmpty)
+              SizedBox(
+                height: 80,
+                child: Center(
+                  child: Text(AppLocalizations.of(context)!.logEmptyTitle),
                 ),
+              )
+            else
+              // Eksik veri için çizgi uydurma yok (§12). Araştırma bantları
+              // yalnız GKI grafiğinde, açık ve yumuşak tonlu (§6.4).
+              TrendLineChart(
+                values: [for (final p in points) p.value],
+                showBand: bandsOn,
+              ),
+            if (showDisclaimer && disclaimerText != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                disclaimerText!,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          ],
         ),
-        if (showDisclaimer && disclaimerText != null)
-          Text(disclaimerText!, style: Theme.of(context).textTheme.bodySmall),
-        const SizedBox(height: 12),
-      ],
+      ),
     );
   }
 }

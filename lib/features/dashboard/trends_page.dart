@@ -1,8 +1,9 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/charts.dart';
+import '../../app/theme/surfaces.dart';
 import '../measurements/log_view_model.dart';
 
 /// Trendler ekranı (MASTER_PROMPT §5.4 + §12, T24):
@@ -141,36 +142,26 @@ class _TrendChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(title, style: Theme.of(context).textTheme.labelLarge),
-        const SizedBox(height: 4),
-        SizedBox(
-          height: 120,
-          // Eksik gün sıfır kabul edilmez; veri yoksa grafik yerine
-          // dürüst boş durum (§12).
-          child: points.isEmpty
-              ? Center(child: Text(emptyText))
-              : LineChart(
-                  LineChartData(
-                    lineBarsData: [
-                      LineChartBarData(
-                        // Aykırı değerler korunur (filtre yok).
-                        spots: [
-                          for (var i = 0; i < points.length; i++)
-                            FlSpot(i.toDouble(), points[i].value),
-                        ],
-                        dotData: const FlDotData(show: true),
-                      ),
-                    ],
-                  ),
-                ),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: SectionCard(
+        title: title,
+        // Eksik gün sıfır kabul edilmez; veri yoksa grafik yerine dürüst boş
+        // durum (§12). Aykırı değerler korunur (filtre yok).
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (points.isEmpty)
+              SizedBox(height: 80, child: Center(child: Text(emptyText)))
+            else
+              TrendLineChart(values: [for (final p in points) p.value]),
+            if (summary != null) ...[
+              const SizedBox(height: 8),
+              Text(summary!, style: Theme.of(context).textTheme.bodySmall),
+            ],
+          ],
         ),
-        if (summary != null)
-          Text(summary!, style: Theme.of(context).textTheme.bodySmall),
-        const SizedBox(height: 12),
-      ],
+      ),
     );
   }
 }

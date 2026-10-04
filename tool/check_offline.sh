@@ -1,24 +1,37 @@
 #!/usr/bin/env bash
 # N Keto Tracker offline kanıtı (MASTER_PROMPT §14.1 / AC3).
 #
-# 1) Android manifest'lerinde (main/debug/profile) INTERNET izni olmamalı.
+# 1) Android manifest izinleri allowlist'te olmalı (ağ yalnız reklam+ödeme).
+# 1b) Ağ kodu yalnız lib/core/monetization içinde olmalı.
 # 2) pubspec.yaml DOĞRUDAN bağımlılıklarında ağ/telemetri/reklam/analytics
 #    paketi olmamalı.
 #
+# Not: C-001 ADR-PB-012 ile revize edildi — sağlık verisi cihazdan çıkmaz.
 # Yasaklı bulgu → exit 1 (CI release engelleyicisidir).
 set -uo pipefail
 
 cd "$(dirname "$0")/.."
 status=0
 
-# --- 1) INTERNET izni taraması ---
-manifest_hits="$(grep -rn --include='AndroidManifest.xml' 'android.permission.INTERNET' android/app/src 2>/dev/null || true)"
-if [ -n "$manifest_hits" ]; then
-  echo "FAIL: INTERNET izni bulundu:"
-  echo "$manifest_hits"
+# --- 1) İzin allowlist'i (ADR-PB-012): ağ yalnız reklam + ödeme içindir ---
+allowed_perms='android.permission.INTERNET|android.permission.ACCESS_NETWORK_STATE'
+bad_perms="$(grep -rhn --include='AndroidManifest.xml' -o 'uses-permission[^/]*android:name="[^"]*"' android/app/src 2>/dev/null   | sed -E 's/.*android:name="([^"]*)".*/\1/' | sort -u | grep -Ev "^($allowed_perms)$" || true)"
+if [ -n "$bad_perms" ]; then
+  echo "FAIL: izinsiz (allowlist dışı) izin bulundu:"
+  echo "$bad_perms"
   status=1
 else
-  echo "OK: Android manifest'lerinde INTERNET izni yok"
+  echo "OK: manifest izinleri allowlist içinde (INTERNET yalnız reklam+ödeme)"
+fi
+
+# --- 1b) Ağ kodu yalnız lib/core/monetization içinde olabilir ---
+net_hits="$(grep -rln --include='*.dart' -E "HttpClient|dart:io.*Socket|package:http/" lib 2>/dev/null | grep -v '^lib/core/monetization/' | grep -v '\.g\.dart$' || true)"
+if [ -n "$net_hits" ]; then
+  echo "FAIL: ağ kodu monetization dışında:"
+  echo "$net_hits"
+  status=1
+else
+  echo "OK: ağ kodu yalnız lib/core/monetization içinde"
 fi
 
 # --- 2) Yasaklı doğrudan bağımlılık taraması ---

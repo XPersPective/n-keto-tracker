@@ -1,3 +1,10 @@
+import java.util.Properties
+
+val keyProps = Properties().apply {
+    val f = rootProject.file("key.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
@@ -15,7 +22,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.crazypenguin.nketotracker"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -27,13 +33,27 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        // AdMob uygulama kimliği: key.properties'te yoksa Google'ın herkese açık test kimliği.
+        manifestPlaceholders["admobAppId"] =
+            keyProps.getProperty("admobAppId") ?: "ca-app-pub-3940256099942544~3347511713"
+    }
+
+    signingConfigs {
+        if (keyProps.getProperty("storeFile") != null) {
+            create("upload") {
+                storeFile = file(keyProps.getProperty("storeFile"))
+                storePassword = keyProps.getProperty("storePassword")
+                keyAlias = keyProps.getProperty("keyAlias")
+                keyPassword = keyProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            // C-030: imza anahtarı repoda değil; key.properties yoksa debug imzası
+            // (yalnız yerel deneme — Play'e yüklenemez).
+            signingConfig = signingConfigs.findByName("upload") ?: signingConfigs.getByName("debug")
             // ORTAK_UYGULAMA_STANDARDI.md §1.4: R8 küçültme + keep kuralları.
             isMinifyEnabled = true
             isShrinkResources = true

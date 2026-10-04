@@ -46,6 +46,8 @@ dependencies:
   share_plus: ^13.3.0
   integration_test:
     sdk: flutter
+  google_mobile_ads: ^9.1.0
+  in_app_purchase: ^3.3.1
 
 dev_dependencies:
   flutter_test:

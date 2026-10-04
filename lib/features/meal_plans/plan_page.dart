@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/surfaces.dart';
 import '../../core/database/database.dart';
 import '../../core/database/plan_repository.dart';
 import '../../core/database/providers.dart';
@@ -126,6 +127,58 @@ class _PlanPageState extends ConsumerState<PlanPage> {
         .showSnackBar(SnackBar(content: Text(l10n.planCreatedToast)));
   }
 
+  /// Gün gün kartlar: tarih + öğün adı + porsiyon. İç jeton ('slot-0') ve
+  /// ham sayı gösterilmez.
+  List<Widget> _buildDays(
+    BuildContext context,
+    AppLocalizations l10n,
+    MealPlanRow plan,
+  ) {
+    final loc = MaterialLocalizations.of(context);
+    final start = DateTime.tryParse(plan.startDateIso);
+    final byDay = <int, List<MealPlanEntryRow>>{};
+    for (final e in _entries) {
+      (byDay[e.dayOffset] ??= []).add(e);
+    }
+    final days = byDay.keys.toList()..sort();
+    String slotLabel(String mealType) => switch (mealType) {
+      'slot-0' => l10n.mealTypeLunch,
+      'slot-1' => l10n.mealTypeDinner,
+      _ => l10n.mealTypeSnack,
+    };
+    String servings(double v) =>
+        v == v.roundToDouble() ? v.toInt().toString() : v.toString();
+    return [
+      for (final d in days)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: SectionCard(
+            title: start == null
+                ? l10n.planItemDay((d + 1).toString())
+                : '${l10n.planItemDay((d + 1).toString())} · '
+                      '${loc.formatMediumDate(start.add(Duration(days: d)))}',
+            child: Column(
+              children: [
+                for (final e
+                    in (byDay[d]!
+                      ..sort((a, b) => a.mealType.compareTo(b.mealType))))
+                  ListTile(
+                    contentPadding: EdgeInsets.zero,
+                    leading: const Icon(Icons.restaurant_outlined),
+                    // Tarif başlığı okunur etiket; eksikse kısa id (PB-011).
+                    title: Text(_recipeTitles[e.recipeId] ?? e.recipeId ?? ''),
+                    subtitle: Text(
+                      '${slotLabel(e.mealType)} · '
+                      '${l10n.recipePerServing(servings(e.servings))}',
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -153,19 +206,8 @@ class _PlanPageState extends ConsumerState<PlanPage> {
           const SizedBox(height: 12),
           if (plan == null)
             Text(l10n.planEmpty)
-          else ...[
-            Text('${plan.startDateIso} — ${plan.name ?? ''}'),
-            const SizedBox(height: 8),
-            for (final e in _entries)
-              ListTile(
-                dense: true,
-                title: Text(l10n.planItemDay((e.dayOffset + 1).toString())),
-                // Tarif başlığı okunur etiket; eksikse kısa id (PB-011).
-                subtitle: Text(
-                  '${_recipeTitles[e.recipeId] ?? e.recipeId} · ${e.mealType} · ${e.servings}',
-                ),
-              ),
-          ],
+          else
+            ..._buildDays(context, l10n, plan),
         ],
       ),
     );

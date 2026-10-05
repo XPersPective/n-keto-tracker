@@ -1,8 +1,17 @@
 import java.util.Properties
 
+// İmza anahtarı bu (açık kaynak) repoda DEĞİL, yayın kökünde durur:
+// D:\AppPublishingpps
+-keto-tracker\credentialsndroid (protokol:
+// D:\AppPublishing\README.md). `fastlane build_release` NKETO_SIGNING'i o
+// key.properties'e yöneltir; içindeki storeFile ona göredir. Tanımlı değilse
+// release debug imzasıyla derlenir — Play bunu reddeder, yani yanlışlıkla
+// yayınlanamaz (C-030).
+val keystorePropertiesFile = System.getenv("NKETO_SIGNING")?.let { file(it) }
 val keyProps = Properties().apply {
-    val f = rootProject.file("key.properties")
-    if (f.exists()) f.inputStream().use { load(it) }
+    if (keystorePropertiesFile?.exists() == true) {
+        keystorePropertiesFile.inputStream().use { load(it) }
+    }
 }
 
 plugins {
@@ -12,7 +21,7 @@ plugins {
 }
 
 android {
-    namespace = "app.nketo.n_keto_tracker"
+    namespace = "com.crazypenguin.nketotracker"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -33,15 +42,16 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        // AdMob uygulama kimliği: key.properties'te yoksa Google'ın herkese açık test kimliği.
+        // Gerçek AdMob uygulama kimliği release'te yayın kökünden (app-ids.env)
+        // gelir; yoksa Google'ın herkese açık test kimliği.
         manifestPlaceholders["admobAppId"] =
-            keyProps.getProperty("admobAppId") ?: "ca-app-pub-3940256099942544~3347511713"
+            System.getenv("ADMOB_APP_ID_ANDROID") ?: "ca-app-pub-3940256099942544~3347511713"
     }
 
     signingConfigs {
         if (keyProps.getProperty("storeFile") != null) {
             create("upload") {
-                storeFile = file(keyProps.getProperty("storeFile"))
+                storeFile = keystorePropertiesFile!!.parentFile.resolve(keyProps.getProperty("storeFile"))
                 storePassword = keyProps.getProperty("storePassword")
                 keyAlias = keyProps.getProperty("keyAlias")
                 keyPassword = keyProps.getProperty("keyPassword")

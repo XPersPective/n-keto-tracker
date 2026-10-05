@@ -1,4 +1,4 @@
-package app.nketo.n_keto_tracker
+package com.crazypenguin.nketotracker
 
 import io.flutter.embedding.android.FlutterActivity
 

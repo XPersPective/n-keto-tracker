@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { generateKeyPairSync } from 'node:crypto';
 import { makeHandler, makeTokenProvider, parseBody, verifyPurchase } from './server.js';
 
-const cfg = { packageName: 'com.crazypenguin.nketotracker', productId: 'premium_remove_ads' };
+const cfg = { packageName: 'com.crazypenguin.nketotracker', productId: 'com.crazypenguin.nketotracker.pro_lifetime' };
 const good = JSON.stringify({ ...cfg, purchaseToken: 'abc.DEF-123' });
 
 test('parseBody: yalnız üç alan, doğru paket/ürün', () => {

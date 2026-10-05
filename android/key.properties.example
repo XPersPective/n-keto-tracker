@@ -1,5 +1,8 @@
-storeFile=XXXX.jks
+# Bu dosya yalnızca şablondur. Gerçek imza yayın kökündedir:
+#   D:\AppPublishing\apps\n-keto-tracker\credentials\android\{upload.jks,key.properties}
+# Derleme: `fastlane build_release` NKETO_SIGNING ortam değişkenini o dosyaya yöneltir.
+# key.properties biçimi (storeFile, key.properties'e göre göreli):
+storeFile=upload.jks
 storePassword=XXXX
-keyAlias=XXXX
+keyAlias=upload
 keyPassword=XXXX
-admobAppId=ca-app-pub-XXXX~XXXX

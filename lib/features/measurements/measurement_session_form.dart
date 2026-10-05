@@ -17,6 +17,14 @@ final measurementsRepositoryProvider = Provider<MeasurementsRepository>(
 /// Kaynak türleri (MASTER_PROMPT §6.1).
 const glucoseSourceTypes = ['fingerstick', 'lab', 'cgm_manual', 'other'];
 
+/// Depolanan teknik kod yerine okunur etiket (CGM/Lab kısaltmaları evrensel).
+String _sourceLabel(String code) => switch (code) {
+  'fingerstick' => 'Fingerstick',
+  'lab' => 'Lab',
+  'cgm_manual' => 'CGM',
+  _ => 'Other',
+};
+
 /// Birleşik ölçüm oturumu formu (MASTER_PROMPT §6.3): glukoz (mg/dL veya
 /// mmol/L) + kan BHB (mmol/L) birlikte girilir; kaydet = kullanıcı onayı.
 /// Kayıttan sonra GKI kartı formülü ve iki ölçümün saatini gösterir.
@@ -150,7 +158,10 @@ class _MeasurementSessionFormState
           DropdownButtonFormField<String>(
             initialValue: _sourceType,
             items: glucoseSourceTypes
-                .map((s) => DropdownMenuItem(value: s, child: Text(s)))
+                .map(
+                  (s) =>
+                      DropdownMenuItem(value: s, child: Text(_sourceLabel(s))),
+                )
                 .toList(),
             onChanged: (v) => setState(() => _sourceType = v ?? _sourceType),
             decoration: InputDecoration(labelText: l10n.formSourceType),

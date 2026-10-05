@@ -52,7 +52,7 @@ platform :android do
     ENV["ADMOB_APP_ID_ANDROID"] = app_id
     FileUtils.mkdir_p(SYMBOLS_DIR)
     sh("flutter", "build", "appbundle", "--release", "--obfuscate",
-       "--split-debug-info=#{SYMBOLS_DIR}", *defines, log: false)
+       "--split-debug-info=#{SYMBOLS_DIR}", *defines)
     UI.success("AAB hazır: #{AAB_PATH} (semboller: #{SYMBOLS_DIR})")
   end
 

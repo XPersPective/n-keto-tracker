@@ -1,12 +1,10 @@
 import java.util.Properties
 
 // İmza anahtarı bu (açık kaynak) repoda DEĞİL, yayın kökünde durur:
-// D:\AppPublishingpps
--keto-tracker\credentialsndroid (protokol:
-// D:\AppPublishing\README.md). `fastlane build_release` NKETO_SIGNING'i o
-// key.properties'e yöneltir; içindeki storeFile ona göredir. Tanımlı değilse
-// release debug imzasıyla derlenir — Play bunu reddeder, yani yanlışlıkla
-// yayınlanamaz (C-030).
+// apps/n-keto-tracker/credentials/android (protokol: AppPublishing/README.md).
+// `fastlane build_release` NKETO_SIGNING'i oradaki key.properties'e yöneltir;
+// içindeki storeFile ona göredir. Tanımlı değilse release debug imzasıyla
+// derlenir — Play bunu reddeder, yani yanlışlıkla yayınlanamaz (C-030).
 val keystorePropertiesFile = System.getenv("NKETO_SIGNING")?.let { file(it) }
 val keyProps = Properties().apply {
     if (keystorePropertiesFile?.exists() == true) {

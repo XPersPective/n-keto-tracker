@@ -10,7 +10,9 @@ import 'package:n_keto_tracker/core/database/database.dart';
 import 'package:n_keto_tracker/core/database/evidence_seeder.dart';
 import 'package:n_keto_tracker/core/database/food_seeder.dart';
 import 'package:n_keto_tracker/core/database/providers.dart';
+import 'package:n_keto_tracker/core/database/measurements_repository.dart';
 import 'package:n_keto_tracker/core/database/recipe_seeder.dart';
+import 'package:n_keto_tracker/core/units/glucose.dart';
 
 /// Play mağazası ekran görüntüleri: her dilde, cihaz yazı tipleriyle.
 ///
@@ -88,23 +90,44 @@ void main() {
       await tester.tap(find.byType(FilledButton).last);
       await tester.pumpAndSettle();
 
-      // Ölçüm serisi (gerçek form üzerinden).
-      for (final (glucose, bhb) in _series) {
-        await tester.tap(find.byIcon(Icons.add_chart));
-        await tester.pumpAndSettle();
-        final fields = find.byType(TextField);
-        await tester.enterText(fields.at(0), glucose);
-        await tester.enterText(fields.at(1), bhb);
-        await tester.pumpAndSettle();
-        await tester.tap(find.byType(FilledButton).last);
-        await tester.pumpAndSettle();
-        if (identical(_series.last, (glucose, bhb)) ||
-            (glucose == _series.last.$1 && bhb == _series.last.$2)) {
-          await shot('2_gki');
-        }
-        appRouter.pop();
-        await tester.pumpAndSettle();
+      // Önceki günlerin ölçümleri (depo üzerinden, farklı tarihlerle).
+      final repo = MeasurementsRepository(db);
+      final now = DateTime.now();
+      for (var i = 0; i < _series.length - 1; i++) {
+        final (glucose, bhb) = _series[i];
+        final at = now.subtract(Duration(days: _series.length - 1 - i));
+        await repo.createSession(
+          glucose: GlucoseValue.fromRaw(
+            double.parse(glucose),
+            GlucoseUnit.mgDl,
+          ),
+          glucoseAtUtc: at.toUtc(),
+          glucoseOffsetMinutes: at.timeZoneOffset.inMinutes,
+          glucoseSourceType: 'fingerstick',
+          bhbMmolL: double.parse(bhb),
+          ketoneAtUtc: at.toUtc(),
+          ketoneOffsetMinutes: at.timeZoneOffset.inMinutes,
+          matchKind: 'simultaneous',
+          confirmedByUser: true,
+        );
       }
+      // Son ölçüm gerçek form üzerinden: GKI sonuç kartı görüntüsü.
+      final (glucose, bhb) = _series.last;
+      await tester.tap(find.byIcon(Icons.add_chart));
+      await tester.pumpAndSettle();
+      final fields = find.byType(TextField);
+      await tester.enterText(fields.at(0), glucose);
+      await tester.enterText(fields.at(1), bhb);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byType(FilledButton).last);
+      await tester.pumpAndSettle();
+      FocusManager.instance.primaryFocus?.unfocus();
+      await tester.pumpAndSettle();
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -700));
+      await tester.pumpAndSettle();
+      await shot('2_gki');
+      appRouter.pop();
+      await tester.pumpAndSettle();
 
       // Bugün (hero + hızlı eylemler)
       await tapNav(0);

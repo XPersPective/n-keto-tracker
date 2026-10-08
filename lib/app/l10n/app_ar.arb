@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "بياناتك تبقى على جهازك",
-  "onboardingPrivacyBody": "يحفظ N Keto Tracker قياساتك ووجباتك وملاحظاتك داخل هذا التطبيق على جهازك فقط. لا يوجد حساب، ولا تُرسَل بياناتك الصحية إلى أي مكان. تعرض النسخة المجانية إعلانات غير مخصصة في بعض الشاشات غير السريرية، وتزيلها نسخة Premium. حذف التطبيق يحذف بياناتك؛ ويمكنك تصدير نسخة احتياطية في أي وقت.",
+  "onboardingPrivacyBody": "يحفظ N Keto Tracker قياساتك ووجباتك وملاحظاتك داخل هذا التطبيق على جهازك فقط. لا يوجد حساب، ولا تُرسَل بياناتك الصحية إلى أي مكان. حذف التطبيق يحذف بياناتك؛ ويمكنك تصدير نسخة احتياطية في أي وقت.",
   "onboardingMedicalTitle": "ليست نصيحة طبية",
   "onboardingMedicalBody": "هذا التطبيق للمعلومات العامة والتتبع الشخصي. وهو ليس نصيحة طبية أو تشخيصًا أو علاجًا، ولا يغني عن رعاية المختصين الصحيين المؤهلين.",
   "onboardingPurposeTitle": "ماذا تريد أن تتتبع؟",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "مفتوح المصدر",
   "aboutOpenSourceBody": "N Keto Tracker برنامج حر ومفتوح المصدر بترخيص GPL-3.0. يمكنك فحص الشيفرة وتعديلها وإعادة توزيعها بالترخيص نفسه.",
   "aboutPrivacyHeading": "الخصوصية",
-  "aboutPrivacyBody": "بياناتك الصحية تبقى على هذا الجهاز. بلا حساب وبلا تحليلات. تعرض النسخة المجانية إعلانات غير مخصصة، وتزيلها نسخة Premium.",
+  "aboutPrivacyBody": "بياناتك الصحية تبقى على هذا الجهاز. بلا حساب وبلا تحليلات.",
   "aboutDisclaimerHeading": "إخلاء المسؤولية",
   "aboutDisclaimerBody": "هذا التطبيق للمعلومات العامة والتتبع الشخصي. وهو ليس نصيحة طبية أو تشخيصًا أو علاجًا.",
   "aboutLicensesButton": "التراخيص",
@@ -228,14 +228,5 @@
   "themeLight": "فاتح",
   "themeDark": "داكن",
   "settingsLanguage": "اللغة",
-  "settingsMore": "المزيد",
-  "premiumTitle": "Premium",
-  "premiumHeading": "استخدم التطبيق دون إعلانات",
-  "premiumBody": "أزل الإعلانات وادعم التطوير بعملية شراء لمرة واحدة. بياناتك الصحية لا تغادر جهازك أبدًا.",
-  "premiumBuy": "إزالة الإعلانات — {price}",
-  "premiumRestore": "استعادة الشراء",
-  "premiumActive": "نسخة Premium مفعّلة — أُزيلت الإعلانات. شكرًا لك!",
-  "premiumUnavailable": "عمليات الشراء غير متاحة حاليًا.",
-  "adsPrivacyOptions": "خيارات خصوصية الإعلانات",
-  "adLabel": "إعلان"
+  "settingsMore": "المزيد"
 }

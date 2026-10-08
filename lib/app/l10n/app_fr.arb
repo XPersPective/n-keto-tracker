@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Vos données restent sur votre appareil",
-  "onboardingPrivacyBody": "N Keto Tracker conserve vos mesures, repas et notes uniquement dans cette application, sur votre appareil. Il n’y a pas de compte et vos données de santé ne sont jamais envoyées nulle part. La version gratuite affiche des publicités non personnalisées sur quelques écrans non cliniques ; Premium les supprime. Supprimer l’application supprime vos données ; vous pouvez exporter une sauvegarde à tout moment.",
+  "onboardingPrivacyBody": "N Keto Tracker conserve vos mesures, repas et notes uniquement dans cette application, sur votre appareil. Il n’y a pas de compte et vos données de santé ne sont jamais envoyées nulle part. Supprimer l’application supprime vos données ; vous pouvez exporter une sauvegarde à tout moment.",
   "onboardingMedicalTitle": "Pas un conseil médical",
   "onboardingMedicalBody": "Cette application sert à l’information générale et au suivi personnel. Elle ne constitue ni un avis médical, ni un diagnostic, ni un traitement, et ne remplace pas les soins de professionnels de santé qualifiés.",
   "onboardingPurposeTitle": "Que souhaitez-vous suivre ?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Open source",
   "aboutOpenSourceBody": "N Keto Tracker est un logiciel libre et open source sous licence GPL-3.0. Vous pouvez inspecter, modifier et redistribuer le code sous la même licence.",
   "aboutPrivacyHeading": "Confidentialité",
-  "aboutPrivacyBody": "Vos données de santé restent sur cet appareil. Pas de compte, pas d’analyse. La version gratuite affiche des publicités non personnalisées ; Premium les supprime.",
+  "aboutPrivacyBody": "Vos données de santé restent sur cet appareil. Pas de compte, pas d’analyse.",
   "aboutDisclaimerHeading": "Avertissement",
   "aboutDisclaimerBody": "Cette application sert à l’information générale et au suivi personnel. Elle ne constitue ni un avis médical, ni un diagnostic, ni un traitement.",
   "aboutLicensesButton": "Licences",
@@ -228,14 +228,5 @@
   "themeLight": "Clair",
   "themeDark": "Sombre",
   "settingsLanguage": "Langue",
-  "settingsMore": "Plus",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Sans publicité",
-  "premiumBody": "Supprimez les publicités et soutenez le développement avec un achat unique. Vos données de santé ne quittent jamais votre appareil.",
-  "premiumBuy": "Supprimer les pubs — {price}",
-  "premiumRestore": "Restaurer l’achat",
-  "premiumActive": "Premium actif — publicités supprimées. Merci !",
-  "premiumUnavailable": "Les achats ne sont pas disponibles pour le moment.",
-  "adsPrivacyOptions": "Options de confidentialité des annonces",
-  "adLabel": "Annonce"
+  "settingsMore": "Plus"
 }

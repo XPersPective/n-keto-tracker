@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Seus dados ficam no seu dispositivo",
-  "onboardingPrivacyBody": "O N Keto Tracker guarda suas medições, refeições e anotações somente neste app, no seu dispositivo. Não há conta e seus dados de saúde nunca são enviados a lugar nenhum. A versão gratuita mostra anúncios não personalizados em algumas telas não clínicas; o Premium os remove. Apagar o app apaga seus dados; você pode exportar um backup quando quiser.",
+  "onboardingPrivacyBody": "O N Keto Tracker guarda suas medições, refeições e anotações somente neste app, no seu dispositivo. Não há conta e seus dados de saúde nunca são enviados a lugar nenhum. Apagar o app apaga seus dados; você pode exportar um backup quando quiser.",
   "onboardingMedicalTitle": "Não é aconselhamento médico",
   "onboardingMedicalBody": "Este app serve para informação geral e acompanhamento pessoal. Não é aconselhamento médico, diagnóstico nem tratamento e não substitui o atendimento de profissionais de saúde qualificados.",
   "onboardingPurposeTitle": "O que você quer acompanhar?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Código aberto",
   "aboutOpenSourceBody": "O N Keto Tracker é um software livre e de código aberto licenciado sob a GPL-3.0. Você pode inspecionar, modificar e redistribuir o código sob a mesma licença.",
   "aboutPrivacyHeading": "Privacidade",
-  "aboutPrivacyBody": "Seus dados de saúde ficam neste dispositivo. Sem conta, sem análises. A versão gratuita mostra anúncios não personalizados; o Premium os remove.",
+  "aboutPrivacyBody": "Seus dados de saúde ficam neste dispositivo. Sem conta, sem análises.",
   "aboutDisclaimerHeading": "Aviso legal",
   "aboutDisclaimerBody": "Este app serve para informação geral e acompanhamento pessoal. Não é aconselhamento médico, diagnóstico nem tratamento.",
   "aboutLicensesButton": "Licenças",
@@ -228,14 +228,5 @@
   "themeLight": "Claro",
   "themeDark": "Escuro",
   "settingsLanguage": "Idioma",
-  "settingsMore": "Mais",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Use sem anúncios",
-  "premiumBody": "Remova os anúncios e apoie o desenvolvimento com uma compra única. Seus dados de saúde nunca saem do seu dispositivo.",
-  "premiumBuy": "Remover anúncios — {price}",
-  "premiumRestore": "Restaurar compra",
-  "premiumActive": "Premium ativo — anúncios removidos. Obrigado!",
-  "premiumUnavailable": "As compras não estão disponíveis no momento.",
-  "adsPrivacyOptions": "Opções de privacidade de anúncios",
-  "adLabel": "Anúncio"
+  "settingsMore": "Mais"
 }

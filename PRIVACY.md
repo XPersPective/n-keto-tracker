@@ -1,34 +1,19 @@
 # Gizlilik — N Keto Tracker (uygulama içi belge dokümanı)
 
-Son güncelleme: 2026-10-04 (ADR-PB-012).
+Son güncelleme: 2026-10-08 (ADR-PB-016).
 
 ## Sağlık verisi cihazdan çıkmaz
 
 - Tüm kayıtlar (öğün, ölçüm, GKI, semptom, kilo, notlar): **uygulama
   sandbox'ındaki şifreli SQLite veritabanı** (SQLCipher; anahtar OS güvenli
   deposunda — `ADR-0001`).
-- **Hesap yok, bulut yok, telemetri yok, analytics yok.** Sağlık verisi hiçbir
-  ağ isteğine girmez; ağ kodu yalnızca `lib/core/monetization/` içindedir ve
-  `tool/check_offline.sh` her derlemede bunu doğrular.
+- **Hesap yok, bulut yok, telemetri yok, analytics yok.** Uygulamada
+  ağ izni yoktur; `tool/check_offline.sh` her derlemede bunu doğrular.
 
-## Ağ erişimi: yalnızca reklam ve ödeme
+## Ağ erişimi yok
 
-Uygulama `INTERNET` iznini yalnızca şunlar için kullanır:
-
-1. **Reklam (Google AdMob)** — ücretsiz sürümde klinik olmayan birkaç
-   ekranda (Plan sekmesi, Ayarlar) kişiselleştirilmemiş banner. Reklam
-   gösterilmeden önce Google UMP onay formu çıkar; seçiminizi Ayarlar >
-   "Reklam gizlilik seçenekleri"nden değiştirebilirsiniz. Reklamlar
-   kişiselleştirilmemiş ve genel (G) içerik sınıfındadır. Kayıt formlarında,
-   GKI sonucunda, rehber ve bilimsel kaynaklarda reklam yoktur. Google, reklam
-   isteği sırasında cihaz/reklam kimliği gibi bilgileri kendi
-   politikasına göre işleyebilir; sağlık verisi bu isteğe **hiç** girmez.
-2. **Premium (Google Play Faturalandırma)** — tek seferlik satın alma
-   reklamları kaldırır. Ödeme Google Play üzerinden yapılır; uygulama kart
-   bilgisi görmez. İsteğe bağlı doğrulama sunucusu yalnızca
-   `{paket adı, ürün kimliği, satın alma jetonu}` alır.
-
-Premium kullanıcıda reklam SDK'sı hiç başlatılmaz.
+Uygulama `INTERNET` iznini **istemez**; çevrimdışı çalışır. Reklam, satın alma,
+analitik veya telemetri yoktur (ADR-PB-016).
 
 ## Yedekleme
 
@@ -49,6 +34,4 @@ link eylemiyle ve yalnızca metni kopyalar.
 
 ## Üçüncü taraflar
 
-`google_mobile_ads` (reklam + UMP onayı) ve `in_app_purchase` (Play
-Faturalandırma) dışında ağ SDK'sı yoktur; bağımlılıklar
-`THIRD_PARTY_NOTICES.md`'dedir.
+Ağ SDK'sı yoktur; bağımlılıklar `THIRD_PARTY_NOTICES.md`'dedir.

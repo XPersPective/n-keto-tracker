@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Tus datos se quedan en tu dispositivo",
-  "onboardingPrivacyBody": "N Keto Tracker guarda tus mediciones, comidas y notas solo en esta app, en tu dispositivo. No hay cuenta y tus datos de salud nunca se envían a ningún sitio. La versión gratuita muestra anuncios no personalizados en algunas pantallas no clínicas; Premium los quita. Borrar la app borra tus datos; puedes exportar una copia de seguridad cuando quieras.",
+  "onboardingPrivacyBody": "N Keto Tracker guarda tus mediciones, comidas y notas solo en esta app, en tu dispositivo. No hay cuenta y tus datos de salud nunca se envían a ningún sitio. Borrar la app borra tus datos; puedes exportar una copia de seguridad cuando quieras.",
   "onboardingMedicalTitle": "Esto no es consejo médico",
   "onboardingMedicalBody": "Esta app es de información general y seguimiento personal. No es consejo médico, diagnóstico ni tratamiento, y no sustituye la atención de profesionales de la salud cualificados.",
   "onboardingPurposeTitle": "¿Qué quieres registrar?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Código abierto",
   "aboutOpenSourceBody": "N Keto Tracker es software libre y de código abierto con licencia GPL-3.0. Puedes inspeccionar, modificar y redistribuir el código bajo la misma licencia.",
   "aboutPrivacyHeading": "Privacidad",
-  "aboutPrivacyBody": "Tus datos de salud se quedan en este dispositivo. Sin cuenta, sin analítica. La versión gratuita muestra anuncios no personalizados; Premium los quita.",
+  "aboutPrivacyBody": "Tus datos de salud se quedan en este dispositivo. Sin cuenta, sin analítica.",
   "aboutDisclaimerHeading": "Aviso legal",
   "aboutDisclaimerBody": "Esta app es de información general y seguimiento personal. No es consejo médico, diagnóstico ni tratamiento.",
   "aboutLicensesButton": "Licencias",
@@ -228,14 +228,5 @@
   "themeLight": "Claro",
   "themeDark": "Oscuro",
   "settingsLanguage": "Idioma",
-  "settingsMore": "Más",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Sin anuncios",
-  "premiumBody": "Quita los anuncios y apoya el desarrollo con una compra única. Tus datos de salud nunca salen de tu dispositivo.",
-  "premiumBuy": "Quitar anuncios — {price}",
-  "premiumRestore": "Restaurar compra",
-  "premiumActive": "Premium activo: anuncios quitados. ¡Gracias!",
-  "premiumUnavailable": "Las compras no están disponibles ahora mismo.",
-  "adsPrivacyOptions": "Opciones de privacidad de anuncios",
-  "adLabel": "Anuncio"
+  "settingsMore": "Más"
 }

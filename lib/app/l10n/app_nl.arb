@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Je gegevens blijven op je apparaat",
-  "onboardingPrivacyBody": "N Keto Tracker bewaart je metingen, maaltijden en notities alleen in deze app op je apparaat. Er is geen account en je gezondheidsgegevens worden nergens naartoe verzonden. De gratis versie toont niet-gepersonaliseerde advertenties op een paar niet-klinische schermen; Premium verwijdert ze. Als je de app verwijdert, worden je gegevens verwijderd; je kunt altijd een back-up exporteren.",
+  "onboardingPrivacyBody": "N Keto Tracker bewaart je metingen, maaltijden en notities alleen in deze app op je apparaat. Er is geen account en je gezondheidsgegevens worden nergens naartoe verzonden. Als je de app verwijdert, worden je gegevens verwijderd; je kunt altijd een back-up exporteren.",
   "onboardingMedicalTitle": "Geen medisch advies",
   "onboardingMedicalBody": "Deze app is bedoeld voor algemene informatie en persoonlijke registratie. Het is geen medisch advies, diagnose of behandeling en vervangt niet de zorg van gekwalificeerde zorgprofessionals.",
   "onboardingPurposeTitle": "Wat wil je bijhouden?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Open source",
   "aboutOpenSourceBody": "N Keto Tracker is vrije open-sourcesoftware onder de GPL-3.0. Je kunt de code inzien, wijzigen en onder dezelfde licentie verspreiden.",
   "aboutPrivacyHeading": "Privacy",
-  "aboutPrivacyBody": "Je gezondheidsgegevens blijven op dit apparaat. Geen account, geen analyses. De gratis versie toont niet-gepersonaliseerde advertenties; Premium verwijdert ze.",
+  "aboutPrivacyBody": "Je gezondheidsgegevens blijven op dit apparaat. Geen account, geen analyses.",
   "aboutDisclaimerHeading": "Disclaimer",
   "aboutDisclaimerBody": "Deze app is bedoeld voor algemene informatie en persoonlijke registratie. Het is geen medisch advies, diagnose of behandeling.",
   "aboutLicensesButton": "Licenties",
@@ -228,14 +228,5 @@
   "themeLight": "Licht",
   "themeDark": "Donker",
   "settingsLanguage": "Taal",
-  "settingsMore": "Meer",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Zonder advertenties",
-  "premiumBody": "Verwijder advertenties en steun de ontwikkeling met een eenmalige aankoop. Je gezondheidsgegevens verlaten je apparaat nooit.",
-  "premiumBuy": "Advertenties verwijderen — {price}",
-  "premiumRestore": "Aankoop herstellen",
-  "premiumActive": "Premium is actief — advertenties verwijderd. Bedankt!",
-  "premiumUnavailable": "Aankopen zijn op dit moment niet beschikbaar.",
-  "adsPrivacyOptions": "Privacyopties voor advertenties",
-  "adLabel": "Advertentie"
+  "settingsMore": "Meer"
 }

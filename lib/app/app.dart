@@ -3,7 +3,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/config/app_config.dart';
-import '../core/monetization/ads_controller.dart';
 import 'l10n/generated/app_localizations.dart';
 import 'locale_provider.dart';
 import 'router.dart';
@@ -23,7 +22,6 @@ class NKetoApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ref.watch(adsProvider); // UMP onamı + AdMob başlatma (yalnız Android)
     return MaterialApp.router(
       title: AppConfig.appBrandName,
       debugShowCheckedModeBanner: false,

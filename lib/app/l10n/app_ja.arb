@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "データはお使いの端末に保存されます",
-  "onboardingPrivacyBody": "N Keto Trackerは、測定値・食事・メモをお使いの端末内のこのアプリにのみ保存します。アカウントはなく、健康データがどこかへ送信されることはありません。無料版では、臨床に関わらない一部の画面に非パーソナライズ広告が表示されます。Premiumで非表示にできます。アプリを削除するとデータも削除されます。バックアップはいつでもエクスポートできます。",
+  "onboardingPrivacyBody": "N Keto Trackerは、測定値・食事・メモをお使いの端末内のこのアプリにのみ保存します。アカウントはなく、健康データがどこかへ送信されることはありません。無料版では、臨床に関わらない一部の画面に非パーソナライズ広告が表示されます。アプリを削除するとデータも削除されます。バックアップはいつでもエクスポートできます。",
   "onboardingMedicalTitle": "医学的助言ではありません",
   "onboardingMedicalBody": "このアプリは一般的な情報提供と個人の記録用です。医学的助言・診断・治療ではなく、資格のある医療専門家によるケアの代わりにはなりません。",
   "onboardingPurposeTitle": "何を記録しますか？",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "オープンソース",
   "aboutOpenSourceBody": "N Keto Trackerは、GPL-3.0ライセンスの無料のオープンソースソフトウェアです。同じライセンスのもとで、コードの確認・変更・再配布ができます。",
   "aboutPrivacyHeading": "プライバシー",
-  "aboutPrivacyBody": "健康データはこの端末にのみ保存されます。アカウントも分析もありません。無料版では非パーソナライズ広告が表示され、Premiumで非表示にできます。",
+  "aboutPrivacyBody": "健康データはこの端末にのみ保存されます。アカウントも分析もありません。",
   "aboutDisclaimerHeading": "免責事項",
   "aboutDisclaimerBody": "このアプリは一般的な情報提供と個人の記録用です。医学的助言・診断・治療ではありません。",
   "aboutLicensesButton": "ライセンス",
@@ -228,14 +228,5 @@
   "themeLight": "ライト",
   "themeDark": "ダーク",
   "settingsLanguage": "言語",
-  "settingsMore": "その他",
-  "premiumTitle": "Premium",
-  "premiumHeading": "広告なしで使う",
-  "premiumBody": "1回の購入で広告を非表示にし、開発を支援できます。健康データが端末の外に出ることはありません。",
-  "premiumBuy": "広告を削除 — {price}",
-  "premiumRestore": "購入を復元",
-  "premiumActive": "Premiumが有効です。広告は非表示になりました。ありがとうございます！",
-  "premiumUnavailable": "現在、購入はご利用いただけません。",
-  "adsPrivacyOptions": "広告のプライバシー設定",
-  "adLabel": "広告"
+  "settingsMore": "その他"
 }

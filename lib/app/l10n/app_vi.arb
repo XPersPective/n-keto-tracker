@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Dữ liệu của bạn ở lại trên thiết bị",
-  "onboardingPrivacyBody": "N Keto Tracker chỉ lưu số đo, bữa ăn và ghi chú của bạn trong ứng dụng này trên thiết bị của bạn. Không có tài khoản và dữ liệu sức khỏe của bạn không bao giờ được gửi đi đâu cả. Bản miễn phí hiển thị quảng cáo không cá nhân hóa trên một vài màn hình không liên quan đến lâm sàng; Premium sẽ gỡ bỏ chúng. Xóa ứng dụng sẽ xóa dữ liệu của bạn; bạn có thể xuất bản sao lưu bất cứ lúc nào.",
+  "onboardingPrivacyBody": "N Keto Tracker chỉ lưu số đo, bữa ăn và ghi chú của bạn trong ứng dụng này trên thiết bị của bạn. Không có tài khoản và dữ liệu sức khỏe của bạn không bao giờ được gửi đi đâu cả. Xóa ứng dụng sẽ xóa dữ liệu của bạn; bạn có thể xuất bản sao lưu bất cứ lúc nào.",
   "onboardingMedicalTitle": "Không phải lời khuyên y tế",
   "onboardingMedicalBody": "Ứng dụng này dùng để cung cấp thông tin chung và theo dõi cá nhân. Đây không phải lời khuyên y tế, chẩn đoán hay điều trị, và không thay thế sự chăm sóc của chuyên gia y tế có trình độ.",
   "onboardingPurposeTitle": "Bạn muốn theo dõi điều gì?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Mã nguồn mở",
   "aboutOpenSourceBody": "N Keto Tracker là phần mềm tự do, mã nguồn mở theo giấy phép GPL-3.0. Bạn có thể xem, sửa đổi và phân phối lại mã theo cùng giấy phép.",
   "aboutPrivacyHeading": "Quyền riêng tư",
-  "aboutPrivacyBody": "Dữ liệu sức khỏe của bạn ở lại trên thiết bị này. Không tài khoản, không phân tích. Bản miễn phí hiển thị quảng cáo không cá nhân hóa; Premium gỡ bỏ chúng.",
+  "aboutPrivacyBody": "Dữ liệu sức khỏe của bạn ở lại trên thiết bị này. Không tài khoản, không phân tích.",
   "aboutDisclaimerHeading": "Tuyên bố miễn trừ",
   "aboutDisclaimerBody": "Ứng dụng này dùng để cung cấp thông tin chung và theo dõi cá nhân. Đây không phải lời khuyên y tế, chẩn đoán hay điều trị.",
   "aboutLicensesButton": "Giấy phép",
@@ -228,14 +228,5 @@
   "themeLight": "Sáng",
   "themeDark": "Tối",
   "settingsLanguage": "Ngôn ngữ",
-  "settingsMore": "Khác",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Dùng không quảng cáo",
-  "premiumBody": "Gỡ quảng cáo và ủng hộ việc phát triển bằng một lần mua. Dữ liệu sức khỏe của bạn không bao giờ rời khỏi thiết bị.",
-  "premiumBuy": "Gỡ quảng cáo — {price}",
-  "premiumRestore": "Khôi phục giao dịch mua",
-  "premiumActive": "Premium đã bật — quảng cáo đã được gỡ. Cảm ơn bạn!",
-  "premiumUnavailable": "Hiện chưa thể mua hàng.",
-  "adsPrivacyOptions": "Tùy chọn quyền riêng tư quảng cáo",
-  "adLabel": "Quảng cáo"
+  "settingsMore": "Khác"
 }

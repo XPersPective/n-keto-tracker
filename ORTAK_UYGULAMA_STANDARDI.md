@@ -16,8 +16,8 @@ değil.** Bir özellik kapatılmak isteniyorsa değer açıkça `HAYIR` yazılı
 
 | Ayar | Değer | Anlamı |
 |---|---|---|
-| **REKLAM** | `EVET` | `EVET`: bölüm 5.2'deki reklam modeli uygulanır. `HAYIR`: hiçbir reklam paketi projeye EKLENMEZ; reklam, onay formu (UMP), ATT ve ödüllü reklam kodu yazılmaz; bölüm 5.2 tamamen atlanır. |
-| **PRO (ömür boyu)** | `EVET` | `EVET`: bölüm 5.1'deki tek seferlik Pro satın alma uygulanır. `HAYIR`: satın alma paketi eklenmez, paywall yoktur, "Pro'ya özel" hiçbir özellik kilitlenmez. |
+| **REKLAM** | `HAYIR` | `EVET`: bölüm 5.2'deki reklam modeli uygulanır. `HAYIR`: hiçbir reklam paketi projeye EKLENMEZ; reklam, onay formu (UMP), ATT ve ödüllü reklam kodu yazılmaz; bölüm 5.2 tamamen atlanır. |
+| **PRO (ömür boyu)** | `HAYIR` | `EVET`: bölüm 5.1'deki tek seferlik Pro satın alma uygulanır. `HAYIR`: satın alma paketi eklenmez, paywall yoktur, "Pro'ya özel" hiçbir özellik kilitlenmez. |
 | **VERİ** | `YEREL` | `YEREL`: bölüm 6.1 uygulanır, bölüm 6.2 atlanır. `BULUT`: bölüm 6.2 uygulanır (6.1'deki cihaz içi kurallar da geçerlidir). |
 
 Kurallar:

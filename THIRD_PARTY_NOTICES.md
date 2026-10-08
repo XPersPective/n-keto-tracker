@@ -18,8 +18,6 @@ kendi deposu.
 | freezed_annotation | 3.1.0 | MIT | Değişmez model ek açıklamaları | https://pub.dev/packages/freezed_annotation |
 | json_annotation | 4.12.0 | BSD-3-Clause | JSON serileştirme ek açıklamaları | https://pub.dev/packages/json_annotation |
 | intl | 0.20.3 | BSD-3-Clause | Yerelleştirme/ tarih-saat biçimleme | https://pub.dev/packages/intl |
-| google_mobile_ads | 9.1.0 | Apache-2.0 (Dart sarmalayıcı); yerel Google Mobile Ads SDK **tescilli (Google ToS)** | Kişiselleştirilmemiş banner + UMP onayı (ADR-PB-012) | https://pub.dev/packages/google_mobile_ads |
-| in_app_purchase | 3.3.1 | BSD-3-Clause (yerel Play Billing Library: Android Software Development Kit License) | Premium tek seferlik satın alma (ADR-PB-012) | https://pub.dev/packages/in_app_purchase |
 
 ## Yalnızca geliştirme bağımlılıkları (uygulamaya dağıtılmaz)
 
@@ -48,13 +46,6 @@ kendi deposu.
 | Material Icons | Apache-2.0 | Flutter SDK ile gelir |
 
 ## Uyumluluk beyanı
-
-**Tescilli SDK notu (C-011 / ADR-PB-012):** Google Mobile Ads ve Play Billing
-yerel kitaplıkları tescillidir ve GPL-3.0 ile doğrudan uyumlu değildir. Proje
-telif hakkı sahibi, bu iki Google bileşeniyle bağlanma için GPL-3.0'a ek izin
-(linking exception) tanır; üçüncü taraf katkı kodu eklenirse bu izin yeniden
-değerlendirilir. Bu bileşenler yalnızca `lib/core/monetization/` üzerinden
-kullanılır; kaynak derlemesi bunlar olmadan da çalışacak biçimde ayrıktır.
 
 Yukarıdaki tüm lisanslar (MIT, BSD-3-Clause, Apache-2.0) ORTAK §2'de
 kabul edilen, GPL-3.0 ile uyumlu izinli lisanslardır. AGPL/SSPL/non-commercial

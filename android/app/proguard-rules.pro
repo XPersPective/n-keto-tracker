@@ -7,9 +7,3 @@
 -keep class * extends androidx.sqlite.db.SupportSQLiteOpenHelper
 -keep @androidx.annotation.Keep class *
 -keepclasseswithmembernames class * { native <methods>; }
-
-# AdMob SDK'sı WorkManager'ı (Room) getirir: R8 üretilmiş WorkDatabase_Impl'i
-# silerse açılışta WorkManagerInitializer çöker (release emülatör testinde görüldü).
--keep class * extends androidx.room.RoomDatabase { <init>(); }
--keep class androidx.work.impl.WorkDatabase_Impl { *; }
--keep class androidx.work.impl.WorkDatabase { *; }

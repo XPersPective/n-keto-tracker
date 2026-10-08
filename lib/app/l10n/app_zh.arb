@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "您的数据保存在您的设备上",
-  "onboardingPrivacyBody": "N Keto Tracker 仅将您的测量值、饮食和笔记保存在您设备上的此应用中。没有账号，您的健康数据绝不会被发送到任何地方。免费版会在少数非临床页面显示非个性化广告；Premium 可移除广告。删除应用会删除您的数据；您可随时导出备份。",
+  "onboardingPrivacyBody": "N Keto Tracker 仅将您的测量值、饮食和笔记保存在您设备上的此应用中。没有账号，您的健康数据绝不会被发送到任何地方。删除应用会删除您的数据；您可随时导出备份。",
   "onboardingMedicalTitle": "不构成医疗建议",
   "onboardingMedicalBody": "本应用用于一般信息和个人记录。它不是医疗建议、诊断或治疗，也不能替代合格医疗专业人员的诊治。",
   "onboardingPurposeTitle": "您想记录什么？",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "开源",
   "aboutOpenSourceBody": "N Keto Tracker 是依据 GPL-3.0 许可的自由开源软件。您可以在同一许可下查看、修改和再分发代码。",
   "aboutPrivacyHeading": "隐私",
-  "aboutPrivacyBody": "您的健康数据保留在此设备上。无账号，无分析。免费版显示非个性化广告；Premium 可移除广告。",
+  "aboutPrivacyBody": "您的健康数据保留在此设备上。无账号，无分析。",
   "aboutDisclaimerHeading": "免责声明",
   "aboutDisclaimerBody": "本应用用于一般信息和个人记录。它不是医疗建议、诊断或治疗。",
   "aboutLicensesButton": "许可",
@@ -228,14 +228,5 @@
   "themeLight": "浅色",
   "themeDark": "深色",
   "settingsLanguage": "语言",
-  "settingsMore": "更多",
-  "premiumTitle": "Premium",
-  "premiumHeading": "去广告使用",
-  "premiumBody": "一次性购买即可移除广告并支持开发。您的健康数据绝不会离开您的设备。",
-  "premiumBuy": "移除广告——{price}",
-  "premiumRestore": "恢复购买",
-  "premiumActive": "Premium 已启用——广告已移除。谢谢！",
-  "premiumUnavailable": "目前无法购买。",
-  "adsPrivacyOptions": "广告隐私选项",
-  "adLabel": "广告"
+  "settingsMore": "更多"
 }

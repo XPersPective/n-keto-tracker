@@ -40,10 +40,6 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        // Gerçek AdMob uygulama kimliği release'te yayın kökünden (app-ids.env)
-        // gelir; yoksa Google'ın herkese açık test kimliği.
-        manifestPlaceholders["admobAppId"] =
-            System.getenv("ADMOB_APP_ID_ANDROID") ?: "ca-app-pub-3940256099942544~3347511713"
     }
 
     signingConfigs {

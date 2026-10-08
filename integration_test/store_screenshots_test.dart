@@ -11,7 +11,6 @@ import 'package:n_keto_tracker/core/database/evidence_seeder.dart';
 import 'package:n_keto_tracker/core/database/food_seeder.dart';
 import 'package:n_keto_tracker/core/database/providers.dart';
 import 'package:n_keto_tracker/core/database/recipe_seeder.dart';
-import 'package:n_keto_tracker/core/monetization/premium_controller.dart';
 
 /// Play mağazası ekran görüntüleri: her dilde, cihaz yazı tipleriyle.
 ///
@@ -19,13 +18,8 @@ import 'package:n_keto_tracker/core/monetization/premium_controller.dart';
 ///     --target=integration_test/store_screenshots_test.dart -d EMULATOR_ID \
 ///     --dart-define=SHOT_LOCALES=tr,en
 ///
-/// Dilden bağımsız bulucular (simge/tür) kullanır; reklam görünmesin diye
-/// premium açık varsayılır. Yalnız mağaza görseli üretir, ürün davranışını
-/// sınamaz.
-class _PremiumOn extends PremiumController {
-  @override
-  PremiumState build() => const PremiumState(premium: true);
-}
+/// Dilden bağımsız bulucular (simge/tür) kullanır. Yalnız mağaza görseli
+/// üretir, ürün davranışını sınamaz.
 
 const _all = 'tr,en,es,pt,fr,de,it,nl,pl,ru,uk,ar,hi,id,vi,ja,ko,zh';
 const _wanted = String.fromEnvironment('SHOT_LOCALES', defaultValue: _all);
@@ -58,7 +52,6 @@ void main() {
         key: ValueKey(mode),
         overrides: [
           appDatabaseProvider.overrideWithValue(db),
-          premiumProvider.overrideWith(_PremiumOn.new),
           appThemeModeProvider.overrideWithValue(mode),
         ],
         child: NKetoApp(localeOverride: Locale(loc)),

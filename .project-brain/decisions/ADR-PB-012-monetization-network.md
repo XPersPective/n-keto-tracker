@@ -1,6 +1,6 @@
 # ADR-PB-012 — Reklam, ödeme ve sunucu tarafı: C-001 revizyonu
 
-Status: ACCEPTED (kullanıcı talimatı, 2026-10-04: "ödeme ve reklam, server
+Status: SUPERSEDED by ADR-PB-016 (was ACCEPTED) (kullanıcı talimatı, 2026-10-04: "ödeme ve reklam, server
 tarafı… Google Play'e yükle").
 
 ## Context

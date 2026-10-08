@@ -11,10 +11,9 @@
 
 ## Neden bu uygulama?
 
-- **Sağlık verisi cihazdan çıkmaz.** Hesap yok, bulut yok, telemetri yok.
-  Ağ yalnızca kişiselleştirilmemiş reklam (AdMob) ve Premium satın alma
-  (Play Faturalandırma) içindir; ağ kodu yalnızca `lib/core/monetization/`
-  içindedir ve `tool/check_offline.sh` bunu her derlemede kanıtlar.
+- **Sağlık verisi cihazdan çıkmaz.** Hesap yok, bulut yok, telemetri yok,
+  reklam yok, satın alma yok. Uygulama `INTERNET` iznini istemez ve
+  `tool/check_offline.sh` bunu her derlemede kanıtlar.
   Verileriniz yalnızca cihazınızda, şifreli veritabanında tutulur.
 - **Açık kaynak.** Tüm kod GPL-3.0 ile incelenebilir; GKI hesabı sürümlenmiş
   tek bir saf modüldedir ve referans test vektörleriyle kilitlenmiştir.

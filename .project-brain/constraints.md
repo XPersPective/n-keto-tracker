@@ -2,12 +2,12 @@
 
 ## User Requirements
 
-### C-001: Sağlık verisi cihazdan çıkmaz (ADR-PB-012 ile revize)
+### C-001: Çevrimdışı, reklamsız, satın almasız (ADR-PB-016)
 
-Sağlık verisi hiçbir ağ çağrısına girmez. `INTERNET` yalnız reklam +
-ödeme SDK'ları içindir; analytics/telemetri/Firebase/harici AI SDK'sı
-YASAK. `tool/check_offline.sh` izin listesini zorlar, exit 0 her commit'te.
-Sağlık ekranlarında reklam yok.
+Uygulamada reklam, satın alma, ağ, analytics/telemetri/Firebase/harici AI
+YOK (kullanıcı talimatı 2026-10-08: "bu uygulamada reklam ve satın alma
+olmayacak"). `INTERNET` izni istenmez; `tool/check_offline.sh` her commit'te
+exit 0. ORTAK_UYGULAMA_STANDARDI §0: REKLAM=HAYIR, PRO=HAYIR.
 
 ### C-050: Atıf
 

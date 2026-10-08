@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Deine Daten bleiben auf deinem Gerät",
-  "onboardingPrivacyBody": "N Keto Tracker speichert deine Messwerte, Mahlzeiten und Notizen nur in dieser App auf deinem Gerät. Es gibt kein Konto, und deine Gesundheitsdaten werden nirgendwohin gesendet. Die kostenlose Version zeigt auf einigen nicht-klinischen Bildschirmen nicht personalisierte Werbung; Premium entfernt sie. Wenn du die App löschst, werden deine Daten gelöscht; du kannst jederzeit eine Sicherung exportieren.",
+  "onboardingPrivacyBody": "N Keto Tracker speichert deine Messwerte, Mahlzeiten und Notizen nur in dieser App auf deinem Gerät. Es gibt kein Konto, und deine Gesundheitsdaten werden nirgendwohin gesendet. Wenn du die App löschst, werden deine Daten gelöscht; du kannst jederzeit eine Sicherung exportieren.",
   "onboardingMedicalTitle": "Keine medizinische Beratung",
   "onboardingMedicalBody": "Diese App dient der allgemeinen Information und der persönlichen Erfassung. Sie ist keine medizinische Beratung, Diagnose oder Behandlung und ersetzt nicht die Betreuung durch qualifizierte Fachkräfte.",
   "onboardingPurposeTitle": "Was möchtest du erfassen?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Open Source",
   "aboutOpenSourceBody": "N Keto Tracker ist freie Open-Source-Software unter der GPL-3.0. Du kannst den Code einsehen, ändern und unter derselben Lizenz weitergeben.",
   "aboutPrivacyHeading": "Datenschutz",
-  "aboutPrivacyBody": "Deine Gesundheitsdaten bleiben auf diesem Gerät. Kein Konto, keine Analyse. Die kostenlose Version zeigt nicht personalisierte Werbung; Premium entfernt sie.",
+  "aboutPrivacyBody": "Deine Gesundheitsdaten bleiben auf diesem Gerät. Kein Konto, keine Analyse.",
   "aboutDisclaimerHeading": "Haftungsausschluss",
   "aboutDisclaimerBody": "Diese App dient der allgemeinen Information und der persönlichen Erfassung. Sie ist keine medizinische Beratung, Diagnose oder Behandlung.",
   "aboutLicensesButton": "Lizenzen",
@@ -228,14 +228,5 @@
   "themeLight": "Hell",
   "themeDark": "Dunkel",
   "settingsLanguage": "Sprache",
-  "settingsMore": "Mehr",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Werbefrei nutzen",
-  "premiumBody": "Entferne Werbung und unterstütze die Entwicklung mit einem einmaligen Kauf. Deine Gesundheitsdaten verlassen nie dein Gerät.",
-  "premiumBuy": "Werbung entfernen — {price}",
-  "premiumRestore": "Kauf wiederherstellen",
-  "premiumActive": "Premium ist aktiv – Werbung entfernt. Danke!",
-  "premiumUnavailable": "Käufe sind derzeit nicht verfügbar.",
-  "adsPrivacyOptions": "Datenschutzoptionen für Werbung",
-  "adLabel": "Anzeige"
+  "settingsMore": "Mehr"
 }

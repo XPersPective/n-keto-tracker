@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Data Anda tetap di perangkat Anda",
-  "onboardingPrivacyBody": "N Keto Tracker menyimpan pengukuran, makanan, dan catatan Anda hanya di aplikasi ini pada perangkat Anda. Tidak ada akun, dan data kesehatan Anda tidak pernah dikirim ke mana pun. Versi gratis menampilkan iklan non-personalisasi di beberapa layar non-klinis; Premium menghapusnya. Menghapus aplikasi akan menghapus data Anda; Anda dapat mengekspor cadangan kapan saja.",
+  "onboardingPrivacyBody": "N Keto Tracker menyimpan pengukuran, makanan, dan catatan Anda hanya di aplikasi ini pada perangkat Anda. Tidak ada akun, dan data kesehatan Anda tidak pernah dikirim ke mana pun. Menghapus aplikasi akan menghapus data Anda; Anda dapat mengekspor cadangan kapan saja.",
   "onboardingMedicalTitle": "Bukan saran medis",
   "onboardingMedicalBody": "Aplikasi ini untuk informasi umum dan pelacakan pribadi. Aplikasi ini bukan saran medis, diagnosis, atau pengobatan, dan tidak menggantikan layanan tenaga kesehatan yang berkualifikasi.",
   "onboardingPurposeTitle": "Apa yang ingin Anda lacak?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Sumber terbuka",
   "aboutOpenSourceBody": "N Keto Tracker adalah perangkat lunak bebas dan sumber terbuka berlisensi GPL-3.0. Anda dapat memeriksa, mengubah, dan mendistribusikan ulang kode di bawah lisensi yang sama.",
   "aboutPrivacyHeading": "Privasi",
-  "aboutPrivacyBody": "Data kesehatan Anda tetap di perangkat ini. Tanpa akun, tanpa analitik. Versi gratis menampilkan iklan non-personalisasi; Premium menghapusnya.",
+  "aboutPrivacyBody": "Data kesehatan Anda tetap di perangkat ini. Tanpa akun, tanpa analitik.",
   "aboutDisclaimerHeading": "Penafian",
   "aboutDisclaimerBody": "Aplikasi ini untuk informasi umum dan pelacakan pribadi. Aplikasi ini bukan saran medis, diagnosis, atau pengobatan.",
   "aboutLicensesButton": "Lisensi",
@@ -228,14 +228,5 @@
   "themeLight": "Terang",
   "themeDark": "Gelap",
   "settingsLanguage": "Bahasa",
-  "settingsMore": "Lainnya",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Bebas iklan",
-  "premiumBody": "Hapus iklan dan dukung pengembangan dengan sekali pembelian. Data kesehatan Anda tidak pernah meninggalkan perangkat Anda.",
-  "premiumBuy": "Hapus iklan — {price}",
-  "premiumRestore": "Pulihkan pembelian",
-  "premiumActive": "Premium aktif — iklan dihapus. Terima kasih!",
-  "premiumUnavailable": "Pembelian saat ini tidak tersedia.",
-  "adsPrivacyOptions": "Opsi privasi iklan",
-  "adLabel": "Iklan"
+  "settingsMore": "Lainnya"
 }

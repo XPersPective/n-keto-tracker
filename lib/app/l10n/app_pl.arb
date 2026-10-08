@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "Twoje dane zostają na Twoim urządzeniu",
-  "onboardingPrivacyBody": "N Keto Tracker przechowuje pomiary, posiłki i notatki wyłącznie w tej aplikacji na Twoim urządzeniu. Nie ma konta, a Twoje dane zdrowotne nigdy nigdzie nie są wysyłane. Wersja bezpłatna pokazuje niespersonalizowane reklamy na kilku ekranach o charakterze nieklinicznym; Premium je usuwa. Usunięcie aplikacji usuwa Twoje dane; kopię zapasową możesz wyeksportować w dowolnej chwili.",
+  "onboardingPrivacyBody": "N Keto Tracker przechowuje pomiary, posiłki i notatki wyłącznie w tej aplikacji na Twoim urządzeniu. Nie ma konta, a Twoje dane zdrowotne nigdy nigdzie nie są wysyłane. Usunięcie aplikacji usuwa Twoje dane; kopię zapasową możesz wyeksportować w dowolnej chwili.",
   "onboardingMedicalTitle": "To nie jest porada medyczna",
   "onboardingMedicalBody": "Ta aplikacja służy do ogólnych informacji i osobistego śledzenia. Nie jest poradą medyczną, diagnozą ani leczeniem i nie zastępuje opieki wykwalifikowanych pracowników ochrony zdrowia.",
   "onboardingPurposeTitle": "Co chcesz śledzić?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Otwarte oprogramowanie",
   "aboutOpenSourceBody": "N Keto Tracker to wolne oprogramowanie o otwartym kodzie na licencji GPL-3.0. Możesz przeglądać, modyfikować i rozpowszechniać kod na tej samej licencji.",
   "aboutPrivacyHeading": "Prywatność",
-  "aboutPrivacyBody": "Twoje dane zdrowotne zostają na tym urządzeniu. Bez konta, bez analityki. Wersja bezpłatna pokazuje niespersonalizowane reklamy; Premium je usuwa.",
+  "aboutPrivacyBody": "Twoje dane zdrowotne zostają na tym urządzeniu. Bez konta, bez analityki.",
   "aboutDisclaimerHeading": "Zastrzeżenie",
   "aboutDisclaimerBody": "Ta aplikacja służy do ogólnych informacji i osobistego śledzenia. Nie jest poradą medyczną, diagnozą ani leczeniem.",
   "aboutLicensesButton": "Licencje",
@@ -228,14 +228,5 @@
   "themeLight": "Jasny",
   "themeDark": "Ciemny",
   "settingsLanguage": "Język",
-  "settingsMore": "Więcej",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Bez reklam",
-  "premiumBody": "Usuń reklamy i wesprzyj rozwój jednorazowym zakupem. Twoje dane zdrowotne nigdy nie opuszczają urządzenia.",
-  "premiumBuy": "Usuń reklamy — {price}",
-  "premiumRestore": "Przywróć zakup",
-  "premiumActive": "Premium aktywne — reklamy usunięte. Dziękujemy!",
-  "premiumUnavailable": "Zakupy są obecnie niedostępne.",
-  "adsPrivacyOptions": "Opcje prywatności reklam",
-  "adLabel": "Reklama"
+  "settingsMore": "Więcej"
 }

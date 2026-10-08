@@ -39,15 +39,15 @@ transaction); "tüm verilerimi sil" ikinci onaylı.
 - Marketing paketi (8 dosya) + ürün dokümanları (SCIENTIFIC_CONTENT,
   PRIVACY, CHANGELOG, kullanıcı kılavuzu TR/EN)
 
-### Premium ürün (ADR-PB-012, 2026-10-04)
+### Premium ürün (ADR-PB-012 → ADR-PB-016 ile daraltıldı, 2026-10-08)
 
 Premium görsel kimlik (özel tema, açık/koyu/sistem, kullanıcı seçimi);
-çok dilli arayüz; reklamlı ücretsiz katman + premium (reklamsız) satın
-alma; satın alma doğrulama sunucusu; Google Play yayını.
+çok dilli arayüz (18 dil); **reklam yok, satın alma yok, ağ yok**; Google
+Play yayını.
 
 ## Explicit Non-Goals
 
-- Bulut senkronu/hesap sistemi, CGM entegrasyonu (ağ yalnız reklam+ödeme, ADR-PB-012)
+- Bulut senkronu/hesap sistemi, CGM entegrasyonu ; reklam, satın alma ve ağ (ADR-PB-016)
 - Kamera/barkod (MVP), AI/LLM, tanı/tedavi/doz önerisi
 - Klinisyen paneli, çocuk/gebelik planları
 

@@ -12,7 +12,7 @@
   "onboardingLanguageEnglish": "English",
   "onboardingLanguageTurkish": "Türkçe",
   "onboardingPrivacyTitle": "I tuoi dati restano sul tuo dispositivo",
-  "onboardingPrivacyBody": "N Keto Tracker conserva misurazioni, pasti e note solo in questa app, sul tuo dispositivo. Non c’è nessun account e i tuoi dati sulla salute non vengono mai inviati da nessuna parte. La versione gratuita mostra annunci non personalizzati in alcune schermate non cliniche; Premium li rimuove. Eliminare l’app elimina i tuoi dati; puoi esportare un backup in qualsiasi momento.",
+  "onboardingPrivacyBody": "N Keto Tracker conserva misurazioni, pasti e note solo in questa app, sul tuo dispositivo. Non c’è nessun account e i tuoi dati sulla salute non vengono mai inviati da nessuna parte. Eliminare l’app elimina i tuoi dati; puoi esportare un backup in qualsiasi momento.",
   "onboardingMedicalTitle": "Non è un consiglio medico",
   "onboardingMedicalBody": "Questa app serve per informazioni generali e monitoraggio personale. Non è un consiglio medico, una diagnosi o una terapia e non sostituisce l’assistenza di professionisti sanitari qualificati.",
   "onboardingPurposeTitle": "Cosa vuoi monitorare?",
@@ -197,7 +197,7 @@
   "aboutOpenSourceHeading": "Open source",
   "aboutOpenSourceBody": "N Keto Tracker è software libero e open source con licenza GPL-3.0. Puoi ispezionare, modificare e ridistribuire il codice con la stessa licenza.",
   "aboutPrivacyHeading": "Privacy",
-  "aboutPrivacyBody": "I tuoi dati sulla salute restano su questo dispositivo. Nessun account, nessuna analisi. La versione gratuita mostra annunci non personalizzati; Premium li rimuove.",
+  "aboutPrivacyBody": "I tuoi dati sulla salute restano su questo dispositivo. Nessun account, nessuna analisi.",
   "aboutDisclaimerHeading": "Avvertenza",
   "aboutDisclaimerBody": "Questa app serve per informazioni generali e monitoraggio personale. Non è un consiglio medico, una diagnosi o una terapia.",
   "aboutLicensesButton": "Licenze",
@@ -228,14 +228,5 @@
   "themeLight": "Chiaro",
   "themeDark": "Scuro",
   "settingsLanguage": "Lingua",
-  "settingsMore": "Altro",
-  "premiumTitle": "Premium",
-  "premiumHeading": "Passa alla versione senza pubblicità",
-  "premiumBody": "Rimuovi gli annunci e sostieni lo sviluppo con un acquisto una tantum. I tuoi dati sulla salute non lasciano mai il dispositivo.",
-  "premiumBuy": "Rimuovi gli annunci — {price}",
-  "premiumRestore": "Ripristina acquisto",
-  "premiumActive": "Premium attivo — annunci rimossi. Grazie!",
-  "premiumUnavailable": "Gli acquisti non sono disponibili al momento.",
-  "adsPrivacyOptions": "Opzioni privacy degli annunci",
-  "adLabel": "Annuncio"
+  "settingsMore": "Altro"
 }

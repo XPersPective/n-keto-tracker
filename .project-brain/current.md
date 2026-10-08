@@ -36,11 +36,9 @@ TR/EN, tamamen offline).
 - `lib/app/` — router, tema (açık/koyu/sistem), l10n ARB (18 dil), locale_provider
 - `lib/core/database/` — Drift+SQLCipher şema/repo'lar/tohumlayıcılar
 - `lib/core/units/` — saf hesap motorları (GKI, eşleştirme, enerji, plan)
-- `lib/core/monetization/` — AdMob (UMP/NPA) + Play Billing `pro_lifetime`
 - `lib/core/privacy/` — risk kilidi
 - `lib/features/*` — ekranlar (dashboard, measurements, nutrition, symptoms, weight, meal_plans, evidence, recipes, settings, onboarding)
-- `server/` — satın alma doğrulama servisi (Node, Play Developer API)
-- `fastlane/` — build_release/deploy_internal/deploy_production
+- `fastlane/` — build_release/deploy_internal/deploy_production (reklam/satın alma yok)
 - `integration_test/` + `test_driver/` — DoD akışı + mağaza ekran görüntüsü hattı
 - `android/` — release imzası/R8; kimlikler D:/AppPublishing/apps/n-keto-tracker (repo dışı)
 - `PRIVACY_POLICY.md` — herkese açık kopya: github.com/XPersPective/napp_apps/blob/master/privacy/n-keto-tracker.md

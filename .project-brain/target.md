@@ -1,7 +1,7 @@
 # Target Architecture
+Status: CONFIRMED
 
-## Objective
-
+## Goal
 Üretim kalitesinde N Keto Tracker: tamamen çevrimdışı, açık kaynaklı
 (GPL-3.0), TR/EN ketojenik beslenme takip uygulaması (Android+iOS).
 Öğün/makro günlüğü, glukoz+BHB+GKI takibi, haftalık plan/tarif/alışveriş,

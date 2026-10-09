@@ -1,0 +1,452 @@
+{
+  "@@locale": "sv",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Idag",
+  "navLog": "Logg",
+  "navPlan": "Plan",
+  "navTrends": "Trender",
+  "navGuide": "Guide",
+  "pageUnderConstruction": "Den här skärmen byggs.",
+  "generalInfoDisclaimer": "Endast allmän information; inte medicinsk rådgivning.",
+  "onboardingLanguageTitle": "Välj språk",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Dina data stannar på din enhet",
+  "onboardingPrivacyBody": "N Keto Tracker sparar dina mätvärden, måltider och anteckningar endast i den här appen på din enhet. Det finns inget konto, och dina hälsodata skickas aldrig någonstans. Om du raderar appen raderas dina data; du kan exportera en säkerhetskopia när som helst.",
+  "onboardingMedicalTitle": "Inte medicinsk rådgivning",
+  "onboardingMedicalBody": "Den här appen är avsedd för allmän information och personlig uppföljning. Den är inte medicinsk rådgivning, diagnos eller behandling och ersätter inte vård från kvalificerad hälso- och sjukvårdspersonal.",
+  "onboardingPurposeTitle": "Vad vill du följa?",
+  "onboardingPurposeLearn": "Lära mig om ketogen kost",
+  "onboardingPurposeMeals": "Planera måltider",
+  "onboardingPurposeMacros": "Följa makron och nettokolhydrater",
+  "onboardingPurposeMeasure": "Följa glukos, ketoner och GKI",
+  "onboardingProfileTitle": "Om dig (valfritt)",
+  "onboardingProfileBody": "Du kan hoppa över detta och lägga till det senare i inställningarna. Det används bara för en allmän energiuppskattning.",
+  "onboardingBirthYear": "Födelseår",
+  "onboardingHeightCm": "Längd (cm)",
+  "onboardingWeightKg": "Vikt (kg)",
+  "onboardingEnergyCoeffTitle": "Koefficient för energiuppskattning",
+  "onboardingEnergyCoeffBody": "Den allmänna energiuppskattningen använder en av två publicerade koefficienter. Det handlar inte om din könsidentitet — bara om vilken version av ekvationen som passar dig bäst. Du kan också hoppa över energiuppskattningar helt.",
+  "onboardingEnergyCoeffSkip": "Hoppa över energiuppskattningar",
+  "onboardingScreeningTitle": "Några säkerhetsfrågor",
+  "onboardingScreeningBody": "Dessa frågor diagnostiserar ingenting. De stänger bara av automatiska plan- och målförslag när extra försiktighet behövs.",
+  "onboardingScreeningDiabetes": "Har diabetes",
+  "onboardingScreeningMedication": "Använder blodsockersänkande läkemedel eller insulin",
+  "onboardingScreeningPregnancy": "Är gravid eller ammar",
+  "onboardingScreeningOrgan": "Har njur-, lever- eller bukspottkörtelsjukdom",
+  "onboardingScreeningEatingDisorder": "Har haft en ätstörning",
+  "onboardingScreeningWeightLoss": "Har haft betydande oavsiktlig viktnedgång",
+  "onboardingScreeningUnder18": "Är under 18 år",
+  "onboardingScreeningLockedNote": "På grund av dina svar förblir automatisk plan- och målskapande avstängd. Registrerings- och inlärningsfunktioner finns kvar. Gå igenom detta med kvalificerad hälso- och sjukvårdspersonal.",
+  "onboardingDataTitle": "Dina data",
+  "onboardingDataBody": "Dina uppgifter stannar bara på den här enheten. Om du tappar bort eller avinstallerar appen utan att exportera en säkerhetskopia går datan inte att återställa.",
+  "onboardingConsentTitle": "Samtycke",
+  "onboardingConsentBody": "Jag har läst och godkänner integritetssammanfattningen och meddelandet att den här appen inte är medicinsk rådgivning. Jag förstår att mina data bara stannar på den här enheten.",
+  "onboardingConsentCheckbox": "Jag godkänner",
+  "onboardingNext": "Nästa",
+  "onboardingBack": "Tillbaka",
+  "onboardingFinish": "Börja använda appen",
+  "onboardingStepOf": "Steg {current} av {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukos ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Blodketon BHB (mmol/L)",
+  "formSourceType": "Källtyp",
+  "formNote": "Anteckning (valfritt)",
+  "formPickTime": "Mättid",
+  "formSaveSession": "Spara mätsession",
+  "formInvalidValue": "Ange ett giltigt positivt tal.",
+  "gkiResultHeading": "Ditt GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Uppmätt: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Beräkningsversion: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Inga mätningar ännu",
+  "logEmptyBody": "Lägg till din första glukos- och ketonavläsning för att se den här.",
+  "logBandsToggle": "Visa forskningsintervall från artikeln du läst",
+  "bandsDisclaimer": "Dessa intervall är inte kliniska normalvärden eller bevisade behandlingsmål. De är representativa, icke-föreskrivande förslag från ett specifikt forskningsramverk. GKI ensamt visar inte hälsa, sjukdomssvar eller säkerhet. Tryck för att se källan.",
+  "logBandOptimal": "Föreslaget optimalt forskningsintervall (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Föreslaget terapeutiskt forskningsintervall (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Utanför det föreslagna forskningsintervallet ≤ 2.0",
+  "logMatchSimultaneous": "samtidig",
+  "logMatchApproximate": "ungefärlig matchning",
+  "logTimelineHeading": "Tidslinje",
+  "logChartsHeading": "Diagram",
+  "logGlucoseChart": "Glukos (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopiera källänk",
+  "todayQuickActions": "Snabbåtgärder",
+  "todayAddMeasurement": "Lägg till mätning",
+  "todayAddMeal": "Lägg till måltid",
+  "todayAddWeight": "Lägg till vikt",
+  "todayAddSymptom": "Lägg till symtom",
+  "todayLatestTitle": "Senaste mätningar",
+  "todayLatestEmpty": "Inga mätningar ännu. Använd ”Lägg till mätning” för att registrera glukos och keton BHB tillsammans.",
+  "todayNutritionTitle": "Dagens näring",
+  "todayNutritionEmpty": "Inga måltider registrerade idag. Måltider loggas från fliken Plan.",
+  "todayWeightTitle": "Vikt",
+  "todayWeightEmpty": "Inga viktposter ännu.",
+  "todaySymptomsTitle": "Dagens symtom",
+  "todaySymptomsEmpty": "Inga symtom registrerade idag.",
+  "todayPlansTitle": "Planerade måltider",
+  "todayPlansEmpty": "Ingen måltidsplan för idag.",
+  "comingSoonTitle": "Kommer i en kommande uppdatering",
+  "comingSoonBody": "Det här inmatningsformuläret byggs. Du kan följa framstegen i projektets repository.",
+  "mealFormTitle": "Logga en måltid",
+  "mealSearchLabel": "Sök mat",
+  "mealTypeLabel": "Måltidstyp",
+  "mealTypeBreakfast": "Frukost",
+  "mealTypeLunch": "Lunch",
+  "mealTypeDinner": "Middag",
+  "mealTypeSnack": "Mellanmål",
+  "mealTypeCustom": "Anpassad",
+  "mealGramsLabel": "Mängd (g)",
+  "mealAddItem": "Lägg till mat",
+  "mealNoteLabel": "Anteckning (valfritt)",
+  "mealFavoriteToggle": "Markera som favorit",
+  "mealRepeatSection": "Snabbupprepning",
+  "mealRepeatFavorites": "Favoriter",
+  "mealRepeatRecent": "Senaste",
+  "mealSave": "Spara måltid",
+  "mealItemsHeading": "Objekt",
+  "mealSavedToast": "Måltid sparad.",
+  "mealNeedsItem": "Lägg först till minst ett livsmedel.",
+  "mealTotalsHeading": "Dagliga summor",
+  "mealTotalsKcal": "Energi: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Nettokolhydrater: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Totala kolhydrater: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibrer: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Protein: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Fett: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "I allmänhet ett bra val",
+  "guideGroupLimit": "Kan kräva begränsning av portion eller frekvens",
+  "guideGroupAvoid": "I allmänhet oförenligt med ketogena mål",
+  "guideWhyHeading": "Varför?",
+  "guideTypicalPortion": "Typisk portion: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativ: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Datakälla: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Kött, fisk och ägg",
+  "guideCardLowCarbVegetables": "Grönsaker med låg kolhydrathalt",
+  "guideCardFatsOils": "Fetter och oljor",
+  "guideCardNutsSeeds": "Nötter och frön",
+  "guideCardBerries": "Bär",
+  "guideCardDairy": "Mejeriprodukter med hög fetthalt",
+  "guideCardFruit": "Frukt",
+  "guideCardLegumes": "Baljväxter",
+  "guideCardMilkDrinks": "Mjölk och söta drycker",
+  "guideCardSugaryDrinks": "Sockerhaltiga drycker",
+  "guideCardStarches": "Bröd, ris, potatis",
+  "guideCardSweets": "Godis och desserter",
+  "logMealRelation": "Registrerad {hours} h efter måltid ({mealType}) — endast tidskontext, inte en effekt.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Ingen måltid registrerad i analysfönstret före denna avläsning.",
+  "logRelationWindowLabel": "Fönster för måltidssamband",
+  "logConfoundersHeading": "Vad mer kan påverka avläsningar?",
+  "mealTypeShortBreakfast": "frukost",
+  "mealTypeShortLunch": "lunch",
+  "mealTypeShortDinner": "middag",
+  "mealTypeShortSnack": "mellanmål",
+  "mealTypeShortCustom": "måltid",
+  "recipePerServing": "{value} portioner",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Förberedelse: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergener: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredienser",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Steg",
+  "recipeStorage": "Förvaring: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Forskningsintervall som använts i en studie",
+  "goalLegendClinician": "Min läkares mål",
+  "goalLegendPersonal": "Mitt personliga uppföljningsmål",
+  "goalLegendPersonalNote": "Ett personligt uppföljningsmål är inte ett medicinskt mål.",
+  "weightValueLabel": "Vikt ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Förutsättning (valfritt, t.ex. morgon, efter träning)",
+  "weightSave": "Spara vikt",
+  "symptomFormTitle": "Logga ett symtom",
+  "symptomDefinitionLabel": "Symtom",
+  "symptomSeverityLabel": "Svårighetsgrad: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Anteckning (valfritt)",
+  "symptomSave": "Spara symtom",
+  "symptomSavedToast": "Symtom sparat.",
+  "symptomGuidance": "Du har markerat ett betydande symtom. Den här appen ställer inga diagnoser. Följ din egen hälsoplan och kontakta lokala nödtjänster om du mår dåligt eller symtomen är allvarliga.",
+  "symptomSeizureGuidance": "Du har registrerat ett anfall. Den här appen ställer inga diagnoser. Följ din hälsoplan och kontakta din vårdgivare; ring lokala nödtjänster om det är akut.",
+  "trendsRange7": "7 dagar",
+  "trendsRange30": "30 dagar",
+  "trendsRange90": "90 dagar",
+  "trendsSummary": "{count} avläsningar de senaste {days} dagarna. Senaste: {latest}, medel: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Inga data i det här intervallet.",
+  "trendsExplainsTitle": "Vad det här diagrammet säger dig — och vad det inte gör",
+  "trendsExplainsBody": "Diagrammet visar dina egna avläsningar över tid som råa punkter. Det diagnostiserar inte, förutsäger inte och bevisar inte orsaker. Saknade dagar visas som luckor, inte nollor.",
+  "trendsWeightChart": "Vikt (kg)",
+  "trendsBandsNote": "Forskningsintervall är valfria och avstängda som standard. Se fliken Logg för att aktivera dem.",
+  "evidenceDiseaseFilter": "Visa sjukdomsspecifik forskning (från källor du väljer att läsa)",
+  "evidenceSectionTitle": "Vetenskapliga källor och artiklar",
+  "guideCopyLink": "Kopiera källänk",
+  "planTitle": "Veckoplan",
+  "planGenerateDraft": "Skapa veckoutkast",
+  "planDraftLockedNote": "Automatiskt planskapande förblir avstängt: gå först igenom det med kvalificerad hälso- och sjukvårdspersonal.",
+  "planCreatedToast": "Veckoplan skapad.",
+  "planItemDay": "Dag {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Skapa inköpslista från planen",
+  "shoppingTitle": "Inköpslista",
+  "shoppingUndo": "Ångra",
+  "shoppingAddManual": "Lägg till manuell post",
+  "shoppingCheckedToggle": "Bocka av",
+  "shoppingEmpty": "Ingen inköpslista ännu.",
+  "planEmpty": "Ingen veckoplan ännu. Skapa ett utkast från dina recept för att komma igång.",
+  "aboutTitle": "Om",
+  "aboutSlogan": "Privat keto-dagbok",
+  "aboutVersion": "Version {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Öppen källkod",
+  "aboutOpenSourceBody": "N Keto Tracker är gratis programvara med öppen källkod under GPL-3.0. Du kan granska, ändra och vidaredistribuera koden under samma licens.",
+  "aboutPrivacyHeading": "Integritet",
+  "aboutPrivacyBody": "Dina hälsodata stannar på den här enheten. Inget konto, ingen analys.",
+  "aboutDisclaimerHeading": "Ansvarsfriskrivning",
+  "aboutDisclaimerBody": "Den här appen är avsedd för allmän information och personlig uppföljning. Den är inte medicinsk rådgivning, diagnos eller behandling.",
+  "aboutLicensesButton": "Licenser",
+  "aboutShareButton": "Dela den här appen",
+  "aboutOtherAppsButton": "Andra appar",
+  "aboutCopiedToast": "Kopierat till urklipp.",
+  "licensesTitle": "Licenser",
+  "otherAppsTitle": "Andra appar",
+  "otherAppsEmpty": "Inga andra appar listade ännu.",
+  "otherAppsCopyLink": "Kopiera butikslänk",
+  "settingsTitle": "Inställningar",
+  "aboutShareText": "Privat keto-dagbok med uppföljning av glukos, ketoner och GKI. Öppen källkod, inget konto behövs.",
+  "dataManagementTitle": "Datahantering",
+  "dataExportJson": "Exportera data (JSON)",
+  "dataExportCsv": "Exportera mätningar (CSV)",
+  "dataImportLabel": "Klistra in exporterad JSON här",
+  "dataImportButton": "Importera data",
+  "dataImportSuccess": "Importerade {glucose} glukos- och {weight} viktposter.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Importen misslyckades: filen är ogiltig eller stöds inte.",
+  "dataDeleteAll": "Radera alla mina data",
+  "dataDeleteConfirm1": "Radera ALLA data? Det omfattar mätningar, måltider, planer och inställningar. Det går inte att ångra.",
+  "dataDeleteConfirm2": "Är du helt säker? Skriv DELETE för att bekräfta.",
+  "dataDeleteTypeDelete": "Skriv DELETE",
+  "dataDeleteDone": "All data raderad ({count} poster).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Exportfilen är klar — välj var du vill spara den.",
+  "settingsAppearance": "Utseende",
+  "themeSystem": "System",
+  "themeLight": "Ljust",
+  "themeDark": "Mörkt",
+  "settingsLanguage": "Språk",
+  "settingsMore": "Mer"
+}

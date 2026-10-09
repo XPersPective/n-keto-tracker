@@ -144,7 +144,13 @@ class OnboardingController extends Notifier<OnboardingState> {
   @override
   OnboardingState build() {
     // İlk açılış: cihaz dili destekleniyorsa o, değilse İngilizce (ORTAK §3.1).
-    final device = PlatformDispatcher.instance.locale.languageCode;
+    final locale = PlatformDispatcher.instance.locale;
+    // zh_TW/HK/MO ve Hant yazısı → zh_Hant; öteki zh → zh (Hans).
+    final traditional =
+        locale.languageCode == 'zh' &&
+        (locale.scriptCode == 'Hant' ||
+            const {'TW', 'HK', 'MO'}.contains(locale.countryCode));
+    final device = traditional ? 'zh_Hant' : locale.languageCode;
     return OnboardingState(
       languageCode: languageEndonyms.containsKey(device) ? device : 'en',
     );

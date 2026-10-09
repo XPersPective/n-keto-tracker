@@ -1,0 +1,452 @@
+{
+  "@@locale": "he",
+  "appTitle": "N Keto Tracker",
+  "navToday": "היום",
+  "navLog": "יומן",
+  "navPlan": "תוכנית",
+  "navTrends": "מגמות",
+  "navGuide": "מדריך",
+  "pageUnderConstruction": "המסך הזה עדיין בבנייה.",
+  "generalInfoDisclaimer": "למידע כללי בלבד; אינו ייעוץ רפואי.",
+  "onboardingLanguageTitle": "בחרו שפה",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "הנתונים שלכם נשארים במכשיר",
+  "onboardingPrivacyBody": "N Keto Tracker שומר את המדידות, הארוחות וההערות שלכם רק באפליקציה זו במכשיר שלכם. אין חשבון, ונתוני הבריאות שלכם לא נשלחים לשום מקום. מחיקת האפליקציה מוחקת את הנתונים; אפשר לייצא גיבוי בכל עת.",
+  "onboardingMedicalTitle": "לא ייעוץ רפואי",
+  "onboardingMedicalBody": "האפליקציה מיועדת למידע כללי ולמעקב אישי. היא אינה ייעוץ רפואי, אבחנה או טיפול, ואינה מחליפה טיפול של אנשי מקצוע מוסמכים בתחום הבריאות.",
+  "onboardingPurposeTitle": "מה תרצו לעקוב אחריו?",
+  "onboardingPurposeLearn": "ללמוד על תזונה קטוגנית",
+  "onboardingPurposeMeals": "לתכנן ארוחות",
+  "onboardingPurposeMacros": "לעקוב אחר מקרו ופחמימות נטו",
+  "onboardingPurposeMeasure": "לעקוב אחר גלוקוז, קטונים ו-GKI",
+  "onboardingProfileTitle": "עליכם (אופציונלי)",
+  "onboardingProfileBody": "אפשר לדלג על זה ולהוסיף מאוחר יותר בהגדרות. משמש רק להערכת אנרגיה כללית.",
+  "onboardingBirthYear": "שנת לידה",
+  "onboardingHeightCm": "גובה (ס״מ)",
+  "onboardingWeightKg": "משקל (ק״ג)",
+  "onboardingEnergyCoeffTitle": "מקדם להערכת אנרגיה",
+  "onboardingEnergyCoeffBody": "הערכת האנרגיה הכללית משתמשת באחד משני מקדמים שפורסמו. זה לא קשור לזהות המגדרית שלכם — רק לאיזו גרסה של המשוואה מתאימה לכם יותר. אפשר גם לדלג על הערכות האנרגיה לגמרי.",
+  "onboardingEnergyCoeffSkip": "דלגו על הערכות אנרגיה",
+  "onboardingScreeningTitle": "כמה שאלות בטיחות",
+  "onboardingScreeningBody": "השאלות האלה לא מאבחנות דבר. הן רק מכבות הצעות אוטומטיות לתוכנית ויעדים כשנדרשת זהירות נוספת.",
+  "onboardingScreeningDiabetes": "יש לי סוכרת",
+  "onboardingScreeningMedication": "אני משתמש/ת בתרופות להורדת גלוקוז או באינסולין",
+  "onboardingScreeningPregnancy": "בהיריון או מניקה",
+  "onboardingScreeningOrgan": "יש לי מחלת כליות, כבד או לבלב",
+  "onboardingScreeningEatingDisorder": "יש לי היסטוריה של הפרעת אכילה",
+  "onboardingScreeningWeightLoss": "ירדתי משמעותית במשקל שלא במכוון",
+  "onboardingScreeningUnder18": "אני מתחת לגיל 18",
+  "onboardingScreeningLockedNote": "בגלל התשובות שלכם יצירת תוכנית ויעדים אוטומטית נשארת כבויה. תיעוד ולמידה נשארים זמינים. אנא עברו על כך עם איש מקצוע מוסמך בתחום הבריאות.",
+  "onboardingDataTitle": "הנתונים שלכם",
+  "onboardingDataBody": "הרשומות שלכם נשארות רק במכשיר הזה. אם תאבדו או תסירו את האפליקציה בלי לייצא גיבוי, אי אפשר לשחזר את הנתונים.",
+  "onboardingConsentTitle": "הסכמה",
+  "onboardingConsentBody": "קראתי ואני מסכים/ה לסיכום הפרטיות ולהודעה שהאפליקציה אינה ייעוץ רפואי. אני מבין/ה שהנתונים שלי נשארים רק במכשיר הזה.",
+  "onboardingConsentCheckbox": "אני מסכים/ה",
+  "onboardingNext": "הבא",
+  "onboardingBack": "חזרה",
+  "onboardingFinish": "התחילו להשתמש באפליקציה",
+  "onboardingStepOf": "שלב {current} מתוך {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "גלוקוז ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "קטון בדם BHB (mmol/L)",
+  "formSourceType": "סוג מקור",
+  "formNote": "הערה (אופציונלי)",
+  "formPickTime": "זמן המדידה",
+  "formSaveSession": "שמירת סשן מדידה",
+  "formInvalidValue": "אנא הזינו מספר חיובי תקין.",
+  "gkiResultHeading": "ה-GKI שלכם",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "נמדד ב: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "גרסת חישוב: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "עדיין אין מדידות",
+  "logEmptyBody": "הוסיפו את קריאת הגלוקוז והקטון הראשונה שלכם כדי לראות אותה כאן.",
+  "logBandsToggle": "הצגת טווחי המחקר מהמאמר שקראתם",
+  "bandsDisclaimer": "הטווחים האלה אינם טווחים תקינים קליניים או יעדי טיפול מוכחים. הם הצעות מייצגות ולא מחייבות ממסגרת מחקר מסוימת. GKI לבדו אינו מראה בריאות, תגובה למחלה או בטיחות. הקישו כדי לראות את המקור.",
+  "logBandOptimal": "טווח מחקר אופטימלי מוצע (GKI ≤ 1.0)",
+  "logBandTherapeutic": "טווח מחקר טיפולי מוצע (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "מחוץ לטווח המחקר המוצע ≤ 2.0",
+  "logMatchSimultaneous": "בו-זמנית",
+  "logMatchApproximate": "התאמה משוערת",
+  "logTimelineHeading": "ציר זמן",
+  "logChartsHeading": "גרפים",
+  "logGlucoseChart": "גלוקוז (mmol/L)",
+  "logBhbChart": "קטון BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "העתקת קישור למקור",
+  "todayQuickActions": "פעולות מהירות",
+  "todayAddMeasurement": "הוספת מדידה",
+  "todayAddMeal": "הוספת ארוחה",
+  "todayAddWeight": "הוספת משקל",
+  "todayAddSymptom": "הוספת תסמין",
+  "todayLatestTitle": "מדידות אחרונות",
+  "todayLatestEmpty": "עדיין אין מדידות. השתמשו ב״הוספת מדידה״ כדי לתעד יחד גלוקוז וקטון BHB.",
+  "todayNutritionTitle": "התזונה של היום",
+  "todayNutritionEmpty": "לא תועדו ארוחות היום. ארוחות מתועדות מלשונית התוכנית.",
+  "todayWeightTitle": "משקל",
+  "todayWeightEmpty": "עדיין אין רשומות משקל.",
+  "todaySymptomsTitle": "התסמינים של היום",
+  "todaySymptomsEmpty": "לא תועדו תסמינים היום.",
+  "todayPlansTitle": "ארוחות מתוכננות",
+  "todayPlansEmpty": "אין תוכנית ארוחות להיום.",
+  "comingSoonTitle": "יגיע בעדכון הקרוב",
+  "comingSoonBody": "טופס ההזנה הזה בבנייה. אפשר לעקוב אחר ההתקדמות במאגר הפרויקט.",
+  "mealFormTitle": "תיעוד ארוחה",
+  "mealSearchLabel": "חיפוש מזון",
+  "mealTypeLabel": "סוג ארוחה",
+  "mealTypeBreakfast": "ארוחת בוקר",
+  "mealTypeLunch": "ארוחת צהריים",
+  "mealTypeDinner": "ארוחת ערב",
+  "mealTypeSnack": "חטיף",
+  "mealTypeCustom": "מותאם אישית",
+  "mealGramsLabel": "כמות (גרם)",
+  "mealAddItem": "הוספת מזון",
+  "mealNoteLabel": "הערה (אופציונלי)",
+  "mealFavoriteToggle": "סימון כמועדף",
+  "mealRepeatSection": "חזרה מהירה",
+  "mealRepeatFavorites": "מועדפים",
+  "mealRepeatRecent": "אחרונים",
+  "mealSave": "שמירת ארוחה",
+  "mealItemsHeading": "פריטים",
+  "mealSavedToast": "הארוחה נשמרה.",
+  "mealNeedsItem": "הוסיפו קודם לפחות מזון אחד.",
+  "mealTotalsHeading": "סיכומים יומיים",
+  "mealTotalsKcal": "אנרגיה: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "פחמימות נטו: {value} גרם",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "סך הפחמימות: {value} גרם",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "סיבים: {value} גרם",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "חלבון: {value} גרם",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "שומן: {value} גרם",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "בדרך כלל התאמה טובה",
+  "guideGroupLimit": "ייתכן שיידרשו הגבלות על מנה או תדירות",
+  "guideGroupAvoid": "בדרך כלל אינו תואם יעדים קטוגניים",
+  "guideWhyHeading": "למה?",
+  "guideTypicalPortion": "מנה טיפוסית: {portion} (~{grams} גרם)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "חלופות: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "מקור הנתונים: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "בשר, דגים וביצים",
+  "guideCardLowCarbVegetables": "ירקות דלי פחמימות",
+  "guideCardFatsOils": "שומנים ושמנים",
+  "guideCardNutsSeeds": "אגוזים וזרעים",
+  "guideCardBerries": "פירות יער",
+  "guideCardDairy": "מוצרי חלב מלאי שומן",
+  "guideCardFruit": "פירות",
+  "guideCardLegumes": "קטניות",
+  "guideCardMilkDrinks": "חלב ומשקאות מתוקים",
+  "guideCardSugaryDrinks": "משקאות ממותקים",
+  "guideCardStarches": "לחם, אורז, תפוחי אדמה",
+  "guideCardSweets": "ממתקים וקינוחים",
+  "logMealRelation": "תועד {hours} שעות אחרי {mealType} — הקשר זמן בלבד, לא השפעה.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "לא תועדה ארוחה בחלון הניתוח לפני הקריאה הזו.",
+  "logRelationWindowLabel": "חלון קשר לארוחה",
+  "logConfoundersHeading": "מה עוד יכול להשפיע על הקריאות?",
+  "mealTypeShortBreakfast": "ארוחת בוקר",
+  "mealTypeShortLunch": "ארוחת צהריים",
+  "mealTypeShortDinner": "ארוחת ערב",
+  "mealTypeShortSnack": "חטיף",
+  "mealTypeShortCustom": "ארוחה",
+  "recipePerServing": "{value} מנות",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "הכנה: {value} דקות",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "אלרגנים: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "מרכיבים",
+  "recipeGrams": "{value} גרם",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "שלבים",
+  "recipeStorage": "אחסון: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "טווח מחקר ששימש במחקר",
+  "goalLegendClinician": "היעד של הרופא/ה שלי",
+  "goalLegendPersonal": "יעד המעקב האישי שלי",
+  "goalLegendPersonalNote": "יעד מעקב אישי אינו יעד רפואי.",
+  "weightValueLabel": "משקל ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "תנאי (אופציונלי, למשל בוקר, אחרי אימון)",
+  "weightSave": "שמירת משקל",
+  "symptomFormTitle": "תיעוד תסמין",
+  "symptomDefinitionLabel": "תסמין",
+  "symptomSeverityLabel": "חומרה: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "הערה (אופציונלי)",
+  "symptomSave": "שמירת תסמין",
+  "symptomSavedToast": "התסמין נשמר.",
+  "symptomGuidance": "סימנתם תסמין משמעותי. האפליקציה אינה מאבחנת. פעלו לפי תוכנית הבריאות שלכם, ופנו לשירותי החירום המקומיים אם אתם חשים רע או שהתסמינים חמורים.",
+  "symptomSeizureGuidance": "תיעדתם התקף. האפליקציה אינה מאבחנת. אנא פעלו לפי תוכנית הבריאות שלכם ופנו לאיש מקצוע בתחום הבריאות; בדחיפות התקשרו לשירותי החירום המקומיים.",
+  "trendsRange7": "7 ימים",
+  "trendsRange30": "30 ימים",
+  "trendsRange90": "90 ימים",
+  "trendsSummary": "{count} קריאות ב-{days} הימים האחרונים. אחרונה: {latest}, ממוצע: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "אין נתונים בטווח הזה.",
+  "trendsExplainsTitle": "מה הגרף הזה אומר לכם — ומה לא",
+  "trendsExplainsBody": "הגרף מציג את הקריאות שלכם לאורך זמן כנקודות גולמיות. הוא לא מאבחן, לא מנבא ולא מוכיח סיבות. ימים חסרים מופיעים כפערים, לא כאפסים.",
+  "trendsWeightChart": "משקל (ק״ג)",
+  "trendsBandsNote": "טווחי מחקר הם אופציונליים וכבויים כברירת מחדל. ראו את לשונית היומן כדי להפעיל אותם.",
+  "evidenceDiseaseFilter": "הצגת מחקר ייעודי למחלות (מהמקורות שבחרתם לקרוא)",
+  "evidenceSectionTitle": "מקורות ומאמרים מדעיים",
+  "guideCopyLink": "העתקת קישור למקור",
+  "planTitle": "תוכנית שבועית",
+  "planGenerateDraft": "יצירת טיוטה שבועית",
+  "planDraftLockedNote": "יצירת תוכנית אוטומטית נשארת כבויה: אנא עברו על כך קודם עם איש מקצוע מוסמך בתחום הבריאות.",
+  "planCreatedToast": "התוכנית השבועית נוצרה.",
+  "planItemDay": "יום {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "יצירת רשימת קניות מהתוכנית",
+  "shoppingTitle": "רשימת קניות",
+  "shoppingUndo": "ביטול",
+  "shoppingAddManual": "הוספת פריט ידנית",
+  "shoppingCheckedToggle": "סימון",
+  "shoppingEmpty": "עדיין אין רשימת קניות.",
+  "planEmpty": "עדיין אין תוכנית שבועית. צרו טיוטה מהמתכונים שלכם כדי להתחיל.",
+  "aboutTitle": "אודות",
+  "aboutSlogan": "יומן קטו פרטי",
+  "aboutVersion": "גרסה {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "קוד פתוח",
+  "aboutOpenSourceBody": "N Keto Tracker היא תוכנה חופשית בקוד פתוח ברישיון GPL-3.0. אפשר לבדוק, לשנות ולהפיץ את הקוד באותו רישיון.",
+  "aboutPrivacyHeading": "פרטיות",
+  "aboutPrivacyBody": "נתוני הבריאות שלכם נשארים במכשיר הזה. בלי חשבון, בלי ניתוחי שימוש.",
+  "aboutDisclaimerHeading": "כתב ויתור",
+  "aboutDisclaimerBody": "האפליקציה מיועדת למידע כללי ולמעקב אישי. היא אינה ייעוץ רפואי, אבחנה או טיפול.",
+  "aboutLicensesButton": "רישיונות",
+  "aboutShareButton": "שיתוף האפליקציה",
+  "aboutOtherAppsButton": "אפליקציות נוספות",
+  "aboutCopiedToast": "הועתק ללוח.",
+  "licensesTitle": "רישיונות",
+  "otherAppsTitle": "אפליקציות נוספות",
+  "otherAppsEmpty": "עדיין אין אפליקציות נוספות ברשימה.",
+  "otherAppsCopyLink": "העתקת קישור לחנות",
+  "settingsTitle": "הגדרות",
+  "aboutShareText": "יומן קטו פרטי עם מעקב גלוקוז, קטונים ו-GKI. קוד פתוח, בלי צורך בחשבון.",
+  "dataManagementTitle": "ניהול נתונים",
+  "dataExportJson": "ייצוא נתונים (JSON)",
+  "dataExportCsv": "ייצוא מדידות (CSV)",
+  "dataImportLabel": "הדביקו כאן את ה-JSON שיוצא",
+  "dataImportButton": "ייבוא נתונים",
+  "dataImportSuccess": "יובאו {glucose} רשומות גלוקוז ו-{weight} רשומות משקל.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "הייבוא נכשל: הקובץ לא תקין או לא נתמך.",
+  "dataDeleteAll": "מחיקת כל הנתונים שלי",
+  "dataDeleteConfirm1": "למחוק את כל הנתונים? זה כולל מדידות, ארוחות, תוכניות והגדרות. אי אפשר לבטל.",
+  "dataDeleteConfirm2": "אתם בטוחים? הקלידו DELETE לאישור.",
+  "dataDeleteTypeDelete": "הקלידו DELETE",
+  "dataDeleteDone": "כל הנתונים נמחקו ({count} רשומות).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "קובץ הייצוא מוכן — בחרו היכן לשמור אותו.",
+  "settingsAppearance": "מראה",
+  "themeSystem": "מערכת",
+  "themeLight": "בהיר",
+  "themeDark": "כהה",
+  "settingsLanguage": "שפה",
+  "settingsMore": "עוד"
+}

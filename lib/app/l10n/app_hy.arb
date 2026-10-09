@@ -1,0 +1,452 @@
+{
+  "@@locale": "hy",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Այսօր",
+  "navLog": "Օրագիր",
+  "navPlan": "Պլան",
+  "navTrends": "Միտումներ",
+  "navGuide": "Ուղեցույց",
+  "pageUnderConstruction": "Այս էկրանը մշակման փուլում է։",
+  "generalInfoDisclaimer": "Միայն ընդհանուր տեղեկատվության համար. բժշկական խորհուրդ չէ։",
+  "onboardingLanguageTitle": "Ընտրեք լեզուն",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Ձեր տվյալները մնում են ձեր սարքում",
+  "onboardingPrivacyBody": "N Keto Tracker-ը ձեր չափումները, սնունդը և նշումները պահում է միայն այս հավելվածում՝ ձեր սարքում։ Հաշիվ չկա, և ձեր առողջության տվյալները երբեք ոչ մի տեղ չեն ուղարկվում։ Հավելվածը ջնջելիս ձեր տվյալները նույնպես կջնջվեն. պահուստային պատճենը կարող եք արտահանել ցանկացած պահի։",
+  "onboardingMedicalTitle": "Բժշկական խորհուրդ չէ",
+  "onboardingMedicalBody": "Այս հավելվածը նախատեսված է ընդհանուր տեղեկատվության և անձնական հետևման համար։ Այն բժշկական խորհուրդ, ախտորոշում կամ բուժում չէ և չի փոխարինում որակավորված առողջապահական մասնագետների խնամքը։",
+  "onboardingPurposeTitle": "Ի՞նչ եք ուզում հետևել",
+  "onboardingPurposeLearn": "Իմանալ կետոգեն սննդի մասին",
+  "onboardingPurposeMeals": "Պլանավորել ճաշերը",
+  "onboardingPurposeMacros": "Հետևել մակրոներին և մաքուր ածխաջրերին",
+  "onboardingPurposeMeasure": "Հետևել գլյուկոզին, կետոններին և GKI-ին",
+  "onboardingProfileTitle": "Ձեր մասին (ըստ ցանկության)",
+  "onboardingProfileBody": "Կարող եք բաց թողնել սա և ավելացնել հետո՝ կարգավորումներում։ Օգտագործվում է միայն էներգիայի ընդհանուր գնահատման համար։",
+  "onboardingBirthYear": "Ծննդյան տարի",
+  "onboardingHeightCm": "Հասակ (սմ)",
+  "onboardingWeightKg": "Քաշ (կգ)",
+  "onboardingEnergyCoeffTitle": "Էներգիայի գնահատման գործակից",
+  "onboardingEnergyCoeffBody": "Էներգիայի ընդհանուր գնահատումն օգտագործում է երկու հրապարակված գործակիցներից մեկը։ Սա կապված չէ ձեր գենդերային ինքնության հետ՝ պարզապես ցույց է տալիս, թե հավասարման որ տարբերակն է ձեզ ավելի հարմար։ Էներգիայի գնահատումները կարող եք նաև ամբողջությամբ բաց թողնել։",
+  "onboardingEnergyCoeffSkip": "Բաց թողնել էներգիայի գնահատումները",
+  "onboardingScreeningTitle": "Մի քանի անվտանգության հարց",
+  "onboardingScreeningBody": "Այս հարցերը ոչինչ չեն ախտորոշում։ Դրանք միայն անջատում են պլանի և նպատակների ավտոմատ առաջարկները, երբ անհրաժեշտ է հավելյալ զգուշություն։",
+  "onboardingScreeningDiabetes": "Շաքարային դիաբետ ունեմ",
+  "onboardingScreeningMedication": "Օգտագործում եմ գլյուկոզը իջեցնող դեղեր կամ ինսուլին",
+  "onboardingScreeningPregnancy": "Հղի եմ կամ կրծքով եմ կերակրում",
+  "onboardingScreeningOrgan": "Երիկամի, լյարդի կամ ենթաստամոքսային գեղձի հիվանդություն ունեմ",
+  "onboardingScreeningEatingDisorder": "Ունեցել եմ ուտելու խանգարում",
+  "onboardingScreeningWeightLoss": "Ունեցել եմ զգալի ակամա քաշի կորուստ",
+  "onboardingScreeningUnder18": "18 տարեկանից փոքր եմ",
+  "onboardingScreeningLockedNote": "Ձեր պատասխանների պատճառով պլանի և նպատակների ավտոմատ ստեղծումը մնում է անջատված։ Գրանցման և ուսուցման գործառույթները մնում են հասանելի։ Խնդրում ենք քննարկել սա որակավորված առողջապահական մասնագետի հետ։",
+  "onboardingDataTitle": "Ձեր տվյալները",
+  "onboardingDataBody": "Ձեր գրառումները մնում են միայն այս սարքում։ Եթե կորցնեք կամ ջնջեք հավելվածը առանց պահուստային պատճենի արտահանման, տվյալները հնարավոր չի լինի վերականգնել։",
+  "onboardingConsentTitle": "Համաձայնություն",
+  "onboardingConsentBody": "Ես կարդացել և ընդունում եմ գաղտնիության ամփոփագիրը և ծանուցումը, որ այս հավելվածը բժշկական խորհուրդ չէ։ Հասկանում եմ, որ իմ տվյալները մնում են միայն այս սարքում։",
+  "onboardingConsentCheckbox": "Ընդունում եմ",
+  "onboardingNext": "Հաջորդը",
+  "onboardingBack": "Հետ",
+  "onboardingFinish": "Սկսել օգտագործել հավելվածը",
+  "onboardingStepOf": "Քայլ {current}՝ {total}-ից",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Գլյուկոզ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Արյան կետոն BHB (mmol/L)",
+  "formSourceType": "Աղբյուրի տեսակ",
+  "formNote": "Նշում (ըստ ցանկության)",
+  "formPickTime": "Չափման ժամանակ",
+  "formSaveSession": "Պահպանել չափման սեսիան",
+  "formInvalidValue": "Խնդրում ենք մուտքագրել վավեր դրական թիվ։",
+  "gkiResultHeading": "Ձեր GKI-ն",
+  "gkiResultValue": "GKI՝ {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Չափվել է՝ {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Հաշվարկի տարբերակ՝ {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Դեռ չափումներ չկան",
+  "logEmptyBody": "Ավելացրեք ձեր առաջին գլյուկոզի և կետոնի ցուցանիշը՝ այն այստեղ տեսնելու համար։",
+  "logBandsToggle": "Ցույց տալ ձեր կարդացած հոդվածի հետազոտական միջակայքերը",
+  "bandsDisclaimer": "Այս միջակայքերը կլինիկական նորմեր կամ ապացուցված բուժման նպատակներ չեն։ Դրանք որոշակի հետազոտական շրջանակից վերցված ներկայացուցչական, ոչ նշանակող առաջարկներ են։ GKI-ն միայնակ չի ցույց տալիս առողջություն, հիվանդության արձագանք կամ անվտանգություն։ Աղբյուրը տեսնելու համար հպեք։",
+  "logBandOptimal": "Առաջարկվող օպտիմալ հետազոտական միջակայք (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Առաջարկվող թերապևտիկ հետազոտական միջակայք (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Առաջարկվող ≤ 2.0 հետազոտական միջակայքից դուրս",
+  "logMatchSimultaneous": "միաժամանակ",
+  "logMatchApproximate": "մոտավոր համընկնում",
+  "logTimelineHeading": "Ժամանակագրություն",
+  "logChartsHeading": "Գծապատկերներ",
+  "logGlucoseChart": "Գլյուկոզ (mmol/L)",
+  "logBhbChart": "Կետոն BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Պատճենել աղբյուրի հղումը",
+  "todayQuickActions": "Արագ գործողություններ",
+  "todayAddMeasurement": "Ավելացնել չափում",
+  "todayAddMeal": "Ավելացնել ճաշ",
+  "todayAddWeight": "Ավելացնել քաշ",
+  "todayAddSymptom": "Ավելացնել ախտանիշ",
+  "todayLatestTitle": "Վերջին չափումները",
+  "todayLatestEmpty": "Դեռ չափումներ չկան։ Օգտագործեք «Ավելացնել չափում»՝ գլյուկոզն ու կետոն BHB-ն միասին գրանցելու համար։",
+  "todayNutritionTitle": "Այսօրվա սնունդը",
+  "todayNutritionEmpty": "Այսօր ճաշեր չեն գրանցվել։ Ճաշերը գրանցվում են «Պլան» ներդիրից։",
+  "todayWeightTitle": "Քաշ",
+  "todayWeightEmpty": "Քաշի գրառումներ դեռ չկան։",
+  "todaySymptomsTitle": "Այսօրվա ախտանիշները",
+  "todaySymptomsEmpty": "Այսօր ախտանիշներ չեն գրանցվել։",
+  "todayPlansTitle": "Պլանավորված ճաշեր",
+  "todayPlansEmpty": "Այսօրվա համար ճաշացանկ չկա։",
+  "comingSoonTitle": "Կգա հաջորդ թարմացմամբ",
+  "comingSoonBody": "Այս մուտքագրման ձևը մշակման փուլում է։ Առաջընթացը կարող եք հետևել նախագծի շտեմարանում։",
+  "mealFormTitle": "Գրանցել ճաշ",
+  "mealSearchLabel": "Փնտրել սնունդ",
+  "mealTypeLabel": "Ճաշի տեսակ",
+  "mealTypeBreakfast": "Նախաճաշ",
+  "mealTypeLunch": "Ճաշ",
+  "mealTypeDinner": "Ընթրիք",
+  "mealTypeSnack": "Խորտիկ",
+  "mealTypeCustom": "Սեփական",
+  "mealGramsLabel": "Քանակ (գ)",
+  "mealAddItem": "Ավելացնել սնունդ",
+  "mealNoteLabel": "Նշում (ըստ ցանկության)",
+  "mealFavoriteToggle": "Նշել որպես սիրելի",
+  "mealRepeatSection": "Արագ կրկնություն",
+  "mealRepeatFavorites": "Սիրելիներ",
+  "mealRepeatRecent": "Վերջինները",
+  "mealSave": "Պահպանել ճաշը",
+  "mealItemsHeading": "Տարրեր",
+  "mealSavedToast": "Ճաշը պահպանվեց։",
+  "mealNeedsItem": "Սկզբում ավելացրեք առնվազն մեկ սնունդ։",
+  "mealTotalsHeading": "Օրվա ընդհանուրը",
+  "mealTotalsKcal": "Էներգիա՝ {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Մաքուր ածխաջրեր՝ {value} գ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Ընդհանուր ածխաջրեր՝ {value} գ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Թել՝ {value} գ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Սպիտակուց՝ {value} գ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Ճարպ՝ {value} գ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Սովորաբար լավ ընտրություն",
+  "guideGroupLimit": "Կարող է պահանջել չափաբաժնի կամ հաճախականության սահմանափակում",
+  "guideGroupAvoid": "Սովորաբար անհամատեղելի է կետոգեն նպատակների հետ",
+  "guideWhyHeading": "Ինչո՞ւ",
+  "guideTypicalPortion": "Բնորոշ չափաբաժին՝ {portion} (~{grams} գ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Այլընտրանքներ՝ {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Տվյալների աղբյուր՝ {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Միս, ձուկ և ձու",
+  "guideCardLowCarbVegetables": "Քիչ ածխաջրով բանջարեղեն",
+  "guideCardFatsOils": "Ճարպեր և յուղեր",
+  "guideCardNutsSeeds": "Ընկույզներ և սերմեր",
+  "guideCardBerries": "Հատապտուղներ",
+  "guideCardDairy": "Լրիվ յուղայնությամբ կաթնամթերք",
+  "guideCardFruit": "Մրգեր",
+  "guideCardLegumes": "Հատիկավորներ",
+  "guideCardMilkDrinks": "Կաթ և քաղցր ըմպելիքներ",
+  "guideCardSugaryDrinks": "Շաքարով ըմպելիքներ",
+  "guideCardStarches": "Հաց, բրինձ, կարտոֆիլ",
+  "guideCardSweets": "Քաղցրավենիք և աղանդեր",
+  "logMealRelation": "Գրանցվել է {mealType}-ից {hours} ժ հետո՝ միայն ժամանակային համատեքստ, ոչ ազդեցություն։",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Այս ցուցանիշից առաջ վերլուծության պատուհանում ճաշ չի գրանցվել։",
+  "logRelationWindowLabel": "Ճաշի հետ կապի պատուհան",
+  "logConfoundersHeading": "Էլ ի՞նչ կարող է ազդել ցուցանիշների վրա",
+  "mealTypeShortBreakfast": "նախաճաշ",
+  "mealTypeShortLunch": "ճաշ",
+  "mealTypeShortDinner": "ընթրիք",
+  "mealTypeShortSnack": "խորտիկ",
+  "mealTypeShortCustom": "ճաշ",
+  "recipePerServing": "{value} չափաբաժին",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Պատրաստում՝ {value} րոպե",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Ալերգեններ՝ {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Բաղադրիչներ",
+  "recipeGrams": "{value} գ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Քայլեր",
+  "recipeStorage": "Պահպանում՝ {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Հետազոտության մեջ օգտագործված միջակայք",
+  "goalLegendClinician": "Իմ բժշկի նպատակը",
+  "goalLegendPersonal": "Իմ անձնական հետևման նպատակը",
+  "goalLegendPersonalNote": "Անձնական հետևման նպատակը բժշկական նպատակ չէ։",
+  "weightValueLabel": "Քաշ ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Պայման (ըստ ցանկության, օր.՝ առավոտյան, մարզումից հետո)",
+  "weightSave": "Պահպանել քաշը",
+  "symptomFormTitle": "Գրանցել ախտանիշ",
+  "symptomDefinitionLabel": "Ախտանիշ",
+  "symptomSeverityLabel": "Ծանրություն՝ {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Նշում (ըստ ցանկության)",
+  "symptomSave": "Պահպանել ախտանիշը",
+  "symptomSavedToast": "Ախտանիշը պահպանվեց։",
+  "symptomGuidance": "Դուք նշել եք նշանակալի ախտանիշ։ Այս հավելվածը ախտորոշում չի կատարում։ Հետևեք ձեր առողջության պլանին և դիմեք տեղական շտապ օգնության ծառայությանը, եթե վատ եք զգում կամ ախտանիշները ծանր են։",
+  "symptomSeizureGuidance": "Դուք գրանցել եք նոպա։ Այս հավելվածը ախտորոշում չի կատարում։ Խնդրում ենք հետևել ձեր առողջության պլանին և դիմել ձեր առողջապահական մասնագետին. անհետաձգելի դեպքում զանգահարեք տեղական շտապ օգնության ծառայություն։",
+  "trendsRange7": "7 օր",
+  "trendsRange30": "30 օր",
+  "trendsRange90": "90 օր",
+  "trendsSummary": "{count} ցուցանիշ վերջին {days} օրվա ընթացքում։ Վերջինը՝ {latest}, միջինը՝ {average}։",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Այս միջակայքում տվյալներ չկան։",
+  "trendsExplainsTitle": "Ինչ է ասում այս գծապատկերը՝ և ինչ՝ ոչ",
+  "trendsExplainsBody": "Գծապատկերը ցույց է տալիս ձեր սեփական ցուցանիշները ժամանակի ընթացքում՝ որպես չմշակված կետեր։ Այն չի ախտորոշում, չի կանխատեսում և չի ապացուցում պատճառներ։ Բացակա օրերը երևում են որպես բացեր, ոչ թե զրոներ։",
+  "trendsWeightChart": "Քաշ (կգ)",
+  "trendsBandsNote": "Հետազոտական միջակայքերն ըստ ցանկության են և լռելյայն անջատված են։ Միացնելու համար տես «Օրագիր» ներդիրը։",
+  "evidenceDiseaseFilter": "Ցույց տալ հիվանդություններին հատուկ հետազոտություններ (ձեր ընտրած աղբյուրներից)",
+  "evidenceSectionTitle": "Գիտական աղբյուրներ և հոդվածներ",
+  "guideCopyLink": "Պատճենել աղբյուրի հղումը",
+  "planTitle": "Շաբաթական պլան",
+  "planGenerateDraft": "Ստեղծել շաբաթական սևագիր",
+  "planDraftLockedNote": "Պլանի ավտոմատ ստեղծումը մնում է անջատված. նախ քննարկեք որակավորված առողջապահական մասնագետի հետ։",
+  "planCreatedToast": "Շաբաթական պլանը ստեղծվեց։",
+  "planItemDay": "Օր {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Ստեղծել գնումների ցանկ պլանից",
+  "shoppingTitle": "Գնումների ցանկ",
+  "shoppingUndo": "Հետարկել",
+  "shoppingAddManual": "Ավելացնել տարր ձեռքով",
+  "shoppingCheckedToggle": "Նշել",
+  "shoppingEmpty": "Գնումների ցանկ դեռ չկա։",
+  "planEmpty": "Շաբաթական պլան դեռ չկա։ Սկսելու համար ստեղծեք սևագիր ձեր բաղադրատոմսերից։",
+  "aboutTitle": "Մասին",
+  "aboutSlogan": "Գաղտնի կետո օրագիր",
+  "aboutVersion": "Տարբերակ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Բաց կոդ",
+  "aboutOpenSourceBody": "N Keto Tracker-ը անվճար բաց կոդով ծրագիր է՝ GPL-3.0 արտոնագրով։ Կոդը կարող եք ուսումնասիրել, փոփոխել և տարածել նույն արտոնագրով։",
+  "aboutPrivacyHeading": "Գաղտնիություն",
+  "aboutPrivacyBody": "Ձեր առողջության տվյալները մնում են այս սարքում։ Առանց հաշվի, առանց վերլուծության։",
+  "aboutDisclaimerHeading": "Պատասխանատվության սահմանափակում",
+  "aboutDisclaimerBody": "Այս հավելվածը նախատեսված է ընդհանուր տեղեկատվության և անձնական հետևման համար։ Այն բժշկական խորհուրդ, ախտորոշում կամ բուժում չէ։",
+  "aboutLicensesButton": "Արտոնագրեր",
+  "aboutShareButton": "Կիսվել հավելվածով",
+  "aboutOtherAppsButton": "Այլ հավելվածներ",
+  "aboutCopiedToast": "Պատճենվեց clipboard-ում։",
+  "licensesTitle": "Արտոնագրեր",
+  "otherAppsTitle": "Այլ հավելվածներ",
+  "otherAppsEmpty": "Այլ հավելվածներ դեռ չեն նշված։",
+  "otherAppsCopyLink": "Պատճենել խանութի հղումը",
+  "settingsTitle": "Կարգավորումներ",
+  "aboutShareText": "Գաղտնի կետո օրագիր՝ գլյուկոզի, կետոնի և GKI-ի հետևմամբ։ Բաց կոդ, հաշիվ պետք չէ։",
+  "dataManagementTitle": "Տվյալների կառավարում",
+  "dataExportJson": "Արտահանել տվյալները (JSON)",
+  "dataExportCsv": "Արտահանել չափումները (CSV)",
+  "dataImportLabel": "Տեղադրեք արտահանված JSON-ն այստեղ",
+  "dataImportButton": "Ներմուծել տվյալներ",
+  "dataImportSuccess": "Ներմուծվեց {glucose} գլյուկոզի և {weight} քաշի գրառում։",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Ներմուծումը ձախողվեց. ֆայլը անվավեր է կամ չի աջակցվում։",
+  "dataDeleteAll": "Ջնջել իմ բոլոր տվյալները",
+  "dataDeleteConfirm1": "Ջնջե՞լ ԲՈԼՈՐ տվյալները։ Սա ներառում է չափումները, ճաշերը, պլանները և կարգավորումները։ Հնարավոր չէ հետարկել։",
+  "dataDeleteConfirm2": "Իսկապե՞ս համոզված եք։ Հաստատելու համար մուտքագրեք DELETE։",
+  "dataDeleteTypeDelete": "Մուտքագրեք DELETE",
+  "dataDeleteDone": "Բոլոր տվյալները ջնջվեցին ({count} գրառում)։",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Արտահանման ֆայլը պատրաստ է. ընտրեք, թե որտեղ պահպանել։",
+  "settingsAppearance": "Արտաքին տեսք",
+  "themeSystem": "Համակարգային",
+  "themeLight": "Բաց",
+  "themeDark": "Մուգ",
+  "settingsLanguage": "Լեզու",
+  "settingsMore": "Ավելին"
+}

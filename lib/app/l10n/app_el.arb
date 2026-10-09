@@ -1,0 +1,452 @@
+{
+  "@@locale": "el",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Σήμερα",
+  "navLog": "Ημερολόγιο",
+  "navPlan": "Πλάνο",
+  "navTrends": "Τάσεις",
+  "navGuide": "Οδηγός",
+  "pageUnderConstruction": "Αυτή η οθόνη βρίσκεται υπό κατασκευή.",
+  "generalInfoDisclaimer": "Μόνο για γενική ενημέρωση· όχι ιατρική συμβουλή.",
+  "onboardingLanguageTitle": "Επιλέξτε γλώσσα",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Τα δεδομένα σας μένουν στη συσκευή σας",
+  "onboardingPrivacyBody": "Το N Keto Tracker κρατά τις μετρήσεις, τα γεύματα και τις σημειώσεις σας μόνο σε αυτή την εφαρμογή στη συσκευή σας. Δεν υπάρχει λογαριασμός και τα δεδομένα υγείας σας δεν στέλνονται πουθενά. Αν διαγράψετε την εφαρμογή, διαγράφονται και τα δεδομένα σας· μπορείτε να εξαγάγετε αντίγραφο ασφαλείας ανά πάσα στιγμή.",
+  "onboardingMedicalTitle": "Όχι ιατρική συμβουλή",
+  "onboardingMedicalBody": "Αυτή η εφαρμογή προορίζεται για γενική ενημέρωση και προσωπική παρακολούθηση. Δεν αποτελεί ιατρική συμβουλή, διάγνωση ή θεραπεία και δεν αντικαθιστά τη φροντίδα από ειδικευμένους επαγγελματίες υγείας.",
+  "onboardingPurposeTitle": "Τι θέλετε να παρακολουθείτε;",
+  "onboardingPurposeLearn": "Να μάθω για την κετογονική διατροφή",
+  "onboardingPurposeMeals": "Να προγραμματίζω γεύματα",
+  "onboardingPurposeMacros": "Να παρακολουθώ μακροθρεπτικά και καθαρούς υδατάνθρακες",
+  "onboardingPurposeMeasure": "Να παρακολουθώ γλυκόζη, κετόνες και GKI",
+  "onboardingProfileTitle": "Για εσάς (προαιρετικό)",
+  "onboardingProfileBody": "Μπορείτε να το παραλείψετε και να το προσθέσετε αργότερα στις ρυθμίσεις. Χρησιμοποιείται μόνο για γενική εκτίμηση ενέργειας.",
+  "onboardingBirthYear": "Έτος γέννησης",
+  "onboardingHeightCm": "Ύψος (εκ.)",
+  "onboardingWeightKg": "Βάρος (κιλά)",
+  "onboardingEnergyCoeffTitle": "Συντελεστής εκτίμησης ενέργειας",
+  "onboardingEnergyCoeffBody": "Η γενική εκτίμηση ενέργειας χρησιμοποιεί έναν από δύο δημοσιευμένους συντελεστές. Δεν αφορά την ταυτότητα φύλου σας — απλώς ποια εκδοχή της εξίσωσης σας ταιριάζει καλύτερα. Μπορείτε επίσης να παραλείψετε εντελώς τις εκτιμήσεις ενέργειας.",
+  "onboardingEnergyCoeffSkip": "Παράλειψη εκτιμήσεων ενέργειας",
+  "onboardingScreeningTitle": "Μερικές ερωτήσεις ασφαλείας",
+  "onboardingScreeningBody": "Αυτές οι ερωτήσεις δεν διαγιγνώσκουν τίποτα. Απλώς απενεργοποιούν τις αυτόματες προτάσεις πλάνου και στόχων όταν χρειάζεται επιπλέον προσοχή.",
+  "onboardingScreeningDiabetes": "Έχω διαβήτη",
+  "onboardingScreeningMedication": "Παίρνω φάρμακα που μειώνουν τη γλυκόζη ή ινσουλίνη",
+  "onboardingScreeningPregnancy": "Είμαι έγκυος ή θηλάζω",
+  "onboardingScreeningOrgan": "Έχω νόσο νεφρών, ήπατος ή παγκρέατος",
+  "onboardingScreeningEatingDisorder": "Έχω ιστορικό διατροφικής διαταραχής",
+  "onboardingScreeningWeightLoss": "Είχα σημαντική ακούσια απώλεια βάρους",
+  "onboardingScreeningUnder18": "Είμαι κάτω των 18 ετών",
+  "onboardingScreeningLockedNote": "Λόγω των απαντήσεών σας, η αυτόματη δημιουργία πλάνου και στόχων παραμένει απενεργοποιημένη. Οι λειτουργίες καταγραφής και εκμάθησης παραμένουν διαθέσιμες. Συζητήστε το με έναν ειδικευμένο επαγγελματία υγείας.",
+  "onboardingDataTitle": "Τα δεδομένα σας",
+  "onboardingDataBody": "Οι εγγραφές σας μένουν μόνο σε αυτή τη συσκευή. Αν χάσετε ή απεγκαταστήσετε την εφαρμογή χωρίς εξαγωγή αντιγράφου ασφαλείας, τα δεδομένα δεν μπορούν να ανακτηθούν.",
+  "onboardingConsentTitle": "Συναίνεση",
+  "onboardingConsentBody": "Έχω διαβάσει και αποδέχομαι τη σύνοψη απορρήτου και την ειδοποίηση ότι αυτή η εφαρμογή δεν αποτελεί ιατρική συμβουλή. Καταλαβαίνω ότι τα δεδομένα μου μένουν μόνο σε αυτή τη συσκευή.",
+  "onboardingConsentCheckbox": "Αποδέχομαι",
+  "onboardingNext": "Επόμενο",
+  "onboardingBack": "Πίσω",
+  "onboardingFinish": "Έναρξη χρήσης της εφαρμογής",
+  "onboardingStepOf": "Βήμα {current} από {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Γλυκόζη ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Κετόνη αίματος BHB (mmol/L)",
+  "formSourceType": "Τύπος πηγής",
+  "formNote": "Σημείωση (προαιρετικό)",
+  "formPickTime": "Ώρα μέτρησης",
+  "formSaveSession": "Αποθήκευση συνεδρίας μέτρησης",
+  "formInvalidValue": "Εισαγάγετε έναν έγκυρο θετικό αριθμό.",
+  "gkiResultHeading": "Το GKI σας",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Μετρήθηκε στις: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Έκδοση υπολογισμού: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Δεν υπάρχουν ακόμη μετρήσεις",
+  "logEmptyBody": "Προσθέστε την πρώτη σας μέτρηση γλυκόζης και κετόνης για να τη δείτε εδώ.",
+  "logBandsToggle": "Εμφάνιση ερευνητικών ορίων από το άρθρο που διαβάσατε",
+  "bandsDisclaimer": "Αυτά τα όρια δεν είναι κλινικά φυσιολογικά εύρη ούτε αποδεδειγμένοι θεραπευτικοί στόχοι. Είναι ενδεικτικές, μη συνταγογραφικές προτάσεις από ένα συγκεκριμένο ερευνητικό πλαίσιο. Το GKI από μόνο του δεν δείχνει υγεία, ανταπόκριση σε νόσο ή ασφάλεια. Πατήστε για να δείτε την πηγή.",
+  "logBandOptimal": "Προτεινόμενο βέλτιστο ερευνητικό εύρος (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Προτεινόμενο θεραπευτικό ερευνητικό εύρος (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Εκτός του προτεινόμενου ερευνητικού εύρους ≤ 2.0",
+  "logMatchSimultaneous": "ταυτόχρονα",
+  "logMatchApproximate": "κατά προσέγγιση αντιστοίχιση",
+  "logTimelineHeading": "Χρονολόγιο",
+  "logChartsHeading": "Γραφήματα",
+  "logGlucoseChart": "Γλυκόζη (mmol/L)",
+  "logBhbChart": "Κετόνη BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Αντιγραφή συνδέσμου πηγής",
+  "todayQuickActions": "Γρήγορες ενέργειες",
+  "todayAddMeasurement": "Προσθήκη μέτρησης",
+  "todayAddMeal": "Προσθήκη γεύματος",
+  "todayAddWeight": "Προσθήκη βάρους",
+  "todayAddSymptom": "Προσθήκη συμπτώματος",
+  "todayLatestTitle": "Τελευταίες μετρήσεις",
+  "todayLatestEmpty": "Δεν υπάρχουν ακόμη μετρήσεις. Χρησιμοποιήστε «Προσθήκη μέτρησης» για να καταγράψετε μαζί γλυκόζη και κετόνη BHB.",
+  "todayNutritionTitle": "Η σημερινή διατροφή",
+  "todayNutritionEmpty": "Δεν έχουν καταγραφεί γεύματα σήμερα. Τα γεύματα καταγράφονται από την καρτέλα Πλάνο.",
+  "todayWeightTitle": "Βάρος",
+  "todayWeightEmpty": "Δεν υπάρχουν ακόμη καταχωρίσεις βάρους.",
+  "todaySymptomsTitle": "Τα σημερινά συμπτώματα",
+  "todaySymptomsEmpty": "Δεν έχουν καταγραφεί συμπτώματα σήμερα.",
+  "todayPlansTitle": "Προγραμματισμένα γεύματα",
+  "todayPlansEmpty": "Δεν υπάρχει πλάνο γευμάτων για σήμερα.",
+  "comingSoonTitle": "Έρχεται σε επόμενη ενημέρωση",
+  "comingSoonBody": "Αυτή η φόρμα βρίσκεται υπό κατασκευή. Μπορείτε να παρακολουθείτε την πρόοδο στο αποθετήριο του έργου.",
+  "mealFormTitle": "Καταγραφή γεύματος",
+  "mealSearchLabel": "Αναζήτηση τροφίμου",
+  "mealTypeLabel": "Τύπος γεύματος",
+  "mealTypeBreakfast": "Πρωινό",
+  "mealTypeLunch": "Μεσημεριανό",
+  "mealTypeDinner": "Βραδινό",
+  "mealTypeSnack": "Σνακ",
+  "mealTypeCustom": "Προσαρμοσμένο",
+  "mealGramsLabel": "Ποσότητα (γρ.)",
+  "mealAddItem": "Προσθήκη τροφίμου",
+  "mealNoteLabel": "Σημείωση (προαιρετικό)",
+  "mealFavoriteToggle": "Σήμανση ως αγαπημένο",
+  "mealRepeatSection": "Γρήγορη επανάληψη",
+  "mealRepeatFavorites": "Αγαπημένα",
+  "mealRepeatRecent": "Πρόσφατα",
+  "mealSave": "Αποθήκευση γεύματος",
+  "mealItemsHeading": "Στοιχεία",
+  "mealSavedToast": "Το γεύμα αποθηκεύτηκε.",
+  "mealNeedsItem": "Προσθέστε πρώτα τουλάχιστον ένα τρόφιμο.",
+  "mealTotalsHeading": "Ημερήσια σύνολα",
+  "mealTotalsKcal": "Ενέργεια: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Καθαροί υδατάνθρακες: {value} γρ.",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Συνολικοί υδατάνθρακες: {value} γρ.",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Φυτικές ίνες: {value} γρ.",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Πρωτεΐνη: {value} γρ.",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Λιπαρά: {value} γρ.",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Γενικά καλή επιλογή",
+  "guideGroupLimit": "Ίσως χρειάζονται όρια στην ποσότητα ή τη συχνότητα",
+  "guideGroupAvoid": "Γενικά ασύμβατο με κετογονικούς στόχους",
+  "guideWhyHeading": "Γιατί;",
+  "guideTypicalPortion": "Τυπική μερίδα: {portion} (~{grams} γρ.)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Εναλλακτικές: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Πηγή δεδομένων: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Κρέας, ψάρι και αυγά",
+  "guideCardLowCarbVegetables": "Λαχανικά χαμηλών υδατανθράκων",
+  "guideCardFatsOils": "Λίπη και έλαια",
+  "guideCardNutsSeeds": "Ξηροί καρποί και σπόροι",
+  "guideCardBerries": "Μούρα",
+  "guideCardDairy": "Γαλακτοκομικά πλήρους λιπαρότητας",
+  "guideCardFruit": "Φρούτα",
+  "guideCardLegumes": "Όσπρια",
+  "guideCardMilkDrinks": "Γάλα και γλυκά ροφήματα",
+  "guideCardSugaryDrinks": "Ζαχαρούχα ποτά",
+  "guideCardStarches": "Ψωμί, ρύζι, πατάτα",
+  "guideCardSweets": "Γλυκά και επιδόρπια",
+  "logMealRelation": "Καταγράφηκε {hours} ώ. μετά το γεύμα ({mealType}) — μόνο χρονικό πλαίσιο, όχι επίδραση.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Δεν καταγράφηκε γεύμα στο παράθυρο ανάλυσης πριν από αυτή τη μέτρηση.",
+  "logRelationWindowLabel": "Παράθυρο σχέσης με γεύμα",
+  "logConfoundersHeading": "Τι άλλο μπορεί να επηρεάσει τις μετρήσεις;",
+  "mealTypeShortBreakfast": "πρωινό",
+  "mealTypeShortLunch": "μεσημεριανό",
+  "mealTypeShortDinner": "βραδινό",
+  "mealTypeShortSnack": "σνακ",
+  "mealTypeShortCustom": "γεύμα",
+  "recipePerServing": "{value} μερίδες",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Προετοιμασία: {value} λεπτά",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Αλλεργιογόνα: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Συστατικά",
+  "recipeGrams": "{value} γρ.",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Βήματα",
+  "recipeStorage": "Αποθήκευση: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Ερευνητικό εύρος που χρησιμοποιήθηκε σε μελέτη",
+  "goalLegendClinician": "Ο στόχος του γιατρού μου",
+  "goalLegendPersonal": "Ο προσωπικός μου στόχος παρακολούθησης",
+  "goalLegendPersonalNote": "Ένας προσωπικός στόχος παρακολούθησης δεν είναι ιατρικός στόχος.",
+  "weightValueLabel": "Βάρος ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Συνθήκη (προαιρετικό, π.χ. πρωί, μετά την προπόνηση)",
+  "weightSave": "Αποθήκευση βάρους",
+  "symptomFormTitle": "Καταγραφή συμπτώματος",
+  "symptomDefinitionLabel": "Σύμπτωμα",
+  "symptomSeverityLabel": "Σοβαρότητα: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Σημείωση (προαιρετικό)",
+  "symptomSave": "Αποθήκευση συμπτώματος",
+  "symptomSavedToast": "Το σύμπτωμα αποθηκεύτηκε.",
+  "symptomGuidance": "Σημειώσατε ένα σημαντικό σύμπτωμα. Αυτή η εφαρμογή δεν κάνει διάγνωση. Ακολουθήστε το δικό σας πλάνο υγείας και επικοινωνήστε με τις τοπικές υπηρεσίες έκτακτης ανάγκης αν αισθάνεστε αδιαθεσία ή τα συμπτώματα είναι σοβαρά.",
+  "symptomSeizureGuidance": "Καταγράψατε επεισόδιο επιληπτικής κρίσης. Αυτή η εφαρμογή δεν κάνει διάγνωση. Ακολουθήστε το πλάνο υγείας σας και επικοινωνήστε με τον επαγγελματία υγείας σας· καλέστε τις τοπικές υπηρεσίες έκτακτης ανάγκης αν είναι επείγον.",
+  "trendsRange7": "7 ημέρες",
+  "trendsRange30": "30 ημέρες",
+  "trendsRange90": "90 ημέρες",
+  "trendsSummary": "{count} μετρήσεις τις τελευταίες {days} ημέρες. Τελευταία: {latest}, μέσος όρος: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Δεν υπάρχουν δεδομένα σε αυτό το εύρος.",
+  "trendsExplainsTitle": "Τι σας λέει αυτό το γράφημα — και τι όχι",
+  "trendsExplainsBody": "Το γράφημα δείχνει τις δικές σας μετρήσεις στον χρόνο ως ακατέργαστα σημεία. Δεν διαγιγνώσκει, δεν προβλέπει και δεν αποδεικνύει αιτίες. Οι ημέρες που λείπουν εμφανίζονται ως κενά, όχι ως μηδενικά.",
+  "trendsWeightChart": "Βάρος (κιλά)",
+  "trendsBandsNote": "Τα ερευνητικά όρια είναι προαιρετικά και απενεργοποιημένα από προεπιλογή. Δείτε την καρτέλα Ημερολόγιο για να τα ενεργοποιήσετε.",
+  "evidenceDiseaseFilter": "Εμφάνιση έρευνας για συγκεκριμένες παθήσεις (από τις πηγές που επιλέγετε να διαβάσετε)",
+  "evidenceSectionTitle": "Επιστημονικές πηγές και άρθρα",
+  "guideCopyLink": "Αντιγραφή συνδέσμου πηγής",
+  "planTitle": "Εβδομαδιαίο πλάνο",
+  "planGenerateDraft": "Δημιουργία εβδομαδιαίου προσχεδίου",
+  "planDraftLockedNote": "Η αυτόματη δημιουργία πλάνου παραμένει απενεργοποιημένη: συζητήστε το πρώτα με έναν ειδικευμένο επαγγελματία υγείας.",
+  "planCreatedToast": "Το εβδομαδιαίο πλάνο δημιουργήθηκε.",
+  "planItemDay": "Ημέρα {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Δημιουργία λίστας αγορών από το πλάνο",
+  "shoppingTitle": "Λίστα αγορών",
+  "shoppingUndo": "Αναίρεση",
+  "shoppingAddManual": "Προσθήκη στοιχείου χειροκίνητα",
+  "shoppingCheckedToggle": "Επιλογή",
+  "shoppingEmpty": "Δεν υπάρχει ακόμη λίστα αγορών.",
+  "planEmpty": "Δεν υπάρχει ακόμη εβδομαδιαίο πλάνο. Δημιουργήστε προσχέδιο από τις συνταγές σας για να ξεκινήσετε.",
+  "aboutTitle": "Σχετικά",
+  "aboutSlogan": "Ιδιωτικό ημερολόγιο κετο",
+  "aboutVersion": "Έκδοση {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Ανοιχτός κώδικας",
+  "aboutOpenSourceBody": "Το N Keto Tracker είναι δωρεάν λογισμικό ανοιχτού κώδικα με άδεια GPL-3.0. Μπορείτε να ελέγξετε, να τροποποιήσετε και να αναδιανείμετε τον κώδικα με την ίδια άδεια.",
+  "aboutPrivacyHeading": "Απόρρητο",
+  "aboutPrivacyBody": "Τα δεδομένα υγείας σας μένουν σε αυτή τη συσκευή. Χωρίς λογαριασμό, χωρίς αναλύσεις.",
+  "aboutDisclaimerHeading": "Αποποίηση ευθύνης",
+  "aboutDisclaimerBody": "Αυτή η εφαρμογή προορίζεται για γενική ενημέρωση και προσωπική παρακολούθηση. Δεν αποτελεί ιατρική συμβουλή, διάγνωση ή θεραπεία.",
+  "aboutLicensesButton": "Άδειες",
+  "aboutShareButton": "Κοινοποίηση της εφαρμογής",
+  "aboutOtherAppsButton": "Άλλες εφαρμογές",
+  "aboutCopiedToast": "Αντιγράφηκε στο πρόχειρο.",
+  "licensesTitle": "Άδειες",
+  "otherAppsTitle": "Άλλες εφαρμογές",
+  "otherAppsEmpty": "Δεν υπάρχουν ακόμη άλλες εφαρμογές στη λίστα.",
+  "otherAppsCopyLink": "Αντιγραφή συνδέσμου καταστήματος",
+  "settingsTitle": "Ρυθμίσεις",
+  "aboutShareText": "Ιδιωτικό ημερολόγιο κετο με παρακολούθηση γλυκόζης, κετονών και GKI. Ανοιχτός κώδικας, χωρίς λογαριασμό.",
+  "dataManagementTitle": "Διαχείριση δεδομένων",
+  "dataExportJson": "Εξαγωγή δεδομένων (JSON)",
+  "dataExportCsv": "Εξαγωγή μετρήσεων (CSV)",
+  "dataImportLabel": "Επικολλήστε εδώ το JSON που εξαγάγατε",
+  "dataImportButton": "Εισαγωγή δεδομένων",
+  "dataImportSuccess": "Εισήχθησαν {glucose} εγγραφές γλυκόζης και {weight} εγγραφές βάρους.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Η εισαγωγή απέτυχε: το αρχείο δεν είναι έγκυρο ή δεν υποστηρίζεται.",
+  "dataDeleteAll": "Διαγραφή όλων των δεδομένων μου",
+  "dataDeleteConfirm1": "Διαγραφή ΟΛΩΝ των δεδομένων; Περιλαμβάνει μετρήσεις, γεύματα, πλάνα και ρυθμίσεις. Δεν αναιρείται.",
+  "dataDeleteConfirm2": "Είστε απολύτως σίγουροι; Πληκτρολογήστε DELETE για επιβεβαίωση.",
+  "dataDeleteTypeDelete": "Πληκτρολογήστε DELETE",
+  "dataDeleteDone": "Όλα τα δεδομένα διαγράφηκαν ({count} εγγραφές).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Το αρχείο εξαγωγής είναι έτοιμο — επιλέξτε πού θα αποθηκευτεί.",
+  "settingsAppearance": "Εμφάνιση",
+  "themeSystem": "Σύστημα",
+  "themeLight": "Φωτεινό",
+  "themeDark": "Σκούρο",
+  "settingsLanguage": "Γλώσσα",
+  "settingsMore": "Περισσότερα"
+}

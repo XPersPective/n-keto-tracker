@@ -1,0 +1,452 @@
+{
+  "@@locale": "eu",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Gaur",
+  "navLog": "Erregistroa",
+  "navPlan": "Plana",
+  "navTrends": "Joerak",
+  "navGuide": "Gida",
+  "pageUnderConstruction": "Pantaila hau eraikitzen ari da.",
+  "generalInfoDisclaimer": "Informazio orokorrerako soilik; ez da aholku medikoa.",
+  "onboardingLanguageTitle": "Aukeratu zure hizkuntza",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Zure datuak zure gailuan geratzen dira",
+  "onboardingPrivacyBody": "N Keto Trackerrek zure neurketak, otorduak eta oharrak aplikazio honetan gordetzen ditu soilik, zure gailuan. Ez dago konturik, eta zure osasun-datuak ez dira inora bidaltzen. Aplikazioa ezabatzen baduzu, zure datuak ere ezabatzen dira; segurtasun-kopia noiznahi esporta dezakezu.",
+  "onboardingMedicalTitle": "Ez da aholku medikoa",
+  "onboardingMedicalBody": "Aplikazio hau informazio orokorrerako eta jarraipen pertsonalerako da. Ez da aholku medikoa, diagnostikoa edo tratamendua, eta ez ditu osasun-profesional kualifikatuen zainketak ordezkatzen.",
+  "onboardingPurposeTitle": "Zer jarraitu nahi duzu?",
+  "onboardingPurposeLearn": "Elikadura ketogenikoari buruz ikasi",
+  "onboardingPurposeMeals": "Otorduak planifikatu",
+  "onboardingPurposeMacros": "Makroak eta karbohidrato garbiak jarraitu",
+  "onboardingPurposeMeasure": "Glukosa, zetonak eta GKI jarraitu",
+  "onboardingProfileTitle": "Zuri buruz (aukerakoa)",
+  "onboardingProfileBody": "Hau saltatu eta geroago ezarpenetan gehi dezakezu. Energia-estimazio orokor baterako soilik erabiltzen da.",
+  "onboardingBirthYear": "Jaiotza-urtea",
+  "onboardingHeightCm": "Altuera (cm)",
+  "onboardingWeightKg": "Pisua (kg)",
+  "onboardingEnergyCoeffTitle": "Energia-estimazioaren koefizientea",
+  "onboardingEnergyCoeffBody": "Energia-estimazio orokorrak argitaratutako bi koefizienteetako bat erabiltzen du. Ez dago zure genero-identitatearekin lotuta — ekuazioaren zein bertsio datorren zuri hobeto adierazten du soilik. Energia-estimazioak guztiz saltatu ere ditzakezu.",
+  "onboardingEnergyCoeffSkip": "Saltatu energia-estimazioak",
+  "onboardingScreeningTitle": "Segurtasun-galdera batzuk",
+  "onboardingScreeningBody": "Galdera hauek ez dute ezer diagnostikatzen. Kontu gehiago behar denean plan eta helburu automatikoen iradokizunak desaktibatzen dituzte soilik.",
+  "onboardingScreeningDiabetes": "Diabetesa dut",
+  "onboardingScreeningMedication": "Glukosa jaisten duten sendagaiak edo intsulina erabiltzen ditut",
+  "onboardingScreeningPregnancy": "Haurdun nago edo edoskitzen ari naiz",
+  "onboardingScreeningOrgan": "Giltzurruneko, gibeleko edo pankreako gaixotasuna dut",
+  "onboardingScreeningEatingDisorder": "Elikadura-nahasmenduaren aurrekariak ditut",
+  "onboardingScreeningWeightLoss": "Nahi gabeko pisu-galera handia izan dut",
+  "onboardingScreeningUnder18": "18 urte baino gutxiago ditut",
+  "onboardingScreeningLockedNote": "Zure erantzunengatik, plan eta helburuen sorkuntza automatikoa desaktibatuta geratzen da. Erregistratzeko eta ikasteko funtzioak erabilgarri jarraitzen dute. Kontsultatu hau osasun-profesional kualifikatu batekin.",
+  "onboardingDataTitle": "Zure datuak",
+  "onboardingDataBody": "Zure erregistroak gailu honetan soilik geratzen dira. Aplikazioa galtzen edo desinstalatzen baduzu segurtasun-kopiarik esportatu gabe, datuak ezin dira berreskuratu.",
+  "onboardingConsentTitle": "Baimena",
+  "onboardingConsentBody": "Pribatutasun-laburpena eta aplikazio hau aholku medikoa ez dela dioen oharra irakurri ditut eta onartzen ditut. Ulertzen dut nire datuak gailu honetan soilik geratzen direla.",
+  "onboardingConsentCheckbox": "Onartzen dut",
+  "onboardingNext": "Hurrengoa",
+  "onboardingBack": "Atzera",
+  "onboardingFinish": "Hasi aplikazioa erabiltzen",
+  "onboardingStepOf": "{current}. urratsa / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukosa ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Odol-zetona BHB (mmol/L)",
+  "formSourceType": "Iturri mota",
+  "formNote": "Oharra (aukerakoa)",
+  "formPickTime": "Neurketaren ordua",
+  "formSaveSession": "Gorde neurketa-saioa",
+  "formInvalidValue": "Sartu zenbaki positibo baliodun bat.",
+  "gkiResultHeading": "Zure GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Neurtua: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Kalkuluaren bertsioa: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Oraindik ez dago neurketarik",
+  "logEmptyBody": "Gehitu zure lehen glukosa- eta zeton-irakurketa hemen ikusteko.",
+  "logBandsToggle": "Erakutsi irakurritako artikuluko ikerketa-tarteak",
+  "bandsDisclaimer": "Tarte hauek ez dira ohiko tarte klinikoak ezta frogatutako tratamendu-helburuak ere. Ikerketa-esparru zehatz batetik hartutako iradokizun adierazgarriak dira, ez preskriptiboak. GKIk bakarrik ez du osasuna, gaixotasunaren erantzuna edo segurtasuna erakusten. Sakatu iturria ikusteko.",
+  "logBandOptimal": "Iradokitako ikerketa-tarte optimoa (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Iradokitako ikerketa-tarte terapeutikoa (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Iradokitako ≤ 2.0 ikerketa-tartetik kanpo",
+  "logMatchSimultaneous": "aldi berean",
+  "logMatchApproximate": "gutxi gorabeherako parekatzea",
+  "logTimelineHeading": "Denbora-lerroa",
+  "logChartsHeading": "Grafikoak",
+  "logGlucoseChart": "Glukosa (mmol/L)",
+  "logBhbChart": "Zetona BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopiatu iturriaren esteka",
+  "todayQuickActions": "Ekintza bizkorrak",
+  "todayAddMeasurement": "Gehitu neurketa",
+  "todayAddMeal": "Gehitu otordua",
+  "todayAddWeight": "Gehitu pisua",
+  "todayAddSymptom": "Gehitu sintoma",
+  "todayLatestTitle": "Azken neurketak",
+  "todayLatestEmpty": "Oraindik ez dago neurketarik. Erabili «Gehitu neurketa» glukosa eta zeton BHB batera erregistratzeko.",
+  "todayNutritionTitle": "Gaurko elikadura",
+  "todayNutritionEmpty": "Gaur ez da otordurik erregistratu. Otorduak Plana fitxatik erregistratzen dira.",
+  "todayWeightTitle": "Pisua",
+  "todayWeightEmpty": "Oraindik ez dago pisu-sarrerarik.",
+  "todaySymptomsTitle": "Gaurko sintomak",
+  "todaySymptomsEmpty": "Gaur ez da sintomarik erregistratu.",
+  "todayPlansTitle": "Planifikatutako otorduak",
+  "todayPlansEmpty": "Gaurko otordu-planik ez dago.",
+  "comingSoonTitle": "Hurrengo eguneratze batean etorriko da",
+  "comingSoonBody": "Sarrera-inprimaki hau eraikitzen ari da. Aurrerapena proiektuaren biltegian jarrai dezakezu.",
+  "mealFormTitle": "Erregistratu otordu bat",
+  "mealSearchLabel": "Bilatu janaria",
+  "mealTypeLabel": "Otordu mota",
+  "mealTypeBreakfast": "Gosaria",
+  "mealTypeLunch": "Bazkaria",
+  "mealTypeDinner": "Afaria",
+  "mealTypeSnack": "Askaria",
+  "mealTypeCustom": "Pertsonalizatua",
+  "mealGramsLabel": "Kantitatea (g)",
+  "mealAddItem": "Gehitu janaria",
+  "mealNoteLabel": "Oharra (aukerakoa)",
+  "mealFavoriteToggle": "Markatu gogoko gisa",
+  "mealRepeatSection": "Errepikapen azkarra",
+  "mealRepeatFavorites": "Gogokoak",
+  "mealRepeatRecent": "Azkenak",
+  "mealSave": "Gorde otordua",
+  "mealItemsHeading": "Elementuak",
+  "mealSavedToast": "Otordua gorde da.",
+  "mealNeedsItem": "Gehitu lehenik gutxienez janari bat.",
+  "mealTotalsHeading": "Eguneko guztizkoak",
+  "mealTotalsKcal": "Energia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Karbohidrato garbiak: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Karbohidrato guztiak: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Zuntza: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteina: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Gantza: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Orokorrean aukera ona",
+  "guideGroupLimit": "Zatiaren edo maiztasunaren mugak behar ditzake",
+  "guideGroupAvoid": "Orokorrean ez dator bat helburu ketogenikoekin",
+  "guideWhyHeading": "Zergatik?",
+  "guideTypicalPortion": "Ohiko zatia: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatibak: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Datuen iturria: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Haragia, arraina eta arrautzak",
+  "guideCardLowCarbVegetables": "Karbohidrato gutxiko barazkiak",
+  "guideCardFatsOils": "Gantzak eta olioak",
+  "guideCardNutsSeeds": "Fruitu lehorrak eta haziak",
+  "guideCardBerries": "Baia-fruituak",
+  "guideCardDairy": "Esnekiak (gantz osoa)",
+  "guideCardFruit": "Fruituak",
+  "guideCardLegumes": "Lekaleak",
+  "guideCardMilkDrinks": "Esnea eta edari goxoak",
+  "guideCardSugaryDrinks": "Azukredun edariak",
+  "guideCardStarches": "Ogia, arroza, patata",
+  "guideCardSweets": "Gozokiak eta postreak",
+  "logMealRelation": "{hours} h geroago erregistratua, {mealType} otorduaren ondoren — denbora-testuingurua soilik, ez efektu bat.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Ez da otordurik erregistratu irakurketa honen aurreko analisi-leihoan.",
+  "logRelationWindowLabel": "Otorduarekiko erlazio-leihoa",
+  "logConfoundersHeading": "Zerk eragin dezake gehiago irakurketetan?",
+  "mealTypeShortBreakfast": "gosaria",
+  "mealTypeShortLunch": "bazkaria",
+  "mealTypeShortDinner": "afaria",
+  "mealTypeShortSnack": "askaria",
+  "mealTypeShortCustom": "otordua",
+  "recipePerServing": "{value} zati",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Prestaketa: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergenoak: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Osagaiak",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Urratsak",
+  "recipeStorage": "Kontserbazioa: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Ikerketa batean erabilitako tartea",
+  "goalLegendClinician": "Nire medikuaren helburua",
+  "goalLegendPersonal": "Nire jarraipen-helburu pertsonala",
+  "goalLegendPersonalNote": "Jarraipen-helburu pertsonala ez da helburu medikoa.",
+  "weightValueLabel": "Pisua ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Baldintza (aukerakoa, adib. goizean, entrenamenduaren ondoren)",
+  "weightSave": "Gorde pisua",
+  "symptomFormTitle": "Erregistratu sintoma bat",
+  "symptomDefinitionLabel": "Sintoma",
+  "symptomSeverityLabel": "Larritasuna: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Oharra (aukerakoa)",
+  "symptomSave": "Gorde sintoma",
+  "symptomSavedToast": "Sintoma gorde da.",
+  "symptomGuidance": "Sintoma esanguratsu bat markatu duzu. Aplikazio honek ez du diagnostikorik egiten. Jarraitu zure osasun-planari eta jarri harremanetan tokiko larrialdi-zerbitzuekin gaizki sentitzen bazara edo sintomak larriak badira.",
+  "symptomSeizureGuidance": "Krisi bat erregistratu duzu. Aplikazio honek ez du diagnostikorik egiten. Jarraitu zure osasun-planari eta jarri harremanetan zure osasun-profesionalarekin; deitu tokiko larrialdi-zerbitzuei premiazkoa bada.",
+  "trendsRange7": "7 egun",
+  "trendsRange30": "30 egun",
+  "trendsRange90": "90 egun",
+  "trendsSummary": "{count} irakurketa azken {days} egunetan. Azkena: {latest}, batez bestekoa: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Ez dago daturik tarte honetan.",
+  "trendsExplainsTitle": "Grafiko honek zer esaten dizun — eta zer ez",
+  "trendsExplainsBody": "Grafikoak zure irakurketak denboran zehar erakusten ditu puntu gordin gisa. Ez du diagnostikatzen, ez du aurreikusten eta ez ditu kausak frogatzen. Falta diren egunak hutsune gisa ageri dira, ez zero gisa.",
+  "trendsWeightChart": "Pisua (kg)",
+  "trendsBandsNote": "Ikerketa-tarteak aukerakoak dira eta lehenespenez desaktibatuta daude. Aktibatzeko ikusi Erregistroa fitxa.",
+  "evidenceDiseaseFilter": "Erakutsi gaixotasun zehatzen ikerketa (irakurtzea aukeratzen dituzun iturrietatik)",
+  "evidenceSectionTitle": "Iturri eta artikulu zientifikoak",
+  "guideCopyLink": "Kopiatu iturriaren esteka",
+  "planTitle": "Asteko plana",
+  "planGenerateDraft": "Sortu asteko zirriborroa",
+  "planDraftLockedNote": "Plan automatikoaren sorkuntza desaktibatuta geratzen da: kontsultatu lehenik osasun-profesional kualifikatu batekin.",
+  "planCreatedToast": "Asteko plana sortu da.",
+  "planItemDay": "{day}. eguna",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Sortu erosketa-zerrenda planetik",
+  "shoppingTitle": "Erosketa-zerrenda",
+  "shoppingUndo": "Desegin",
+  "shoppingAddManual": "Gehitu elementua eskuz",
+  "shoppingCheckedToggle": "Markatu",
+  "shoppingEmpty": "Oraindik ez dago erosketa-zerrendarik.",
+  "planEmpty": "Oraindik ez dago asteko planik. Hasteko, sortu zirriborro bat zure errezetetatik.",
+  "aboutTitle": "Honi buruz",
+  "aboutSlogan": "Keto egunkari pribatua",
+  "aboutVersion": "{value} bertsioa",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Iturburu irekia",
+  "aboutOpenSourceBody": "N Keto Tracker doako iturburu irekiko softwarea da, GPL-3.0 lizentziapean. Kodea lizentzia berberarekin aztertu, aldatu eta birbanatu dezakezu.",
+  "aboutPrivacyHeading": "Pribatutasuna",
+  "aboutPrivacyBody": "Zure osasun-datuak gailu honetan geratzen dira. Konturik gabe, analitikarik gabe.",
+  "aboutDisclaimerHeading": "Erantzukizun-mugaketa",
+  "aboutDisclaimerBody": "Aplikazio hau informazio orokorrerako eta jarraipen pertsonalerako da. Ez da aholku medikoa, diagnostikoa edo tratamendua.",
+  "aboutLicensesButton": "Lizentziak",
+  "aboutShareButton": "Partekatu aplikazio hau",
+  "aboutOtherAppsButton": "Beste aplikazioak",
+  "aboutCopiedToast": "Arbelera kopiatu da.",
+  "licensesTitle": "Lizentziak",
+  "otherAppsTitle": "Beste aplikazioak",
+  "otherAppsEmpty": "Oraindik ez dago beste aplikaziorik zerrendatuta.",
+  "otherAppsCopyLink": "Kopiatu dendaren esteka",
+  "settingsTitle": "Ezarpenak",
+  "aboutShareText": "Keto egunkari pribatua, glukosa, zeton eta GKI jarraipenarekin. Iturburu irekia, konturik behar gabe.",
+  "dataManagementTitle": "Datuen kudeaketa",
+  "dataExportJson": "Esportatu datuak (JSON)",
+  "dataExportCsv": "Esportatu neurketak (CSV)",
+  "dataImportLabel": "Itsatsi hemen esportatutako JSONa",
+  "dataImportButton": "Inportatu datuak",
+  "dataImportSuccess": "{glucose} glukosa-erregistro eta {weight} pisu-erregistro inportatu dira.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Inportazioak huts egin du: fitxategia baliogabea edo onartu gabea da.",
+  "dataDeleteAll": "Ezabatu nire datu guztiak",
+  "dataDeleteConfirm1": "DATU GUZTIAK ezabatu? Neurketak, otorduak, planak eta ezarpenak barne. Ezin da desegin.",
+  "dataDeleteConfirm2": "Benetan ziur zaude? Idatzi DELETE berresteko.",
+  "dataDeleteTypeDelete": "Idatzi DELETE",
+  "dataDeleteDone": "Datu guztiak ezabatu dira ({count} erregistro).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Esportazio-fitxategia prest dago — aukeratu non gorde.",
+  "settingsAppearance": "Itxura",
+  "themeSystem": "Sistema",
+  "themeLight": "Argia",
+  "themeDark": "Iluna",
+  "settingsLanguage": "Hizkuntza",
+  "settingsMore": "Gehiago"
+}

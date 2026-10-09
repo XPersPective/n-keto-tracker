@@ -1,0 +1,452 @@
+{
+  "@@locale": "ur",
+  "appTitle": "N Keto Tracker",
+  "navToday": "آج",
+  "navLog": "لاگ",
+  "navPlan": "منصوبہ",
+  "navTrends": "رجحانات",
+  "navGuide": "گائیڈ",
+  "pageUnderConstruction": "یہ اسکرین تیار کی جا رہی ہے۔",
+  "generalInfoDisclaimer": "صرف عمومی معلومات کے لیے؛ طبی مشورہ نہیں۔",
+  "onboardingLanguageTitle": "اپنی زبان منتخب کریں",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "آپ کا ڈیٹا آپ کی ڈیوائس پر ہی رہتا ہے",
+  "onboardingPrivacyBody": "N Keto Tracker آپ کی پیمائشیں، کھانے اور نوٹس صرف آپ کی ڈیوائس پر اسی ایپ میں رکھتا ہے۔ کوئی اکاؤنٹ نہیں ہے، اور آپ کا صحت کا ڈیٹا کہیں نہیں بھیجا جاتا۔ ایپ حذف کرنے سے آپ کا ڈیٹا بھی حذف ہو جاتا ہے؛ آپ کسی بھی وقت بیک اپ ایکسپورٹ کر سکتے ہیں۔",
+  "onboardingMedicalTitle": "طبی مشورہ نہیں",
+  "onboardingMedicalBody": "یہ ایپ عمومی معلومات اور ذاتی ٹریکنگ کے لیے ہے۔ یہ طبی مشورہ، تشخیص یا علاج نہیں ہے اور اہل ماہرینِ صحت کی دیکھ بھال کا متبادل نہیں۔",
+  "onboardingPurposeTitle": "آپ کیا ٹریک کرنا چاہتے ہیں؟",
+  "onboardingPurposeLearn": "کیٹوجینک غذائیت کے بارے میں سیکھیں",
+  "onboardingPurposeMeals": "کھانوں کی منصوبہ بندی کریں",
+  "onboardingPurposeMacros": "میکروز اور نیٹ کارب ٹریک کریں",
+  "onboardingPurposeMeasure": "گلوکوز، کیٹونز اور GKI ٹریک کریں",
+  "onboardingProfileTitle": "آپ کے بارے میں (اختیاری)",
+  "onboardingProfileBody": "آپ اسے چھوڑ کر بعد میں سیٹنگز میں شامل کر سکتے ہیں۔ یہ صرف عمومی توانائی کے اندازے کے لیے استعمال ہوتا ہے۔",
+  "onboardingBirthYear": "سالِ پیدائش",
+  "onboardingHeightCm": "قد (سینٹی میٹر)",
+  "onboardingWeightKg": "وزن (کلوگرام)",
+  "onboardingEnergyCoeffTitle": "توانائی کے اندازے کا عددی سر",
+  "onboardingEnergyCoeffBody": "عمومی توانائی کا اندازہ شائع شدہ دو عددی سروں میں سے ایک استعمال کرتا ہے۔ اس کا آپ کی صنفی شناخت سے کوئی تعلق نہیں — بس یہ ہے کہ مساوات کا کون سا ورژن آپ کے لیے سب سے مناسب ہے۔ آپ توانائی کے اندازے مکمل طور پر چھوڑ بھی سکتے ہیں۔",
+  "onboardingEnergyCoeffSkip": "توانائی کے اندازے چھوڑیں",
+  "onboardingScreeningTitle": "حفاظت سے متعلق چند سوالات",
+  "onboardingScreeningBody": "یہ سوالات کچھ بھی تشخیص نہیں کرتے۔ یہ صرف اضافی احتیاط کی ضرورت ہونے پر خودکار منصوبے اور ہدف کی تجاویز بند کرتے ہیں۔",
+  "onboardingScreeningDiabetes": "ذیابیطس ہے",
+  "onboardingScreeningMedication": "گلوکوز کم کرنے والی دوا یا انسولین استعمال کرتا/کرتی ہوں",
+  "onboardingScreeningPregnancy": "حاملہ ہوں یا دودھ پلاتی ہوں",
+  "onboardingScreeningOrgan": "گردے، جگر یا لبلبے کی بیماری ہے",
+  "onboardingScreeningEatingDisorder": "کھانے کے عارضے کی تاریخ ہے",
+  "onboardingScreeningWeightLoss": "غیر ارادی طور پر نمایاں وزن کم ہوا ہے",
+  "onboardingScreeningUnder18": "عمر 18 سال سے کم ہے",
+  "onboardingScreeningLockedNote": "آپ کے جوابات کی وجہ سے خودکار منصوبہ اور ہدف بنانا بند رہے گا۔ ریکارڈ اور سیکھنے کی سہولتیں دستیاب رہیں گی۔ براہِ کرم اسے کسی اہل ماہرِ صحت کے ساتھ دیکھ لیں۔",
+  "onboardingDataTitle": "آپ کا ڈیٹا",
+  "onboardingDataBody": "آپ کے ریکارڈ صرف اسی ڈیوائس پر رہتے ہیں۔ بیک اپ ایکسپورٹ کیے بغیر ایپ کھونے یا ان انسٹال کرنے پر ڈیٹا بحال نہیں ہو سکتا۔",
+  "onboardingConsentTitle": "رضامندی",
+  "onboardingConsentBody": "میں نے رازداری کا خلاصہ اور یہ نوٹس پڑھ لیا ہے کہ یہ ایپ طبی مشورہ نہیں ہے، اور میں انہیں قبول کرتا/کرتی ہوں۔ میں سمجھتا/سمجھتی ہوں کہ میرا ڈیٹا صرف اسی ڈیوائس پر رہتا ہے۔",
+  "onboardingConsentCheckbox": "میں قبول کرتا/کرتی ہوں",
+  "onboardingNext": "اگلا",
+  "onboardingBack": "واپس",
+  "onboardingFinish": "ایپ کا استعمال شروع کریں",
+  "onboardingStepOf": "مرحلہ {current} از {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "گلوکوز ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "خون کا کیٹون BHB (mmol/L)",
+  "formSourceType": "ماخذ کی قسم",
+  "formNote": "نوٹ (اختیاری)",
+  "formPickTime": "پیمائش کا وقت",
+  "formSaveSession": "پیمائش سیشن محفوظ کریں",
+  "formInvalidValue": "براہِ کرم درست مثبت عدد درج کریں۔",
+  "gkiResultHeading": "آپ کا GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "پیمائش کا وقت: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "حساب کا ورژن: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ابھی کوئی پیمائش نہیں",
+  "logEmptyBody": "یہاں دیکھنے کے لیے اپنی پہلی گلوکوز اور کیٹون ریڈنگ شامل کریں۔",
+  "logBandsToggle": "آپ کے پڑھے ہوئے مضمون کی تحقیقی حدود دکھائیں",
+  "bandsDisclaimer": "یہ حدود طبی معمول کی حدیں یا ثابت شدہ علاج کے اہداف نہیں ہیں۔ یہ کسی مخصوص تحقیقی فریم ورک سے نمائندہ، غیر تجویزی تجاویز ہیں۔ صرف GKI صحت، بیماری کے ردعمل یا حفاظت کو ظاہر نہیں کرتا۔ ماخذ دیکھنے کے لیے ٹیپ کریں۔",
+  "logBandOptimal": "تجویز کردہ بہترین تحقیقی حد (GKI ≤ 1.0)",
+  "logBandTherapeutic": "تجویز کردہ علاجی تحقیقی حد (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "تجویز کردہ ≤ 2.0 تحقیقی حد سے باہر",
+  "logMatchSimultaneous": "بیک وقت",
+  "logMatchApproximate": "تخمینی مطابقت",
+  "logTimelineHeading": "ٹائم لائن",
+  "logChartsHeading": "چارٹس",
+  "logGlucoseChart": "گلوکوز (mmol/L)",
+  "logBhbChart": "کیٹون BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ماخذ کا لنک کاپی کریں",
+  "todayQuickActions": "فوری اقدامات",
+  "todayAddMeasurement": "پیمائش شامل کریں",
+  "todayAddMeal": "کھانا شامل کریں",
+  "todayAddWeight": "وزن شامل کریں",
+  "todayAddSymptom": "علامت شامل کریں",
+  "todayLatestTitle": "تازہ ترین پیمائشیں",
+  "todayLatestEmpty": "ابھی کوئی پیمائش نہیں۔ گلوکوز اور کیٹون BHB ایک ساتھ درج کرنے کے لیے 'پیمائش شامل کریں' استعمال کریں۔",
+  "todayNutritionTitle": "آج کی غذائیت",
+  "todayNutritionEmpty": "آج کوئی کھانا درج نہیں ہوا۔ کھانے منصوبہ ٹیب سے لاگ ہوتے ہیں۔",
+  "todayWeightTitle": "وزن",
+  "todayWeightEmpty": "ابھی وزن کی کوئی اندراج نہیں۔",
+  "todaySymptomsTitle": "آج کی علامات",
+  "todaySymptomsEmpty": "آج کوئی علامت درج نہیں ہوئی۔",
+  "todayPlansTitle": "منصوبہ بند کھانے",
+  "todayPlansEmpty": "آج کے لیے کھانوں کا کوئی منصوبہ نہیں۔",
+  "comingSoonTitle": "آنے والی اپ ڈیٹ میں آ رہا ہے",
+  "comingSoonBody": "یہ اندراج فارم تیار کیا جا رہا ہے۔ آپ پروجیکٹ ریپوزٹری میں پیش رفت دیکھ سکتے ہیں۔",
+  "mealFormTitle": "کھانا لاگ کریں",
+  "mealSearchLabel": "کھانا تلاش کریں",
+  "mealTypeLabel": "کھانے کی قسم",
+  "mealTypeBreakfast": "ناشتہ",
+  "mealTypeLunch": "دوپہر کا کھانا",
+  "mealTypeDinner": "رات کا کھانا",
+  "mealTypeSnack": "ہلکا ناشتہ",
+  "mealTypeCustom": "حسبِ ضرورت",
+  "mealGramsLabel": "مقدار (گرام)",
+  "mealAddItem": "کھانا شامل کریں",
+  "mealNoteLabel": "نوٹ (اختیاری)",
+  "mealFavoriteToggle": "پسندیدہ کے طور پر نشان زد کریں",
+  "mealRepeatSection": "فوری تکرار",
+  "mealRepeatFavorites": "پسندیدہ",
+  "mealRepeatRecent": "حالیہ",
+  "mealSave": "کھانا محفوظ کریں",
+  "mealItemsHeading": "اشیا",
+  "mealSavedToast": "کھانا محفوظ ہو گیا۔",
+  "mealNeedsItem": "پہلے کم از کم ایک کھانا شامل کریں۔",
+  "mealTotalsHeading": "روزانہ کا مجموعہ",
+  "mealTotalsKcal": "توانائی: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "نیٹ کارب: {value} گرام",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "کل کارب: {value} گرام",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "فائبر: {value} گرام",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "پروٹین: {value} گرام",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "چکنائی: {value} گرام",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "عموماً اچھا انتخاب",
+  "guideGroupLimit": "مقدار یا تعدد کی حد درکار ہو سکتی ہے",
+  "guideGroupAvoid": "عموماً کیٹوجینک اہداف سے مطابقت نہیں رکھتا",
+  "guideWhyHeading": "کیوں؟",
+  "guideTypicalPortion": "عام مقدار: {portion} (~{grams} گرام)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "متبادل: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ڈیٹا کا ماخذ: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "گوشت، مچھلی اور انڈے",
+  "guideCardLowCarbVegetables": "کم کارب سبزیاں",
+  "guideCardFatsOils": "چکنائیاں اور تیل",
+  "guideCardNutsSeeds": "گری دار میوے اور بیج",
+  "guideCardBerries": "بیریز",
+  "guideCardDairy": "مکمل چکنائی والی ڈیری",
+  "guideCardFruit": "پھل",
+  "guideCardLegumes": "دالیں",
+  "guideCardMilkDrinks": "دودھ اور میٹھے مشروبات",
+  "guideCardSugaryDrinks": "شکر والے مشروبات",
+  "guideCardStarches": "روٹی، چاول، آلو",
+  "guideCardSweets": "مٹھائیاں اور میٹھے پکوان",
+  "logMealRelation": "{mealType} کے {hours} گھنٹے بعد درج — صرف وقت کا سیاق، اثر نہیں۔",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "اس ریڈنگ سے پہلے تجزیے کی کھڑکی میں کوئی کھانا درج نہیں۔",
+  "logRelationWindowLabel": "کھانے سے تعلق کی کھڑکی",
+  "logConfoundersHeading": "ریڈنگز کو اور کیا متاثر کر سکتا ہے؟",
+  "mealTypeShortBreakfast": "ناشتہ",
+  "mealTypeShortLunch": "دوپہر کا کھانا",
+  "mealTypeShortDinner": "رات کا کھانا",
+  "mealTypeShortSnack": "ہلکا ناشتہ",
+  "mealTypeShortCustom": "کھانا",
+  "recipePerServing": "{value} سرونگ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "تیاری: {value} منٹ",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "الرجن: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "اجزاء",
+  "recipeGrams": "{value} گرام",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "مراحل",
+  "recipeStorage": "ذخیرہ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ایک مطالعے میں استعمال شدہ تحقیقی حد",
+  "goalLegendClinician": "میرے ڈاکٹر کا ہدف",
+  "goalLegendPersonal": "میرا ذاتی ٹریکنگ ہدف",
+  "goalLegendPersonalNote": "ذاتی ٹریکنگ ہدف طبی ہدف نہیں ہے۔",
+  "weightValueLabel": "وزن ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "حالت (اختیاری، مثلاً صبح، ورزش کے بعد)",
+  "weightSave": "وزن محفوظ کریں",
+  "symptomFormTitle": "علامت لاگ کریں",
+  "symptomDefinitionLabel": "علامت",
+  "symptomSeverityLabel": "شدت: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "نوٹ (اختیاری)",
+  "symptomSave": "علامت محفوظ کریں",
+  "symptomSavedToast": "علامت محفوظ ہو گئی۔",
+  "symptomGuidance": "آپ نے ایک اہم علامت نشان زد کی ہے۔ یہ ایپ تشخیص نہیں کرتی۔ اپنے صحت کے منصوبے پر عمل کریں، اور اگر آپ کو طبیعت خراب لگے یا علامات شدید ہوں تو مقامی ایمرجنسی سروسز سے رابطہ کریں۔",
+  "symptomSeizureGuidance": "آپ نے دورے کا واقعہ درج کیا ہے۔ یہ ایپ تشخیص نہیں کرتی۔ براہِ کرم اپنے صحت کے منصوبے پر عمل کریں اور اپنے ماہرِ صحت سے رابطہ کریں؛ فوری ہو تو مقامی ایمرجنسی سروسز کو کال کریں۔",
+  "trendsRange7": "7 دن",
+  "trendsRange30": "30 دن",
+  "trendsRange90": "90 دن",
+  "trendsSummary": "پچھلے {days} دنوں میں {count} ریڈنگز۔ تازہ ترین: {latest}، اوسط: {average}۔",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "اس حد میں کوئی ڈیٹا نہیں۔",
+  "trendsExplainsTitle": "یہ چارٹ کیا بتاتا ہے — اور کیا نہیں",
+  "trendsExplainsBody": "چارٹ آپ کی اپنی ریڈنگز کو وقت کے ساتھ کچے نقطوں کے طور پر دکھاتا ہے۔ یہ تشخیص نہیں کرتا، پیش گوئی نہیں کرتا اور اسباب ثابت نہیں کرتا۔ غائب دن صفر کے بجائے خالی جگہ کے طور پر نظر آتے ہیں۔",
+  "trendsWeightChart": "وزن (کلوگرام)",
+  "trendsBandsNote": "تحقیقی حدیں اختیاری ہیں اور بطورِ طے شدہ بند ہیں۔ فعال کرنے کے لیے لاگ ٹیب دیکھیں۔",
+  "evidenceDiseaseFilter": "بیماری سے مخصوص تحقیق دکھائیں (آپ کے پڑھنے کے لیے چنے گئے ماخذ سے)",
+  "evidenceSectionTitle": "سائنسی ماخذ اور مضامین",
+  "guideCopyLink": "ماخذ کا لنک کاپی کریں",
+  "planTitle": "ہفتہ وار منصوبہ",
+  "planGenerateDraft": "ہفتہ وار مسودہ بنائیں",
+  "planDraftLockedNote": "خودکار منصوبہ سازی بند رہے گی: براہِ کرم پہلے کسی اہل ماہرِ صحت کے ساتھ دیکھ لیں۔",
+  "planCreatedToast": "ہفتہ وار منصوبہ بن گیا۔",
+  "planItemDay": "دن {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "منصوبے سے خریداری کی فہرست بنائیں",
+  "shoppingTitle": "خریداری کی فہرست",
+  "shoppingUndo": "واپس کریں",
+  "shoppingAddManual": "ہاتھ سے آئٹم شامل کریں",
+  "shoppingCheckedToggle": "نشان لگائیں",
+  "shoppingEmpty": "ابھی خریداری کی کوئی فہرست نہیں۔",
+  "planEmpty": "ابھی کوئی ہفتہ وار منصوبہ نہیں۔ شروع کرنے کے لیے اپنی تراکیب سے مسودہ بنائیں۔",
+  "aboutTitle": "کے بارے میں",
+  "aboutSlogan": "نجی کیٹو جرنل",
+  "aboutVersion": "ورژن {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "اوپن سورس",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 لائسنس کے تحت مفت اوپن سورس سافٹ ویئر ہے۔ آپ اسی لائسنس کے تحت کوڈ کا معائنہ، ترمیم اور دوبارہ تقسیم کر سکتے ہیں۔",
+  "aboutPrivacyHeading": "رازداری",
+  "aboutPrivacyBody": "آپ کا صحت کا ڈیٹا اسی ڈیوائس پر رہتا ہے۔ کوئی اکاؤنٹ نہیں، کوئی اینالیٹکس نہیں۔",
+  "aboutDisclaimerHeading": "دستبرداری",
+  "aboutDisclaimerBody": "یہ ایپ عمومی معلومات اور ذاتی ٹریکنگ کے لیے ہے۔ یہ طبی مشورہ، تشخیص یا علاج نہیں ہے۔",
+  "aboutLicensesButton": "لائسنس",
+  "aboutShareButton": "یہ ایپ شیئر کریں",
+  "aboutOtherAppsButton": "دیگر ایپس",
+  "aboutCopiedToast": "کلپ بورڈ پر کاپی ہو گیا۔",
+  "licensesTitle": "لائسنس",
+  "otherAppsTitle": "دیگر ایپس",
+  "otherAppsEmpty": "ابھی کوئی اور ایپ درج نہیں۔",
+  "otherAppsCopyLink": "اسٹور کا لنک کاپی کریں",
+  "settingsTitle": "سیٹنگز",
+  "aboutShareText": "گلوکوز، کیٹون اور GKI ٹریکنگ والا نجی کیٹو جرنل۔ اوپن سورس، اکاؤنٹ کی ضرورت نہیں۔",
+  "dataManagementTitle": "ڈیٹا کا انتظام",
+  "dataExportJson": "ڈیٹا ایکسپورٹ کریں (JSON)",
+  "dataExportCsv": "پیمائشیں ایکسپورٹ کریں (CSV)",
+  "dataImportLabel": "ایکسپورٹ شدہ JSON یہاں پیسٹ کریں",
+  "dataImportButton": "ڈیٹا امپورٹ کریں",
+  "dataImportSuccess": "{glucose} گلوکوز اور {weight} وزن کے ریکارڈ امپورٹ ہوئے۔",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "امپورٹ ناکام: فائل غلط ہے یا تعاون یافتہ نہیں۔",
+  "dataDeleteAll": "میرا تمام ڈیٹا حذف کریں",
+  "dataDeleteConfirm1": "تمام ڈیٹا حذف کریں؟ اس میں پیمائشیں، کھانے، منصوبے اور سیٹنگز شامل ہیں۔ اسے واپس نہیں کیا جا سکتا۔",
+  "dataDeleteConfirm2": "کیا آپ واقعی یقینی ہیں؟ تصدیق کے لیے DELETE ٹائپ کریں۔",
+  "dataDeleteTypeDelete": "DELETE ٹائپ کریں",
+  "dataDeleteDone": "تمام ڈیٹا حذف ہو گیا ({count} ریکارڈ)۔",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ایکسپورٹ فائل تیار ہے — منتخب کریں کہ کہاں محفوظ کرنی ہے۔",
+  "settingsAppearance": "ظاہری شکل",
+  "themeSystem": "سسٹم",
+  "themeLight": "لائٹ",
+  "themeDark": "ڈارک",
+  "settingsLanguage": "زبان",
+  "settingsMore": "مزید"
+}

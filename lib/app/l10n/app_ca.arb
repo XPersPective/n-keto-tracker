@@ -1,0 +1,452 @@
+{
+  "@@locale": "ca",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Avui",
+  "navLog": "Registre",
+  "navPlan": "Pla",
+  "navTrends": "Tendències",
+  "navGuide": "Guia",
+  "pageUnderConstruction": "Aquesta pantalla s'està construint.",
+  "generalInfoDisclaimer": "Només per a informació general; no és consell mèdic.",
+  "onboardingLanguageTitle": "Tria el teu idioma",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Les teves dades es queden al dispositiu",
+  "onboardingPrivacyBody": "N Keto Tracker guarda les teves mesures, àpats i notes només en aquesta aplicació, al teu dispositiu. No hi ha cap compte i les teves dades de salut no s'envien enlloc. Si esborres l'aplicació, s'esborren les dades; pots exportar una còpia de seguretat en qualsevol moment.",
+  "onboardingMedicalTitle": "No és consell mèdic",
+  "onboardingMedicalBody": "Aquesta aplicació és per a informació general i seguiment personal. No és consell mèdic, diagnòstic ni tractament, i no substitueix l'atenció de professionals sanitaris qualificats.",
+  "onboardingPurposeTitle": "Què vols seguir?",
+  "onboardingPurposeLearn": "Aprendre sobre nutrició cetogènica",
+  "onboardingPurposeMeals": "Planificar àpats",
+  "onboardingPurposeMacros": "Seguir macros i carbohidrats nets",
+  "onboardingPurposeMeasure": "Seguir glucosa, cetones i GKI",
+  "onboardingProfileTitle": "Sobre tu (opcional)",
+  "onboardingProfileBody": "Pots ometre-ho i afegir-ho més tard a la configuració. Només s'utilitza per a una estimació d'energia general.",
+  "onboardingBirthYear": "Any de naixement",
+  "onboardingHeightCm": "Alçada (cm)",
+  "onboardingWeightKg": "Pes (kg)",
+  "onboardingEnergyCoeffTitle": "Coeficient d'estimació d'energia",
+  "onboardingEnergyCoeffBody": "L'estimació d'energia general utilitza un de dos coeficients publicats. No té a veure amb la teva identitat de gènere: només indica quina versió de l'equació s'ajusta millor a tu. També pots ometre del tot les estimacions d'energia.",
+  "onboardingEnergyCoeffSkip": "Omet les estimacions d'energia",
+  "onboardingScreeningTitle": "Unes quantes preguntes de seguretat",
+  "onboardingScreeningBody": "Aquestes preguntes no diagnostiquen res. Només desactiven els suggeriments automàtics de pla i objectius quan cal més precaució.",
+  "onboardingScreeningDiabetes": "Tinc diabetis",
+  "onboardingScreeningMedication": "Prenc medicaments que baixen la glucosa o insulina",
+  "onboardingScreeningPregnancy": "Estic embarassada o alletant",
+  "onboardingScreeningOrgan": "Tinc una malaltia renal, hepàtica o pancreàtica",
+  "onboardingScreeningEatingDisorder": "Tinc antecedents de trastorn alimentari",
+  "onboardingScreeningWeightLoss": "He tingut una pèrdua de pes important no intencionada",
+  "onboardingScreeningUnder18": "Tinc menys de 18 anys",
+  "onboardingScreeningLockedNote": "Pels teus resultats, la creació automàtica de pla i objectius es manté desactivada. Les funcions de registre i aprenentatge continuen disponibles. Consulta-ho amb un professional sanitari qualificat.",
+  "onboardingDataTitle": "Les teves dades",
+  "onboardingDataBody": "Els teus registres es queden només en aquest dispositiu. Si perds o desinstal·les l'aplicació sense exportar una còpia de seguretat, les dades no es poden recuperar.",
+  "onboardingConsentTitle": "Consentiment",
+  "onboardingConsentBody": "He llegit i accepto el resum de privadesa i l'avís que aquesta aplicació no és consell mèdic. Entenc que les meves dades es queden només en aquest dispositiu.",
+  "onboardingConsentCheckbox": "Accepto",
+  "onboardingNext": "Següent",
+  "onboardingBack": "Enrere",
+  "onboardingFinish": "Comença a usar l'aplicació",
+  "onboardingStepOf": "Pas {current} de {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glucosa ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Cetona en sang BHB (mmol/L)",
+  "formSourceType": "Tipus de font",
+  "formNote": "Nota (opcional)",
+  "formPickTime": "Hora de la mesura",
+  "formSaveSession": "Desa la sessió de mesura",
+  "formInvalidValue": "Introdueix un nombre positiu vàlid.",
+  "gkiResultHeading": "El teu GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Mesurat a les: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Versió del càlcul: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Encara no hi ha mesures",
+  "logEmptyBody": "Afegeix la teva primera lectura de glucosa i cetones per veure-la aquí.",
+  "logBandsToggle": "Mostra els rangs de recerca de l'article que has llegit",
+  "bandsDisclaimer": "Aquests rangs no són rangs clínics normals ni objectius de tractament demostrats. Són suggeriments representatius i no prescriptius d'un marc de recerca concret. El GKI per si sol no mostra salut, resposta a una malaltia ni seguretat. Toca per veure la font.",
+  "logBandOptimal": "Rang de recerca òptim suggerit (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Rang de recerca terapèutic suggerit (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Fora del rang de recerca suggerit ≤ 2.0",
+  "logMatchSimultaneous": "simultània",
+  "logMatchApproximate": "coincidència aproximada",
+  "logTimelineHeading": "Cronologia",
+  "logChartsHeading": "Gràfics",
+  "logGlucoseChart": "Glucosa (mmol/L)",
+  "logBhbChart": "Cetona BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Copia l'enllaç de la font",
+  "todayQuickActions": "Accions ràpides",
+  "todayAddMeasurement": "Afegeix mesura",
+  "todayAddMeal": "Afegeix àpat",
+  "todayAddWeight": "Afegeix pes",
+  "todayAddSymptom": "Afegeix símptoma",
+  "todayLatestTitle": "Últimes mesures",
+  "todayLatestEmpty": "Encara no hi ha mesures. Usa «Afegeix mesura» per registrar glucosa i cetona BHB alhora.",
+  "todayNutritionTitle": "Nutrició d'avui",
+  "todayNutritionEmpty": "Avui no hi ha àpats registrats. Els àpats es registren des de la pestanya Pla.",
+  "todayWeightTitle": "Pes",
+  "todayWeightEmpty": "Encara no hi ha registres de pes.",
+  "todaySymptomsTitle": "Símptomes d'avui",
+  "todaySymptomsEmpty": "Avui no hi ha símptomes registrats.",
+  "todayPlansTitle": "Àpats planificats",
+  "todayPlansEmpty": "No hi ha pla d'àpats per avui.",
+  "comingSoonTitle": "Arribarà en una propera actualització",
+  "comingSoonBody": "Aquest formulari s'està construint. Pots seguir el progrés al repositori del projecte.",
+  "mealFormTitle": "Registra un àpat",
+  "mealSearchLabel": "Cerca aliment",
+  "mealTypeLabel": "Tipus d'àpat",
+  "mealTypeBreakfast": "Esmorzar",
+  "mealTypeLunch": "Dinar",
+  "mealTypeDinner": "Sopar",
+  "mealTypeSnack": "Berenar",
+  "mealTypeCustom": "Personalitzat",
+  "mealGramsLabel": "Quantitat (g)",
+  "mealAddItem": "Afegeix aliment",
+  "mealNoteLabel": "Nota (opcional)",
+  "mealFavoriteToggle": "Marca com a preferit",
+  "mealRepeatSection": "Repetició ràpida",
+  "mealRepeatFavorites": "Preferits",
+  "mealRepeatRecent": "Recents",
+  "mealSave": "Desa l'àpat",
+  "mealItemsHeading": "Elements",
+  "mealSavedToast": "Àpat desat.",
+  "mealNeedsItem": "Afegeix primer almenys un aliment.",
+  "mealTotalsHeading": "Totals diaris",
+  "mealTotalsKcal": "Energia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Carbohidrats nets: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Carbohidrats totals: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibra: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteïna: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Greix: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Generalment una bona opció",
+  "guideGroupLimit": "Pot requerir límits de ració o de freqüència",
+  "guideGroupAvoid": "Generalment incompatible amb els objectius cetogènics",
+  "guideWhyHeading": "Per què?",
+  "guideTypicalPortion": "Ració típica: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatives: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Font de dades: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Carn, peix i ous",
+  "guideCardLowCarbVegetables": "Verdures baixes en carbohidrats",
+  "guideCardFatsOils": "Greixos i olis",
+  "guideCardNutsSeeds": "Fruits secs i llavors",
+  "guideCardBerries": "Baies",
+  "guideCardDairy": "Làctics sencers",
+  "guideCardFruit": "Fruites",
+  "guideCardLegumes": "Llegums",
+  "guideCardMilkDrinks": "Llet i begudes ensucrades",
+  "guideCardSugaryDrinks": "Begudes ensucrades",
+  "guideCardStarches": "Pa, arròs, patata",
+  "guideCardSweets": "Dolços i postres",
+  "logMealRelation": "Registrat {hours} h després de l'àpat ({mealType}) — només context temporal, no un efecte.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Cap àpat registrat dins la finestra d'anàlisi abans d'aquesta lectura.",
+  "logRelationWindowLabel": "Finestra de relació amb l'àpat",
+  "logConfoundersHeading": "Què més pot afectar les lectures?",
+  "mealTypeShortBreakfast": "esmorzar",
+  "mealTypeShortLunch": "dinar",
+  "mealTypeShortDinner": "sopar",
+  "mealTypeShortSnack": "berenar",
+  "mealTypeShortCustom": "àpat",
+  "recipePerServing": "{value} racions",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Preparació: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Al·lèrgens: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredients",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Passos",
+  "recipeStorage": "Conservació: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Rang de recerca usat en un estudi",
+  "goalLegendClinician": "L'objectiu del meu metge",
+  "goalLegendPersonal": "El meu objectiu personal de seguiment",
+  "goalLegendPersonalNote": "Un objectiu personal de seguiment no és un objectiu mèdic.",
+  "weightValueLabel": "Pes ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Condició (opcional, p. ex. al matí, després d'entrenar)",
+  "weightSave": "Desa el pes",
+  "symptomFormTitle": "Registra un símptoma",
+  "symptomDefinitionLabel": "Símptoma",
+  "symptomSeverityLabel": "Gravetat: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Nota (opcional)",
+  "symptomSave": "Desa el símptoma",
+  "symptomSavedToast": "Símptoma desat.",
+  "symptomGuidance": "Has marcat un símptoma important. Aquesta aplicació no diagnostica. Segueix el teu pla de salut i contacta amb els serveis d'emergència locals si et trobes malament o els símptomes són greus.",
+  "symptomSeizureGuidance": "Has registrat una convulsió. Aquesta aplicació no diagnostica. Segueix el teu pla de salut i contacta amb el teu professional sanitari; truca als serveis d'emergència locals si és urgent.",
+  "trendsRange7": "7 dies",
+  "trendsRange30": "30 dies",
+  "trendsRange90": "90 dies",
+  "trendsSummary": "{count} lectures en els últims {days} dies. Última: {latest}, mitjana: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "No hi ha dades en aquest rang.",
+  "trendsExplainsTitle": "Què t'explica aquest gràfic — i què no",
+  "trendsExplainsBody": "El gràfic mostra les teves pròpies lectures al llarg del temps com a punts en brut. No diagnostica, no prediu i no demostra causes. Els dies que falten apareixen com a buits, no com a zeros.",
+  "trendsWeightChart": "Pes (kg)",
+  "trendsBandsNote": "Els rangs de recerca són opcionals i estan desactivats per defecte. Mira la pestanya Registre per activar-los.",
+  "evidenceDiseaseFilter": "Mostra recerca específica de malalties (de les fonts que triïs llegir)",
+  "evidenceSectionTitle": "Fonts i articles científics",
+  "guideCopyLink": "Copia l'enllaç de la font",
+  "planTitle": "Pla setmanal",
+  "planGenerateDraft": "Genera un esborrany setmanal",
+  "planDraftLockedNote": "La generació automàtica del pla es manté desactivada: consulta-ho primer amb un professional sanitari qualificat.",
+  "planCreatedToast": "Pla setmanal creat.",
+  "planItemDay": "Dia {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Crea una llista de la compra a partir del pla",
+  "shoppingTitle": "Llista de la compra",
+  "shoppingUndo": "Desfés",
+  "shoppingAddManual": "Afegeix un element manualment",
+  "shoppingCheckedToggle": "Marca",
+  "shoppingEmpty": "Encara no hi ha llista de la compra.",
+  "planEmpty": "Encara no hi ha pla setmanal. Genera un esborrany a partir de les teves receptes per començar.",
+  "aboutTitle": "Quant a",
+  "aboutSlogan": "Diari ceto privat",
+  "aboutVersion": "Versió {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Codi obert",
+  "aboutOpenSourceBody": "N Keto Tracker és programari lliure i de codi obert amb llicència GPL-3.0. Pots inspeccionar, modificar i redistribuir el codi amb la mateixa llicència.",
+  "aboutPrivacyHeading": "Privadesa",
+  "aboutPrivacyBody": "Les teves dades de salut es queden en aquest dispositiu. Sense compte, sense analítiques.",
+  "aboutDisclaimerHeading": "Avís legal",
+  "aboutDisclaimerBody": "Aquesta aplicació és per a informació general i seguiment personal. No és consell mèdic, diagnòstic ni tractament.",
+  "aboutLicensesButton": "Llicències",
+  "aboutShareButton": "Comparteix aquesta aplicació",
+  "aboutOtherAppsButton": "Altres aplicacions",
+  "aboutCopiedToast": "Copiat al porta-retalls.",
+  "licensesTitle": "Llicències",
+  "otherAppsTitle": "Altres aplicacions",
+  "otherAppsEmpty": "Encara no hi ha altres aplicacions llistades.",
+  "otherAppsCopyLink": "Copia l'enllaç de la botiga",
+  "settingsTitle": "Configuració",
+  "aboutShareText": "Diari ceto privat amb seguiment de glucosa, cetones i GKI. Codi obert, sense necessitat de compte.",
+  "dataManagementTitle": "Gestió de dades",
+  "dataExportJson": "Exporta les dades (JSON)",
+  "dataExportCsv": "Exporta les mesures (CSV)",
+  "dataImportLabel": "Enganxa aquí el JSON exportat",
+  "dataImportButton": "Importa dades",
+  "dataImportSuccess": "S'han importat {glucose} registres de glucosa i {weight} de pes.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "La importació ha fallat: fitxer no vàlid o no compatible.",
+  "dataDeleteAll": "Esborra totes les meves dades",
+  "dataDeleteConfirm1": "Vols esborrar TOTES les dades? Inclou mesures, àpats, plans i configuració. No es pot desfer.",
+  "dataDeleteConfirm2": "Estàs realment segur? Escriu DELETE per confirmar.",
+  "dataDeleteTypeDelete": "Escriu DELETE",
+  "dataDeleteDone": "S'han esborrat totes les dades ({count} registres).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Fitxer d'exportació llest — tria on desar-lo.",
+  "settingsAppearance": "Aparença",
+  "themeSystem": "Sistema",
+  "themeLight": "Clar",
+  "themeDark": "Fosc",
+  "settingsLanguage": "Idioma",
+  "settingsMore": "Més"
+}

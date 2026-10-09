@@ -33,7 +33,7 @@ TR/EN, tamamen offline).
 ## Map
 
 - `lib/main.dart` — giriş (DB + tohum + ProviderScope)
-- `lib/app/` — router, tema (açık/koyu/sistem), l10n ARB (18 dil), locale_provider
+- `lib/app/` — router, tema (açık/koyu/sistem), l10n ARB (68 dil), locale_provider
 - `lib/core/database/` — Drift+SQLCipher şema/repo'lar/tohumlayıcılar
 - `lib/core/units/` — saf hesap motorları (GKI, eşleştirme, enerji, plan)
 - `lib/core/privacy/` — risk kilidi

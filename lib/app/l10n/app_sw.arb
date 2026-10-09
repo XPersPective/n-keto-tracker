@@ -1,0 +1,452 @@
+{
+  "@@locale": "sw",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Leo",
+  "navLog": "Kumbukumbu",
+  "navPlan": "Mpango",
+  "navTrends": "Mielekeo",
+  "navGuide": "Mwongozo",
+  "pageUnderConstruction": "Skrini hii inaandaliwa.",
+  "generalInfoDisclaimer": "Kwa taarifa za jumla pekee; si ushauri wa kitabibu.",
+  "onboardingLanguageTitle": "Chagua lugha yako",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Data yako inabaki kwenye kifaa chako",
+  "onboardingPrivacyBody": "N Keto Tracker huhifadhi vipimo, milo na maelezo yako katika programu hii pekee kwenye kifaa chako. Hakuna akaunti, na data yako ya afya haitumwi popote. Ukifuta programu, data yako pia hufutwa; unaweza kuhamisha nakala rudufu wakati wowote.",
+  "onboardingMedicalTitle": "Si ushauri wa kitabibu",
+  "onboardingMedicalBody": "Programu hii ni ya taarifa za jumla na ufuatiliaji binafsi. Si ushauri wa kitabibu, uchunguzi wala matibabu, na haichukui nafasi ya huduma ya wataalamu wa afya waliohitimu.",
+  "onboardingPurposeTitle": "Unataka kufuatilia nini?",
+  "onboardingPurposeLearn": "Kujifunza kuhusu lishe ya ketojeniki",
+  "onboardingPurposeMeals": "Kupanga milo",
+  "onboardingPurposeMacros": "Kufuatilia makro na wanga halisi",
+  "onboardingPurposeMeasure": "Kufuatilia glukosi, ketoni na GKI",
+  "onboardingProfileTitle": "Kukuhusu (hiari)",
+  "onboardingProfileBody": "Unaweza kuruka hatua hii na kuongeza baadaye kwenye mipangilio. Inatumika tu kwa makadirio ya jumla ya nishati.",
+  "onboardingBirthYear": "Mwaka wa kuzaliwa",
+  "onboardingHeightCm": "Urefu (sm)",
+  "onboardingWeightKg": "Uzito (kg)",
+  "onboardingEnergyCoeffTitle": "Kigawe cha makadirio ya nishati",
+  "onboardingEnergyCoeffBody": "Makadirio ya jumla ya nishati hutumia kimoja kati ya vigawe viwili vilivyochapishwa. Hii haihusu utambulisho wako wa kijinsia — ni toleo gani la mlinganyo linakufaa zaidi. Unaweza pia kuruka makadirio ya nishati kabisa.",
+  "onboardingEnergyCoeffSkip": "Ruka makadirio ya nishati",
+  "onboardingScreeningTitle": "Maswali machache ya usalama",
+  "onboardingScreeningBody": "Maswali haya hayafanyi uchunguzi wowote. Yanazima tu mapendekezo ya kiotomatiki ya mpango na malengo pale tahadhari ya ziada inapohitajika.",
+  "onboardingScreeningDiabetes": "Nina kisukari",
+  "onboardingScreeningMedication": "Natumia dawa za kupunguza glukosi au insulini",
+  "onboardingScreeningPregnancy": "Nina mimba au ninanyonyesha",
+  "onboardingScreeningOrgan": "Nina ugonjwa wa figo, ini au kongosho",
+  "onboardingScreeningEatingDisorder": "Nina historia ya tatizo la ulaji",
+  "onboardingScreeningWeightLoss": "Nimepungua uzito kwa kiasi kikubwa bila kukusudia",
+  "onboardingScreeningUnder18": "Nina umri chini ya miaka 18",
+  "onboardingScreeningLockedNote": "Kwa sababu ya majibu yako, uundaji wa kiotomatiki wa mpango na malengo unabaki umezimwa. Vipengele vya kurekodi na kujifunza vinabaki. Tafadhali jadili hili na mtaalamu wa afya aliyehitimu.",
+  "onboardingDataTitle": "Data yako",
+  "onboardingDataBody": "Rekodi zako zinabaki kwenye kifaa hiki pekee. Ukipoteza au kuondoa programu bila kuhamisha nakala rudufu, data haiwezi kurejeshwa.",
+  "onboardingConsentTitle": "Idhini",
+  "onboardingConsentBody": "Nimesoma na kukubali muhtasari wa faragha na ilani kwamba programu hii si ushauri wa kitabibu. Naelewa kwamba data yangu inabaki kwenye kifaa hiki pekee.",
+  "onboardingConsentCheckbox": "Nakubali",
+  "onboardingNext": "Endelea",
+  "onboardingBack": "Rudi",
+  "onboardingFinish": "Anza kutumia programu",
+  "onboardingStepOf": "Hatua {current} kati ya {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukosi ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Ketoni ya damu BHB (mmol/L)",
+  "formSourceType": "Aina ya chanzo",
+  "formNote": "Maelezo (hiari)",
+  "formPickTime": "Muda wa kipimo",
+  "formSaveSession": "Hifadhi kipindi cha kipimo",
+  "formInvalidValue": "Tafadhali weka nambari chanya halali.",
+  "gkiResultHeading": "GKI yako",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Kimepimwa: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Toleo la hesabu: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Hakuna vipimo bado",
+  "logEmptyBody": "Ongeza usomaji wako wa kwanza wa glukosi na ketoni ili kuuona hapa.",
+  "logBandsToggle": "Onyesha viwango vya utafiti kutoka kwenye makala uliyosoma",
+  "bandsDisclaimer": "Viwango hivi si viwango vya kawaida vya kliniki wala malengo ya matibabu yaliyothibitishwa. Ni mapendekezo ya mfano, yasiyo ya amri, kutoka kwa mfumo maalum wa utafiti. GKI pekee haionyeshi afya, mwitikio wa ugonjwa, wala usalama. Gusa ili kuona chanzo.",
+  "logBandOptimal": "Kiwango bora cha utafiti kinachopendekezwa (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Kiwango cha utafiti cha matibabu kinachopendekezwa (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Nje ya kiwango cha utafiti kinachopendekezwa ≤ 2.0",
+  "logMatchSimultaneous": "kwa wakati mmoja",
+  "logMatchApproximate": "ulinganifu wa kukadiria",
+  "logTimelineHeading": "Ratiba",
+  "logChartsHeading": "Chati",
+  "logGlucoseChart": "Glukosi (mmol/L)",
+  "logBhbChart": "Ketoni BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Nakili kiungo cha chanzo",
+  "todayQuickActions": "Vitendo vya haraka",
+  "todayAddMeasurement": "Ongeza kipimo",
+  "todayAddMeal": "Ongeza mlo",
+  "todayAddWeight": "Ongeza uzito",
+  "todayAddSymptom": "Ongeza dalili",
+  "todayLatestTitle": "Vipimo vya hivi karibuni",
+  "todayLatestEmpty": "Hakuna vipimo bado. Tumia 'Ongeza kipimo' kurekodi glukosi na ketoni BHB pamoja.",
+  "todayNutritionTitle": "Lishe ya leo",
+  "todayNutritionEmpty": "Hakuna milo iliyorekodiwa leo. Milo huandikwa kutoka kichupo cha Mpango.",
+  "todayWeightTitle": "Uzito",
+  "todayWeightEmpty": "Hakuna rekodi za uzito bado.",
+  "todaySymptomsTitle": "Dalili za leo",
+  "todaySymptomsEmpty": "Hakuna dalili zilizorekodiwa leo.",
+  "todayPlansTitle": "Milo iliyopangwa",
+  "todayPlansEmpty": "Hakuna mpango wa milo wa leo.",
+  "comingSoonTitle": "Inakuja kwenye sasisho lijalo",
+  "comingSoonBody": "Fomu hii ya kuingiza inaandaliwa. Unaweza kufuatilia maendeleo kwenye hazina ya mradi.",
+  "mealFormTitle": "Rekodi mlo",
+  "mealSearchLabel": "Tafuta chakula",
+  "mealTypeLabel": "Aina ya mlo",
+  "mealTypeBreakfast": "Kifungua kinywa",
+  "mealTypeLunch": "Chakula cha mchana",
+  "mealTypeDinner": "Chakula cha jioni",
+  "mealTypeSnack": "Vitafunio",
+  "mealTypeCustom": "Maalum",
+  "mealGramsLabel": "Kiasi (g)",
+  "mealAddItem": "Ongeza chakula",
+  "mealNoteLabel": "Maelezo (hiari)",
+  "mealFavoriteToggle": "Weka alama kama kipendwa",
+  "mealRepeatSection": "Rudia haraka",
+  "mealRepeatFavorites": "Vipendwa",
+  "mealRepeatRecent": "Vya hivi karibuni",
+  "mealSave": "Hifadhi mlo",
+  "mealItemsHeading": "Vipengee",
+  "mealSavedToast": "Mlo umehifadhiwa.",
+  "mealNeedsItem": "Ongeza angalau chakula kimoja kwanza.",
+  "mealTotalsHeading": "Jumla za kila siku",
+  "mealTotalsKcal": "Nishati: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Wanga halisi: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Wanga jumla: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Nyuzinyuzi: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Protini: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Mafuta: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Kwa ujumla chaguo zuri",
+  "guideGroupLimit": "Huenda ikahitaji kikomo cha kiasi au mara",
+  "guideGroupAvoid": "Kwa ujumla haiendani na malengo ya ketojeniki",
+  "guideWhyHeading": "Kwa nini?",
+  "guideTypicalPortion": "Kiasi cha kawaida: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Mbadala: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Chanzo cha data: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Nyama, samaki na mayai",
+  "guideCardLowCarbVegetables": "Mboga zenye wanga kidogo",
+  "guideCardFatsOils": "Mafuta",
+  "guideCardNutsSeeds": "Karanga na mbegu",
+  "guideCardBerries": "Beri",
+  "guideCardDairy": "Maziwa yenye mafuta kamili",
+  "guideCardFruit": "Matunda",
+  "guideCardLegumes": "Jamii ya kunde",
+  "guideCardMilkDrinks": "Maziwa na vinywaji vitamu",
+  "guideCardSugaryDrinks": "Vinywaji vyenye sukari",
+  "guideCardStarches": "Mkate, wali, viazi",
+  "guideCardSweets": "Pipi na vitindamlo",
+  "logMealRelation": "Imerekodiwa saa {hours} baada ya mlo ({mealType}) — muktadha wa muda tu, si athari.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Hakuna mlo uliorekodiwa katika dirisha la uchambuzi kabla ya usomaji huu.",
+  "logRelationWindowLabel": "Dirisha la uhusiano na mlo",
+  "logConfoundersHeading": "Ni nini kingine kinaweza kuathiri usomaji?",
+  "mealTypeShortBreakfast": "kifungua kinywa",
+  "mealTypeShortLunch": "chakula cha mchana",
+  "mealTypeShortDinner": "chakula cha jioni",
+  "mealTypeShortSnack": "vitafunio",
+  "mealTypeShortCustom": "mlo",
+  "recipePerServing": "Huduma {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Maandalizi: dakika {value}",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Vizio: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Viungo",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Hatua",
+  "recipeStorage": "Uhifadhi: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Kiwango cha utafiti kilichotumika katika utafiti",
+  "goalLegendClinician": "Lengo la daktari wangu",
+  "goalLegendPersonal": "Lengo langu binafsi la ufuatiliaji",
+  "goalLegendPersonalNote": "Lengo binafsi la ufuatiliaji si lengo la kitabibu.",
+  "weightValueLabel": "Uzito ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Hali (hiari, mfano asubuhi, baada ya mazoezi)",
+  "weightSave": "Hifadhi uzito",
+  "symptomFormTitle": "Rekodi dalili",
+  "symptomDefinitionLabel": "Dalili",
+  "symptomSeverityLabel": "Ukali: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Maelezo (hiari)",
+  "symptomSave": "Hifadhi dalili",
+  "symptomSavedToast": "Dalili imehifadhiwa.",
+  "symptomGuidance": "Umeweka alama dalili muhimu. Programu hii haifanyi uchunguzi. Fuata mpango wako wa afya, na wasiliana na huduma za dharura za eneo lako ukihisi vibaya au dalili ni kali.",
+  "symptomSeizureGuidance": "Umerekodi tukio la kifafa. Programu hii haifanyi uchunguzi. Tafadhali fuata mpango wako wa afya na wasiliana na mtaalamu wako wa afya; piga huduma za dharura za eneo lako ikiwa ni dharura.",
+  "trendsRange7": "Siku 7",
+  "trendsRange30": "Siku 30",
+  "trendsRange90": "Siku 90",
+  "trendsSummary": "Usomaji {count} katika siku {days} zilizopita. Wa hivi karibuni: {latest}, wastani: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Hakuna data katika kipindi hiki.",
+  "trendsExplainsTitle": "Chati hii inakuambia nini — na haikuambii nini",
+  "trendsExplainsBody": "Chati inaonyesha usomaji wako mwenyewe kwa muda kama nukta ghafi. Haifanyi uchunguzi, haitabiri, na haithibitishi sababu. Siku zinazokosekana zinaonekana kama mapengo, si sifuri.",
+  "trendsWeightChart": "Uzito (kg)",
+  "trendsBandsNote": "Viwango vya utafiti ni vya hiari na vimezimwa kwa chaguo-msingi. Tazama kichupo cha Kumbukumbu ili kuviwasha.",
+  "evidenceDiseaseFilter": "Onyesha utafiti mahususi wa magonjwa (kutoka vyanzo unavyochagua kusoma)",
+  "evidenceSectionTitle": "Vyanzo na makala za kisayansi",
+  "guideCopyLink": "Nakili kiungo cha chanzo",
+  "planTitle": "Mpango wa wiki",
+  "planGenerateDraft": "Tengeneza rasimu ya wiki",
+  "planDraftLockedNote": "Uundaji wa kiotomatiki wa mpango unabaki umezimwa: tafadhali jadili kwanza na mtaalamu wa afya aliyehitimu.",
+  "planCreatedToast": "Mpango wa wiki umeundwa.",
+  "planItemDay": "Siku ya {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Unda orodha ya manunuzi kutoka kwenye mpango",
+  "shoppingTitle": "Orodha ya manunuzi",
+  "shoppingUndo": "Tendua",
+  "shoppingAddManual": "Ongeza kipengee mwenyewe",
+  "shoppingCheckedToggle": "Tia alama",
+  "shoppingEmpty": "Hakuna orodha ya manunuzi bado.",
+  "planEmpty": "Hakuna mpango wa wiki bado. Tengeneza rasimu kutoka kwenye mapishi yako ili uanze.",
+  "aboutTitle": "Kuhusu",
+  "aboutSlogan": "Shajara binafsi ya keto",
+  "aboutVersion": "Toleo {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Chanzo huria",
+  "aboutOpenSourceBody": "N Keto Tracker ni programu huria bila malipo chini ya leseni ya GPL-3.0. Unaweza kukagua, kubadilisha na kusambaza upya msimbo chini ya leseni hiyo hiyo.",
+  "aboutPrivacyHeading": "Faragha",
+  "aboutPrivacyBody": "Data yako ya afya inabaki kwenye kifaa hiki. Hakuna akaunti, hakuna uchanganuzi.",
+  "aboutDisclaimerHeading": "Kanusho",
+  "aboutDisclaimerBody": "Programu hii ni ya taarifa za jumla na ufuatiliaji binafsi. Si ushauri wa kitabibu, uchunguzi wala matibabu.",
+  "aboutLicensesButton": "Leseni",
+  "aboutShareButton": "Shiriki programu hii",
+  "aboutOtherAppsButton": "Programu nyingine",
+  "aboutCopiedToast": "Imenakiliwa kwenye ubao wa kunakili.",
+  "licensesTitle": "Leseni",
+  "otherAppsTitle": "Programu nyingine",
+  "otherAppsEmpty": "Hakuna programu nyingine zilizoorodheshwa bado.",
+  "otherAppsCopyLink": "Nakili kiungo cha duka",
+  "settingsTitle": "Mipangilio",
+  "aboutShareText": "Shajara binafsi ya keto yenye ufuatiliaji wa glukosi, ketoni na GKI. Chanzo huria, hakuna akaunti inayohitajika.",
+  "dataManagementTitle": "Usimamizi wa data",
+  "dataExportJson": "Hamisha data (JSON)",
+  "dataExportCsv": "Hamisha vipimo (CSV)",
+  "dataImportLabel": "Bandika JSON iliyohamishwa hapa",
+  "dataImportButton": "Leta data",
+  "dataImportSuccess": "Rekodi {glucose} za glukosi na {weight} za uzito zimeletwa.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Kuleta kumeshindwa: faili si halali au haitumiki.",
+  "dataDeleteAll": "Futa data yangu yote",
+  "dataDeleteConfirm1": "Futa data YOTE? Inajumuisha vipimo, milo, mipango na mipangilio. Haiwezi kutenduliwa.",
+  "dataDeleteConfirm2": "Una uhakika kweli? Andika DELETE ili kuthibitisha.",
+  "dataDeleteTypeDelete": "Andika DELETE",
+  "dataDeleteDone": "Data yote imefutwa (rekodi {count}).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Faili ya kuhamisha iko tayari — chagua mahali pa kuihifadhi.",
+  "settingsAppearance": "Mwonekano",
+  "themeSystem": "Mfumo",
+  "themeLight": "Mwanga",
+  "themeDark": "Giza",
+  "settingsLanguage": "Lugha",
+  "settingsMore": "Zaidi"
+}

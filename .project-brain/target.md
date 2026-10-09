@@ -42,7 +42,7 @@ transaction); "tüm verilerimi sil" ikinci onaylı.
 ### Premium ürün (ADR-PB-012 → ADR-PB-016 ile daraltıldı, 2026-10-08)
 
 Premium görsel kimlik (özel tema, açık/koyu/sistem, kullanıcı seçimi);
-çok dilli arayüz (18 dil); **reklam yok, satın alma yok, ağ yok**; Google
+çok dilli arayüz (68 dil); **reklam yok, satın alma yok, ağ yok**; Google
 Play yayını.
 
 ## Explicit Non-Goals

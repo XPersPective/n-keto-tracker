@@ -1,0 +1,452 @@
+{
+  "@@locale": "sq",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Sot",
+  "navLog": "Ditari",
+  "navPlan": "Plani",
+  "navTrends": "Trendet",
+  "navGuide": "Udhëzuesi",
+  "pageUnderConstruction": "Ky ekran po ndërtohet.",
+  "generalInfoDisclaimer": "Vetëm për informim të përgjithshëm; nuk është këshillë mjekësore.",
+  "onboardingLanguageTitle": "Zgjidhni gjuhën",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Të dhënat tuaja mbeten në pajisjen tuaj",
+  "onboardingPrivacyBody": "N Keto Tracker i ruan matjet, vaktet dhe shënimet tuaja vetëm në këtë aplikacion, në pajisjen tuaj. Nuk ka llogari dhe të dhënat tuaja shëndetësore nuk dërgohen askund. Fshirja e aplikacionit fshin të dhënat; kopjen rezervë mund ta eksportoni në çdo kohë.",
+  "onboardingMedicalTitle": "Nuk është këshillë mjekësore",
+  "onboardingMedicalBody": "Ky aplikacion është për informim të përgjithshëm dhe ndjekje personale. Nuk është këshillë mjekësore, diagnozë apo trajtim dhe nuk zëvendëson kujdesin nga profesionistë të kualifikuar të shëndetësisë.",
+  "onboardingPurposeTitle": "Çfarë dëshironi të ndiqni?",
+  "onboardingPurposeLearn": "Të mësoj për ushqimin ketogjenik",
+  "onboardingPurposeMeals": "Të planifikoj vaktet",
+  "onboardingPurposeMacros": "Të ndjek makrot dhe karbohidratet neto",
+  "onboardingPurposeMeasure": "Të ndjek glukozën, ketonet dhe GKI",
+  "onboardingProfileTitle": "Rreth jush (opsionale)",
+  "onboardingProfileBody": "Mund ta kaloni dhe ta shtoni më vonë te cilësimet. Përdoret vetëm për një vlerësim të përgjithshëm të energjisë.",
+  "onboardingBirthYear": "Viti i lindjes",
+  "onboardingHeightCm": "Gjatësia (cm)",
+  "onboardingWeightKg": "Pesha (kg)",
+  "onboardingEnergyCoeffTitle": "Koeficienti i vlerësimit të energjisë",
+  "onboardingEnergyCoeffBody": "Vlerësimi i përgjithshëm i energjisë përdor një nga dy koeficientët e publikuar. Nuk ka të bëjë me identitetin tuaj gjinor — vetëm tregon cila version i ekuacionit ju përshtatet më mirë. Mund t'i kaloni plotësisht edhe vlerësimet e energjisë.",
+  "onboardingEnergyCoeffSkip": "Kalo vlerësimet e energjisë",
+  "onboardingScreeningTitle": "Disa pyetje sigurie",
+  "onboardingScreeningBody": "Këto pyetje nuk diagnostikojnë asgjë. Ato vetëm çaktivizojnë sugjerimet automatike të planit dhe objektivave kur nevojitet kujdes shtesë.",
+  "onboardingScreeningDiabetes": "Kam diabet",
+  "onboardingScreeningMedication": "Përdor ilaçe që ulin glukozën ose insulinë",
+  "onboardingScreeningPregnancy": "Jam shtatzënë ose ushqej me gji",
+  "onboardingScreeningOrgan": "Kam sëmundje të veshkave, mëlçisë ose pankreasit",
+  "onboardingScreeningEatingDisorder": "Kam histori çrregullimi të të ngrënit",
+  "onboardingScreeningWeightLoss": "Kam pasur humbje të rëndësishme pesha pa dashje",
+  "onboardingScreeningUnder18": "Jam nën 18 vjeç",
+  "onboardingScreeningLockedNote": "Për shkak të përgjigjeve tuaja, krijimi automatik i planit dhe objektivave mbetet i çaktivizuar. Regjistrimi dhe mësimi mbeten të disponueshme. Ju lutemi diskutojeni me një profesionist të kualifikuar të shëndetësisë.",
+  "onboardingDataTitle": "Të dhënat tuaja",
+  "onboardingDataBody": "Regjistrimet tuaja mbeten vetëm në këtë pajisje. Nëse e humbisni ose e çinstaloni aplikacionin pa eksportuar një kopje rezervë, të dhënat nuk mund të rikuperohen.",
+  "onboardingConsentTitle": "Pëlqimi",
+  "onboardingConsentBody": "E kam lexuar dhe e pranoj përmbledhjen e privatësisë dhe njoftimin se ky aplikacion nuk është këshillë mjekësore. E kuptoj që të dhënat e mia mbeten vetëm në këtë pajisje.",
+  "onboardingConsentCheckbox": "Pranoj",
+  "onboardingNext": "Tjetra",
+  "onboardingBack": "Mbrapa",
+  "onboardingFinish": "Fillo përdorimin e aplikacionit",
+  "onboardingStepOf": "Hapi {current} nga {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukoza ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Ketoni në gjak BHB (mmol/L)",
+  "formSourceType": "Lloji i burimit",
+  "formNote": "Shënim (opsional)",
+  "formPickTime": "Ora e matjes",
+  "formSaveSession": "Ruaj sesionin e matjes",
+  "formInvalidValue": "Ju lutemi vendosni një numër pozitiv të vlefshëm.",
+  "gkiResultHeading": "GKI juaj",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Matur më: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Versioni i llogaritjes: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Ende pa matje",
+  "logEmptyBody": "Shtoni leximin tuaj të parë të glukozës dhe ketonit për ta parë këtu.",
+  "logBandsToggle": "Shfaq intervalet kërkimore nga artikulli që lexuat",
+  "bandsDisclaimer": "Këto intervale nuk janë intervale normale klinike ose objektiva të provuar trajtimi. Janë sugjerime përfaqësuese, jo përshkruese, nga një kornizë specifike kërkimore. GKI vetëm nuk tregon shëndet, përgjigje ndaj sëmundjes apo siguri. Prekni për të parë burimin.",
+  "logBandOptimal": "Interval kërkimor optimal i sugjeruar (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Interval kërkimor terapeutik i sugjeruar (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Jashtë intervalit kërkimor të sugjeruar ≤ 2.0",
+  "logMatchSimultaneous": "njëkohësisht",
+  "logMatchApproximate": "përputhje e përafërt",
+  "logTimelineHeading": "Rrjedha kohore",
+  "logChartsHeading": "Grafikët",
+  "logGlucoseChart": "Glukoza (mmol/L)",
+  "logBhbChart": "Ketoni BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopjo lidhjen e burimit",
+  "todayQuickActions": "Veprime të shpejta",
+  "todayAddMeasurement": "Shto matje",
+  "todayAddMeal": "Shto vakt",
+  "todayAddWeight": "Shto peshë",
+  "todayAddSymptom": "Shto simptomë",
+  "todayLatestTitle": "Matjet e fundit",
+  "todayLatestEmpty": "Ende pa matje. Përdorni «Shto matje» për të regjistruar bashkë glukozën dhe ketonin BHB.",
+  "todayNutritionTitle": "Të ushqyerit e sotëm",
+  "todayNutritionEmpty": "Sot nuk është regjistruar asnjë vakt. Vaktet regjistrohen nga skeda Plani.",
+  "todayWeightTitle": "Pesha",
+  "todayWeightEmpty": "Ende pa hyrje peshe.",
+  "todaySymptomsTitle": "Simptomat e sotme",
+  "todaySymptomsEmpty": "Sot nuk është regjistruar asnjë simptomë.",
+  "todayPlansTitle": "Vakte të planifikuara",
+  "todayPlansEmpty": "Nuk ka plan vaktesh për sot.",
+  "comingSoonTitle": "Vjen në një përditësim të ardhshëm",
+  "comingSoonBody": "Ky formular hyrjeje po ndërtohet. Mund ta ndiqni përparimin në depon e projektit.",
+  "mealFormTitle": "Regjistro një vakt",
+  "mealSearchLabel": "Kërko ushqim",
+  "mealTypeLabel": "Lloji i vaktit",
+  "mealTypeBreakfast": "Mëngjesi",
+  "mealTypeLunch": "Dreka",
+  "mealTypeDinner": "Darka",
+  "mealTypeSnack": "Ushqim i lehtë",
+  "mealTypeCustom": "Tjetër",
+  "mealGramsLabel": "Sasia (g)",
+  "mealAddItem": "Shto ushqim",
+  "mealNoteLabel": "Shënim (opsional)",
+  "mealFavoriteToggle": "Shëno si të preferuar",
+  "mealRepeatSection": "Përsëritje e shpejtë",
+  "mealRepeatFavorites": "Të preferuarat",
+  "mealRepeatRecent": "Të fundit",
+  "mealSave": "Ruaj vaktin",
+  "mealItemsHeading": "Artikujt",
+  "mealSavedToast": "Vakti u ruajt.",
+  "mealNeedsItem": "Shtoni fillimisht të paktën një ushqim.",
+  "mealTotalsHeading": "Totalet ditore",
+  "mealTotalsKcal": "Energjia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Karbohidrate neto: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Karbohidrate gjithsej: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibra: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteina: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Yndyra: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Zakonisht zgjedhje e mirë",
+  "guideGroupLimit": "Mund të kërkojë kufizime në porcion ose shpeshtësi",
+  "guideGroupAvoid": "Zakonisht i papajtueshëm me objektivat ketogjenikë",
+  "guideWhyHeading": "Pse?",
+  "guideTypicalPortion": "Porcion tipik: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativa: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Burimi i të dhënave: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Mish, peshk dhe vezë",
+  "guideCardLowCarbVegetables": "Perime me pak karbohidrate",
+  "guideCardFatsOils": "Yndyra dhe vajra",
+  "guideCardNutsSeeds": "Fruta të thata dhe fara",
+  "guideCardBerries": "Manaferra",
+  "guideCardDairy": "Qumësht me yndyrë të plotë",
+  "guideCardFruit": "Fruta",
+  "guideCardLegumes": "Bishtajore",
+  "guideCardMilkDrinks": "Qumësht dhe pije të ëmbla",
+  "guideCardSugaryDrinks": "Pije me sheqer",
+  "guideCardStarches": "Bukë, oriz, patate",
+  "guideCardSweets": "Ëmbëlsira dhe pasta",
+  "logMealRelation": "Regjistruar {hours} orë pas vaktit ({mealType}) — vetëm kontekst kohor, jo efekt.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Nuk ka vakt të regjistruar në dritaren e analizës para këtij leximi.",
+  "logRelationWindowLabel": "Dritarja e lidhjes me vaktin",
+  "logConfoundersHeading": "Çfarë tjetër mund të ndikojë te leximet?",
+  "mealTypeShortBreakfast": "mëngjes",
+  "mealTypeShortLunch": "drekë",
+  "mealTypeShortDinner": "darkë",
+  "mealTypeShortSnack": "ushqim i lehtë",
+  "mealTypeShortCustom": "vakt",
+  "recipePerServing": "{value} porcione",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Përgatitja: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergjenë: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Përbërësit",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Hapat",
+  "recipeStorage": "Ruajtja: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Intervali kërkimor i përdorur në një studim",
+  "goalLegendClinician": "Objektivi i mjekut tim",
+  "goalLegendPersonal": "Objektivi im personal i ndjekjes",
+  "goalLegendPersonalNote": "Një objektiv personal ndjekjeje nuk është objektiv mjekësor.",
+  "weightValueLabel": "Pesha ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Kushti (opsional, p.sh. në mëngjes, pas stërvitjes)",
+  "weightSave": "Ruaj peshën",
+  "symptomFormTitle": "Regjistro një simptomë",
+  "symptomDefinitionLabel": "Simptoma",
+  "symptomSeverityLabel": "Ashpërsia: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Shënim (opsional)",
+  "symptomSave": "Ruaj simptomën",
+  "symptomSavedToast": "Simptoma u ruajt.",
+  "symptomGuidance": "Keni shënuar një simptomë të rëndësishme. Ky aplikacion nuk diagnostikon. Ndiqni planin tuaj shëndetësor dhe kontaktoni shërbimet e urgjencës lokale nëse ndiheni keq ose simptomat janë të rënda.",
+  "symptomSeizureGuidance": "Keni regjistruar një krizë. Ky aplikacion nuk diagnostikon. Ju lutemi ndiqni planin tuaj shëndetësor dhe kontaktoni profesionistin tuaj shëndetësor; telefononi shërbimet e urgjencës lokale nëse është urgjente.",
+  "trendsRange7": "7 ditë",
+  "trendsRange30": "30 ditë",
+  "trendsRange90": "90 ditë",
+  "trendsSummary": "{count} lexime në {days} ditët e fundit. Më i fundit: {latest}, mesatarja: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Nuk ka të dhëna në këtë interval.",
+  "trendsExplainsTitle": "Çfarë ju thotë ky grafik — dhe çfarë jo",
+  "trendsExplainsBody": "Grafiku tregon leximet tuaja me kalimin e kohës si pika të papërpunuara. Nuk diagnostikon, nuk parashikon dhe nuk provon shkaqe. Ditët që mungojnë shfaqen si boshllëqe, jo si zero.",
+  "trendsWeightChart": "Pesha (kg)",
+  "trendsBandsNote": "Intervalet kërkimore janë opsionale dhe të çaktivizuara si parazgjedhje. Shihni skedën Ditari për t'i aktivizuar.",
+  "evidenceDiseaseFilter": "Shfaq kërkime specifike për sëmundje (nga burimet që zgjidhni të lexoni)",
+  "evidenceSectionTitle": "Burime dhe artikuj shkencorë",
+  "guideCopyLink": "Kopjo lidhjen e burimit",
+  "planTitle": "Plani javor",
+  "planGenerateDraft": "Krijo skicë javore",
+  "planDraftLockedNote": "Krijimi automatik i planit mbetet i çaktivizuar: ju lutemi rishikojeni fillimisht me një profesionist të kualifikuar të shëndetësisë.",
+  "planCreatedToast": "Plani javor u krijua.",
+  "planItemDay": "Dita {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Krijo listë blerjesh nga plani",
+  "shoppingTitle": "Lista e blerjeve",
+  "shoppingUndo": "Zhbëj",
+  "shoppingAddManual": "Shto artikull manualisht",
+  "shoppingCheckedToggle": "Shëno",
+  "shoppingEmpty": "Ende pa listë blerjesh.",
+  "planEmpty": "Ende pa plan javor. Krijoni një skicë nga recetat tuaja për të filluar.",
+  "aboutTitle": "Rreth",
+  "aboutSlogan": "Ditar privat keto",
+  "aboutVersion": "Versioni {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Kod i hapur",
+  "aboutOpenSourceBody": "N Keto Tracker është softuer falas me kod të hapur nën licencën GPL-3.0. Mund ta inspektoni, modifikoni dhe shpërndani kodin nën të njëjtën licencë.",
+  "aboutPrivacyHeading": "Privatësia",
+  "aboutPrivacyBody": "Të dhënat tuaja shëndetësore mbeten në këtë pajisje. Pa llogari, pa analitikë.",
+  "aboutDisclaimerHeading": "Kufizim përgjegjësie",
+  "aboutDisclaimerBody": "Ky aplikacion është për informim të përgjithshëm dhe ndjekje personale. Nuk është këshillë mjekësore, diagnozë apo trajtim.",
+  "aboutLicensesButton": "Licencat",
+  "aboutShareButton": "Ndaj këtë aplikacion",
+  "aboutOtherAppsButton": "Aplikacione të tjera",
+  "aboutCopiedToast": "U kopjua në kujtesën e fragmenteve.",
+  "licensesTitle": "Licencat",
+  "otherAppsTitle": "Aplikacione të tjera",
+  "otherAppsEmpty": "Ende nuk ka aplikacione të tjera të listuara.",
+  "otherAppsCopyLink": "Kopjo lidhjen e dyqanit",
+  "settingsTitle": "Cilësimet",
+  "aboutShareText": "Ditar privat keto me ndjekje të glukozës, ketoneve dhe GKI. Kod i hapur, nuk nevojitet llogari.",
+  "dataManagementTitle": "Menaxhimi i të dhënave",
+  "dataExportJson": "Eksporto të dhënat (JSON)",
+  "dataExportCsv": "Eksporto matjet (CSV)",
+  "dataImportLabel": "Ngjisni këtu JSON-in e eksportuar",
+  "dataImportButton": "Importo të dhënat",
+  "dataImportSuccess": "U importuan {glucose} regjistrime glukoze dhe {weight} peshe.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Importimi dështoi: skedari është i pavlefshëm ose i pambështetur.",
+  "dataDeleteAll": "Fshi të gjitha të dhënat e mia",
+  "dataDeleteConfirm1": "Të fshihen TË GJITHA të dhënat? Përfshin matjet, vaktet, planet dhe cilësimet. Nuk mund të zhbëhet.",
+  "dataDeleteConfirm2": "Jeni vërtet të sigurt? Shkruani DELETE për të konfirmuar.",
+  "dataDeleteTypeDelete": "Shkruani DELETE",
+  "dataDeleteDone": "Të gjitha të dhënat u fshinë ({count} regjistrime).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Skedari i eksportit është gati — zgjidhni ku ta ruani.",
+  "settingsAppearance": "Pamja",
+  "themeSystem": "Sistemi",
+  "themeLight": "E çelët",
+  "themeDark": "E errët",
+  "settingsLanguage": "Gjuha",
+  "settingsMore": "Më shumë"
+}

@@ -21,7 +21,7 @@
 - **Glukoz + kan ketonu (BHB) + GKI:** mg/dL veya mmol/L girişte birim
   dönüşümü testlidir; 90 mg/dL + 2,5 mmol/L → tam 2,0 GKI referans vakası
   olarak sabitlenmiştir.
-- **18 dil**, açık/koyu/sistem teması.
+- **68 dil**, açık/koyu/sistem teması.
 
 ## Özellik durumu
 

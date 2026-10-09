@@ -1,0 +1,452 @@
+{
+  "@@locale": "mr",
+  "appTitle": "N Keto Tracker",
+  "navToday": "आज",
+  "navLog": "नोंद",
+  "navPlan": "योजना",
+  "navTrends": "कल",
+  "navGuide": "मार्गदर्शक",
+  "pageUnderConstruction": "ही स्क्रीन तयार होत आहे.",
+  "generalInfoDisclaimer": "फक्त सामान्य माहितीसाठी; वैद्यकीय सल्ला नाही.",
+  "onboardingLanguageTitle": "तुमची भाषा निवडा",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "तुमचा डेटा तुमच्या डिव्हाइसवरच राहतो",
+  "onboardingPrivacyBody": "N Keto Tracker तुमची मोजमापे, जेवण आणि नोट्स फक्त तुमच्या डिव्हाइसवरील या अ‍ॅपमध्येच ठेवते. खाते नाही, आणि तुमचा आरोग्य डेटा कुठेही पाठवला जात नाही. अ‍ॅप हटवल्यास तुमचा डेटा हटवला जातो; तुम्ही केव्हाही बॅकअप एक्सपोर्ट करू शकता.",
+  "onboardingMedicalTitle": "वैद्यकीय सल्ला नाही",
+  "onboardingMedicalBody": "हे अ‍ॅप सामान्य माहिती आणि वैयक्तिक ट्रॅकिंगसाठी आहे. हा वैद्यकीय सल्ला, निदान किंवा उपचार नाही आणि पात्र आरोग्य व्यावसायिकांच्या काळजीला पर्याय नाही.",
+  "onboardingPurposeTitle": "तुम्हाला काय ट्रॅक करायचे आहे?",
+  "onboardingPurposeLearn": "कीटोजेनिक पोषणाबद्दल शिका",
+  "onboardingPurposeMeals": "जेवणाचे नियोजन करा",
+  "onboardingPurposeMacros": "मॅक्रो आणि नेट कार्ब्स ट्रॅक करा",
+  "onboardingPurposeMeasure": "ग्लुकोज, कीटोन आणि GKI ट्रॅक करा",
+  "onboardingProfileTitle": "तुमच्याबद्दल (ऐच्छिक)",
+  "onboardingProfileBody": "हे वगळून नंतर सेटिंग्जमध्ये जोडता येईल. हे फक्त सामान्य ऊर्जा अंदाजासाठी वापरले जाते.",
+  "onboardingBirthYear": "जन्म वर्ष",
+  "onboardingHeightCm": "उंची (सेमी)",
+  "onboardingWeightKg": "वजन (किग्रॅ)",
+  "onboardingEnergyCoeffTitle": "ऊर्जा अंदाज गुणांक",
+  "onboardingEnergyCoeffBody": "सामान्य ऊर्जा अंदाज प्रकाशित दोन गुणांकांपैकी एक वापरतो. याचा तुमच्या लिंग ओळखीशी संबंध नाही — फक्त समीकरणाची कोणती आवृत्ती तुम्हाला सर्वात जास्त जुळते ते आहे. तुम्ही ऊर्जा अंदाज पूर्णपणे वगळूही शकता.",
+  "onboardingEnergyCoeffSkip": "ऊर्जा अंदाज वगळा",
+  "onboardingScreeningTitle": "काही सुरक्षा प्रश्न",
+  "onboardingScreeningBody": "हे प्रश्न कोणतेही निदान करत नाहीत. अतिरिक्त काळजी आवश्यक असताना ते फक्त स्वयंचलित योजना आणि ध्येय सूचना बंद करतात.",
+  "onboardingScreeningDiabetes": "मधुमेह आहे",
+  "onboardingScreeningMedication": "ग्लुकोज कमी करणारे औषध किंवा इन्सुलिन घेतो/घेते",
+  "onboardingScreeningPregnancy": "गर्भवती आहे किंवा स्तनपान करते",
+  "onboardingScreeningOrgan": "किडनी, यकृत किंवा स्वादुपिंडाचा आजार आहे",
+  "onboardingScreeningEatingDisorder": "खाण्याच्या विकाराचा इतिहास आहे",
+  "onboardingScreeningWeightLoss": "अनपेक्षितपणे लक्षणीय वजन कमी झाले आहे",
+  "onboardingScreeningUnder18": "वय 18 वर्षांपेक्षा कमी आहे",
+  "onboardingScreeningLockedNote": "तुमच्या उत्तरांमुळे स्वयंचलित योजना आणि ध्येय निर्मिती बंद राहील. नोंद आणि शिकण्याची वैशिष्ट्ये उपलब्ध राहतील. कृपया हे पात्र आरोग्य व्यावसायिकासोबत तपासा.",
+  "onboardingDataTitle": "तुमचा डेटा",
+  "onboardingDataBody": "तुमच्या नोंदी फक्त या डिव्हाइसवरच राहतात. बॅकअप एक्सपोर्टशिवाय अ‍ॅप गमावल्यास किंवा अनइन्स्टॉल केल्यास डेटा परत मिळवता येणार नाही.",
+  "onboardingConsentTitle": "संमती",
+  "onboardingConsentBody": "मी गोपनीयता सारांश आणि हे अ‍ॅप वैद्यकीय सल्ला नाही ही सूचना वाचली आहे आणि मान्य करतो/करते. माझा डेटा फक्त या डिव्हाइसवर राहतो हे मला समजते.",
+  "onboardingConsentCheckbox": "मी मान्य करतो/करते",
+  "onboardingNext": "पुढे",
+  "onboardingBack": "मागे",
+  "onboardingFinish": "अ‍ॅप वापरणे सुरू करा",
+  "onboardingStepOf": "पायरी {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ग्लुकोज ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "रक्तातील कीटोन BHB (mmol/L)",
+  "formSourceType": "स्रोताचा प्रकार",
+  "formNote": "नोंद (ऐच्छिक)",
+  "formPickTime": "मोजमापाची वेळ",
+  "formSaveSession": "मोजमाप सत्र जतन करा",
+  "formInvalidValue": "कृपया वैध धन संख्या प्रविष्ट करा.",
+  "gkiResultHeading": "तुमचा GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "मोजल्याची वेळ: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "गणना आवृत्ती: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "अजून कोणतेही मोजमाप नाही",
+  "logEmptyBody": "इथे पाहण्यासाठी तुमचे पहिले ग्लुकोज आणि कीटोन रीडिंग जोडा.",
+  "logBandsToggle": "तुम्ही वाचलेल्या लेखातील संशोधन श्रेणी दाखवा",
+  "bandsDisclaimer": "या श्रेणी क्लिनिकल सामान्य श्रेणी किंवा सिद्ध उपचार लक्ष्ये नाहीत. त्या विशिष्ट संशोधन चौकटीतील प्रातिनिधिक, बंधनकारक नसलेल्या सूचना आहेत. फक्त GKI आरोग्य, रोग प्रतिसाद किंवा सुरक्षितता दर्शवत नाही. स्रोत पाहण्यासाठी टॅप करा.",
+  "logBandOptimal": "सुचवलेली इष्टतम संशोधन श्रेणी (GKI ≤ 1.0)",
+  "logBandTherapeutic": "सुचवलेली उपचारात्मक संशोधन श्रेणी (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "सुचवलेल्या ≤ 2.0 संशोधन श्रेणीबाहेर",
+  "logMatchSimultaneous": "एकाच वेळी",
+  "logMatchApproximate": "अंदाजे जुळणी",
+  "logTimelineHeading": "टाइमलाइन",
+  "logChartsHeading": "चार्ट",
+  "logGlucoseChart": "ग्लुकोज (mmol/L)",
+  "logBhbChart": "कीटोन BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "स्रोत लिंक कॉपी करा",
+  "todayQuickActions": "जलद क्रिया",
+  "todayAddMeasurement": "मोजमाप जोडा",
+  "todayAddMeal": "जेवण जोडा",
+  "todayAddWeight": "वजन जोडा",
+  "todayAddSymptom": "लक्षण जोडा",
+  "todayLatestTitle": "ताजी मोजमापे",
+  "todayLatestEmpty": "अजून कोणतेही मोजमाप नाही. ग्लुकोज आणि कीटोन BHB एकत्र नोंदवण्यासाठी 'मोजमाप जोडा' वापरा.",
+  "todayNutritionTitle": "आजचे पोषण",
+  "todayNutritionEmpty": "आज कोणतेही जेवण नोंदवले नाही. जेवण योजना टॅबमधून नोंदवले जाते.",
+  "todayWeightTitle": "वजन",
+  "todayWeightEmpty": "अजून वजनाच्या नोंदी नाहीत.",
+  "todaySymptomsTitle": "आजची लक्षणे",
+  "todaySymptomsEmpty": "आज कोणतेही लक्षण नोंदवले नाही.",
+  "todayPlansTitle": "नियोजित जेवण",
+  "todayPlansEmpty": "आजसाठी जेवण योजना नाही.",
+  "comingSoonTitle": "पुढील अपडेटमध्ये येत आहे",
+  "comingSoonBody": "हा एंट्री फॉर्म तयार होत आहे. प्रगती प्रकल्प रिपॉझिटरीमध्ये पाहता येईल.",
+  "mealFormTitle": "जेवण नोंदवा",
+  "mealSearchLabel": "अन्न शोधा",
+  "mealTypeLabel": "जेवणाचा प्रकार",
+  "mealTypeBreakfast": "नाश्ता",
+  "mealTypeLunch": "दुपारचे जेवण",
+  "mealTypeDinner": "रात्रीचे जेवण",
+  "mealTypeSnack": "स्नॅक",
+  "mealTypeCustom": "कस्टम",
+  "mealGramsLabel": "प्रमाण (ग्रॅम)",
+  "mealAddItem": "अन्न जोडा",
+  "mealNoteLabel": "नोंद (ऐच्छिक)",
+  "mealFavoriteToggle": "आवडते म्हणून चिन्हांकित करा",
+  "mealRepeatSection": "जलद पुनरावृत्ती",
+  "mealRepeatFavorites": "आवडते",
+  "mealRepeatRecent": "अलीकडील",
+  "mealSave": "जेवण जतन करा",
+  "mealItemsHeading": "आयटम",
+  "mealSavedToast": "जेवण जतन केले.",
+  "mealNeedsItem": "आधी किमान एक अन्न जोडा.",
+  "mealTotalsHeading": "दैनिक एकूण",
+  "mealTotalsKcal": "ऊर्जा: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "नेट कार्ब्स: {value} ग्रॅ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "एकूण कार्ब्स: {value} ग्रॅ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "तंतू: {value} ग्रॅ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "प्रथिने: {value} ग्रॅ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "चरबी: {value} ग्रॅ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "सामान्यतः चांगला पर्याय",
+  "guideGroupLimit": "प्रमाण किंवा वारंवारतेवर मर्यादा लागू शकते",
+  "guideGroupAvoid": "सामान्यतः कीटोजेनिक लक्ष्यांशी विसंगत",
+  "guideWhyHeading": "का?",
+  "guideTypicalPortion": "सामान्य प्रमाण: {portion} (~{grams} ग्रॅ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "पर्याय: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "डेटा स्रोत: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "मांस, मासे आणि अंडी",
+  "guideCardLowCarbVegetables": "कमी कार्ब भाज्या",
+  "guideCardFatsOils": "चरबी आणि तेले",
+  "guideCardNutsSeeds": "सुकामेवा आणि बिया",
+  "guideCardBerries": "बेरी",
+  "guideCardDairy": "पूर्ण-चरबी दुग्धजन्य पदार्थ",
+  "guideCardFruit": "फळे",
+  "guideCardLegumes": "कडधान्ये",
+  "guideCardMilkDrinks": "दूध आणि गोड पेये",
+  "guideCardSugaryDrinks": "साखरयुक्त पेये",
+  "guideCardStarches": "ब्रेड, भात, बटाटा",
+  "guideCardSweets": "मिठाई आणि डेझर्ट",
+  "logMealRelation": "{mealType} जेवणानंतर {hours} तासांनी नोंदवले — फक्त वेळेचा संदर्भ, परिणाम नाही.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "या रीडिंगपूर्वीच्या विश्लेषण विंडोमध्ये कोणतेही जेवण नोंदवले नाही.",
+  "logRelationWindowLabel": "जेवण संबंध विंडो",
+  "logConfoundersHeading": "रीडिंगवर आणखी काय परिणाम करू शकते?",
+  "mealTypeShortBreakfast": "नाश्ता",
+  "mealTypeShortLunch": "दुपारचे जेवण",
+  "mealTypeShortDinner": "रात्रीचे जेवण",
+  "mealTypeShortSnack": "स्नॅक",
+  "mealTypeShortCustom": "जेवण",
+  "recipePerServing": "{value} सर्व्हिंग",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "तयारी: {value} मिनिटे",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "अ‍ॅलर्जन: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "साहित्य",
+  "recipeGrams": "{value} ग्रॅ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "पायऱ्या",
+  "recipeStorage": "साठवण: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "अभ्यासात वापरलेली संशोधन श्रेणी",
+  "goalLegendClinician": "माझ्या डॉक्टरांचे ध्येय",
+  "goalLegendPersonal": "माझे वैयक्तिक ट्रॅकिंग ध्येय",
+  "goalLegendPersonalNote": "वैयक्तिक ट्रॅकिंग ध्येय वैद्यकीय ध्येय नाही.",
+  "weightValueLabel": "वजन ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "परिस्थिती (ऐच्छिक, उदा. सकाळी, व्यायामानंतर)",
+  "weightSave": "वजन जतन करा",
+  "symptomFormTitle": "लक्षण नोंदवा",
+  "symptomDefinitionLabel": "लक्षण",
+  "symptomSeverityLabel": "तीव्रता: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "नोंद (ऐच्छिक)",
+  "symptomSave": "लक्षण जतन करा",
+  "symptomSavedToast": "लक्षण जतन केले.",
+  "symptomGuidance": "तुम्ही एक महत्त्वाचे लक्षण चिन्हांकित केले आहे. हे अ‍ॅप निदान करत नाही. तुमच्या स्वतःच्या आरोग्य योजनेचे पालन करा, आणि अस्वस्थ वाटल्यास किंवा लक्षणे तीव्र असल्यास स्थानिक आपत्कालीन सेवांशी संपर्क साधा.",
+  "symptomSeizureGuidance": "तुम्ही झटक्याची घटना नोंदवली आहे. हे अ‍ॅप निदान करत नाही. कृपया तुमच्या आरोग्य योजनेचे पालन करा आणि आरोग्य व्यावसायिकांशी संपर्क साधा; तातडीचे असल्यास स्थानिक आपत्कालीन सेवांना कॉल करा.",
+  "trendsRange7": "7 दिवस",
+  "trendsRange30": "30 दिवस",
+  "trendsRange90": "90 दिवस",
+  "trendsSummary": "गेल्या {days} दिवसांत {count} रीडिंग. ताजे: {latest}, सरासरी: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "या श्रेणीत डेटा नाही.",
+  "trendsExplainsTitle": "हा चार्ट काय सांगतो — आणि काय नाही",
+  "trendsExplainsBody": "चार्ट तुमची स्वतःची रीडिंग काळानुसार कच्च्या बिंदूंच्या रूपात दाखवतो. तो निदान करत नाही, अंदाज वर्तवत नाही आणि कारणे सिद्ध करत नाही. गहाळ दिवस शून्य म्हणून नाही तर रिकाम्या जागा म्हणून दिसतात.",
+  "trendsWeightChart": "वजन (किग्रॅ)",
+  "trendsBandsNote": "संशोधन श्रेणी ऐच्छिक आहेत आणि डीफॉल्टनुसार बंद आहेत. सुरू करण्यासाठी नोंद टॅब पहा.",
+  "evidenceDiseaseFilter": "रोग-विशिष्ट संशोधन दाखवा (तुम्ही वाचण्यासाठी निवडलेल्या स्रोतांमधून)",
+  "evidenceSectionTitle": "वैज्ञानिक स्रोत आणि लेख",
+  "guideCopyLink": "स्रोत लिंक कॉपी करा",
+  "planTitle": "साप्ताहिक योजना",
+  "planGenerateDraft": "साप्ताहिक मसुदा तयार करा",
+  "planDraftLockedNote": "स्वयंचलित योजना निर्मिती बंद राहील: कृपया आधी पात्र आरोग्य व्यावसायिकासोबत तपासा.",
+  "planCreatedToast": "साप्ताहिक योजना तयार झाली.",
+  "planItemDay": "दिवस {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "योजनेतून खरेदी यादी तयार करा",
+  "shoppingTitle": "खरेदी यादी",
+  "shoppingUndo": "पूर्ववत",
+  "shoppingAddManual": "आयटम हाताने जोडा",
+  "shoppingCheckedToggle": "टिक करा",
+  "shoppingEmpty": "अजून खरेदी यादी नाही.",
+  "planEmpty": "अजून साप्ताहिक योजना नाही. सुरुवात करण्यासाठी तुमच्या पाककृतींमधून मसुदा तयार करा.",
+  "aboutTitle": "बद्दल",
+  "aboutSlogan": "खाजगी कीटो जर्नल",
+  "aboutVersion": "आवृत्ती {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ओपन सोर्स",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 परवान्याखाली मोफत ओपन-सोर्स सॉफ्टवेअर आहे. त्याच परवान्याखाली तुम्ही कोड तपासू, बदलू आणि पुन्हा वितरित करू शकता.",
+  "aboutPrivacyHeading": "गोपनीयता",
+  "aboutPrivacyBody": "तुमचा आरोग्य डेटा या डिव्हाइसवरच राहतो. खाते नाही, अ‍ॅनालिटिक्स नाही.",
+  "aboutDisclaimerHeading": "अस्वीकरण",
+  "aboutDisclaimerBody": "हे अ‍ॅप सामान्य माहिती आणि वैयक्तिक ट्रॅकिंगसाठी आहे. हा वैद्यकीय सल्ला, निदान किंवा उपचार नाही.",
+  "aboutLicensesButton": "परवाने",
+  "aboutShareButton": "हे अ‍ॅप शेअर करा",
+  "aboutOtherAppsButton": "इतर अ‍ॅप्स",
+  "aboutCopiedToast": "क्लिपबोर्डवर कॉपी केले.",
+  "licensesTitle": "परवाने",
+  "otherAppsTitle": "इतर अ‍ॅप्स",
+  "otherAppsEmpty": "अजून इतर कोणतेही अ‍ॅप सूचीबद्ध नाही.",
+  "otherAppsCopyLink": "स्टोअर लिंक कॉपी करा",
+  "settingsTitle": "सेटिंग्ज",
+  "aboutShareText": "ग्लुकोज, कीटोन आणि GKI ट्रॅकिंगसह खाजगी कीटो जर्नल. ओपन सोर्स, खात्याची गरज नाही.",
+  "dataManagementTitle": "डेटा व्यवस्थापन",
+  "dataExportJson": "डेटा एक्सपोर्ट करा (JSON)",
+  "dataExportCsv": "मोजमापे एक्सपोर्ट करा (CSV)",
+  "dataImportLabel": "एक्सपोर्ट केलेला JSON इथे पेस्ट करा",
+  "dataImportButton": "डेटा इम्पोर्ट करा",
+  "dataImportSuccess": "{glucose} ग्लुकोज आणि {weight} वजन नोंदी इम्पोर्ट केल्या.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "इम्पोर्ट अयशस्वी: फाइल अवैध किंवा असमर्थित आहे.",
+  "dataDeleteAll": "माझा सर्व डेटा हटवा",
+  "dataDeleteConfirm1": "सर्व डेटा हटवायचा? यात मोजमापे, जेवण, योजना आणि सेटिंग्ज समाविष्ट आहेत. हे पूर्ववत करता येत नाही.",
+  "dataDeleteConfirm2": "तुम्हाला खरोखर खात्री आहे का? पुष्टीसाठी DELETE टाइप करा.",
+  "dataDeleteTypeDelete": "DELETE टाइप करा",
+  "dataDeleteDone": "सर्व डेटा हटवला ({count} नोंदी).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "एक्सपोर्ट फाइल तयार आहे — कुठे जतन करायची ते निवडा.",
+  "settingsAppearance": "स्वरूप",
+  "themeSystem": "सिस्टम",
+  "themeLight": "लाइट",
+  "themeDark": "डार्क",
+  "settingsLanguage": "भाषा",
+  "settingsMore": "अधिक"
+}

@@ -1,0 +1,452 @@
+{
+  "@@locale": "te",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ఈరోజు",
+  "navLog": "లాగ్",
+  "navPlan": "ప్లాన్",
+  "navTrends": "ధోరణులు",
+  "navGuide": "గైడ్",
+  "pageUnderConstruction": "ఈ స్క్రీన్ రూపొందుతోంది.",
+  "generalInfoDisclaimer": "సాధారణ సమాచారం కోసం మాత్రమే; వైద్య సలహా కాదు.",
+  "onboardingLanguageTitle": "మీ భాషను ఎంచుకోండి",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "మీ డేటా మీ పరికరంలోనే ఉంటుంది",
+  "onboardingPrivacyBody": "N Keto Tracker మీ కొలతలు, భోజనాలు, నోట్స్‌ను మీ పరికరంలోని ఈ యాప్‌లో మాత్రమే ఉంచుతుంది. ఖాతా లేదు, మీ ఆరోగ్య డేటా ఎక్కడికీ పంపబడదు. యాప్‌ను తొలగిస్తే డేటా కూడా తొలగిపోతుంది; ఎప్పుడైనా బ్యాకప్ ఎగుమతి చేయవచ్చు.",
+  "onboardingMedicalTitle": "వైద్య సలహా కాదు",
+  "onboardingMedicalBody": "ఈ యాప్ సాధారణ సమాచారం, వ్యక్తిగత ట్రాకింగ్ కోసం. ఇది వైద్య సలహా, రోగ నిర్ధారణ లేదా చికిత్స కాదు మరియు అర్హత గల ఆరోగ్య నిపుణుల సంరక్షణకు ప్రత్యామ్నాయం కాదు.",
+  "onboardingPurposeTitle": "మీరు దేన్ని ట్రాక్ చేయాలనుకుంటున్నారు?",
+  "onboardingPurposeLearn": "కీటోజెనిక్ పోషణ గురించి తెలుసుకోండి",
+  "onboardingPurposeMeals": "భోజనాలను ప్లాన్ చేయండి",
+  "onboardingPurposeMacros": "మాక్రోలు, నెట్ కార్బ్స్ ట్రాక్ చేయండి",
+  "onboardingPurposeMeasure": "గ్లూకోజ్, కీటోన్లు, GKI ట్రాక్ చేయండి",
+  "onboardingProfileTitle": "మీ గురించి (ఐచ్ఛికం)",
+  "onboardingProfileBody": "దీన్ని వదిలేసి తర్వాత సెట్టింగ్‌లలో జోడించవచ్చు. ఇది సాధారణ శక్తి అంచనా కోసం మాత్రమే వాడబడుతుంది.",
+  "onboardingBirthYear": "పుట్టిన సంవత్సరం",
+  "onboardingHeightCm": "ఎత్తు (సెం.మీ)",
+  "onboardingWeightKg": "బరువు (కేజీ)",
+  "onboardingEnergyCoeffTitle": "శక్తి అంచనా గుణకం",
+  "onboardingEnergyCoeffBody": "సాధారణ శక్తి అంచనా ప్రచురితమైన రెండు గుణకాల్లో ఒకదాన్ని వాడుతుంది. ఇది మీ లింగ గుర్తింపు గురించి కాదు — సమీకరణంలో ఏ వెర్షన్ మీకు బాగా సరిపోతుందో మాత్రమే. శక్తి అంచనాలను పూర్తిగా వదిలేయవచ్చు కూడా.",
+  "onboardingEnergyCoeffSkip": "శక్తి అంచనాలను వదిలేయండి",
+  "onboardingScreeningTitle": "కొన్ని భద్రతా ప్రశ్నలు",
+  "onboardingScreeningBody": "ఈ ప్రశ్నలు ఏ రోగ నిర్ధారణా చేయవు. అదనపు జాగ్రత్త అవసరమైనప్పుడు ఆటోమేటిక్ ప్లాన్, లక్ష్య సూచనలను మాత్రమే ఆఫ్ చేస్తాయి.",
+  "onboardingScreeningDiabetes": "మధుమేహం ఉంది",
+  "onboardingScreeningMedication": "గ్లూకోజ్ తగ్గించే మందులు లేదా ఇన్సులిన్ వాడుతున్నాను",
+  "onboardingScreeningPregnancy": "గర్భవతిని లేదా పాలిస్తున్నాను",
+  "onboardingScreeningOrgan": "కిడ్నీ, కాలేయం లేదా క్లోమ వ్యాధి ఉంది",
+  "onboardingScreeningEatingDisorder": "తినే రుగ్మత చరిత్ర ఉంది",
+  "onboardingScreeningWeightLoss": "అనుకోకుండా గణనీయంగా బరువు తగ్గింది",
+  "onboardingScreeningUnder18": "18 ఏళ్ల లోపు వయస్సు",
+  "onboardingScreeningLockedNote": "మీ సమాధానాల వల్ల ఆటోమేటిక్ ప్లాన్, లక్ష్య సృష్టి ఆఫ్‌లోనే ఉంటుంది. రికార్డింగ్, నేర్చుకునే ఫీచర్లు అందుబాటులో ఉంటాయి. దయచేసి దీన్ని అర్హత గల ఆరోగ్య నిపుణుడితో సమీక్షించండి.",
+  "onboardingDataTitle": "మీ డేటా",
+  "onboardingDataBody": "మీ రికార్డులు ఈ పరికరంలోనే ఉంటాయి. బ్యాకప్ ఎగుమతి లేకుండా యాప్‌ను పోగొట్టుకున్నా లేదా అన్‌ఇన్‌స్టాల్ చేసినా డేటాను తిరిగి పొందలేరు.",
+  "onboardingConsentTitle": "సమ్మతి",
+  "onboardingConsentBody": "గోప్యతా సారాంశాన్ని, ఈ యాప్ వైద్య సలహా కాదన్న నోటీసును చదివి అంగీకరిస్తున్నాను. నా డేటా ఈ పరికరంలోనే ఉంటుందని అర్థం చేసుకున్నాను.",
+  "onboardingConsentCheckbox": "అంగీకరిస్తున్నాను",
+  "onboardingNext": "తదుపరి",
+  "onboardingBack": "వెనక్కి",
+  "onboardingFinish": "యాప్ వాడటం ప్రారంభించండి",
+  "onboardingStepOf": "దశ {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "గ్లూకోజ్ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "రక్త కీటోన్ BHB (mmol/L)",
+  "formSourceType": "మూల రకం",
+  "formNote": "నోట్ (ఐచ్ఛికం)",
+  "formPickTime": "కొలత సమయం",
+  "formSaveSession": "కొలత సెషన్ సేవ్ చేయండి",
+  "formInvalidValue": "దయచేసి చెల్లుబాటు అయ్యే ధనాత్మక సంఖ్యను నమోదు చేయండి.",
+  "gkiResultHeading": "మీ GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "కొలిచిన సమయం: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "గణన వెర్షన్: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ఇంకా కొలతలు లేవు",
+  "logEmptyBody": "ఇక్కడ చూడటానికి మీ మొదటి గ్లూకోజ్, కీటోన్ రీడింగ్‌ను జోడించండి.",
+  "logBandsToggle": "మీరు చదివిన వ్యాసంలోని పరిశోధన పరిధులను చూపండి",
+  "bandsDisclaimer": "ఈ పరిధులు క్లినికల్ సాధారణ పరిధులు లేదా నిరూపిత చికిత్స లక్ష్యాలు కావు. ఒక నిర్దిష్ట పరిశోధన చట్రం నుండి ప్రాతినిధ్య, నిర్దేశకం కాని సూచనలు. GKI ఒక్కటే ఆరోగ్యం, వ్యాధి స్పందన లేదా భద్రతను చూపదు. మూలాన్ని చూడటానికి ట్యాప్ చేయండి.",
+  "logBandOptimal": "సూచించిన ఉత్తమ పరిశోధన పరిధి (GKI ≤ 1.0)",
+  "logBandTherapeutic": "సూచించిన చికిత్సా పరిశోధన పరిధి (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "సూచించిన ≤ 2.0 పరిశోధన పరిధి వెలుపల",
+  "logMatchSimultaneous": "ఒకే సమయంలో",
+  "logMatchApproximate": "సుమారు సరిపోలిక",
+  "logTimelineHeading": "టైమ్‌లైన్",
+  "logChartsHeading": "చార్ట్‌లు",
+  "logGlucoseChart": "గ్లూకోజ్ (mmol/L)",
+  "logBhbChart": "కీటోన్ BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "మూల లింక్ కాపీ చేయండి",
+  "todayQuickActions": "శీఘ్ర చర్యలు",
+  "todayAddMeasurement": "కొలత జోడించండి",
+  "todayAddMeal": "భోజనం జోడించండి",
+  "todayAddWeight": "బరువు జోడించండి",
+  "todayAddSymptom": "లక్షణం జోడించండి",
+  "todayLatestTitle": "తాజా కొలతలు",
+  "todayLatestEmpty": "ఇంకా కొలతలు లేవు. గ్లూకోజ్, కీటోన్ BHB ని కలిపి నమోదు చేయడానికి 'కొలత జోడించండి' వాడండి.",
+  "todayNutritionTitle": "నేటి పోషణ",
+  "todayNutritionEmpty": "ఈరోజు భోజనాలు నమోదు కాలేదు. భోజనాలు ప్లాన్ ట్యాబ్ నుండి లాగ్ చేయబడతాయి.",
+  "todayWeightTitle": "బరువు",
+  "todayWeightEmpty": "ఇంకా బరువు నమోదులు లేవు.",
+  "todaySymptomsTitle": "నేటి లక్షణాలు",
+  "todaySymptomsEmpty": "ఈరోజు లక్షణాలు నమోదు కాలేదు.",
+  "todayPlansTitle": "ప్రణాళిక చేసిన భోజనాలు",
+  "todayPlansEmpty": "ఈరోజుకు భోజన ప్రణాళిక లేదు.",
+  "comingSoonTitle": "రాబోయే అప్‌డేట్‌లో వస్తోంది",
+  "comingSoonBody": "ఈ ఎంట్రీ ఫారమ్ రూపొందుతోంది. పురోగతిని ప్రాజెక్ట్ రిపోజిటరీలో అనుసరించవచ్చు.",
+  "mealFormTitle": "భోజనం లాగ్ చేయండి",
+  "mealSearchLabel": "ఆహారం వెతకండి",
+  "mealTypeLabel": "భోజన రకం",
+  "mealTypeBreakfast": "అల్పాహారం",
+  "mealTypeLunch": "మధ్యాహ్న భోజనం",
+  "mealTypeDinner": "రాత్రి భోజనం",
+  "mealTypeSnack": "స్నాక్",
+  "mealTypeCustom": "కస్టమ్",
+  "mealGramsLabel": "పరిమాణం (గ్రా)",
+  "mealAddItem": "ఆహారం జోడించండి",
+  "mealNoteLabel": "నోట్ (ఐచ్ఛికం)",
+  "mealFavoriteToggle": "ఇష్టమైనదిగా గుర్తించండి",
+  "mealRepeatSection": "శీఘ్ర పునరావృతం",
+  "mealRepeatFavorites": "ఇష్టమైనవి",
+  "mealRepeatRecent": "ఇటీవలివి",
+  "mealSave": "భోజనం సేవ్ చేయండి",
+  "mealItemsHeading": "అంశాలు",
+  "mealSavedToast": "భోజనం సేవ్ చేయబడింది.",
+  "mealNeedsItem": "ముందు కనీసం ఒక ఆహారం జోడించండి.",
+  "mealTotalsHeading": "రోజువారీ మొత్తాలు",
+  "mealTotalsKcal": "శక్తి: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "నెట్ కార్బ్స్: {value} గ్రా",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "మొత్తం కార్బ్స్: {value} గ్రా",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ఫైబర్: {value} గ్రా",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ప్రోటీన్: {value} గ్రా",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "కొవ్వు: {value} గ్రా",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "సాధారణంగా మంచి ఎంపిక",
+  "guideGroupLimit": "పరిమాణం లేదా తరచుదనంపై పరిమితులు అవసరం కావచ్చు",
+  "guideGroupAvoid": "సాధారణంగా కీటోజెనిక్ లక్ష్యాలకు సరిపోదు",
+  "guideWhyHeading": "ఎందుకు?",
+  "guideTypicalPortion": "సాధారణ పరిమాణం: {portion} (~{grams} గ్రా)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ప్రత్యామ్నాయాలు: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "డేటా మూలం: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "మాంసం, చేపలు, గుడ్లు",
+  "guideCardLowCarbVegetables": "తక్కువ కార్బ్ కూరగాయలు",
+  "guideCardFatsOils": "కొవ్వులు, నూనెలు",
+  "guideCardNutsSeeds": "గింజలు, విత్తనాలు",
+  "guideCardBerries": "బెర్రీలు",
+  "guideCardDairy": "పూర్తి కొవ్వు పాల ఉత్పత్తులు",
+  "guideCardFruit": "పండ్లు",
+  "guideCardLegumes": "పప్పుధాన్యాలు",
+  "guideCardMilkDrinks": "పాలు, తీపి పానీయాలు",
+  "guideCardSugaryDrinks": "చక్కెర పానీయాలు",
+  "guideCardStarches": "బ్రెడ్, అన్నం, బంగాళాదుంప",
+  "guideCardSweets": "స్వీట్లు, డెజర్ట్‌లు",
+  "logMealRelation": "{mealType} భోజనం తర్వాత {hours} గంటలకు నమోదు — సమయ సందర్భం మాత్రమే, ప్రభావం కాదు.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ఈ రీడింగ్‌కు ముందు విశ్లేషణ విండోలో భోజనం నమోదు కాలేదు.",
+  "logRelationWindowLabel": "భోజన సంబంధ విండో",
+  "logConfoundersHeading": "రీడింగ్‌లను ఇంకా ఏది ప్రభావితం చేయగలదు?",
+  "mealTypeShortBreakfast": "అల్పాహారం",
+  "mealTypeShortLunch": "మధ్యాహ్న భోజనం",
+  "mealTypeShortDinner": "రాత్రి భోజనం",
+  "mealTypeShortSnack": "స్నాక్",
+  "mealTypeShortCustom": "భోజనం",
+  "recipePerServing": "{value} సర్వింగ్‌లు",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "తయారీ: {value} నిమిషాలు",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "అలర్జెన్లు: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "పదార్థాలు",
+  "recipeGrams": "{value} గ్రా",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "దశలు",
+  "recipeStorage": "నిల్వ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ఒక అధ్యయనంలో వాడిన పరిశోధన పరిధి",
+  "goalLegendClinician": "నా వైద్యుడి లక్ష్యం",
+  "goalLegendPersonal": "నా వ్యక్తిగత ట్రాకింగ్ లక్ష్యం",
+  "goalLegendPersonalNote": "వ్యక్తిగత ట్రాకింగ్ లక్ష్యం వైద్య లక్ష్యం కాదు.",
+  "weightValueLabel": "బరువు ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "పరిస్థితి (ఐచ్ఛికం, ఉదా. ఉదయం, వ్యాయామం తర్వాత)",
+  "weightSave": "బరువు సేవ్ చేయండి",
+  "symptomFormTitle": "లక్షణం లాగ్ చేయండి",
+  "symptomDefinitionLabel": "లక్షణం",
+  "symptomSeverityLabel": "తీవ్రత: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "నోట్ (ఐచ్ఛికం)",
+  "symptomSave": "లక్షణం సేవ్ చేయండి",
+  "symptomSavedToast": "లక్షణం సేవ్ చేయబడింది.",
+  "symptomGuidance": "మీరు ఒక ముఖ్యమైన లక్షణాన్ని గుర్తించారు. ఈ యాప్ రోగ నిర్ధారణ చేయదు. మీ స్వంత ఆరోగ్య ప్రణాళికను అనుసరించండి, అస్వస్థంగా అనిపిస్తే లేదా లక్షణాలు తీవ్రంగా ఉంటే స్థానిక అత్యవసర సేవలను సంప్రదించండి.",
+  "symptomSeizureGuidance": "మీరు ఫిట్స్ సంఘటనను నమోదు చేశారు. ఈ యాప్ రోగ నిర్ధారణ చేయదు. దయచేసి మీ ఆరోగ్య ప్రణాళికను అనుసరించి ఆరోగ్య నిపుణుడిని సంప్రదించండి; అత్యవసరమైతే స్థానిక అత్యవసర సేవలకు కాల్ చేయండి.",
+  "trendsRange7": "7 రోజులు",
+  "trendsRange30": "30 రోజులు",
+  "trendsRange90": "90 రోజులు",
+  "trendsSummary": "గత {days} రోజుల్లో {count} రీడింగ్‌లు. తాజాది: {latest}, సగటు: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ఈ పరిధిలో డేటా లేదు.",
+  "trendsExplainsTitle": "ఈ చార్ట్ ఏమి చెబుతుంది — ఏమి చెప్పదు",
+  "trendsExplainsBody": "చార్ట్ మీ స్వంత రీడింగ్‌లను కాలక్రమేణా ముడి పాయింట్లుగా చూపుతుంది. ఇది రోగ నిర్ధారణ చేయదు, ఊహించదు, కారణాలను నిరూపించదు. లేని రోజులు సున్నాలుగా కాకుండా ఖాళీలుగా కనిపిస్తాయి.",
+  "trendsWeightChart": "బరువు (కేజీ)",
+  "trendsBandsNote": "పరిశోధన పరిధులు ఐచ్ఛికం మరియు డిఫాల్ట్‌గా ఆఫ్‌లో ఉంటాయి. ఆన్ చేయడానికి లాగ్ ట్యాబ్ చూడండి.",
+  "evidenceDiseaseFilter": "వ్యాధి-నిర్దిష్ట పరిశోధనను చూపండి (మీరు చదవడానికి ఎంచుకున్న మూలాల నుండి)",
+  "evidenceSectionTitle": "శాస్త్రీయ మూలాలు, వ్యాసాలు",
+  "guideCopyLink": "మూల లింక్ కాపీ చేయండి",
+  "planTitle": "వారపు ప్రణాళిక",
+  "planGenerateDraft": "వారపు డ్రాఫ్ట్ సృష్టించండి",
+  "planDraftLockedNote": "ఆటోమేటిక్ ప్లాన్ సృష్టి ఆఫ్‌లోనే ఉంటుంది: దయచేసి ముందు అర్హత గల ఆరోగ్య నిపుణుడితో సమీక్షించండి.",
+  "planCreatedToast": "వారపు ప్రణాళిక సృష్టించబడింది.",
+  "planItemDay": "రోజు {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "ప్రణాళిక నుండి షాపింగ్ జాబితా చేయండి",
+  "shoppingTitle": "షాపింగ్ జాబితా",
+  "shoppingUndo": "రద్దు చేయండి",
+  "shoppingAddManual": "అంశాన్ని మాన్యువల్‌గా జోడించండి",
+  "shoppingCheckedToggle": "టిక్ చేయండి",
+  "shoppingEmpty": "ఇంకా షాపింగ్ జాబితా లేదు.",
+  "planEmpty": "ఇంకా వారపు ప్రణాళిక లేదు. ప్రారంభించడానికి మీ రెసిపీల నుండి డ్రాఫ్ట్ సృష్టించండి.",
+  "aboutTitle": "గురించి",
+  "aboutSlogan": "ప్రైవేట్ కీటో జర్నల్",
+  "aboutVersion": "వెర్షన్ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ఓపెన్ సోర్స్",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 లైసెన్స్ కింద ఉచిత ఓపెన్-సోర్స్ సాఫ్ట్‌వేర్. అదే లైసెన్స్ కింద కోడ్‌ను తనిఖీ చేయవచ్చు, మార్చవచ్చు, పునఃపంపిణీ చేయవచ్చు.",
+  "aboutPrivacyHeading": "గోప్యత",
+  "aboutPrivacyBody": "మీ ఆరోగ్య డేటా ఈ పరికరంలోనే ఉంటుంది. ఖాతా లేదు, అనలిటిక్స్ లేదు.",
+  "aboutDisclaimerHeading": "నిరాకరణ",
+  "aboutDisclaimerBody": "ఈ యాప్ సాధారణ సమాచారం, వ్యక్తిగత ట్రాకింగ్ కోసం. ఇది వైద్య సలహా, రోగ నిర్ధారణ లేదా చికిత్స కాదు.",
+  "aboutLicensesButton": "లైసెన్స్‌లు",
+  "aboutShareButton": "ఈ యాప్‌ను షేర్ చేయండి",
+  "aboutOtherAppsButton": "ఇతర యాప్‌లు",
+  "aboutCopiedToast": "క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది.",
+  "licensesTitle": "లైసెన్స్‌లు",
+  "otherAppsTitle": "ఇతర యాప్‌లు",
+  "otherAppsEmpty": "ఇంకా ఇతర యాప్‌లు జాబితా చేయబడలేదు.",
+  "otherAppsCopyLink": "స్టోర్ లింక్ కాపీ చేయండి",
+  "settingsTitle": "సెట్టింగ్‌లు",
+  "aboutShareText": "గ్లూకోజ్, కీటోన్, GKI ట్రాకింగ్‌తో ప్రైవేట్ కీటో జర్నల్. ఓపెన్ సోర్స్, ఖాతా అవసరం లేదు.",
+  "dataManagementTitle": "డేటా నిర్వహణ",
+  "dataExportJson": "డేటా ఎగుమతి చేయండి (JSON)",
+  "dataExportCsv": "కొలతలను ఎగుమతి చేయండి (CSV)",
+  "dataImportLabel": "ఎగుమతి చేసిన JSON ను ఇక్కడ అతికించండి",
+  "dataImportButton": "డేటా దిగుమతి చేయండి",
+  "dataImportSuccess": "{glucose} గ్లూకోజ్, {weight} బరువు రికార్డులు దిగుమతి అయ్యాయి.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "దిగుమతి విఫలమైంది: ఫైల్ చెల్లనిది లేదా మద్దతు లేనిది.",
+  "dataDeleteAll": "నా మొత్తం డేటాను తొలగించండి",
+  "dataDeleteConfirm1": "మొత్తం డేటాను తొలగించాలా? ఇందులో కొలతలు, భోజనాలు, ప్రణాళికలు, సెట్టింగ్‌లు ఉన్నాయి. దీన్ని రద్దు చేయలేరు.",
+  "dataDeleteConfirm2": "మీరు నిజంగా ఖచ్చితమేనా? ధృవీకరించడానికి DELETE అని టైప్ చేయండి.",
+  "dataDeleteTypeDelete": "DELETE అని టైప్ చేయండి",
+  "dataDeleteDone": "మొత్తం డేటా తొలగించబడింది ({count} రికార్డులు).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ఎగుమతి ఫైల్ సిద్ధంగా ఉంది — ఎక్కడ సేవ్ చేయాలో ఎంచుకోండి.",
+  "settingsAppearance": "రూపం",
+  "themeSystem": "సిస్టమ్",
+  "themeLight": "లైట్",
+  "themeDark": "డార్క్",
+  "settingsLanguage": "భాష",
+  "settingsMore": "మరిన్ని"
+}

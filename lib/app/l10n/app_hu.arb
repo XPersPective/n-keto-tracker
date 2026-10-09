@@ -1,0 +1,452 @@
+{
+  "@@locale": "hu",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Ma",
+  "navLog": "Napló",
+  "navPlan": "Terv",
+  "navTrends": "Trendek",
+  "navGuide": "Útmutató",
+  "pageUnderConstruction": "Ez a képernyő még készül.",
+  "generalInfoDisclaimer": "Csak általános tájékoztatásra; nem orvosi tanács.",
+  "onboardingLanguageTitle": "Válassza ki a nyelvet",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Az adatai az eszközén maradnak",
+  "onboardingPrivacyBody": "Az N Keto Tracker a méréseit, étkezéseit és jegyzeteit csak ebben az alkalmazásban, az eszközén tárolja. Nincs fiók, és az egészségügyi adatait soha nem küldi sehova. Az alkalmazás törlésekor az adatai is törlődnek; biztonsági mentést bármikor exportálhat.",
+  "onboardingMedicalTitle": "Nem orvosi tanács",
+  "onboardingMedicalBody": "Ez az alkalmazás általános tájékoztatásra és személyes nyomon követésre szolgál. Nem orvosi tanács, diagnózis vagy kezelés, és nem helyettesíti a képzett egészségügyi szakemberek ellátását.",
+  "onboardingPurposeTitle": "Mit szeretne nyomon követni?",
+  "onboardingPurposeLearn": "Tanulni a ketogén táplálkozásról",
+  "onboardingPurposeMeals": "Étkezéseket tervezni",
+  "onboardingPurposeMacros": "Makrókat és nettó szénhidrátot követni",
+  "onboardingPurposeMeasure": "Glükózt, ketonokat és GKI-t követni",
+  "onboardingProfileTitle": "Önről (nem kötelező)",
+  "onboardingProfileBody": "Ezt kihagyhatja, és később hozzáadhatja a beállításokban. Csak általános energiabecslésre használjuk.",
+  "onboardingBirthYear": "Születési év",
+  "onboardingHeightCm": "Magasság (cm)",
+  "onboardingWeightKg": "Testsúly (kg)",
+  "onboardingEnergyCoeffTitle": "Energiabecslési együttható",
+  "onboardingEnergyCoeffBody": "Az általános energiabecslés a két közzétett együttható egyikét használja. Ez nem a nemi identitásáról szól — csak arról, hogy az egyenlet melyik változata illik Önhöz jobban. Az energiabecsléseket teljesen ki is hagyhatja.",
+  "onboardingEnergyCoeffSkip": "Energiabecslések kihagyása",
+  "onboardingScreeningTitle": "Néhány biztonsági kérdés",
+  "onboardingScreeningBody": "Ezek a kérdések nem diagnosztizálnak semmit. Csak akkor kapcsolják ki az automatikus terv- és célajánlásokat, ha fokozott óvatosság szükséges.",
+  "onboardingScreeningDiabetes": "Cukorbeteg vagyok",
+  "onboardingScreeningMedication": "Vércukorszint-csökkentő gyógyszert vagy inzulint használok",
+  "onboardingScreeningPregnancy": "Terhes vagyok vagy szoptatok",
+  "onboardingScreeningOrgan": "Vese-, máj- vagy hasnyálmirigy-betegségem van",
+  "onboardingScreeningEatingDisorder": "Evészavar szerepel az anamnézisemben",
+  "onboardingScreeningWeightLoss": "Jelentős, nem szándékos fogyásom volt",
+  "onboardingScreeningUnder18": "18 évesnél fiatalabb vagyok",
+  "onboardingScreeningLockedNote": "A válaszai miatt az automatikus terv- és célkészítés kikapcsolva marad. A rögzítés és a tanulás funkciói elérhetők maradnak. Kérjük, beszélje meg ezt egy képzett egészségügyi szakemberrel.",
+  "onboardingDataTitle": "Az Ön adatai",
+  "onboardingDataBody": "A bejegyzései csak ezen az eszközön maradnak. Ha biztonsági mentés exportálása nélkül elveszíti vagy eltávolítja az alkalmazást, az adatok nem állíthatók vissza.",
+  "onboardingConsentTitle": "Hozzájárulás",
+  "onboardingConsentBody": "Elolvastam és elfogadom az adatvédelmi összefoglalót, valamint azt a figyelmeztetést, hogy ez az alkalmazás nem orvosi tanács. Tudomásul veszem, hogy az adataim csak ezen az eszközön maradnak.",
+  "onboardingConsentCheckbox": "Elfogadom",
+  "onboardingNext": "Tovább",
+  "onboardingBack": "Vissza",
+  "onboardingFinish": "Az alkalmazás használatának megkezdése",
+  "onboardingStepOf": "{current}. lépés / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glükóz ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Vér-keton BHB (mmol/L)",
+  "formSourceType": "Forrás típusa",
+  "formNote": "Megjegyzés (nem kötelező)",
+  "formPickTime": "Mérés időpontja",
+  "formSaveSession": "Mérési munkamenet mentése",
+  "formInvalidValue": "Kérjük, adjon meg érvényes pozitív számot.",
+  "gkiResultHeading": "Az Ön GKI-ja",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Mérés ideje: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Számítási verzió: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Még nincsenek mérések",
+  "logEmptyBody": "Adja hozzá első glükóz- és ketonértékét, hogy itt láthassa.",
+  "logBandsToggle": "Az elolvasott cikk kutatási tartományainak megjelenítése",
+  "bandsDisclaimer": "Ezek a tartományok nem klinikai normál tartományok, sem bizonyított kezelési célok. Egy adott kutatási keretrendszer reprezentatív, nem előíró javaslatai. A GKI önmagában nem mutat egészséget, betegségre adott választ vagy biztonságot. A forrás megtekintéséhez koppintson.",
+  "logBandOptimal": "Javasolt optimális kutatási tartomány (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Javasolt terápiás kutatási tartomány (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "A javasolt ≤ 2.0 kutatási tartományon kívül",
+  "logMatchSimultaneous": "egyidejű",
+  "logMatchApproximate": "hozzávetőleges egyezés",
+  "logTimelineHeading": "Idővonal",
+  "logChartsHeading": "Grafikonok",
+  "logGlucoseChart": "Glükóz (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Forráshivatkozás másolása",
+  "todayQuickActions": "Gyorsműveletek",
+  "todayAddMeasurement": "Mérés hozzáadása",
+  "todayAddMeal": "Étkezés hozzáadása",
+  "todayAddWeight": "Testsúly hozzáadása",
+  "todayAddSymptom": "Tünet hozzáadása",
+  "todayLatestTitle": "Legutóbbi mérések",
+  "todayLatestEmpty": "Még nincsenek mérések. A „Mérés hozzáadása” gombbal rögzítheti együtt a glükózt és a keton BHB-t.",
+  "todayNutritionTitle": "A mai táplálkozás",
+  "todayNutritionEmpty": "Ma nincs rögzített étkezés. Az étkezéseket a Terv fülön lehet naplózni.",
+  "todayWeightTitle": "Testsúly",
+  "todayWeightEmpty": "Még nincs testsúlybejegyzés.",
+  "todaySymptomsTitle": "A mai tünetek",
+  "todaySymptomsEmpty": "Ma nincs rögzített tünet.",
+  "todayPlansTitle": "Tervezett étkezések",
+  "todayPlansEmpty": "Mára nincs étkezési terv.",
+  "comingSoonTitle": "Egy közelgő frissítésben érkezik",
+  "comingSoonBody": "Ez a beviteli űrlap még készül. A haladást a projekt tárolójában követheti.",
+  "mealFormTitle": "Étkezés naplózása",
+  "mealSearchLabel": "Étel keresése",
+  "mealTypeLabel": "Étkezés típusa",
+  "mealTypeBreakfast": "Reggeli",
+  "mealTypeLunch": "Ebéd",
+  "mealTypeDinner": "Vacsora",
+  "mealTypeSnack": "Nasi",
+  "mealTypeCustom": "Egyéni",
+  "mealGramsLabel": "Mennyiség (g)",
+  "mealAddItem": "Étel hozzáadása",
+  "mealNoteLabel": "Megjegyzés (nem kötelező)",
+  "mealFavoriteToggle": "Megjelölés kedvencként",
+  "mealRepeatSection": "Gyors ismétlés",
+  "mealRepeatFavorites": "Kedvencek",
+  "mealRepeatRecent": "Legutóbbiak",
+  "mealSave": "Étkezés mentése",
+  "mealItemsHeading": "Tételek",
+  "mealSavedToast": "Étkezés mentve.",
+  "mealNeedsItem": "Először adjon hozzá legalább egy ételt.",
+  "mealTotalsHeading": "Napi összesítés",
+  "mealTotalsKcal": "Energia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Nettó szénhidrát: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Összes szénhidrát: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Rost: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Fehérje: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Zsír: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Általában jó választás",
+  "guideGroupLimit": "Adag- vagy gyakoriságkorlátozást igényelhet",
+  "guideGroupAvoid": "Általában nem összeegyeztethető a ketogén célokkal",
+  "guideWhyHeading": "Miért?",
+  "guideTypicalPortion": "Tipikus adag: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatívák: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Adatforrás: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Hús, hal és tojás",
+  "guideCardLowCarbVegetables": "Alacsony szénhidráttartalmú zöldségek",
+  "guideCardFatsOils": "Zsírok és olajok",
+  "guideCardNutsSeeds": "Diófélék és magvak",
+  "guideCardBerries": "Bogyós gyümölcsök",
+  "guideCardDairy": "Teljes zsírtartalmú tejtermékek",
+  "guideCardFruit": "Gyümölcsök",
+  "guideCardLegumes": "Hüvelyesek",
+  "guideCardMilkDrinks": "Tej és édes italok",
+  "guideCardSugaryDrinks": "Cukros italok",
+  "guideCardStarches": "Kenyér, rizs, burgonya",
+  "guideCardSweets": "Édességek és desszertek",
+  "logMealRelation": "Rögzítve {hours} órával a(z) {mealType} után — csak időbeli kontextus, nem hatás.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Az elemzési ablakban e mérés előtt nincs rögzített étkezés.",
+  "logRelationWindowLabel": "Étkezéssel való kapcsolat ablaka",
+  "logConfoundersHeading": "Mi más befolyásolhatja a mért értékeket?",
+  "mealTypeShortBreakfast": "reggeli",
+  "mealTypeShortLunch": "ebéd",
+  "mealTypeShortDinner": "vacsora",
+  "mealTypeShortSnack": "nasi",
+  "mealTypeShortCustom": "étkezés",
+  "recipePerServing": "{value} adag",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Előkészítés: {value} perc",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergének: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Hozzávalók",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Lépések",
+  "recipeStorage": "Tárolás: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Egy tanulmányban használt kutatási tartomány",
+  "goalLegendClinician": "Az orvosom célja",
+  "goalLegendPersonal": "Személyes követési célom",
+  "goalLegendPersonalNote": "A személyes követési cél nem orvosi cél.",
+  "weightValueLabel": "Testsúly ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Körülmény (nem kötelező, pl. reggel, edzés után)",
+  "weightSave": "Testsúly mentése",
+  "symptomFormTitle": "Tünet naplózása",
+  "symptomDefinitionLabel": "Tünet",
+  "symptomSeverityLabel": "Súlyosság: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Megjegyzés (nem kötelező)",
+  "symptomSave": "Tünet mentése",
+  "symptomSavedToast": "Tünet mentve.",
+  "symptomGuidance": "Jelentős tünetet jelölt meg. Ez az alkalmazás nem diagnosztizál. Kövesse saját egészségügyi tervét, és forduljon a helyi mentőszolgálathoz, ha rosszul érzi magát vagy a tünetek súlyosak.",
+  "symptomSeizureGuidance": "Rohamot rögzített. Ez az alkalmazás nem diagnosztizál. Kérjük, kövesse egészségügyi tervét, és forduljon egészségügyi szakemberhez; sürgős esetben hívja a helyi mentőszolgálatot.",
+  "trendsRange7": "7 nap",
+  "trendsRange30": "30 nap",
+  "trendsRange90": "90 nap",
+  "trendsSummary": "{count} mérés az elmúlt {days} napban. Legutóbbi: {latest}, átlag: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Ebben a tartományban nincs adat.",
+  "trendsExplainsTitle": "Mit mutat ez a grafikon — és mit nem",
+  "trendsExplainsBody": "A grafikon a saját mért értékeit mutatja időben, nyers pontokként. Nem diagnosztizál, nem jósol és nem bizonyít okokat. A hiányzó napok hézagként jelennek meg, nem nullaként.",
+  "trendsWeightChart": "Testsúly (kg)",
+  "trendsBandsNote": "A kutatási tartományok nem kötelezők, és alapértelmezés szerint ki vannak kapcsolva. Bekapcsolásukhoz nézze a Napló fület.",
+  "evidenceDiseaseFilter": "Betegségspecifikus kutatások megjelenítése (az Ön által olvasásra választott forrásokból)",
+  "evidenceSectionTitle": "Tudományos források és cikkek",
+  "guideCopyLink": "Forráshivatkozás másolása",
+  "planTitle": "Heti terv",
+  "planGenerateDraft": "Heti vázlat készítése",
+  "planDraftLockedNote": "Az automatikus tervkészítés kikapcsolva marad: kérjük, először beszélje meg egy képzett egészségügyi szakemberrel.",
+  "planCreatedToast": "Heti terv létrehozva.",
+  "planItemDay": "{day}. nap",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Bevásárlólista készítése a tervből",
+  "shoppingTitle": "Bevásárlólista",
+  "shoppingUndo": "Visszavonás",
+  "shoppingAddManual": "Tétel hozzáadása kézzel",
+  "shoppingCheckedToggle": "Pipálás",
+  "shoppingEmpty": "Még nincs bevásárlólista.",
+  "planEmpty": "Még nincs heti terv. A kezdéshez készítsen vázlatot a receptjeiből.",
+  "aboutTitle": "Névjegy",
+  "aboutSlogan": "Privát keto napló",
+  "aboutVersion": "{value} verzió",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Nyílt forráskód",
+  "aboutOpenSourceBody": "Az N Keto Tracker ingyenes, nyílt forráskódú szoftver GPL-3.0 licenc alatt. A kódot ugyanezen licenc alatt megtekintheti, módosíthatja és terjesztheti.",
+  "aboutPrivacyHeading": "Adatvédelem",
+  "aboutPrivacyBody": "Az egészségügyi adatai ezen az eszközön maradnak. Nincs fiók, nincs analitika.",
+  "aboutDisclaimerHeading": "Felelősség kizárása",
+  "aboutDisclaimerBody": "Ez az alkalmazás általános tájékoztatásra és személyes nyomon követésre szolgál. Nem orvosi tanács, diagnózis vagy kezelés.",
+  "aboutLicensesButton": "Licencek",
+  "aboutShareButton": "Alkalmazás megosztása",
+  "aboutOtherAppsButton": "További alkalmazások",
+  "aboutCopiedToast": "Vágólapra másolva.",
+  "licensesTitle": "Licencek",
+  "otherAppsTitle": "További alkalmazások",
+  "otherAppsEmpty": "Még nincs más alkalmazás felsorolva.",
+  "otherAppsCopyLink": "Áruházi hivatkozás másolása",
+  "settingsTitle": "Beállítások",
+  "aboutShareText": "Privát keto napló glükóz-, keton- és GKI-követéssel. Nyílt forráskód, fiók nélkül használható.",
+  "dataManagementTitle": "Adatkezelés",
+  "dataExportJson": "Adatok exportálása (JSON)",
+  "dataExportCsv": "Mérések exportálása (CSV)",
+  "dataImportLabel": "Illessze be ide az exportált JSON-t",
+  "dataImportButton": "Adatok importálása",
+  "dataImportSuccess": "{glucose} glükóz- és {weight} testsúlyrekord importálva.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Az importálás sikertelen: a fájl érvénytelen vagy nem támogatott.",
+  "dataDeleteAll": "Összes adatom törlése",
+  "dataDeleteConfirm1": "Törli AZ ÖSSZES adatot? Ebbe beletartoznak a mérések, étkezések, tervek és beállítások. Ez nem vonható vissza.",
+  "dataDeleteConfirm2": "Biztosan biztos benne? A megerősítéshez írja be: DELETE.",
+  "dataDeleteTypeDelete": "Írja be: DELETE",
+  "dataDeleteDone": "Minden adat törölve ({count} rekord).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Az exportfájl kész — válassza ki, hová menti.",
+  "settingsAppearance": "Megjelenés",
+  "themeSystem": "Rendszer",
+  "themeLight": "Világos",
+  "themeDark": "Sötét",
+  "settingsLanguage": "Nyelv",
+  "settingsMore": "Továbbiak"
+}

@@ -1,0 +1,452 @@
+{
+  "@@locale": "ml",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ഇന്ന്",
+  "navLog": "ലോഗ്",
+  "navPlan": "പ്ലാൻ",
+  "navTrends": "പ്രവണതകൾ",
+  "navGuide": "ഗൈഡ്",
+  "pageUnderConstruction": "ഈ സ്ക്രീൻ നിർമ്മാണത്തിലാണ്.",
+  "generalInfoDisclaimer": "പൊതുവായ വിവരങ്ങൾക്ക് മാത്രം; വൈദ്യോപദേശമല്ല.",
+  "onboardingLanguageTitle": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "നിങ്ങളുടെ ഡാറ്റ നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ നിൽക്കും",
+  "onboardingPrivacyBody": "N Keto Tracker നിങ്ങളുടെ അളവുകൾ, ഭക്ഷണം, കുറിപ്പുകൾ എന്നിവ നിങ്ങളുടെ ഉപകരണത്തിലെ ഈ ആപ്പിൽ മാത്രം സൂക്ഷിക്കുന്നു. അക്കൗണ്ട് ഇല്ല, നിങ്ങളുടെ ആരോഗ്യ ഡാറ്റ ഒരിടത്തേക്കും അയയ്ക്കില്ല. ആപ്പ് ഇല്ലാതാക്കിയാൽ ഡാറ്റയും ഇല്ലാതാകും; എപ്പോൾ വേണമെങ്കിലും ബാക്കപ്പ് എക്സ്പോർട്ട് ചെയ്യാം.",
+  "onboardingMedicalTitle": "വൈദ്യോപദേശമല്ല",
+  "onboardingMedicalBody": "ഈ ആപ്പ് പൊതുവായ വിവരങ്ങൾക്കും വ്യക്തിഗത ട്രാക്കിംഗിനും ഉള്ളതാണ്. ഇത് വൈദ്യോപദേശമോ രോഗനിർണയമോ ചികിത്സയോ അല്ല, യോഗ്യതയുള്ള ആരോഗ്യ വിദഗ്ധരുടെ പരിചരണത്തിന് പകരവുമല്ല.",
+  "onboardingPurposeTitle": "നിങ്ങൾ എന്താണ് ട്രാക്ക് ചെയ്യാൻ ആഗ്രഹിക്കുന്നത്?",
+  "onboardingPurposeLearn": "കീറ്റോജെനിക് പോഷണത്തെക്കുറിച്ച് പഠിക്കുക",
+  "onboardingPurposeMeals": "ഭക്ഷണം ആസൂത്രണം ചെയ്യുക",
+  "onboardingPurposeMacros": "മാക്രോയും നെറ്റ് കാർബും ട്രാക്ക് ചെയ്യുക",
+  "onboardingPurposeMeasure": "ഗ്ലൂക്കോസ്, കീറ്റോൺ, GKI ട്രാക്ക് ചെയ്യുക",
+  "onboardingProfileTitle": "നിങ്ങളെക്കുറിച്ച് (ഓപ്ഷണൽ)",
+  "onboardingProfileBody": "ഇത് ഒഴിവാക്കി പിന്നീട് ക്രമീകരണങ്ങളിൽ ചേർക്കാം. പൊതുവായ ഊർജ്ജ കണക്കാക്കലിന് മാത്രമാണ് ഇത് ഉപയോഗിക്കുന്നത്.",
+  "onboardingBirthYear": "ജനന വർഷം",
+  "onboardingHeightCm": "ഉയരം (സെ.മീ)",
+  "onboardingWeightKg": "ഭാരം (കി.ഗ്രാം)",
+  "onboardingEnergyCoeffTitle": "ഊർജ്ജ കണക്കാക്കൽ ഗുണകം",
+  "onboardingEnergyCoeffBody": "പൊതുവായ ഊർജ്ജ കണക്കാക്കൽ പ്രസിദ്ധീകരിച്ച രണ്ട് ഗുണകങ്ങളിൽ ഒന്ന് ഉപയോഗിക്കുന്നു. ഇത് നിങ്ങളുടെ ലിംഗ സ്വത്വത്തെക്കുറിച്ചല്ല — സമവാക്യത്തിന്റെ ഏത് പതിപ്പാണ് നിങ്ങൾക്ക് ഏറ്റവും അനുയോജ്യം എന്നത് മാത്രം. ഊർജ്ജ കണക്കാക്കലുകൾ പൂർണ്ണമായും ഒഴിവാക്കുകയും ചെയ്യാം.",
+  "onboardingEnergyCoeffSkip": "ഊർജ്ജ കണക്കാക്കലുകൾ ഒഴിവാക്കുക",
+  "onboardingScreeningTitle": "ചില സുരക്ഷാ ചോദ്യങ്ങൾ",
+  "onboardingScreeningBody": "ഈ ചോദ്യങ്ങൾ ഒന്നും രോഗനിർണയം ചെയ്യുന്നില്ല. അധിക ശ്രദ്ധ ആവശ്യമുള്ളപ്പോൾ ഓട്ടോമാറ്റിക് പ്ലാൻ, ലക്ഷ്യ നിർദ്ദേശങ്ങൾ മാത്രം അവ ഓഫ് ചെയ്യുന്നു.",
+  "onboardingScreeningDiabetes": "പ്രമേഹം ഉണ്ട്",
+  "onboardingScreeningMedication": "ഗ്ലൂക്കോസ് കുറയ്ക്കുന്ന മരുന്നോ ഇൻസുലിനോ ഉപയോഗിക്കുന്നു",
+  "onboardingScreeningPregnancy": "ഗർഭിണിയാണ് അല്ലെങ്കിൽ മുലയൂട്ടുന്നു",
+  "onboardingScreeningOrgan": "വൃക്ക, കരൾ അല്ലെങ്കിൽ പാൻക്രിയാസ് രോഗമുണ്ട്",
+  "onboardingScreeningEatingDisorder": "ഭക്ഷണ വൈകല്യത്തിന്റെ ചരിത്രമുണ്ട്",
+  "onboardingScreeningWeightLoss": "മനഃപൂർവമല്ലാതെ ഗണ്യമായ ഭാരം കുറഞ്ഞിട്ടുണ്ട്",
+  "onboardingScreeningUnder18": "18 വയസ്സിന് താഴെയാണ്",
+  "onboardingScreeningLockedNote": "നിങ്ങളുടെ ഉത്തരങ്ങൾ കാരണം ഓട്ടോമാറ്റിക് പ്ലാൻ, ലക്ഷ്യ നിർമ്മാണം ഓഫ് ആയി തുടരും. രേഖപ്പെടുത്തലും പഠന സവിശേഷതകളും ലഭ്യമായി തുടരും. ദയവായി ഇത് യോഗ്യതയുള്ള ആരോഗ്യ വിദഗ്ധനുമായി പരിശോധിക്കുക.",
+  "onboardingDataTitle": "നിങ്ങളുടെ ഡാറ്റ",
+  "onboardingDataBody": "നിങ്ങളുടെ രേഖകൾ ഈ ഉപകരണത്തിൽ മാത്രം നിൽക്കും. ബാക്കപ്പ് എക്സ്പോർട്ട് ഇല്ലാതെ ആപ്പ് നഷ്ടപ്പെടുകയോ അൺഇൻസ്റ്റാൾ ചെയ്യുകയോ ചെയ്താൽ ഡാറ്റ വീണ്ടെടുക്കാൻ കഴിയില്ല.",
+  "onboardingConsentTitle": "സമ്മതം",
+  "onboardingConsentBody": "സ്വകാര്യതാ സംഗ്രഹവും ഈ ആപ്പ് വൈദ്യോപദേശമല്ല എന്ന അറിയിപ്പും ഞാൻ വായിച്ച് അംഗീകരിക്കുന്നു. എന്റെ ഡാറ്റ ഈ ഉപകരണത്തിൽ മാത്രം നിൽക്കുമെന്ന് ഞാൻ മനസ്സിലാക്കുന്നു.",
+  "onboardingConsentCheckbox": "ഞാൻ അംഗീകരിക്കുന്നു",
+  "onboardingNext": "അടുത്തത്",
+  "onboardingBack": "പിന്നോട്ട്",
+  "onboardingFinish": "ആപ്പ് ഉപയോഗിച്ചു തുടങ്ങുക",
+  "onboardingStepOf": "ഘട്ടം {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ഗ്ലൂക്കോസ് ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "രക്തത്തിലെ കീറ്റോൺ BHB (mmol/L)",
+  "formSourceType": "ഉറവിട തരം",
+  "formNote": "കുറിപ്പ് (ഓപ്ഷണൽ)",
+  "formPickTime": "അളവെടുത്ത സമയം",
+  "formSaveSession": "അളവ് സെഷൻ സേവ് ചെയ്യുക",
+  "formInvalidValue": "ദയവായി സാധുവായ ഒരു പോസിറ്റീവ് സംഖ്യ നൽകുക.",
+  "gkiResultHeading": "നിങ്ങളുടെ GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "അളന്ന സമയം: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "കണക്കുകൂട്ടൽ പതിപ്പ്: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ഇതുവരെ അളവുകളില്ല",
+  "logEmptyBody": "ഇവിടെ കാണാൻ നിങ്ങളുടെ ആദ്യ ഗ്ലൂക്കോസ്, കീറ്റോൺ റീഡിംഗ് ചേർക്കുക.",
+  "logBandsToggle": "നിങ്ങൾ വായിച്ച ലേഖനത്തിലെ ഗവേഷണ പരിധികൾ കാണിക്കുക",
+  "bandsDisclaimer": "ഈ പരിധികൾ ക്ലിനിക്കൽ സാധാരണ പരിധികളോ തെളിയിക്കപ്പെട്ട ചികിത്സാ ലക്ഷ്യങ്ങളോ അല്ല. ഒരു പ്രത്യേക ഗവേഷണ ചട്ടക്കൂടിൽ നിന്നുള്ള പ്രതിനിധാന, നിർദ്ദേശാത്മകമല്ലാത്ത നിർദ്ദേശങ്ങളാണിവ. GKI മാത്രം ആരോഗ്യം, രോഗ പ്രതികരണം, സുരക്ഷ എന്നിവ കാണിക്കുന്നില്ല. ഉറവിടം കാണാൻ ടാപ്പ് ചെയ്യുക.",
+  "logBandOptimal": "നിർദ്ദേശിക്കുന്ന മികച്ച ഗവേഷണ പരിധി (GKI ≤ 1.0)",
+  "logBandTherapeutic": "നിർദ്ദേശിക്കുന്ന ചികിത്സാ ഗവേഷണ പരിധി (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "നിർദ്ദേശിച്ച ≤ 2.0 ഗവേഷണ പരിധിക്ക് പുറത്ത്",
+  "logMatchSimultaneous": "ഒരേസമയം",
+  "logMatchApproximate": "ഏകദേശ പൊരുത്തം",
+  "logTimelineHeading": "ടൈംലൈൻ",
+  "logChartsHeading": "ചാർട്ടുകൾ",
+  "logGlucoseChart": "ഗ്ലൂക്കോസ് (mmol/L)",
+  "logBhbChart": "കീറ്റോൺ BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ഉറവിട ലിങ്ക് പകർത്തുക",
+  "todayQuickActions": "ദ്രുത പ്രവർത്തനങ്ങൾ",
+  "todayAddMeasurement": "അളവ് ചേർക്കുക",
+  "todayAddMeal": "ഭക്ഷണം ചേർക്കുക",
+  "todayAddWeight": "ഭാരം ചേർക്കുക",
+  "todayAddSymptom": "ലക്ഷണം ചേർക്കുക",
+  "todayLatestTitle": "ഏറ്റവും പുതിയ അളവുകൾ",
+  "todayLatestEmpty": "ഇതുവരെ അളവുകളില്ല. ഗ്ലൂക്കോസും കീറ്റോൺ BHB യും ഒരുമിച്ച് രേഖപ്പെടുത്താൻ 'അളവ് ചേർക്കുക' ഉപയോഗിക്കുക.",
+  "todayNutritionTitle": "ഇന്നത്തെ പോഷണം",
+  "todayNutritionEmpty": "ഇന്ന് ഭക്ഷണമൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല. ഭക്ഷണം പ്ലാൻ ടാബിൽ നിന്ന് ലോഗ് ചെയ്യുന്നു.",
+  "todayWeightTitle": "ഭാരം",
+  "todayWeightEmpty": "ഇതുവരെ ഭാര എൻട്രികളില്ല.",
+  "todaySymptomsTitle": "ഇന്നത്തെ ലക്ഷണങ്ങൾ",
+  "todaySymptomsEmpty": "ഇന്ന് ലക്ഷണങ്ങളൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല.",
+  "todayPlansTitle": "ആസൂത്രണം ചെയ്ത ഭക്ഷണം",
+  "todayPlansEmpty": "ഇന്നത്തേക്ക് ഭക്ഷണ പ്ലാനില്ല.",
+  "comingSoonTitle": "വരാനിരിക്കുന്ന അപ്ഡേറ്റിൽ വരും",
+  "comingSoonBody": "ഈ എൻട്രി ഫോം നിർമ്മാണത്തിലാണ്. പുരോഗതി പ്രോജക്റ്റ് റിപ്പോസിറ്ററിയിൽ പിന്തുടരാം.",
+  "mealFormTitle": "ഭക്ഷണം ലോഗ് ചെയ്യുക",
+  "mealSearchLabel": "ഭക്ഷണം തിരയുക",
+  "mealTypeLabel": "ഭക്ഷണ തരം",
+  "mealTypeBreakfast": "പ്രഭാതഭക്ഷണം",
+  "mealTypeLunch": "ഉച്ചഭക്ഷണം",
+  "mealTypeDinner": "അത്താഴം",
+  "mealTypeSnack": "ലഘുഭക്ഷണം",
+  "mealTypeCustom": "ഇഷ്ടാനുസൃതം",
+  "mealGramsLabel": "അളവ് (ഗ്രാം)",
+  "mealAddItem": "ഭക്ഷണം ചേർക്കുക",
+  "mealNoteLabel": "കുറിപ്പ് (ഓപ്ഷണൽ)",
+  "mealFavoriteToggle": "പ്രിയപ്പെട്ടതായി അടയാളപ്പെടുത്തുക",
+  "mealRepeatSection": "ദ്രുത ആവർത്തനം",
+  "mealRepeatFavorites": "പ്രിയപ്പെട്ടവ",
+  "mealRepeatRecent": "സമീപകാലം",
+  "mealSave": "ഭക്ഷണം സേവ് ചെയ്യുക",
+  "mealItemsHeading": "ഇനങ്ങൾ",
+  "mealSavedToast": "ഭക്ഷണം സേവ് ചെയ്തു.",
+  "mealNeedsItem": "ആദ്യം കുറഞ്ഞത് ഒരു ഭക്ഷണം ചേർക്കുക.",
+  "mealTotalsHeading": "ദൈനംദിന ആകെ",
+  "mealTotalsKcal": "ഊർജ്ജം: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "നെറ്റ് കാർബ്: {value} ഗ്രാം",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "ആകെ കാർബ്: {value} ഗ്രാം",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "നാര്: {value} ഗ്രാം",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "പ്രോട്ടീൻ: {value} ഗ്രാം",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "കൊഴുപ്പ്: {value} ഗ്രാം",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "സാധാരണയായി നല്ല തിരഞ്ഞെടുപ്പ്",
+  "guideGroupLimit": "അളവിനോ ആവൃത്തിക്കോ പരിധി വേണ്ടിവന്നേക്കാം",
+  "guideGroupAvoid": "സാധാരണയായി കീറ്റോജെനിക് ലക്ഷ്യങ്ങളുമായി യോജിക്കില്ല",
+  "guideWhyHeading": "എന്തുകൊണ്ട്?",
+  "guideTypicalPortion": "സാധാരണ അളവ്: {portion} (~{grams} ഗ്രാം)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ബദലുകൾ: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ഡാറ്റ ഉറവിടം: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "മാംസം, മത്സ്യം, മുട്ട",
+  "guideCardLowCarbVegetables": "കുറഞ്ഞ കാർബ് പച്ചക്കറികൾ",
+  "guideCardFatsOils": "കൊഴുപ്പും എണ്ണയും",
+  "guideCardNutsSeeds": "നട്സും വിത്തുകളും",
+  "guideCardBerries": "ബെറികൾ",
+  "guideCardDairy": "ഫുൾ-ഫാറ്റ് പാലുൽപ്പന്നങ്ങൾ",
+  "guideCardFruit": "പഴങ്ങൾ",
+  "guideCardLegumes": "പയർവർഗ്ഗങ്ങൾ",
+  "guideCardMilkDrinks": "പാലും മധുര പാനീയങ്ങളും",
+  "guideCardSugaryDrinks": "പഞ്ചസാര പാനീയങ്ങൾ",
+  "guideCardStarches": "ബ്രെഡ്, അരി, ഉരുളക്കിഴങ്ങ്",
+  "guideCardSweets": "മധുരപലഹാരങ്ങളും ഡെസേർട്ടും",
+  "logMealRelation": "{mealType} ഭക്ഷണത്തിന് {hours} മണിക്കൂർ ശേഷം രേഖപ്പെടുത്തി — സമയ സന്ദർഭം മാത്രം, ഫലമല്ല.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ഈ റീഡിംഗിന് മുമ്പുള്ള വിശകലന വിൻഡോയിൽ ഭക്ഷണമൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല.",
+  "logRelationWindowLabel": "ഭക്ഷണ ബന്ധ വിൻഡോ",
+  "logConfoundersHeading": "റീഡിംഗുകളെ മറ്റെന്തെല്ലാം ബാധിക്കാം?",
+  "mealTypeShortBreakfast": "പ്രഭാതഭക്ഷണം",
+  "mealTypeShortLunch": "ഉച്ചഭക്ഷണം",
+  "mealTypeShortDinner": "അത്താഴം",
+  "mealTypeShortSnack": "ലഘുഭക്ഷണം",
+  "mealTypeShortCustom": "ഭക്ഷണം",
+  "recipePerServing": "{value} വിളമ്പൽ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "തയ്യാറെടുപ്പ്: {value} മിനിറ്റ്",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "അലർജനുകൾ: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ചേരുവകൾ",
+  "recipeGrams": "{value} ഗ്രാം",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ഘട്ടങ്ങൾ",
+  "recipeStorage": "സംഭരണം: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ഒരു പഠനത്തിൽ ഉപയോഗിച്ച ഗവേഷണ പരിധി",
+  "goalLegendClinician": "എന്റെ ഡോക്ടറുടെ ലക്ഷ്യം",
+  "goalLegendPersonal": "എന്റെ വ്യക്തിഗത ട്രാക്കിംഗ് ലക്ഷ്യം",
+  "goalLegendPersonalNote": "വ്യക്തിഗത ട്രാക്കിംഗ് ലക്ഷ്യം വൈദ്യ ലക്ഷ്യമല്ല.",
+  "weightValueLabel": "ഭാരം ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "അവസ്ഥ (ഓപ്ഷണൽ, ഉദാ. രാവിലെ, വ്യായാമത്തിന് ശേഷം)",
+  "weightSave": "ഭാരം സേവ് ചെയ്യുക",
+  "symptomFormTitle": "ലക്ഷണം ലോഗ് ചെയ്യുക",
+  "symptomDefinitionLabel": "ലക്ഷണം",
+  "symptomSeverityLabel": "തീവ്രത: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "കുറിപ്പ് (ഓപ്ഷണൽ)",
+  "symptomSave": "ലക്ഷണം സേവ് ചെയ്യുക",
+  "symptomSavedToast": "ലക്ഷണം സേവ് ചെയ്തു.",
+  "symptomGuidance": "നിങ്ങൾ ഒരു പ്രധാന ലക്ഷണം അടയാളപ്പെടുത്തി. ഈ ആപ്പ് രോഗനിർണയം നടത്തുന്നില്ല. നിങ്ങളുടെ സ്വന്തം ആരോഗ്യ പദ്ധതി പിന്തുടരുക, അസ്വസ്ഥത തോന്നുകയോ ലക്ഷണങ്ങൾ കഠിനമാവുകയോ ചെയ്താൽ പ്രാദേശിക അടിയന്തര സേവനങ്ങളെ ബന്ധപ്പെടുക.",
+  "symptomSeizureGuidance": "നിങ്ങൾ ഒരു അപസ്മാര സംഭവം രേഖപ്പെടുത്തി. ഈ ആപ്പ് രോഗനിർണയം നടത്തുന്നില്ല. ദയവായി നിങ്ങളുടെ ആരോഗ്യ പദ്ധതി പിന്തുടരുകയും ആരോഗ്യ വിദഗ്ധനെ ബന്ധപ്പെടുകയും ചെയ്യുക; അടിയന്തരമെങ്കിൽ പ്രാദേശിക അടിയന്തര സേവനങ്ങളെ വിളിക്കുക.",
+  "trendsRange7": "7 ദിവസം",
+  "trendsRange30": "30 ദിവസം",
+  "trendsRange90": "90 ദിവസം",
+  "trendsSummary": "കഴിഞ്ഞ {days} ദിവസത്തിൽ {count} റീഡിംഗുകൾ. ഏറ്റവും പുതിയത്: {latest}, ശരാശരി: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ഈ പരിധിയിൽ ഡാറ്റയില്ല.",
+  "trendsExplainsTitle": "ഈ ചാർട്ട് എന്ത് പറയുന്നു — എന്ത് പറയുന്നില്ല",
+  "trendsExplainsBody": "ചാർട്ട് നിങ്ങളുടെ സ്വന്തം റീഡിംഗുകൾ കാലക്രമത്തിൽ അസംസ്കൃത പോയിന്റുകളായി കാണിക്കുന്നു. ഇത് രോഗനിർണയം നടത്തുകയോ പ്രവചിക്കുകയോ കാരണങ്ങൾ തെളിയിക്കുകയോ ചെയ്യുന്നില്ല. കാണാതായ ദിവസങ്ങൾ പൂജ്യമല്ല, വിടവുകളായി കാണിക്കും.",
+  "trendsWeightChart": "ഭാരം (കി.ഗ്രാം)",
+  "trendsBandsNote": "ഗവേഷണ പരിധികൾ ഓപ്ഷണലാണ്, സ്വതവേ ഓഫാണ്. ഓണാക്കാൻ ലോഗ് ടാബ് കാണുക.",
+  "evidenceDiseaseFilter": "രോഗ-നിർദ്ദിഷ്ട ഗവേഷണം കാണിക്കുക (നിങ്ങൾ വായിക്കാൻ തിരഞ്ഞെടുക്കുന്ന ഉറവിടങ്ങളിൽ നിന്ന്)",
+  "evidenceSectionTitle": "ശാസ്ത്രീയ ഉറവിടങ്ങളും ലേഖനങ്ങളും",
+  "guideCopyLink": "ഉറവിട ലിങ്ക് പകർത്തുക",
+  "planTitle": "പ്രതിവാര പ്ലാൻ",
+  "planGenerateDraft": "പ്രതിവാര ഡ്രാഫ്റ്റ് സൃഷ്ടിക്കുക",
+  "planDraftLockedNote": "ഓട്ടോമാറ്റിക് പ്ലാൻ നിർമ്മാണം ഓഫ് ആയി തുടരും: ദയവായി ആദ്യം യോഗ്യതയുള്ള ആരോഗ്യ വിദഗ്ധനുമായി പരിശോധിക്കുക.",
+  "planCreatedToast": "പ്രതിവാര പ്ലാൻ സൃഷ്ടിച്ചു.",
+  "planItemDay": "ദിവസം {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "പ്ലാനിൽ നിന്ന് ഷോപ്പിംഗ് ലിസ്റ്റ് ഉണ്ടാക്കുക",
+  "shoppingTitle": "ഷോപ്പിംഗ് ലിസ്റ്റ്",
+  "shoppingUndo": "തിരികെ",
+  "shoppingAddManual": "ഇനം കൈകൊണ്ട് ചേർക്കുക",
+  "shoppingCheckedToggle": "ടിക്ക് ചെയ്യുക",
+  "shoppingEmpty": "ഇതുവരെ ഷോപ്പിംഗ് ലിസ്റ്റില്ല.",
+  "planEmpty": "ഇതുവരെ പ്രതിവാര പ്ലാനില്ല. തുടങ്ങാൻ നിങ്ങളുടെ റെസിപ്പികളിൽ നിന്ന് ഡ്രാഫ്റ്റ് സൃഷ്ടിക്കുക.",
+  "aboutTitle": "വിവരങ്ങൾ",
+  "aboutSlogan": "സ്വകാര്യ കീറ്റോ ജേണൽ",
+  "aboutVersion": "പതിപ്പ് {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ഓപ്പൺ സോഴ്സ്",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 ലൈസൻസിന് കീഴിലുള്ള സൗജന്യ ഓപ്പൺ-സോഴ്സ് സോഫ്റ്റ്‌വെയറാണ്. അതേ ലൈസൻസിൽ കോഡ് പരിശോധിക്കാനും മാറ്റാനും പുനർവിതരണം ചെയ്യാനും കഴിയും.",
+  "aboutPrivacyHeading": "സ്വകാര്യത",
+  "aboutPrivacyBody": "നിങ്ങളുടെ ആരോഗ്യ ഡാറ്റ ഈ ഉപകരണത്തിൽ തന്നെ നിൽക്കും. അക്കൗണ്ട് ഇല്ല, അനലിറ്റിക്സ് ഇല്ല.",
+  "aboutDisclaimerHeading": "നിരാകരണം",
+  "aboutDisclaimerBody": "ഈ ആപ്പ് പൊതുവായ വിവരങ്ങൾക്കും വ്യക്തിഗത ട്രാക്കിംഗിനും ഉള്ളതാണ്. ഇത് വൈദ്യോപദേശമോ രോഗനിർണയമോ ചികിത്സയോ അല്ല.",
+  "aboutLicensesButton": "ലൈസൻസുകൾ",
+  "aboutShareButton": "ഈ ആപ്പ് പങ്കിടുക",
+  "aboutOtherAppsButton": "മറ്റ് ആപ്പുകൾ",
+  "aboutCopiedToast": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി.",
+  "licensesTitle": "ലൈസൻസുകൾ",
+  "otherAppsTitle": "മറ്റ് ആപ്പുകൾ",
+  "otherAppsEmpty": "മറ്റ് ആപ്പുകളൊന്നും ഇതുവരെ പട്ടികപ്പെടുത്തിയിട്ടില്ല.",
+  "otherAppsCopyLink": "സ്റ്റോർ ലിങ്ക് പകർത്തുക",
+  "settingsTitle": "ക്രമീകരണങ്ങൾ",
+  "aboutShareText": "ഗ്ലൂക്കോസ്, കീറ്റോൺ, GKI ട്രാക്കിംഗുള്ള സ്വകാര്യ കീറ്റോ ജേണൽ. ഓപ്പൺ സോഴ്സ്, അക്കൗണ്ട് ആവശ്യമില്ല.",
+  "dataManagementTitle": "ഡാറ്റ മാനേജ്മെന്റ്",
+  "dataExportJson": "ഡാറ്റ എക്സ്പോർട്ട് ചെയ്യുക (JSON)",
+  "dataExportCsv": "അളവുകൾ എക്സ്പോർട്ട് ചെയ്യുക (CSV)",
+  "dataImportLabel": "എക്സ്പോർട്ട് ചെയ്ത JSON ഇവിടെ പേസ്റ്റ് ചെയ്യുക",
+  "dataImportButton": "ഡാറ്റ ഇമ്പോർട്ട് ചെയ്യുക",
+  "dataImportSuccess": "{glucose} ഗ്ലൂക്കോസ്, {weight} ഭാര രേഖകൾ ഇമ്പോർട്ട് ചെയ്തു.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ഇമ്പോർട്ട് പരാജയപ്പെട്ടു: ഫയൽ അസാധുവാണ് അല്ലെങ്കിൽ പിന്തുണയ്ക്കുന്നില്ല.",
+  "dataDeleteAll": "എന്റെ എല്ലാ ഡാറ്റയും ഇല്ലാതാക്കുക",
+  "dataDeleteConfirm1": "എല്ലാ ഡാറ്റയും ഇല്ലാതാക്കണോ? അളവുകൾ, ഭക്ഷണം, പ്ലാനുകൾ, ക്രമീകരണങ്ങൾ എന്നിവ ഇതിൽ ഉൾപ്പെടുന്നു. ഇത് പഴയപടിയാക്കാൻ കഴിയില്ല.",
+  "dataDeleteConfirm2": "നിങ്ങൾക്ക് ശരിക്കും ഉറപ്പാണോ? സ്ഥിരീകരിക്കാൻ DELETE ടൈപ്പ് ചെയ്യുക.",
+  "dataDeleteTypeDelete": "DELETE ടൈപ്പ് ചെയ്യുക",
+  "dataDeleteDone": "എല്ലാ ഡാറ്റയും ഇല്ലാതാക്കി ({count} രേഖകൾ).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "എക്സ്പോർട്ട് ഫയൽ തയ്യാർ — എവിടെ സേവ് ചെയ്യണമെന്ന് തിരഞ്ഞെടുക്കുക.",
+  "settingsAppearance": "രൂപം",
+  "themeSystem": "സിസ്റ്റം",
+  "themeLight": "ലൈറ്റ്",
+  "themeDark": "ഡാർക്ക്",
+  "settingsLanguage": "ഭാഷ",
+  "settingsMore": "കൂടുതൽ"
+}

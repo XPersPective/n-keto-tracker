@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/database/settings_repository.dart';
 import 'l10n/generated/app_localizations.dart';
+import 'l10n/language_names.dart';
 
 /// Kayıtlı dil tercihinin yerel ayara çözümlenmesi (ORTAK §3.1).
 ///
@@ -14,10 +15,9 @@ final appLocaleProvider = Provider<Locale?>((ref) {
   final settings = ref.watch(appSettingsProvider).value;
   final code = settings?.languageCode;
   if (code == null || code.isEmpty) return null;
-  if (!AppLocalizations.supportedLocales.any((l) => l.languageCode == code)) {
-    return null;
-  }
-  return Locale(code);
+  final locale = localeFromCode(code);
+  if (!AppLocalizations.supportedLocales.contains(locale)) return null;
+  return locale;
 });
 
 /// Kayıtlı tema tercihi ('light' | 'dark'; kayıt yoksa sistem).

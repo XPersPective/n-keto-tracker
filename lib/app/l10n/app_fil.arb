@@ -1,0 +1,452 @@
+{
+  "@@locale": "fil",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Ngayon",
+  "navLog": "Log",
+  "navPlan": "Plano",
+  "navTrends": "Mga Trend",
+  "navGuide": "Gabay",
+  "pageUnderConstruction": "Ginagawa pa ang screen na ito.",
+  "generalInfoDisclaimer": "Para sa pangkalahatang impormasyon lamang; hindi medikal na payo.",
+  "onboardingLanguageTitle": "Piliin ang iyong wika",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Nananatili ang data mo sa iyong device",
+  "onboardingPrivacyBody": "Iniingatan ng N Keto Tracker ang iyong mga sukat, pagkain at tala sa app na ito lamang sa iyong device. Walang account, at hindi kailanman ipinapadala saanman ang iyong health data. Kapag binura mo ang app, mabubura ang iyong data; maaari kang mag-export ng backup anumang oras.",
+  "onboardingMedicalTitle": "Hindi medikal na payo",
+  "onboardingMedicalBody": "Ang app na ito ay para sa pangkalahatang impormasyon at personal na pagsubaybay. Hindi ito medikal na payo, diagnosis o paggamot, at hindi nito pinapalitan ang pangangalaga ng mga kwalipikadong propesyonal sa kalusugan.",
+  "onboardingPurposeTitle": "Ano ang gusto mong subaybayan?",
+  "onboardingPurposeLearn": "Matuto tungkol sa ketogenic na nutrisyon",
+  "onboardingPurposeMeals": "Magplano ng mga pagkain",
+  "onboardingPurposeMacros": "Subaybayan ang macros at net carbs",
+  "onboardingPurposeMeasure": "Subaybayan ang glucose, ketones at GKI",
+  "onboardingProfileTitle": "Tungkol sa iyo (opsyonal)",
+  "onboardingProfileBody": "Maaari mo itong laktawan at idagdag mamaya sa settings. Ginagamit lamang ito para sa pangkalahatang tantiya ng enerhiya.",
+  "onboardingBirthYear": "Taon ng kapanganakan",
+  "onboardingHeightCm": "Taas (cm)",
+  "onboardingWeightKg": "Timbang (kg)",
+  "onboardingEnergyCoeffTitle": "Coefficient ng tantiya ng enerhiya",
+  "onboardingEnergyCoeffBody": "Gumagamit ang pangkalahatang tantiya ng enerhiya ng isa sa dalawang nailathalang coefficient. Hindi ito tungkol sa iyong gender identity — kung aling bersyon lang ng equation ang pinakaangkop sa iyo. Maaari mo ring lubusang laktawan ang mga tantiya ng enerhiya.",
+  "onboardingEnergyCoeffSkip": "Laktawan ang mga tantiya ng enerhiya",
+  "onboardingScreeningTitle": "Ilang tanong sa kaligtasan",
+  "onboardingScreeningBody": "Hindi nagdi-diagnose ng anuman ang mga tanong na ito. Pinapatay lang nito ang awtomatikong mungkahi ng plano at layunin kapag kailangan ng dagdag na pag-iingat.",
+  "onboardingScreeningDiabetes": "May diabetes",
+  "onboardingScreeningMedication": "Gumagamit ng gamot na nagpapababa ng glucose o insulin",
+  "onboardingScreeningPregnancy": "Buntis o nagpapasuso",
+  "onboardingScreeningOrgan": "May sakit sa bato, atay o pancreas",
+  "onboardingScreeningEatingDisorder": "May kasaysayan ng eating disorder",
+  "onboardingScreeningWeightLoss": "Nagkaroon ng malaking hindi sinasadyang pagbaba ng timbang",
+  "onboardingScreeningUnder18": "Wala pang 18 taong gulang",
+  "onboardingScreeningLockedNote": "Dahil sa iyong mga sagot, mananatiling nakapatay ang awtomatikong paggawa ng plano at layunin. Magagamit pa rin ang pagtatala at pag-aaral. Pakisuri ito kasama ang kwalipikadong propesyonal sa kalusugan.",
+  "onboardingDataTitle": "Ang iyong data",
+  "onboardingDataBody": "Nananatili lang sa device na ito ang iyong mga tala. Kung mawala o i-uninstall mo ang app nang walang backup export, hindi na maibabalik ang data.",
+  "onboardingConsentTitle": "Pagsang-ayon",
+  "onboardingConsentBody": "Nabasa at tinatanggap ko ang buod ng privacy at ang paunawa na hindi medikal na payo ang app na ito. Nauunawaan kong nananatili lang sa device na ito ang aking data.",
+  "onboardingConsentCheckbox": "Tinatanggap ko",
+  "onboardingNext": "Susunod",
+  "onboardingBack": "Bumalik",
+  "onboardingFinish": "Simulan ang paggamit ng app",
+  "onboardingStepOf": "Hakbang {current} ng {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glucose ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Blood ketone BHB (mmol/L)",
+  "formSourceType": "Uri ng source",
+  "formNote": "Tala (opsyonal)",
+  "formPickTime": "Oras ng pagsukat",
+  "formSaveSession": "I-save ang sesyon ng pagsukat",
+  "formInvalidValue": "Maglagay ng wastong positibong numero.",
+  "gkiResultHeading": "Ang iyong GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Sinukat noong: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Bersyon ng kalkulasyon: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Wala pang sukat",
+  "logEmptyBody": "Idagdag ang una mong glucose at ketone reading para makita rito.",
+  "logBandsToggle": "Ipakita ang research ranges mula sa artikulong binasa mo",
+  "bandsDisclaimer": "Hindi ito clinical normal ranges o napatunayang target sa paggamot. Mga kinatawan at hindi nag-uutos na mungkahi ito mula sa isang partikular na research framework. Ang GKI lang ay hindi nagpapakita ng kalusugan, tugon sa sakit o kaligtasan. I-tap para makita ang source.",
+  "logBandOptimal": "Iminumungkahing optimal na research range (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Iminumungkahing therapeutic na research range (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Labas sa iminumungkahing ≤ 2.0 research range",
+  "logMatchSimultaneous": "sabay",
+  "logMatchApproximate": "tinatayang tugma",
+  "logTimelineHeading": "Timeline",
+  "logChartsHeading": "Mga Chart",
+  "logGlucoseChart": "Glucose (mmol/L)",
+  "logBhbChart": "Ketone BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopyahin ang source link",
+  "todayQuickActions": "Mabilis na aksyon",
+  "todayAddMeasurement": "Magdagdag ng sukat",
+  "todayAddMeal": "Magdagdag ng pagkain",
+  "todayAddWeight": "Magdagdag ng timbang",
+  "todayAddSymptom": "Magdagdag ng sintomas",
+  "todayLatestTitle": "Pinakabagong mga sukat",
+  "todayLatestEmpty": "Wala pang sukat. Gamitin ang 'Magdagdag ng sukat' para i-record nang sabay ang glucose at ketone BHB.",
+  "todayNutritionTitle": "Nutrisyon ngayon",
+  "todayNutritionEmpty": "Walang pagkaing na-record ngayon. Nila-log ang mga pagkain mula sa tab na Plano.",
+  "todayWeightTitle": "Timbang",
+  "todayWeightEmpty": "Wala pang entry ng timbang.",
+  "todaySymptomsTitle": "Mga sintomas ngayon",
+  "todaySymptomsEmpty": "Walang sintomas na na-record ngayon.",
+  "todayPlansTitle": "Mga nakaplanong pagkain",
+  "todayPlansEmpty": "Walang meal plan para ngayon.",
+  "comingSoonTitle": "Darating sa susunod na update",
+  "comingSoonBody": "Ginagawa pa ang entry form na ito. Masusubaybayan mo ang progreso sa repository ng proyekto.",
+  "mealFormTitle": "Mag-log ng pagkain",
+  "mealSearchLabel": "Maghanap ng pagkain",
+  "mealTypeLabel": "Uri ng pagkain",
+  "mealTypeBreakfast": "Almusal",
+  "mealTypeLunch": "Tanghalian",
+  "mealTypeDinner": "Hapunan",
+  "mealTypeSnack": "Meryenda",
+  "mealTypeCustom": "Custom",
+  "mealGramsLabel": "Dami (g)",
+  "mealAddItem": "Magdagdag ng pagkain",
+  "mealNoteLabel": "Tala (opsyonal)",
+  "mealFavoriteToggle": "Markahan bilang paborito",
+  "mealRepeatSection": "Mabilis na ulit",
+  "mealRepeatFavorites": "Mga paborito",
+  "mealRepeatRecent": "Kamakailan",
+  "mealSave": "I-save ang pagkain",
+  "mealItemsHeading": "Mga item",
+  "mealSavedToast": "Na-save ang pagkain.",
+  "mealNeedsItem": "Magdagdag muna ng kahit isang pagkain.",
+  "mealTotalsHeading": "Kabuuan sa araw",
+  "mealTotalsKcal": "Enerhiya: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Net carbs: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Kabuuang carbs: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fiber: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Protina: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Taba: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Karaniwang angkop",
+  "guideGroupLimit": "Maaaring kailanganin ng limitasyon sa dami o dalas",
+  "guideGroupAvoid": "Karaniwang hindi tugma sa ketogenic na target",
+  "guideWhyHeading": "Bakit?",
+  "guideTypicalPortion": "Karaniwang serving: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Mga alternatibo: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Pinagmulan ng data: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Karne, isda at itlog",
+  "guideCardLowCarbVegetables": "Mga gulay na mababa sa carb",
+  "guideCardFatsOils": "Mga taba at langis",
+  "guideCardNutsSeeds": "Mga mani at buto",
+  "guideCardBerries": "Mga berry",
+  "guideCardDairy": "Full-fat na gatas at keso",
+  "guideCardFruit": "Mga prutas",
+  "guideCardLegumes": "Mga munggo",
+  "guideCardMilkDrinks": "Gatas at matatamis na inumin",
+  "guideCardSugaryDrinks": "Matatamis na inumin",
+  "guideCardStarches": "Tinapay, kanin, patatas",
+  "guideCardSweets": "Mga matamis at panghimagas",
+  "logMealRelation": "Na-record {hours} oras pagkatapos ng {mealType} — konteksto lang ng oras, hindi epekto.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Walang na-record na pagkain sa analysis window bago ang reading na ito.",
+  "logRelationWindowLabel": "Window ng kaugnayan sa pagkain",
+  "logConfoundersHeading": "Ano pa ang puwedeng makaapekto sa mga reading?",
+  "mealTypeShortBreakfast": "almusal",
+  "mealTypeShortLunch": "tanghalian",
+  "mealTypeShortDinner": "hapunan",
+  "mealTypeShortSnack": "meryenda",
+  "mealTypeShortCustom": "pagkain",
+  "recipePerServing": "{value} serving",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Paghahanda: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Mga allergen: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Mga sangkap",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Mga hakbang",
+  "recipeStorage": "Imbakan: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Research range na ginamit sa isang pag-aaral",
+  "goalLegendClinician": "Target ng aking doktor",
+  "goalLegendPersonal": "Aking personal na layunin sa pagsubaybay",
+  "goalLegendPersonalNote": "Ang personal na layunin sa pagsubaybay ay hindi medikal na target.",
+  "weightValueLabel": "Timbang ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Kondisyon (opsyonal, hal. umaga, pagkatapos mag-ehersisyo)",
+  "weightSave": "I-save ang timbang",
+  "symptomFormTitle": "Mag-log ng sintomas",
+  "symptomDefinitionLabel": "Sintomas",
+  "symptomSeverityLabel": "Tindi: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Tala (opsyonal)",
+  "symptomSave": "I-save ang sintomas",
+  "symptomSavedToast": "Na-save ang sintomas.",
+  "symptomGuidance": "Nagmarka ka ng mahalagang sintomas. Hindi nagdi-diagnose ang app na ito. Sundin ang sarili mong health plan, at makipag-ugnayan sa lokal na emergency services kung masama ang pakiramdam mo o malala ang mga sintomas.",
+  "symptomSeizureGuidance": "Nagtala ka ng seizure. Hindi nagdi-diagnose ang app na ito. Pakisunod ang iyong health plan at makipag-ugnayan sa iyong healthcare professional; tumawag sa lokal na emergency services kung apurahan.",
+  "trendsRange7": "7 araw",
+  "trendsRange30": "30 araw",
+  "trendsRange90": "90 araw",
+  "trendsSummary": "{count} reading sa nakaraang {days} araw. Pinakabago: {latest}, average: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Walang data sa saklaw na ito.",
+  "trendsExplainsTitle": "Ano ang sinasabi ng chart na ito — at ano ang hindi",
+  "trendsExplainsBody": "Ipinapakita ng chart ang sarili mong mga reading sa paglipas ng panahon bilang raw na tuldok. Hindi ito nagdi-diagnose, hindi nanghuhula at hindi nagpapatunay ng sanhi. Lumalabas ang mga nawawalang araw bilang puwang, hindi zero.",
+  "trendsWeightChart": "Timbang (kg)",
+  "trendsBandsNote": "Opsyonal at naka-off bilang default ang research ranges. Tingnan ang tab na Log para i-on ang mga ito.",
+  "evidenceDiseaseFilter": "Ipakita ang research na partikular sa sakit (mula sa mga source na pinili mong basahin)",
+  "evidenceSectionTitle": "Mga siyentipikong source at artikulo",
+  "guideCopyLink": "Kopyahin ang source link",
+  "planTitle": "Lingguhang plano",
+  "planGenerateDraft": "Gumawa ng lingguhang draft",
+  "planDraftLockedNote": "Mananatiling naka-off ang awtomatikong paggawa ng plano: pakisuri muna ito kasama ang kwalipikadong propesyonal sa kalusugan.",
+  "planCreatedToast": "Nagawa ang lingguhang plano.",
+  "planItemDay": "Araw {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Gumawa ng shopping list mula sa plano",
+  "shoppingTitle": "Shopping list",
+  "shoppingUndo": "I-undo",
+  "shoppingAddManual": "Magdagdag ng manwal na item",
+  "shoppingCheckedToggle": "Lagyan ng check",
+  "shoppingEmpty": "Wala pang shopping list.",
+  "planEmpty": "Wala pang lingguhang plano. Gumawa ng draft mula sa iyong mga recipe para magsimula.",
+  "aboutTitle": "Tungkol",
+  "aboutSlogan": "Pribadong keto journal",
+  "aboutVersion": "Bersyon {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Open source",
+  "aboutOpenSourceBody": "Ang N Keto Tracker ay libre at open-source na software sa ilalim ng GPL-3.0. Maaari mong suriin, baguhin at ipamahagi muli ang code sa ilalim ng parehong lisensya.",
+  "aboutPrivacyHeading": "Privacy",
+  "aboutPrivacyBody": "Nananatili sa device na ito ang iyong health data. Walang account, walang analytics.",
+  "aboutDisclaimerHeading": "Paunawa",
+  "aboutDisclaimerBody": "Ang app na ito ay para sa pangkalahatang impormasyon at personal na pagsubaybay. Hindi ito medikal na payo, diagnosis o paggamot.",
+  "aboutLicensesButton": "Mga lisensya",
+  "aboutShareButton": "Ibahagi ang app na ito",
+  "aboutOtherAppsButton": "Iba pang app",
+  "aboutCopiedToast": "Nakopya sa clipboard.",
+  "licensesTitle": "Mga lisensya",
+  "otherAppsTitle": "Iba pang app",
+  "otherAppsEmpty": "Wala pang nakalistang ibang app.",
+  "otherAppsCopyLink": "Kopyahin ang store link",
+  "settingsTitle": "Mga setting",
+  "aboutShareText": "Pribadong keto journal na may pagsubaybay sa glucose, ketone at GKI. Open source, hindi kailangan ng account.",
+  "dataManagementTitle": "Pamamahala ng data",
+  "dataExportJson": "I-export ang data (JSON)",
+  "dataExportCsv": "I-export ang mga sukat (CSV)",
+  "dataImportLabel": "I-paste dito ang na-export na JSON",
+  "dataImportButton": "I-import ang data",
+  "dataImportSuccess": "Na-import ang {glucose} glucose at {weight} timbang na tala.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Nabigo ang import: hindi wasto o hindi suportado ang file.",
+  "dataDeleteAll": "Burahin ang lahat ng data ko",
+  "dataDeleteConfirm1": "Burahin ANG LAHAT ng data? Kasama rito ang mga sukat, pagkain, plano at settings. Hindi na ito maibabalik.",
+  "dataDeleteConfirm2": "Sigurado ka ba talaga? I-type ang DELETE para kumpirmahin.",
+  "dataDeleteTypeDelete": "I-type ang DELETE",
+  "dataDeleteDone": "Nabura ang lahat ng data ({count} tala).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Handa na ang export file — piliin kung saan ito ise-save.",
+  "settingsAppearance": "Hitsura",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "settingsLanguage": "Wika",
+  "settingsMore": "Higit pa"
+}

@@ -1,0 +1,452 @@
+{
+  "@@locale": "mn",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Өнөөдөр",
+  "navLog": "Тэмдэглэл",
+  "navPlan": "Төлөвлөгөө",
+  "navTrends": "Хандлага",
+  "navGuide": "Гарын авлага",
+  "pageUnderConstruction": "Энэ дэлгэцийг бүтээж байна.",
+  "generalInfoDisclaimer": "Зөвхөн ерөнхий мэдээлэл; эмнэлгийн зөвлөгөө биш.",
+  "onboardingLanguageTitle": "Хэлээ сонгоно уу",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Таны мэдээлэл таны төхөөрөмж дээр үлдэнэ",
+  "onboardingPrivacyBody": "N Keto Tracker таны хэмжилт, хоол, тэмдэглэлийг зөвхөн таны төхөөрөмж дээрх энэ аппад хадгална. Бүртгэл байхгүй бөгөөд таны эрүүл мэндийн мэдээлэл хаашаа ч илгээгдэхгүй. Аппыг устгавал мэдээлэл ч устна; нөөц хуулбарыг хүссэн үедээ экспортолж болно.",
+  "onboardingMedicalTitle": "Эмнэлгийн зөвлөгөө биш",
+  "onboardingMedicalBody": "Энэ апп ерөнхий мэдээлэл болон хувийн хяналтад зориулагдсан. Энэ нь эмнэлгийн зөвлөгөө, оношлогоо, эмчилгээ биш бөгөөд мэргэшсэн эрүүл мэндийн ажилтны тусламжийг орлохгүй.",
+  "onboardingPurposeTitle": "Та юуг хянахыг хүсэж байна вэ?",
+  "onboardingPurposeLearn": "Кетоген хооллолтын талаар суралцах",
+  "onboardingPurposeMeals": "Хоолоо төлөвлөх",
+  "onboardingPurposeMacros": "Макро болон цэвэр нүүрс усыг хянах",
+  "onboardingPurposeMeasure": "Глюкоз, кетон, GKI-г хянах",
+  "onboardingProfileTitle": "Таны тухай (заавал биш)",
+  "onboardingProfileBody": "Үүнийг алгасаад дараа нь тохиргоонд нэмж болно. Зөвхөн энергийн ерөнхий тооцоололд ашиглагдана.",
+  "onboardingBirthYear": "Төрсөн он",
+  "onboardingHeightCm": "Өндөр (см)",
+  "onboardingWeightKg": "Жин (кг)",
+  "onboardingEnergyCoeffTitle": "Энергийн тооцооллын коэффициент",
+  "onboardingEnergyCoeffBody": "Энергийн ерөнхий тооцоолол нь нийтлэгдсэн хоёр коэффициентийн аль нэгийг ашигладаг. Энэ нь таны жендэрийн өвөрмөц байдалтай холбоогүй — зүгээр л тэгшитгэлийн аль хувилбар танд хамгийн тохирохыг заана. Энергийн тооцооллыг бүрмөсөн алгасаж ч болно.",
+  "onboardingEnergyCoeffSkip": "Энергийн тооцооллыг алгасах",
+  "onboardingScreeningTitle": "Аюулгүй байдлын цөөн асуулт",
+  "onboardingScreeningBody": "Эдгээр асуулт ямар ч оношлогоо хийдэггүй. Нэмэлт болгоомжлол шаардлагатай үед төлөвлөгөө, зорилгын автомат санал болголтыг л унтраадаг.",
+  "onboardingScreeningDiabetes": "Чихрийн шижинтэй",
+  "onboardingScreeningMedication": "Глюкоз бууруулах эм эсвэл инсулин хэрэглэдэг",
+  "onboardingScreeningPregnancy": "Жирэмсэн эсвэл хөхүүл",
+  "onboardingScreeningOrgan": "Бөөр, элэг эсвэл нойр булчирхайн өвчинтэй",
+  "onboardingScreeningEatingDisorder": "Хоолны эмгэгийн түүхтэй",
+  "onboardingScreeningWeightLoss": "Санамсаргүй ихээхэн жин буурсан",
+  "onboardingScreeningUnder18": "18 нас хүрээгүй",
+  "onboardingScreeningLockedNote": "Таны хариултаас шалтгаалан төлөвлөгөө болон зорилгыг автоматаар үүсгэх нь унтраалттай хэвээр байна. Бүртгэх болон суралцах боломжууд ашиглагдана. Үүнийг мэргэшсэн эрүүл мэндийн ажилтантай хэлэлцэнэ үү.",
+  "onboardingDataTitle": "Таны мэдээлэл",
+  "onboardingDataBody": "Таны бичлэгүүд зөвхөн энэ төхөөрөмж дээр үлдэнэ. Нөөц хуулбар экспортлохгүйгээр аппаа алдсан эсвэл устгавал мэдээллийг сэргээх боломжгүй.",
+  "onboardingConsentTitle": "Зөвшөөрөл",
+  "onboardingConsentBody": "Би нууцлалын хураангуй болон энэ апп эмнэлгийн зөвлөгөө биш гэсэн мэдэгдлийг уншиж, хүлээн зөвшөөрч байна. Миний мэдээлэл зөвхөн энэ төхөөрөмж дээр үлдэхийг ойлгож байна.",
+  "onboardingConsentCheckbox": "Зөвшөөрч байна",
+  "onboardingNext": "Дараах",
+  "onboardingBack": "Буцах",
+  "onboardingFinish": "Аппыг ашиглаж эхлэх",
+  "onboardingStepOf": "{total}-аас {current}-р алхам",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Глюкоз ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Цусан дахь кетон BHB (mmol/L)",
+  "formSourceType": "Эх үүсвэрийн төрөл",
+  "formNote": "Тэмдэглэл (заавал биш)",
+  "formPickTime": "Хэмжсэн цаг",
+  "formSaveSession": "Хэмжилтийн сешнийг хадгалах",
+  "formInvalidValue": "Хүчинтэй эерэг тоо оруулна уу.",
+  "gkiResultHeading": "Таны GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Хэмжсэн цаг: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Тооцооллын хувилбар: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Одоогоор хэмжилт алга",
+  "logEmptyBody": "Энд харахын тулд эхний глюкоз болон кетоны заалтаа нэмнэ үү.",
+  "logBandsToggle": "Таны уншсан нийтлэлийн судалгааны хүрээг харуулах",
+  "bandsDisclaimer": "Эдгээр хүрээ нь эмнэлзүйн хэвийн хэмжээ эсвэл батлагдсан эмчилгээний зорилт биш. Тодорхой судалгааны хүрээнээс авсан төлөөлөх шинжтэй, зааварчилгаа биш санал юм. GKI дангаараа эрүүл мэнд, өвчинд үзүүлэх хариу, аюулгүй байдлыг харуулдаггүй. Эх сурвалжийг харахын тулд товшино уу.",
+  "logBandOptimal": "Санал болгох оновчтой судалгааны хүрээ (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Санал болгох эмчилгээний судалгааны хүрээ (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Санал болгосон ≤ 2.0 судалгааны хүрээнээс гадуур",
+  "logMatchSimultaneous": "нэгэн зэрэг",
+  "logMatchApproximate": "ойролцоо таарсан",
+  "logTimelineHeading": "Цагийн шугам",
+  "logChartsHeading": "График",
+  "logGlucoseChart": "Глюкоз (mmol/L)",
+  "logBhbChart": "Кетон BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Эх сурвалжийн холбоосыг хуулах",
+  "todayQuickActions": "Түргэн үйлдэл",
+  "todayAddMeasurement": "Хэмжилт нэмэх",
+  "todayAddMeal": "Хоол нэмэх",
+  "todayAddWeight": "Жин нэмэх",
+  "todayAddSymptom": "Шинж тэмдэг нэмэх",
+  "todayLatestTitle": "Сүүлийн хэмжилтүүд",
+  "todayLatestEmpty": "Одоогоор хэмжилт алга. Глюкоз болон кетон BHB-г хамт бүртгэхийн тулд «Хэмжилт нэмэх»-ийг ашиглана уу.",
+  "todayNutritionTitle": "Өнөөдрийн хоололт",
+  "todayNutritionEmpty": "Өнөөдөр хоол бүртгээгүй байна. Хоолыг «Төлөвлөгөө» табаас бүртгэнэ.",
+  "todayWeightTitle": "Жин",
+  "todayWeightEmpty": "Жингийн бичлэг одоогоор алга.",
+  "todaySymptomsTitle": "Өнөөдрийн шинж тэмдэг",
+  "todaySymptomsEmpty": "Өнөөдөр шинж тэмдэг бүртгээгүй байна.",
+  "todayPlansTitle": "Төлөвлөсөн хоол",
+  "todayPlansEmpty": "Өнөөдөрт хоолны төлөвлөгөө алга.",
+  "comingSoonTitle": "Удахгүй гарах шинэчлэлтэд ирнэ",
+  "comingSoonBody": "Энэ оруулгын маягтыг бүтээж байна. Явцыг төслийн репозиторит дагаж болно.",
+  "mealFormTitle": "Хоол бүртгэх",
+  "mealSearchLabel": "Хоол хайх",
+  "mealTypeLabel": "Хоолны төрөл",
+  "mealTypeBreakfast": "Өглөөний цай",
+  "mealTypeLunch": "Өдрийн хоол",
+  "mealTypeDinner": "Оройн хоол",
+  "mealTypeSnack": "Зууш",
+  "mealTypeCustom": "Өөр",
+  "mealGramsLabel": "Хэмжээ (г)",
+  "mealAddItem": "Хоол нэмэх",
+  "mealNoteLabel": "Тэмдэглэл (заавал биш)",
+  "mealFavoriteToggle": "Дуртай гэж тэмдэглэх",
+  "mealRepeatSection": "Хурдан давтах",
+  "mealRepeatFavorites": "Дуртай",
+  "mealRepeatRecent": "Сүүлийн",
+  "mealSave": "Хоолыг хадгалах",
+  "mealItemsHeading": "Зүйлс",
+  "mealSavedToast": "Хоол хадгалагдлаа.",
+  "mealNeedsItem": "Эхлээд наад зах нь нэг хоол нэмнэ үү.",
+  "mealTotalsHeading": "Өдрийн нийт",
+  "mealTotalsKcal": "Энерги: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Цэвэр нүүрс ус: {value} г",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Нийт нүүрс ус: {value} г",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Эслэг: {value} г",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Уураг: {value} г",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Тос: {value} г",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Ерөнхийдөө сайн сонголт",
+  "guideGroupLimit": "Хэмжээ эсвэл давтамжийн хязгаар шаардаж магадгүй",
+  "guideGroupAvoid": "Ерөнхийдөө кетоген зорилгод нийцэхгүй",
+  "guideWhyHeading": "Яагаад?",
+  "guideTypicalPortion": "Ердийн порц: {portion} (~{grams} г)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Өөр сонголт: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Мэдээллийн эх сурвалж: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Мах, загас, өндөг",
+  "guideCardLowCarbVegetables": "Нүүрс ус багатай ногоо",
+  "guideCardFatsOils": "Тос, тосон бүтээгдэхүүн",
+  "guideCardNutsSeeds": "Самар ба үр",
+  "guideCardBerries": "Жимс (мөөг жимс)",
+  "guideCardDairy": "Өөхний агууламж бүрэн сүүн бүтээгдэхүүн",
+  "guideCardFruit": "Жимс жимсгэнэ",
+  "guideCardLegumes": "Буурцагт ургамал",
+  "guideCardMilkDrinks": "Сүү ба чихэрлэг ундаа",
+  "guideCardSugaryDrinks": "Элсэн чихэртэй ундаа",
+  "guideCardStarches": "Талх, будаа, төмс",
+  "guideCardSweets": "Чихэр ба амттан",
+  "logMealRelation": "{mealType}-ийн дараа {hours} цагийн дараа бүртгэсэн — зөвхөн цагийн контекст, нөлөө биш.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Энэ заалтаас өмнөх шинжилгээний цонхонд хоол бүртгээгүй байна.",
+  "logRelationWindowLabel": "Хоолтой холбоотой цонх",
+  "logConfoundersHeading": "Заалтад өөр юу нөлөөлж болох вэ?",
+  "mealTypeShortBreakfast": "өглөөний цай",
+  "mealTypeShortLunch": "өдрийн хоол",
+  "mealTypeShortDinner": "оройн хоол",
+  "mealTypeShortSnack": "зууш",
+  "mealTypeShortCustom": "хоол",
+  "recipePerServing": "{value} порц",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Бэлтгэл: {value} мин",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Харшил үүсгэгч: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Орц",
+  "recipeGrams": "{value} г",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Алхамууд",
+  "recipeStorage": "Хадгалалт: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Судалгаанд ашигласан хүрээ",
+  "goalLegendClinician": "Миний эмчийн зорилт",
+  "goalLegendPersonal": "Миний хувийн хяналтын зорилт",
+  "goalLegendPersonalNote": "Хувийн хяналтын зорилт нь эмнэлгийн зорилт биш.",
+  "weightValueLabel": "Жин ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Нөхцөл (заавал биш, жишээ нь өглөө, дасгалын дараа)",
+  "weightSave": "Жинг хадгалах",
+  "symptomFormTitle": "Шинж тэмдэг бүртгэх",
+  "symptomDefinitionLabel": "Шинж тэмдэг",
+  "symptomSeverityLabel": "Хүнд байдал: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Тэмдэглэл (заавал биш)",
+  "symptomSave": "Шинж тэмдгийг хадгалах",
+  "symptomSavedToast": "Шинж тэмдэг хадгалагдлаа.",
+  "symptomGuidance": "Та чухал шинж тэмдэг тэмдэглэсэн байна. Энэ апп оношлогоо хийдэггүй. Өөрийн эрүүл мэндийн төлөвлөгөөг дагаж, бие тавгүй санагдвал эсвэл шинж тэмдэг хүнд бол орон нутгийн яаралтай тусламжид хандана уу.",
+  "symptomSeizureGuidance": "Та таталтын тохиолдол бүртгэсэн байна. Энэ апп оношлогоо хийдэггүй. Эрүүл мэндийн төлөвлөгөөгөө дагаж, эрүүл мэндийн ажилтантайгаа холбогдоно уу; яаралтай бол орон нутгийн яаралтай тусламжид залгана уу.",
+  "trendsRange7": "7 хоног",
+  "trendsRange30": "30 хоног",
+  "trendsRange90": "90 хоног",
+  "trendsSummary": "Сүүлийн {days} хоногт {count} заалт. Сүүлийнх: {latest}, дундаж: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Энэ хүрээнд өгөгдөл алга.",
+  "trendsExplainsTitle": "Энэ график юу хэлдэг — юу хэлдэггүй вэ",
+  "trendsExplainsBody": "График нь таны өөрийн заалтыг цаг хугацааны дагуу боловсруулаагүй цэг болгон харуулдаг. Энэ нь оношлохгүй, таамаглахгүй, шалтгааныг батлахгүй. Дутуу өдрүүд тэг биш, хоосон зай байдлаар харагдана.",
+  "trendsWeightChart": "Жин (кг)",
+  "trendsBandsNote": "Судалгааны хүрээ нь заавал биш бөгөөд өгөгдмөлөөр унтраалттай. Асаахын тулд «Тэмдэглэл» табыг үзнэ үү.",
+  "evidenceDiseaseFilter": "Өвчин тусгайлсан судалгааг харуулах (таны уншихаар сонгосон эх сурвалжаас)",
+  "evidenceSectionTitle": "Шинжлэх ухааны эх сурвалж, нийтлэл",
+  "guideCopyLink": "Эх сурвалжийн холбоосыг хуулах",
+  "planTitle": "7 хоногийн төлөвлөгөө",
+  "planGenerateDraft": "7 хоногийн ноорог үүсгэх",
+  "planDraftLockedNote": "Төлөвлөгөөг автоматаар үүсгэх нь унтраалттай хэвээр: эхлээд мэргэшсэн эрүүл мэндийн ажилтантай хэлэлцэнэ үү.",
+  "planCreatedToast": "7 хоногийн төлөвлөгөө үүслээ.",
+  "planItemDay": "{day}-р өдөр",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Төлөвлөгөөнөөс худалдан авалтын жагсаалт үүсгэх",
+  "shoppingTitle": "Худалдан авалтын жагсаалт",
+  "shoppingUndo": "Буцаах",
+  "shoppingAddManual": "Зүйлийг гараар нэмэх",
+  "shoppingCheckedToggle": "Тэмдэглэх",
+  "shoppingEmpty": "Худалдан авалтын жагсаалт одоогоор алга.",
+  "planEmpty": "7 хоногийн төлөвлөгөө одоогоор алга. Эхлэхийн тулд жороосоо ноорог үүсгэнэ үү.",
+  "aboutTitle": "Тухай",
+  "aboutSlogan": "Хувийн кето тэмдэглэл",
+  "aboutVersion": "Хувилбар {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Нээлттэй эх",
+  "aboutOpenSourceBody": "N Keto Tracker нь GPL-3.0 лицензтэй үнэгүй, нээлттэй эхийн програм хангамж юм. Кодыг ижил лицензээр шалгаж, өөрчилж, түгээж болно.",
+  "aboutPrivacyHeading": "Нууцлал",
+  "aboutPrivacyBody": "Таны эрүүл мэндийн мэдээлэл энэ төхөөрөмж дээр үлдэнэ. Бүртгэлгүй, аналитикгүй.",
+  "aboutDisclaimerHeading": "Хариуцлагаас татгалзах",
+  "aboutDisclaimerBody": "Энэ апп ерөнхий мэдээлэл болон хувийн хяналтад зориулагдсан. Энэ нь эмнэлгийн зөвлөгөө, оношлогоо, эмчилгээ биш.",
+  "aboutLicensesButton": "Лицензүүд",
+  "aboutShareButton": "Аппыг хуваалцах",
+  "aboutOtherAppsButton": "Бусад апп",
+  "aboutCopiedToast": "Түр санах ойд хуулагдлаа.",
+  "licensesTitle": "Лицензүүд",
+  "otherAppsTitle": "Бусад апп",
+  "otherAppsEmpty": "Бусад апп одоогоор жагсаагдаагүй байна.",
+  "otherAppsCopyLink": "Дэлгүүрийн холбоосыг хуулах",
+  "settingsTitle": "Тохиргоо",
+  "aboutShareText": "Глюкоз, кетон, GKI хяналттай хувийн кето тэмдэглэл. Нээлттэй эх, бүртгэл шаардлагагүй.",
+  "dataManagementTitle": "Өгөгдлийн удирдлага",
+  "dataExportJson": "Өгөгдөл экспортлох (JSON)",
+  "dataExportCsv": "Хэмжилт экспортлох (CSV)",
+  "dataImportLabel": "Экспортолсон JSON-г энд буулгана уу",
+  "dataImportButton": "Өгөгдөл импортлох",
+  "dataImportSuccess": "{glucose} глюкоз, {weight} жингийн бичлэг импортлогдлоо.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Импорт амжилтгүй: файл буруу эсвэл дэмжигдэхгүй.",
+  "dataDeleteAll": "Миний бүх өгөгдлийг устгах",
+  "dataDeleteConfirm1": "БҮХ өгөгдлийг устгах уу? Үүнд хэмжилт, хоол, төлөвлөгөө, тохиргоо орно. Үүнийг буцаах боломжгүй.",
+  "dataDeleteConfirm2": "Та үнэхээр итгэлтэй байна уу? Баталгаажуулахын тулд DELETE гэж бичнэ үү.",
+  "dataDeleteTypeDelete": "DELETE гэж бичнэ үү",
+  "dataDeleteDone": "Бүх өгөгдөл устгагдлаа ({count} бичлэг).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Экспортын файл бэлэн — хаана хадгалахаа сонгоно уу.",
+  "settingsAppearance": "Харагдац",
+  "themeSystem": "Систем",
+  "themeLight": "Цайвар",
+  "themeDark": "Харанхуй",
+  "settingsLanguage": "Хэл",
+  "settingsMore": "Бусад"
+}

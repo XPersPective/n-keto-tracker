@@ -1,0 +1,452 @@
+{
+  "@@locale": "ro",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Azi",
+  "navLog": "Jurnal",
+  "navPlan": "Plan",
+  "navTrends": "Tendințe",
+  "navGuide": "Ghid",
+  "pageUnderConstruction": "Acest ecran este în lucru.",
+  "generalInfoDisclaimer": "Doar pentru informare generală; nu este sfat medical.",
+  "onboardingLanguageTitle": "Alege limba",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Datele tale rămân pe dispozitiv",
+  "onboardingPrivacyBody": "N Keto Tracker păstrează măsurătorile, mesele și notițele tale doar în această aplicație, pe dispozitivul tău. Nu există cont, iar datele tale de sănătate nu sunt trimise nicăieri. Ștergerea aplicației șterge datele; poți exporta o copie de siguranță oricând.",
+  "onboardingMedicalTitle": "Nu este sfat medical",
+  "onboardingMedicalBody": "Această aplicație este pentru informare generală și monitorizare personală. Nu este sfat medical, diagnostic sau tratament și nu înlocuiește îngrijirea oferită de profesioniști calificați din domeniul sănătății.",
+  "onboardingPurposeTitle": "Ce vrei să urmărești?",
+  "onboardingPurposeLearn": "Să învăț despre nutriția cetogenică",
+  "onboardingPurposeMeals": "Să planific mesele",
+  "onboardingPurposeMacros": "Să urmăresc macro și carbohidrații neți",
+  "onboardingPurposeMeasure": "Să urmăresc glucoza, cetonele și GKI",
+  "onboardingProfileTitle": "Despre tine (opțional)",
+  "onboardingProfileBody": "Poți sări peste acest pas și îl poți adăuga mai târziu în setări. Este folosit doar pentru o estimare generală a energiei.",
+  "onboardingBirthYear": "Anul nașterii",
+  "onboardingHeightCm": "Înălțime (cm)",
+  "onboardingWeightKg": "Greutate (kg)",
+  "onboardingEnergyCoeffTitle": "Coeficient pentru estimarea energiei",
+  "onboardingEnergyCoeffBody": "Estimarea generală a energiei folosește unul dintre doi coeficienți publicați. Nu are legătură cu identitatea ta de gen — doar arată care versiune a ecuației ți se potrivește mai bine. Poți și să sari complet peste estimările de energie.",
+  "onboardingEnergyCoeffSkip": "Sari peste estimările de energie",
+  "onboardingScreeningTitle": "Câteva întrebări de siguranță",
+  "onboardingScreeningBody": "Aceste întrebări nu diagnostichează nimic. Doar dezactivează sugestiile automate de plan și obiective atunci când este nevoie de atenție suplimentară.",
+  "onboardingScreeningDiabetes": "Am diabet",
+  "onboardingScreeningMedication": "Folosesc medicamente care scad glicemia sau insulină",
+  "onboardingScreeningPregnancy": "Sunt gravidă sau alăptez",
+  "onboardingScreeningOrgan": "Am o boală de rinichi, ficat sau pancreas",
+  "onboardingScreeningEatingDisorder": "Am un istoric de tulburare de alimentație",
+  "onboardingScreeningWeightLoss": "Am avut o scădere semnificativă și neintenționată în greutate",
+  "onboardingScreeningUnder18": "Am sub 18 ani",
+  "onboardingScreeningLockedNote": "Din cauza răspunsurilor tale, crearea automată a planului și a obiectivelor rămâne dezactivată. Funcțiile de înregistrare și învățare rămân disponibile. Te rugăm să discuți acest lucru cu un profesionist calificat din domeniul sănătății.",
+  "onboardingDataTitle": "Datele tale",
+  "onboardingDataBody": "Înregistrările tale rămân doar pe acest dispozitiv. Dacă pierzi sau dezinstalezi aplicația fără o copie de siguranță exportată, datele nu pot fi recuperate.",
+  "onboardingConsentTitle": "Consimțământ",
+  "onboardingConsentBody": "Am citit și accept rezumatul privind confidențialitatea și avertismentul că această aplicație nu este sfat medical. Înțeleg că datele mele rămân doar pe acest dispozitiv.",
+  "onboardingConsentCheckbox": "Accept",
+  "onboardingNext": "Înainte",
+  "onboardingBack": "Înapoi",
+  "onboardingFinish": "Începe să folosești aplicația",
+  "onboardingStepOf": "Pasul {current} din {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glucoză ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Cetone în sânge BHB (mmol/L)",
+  "formSourceType": "Tipul sursei",
+  "formNote": "Notă (opțional)",
+  "formPickTime": "Ora măsurării",
+  "formSaveSession": "Salvează sesiunea de măsurare",
+  "formInvalidValue": "Introdu un număr pozitiv valid.",
+  "gkiResultHeading": "GKI-ul tău",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Măsurat la: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Versiunea calculului: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Nicio măsurătoare încă",
+  "logEmptyBody": "Adaugă prima citire de glucoză și cetone pentru a o vedea aici.",
+  "logBandsToggle": "Arată intervalele de cercetare din articolul citit",
+  "bandsDisclaimer": "Aceste intervale nu sunt intervale clinice normale sau ținte de tratament dovedite. Sunt sugestii reprezentative, neprescriptive, dintr-un cadru de cercetare specific. GKI singur nu arată sănătatea, răspunsul la boală sau siguranța. Atinge pentru a vedea sursa.",
+  "logBandOptimal": "Interval de cercetare optim sugerat (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Interval de cercetare terapeutic sugerat (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "În afara intervalului de cercetare sugerat ≤ 2.0",
+  "logMatchSimultaneous": "simultană",
+  "logMatchApproximate": "potrivire aproximativă",
+  "logTimelineHeading": "Cronologie",
+  "logChartsHeading": "Grafice",
+  "logGlucoseChart": "Glucoză (mmol/L)",
+  "logBhbChart": "Cetone BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Copiază linkul sursei",
+  "todayQuickActions": "Acțiuni rapide",
+  "todayAddMeasurement": "Adaugă măsurătoare",
+  "todayAddMeal": "Adaugă masă",
+  "todayAddWeight": "Adaugă greutate",
+  "todayAddSymptom": "Adaugă simptom",
+  "todayLatestTitle": "Ultimele măsurători",
+  "todayLatestEmpty": "Nicio măsurătoare încă. Folosește „Adaugă măsurătoare” pentru a înregistra glucoza și cetonele BHB împreună.",
+  "todayNutritionTitle": "Nutriția de azi",
+  "todayNutritionEmpty": "Nicio masă înregistrată azi. Mesele se înregistrează din fila Plan.",
+  "todayWeightTitle": "Greutate",
+  "todayWeightEmpty": "Nicio înregistrare de greutate încă.",
+  "todaySymptomsTitle": "Simptomele de azi",
+  "todaySymptomsEmpty": "Niciun simptom înregistrat azi.",
+  "todayPlansTitle": "Mese planificate",
+  "todayPlansEmpty": "Niciun plan de mese pentru azi.",
+  "comingSoonTitle": "Vine într-o actualizare viitoare",
+  "comingSoonBody": "Acest formular de introducere este în lucru. Poți urmări progresul în depozitul proiectului.",
+  "mealFormTitle": "Înregistrează o masă",
+  "mealSearchLabel": "Caută mâncare",
+  "mealTypeLabel": "Tipul mesei",
+  "mealTypeBreakfast": "Mic dejun",
+  "mealTypeLunch": "Prânz",
+  "mealTypeDinner": "Cină",
+  "mealTypeSnack": "Gustare",
+  "mealTypeCustom": "Personalizat",
+  "mealGramsLabel": "Cantitate (g)",
+  "mealAddItem": "Adaugă aliment",
+  "mealNoteLabel": "Notă (opțional)",
+  "mealFavoriteToggle": "Marchează ca favorit",
+  "mealRepeatSection": "Repetare rapidă",
+  "mealRepeatFavorites": "Favorite",
+  "mealRepeatRecent": "Recente",
+  "mealSave": "Salvează masa",
+  "mealItemsHeading": "Elemente",
+  "mealSavedToast": "Masa a fost salvată.",
+  "mealNeedsItem": "Adaugă mai întâi cel puțin un aliment.",
+  "mealTotalsHeading": "Totaluri zilnice",
+  "mealTotalsKcal": "Energie: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Carbohidrați neți: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Carbohidrați totali: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibre: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteine: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Grăsimi: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "În general o alegere bună",
+  "guideGroupLimit": "Poate necesita limite de porție sau frecvență",
+  "guideGroupAvoid": "În general incompatibil cu obiectivele cetogenice",
+  "guideWhyHeading": "De ce?",
+  "guideTypicalPortion": "Porție tipică: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternative: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Sursa datelor: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Carne, pește și ouă",
+  "guideCardLowCarbVegetables": "Legume sărace în carbohidrați",
+  "guideCardFatsOils": "Grăsimi și uleiuri",
+  "guideCardNutsSeeds": "Nuci și semințe",
+  "guideCardBerries": "Fructe de pădure",
+  "guideCardDairy": "Lactate integrale",
+  "guideCardFruit": "Fructe",
+  "guideCardLegumes": "Leguminoase",
+  "guideCardMilkDrinks": "Lapte și băuturi dulci",
+  "guideCardSugaryDrinks": "Băuturi cu zahăr",
+  "guideCardStarches": "Pâine, orez, cartofi",
+  "guideCardSweets": "Dulciuri și deserturi",
+  "logMealRelation": "Înregistrat la {hours} h după masă ({mealType}) — doar context temporal, nu un efect.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Nicio masă înregistrată în fereastra de analiză înainte de această citire.",
+  "logRelationWindowLabel": "Fereastra de legătură cu masa",
+  "logConfoundersHeading": "Ce altceva poate afecta citirile?",
+  "mealTypeShortBreakfast": "mic dejun",
+  "mealTypeShortLunch": "prânz",
+  "mealTypeShortDinner": "cină",
+  "mealTypeShortSnack": "gustare",
+  "mealTypeShortCustom": "masă",
+  "recipePerServing": "{value} porții",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Pregătire: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergeni: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingrediente",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Pași",
+  "recipeStorage": "Păstrare: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Interval de cercetare folosit într-un studiu",
+  "goalLegendClinician": "Ținta medicului meu",
+  "goalLegendPersonal": "Obiectivul meu personal de urmărire",
+  "goalLegendPersonalNote": "Un obiectiv personal de urmărire nu este o țintă medicală.",
+  "weightValueLabel": "Greutate ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Condiție (opțional, ex. dimineața, după antrenament)",
+  "weightSave": "Salvează greutatea",
+  "symptomFormTitle": "Înregistrează un simptom",
+  "symptomDefinitionLabel": "Simptom",
+  "symptomSeverityLabel": "Severitate: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Notă (opțional)",
+  "symptomSave": "Salvează simptomul",
+  "symptomSavedToast": "Simptomul a fost salvat.",
+  "symptomGuidance": "Ai marcat un simptom important. Această aplicație nu diagnostichează. Urmează propriul plan de sănătate și contactează serviciile de urgență locale dacă te simți rău sau simptomele sunt severe.",
+  "symptomSeizureGuidance": "Ai înregistrat o criză convulsivă. Această aplicație nu diagnostichează. Te rugăm să urmezi planul tău de sănătate și să contactezi un profesionist din domeniul sănătății; sună la serviciile de urgență locale dacă este urgent.",
+  "trendsRange7": "7 zile",
+  "trendsRange30": "30 de zile",
+  "trendsRange90": "90 de zile",
+  "trendsSummary": "{count} citiri în ultimele {days} zile. Ultima: {latest}, medie: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Nicio dată în acest interval.",
+  "trendsExplainsTitle": "Ce îți spune acest grafic — și ce nu",
+  "trendsExplainsBody": "Graficul arată citirile tale în timp ca puncte brute. Nu diagnostichează, nu prezice și nu dovedește cauze. Zilele lipsă apar ca goluri, nu ca zerouri.",
+  "trendsWeightChart": "Greutate (kg)",
+  "trendsBandsNote": "Intervalele de cercetare sunt opționale și dezactivate implicit. Vezi fila Jurnal pentru a le activa.",
+  "evidenceDiseaseFilter": "Arată cercetări specifice bolilor (din sursele pe care alegi să le citești)",
+  "evidenceSectionTitle": "Surse și articole științifice",
+  "guideCopyLink": "Copiază linkul sursei",
+  "planTitle": "Plan săptămânal",
+  "planGenerateDraft": "Generează ciornă săptămânală",
+  "planDraftLockedNote": "Generarea automată a planului rămâne dezactivată: te rugăm să discuți mai întâi cu un profesionist calificat din domeniul sănătății.",
+  "planCreatedToast": "Planul săptămânal a fost creat.",
+  "planItemDay": "Ziua {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Creează lista de cumpărături din plan",
+  "shoppingTitle": "Listă de cumpărături",
+  "shoppingUndo": "Anulează",
+  "shoppingAddManual": "Adaugă element manual",
+  "shoppingCheckedToggle": "Bifează",
+  "shoppingEmpty": "Nicio listă de cumpărături încă.",
+  "planEmpty": "Niciun plan săptămânal încă. Generează o ciornă din rețetele tale ca să începi.",
+  "aboutTitle": "Despre",
+  "aboutSlogan": "Jurnal keto privat",
+  "aboutVersion": "Versiunea {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Cod deschis",
+  "aboutOpenSourceBody": "N Keto Tracker este software gratuit și open-source sub licența GPL-3.0. Poți inspecta, modifica și redistribui codul sub aceeași licență.",
+  "aboutPrivacyHeading": "Confidențialitate",
+  "aboutPrivacyBody": "Datele tale de sănătate rămân pe acest dispozitiv. Fără cont, fără analize.",
+  "aboutDisclaimerHeading": "Declinarea responsabilității",
+  "aboutDisclaimerBody": "Această aplicație este pentru informare generală și monitorizare personală. Nu este sfat medical, diagnostic sau tratament.",
+  "aboutLicensesButton": "Licențe",
+  "aboutShareButton": "Distribuie această aplicație",
+  "aboutOtherAppsButton": "Alte aplicații",
+  "aboutCopiedToast": "Copiat în clipboard.",
+  "licensesTitle": "Licențe",
+  "otherAppsTitle": "Alte aplicații",
+  "otherAppsEmpty": "Nicio altă aplicație listată încă.",
+  "otherAppsCopyLink": "Copiază linkul magazinului",
+  "settingsTitle": "Setări",
+  "aboutShareText": "Jurnal keto privat cu urmărirea glucozei, cetonelor și GKI. Cod deschis, fără cont necesar.",
+  "dataManagementTitle": "Gestionarea datelor",
+  "dataExportJson": "Exportă datele (JSON)",
+  "dataExportCsv": "Exportă măsurătorile (CSV)",
+  "dataImportLabel": "Lipește aici JSON-ul exportat",
+  "dataImportButton": "Importă datele",
+  "dataImportSuccess": "Au fost importate {glucose} înregistrări de glucoză și {weight} de greutate.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Importul a eșuat: fișier invalid sau neacceptat.",
+  "dataDeleteAll": "Șterge toate datele mele",
+  "dataDeleteConfirm1": "Ștergi TOATE datele? Include măsurători, mese, planuri și setări. Nu poate fi anulat.",
+  "dataDeleteConfirm2": "Ești sigur? Scrie DELETE pentru a confirma.",
+  "dataDeleteTypeDelete": "Scrie DELETE",
+  "dataDeleteDone": "Toate datele au fost șterse ({count} înregistrări).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Fișierul de export este gata — alege unde să-l salvezi.",
+  "settingsAppearance": "Aspect",
+  "themeSystem": "Sistem",
+  "themeLight": "Luminos",
+  "themeDark": "Întunecat",
+  "settingsLanguage": "Limbă",
+  "settingsMore": "Mai multe"
+}

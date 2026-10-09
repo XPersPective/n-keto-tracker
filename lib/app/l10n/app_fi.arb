@@ -1,0 +1,452 @@
+{
+  "@@locale": "fi",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Tänään",
+  "navLog": "Loki",
+  "navPlan": "Suunnitelma",
+  "navTrends": "Trendit",
+  "navGuide": "Opas",
+  "pageUnderConstruction": "Tätä näkymää rakennetaan.",
+  "generalInfoDisclaimer": "Vain yleistä tietoa; ei lääketieteellinen neuvo.",
+  "onboardingLanguageTitle": "Valitse kielesi",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Tietosi pysyvät laitteellasi",
+  "onboardingPrivacyBody": "N Keto Tracker säilyttää mittauksesi, ateriasi ja muistiinpanosi vain tässä sovelluksessa laitteellasi. Tiliä ei ole, eikä terveystietojasi lähetetä minnekään. Sovelluksen poistaminen poistaa tietosi; voit viedä varmuuskopion milloin tahansa.",
+  "onboardingMedicalTitle": "Ei lääketieteellinen neuvo",
+  "onboardingMedicalBody": "Tämä sovellus on tarkoitettu yleiseen tietoon ja henkilökohtaiseen seurantaan. Se ei ole lääketieteellinen neuvo, diagnoosi tai hoito, eikä se korvaa pätevän terveydenhuollon ammattilaisen hoitoa.",
+  "onboardingPurposeTitle": "Mitä haluat seurata?",
+  "onboardingPurposeLearn": "Oppia ketogeenisestä ravinnosta",
+  "onboardingPurposeMeals": "Suunnitella aterioita",
+  "onboardingPurposeMacros": "Seurata makroja ja nettohiilihydraatteja",
+  "onboardingPurposeMeasure": "Seurata glukoosia, ketoneja ja GKI:ta",
+  "onboardingProfileTitle": "Sinusta (valinnainen)",
+  "onboardingProfileBody": "Voit ohittaa tämän ja lisätä sen myöhemmin asetuksissa. Sitä käytetään vain yleiseen energia-arvioon.",
+  "onboardingBirthYear": "Syntymävuosi",
+  "onboardingHeightCm": "Pituus (cm)",
+  "onboardingWeightKg": "Paino (kg)",
+  "onboardingEnergyCoeffTitle": "Energia-arvion kerroin",
+  "onboardingEnergyCoeffBody": "Yleinen energia-arvio käyttää yhtä kahdesta julkaistusta kertoimesta. Kyse ei ole sukupuoli-identiteetistäsi — vain siitä, mikä yhtälön versio sopii sinulle parhaiten. Voit myös ohittaa energia-arviot kokonaan.",
+  "onboardingEnergyCoeffSkip": "Ohita energia-arviot",
+  "onboardingScreeningTitle": "Muutama turvallisuuskysymys",
+  "onboardingScreeningBody": "Nämä kysymykset eivät diagnosoi mitään. Ne vain poistavat automaattiset suunnitelma- ja tavoiteehdotukset käytöstä, kun tarvitaan erityistä varovaisuutta.",
+  "onboardingScreeningDiabetes": "Minulla on diabetes",
+  "onboardingScreeningMedication": "Käytän verensokeria alentavia lääkkeitä tai insuliinia",
+  "onboardingScreeningPregnancy": "Olen raskaana tai imetän",
+  "onboardingScreeningOrgan": "Minulla on munuais-, maksa- tai haimasairaus",
+  "onboardingScreeningEatingDisorder": "Minulla on ollut syömishäiriö",
+  "onboardingScreeningWeightLoss": "Olen laihtunut huomattavasti tahattomasti",
+  "onboardingScreeningUnder18": "Olen alle 18-vuotias",
+  "onboardingScreeningLockedNote": "Vastaustesi vuoksi automaattinen suunnitelmien ja tavoitteiden luonti pysyy pois päältä. Kirjaus- ja oppimistoiminnot ovat edelleen käytössä. Käy tämä läpi pätevän terveydenhuollon ammattilaisen kanssa.",
+  "onboardingDataTitle": "Tietosi",
+  "onboardingDataBody": "Tietueesi pysyvät vain tällä laitteella. Jos menetät sovelluksen tai poistat sen asennuksen ilman varmuuskopion vientiä, tietoja ei voi palauttaa.",
+  "onboardingConsentTitle": "Suostumus",
+  "onboardingConsentBody": "Olen lukenut ja hyväksyn tietosuojayhteenvedon sekä ilmoituksen, ettei tämä sovellus ole lääketieteellinen neuvo. Ymmärrän, että tietoni pysyvät vain tällä laitteella.",
+  "onboardingConsentCheckbox": "Hyväksyn",
+  "onboardingNext": "Seuraava",
+  "onboardingBack": "Takaisin",
+  "onboardingFinish": "Aloita sovelluksen käyttö",
+  "onboardingStepOf": "Vaihe {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukoosi ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Veren ketoni BHB (mmol/L)",
+  "formSourceType": "Lähteen tyyppi",
+  "formNote": "Muistiinpano (valinnainen)",
+  "formPickTime": "Mittausaika",
+  "formSaveSession": "Tallenna mittausistunto",
+  "formInvalidValue": "Anna kelvollinen positiivinen luku.",
+  "gkiResultHeading": "GKI:si",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Mitattu: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Laskentaversio: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Ei vielä mittauksia",
+  "logEmptyBody": "Lisää ensimmäinen glukoosi- ja ketonilukema nähdäksesi sen tässä.",
+  "logBandsToggle": "Näytä lukemasi artikkelin tutkimusalueet",
+  "bandsDisclaimer": "Nämä alueet eivät ole kliinisiä normaalialueita tai todistettuja hoitotavoitteita. Ne ovat edustavia, ei-määrääviä ehdotuksia tietystä tutkimuskehyksestä. GKI yksin ei osoita terveyttä, sairauteen vastaamista tai turvallisuutta. Napauta nähdäksesi lähteen.",
+  "logBandOptimal": "Ehdotettu optimaalinen tutkimusalue (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Ehdotettu terapeuttinen tutkimusalue (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Ehdotetun ≤ 2.0 tutkimusalueen ulkopuolella",
+  "logMatchSimultaneous": "samanaikainen",
+  "logMatchApproximate": "likimääräinen vastaavuus",
+  "logTimelineHeading": "Aikajana",
+  "logChartsHeading": "Kaaviot",
+  "logGlucoseChart": "Glukoosi (mmol/L)",
+  "logBhbChart": "Ketoni BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopioi lähdelinkki",
+  "todayQuickActions": "Pikatoiminnot",
+  "todayAddMeasurement": "Lisää mittaus",
+  "todayAddMeal": "Lisää ateria",
+  "todayAddWeight": "Lisää paino",
+  "todayAddSymptom": "Lisää oire",
+  "todayLatestTitle": "Viimeisimmät mittaukset",
+  "todayLatestEmpty": "Ei vielä mittauksia. Käytä ”Lisää mittaus” kirjataksesi glukoosin ja ketonin BHB yhdessä.",
+  "todayNutritionTitle": "Tämän päivän ravinto",
+  "todayNutritionEmpty": "Tänään ei ole kirjattuja aterioita. Ateriat kirjataan Suunnitelma-välilehdeltä.",
+  "todayWeightTitle": "Paino",
+  "todayWeightEmpty": "Ei vielä painomerkintöjä.",
+  "todaySymptomsTitle": "Tämän päivän oireet",
+  "todaySymptomsEmpty": "Tänään ei ole kirjattuja oireita.",
+  "todayPlansTitle": "Suunnitellut ateriat",
+  "todayPlansEmpty": "Tälle päivälle ei ole ateriasuunnitelmaa.",
+  "comingSoonTitle": "Tulossa tulevassa päivityksessä",
+  "comingSoonBody": "Tätä syöttölomaketta rakennetaan. Voit seurata edistymistä projektin repositoriossa.",
+  "mealFormTitle": "Kirjaa ateria",
+  "mealSearchLabel": "Hae ruokaa",
+  "mealTypeLabel": "Aterian tyyppi",
+  "mealTypeBreakfast": "Aamiainen",
+  "mealTypeLunch": "Lounas",
+  "mealTypeDinner": "Illallinen",
+  "mealTypeSnack": "Välipala",
+  "mealTypeCustom": "Oma",
+  "mealGramsLabel": "Määrä (g)",
+  "mealAddItem": "Lisää ruoka",
+  "mealNoteLabel": "Muistiinpano (valinnainen)",
+  "mealFavoriteToggle": "Merkitse suosikiksi",
+  "mealRepeatSection": "Pikatoisto",
+  "mealRepeatFavorites": "Suosikit",
+  "mealRepeatRecent": "Viimeaikaiset",
+  "mealSave": "Tallenna ateria",
+  "mealItemsHeading": "Kohteet",
+  "mealSavedToast": "Ateria tallennettu.",
+  "mealNeedsItem": "Lisää ensin vähintään yksi ruoka.",
+  "mealTotalsHeading": "Päivän yhteensä",
+  "mealTotalsKcal": "Energia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Nettohiilihydraatit: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Hiilihydraatit yhteensä: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Kuitu: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteiini: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Rasva: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Yleensä hyvä valinta",
+  "guideGroupLimit": "Voi vaatia annos- tai tiheysrajoituksia",
+  "guideGroupAvoid": "Yleensä ristiriidassa ketogeenisten tavoitteiden kanssa",
+  "guideWhyHeading": "Miksi?",
+  "guideTypicalPortion": "Tyypillinen annos: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Vaihtoehdot: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Tietolähde: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Liha, kala ja kananmunat",
+  "guideCardLowCarbVegetables": "Vähähiilihydraattiset kasvikset",
+  "guideCardFatsOils": "Rasvat ja öljyt",
+  "guideCardNutsSeeds": "Pähkinät ja siemenet",
+  "guideCardBerries": "Marjat",
+  "guideCardDairy": "Täysrasvaiset maitotuotteet",
+  "guideCardFruit": "Hedelmät",
+  "guideCardLegumes": "Palkokasvit",
+  "guideCardMilkDrinks": "Maito ja makeat juomat",
+  "guideCardSugaryDrinks": "Sokeriset juomat",
+  "guideCardStarches": "Leipä, riisi, peruna",
+  "guideCardSweets": "Makeiset ja jälkiruoat",
+  "logMealRelation": "Kirjattu {hours} h aterian ({mealType}) jälkeen — vain ajallinen yhteys, ei vaikutus.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Ennen tätä lukemaa ei ole kirjattu ateriaa analyysi-ikkunassa.",
+  "logRelationWindowLabel": "Aterian yhteyden ikkuna",
+  "logConfoundersHeading": "Mikä muu voi vaikuttaa lukemiin?",
+  "mealTypeShortBreakfast": "aamiainen",
+  "mealTypeShortLunch": "lounas",
+  "mealTypeShortDinner": "illallinen",
+  "mealTypeShortSnack": "välipala",
+  "mealTypeShortCustom": "ateria",
+  "recipePerServing": "{value} annosta",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Valmistelu: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergeenit: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ainekset",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Vaiheet",
+  "recipeStorage": "Säilytys: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Tutkimuksessa käytetty alue",
+  "goalLegendClinician": "Lääkärini tavoite",
+  "goalLegendPersonal": "Henkilökohtainen seurantatavoitteeni",
+  "goalLegendPersonalNote": "Henkilökohtainen seurantatavoite ei ole lääketieteellinen tavoite.",
+  "weightValueLabel": "Paino ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Olosuhteet (valinnainen, esim. aamu, treenin jälkeen)",
+  "weightSave": "Tallenna paino",
+  "symptomFormTitle": "Kirjaa oire",
+  "symptomDefinitionLabel": "Oire",
+  "symptomSeverityLabel": "Vaikeusaste: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Muistiinpano (valinnainen)",
+  "symptomSave": "Tallenna oire",
+  "symptomSavedToast": "Oire tallennettu.",
+  "symptomGuidance": "Merkitsit merkittävän oireen. Tämä sovellus ei tee diagnooseja. Noudata omaa terveyssuunnitelmaasi ja ota yhteyttä paikallisiin hätäpalveluihin, jos voit huonosti tai oireet ovat vaikeita.",
+  "symptomSeizureGuidance": "Kirjasit kohtauksen. Tämä sovellus ei tee diagnooseja. Noudata terveyssuunnitelmaasi ja ota yhteyttä terveydenhuollon ammattilaiseen; soita paikallisiin hätäpalveluihin, jos asia on kiireellinen.",
+  "trendsRange7": "7 päivää",
+  "trendsRange30": "30 päivää",
+  "trendsRange90": "90 päivää",
+  "trendsSummary": "{count} lukemaa viimeisen {days} päivän aikana. Viimeisin: {latest}, keskiarvo: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Ei tietoja tällä aikavälillä.",
+  "trendsExplainsTitle": "Mitä tämä kaavio kertoo — ja mitä ei",
+  "trendsExplainsBody": "Kaavio näyttää omat lukemasi ajan yli raakapisteinä. Se ei diagnosoi, ei ennusta eikä todista syitä. Puuttuvat päivät näkyvät aukkoina, ei nollina.",
+  "trendsWeightChart": "Paino (kg)",
+  "trendsBandsNote": "Tutkimusalueet ovat valinnaisia ja oletuksena pois päältä. Ota ne käyttöön Loki-välilehdeltä.",
+  "evidenceDiseaseFilter": "Näytä sairauskohtainen tutkimus (valitsemistasi lähteistä)",
+  "evidenceSectionTitle": "Tieteelliset lähteet ja artikkelit",
+  "guideCopyLink": "Kopioi lähdelinkki",
+  "planTitle": "Viikkosuunnitelma",
+  "planGenerateDraft": "Luo viikkoluonnos",
+  "planDraftLockedNote": "Automaattinen suunnitelman luonti pysyy pois päältä: käy tämä ensin läpi pätevän terveydenhuollon ammattilaisen kanssa.",
+  "planCreatedToast": "Viikkosuunnitelma luotu.",
+  "planItemDay": "Päivä {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Luo ostoslista suunnitelmasta",
+  "shoppingTitle": "Ostoslista",
+  "shoppingUndo": "Kumoa",
+  "shoppingAddManual": "Lisää kohde käsin",
+  "shoppingCheckedToggle": "Rastita",
+  "shoppingEmpty": "Ei vielä ostoslistaa.",
+  "planEmpty": "Ei vielä viikkosuunnitelmaa. Aloita luomalla luonnos resepteistäsi.",
+  "aboutTitle": "Tietoja",
+  "aboutSlogan": "Yksityinen keto-päiväkirja",
+  "aboutVersion": "Versio {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Avoin lähdekoodi",
+  "aboutOpenSourceBody": "N Keto Tracker on ilmainen avoimen lähdekoodin ohjelmisto GPL-3.0-lisenssillä. Voit tarkastella, muokata ja jakaa koodia samalla lisenssillä.",
+  "aboutPrivacyHeading": "Tietosuoja",
+  "aboutPrivacyBody": "Terveystietosi pysyvät tällä laitteella. Ei tiliä, ei analytiikkaa.",
+  "aboutDisclaimerHeading": "Vastuuvapauslauseke",
+  "aboutDisclaimerBody": "Tämä sovellus on tarkoitettu yleiseen tietoon ja henkilökohtaiseen seurantaan. Se ei ole lääketieteellinen neuvo, diagnoosi tai hoito.",
+  "aboutLicensesButton": "Lisenssit",
+  "aboutShareButton": "Jaa tämä sovellus",
+  "aboutOtherAppsButton": "Muut sovellukset",
+  "aboutCopiedToast": "Kopioitu leikepöydälle.",
+  "licensesTitle": "Lisenssit",
+  "otherAppsTitle": "Muut sovellukset",
+  "otherAppsEmpty": "Muita sovelluksia ei ole vielä listattu.",
+  "otherAppsCopyLink": "Kopioi kauppalinkki",
+  "settingsTitle": "Asetukset",
+  "aboutShareText": "Yksityinen keto-päiväkirja glukoosin, ketonien ja GKI:n seurannalla. Avoin lähdekoodi, tiliä ei tarvita.",
+  "dataManagementTitle": "Tietojen hallinta",
+  "dataExportJson": "Vie tiedot (JSON)",
+  "dataExportCsv": "Vie mittaukset (CSV)",
+  "dataImportLabel": "Liitä viety JSON tähän",
+  "dataImportButton": "Tuo tiedot",
+  "dataImportSuccess": "Tuotiin {glucose} glukoosi- ja {weight} painotietuetta.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Tuonti epäonnistui: tiedosto on virheellinen tai ei tuettu.",
+  "dataDeleteAll": "Poista kaikki tietoni",
+  "dataDeleteConfirm1": "Poistetaanko KAIKKI tiedot? Se sisältää mittaukset, ateriat, suunnitelmat ja asetukset. Tätä ei voi perua.",
+  "dataDeleteConfirm2": "Oletko aivan varma? Vahvista kirjoittamalla DELETE.",
+  "dataDeleteTypeDelete": "Kirjoita DELETE",
+  "dataDeleteDone": "Kaikki tiedot poistettu ({count} tietuetta).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Vientitiedosto on valmis — valitse, minne se tallennetaan.",
+  "settingsAppearance": "Ulkoasu",
+  "themeSystem": "Järjestelmä",
+  "themeLight": "Vaalea",
+  "themeDark": "Tumma",
+  "settingsLanguage": "Kieli",
+  "settingsMore": "Lisää"
+}

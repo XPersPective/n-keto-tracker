@@ -1,0 +1,452 @@
+{
+  "@@locale": "zh_Hant",
+  "appTitle": "N Keto Tracker",
+  "navToday": "今天",
+  "navLog": "記錄",
+  "navPlan": "計畫",
+  "navTrends": "趨勢",
+  "navGuide": "指南",
+  "pageUnderConstruction": "此畫面正在建置中。",
+  "generalInfoDisclaimer": "僅供一般資訊參考，並非醫療建議。",
+  "onboardingLanguageTitle": "選擇您的語言",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "您的資料留在您的裝置上",
+  "onboardingPrivacyBody": "N Keto Tracker 僅將您的測量值、飲食和筆記保存在您裝置上的此應用程式中。沒有帳號，您的健康資料也絕不會傳送到任何地方。刪除應用程式會一併刪除您的資料；您可隨時匯出備份。",
+  "onboardingMedicalTitle": "並非醫療建議",
+  "onboardingMedicalBody": "本應用程式僅供一般資訊與個人追蹤使用。它不是醫療建議、診斷或治療，也無法取代合格醫療專業人員的照護。",
+  "onboardingPurposeTitle": "您想追蹤什麼？",
+  "onboardingPurposeLearn": "了解生酮飲食營養",
+  "onboardingPurposeMeals": "規劃餐點",
+  "onboardingPurposeMacros": "追蹤巨量營養素與淨碳水化合物",
+  "onboardingPurposeMeasure": "追蹤血糖、酮體與 GKI",
+  "onboardingProfileTitle": "關於您（選填）",
+  "onboardingProfileBody": "您可以略過此步驟，之後再於設定中補充。此資料僅用於一般能量估算。",
+  "onboardingBirthYear": "出生年份",
+  "onboardingHeightCm": "身高（公分）",
+  "onboardingWeightKg": "體重（公斤）",
+  "onboardingEnergyCoeffTitle": "能量估算係數",
+  "onboardingEnergyCoeffBody": "一般能量估算使用兩種已發表係數之一。這與您的性別認同無關——只是哪個版本的公式最適合您。您也可以完全略過能量估算。",
+  "onboardingEnergyCoeffSkip": "略過能量估算",
+  "onboardingScreeningTitle": "幾個安全問題",
+  "onboardingScreeningBody": "這些問題不會診斷任何情況。它們只會在需要額外謹慎時，關閉自動計畫與目標建議。",
+  "onboardingScreeningDiabetes": "患有糖尿病",
+  "onboardingScreeningMedication": "使用降血糖藥物或胰島素",
+  "onboardingScreeningPregnancy": "懷孕或哺乳中",
+  "onboardingScreeningOrgan": "患有腎臟、肝臟或胰臟疾病",
+  "onboardingScreeningEatingDisorder": "有飲食失調病史",
+  "onboardingScreeningWeightLoss": "曾非刻意地大幅減重",
+  "onboardingScreeningUnder18": "未滿 18 歲",
+  "onboardingScreeningLockedNote": "根據您的回答，自動建立計畫與目標的功能將保持關閉。記錄與學習功能仍可使用。請與合格的醫療專業人員討論此事。",
+  "onboardingDataTitle": "您的資料",
+  "onboardingDataBody": "您的記錄只會保存在此裝置上。若在未匯出備份的情況下遺失或解除安裝應用程式，資料將無法復原。",
+  "onboardingConsentTitle": "同意",
+  "onboardingConsentBody": "我已閱讀並接受隱私摘要，以及本應用程式並非醫療建議的聲明。我了解我的資料只會保存在此裝置上。",
+  "onboardingConsentCheckbox": "我接受",
+  "onboardingNext": "下一步",
+  "onboardingBack": "返回",
+  "onboardingFinish": "開始使用",
+  "onboardingStepOf": "第 {current} 步，共 {total} 步",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "血糖（{unit}）",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "血酮 BHB（mmol/L）",
+  "formSourceType": "來源類型",
+  "formNote": "備註（選填）",
+  "formPickTime": "測量時間",
+  "formSaveSession": "儲存測量紀錄",
+  "formInvalidValue": "請輸入有效的正數。",
+  "gkiResultHeading": "您的 GKI",
+  "gkiResultValue": "GKI：{value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "測量時間：{time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "計算版本：{version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "尚無測量資料",
+  "logEmptyBody": "新增您的第一筆血糖與血酮數值，即可在此查看。",
+  "logBandsToggle": "顯示您所讀文章中的研究範圍",
+  "bandsDisclaimer": "這些範圍不是臨床正常範圍，也不是已證實的治療目標。它們是特定研究架構中具代表性、非處方性的建議。單憑 GKI 無法顯示健康狀況、疾病反應或安全性。點選可查看來源。",
+  "logBandOptimal": "建議的最佳研究範圍（GKI ≤ 1.0）",
+  "logBandTherapeutic": "建議的治療研究範圍（1.0 < GKI ≤ 2.0）",
+  "logBandOutside": "超出建議的 ≤ 2.0 研究範圍",
+  "logMatchSimultaneous": "同時",
+  "logMatchApproximate": "近似配對",
+  "logTimelineHeading": "時間軸",
+  "logChartsHeading": "圖表",
+  "logGlucoseChart": "血糖 (mmol/L)",
+  "logBhbChart": "酮體 BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "複製來源連結",
+  "todayQuickActions": "快速操作",
+  "todayAddMeasurement": "新增測量",
+  "todayAddMeal": "新增餐點",
+  "todayAddWeight": "新增體重",
+  "todayAddSymptom": "新增症狀",
+  "todayLatestTitle": "最近測量",
+  "todayLatestEmpty": "尚無測量資料。使用「新增測量」同時記錄血糖與血酮 BHB。",
+  "todayNutritionTitle": "今日營養",
+  "todayNutritionEmpty": "今天尚未記錄餐點。餐點請由「計畫」分頁記錄。",
+  "todayWeightTitle": "體重",
+  "todayWeightEmpty": "尚無體重記錄。",
+  "todaySymptomsTitle": "今日症狀",
+  "todaySymptomsEmpty": "今天尚未記錄症狀。",
+  "todayPlansTitle": "已規劃餐點",
+  "todayPlansEmpty": "今天沒有餐點計畫。",
+  "comingSoonTitle": "將於後續更新推出",
+  "comingSoonBody": "此輸入表單正在建置中。您可在專案儲存庫追蹤進度。",
+  "mealFormTitle": "記錄餐點",
+  "mealSearchLabel": "搜尋食物",
+  "mealTypeLabel": "餐別",
+  "mealTypeBreakfast": "早餐",
+  "mealTypeLunch": "午餐",
+  "mealTypeDinner": "晚餐",
+  "mealTypeSnack": "點心",
+  "mealTypeCustom": "自訂",
+  "mealGramsLabel": "份量（公克）",
+  "mealAddItem": "新增食物",
+  "mealNoteLabel": "備註（選填）",
+  "mealFavoriteToggle": "標記為最愛",
+  "mealRepeatSection": "快速重複",
+  "mealRepeatFavorites": "最愛",
+  "mealRepeatRecent": "最近",
+  "mealSave": "儲存餐點",
+  "mealItemsHeading": "項目",
+  "mealSavedToast": "餐點已儲存。",
+  "mealNeedsItem": "請先新增至少一項食物。",
+  "mealTotalsHeading": "每日總計",
+  "mealTotalsKcal": "熱量：{value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "淨碳水化合物：{value} 公克",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "總碳水化合物：{value} 公克",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "膳食纖維：{value} 公克",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "蛋白質：{value} 公克",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "脂肪：{value} 公克",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "通常很合適",
+  "guideGroupLimit": "可能需要限制份量或頻率",
+  "guideGroupAvoid": "通常與生酮目標不相容",
+  "guideWhyHeading": "為什麼？",
+  "guideTypicalPortion": "一般份量：{portion}（約 {grams} 公克）",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "替代選擇：{value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "資料來源：{value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "肉類、魚類與蛋",
+  "guideCardLowCarbVegetables": "低碳水蔬菜",
+  "guideCardFatsOils": "脂肪與油品",
+  "guideCardNutsSeeds": "堅果與種子",
+  "guideCardBerries": "莓果",
+  "guideCardDairy": "全脂乳製品",
+  "guideCardFruit": "水果",
+  "guideCardLegumes": "豆類",
+  "guideCardMilkDrinks": "牛奶與含糖飲品",
+  "guideCardSugaryDrinks": "含糖飲料",
+  "guideCardStarches": "麵包、米飯、馬鈴薯",
+  "guideCardSweets": "甜點與糖果",
+  "logMealRelation": "記錄於{mealType}後 {hours} 小時——僅為時間脈絡，並非影響。",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "在此數值之前的分析時段內沒有記錄任何餐點。",
+  "logRelationWindowLabel": "餐點關聯時段",
+  "logConfoundersHeading": "還有什麼會影響數值？",
+  "mealTypeShortBreakfast": "早餐",
+  "mealTypeShortLunch": "午餐",
+  "mealTypeShortDinner": "晚餐",
+  "mealTypeShortSnack": "點心",
+  "mealTypeShortCustom": "餐點",
+  "recipePerServing": "{value} 份",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "準備：{value} 分鐘",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "過敏原：{value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "食材",
+  "recipeGrams": "{value} 公克",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "步驟",
+  "recipeStorage": "保存：{value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "研究中使用的範圍",
+  "goalLegendClinician": "我的醫師設定的目標",
+  "goalLegendPersonal": "我的個人追蹤目標",
+  "goalLegendPersonalNote": "個人追蹤目標不是醫療目標。",
+  "weightValueLabel": "體重（{unit}）",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "情況（選填，例如早晨、運動後）",
+  "weightSave": "儲存體重",
+  "symptomFormTitle": "記錄症狀",
+  "symptomDefinitionLabel": "症狀",
+  "symptomSeverityLabel": "嚴重程度：{value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "備註（選填）",
+  "symptomSave": "儲存症狀",
+  "symptomSavedToast": "症狀已儲存。",
+  "symptomGuidance": "您標記了一項重要症狀。本應用程式不提供診斷。請遵循您自己的健康計畫；若感到不適或症狀嚴重，請聯絡當地緊急服務。",
+  "symptomSeizureGuidance": "您記錄了癲癇發作事件。本應用程式不提供診斷。請遵循您的健康計畫並聯絡您的醫療專業人員；如有緊急情況，請撥打當地緊急服務電話。",
+  "trendsRange7": "7 天",
+  "trendsRange30": "30 天",
+  "trendsRange90": "90 天",
+  "trendsSummary": "過去 {days} 天共 {count} 筆數值。最近：{latest}，平均：{average}。",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "此範圍內沒有資料。",
+  "trendsExplainsTitle": "此圖表能告訴您的——以及不能告訴您的",
+  "trendsExplainsBody": "圖表以原始點位顯示您自己隨時間的數值。它不做診斷、不做預測，也不證明因果。缺漏的日子會顯示為空缺，而不是零。",
+  "trendsWeightChart": "體重（公斤）",
+  "trendsBandsNote": "研究範圍為選用功能，預設關閉。請至「記錄」分頁啟用。",
+  "evidenceDiseaseFilter": "顯示特定疾病的研究（來自您選擇閱讀的來源）",
+  "evidenceSectionTitle": "科學來源與文章",
+  "guideCopyLink": "複製來源連結",
+  "planTitle": "每週計畫",
+  "planGenerateDraft": "產生每週草稿",
+  "planDraftLockedNote": "自動產生計畫功能保持關閉：請先與合格的醫療專業人員討論。",
+  "planCreatedToast": "每週計畫已建立。",
+  "planItemDay": "第 {day} 天",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "從計畫建立購物清單",
+  "shoppingTitle": "購物清單",
+  "shoppingUndo": "復原",
+  "shoppingAddManual": "手動新增項目",
+  "shoppingCheckedToggle": "勾選",
+  "shoppingEmpty": "尚無購物清單。",
+  "planEmpty": "尚無每週計畫。請從您的食譜產生草稿以開始。",
+  "aboutTitle": "關於",
+  "aboutSlogan": "私密生酮日誌",
+  "aboutVersion": "版本 {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "開放原始碼",
+  "aboutOpenSourceBody": "N Keto Tracker 是依 GPL-3.0 授權的免費開放原始碼軟體。您可在相同授權下檢視、修改並重新散布程式碼。",
+  "aboutPrivacyHeading": "隱私",
+  "aboutPrivacyBody": "您的健康資料保留在此裝置上。無需帳號，無分析追蹤。",
+  "aboutDisclaimerHeading": "免責聲明",
+  "aboutDisclaimerBody": "本應用程式僅供一般資訊與個人追蹤使用，並非醫療建議、診斷或治療。",
+  "aboutLicensesButton": "授權",
+  "aboutShareButton": "分享此應用程式",
+  "aboutOtherAppsButton": "其他應用程式",
+  "aboutCopiedToast": "已複製到剪貼簿。",
+  "licensesTitle": "授權",
+  "otherAppsTitle": "其他應用程式",
+  "otherAppsEmpty": "尚未列出其他應用程式。",
+  "otherAppsCopyLink": "複製商店連結",
+  "settingsTitle": "設定",
+  "aboutShareText": "私密生酮日誌，可追蹤血糖、酮體與 GKI。開放原始碼，無需帳號。",
+  "dataManagementTitle": "資料管理",
+  "dataExportJson": "匯出資料 (JSON)",
+  "dataExportCsv": "匯出測量資料 (CSV)",
+  "dataImportLabel": "在此貼上匯出的 JSON",
+  "dataImportButton": "匯入資料",
+  "dataImportSuccess": "已匯入 {glucose} 筆血糖與 {weight} 筆體重紀錄。",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "匯入失敗：檔案無效或不受支援。",
+  "dataDeleteAll": "刪除我的所有資料",
+  "dataDeleteConfirm1": "要刪除所有資料嗎？包含測量、餐點、計畫與設定。此操作無法復原。",
+  "dataDeleteConfirm2": "您確定嗎？請輸入 DELETE 以確認。",
+  "dataDeleteTypeDelete": "輸入 DELETE",
+  "dataDeleteDone": "已刪除所有資料（{count} 筆紀錄）。",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "匯出檔案已就緒——請選擇儲存位置。",
+  "settingsAppearance": "外觀",
+  "themeSystem": "系統",
+  "themeLight": "淺色",
+  "themeDark": "深色",
+  "settingsLanguage": "語言",
+  "settingsMore": "更多"
+}

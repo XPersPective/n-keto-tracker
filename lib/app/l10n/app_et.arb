@@ -1,0 +1,452 @@
+{
+  "@@locale": "et",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Täna",
+  "navLog": "Logi",
+  "navPlan": "Plaan",
+  "navTrends": "Trendid",
+  "navGuide": "Juhend",
+  "pageUnderConstruction": "See ekraan on ehitamisel.",
+  "generalInfoDisclaimer": "Ainult üldiseks teavitamiseks; mitte meditsiiniline nõuanne.",
+  "onboardingLanguageTitle": "Vali oma keel",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Sinu andmed jäävad sinu seadmesse",
+  "onboardingPrivacyBody": "N Keto Tracker hoiab sinu mõõtmisi, toidukordi ja märkmeid ainult selles rakenduses sinu seadmes. Kontot ei ole ja sinu terviseandmeid ei saadeta kuhugi. Rakenduse kustutamine kustutab ka sinu andmed; varukoopia saad eksportida igal ajal.",
+  "onboardingMedicalTitle": "Mitte meditsiiniline nõuanne",
+  "onboardingMedicalBody": "See rakendus on mõeldud üldiseks teavitamiseks ja isiklikuks jälgimiseks. See ei ole meditsiiniline nõuanne, diagnoos ega ravi ega asenda kvalifitseeritud tervishoiutöötajate abi.",
+  "onboardingPurposeTitle": "Mida soovid jälgida?",
+  "onboardingPurposeLearn": "Õppida ketogeensest toitumisest",
+  "onboardingPurposeMeals": "Planeerida toidukordi",
+  "onboardingPurposeMacros": "Jälgida makrosid ja netosüsivesikuid",
+  "onboardingPurposeMeasure": "Jälgida glükoosi, ketoone ja GKI-d",
+  "onboardingProfileTitle": "Sinust (valikuline)",
+  "onboardingProfileBody": "Saad selle vahele jätta ja hiljem seadetes lisada. Seda kasutatakse ainult üldise energiahinnangu jaoks.",
+  "onboardingBirthYear": "Sünniaasta",
+  "onboardingHeightCm": "Pikkus (cm)",
+  "onboardingWeightKg": "Kaal (kg)",
+  "onboardingEnergyCoeffTitle": "Energiahinnangu koefitsient",
+  "onboardingEnergyCoeffBody": "Üldine energiahinnang kasutab ühte kahest avaldatud koefitsiendist. See ei puuduta sinu soolist identiteeti — see näitab lihtsalt, milline võrrandi versioon sulle paremini sobib. Energiahinnangud saad ka täielikult vahele jätta.",
+  "onboardingEnergyCoeffSkip": "Jäta energiahinnangud vahele",
+  "onboardingScreeningTitle": "Mõned ohutusküsimused",
+  "onboardingScreeningBody": "Need küsimused ei diagnoosi midagi. Nad lülitavad automaatsed plaani- ja eesmärgisoovitused välja ainult siis, kui on vaja erilist hoolt.",
+  "onboardingScreeningDiabetes": "Mul on diabeet",
+  "onboardingScreeningMedication": "Kasutan glükoosi langetavaid ravimeid või insuliini",
+  "onboardingScreeningPregnancy": "Olen rase või toidan last rinnaga",
+  "onboardingScreeningOrgan": "Mul on neeru-, maksa- või kõhunäärmehaigus",
+  "onboardingScreeningEatingDisorder": "Mul on söömishäire anamnees",
+  "onboardingScreeningWeightLoss": "Olen tahtmatult märkimisväärselt kaalus alla võtnud",
+  "onboardingScreeningUnder18": "Olen alla 18-aastane",
+  "onboardingScreeningLockedNote": "Sinu vastuste tõttu jääb automaatne plaani ja eesmärkide loomine välja lülitatuks. Salvestamise ja õppimise funktsioonid jäävad kättesaadavaks. Palun aruta seda kvalifitseeritud tervishoiutöötajaga.",
+  "onboardingDataTitle": "Sinu andmed",
+  "onboardingDataBody": "Sinu kirjed jäävad ainult sellesse seadmesse. Kui kaotad rakenduse või eemaldad selle ilma varukoopiat eksportimata, ei saa andmeid taastada.",
+  "onboardingConsentTitle": "Nõusolek",
+  "onboardingConsentBody": "Olen privaatsuse kokkuvõtte ja teate, et see rakendus ei ole meditsiiniline nõuanne, läbi lugenud ja nõustun nendega. Saan aru, et minu andmed jäävad ainult sellesse seadmesse.",
+  "onboardingConsentCheckbox": "Nõustun",
+  "onboardingNext": "Edasi",
+  "onboardingBack": "Tagasi",
+  "onboardingFinish": "Hakka rakendust kasutama",
+  "onboardingStepOf": "Samm {current} / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glükoos ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Vere ketoon BHB (mmol/L)",
+  "formSourceType": "Allika tüüp",
+  "formNote": "Märge (valikuline)",
+  "formPickTime": "Mõõtmise aeg",
+  "formSaveSession": "Salvesta mõõtmisseanss",
+  "formInvalidValue": "Sisesta kehtiv positiivne arv.",
+  "gkiResultHeading": "Sinu GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Mõõdetud: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Arvutuse versioon: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Mõõtmisi veel pole",
+  "logEmptyBody": "Lisa oma esimene glükoosi ja ketooni näit, et seda siin näha.",
+  "logBandsToggle": "Näita lugetud artikli uurimisvahemikke",
+  "bandsDisclaimer": "Need vahemikud ei ole kliinilised normivahemikud ega tõestatud ravieesmärgid. Need on tüüpilised, mitte ettekirjutavad soovitused ühest konkreetsest uurimisraamistikust. GKI üksi ei näita tervist, haigusele reageerimist ega ohutust. Allika nägemiseks puuduta.",
+  "logBandOptimal": "Soovitatav optimaalne uurimisvahemik (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Soovitatav terapeutiline uurimisvahemik (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Väljaspool soovitatud ≤ 2.0 uurimisvahemikku",
+  "logMatchSimultaneous": "samaaegne",
+  "logMatchApproximate": "ligikaudne vaste",
+  "logTimelineHeading": "Ajajoon",
+  "logChartsHeading": "Graafikud",
+  "logGlucoseChart": "Glükoos (mmol/L)",
+  "logBhbChart": "Ketoon BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopeeri allika link",
+  "todayQuickActions": "Kiirtoimingud",
+  "todayAddMeasurement": "Lisa mõõtmine",
+  "todayAddMeal": "Lisa toidukord",
+  "todayAddWeight": "Lisa kaal",
+  "todayAddSymptom": "Lisa sümptom",
+  "todayLatestTitle": "Viimased mõõtmised",
+  "todayLatestEmpty": "Mõõtmisi veel pole. Kasuta „Lisa mõõtmine“, et salvestada glükoos ja ketoon BHB koos.",
+  "todayNutritionTitle": "Tänane toitumine",
+  "todayNutritionEmpty": "Täna pole toidukordi salvestatud. Toidukorrad salvestatakse Plaani vahekaardilt.",
+  "todayWeightTitle": "Kaal",
+  "todayWeightEmpty": "Kaalukirjeid veel pole.",
+  "todaySymptomsTitle": "Tänased sümptomid",
+  "todaySymptomsEmpty": "Täna pole sümptomeid salvestatud.",
+  "todayPlansTitle": "Planeeritud toidukorrad",
+  "todayPlansEmpty": "Tänaseks pole toiduplaani.",
+  "comingSoonTitle": "Tuleb järgmises uuenduses",
+  "comingSoonBody": "See sisestusvorm on ehitamisel. Edenemist saad jälgida projekti hoidlas.",
+  "mealFormTitle": "Salvesta toidukord",
+  "mealSearchLabel": "Otsi toitu",
+  "mealTypeLabel": "Toidukorra tüüp",
+  "mealTypeBreakfast": "Hommikusöök",
+  "mealTypeLunch": "Lõunasöök",
+  "mealTypeDinner": "Õhtusöök",
+  "mealTypeSnack": "Vahepala",
+  "mealTypeCustom": "Oma",
+  "mealGramsLabel": "Kogus (g)",
+  "mealAddItem": "Lisa toit",
+  "mealNoteLabel": "Märge (valikuline)",
+  "mealFavoriteToggle": "Märgi lemmikuks",
+  "mealRepeatSection": "Kiire kordus",
+  "mealRepeatFavorites": "Lemmikud",
+  "mealRepeatRecent": "Hiljutised",
+  "mealSave": "Salvesta toidukord",
+  "mealItemsHeading": "Kirjed",
+  "mealSavedToast": "Toidukord salvestatud.",
+  "mealNeedsItem": "Lisa kõigepealt vähemalt üks toit.",
+  "mealTotalsHeading": "Päevakokkuvõte",
+  "mealTotalsKcal": "Energia: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Netosüsivesikud: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Süsivesikud kokku: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Kiudained: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Valk: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Rasv: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Üldiselt hea valik",
+  "guideGroupLimit": "Võib vajada portsjoni või sageduse piiramist",
+  "guideGroupAvoid": "Üldiselt ei sobi ketogeensete eesmärkidega",
+  "guideWhyHeading": "Miks?",
+  "guideTypicalPortion": "Tüüpiline portsjon: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatiivid: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Andmeallikas: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Liha, kala ja munad",
+  "guideCardLowCarbVegetables": "Vähese süsivesikusisaldusega köögiviljad",
+  "guideCardFatsOils": "Rasvad ja õlid",
+  "guideCardNutsSeeds": "Pähklid ja seemned",
+  "guideCardBerries": "Marjad",
+  "guideCardDairy": "Rasvased piimatooted",
+  "guideCardFruit": "Puuviljad",
+  "guideCardLegumes": "Kaunviljad",
+  "guideCardMilkDrinks": "Piim ja magusad joogid",
+  "guideCardSugaryDrinks": "Suhkrurikkad joogid",
+  "guideCardStarches": "Leib, riis, kartul",
+  "guideCardSweets": "Maiustused ja magustoidud",
+  "logMealRelation": "Salvestatud {hours} h pärast toidukorda ({mealType}) — ainult ajaline kontekst, mitte mõju.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Enne seda näitu analüüsiaknas toidukorda ei salvestatud.",
+  "logRelationWindowLabel": "Toidukorraga seose aken",
+  "logConfoundersHeading": "Mis veel võib näite mõjutada?",
+  "mealTypeShortBreakfast": "hommikusöök",
+  "mealTypeShortLunch": "lõunasöök",
+  "mealTypeShortDinner": "õhtusöök",
+  "mealTypeShortSnack": "vahepala",
+  "mealTypeShortCustom": "toidukord",
+  "recipePerServing": "{value} portsjonit",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Ettevalmistus: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergeenid: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Koostisosad",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Sammud",
+  "recipeStorage": "Säilitamine: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Uuringus kasutatud vahemik",
+  "goalLegendClinician": "Minu arsti eesmärk",
+  "goalLegendPersonal": "Minu isiklik jälgimiseesmärk",
+  "goalLegendPersonalNote": "Isiklik jälgimiseesmärk ei ole meditsiiniline eesmärk.",
+  "weightValueLabel": "Kaal ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Tingimus (valikuline, nt hommik, pärast trenni)",
+  "weightSave": "Salvesta kaal",
+  "symptomFormTitle": "Salvesta sümptom",
+  "symptomDefinitionLabel": "Sümptom",
+  "symptomSeverityLabel": "Raskus: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Märge (valikuline)",
+  "symptomSave": "Salvesta sümptom",
+  "symptomSavedToast": "Sümptom salvestatud.",
+  "symptomGuidance": "Märkisid olulise sümptomi. See rakendus ei diagnoosi. Järgi oma tervisekava ja võta ühendust kohaliku hädaabiga, kui tunned end halvasti või sümptomid on rasked.",
+  "symptomSeizureGuidance": "Salvestasid krambihoo. See rakendus ei diagnoosi. Palun järgi oma tervisekava ja võta ühendust oma tervishoiutöötajaga; kiireloomulisel juhul helista kohalikule hädaabile.",
+  "trendsRange7": "7 päeva",
+  "trendsRange30": "30 päeva",
+  "trendsRange90": "90 päeva",
+  "trendsSummary": "{count} näitu viimase {days} päeva jooksul. Viimane: {latest}, keskmine: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Selles vahemikus pole andmeid.",
+  "trendsExplainsTitle": "Mida see graafik sulle ütleb — ja mida mitte",
+  "trendsExplainsBody": "Graafik näitab sinu enda näite ajas toorete punktidena. See ei diagnoosi, ei ennusta ega tõesta põhjuseid. Puuduvad päevad on näha lünkadena, mitte nullidena.",
+  "trendsWeightChart": "Kaal (kg)",
+  "trendsBandsNote": "Uurimisvahemikud on valikulised ja vaikimisi välja lülitatud. Nende sisselülitamiseks vaata Logi vahekaarti.",
+  "evidenceDiseaseFilter": "Näita haigusespetsiifilisi uuringuid (sinu valitud allikatest)",
+  "evidenceSectionTitle": "Teadusallikad ja artiklid",
+  "guideCopyLink": "Kopeeri allika link",
+  "planTitle": "Nädalaplaan",
+  "planGenerateDraft": "Loo nädala mustand",
+  "planDraftLockedNote": "Automaatne plaani loomine jääb välja lülitatuks: palun aruta seda kõigepealt kvalifitseeritud tervishoiutöötajaga.",
+  "planCreatedToast": "Nädalaplaan loodud.",
+  "planItemDay": "Päev {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Loo plaanist ostunimekiri",
+  "shoppingTitle": "Ostunimekiri",
+  "shoppingUndo": "Võta tagasi",
+  "shoppingAddManual": "Lisa käsitsi",
+  "shoppingCheckedToggle": "Märgi",
+  "shoppingEmpty": "Ostunimekirja veel pole.",
+  "planEmpty": "Nädalaplaani veel pole. Alustamiseks loo oma retseptidest mustand.",
+  "aboutTitle": "Teave",
+  "aboutSlogan": "Privaatne keto päevik",
+  "aboutVersion": "Versioon {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Avatud lähtekood",
+  "aboutOpenSourceBody": "N Keto Tracker on tasuta avatud lähtekoodiga tarkvara GPL-3.0 litsentsi all. Koodi võid sama litsentsi all uurida, muuta ja levitada.",
+  "aboutPrivacyHeading": "Privaatsus",
+  "aboutPrivacyBody": "Sinu terviseandmed jäävad sellesse seadmesse. Kontot pole, analüütikat pole.",
+  "aboutDisclaimerHeading": "Vastutusest loobumine",
+  "aboutDisclaimerBody": "See rakendus on mõeldud üldiseks teavitamiseks ja isiklikuks jälgimiseks. See ei ole meditsiiniline nõuanne, diagnoos ega ravi.",
+  "aboutLicensesButton": "Litsentsid",
+  "aboutShareButton": "Jaga seda rakendust",
+  "aboutOtherAppsButton": "Muud rakendused",
+  "aboutCopiedToast": "Kopeeritud lõikelauale.",
+  "licensesTitle": "Litsentsid",
+  "otherAppsTitle": "Muud rakendused",
+  "otherAppsEmpty": "Muid rakendusi veel pole loetletud.",
+  "otherAppsCopyLink": "Kopeeri poe link",
+  "settingsTitle": "Seaded",
+  "aboutShareText": "Privaatne keto päevik glükoosi, ketoonide ja GKI jälgimisega. Avatud lähtekood, kontot pole vaja.",
+  "dataManagementTitle": "Andmehaldus",
+  "dataExportJson": "Ekspordi andmed (JSON)",
+  "dataExportCsv": "Ekspordi mõõtmised (CSV)",
+  "dataImportLabel": "Kleebi eksporditud JSON siia",
+  "dataImportButton": "Impordi andmed",
+  "dataImportSuccess": "Imporditi {glucose} glükoosi- ja {weight} kaalukirjet.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Import ebaõnnestus: fail on vigane või toetamata.",
+  "dataDeleteAll": "Kustuta kõik minu andmed",
+  "dataDeleteConfirm1": "Kas kustutada KÕIK andmed? See hõlmab mõõtmisi, toidukordi, plaane ja seadeid. Seda ei saa tagasi võtta.",
+  "dataDeleteConfirm2": "Kas oled päris kindel? Kinnitamiseks kirjuta DELETE.",
+  "dataDeleteTypeDelete": "Kirjuta DELETE",
+  "dataDeleteDone": "Kõik andmed kustutatud ({count} kirjet).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Ekspordifail on valmis — vali, kuhu see salvestada.",
+  "settingsAppearance": "Välimus",
+  "themeSystem": "Süsteem",
+  "themeLight": "Hele",
+  "themeDark": "Tume",
+  "settingsLanguage": "Keel",
+  "settingsMore": "Rohkem"
+}

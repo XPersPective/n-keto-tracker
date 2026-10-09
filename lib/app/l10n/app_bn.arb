@@ -1,0 +1,452 @@
+{
+  "@@locale": "bn",
+  "appTitle": "N Keto Tracker",
+  "navToday": "আজ",
+  "navLog": "লগ",
+  "navPlan": "পরিকল্পনা",
+  "navTrends": "প্রবণতা",
+  "navGuide": "গাইড",
+  "pageUnderConstruction": "এই স্ক্রিনটি তৈরি হচ্ছে।",
+  "generalInfoDisclaimer": "শুধু সাধারণ তথ্যের জন্য; চিকিৎসা পরামর্শ নয়।",
+  "onboardingLanguageTitle": "আপনার ভাষা বেছে নিন",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "আপনার ডেটা আপনার ডিভাইসেই থাকে",
+  "onboardingPrivacyBody": "N Keto Tracker আপনার পরিমাপ, খাবার ও নোট শুধু আপনার ডিভাইসের এই অ্যাপেই রাখে। কোনো অ্যাকাউন্ট নেই, আর আপনার স্বাস্থ্য ডেটা কোথাও পাঠানো হয় না। অ্যাপ মুছলে আপনার ডেটাও মুছে যায়; যেকোনো সময় ব্যাকআপ এক্সপোর্ট করতে পারেন।",
+  "onboardingMedicalTitle": "চিকিৎসা পরামর্শ নয়",
+  "onboardingMedicalBody": "এই অ্যাপ সাধারণ তথ্য ও ব্যক্তিগত ট্র্যাকিংয়ের জন্য। এটি চিকিৎসা পরামর্শ, রোগ নির্ণয় বা চিকিৎসা নয় এবং যোগ্য স্বাস্থ্যকর্মীর সেবার বিকল্প নয়।",
+  "onboardingPurposeTitle": "আপনি কী ট্র্যাক করতে চান?",
+  "onboardingPurposeLearn": "কিটোজেনিক পুষ্টি সম্পর্কে জানা",
+  "onboardingPurposeMeals": "খাবারের পরিকল্পনা করা",
+  "onboardingPurposeMacros": "ম্যাক্রো ও নেট কার্ব ট্র্যাক করা",
+  "onboardingPurposeMeasure": "গ্লুকোজ, কিটোন ও GKI ট্র্যাক করা",
+  "onboardingProfileTitle": "আপনার সম্পর্কে (ঐচ্ছিক)",
+  "onboardingProfileBody": "এটি এড়িয়ে গিয়ে পরে সেটিংসে যোগ করতে পারেন। এটি শুধু সাধারণ শক্তির অনুমানে ব্যবহৃত হয়।",
+  "onboardingBirthYear": "জন্মসাল",
+  "onboardingHeightCm": "উচ্চতা (সেমি)",
+  "onboardingWeightKg": "ওজন (কেজি)",
+  "onboardingEnergyCoeffTitle": "শক্তি অনুমানের সহগ",
+  "onboardingEnergyCoeffBody": "সাধারণ শক্তি অনুমানে প্রকাশিত দুটি সহগের একটি ব্যবহৃত হয়। এটি আপনার লিঙ্গ পরিচয় সম্পর্কিত নয় — শুধু সমীকরণের কোন সংস্করণ আপনার জন্য সবচেয়ে মানানসই তা বোঝায়। আপনি শক্তি অনুমান সম্পূর্ণ এড়িয়েও যেতে পারেন।",
+  "onboardingEnergyCoeffSkip": "শক্তি অনুমান এড়িয়ে যান",
+  "onboardingScreeningTitle": "কয়েকটি নিরাপত্তা প্রশ্ন",
+  "onboardingScreeningBody": "এই প্রশ্নগুলো কোনো রোগ নির্ণয় করে না। বাড়তি সতর্কতা দরকার হলে এগুলো কেবল স্বয়ংক্রিয় পরিকল্পনা ও লক্ষ্যের পরামর্শ বন্ধ করে।",
+  "onboardingScreeningDiabetes": "ডায়াবেটিস আছে",
+  "onboardingScreeningMedication": "গ্লুকোজ কমানোর ওষুধ বা ইনসুলিন ব্যবহার করি",
+  "onboardingScreeningPregnancy": "গর্ভবতী বা বুকের দুধ খাওয়াচ্ছি",
+  "onboardingScreeningOrgan": "কিডনি, লিভার বা অগ্ন্যাশয়ের রোগ আছে",
+  "onboardingScreeningEatingDisorder": "খাওয়ার ব্যাধির ইতিহাস আছে",
+  "onboardingScreeningWeightLoss": "অনিচ্ছাকৃতভাবে উল্লেখযোগ্য ওজন কমেছে",
+  "onboardingScreeningUnder18": "বয়স ১৮ বছরের কম",
+  "onboardingScreeningLockedNote": "আপনার উত্তরের কারণে স্বয়ংক্রিয় পরিকল্পনা ও লক্ষ্য তৈরি বন্ধ থাকবে। রেকর্ড করা ও শেখার সুবিধা চালু থাকবে। অনুগ্রহ করে একজন যোগ্য স্বাস্থ্য পেশাজীবীর সঙ্গে এটি পর্যালোচনা করুন।",
+  "onboardingDataTitle": "আপনার ডেটা",
+  "onboardingDataBody": "আপনার রেকর্ড শুধু এই ডিভাইসেই থাকে। ব্যাকআপ এক্সপোর্ট ছাড়া অ্যাপ হারালে বা আনইনস্টল করলে ডেটা ফেরত পাওয়া যাবে না।",
+  "onboardingConsentTitle": "সম্মতি",
+  "onboardingConsentBody": "আমি গোপনীয়তা সারসংক্ষেপ এবং এই অ্যাপ চিকিৎসা পরামর্শ নয় সংক্রান্ত নোটিশ পড়েছি ও মেনে নিচ্ছি। আমি বুঝি আমার ডেটা শুধু এই ডিভাইসেই থাকে।",
+  "onboardingConsentCheckbox": "আমি সম্মত",
+  "onboardingNext": "পরবর্তী",
+  "onboardingBack": "পেছনে",
+  "onboardingFinish": "অ্যাপ ব্যবহার শুরু করুন",
+  "onboardingStepOf": "ধাপ {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "গ্লুকোজ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "রক্তের কিটোন BHB (mmol/L)",
+  "formSourceType": "উৎসের ধরন",
+  "formNote": "নোট (ঐচ্ছিক)",
+  "formPickTime": "পরিমাপের সময়",
+  "formSaveSession": "পরিমাপ সেশন সংরক্ষণ করুন",
+  "formInvalidValue": "অনুগ্রহ করে একটি বৈধ ধনাত্মক সংখ্যা দিন।",
+  "gkiResultHeading": "আপনার GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "পরিমাপের সময়: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "গণনার সংস্করণ: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "এখনো কোনো পরিমাপ নেই",
+  "logEmptyBody": "এখানে দেখতে প্রথম গ্লুকোজ ও কিটোন রিডিং যোগ করুন।",
+  "logBandsToggle": "আপনার পড়া নিবন্ধের গবেষণা পরিসর দেখান",
+  "bandsDisclaimer": "এই পরিসরগুলো ক্লিনিক্যাল স্বাভাবিক পরিসর বা প্রমাণিত চিকিৎসা লক্ষ্য নয়। এগুলো একটি নির্দিষ্ট গবেষণা কাঠামো থেকে নেওয়া প্রতিনিধিত্বমূলক, নির্দেশমূলক নয় এমন পরামর্শ। শুধু GKI স্বাস্থ্য, রোগের প্রতিক্রিয়া বা নিরাপত্তা দেখায় না। উৎস দেখতে ট্যাপ করুন।",
+  "logBandOptimal": "প্রস্তাবিত সর্বোত্তম গবেষণা পরিসর (GKI ≤ 1.0)",
+  "logBandTherapeutic": "প্রস্তাবিত থেরাপিউটিক গবেষণা পরিসর (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "প্রস্তাবিত ≤ 2.0 গবেষণা পরিসরের বাইরে",
+  "logMatchSimultaneous": "একসঙ্গে",
+  "logMatchApproximate": "আনুমানিক মিল",
+  "logTimelineHeading": "সময়রেখা",
+  "logChartsHeading": "চার্ট",
+  "logGlucoseChart": "গ্লুকোজ (mmol/L)",
+  "logBhbChart": "কিটোন BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "উৎসের লিঙ্ক কপি করুন",
+  "todayQuickActions": "দ্রুত কাজ",
+  "todayAddMeasurement": "পরিমাপ যোগ করুন",
+  "todayAddMeal": "খাবার যোগ করুন",
+  "todayAddWeight": "ওজন যোগ করুন",
+  "todayAddSymptom": "উপসর্গ যোগ করুন",
+  "todayLatestTitle": "সর্বশেষ পরিমাপ",
+  "todayLatestEmpty": "এখনো কোনো পরিমাপ নেই। গ্লুকোজ ও কিটোন BHB একসঙ্গে লিখতে 'পরিমাপ যোগ করুন' ব্যবহার করুন।",
+  "todayNutritionTitle": "আজকের পুষ্টি",
+  "todayNutritionEmpty": "আজ কোনো খাবার লেখা হয়নি। খাবার পরিকল্পনা ট্যাব থেকে লগ করা হয়।",
+  "todayWeightTitle": "ওজন",
+  "todayWeightEmpty": "এখনো কোনো ওজনের এন্ট্রি নেই।",
+  "todaySymptomsTitle": "আজকের উপসর্গ",
+  "todaySymptomsEmpty": "আজ কোনো উপসর্গ লেখা হয়নি।",
+  "todayPlansTitle": "পরিকল্পিত খাবার",
+  "todayPlansEmpty": "আজকের জন্য কোনো খাবারের পরিকল্পনা নেই।",
+  "comingSoonTitle": "আসন্ন আপডেটে আসছে",
+  "comingSoonBody": "এই এন্ট্রি ফর্মটি তৈরি হচ্ছে। অগ্রগতি প্রকল্পের রিপোজিটরিতে দেখতে পারেন।",
+  "mealFormTitle": "খাবার লগ করুন",
+  "mealSearchLabel": "খাবার খুঁজুন",
+  "mealTypeLabel": "খাবারের ধরন",
+  "mealTypeBreakfast": "সকালের নাস্তা",
+  "mealTypeLunch": "দুপুরের খাবার",
+  "mealTypeDinner": "রাতের খাবার",
+  "mealTypeSnack": "নাস্তা",
+  "mealTypeCustom": "নিজস্ব",
+  "mealGramsLabel": "পরিমাণ (গ্রাম)",
+  "mealAddItem": "খাবার যোগ করুন",
+  "mealNoteLabel": "নোট (ঐচ্ছিক)",
+  "mealFavoriteToggle": "প্রিয় হিসেবে চিহ্নিত করুন",
+  "mealRepeatSection": "দ্রুত পুনরাবৃত্তি",
+  "mealRepeatFavorites": "প্রিয়",
+  "mealRepeatRecent": "সাম্প্রতিক",
+  "mealSave": "খাবার সংরক্ষণ করুন",
+  "mealItemsHeading": "আইটেম",
+  "mealSavedToast": "খাবার সংরক্ষিত হয়েছে।",
+  "mealNeedsItem": "আগে অন্তত একটি খাবার যোগ করুন।",
+  "mealTotalsHeading": "দৈনিক মোট",
+  "mealTotalsKcal": "শক্তি: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "নেট কার্ব: {value} গ্রা",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "মোট কার্ব: {value} গ্রা",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ফাইবার: {value} গ্রা",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "প্রোটিন: {value} গ্রা",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "চর্বি: {value} গ্রা",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "সাধারণত ভালো মানানসই",
+  "guideGroupLimit": "পরিমাণ বা ঘনঘন খাওয়ায় সীমা দরকার হতে পারে",
+  "guideGroupAvoid": "সাধারণত কিটোজেনিক লক্ষ্যের সঙ্গে বেমানান",
+  "guideWhyHeading": "কেন?",
+  "guideTypicalPortion": "সাধারণ পরিমাণ: {portion} (~{grams} গ্রা)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "বিকল্প: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ডেটার উৎস: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "মাংস, মাছ ও ডিম",
+  "guideCardLowCarbVegetables": "কম কার্বের সবজি",
+  "guideCardFatsOils": "চর্বি ও তেল",
+  "guideCardNutsSeeds": "বাদাম ও বীজ",
+  "guideCardBerries": "বেরি",
+  "guideCardDairy": "ফুল-ফ্যাট দুগ্ধজাত",
+  "guideCardFruit": "ফল",
+  "guideCardLegumes": "ডাল ও শিমজাতীয়",
+  "guideCardMilkDrinks": "দুধ ও মিষ্টি পানীয়",
+  "guideCardSugaryDrinks": "চিনিযুক্ত পানীয়",
+  "guideCardStarches": "রুটি, ভাত, আলু",
+  "guideCardSweets": "মিষ্টি ও ডেজার্ট",
+  "logMealRelation": "{mealType} খাবারের {hours} ঘণ্টা পর রেকর্ড করা — শুধু সময়ের প্রেক্ষাপট, কোনো প্রভাব নয়।",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "এই রিডিংয়ের আগে বিশ্লেষণ সময়সীমার মধ্যে কোনো খাবার লেখা হয়নি।",
+  "logRelationWindowLabel": "খাবার সম্পর্কের সময়সীমা",
+  "logConfoundersHeading": "রিডিংকে আর কী প্রভাবিত করতে পারে?",
+  "mealTypeShortBreakfast": "সকালের নাস্তা",
+  "mealTypeShortLunch": "দুপুরের খাবার",
+  "mealTypeShortDinner": "রাতের খাবার",
+  "mealTypeShortSnack": "নাস্তা",
+  "mealTypeShortCustom": "খাবার",
+  "recipePerServing": "{value} জনের পরিবেশন",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "প্রস্তুতি: {value} মিনিট",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "অ্যালার্জেন: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "উপকরণ",
+  "recipeGrams": "{value} গ্রা",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ধাপ",
+  "recipeStorage": "সংরক্ষণ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "একটি গবেষণায় ব্যবহৃত পরিসর",
+  "goalLegendClinician": "আমার চিকিৎসকের লক্ষ্য",
+  "goalLegendPersonal": "আমার ব্যক্তিগত ট্র্যাকিং লক্ষ্য",
+  "goalLegendPersonalNote": "ব্যক্তিগত ট্র্যাকিং লক্ষ্য কোনো চিকিৎসা লক্ষ্য নয়।",
+  "weightValueLabel": "ওজন ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "অবস্থা (ঐচ্ছিক, যেমন সকাল, ব্যায়ামের পর)",
+  "weightSave": "ওজন সংরক্ষণ করুন",
+  "symptomFormTitle": "উপসর্গ লগ করুন",
+  "symptomDefinitionLabel": "উপসর্গ",
+  "symptomSeverityLabel": "তীব্রতা: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "নোট (ঐচ্ছিক)",
+  "symptomSave": "উপসর্গ সংরক্ষণ করুন",
+  "symptomSavedToast": "উপসর্গ সংরক্ষিত হয়েছে।",
+  "symptomGuidance": "আপনি একটি গুরুত্বপূর্ণ উপসর্গ চিহ্নিত করেছেন। এই অ্যাপ রোগ নির্ণয় করে না। নিজের স্বাস্থ্য পরিকল্পনা অনুসরণ করুন, এবং অসুস্থ বোধ করলে বা উপসর্গ তীব্র হলে স্থানীয় জরুরি সেবায় যোগাযোগ করুন।",
+  "symptomSeizureGuidance": "আপনি একটি খিঁচুনির ঘটনা লিখেছেন। এই অ্যাপ রোগ নির্ণয় করে না। অনুগ্রহ করে আপনার স্বাস্থ্য পরিকল্পনা মেনে চলুন ও স্বাস্থ্যসেবাদাতার সঙ্গে যোগাযোগ করুন; জরুরি হলে স্থানীয় জরুরি সেবায় ফোন করুন।",
+  "trendsRange7": "৭ দিন",
+  "trendsRange30": "৩০ দিন",
+  "trendsRange90": "৯০ দিন",
+  "trendsSummary": "গত {days} দিনে {count}টি রিডিং। সর্বশেষ: {latest}, গড়: {average}।",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "এই পরিসরে কোনো ডেটা নেই।",
+  "trendsExplainsTitle": "এই চার্ট কী বলে — আর কী বলে না",
+  "trendsExplainsBody": "চার্টটি আপনার নিজের রিডিং সময়ের সঙ্গে কাঁচা বিন্দু হিসেবে দেখায়। এটি রোগ নির্ণয় করে না, ভবিষ্যদ্বাণী করে না, এবং কারণ প্রমাণ করে না। অনুপস্থিত দিন ফাঁক হিসেবে দেখা যায়, শূন্য হিসেবে নয়।",
+  "trendsWeightChart": "ওজন (কেজি)",
+  "trendsBandsNote": "গবেষণা পরিসর ঐচ্ছিক এবং ডিফল্টভাবে বন্ধ। চালু করতে লগ ট্যাব দেখুন।",
+  "evidenceDiseaseFilter": "রোগ-নির্দিষ্ট গবেষণা দেখান (আপনার বেছে নেওয়া উৎস থেকে)",
+  "evidenceSectionTitle": "বৈজ্ঞানিক উৎস ও নিবন্ধ",
+  "guideCopyLink": "উৎসের লিঙ্ক কপি করুন",
+  "planTitle": "সাপ্তাহিক পরিকল্পনা",
+  "planGenerateDraft": "সাপ্তাহিক খসড়া তৈরি করুন",
+  "planDraftLockedNote": "স্বয়ংক্রিয় পরিকল্পনা তৈরি বন্ধ থাকবে: আগে একজন যোগ্য স্বাস্থ্য পেশাজীবীর সঙ্গে পর্যালোচনা করুন।",
+  "planCreatedToast": "সাপ্তাহিক পরিকল্পনা তৈরি হয়েছে।",
+  "planItemDay": "দিন {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "পরিকল্পনা থেকে কেনাকাটার তালিকা তৈরি করুন",
+  "shoppingTitle": "কেনাকাটার তালিকা",
+  "shoppingUndo": "পূর্বাবস্থায়",
+  "shoppingAddManual": "নিজে আইটেম যোগ করুন",
+  "shoppingCheckedToggle": "টিক দিন",
+  "shoppingEmpty": "এখনো কোনো কেনাকাটার তালিকা নেই।",
+  "planEmpty": "এখনো কোনো সাপ্তাহিক পরিকল্পনা নেই। শুরু করতে আপনার রেসিপি থেকে খসড়া তৈরি করুন।",
+  "aboutTitle": "সম্পর্কে",
+  "aboutSlogan": "ব্যক্তিগত কিটো জার্নাল",
+  "aboutVersion": "সংস্করণ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ওপেন সোর্স",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 লাইসেন্সের অধীনে বিনামূল্যের ওপেন-সোর্স সফটওয়্যার। একই লাইসেন্সে আপনি কোড পরীক্ষা, পরিবর্তন ও বিতরণ করতে পারেন।",
+  "aboutPrivacyHeading": "গোপনীয়তা",
+  "aboutPrivacyBody": "আপনার স্বাস্থ্য ডেটা এই ডিভাইসেই থাকে। অ্যাকাউন্ট নেই, অ্যানালিটিক্স নেই।",
+  "aboutDisclaimerHeading": "দাবিত্যাগ",
+  "aboutDisclaimerBody": "এই অ্যাপ সাধারণ তথ্য ও ব্যক্তিগত ট্র্যাকিংয়ের জন্য। এটি চিকিৎসা পরামর্শ, রোগ নির্ণয় বা চিকিৎসা নয়।",
+  "aboutLicensesButton": "লাইসেন্স",
+  "aboutShareButton": "এই অ্যাপ শেয়ার করুন",
+  "aboutOtherAppsButton": "অন্যান্য অ্যাপ",
+  "aboutCopiedToast": "ক্লিপবোর্ডে কপি হয়েছে।",
+  "licensesTitle": "লাইসেন্স",
+  "otherAppsTitle": "অন্যান্য অ্যাপ",
+  "otherAppsEmpty": "এখনো অন্য কোনো অ্যাপ তালিকাভুক্ত নেই।",
+  "otherAppsCopyLink": "স্টোরের লিঙ্ক কপি করুন",
+  "settingsTitle": "সেটিংস",
+  "aboutShareText": "গ্লুকোজ, কিটোন ও GKI ট্র্যাকিংসহ ব্যক্তিগত কিটো জার্নাল। ওপেন সোর্স, অ্যাকাউন্ট লাগে না।",
+  "dataManagementTitle": "ডেটা ব্যবস্থাপনা",
+  "dataExportJson": "ডেটা এক্সপোর্ট (JSON)",
+  "dataExportCsv": "পরিমাপ এক্সপোর্ট (CSV)",
+  "dataImportLabel": "এক্সপোর্ট করা JSON এখানে পেস্ট করুন",
+  "dataImportButton": "ডেটা ইম্পোর্ট করুন",
+  "dataImportSuccess": "{glucose}টি গ্লুকোজ ও {weight}টি ওজনের রেকর্ড ইম্পোর্ট হয়েছে।",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ইম্পোর্ট ব্যর্থ: ফাইলটি অবৈধ বা অসমর্থিত।",
+  "dataDeleteAll": "আমার সব ডেটা মুছুন",
+  "dataDeleteConfirm1": "সব ডেটা মুছবেন? এতে পরিমাপ, খাবার, পরিকল্পনা ও সেটিংস অন্তর্ভুক্ত। এটি ফেরানো যাবে না।",
+  "dataDeleteConfirm2": "আপনি কি সত্যিই নিশ্চিত? নিশ্চিত করতে DELETE টাইপ করুন।",
+  "dataDeleteTypeDelete": "DELETE টাইপ করুন",
+  "dataDeleteDone": "সব ডেটা মুছে ফেলা হয়েছে ({count}টি রেকর্ড)।",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "এক্সপোর্ট ফাইল প্রস্তুত — কোথায় সংরক্ষণ করবেন বেছে নিন।",
+  "settingsAppearance": "চেহারা",
+  "themeSystem": "সিস্টেম",
+  "themeLight": "লাইট",
+  "themeDark": "ডার্ক",
+  "settingsLanguage": "ভাষা",
+  "settingsMore": "আরও"
+}

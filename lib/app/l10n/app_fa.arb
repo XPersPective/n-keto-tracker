@@ -1,0 +1,452 @@
+{
+  "@@locale": "fa",
+  "appTitle": "N Keto Tracker",
+  "navToday": "امروز",
+  "navLog": "گزارش",
+  "navPlan": "برنامه",
+  "navTrends": "روندها",
+  "navGuide": "راهنما",
+  "pageUnderConstruction": "این صفحه در حال ساخت است.",
+  "generalInfoDisclaimer": "فقط برای اطلاعات عمومی؛ توصیه پزشکی نیست.",
+  "onboardingLanguageTitle": "زبان خود را انتخاب کنید",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "داده‌های شما روی دستگاهتان می‌ماند",
+  "onboardingPrivacyBody": "N Keto Tracker اندازه‌گیری‌ها، وعده‌ها و یادداشت‌های شما را فقط در همین برنامه روی دستگاهتان نگه می‌دارد. حساب کاربری وجود ندارد و داده‌های سلامت شما هرگز به جایی ارسال نمی‌شود. حذف برنامه داده‌های شما را حذف می‌کند؛ هر زمان می‌توانید نسخه پشتیبان خروجی بگیرید.",
+  "onboardingMedicalTitle": "توصیه پزشکی نیست",
+  "onboardingMedicalBody": "این برنامه برای اطلاعات عمومی و پیگیری شخصی است. توصیه پزشکی، تشخیص یا درمان نیست و جایگزین مراقبت متخصصان سلامت واجد صلاحیت نمی‌شود.",
+  "onboardingPurposeTitle": "می‌خواهید چه چیزی را پیگیری کنید؟",
+  "onboardingPurposeLearn": "یادگیری درباره تغذیه کتوژنیک",
+  "onboardingPurposeMeals": "برنامه‌ریزی وعده‌ها",
+  "onboardingPurposeMacros": "پیگیری درشت‌مغذی‌ها و کربوهیدرات خالص",
+  "onboardingPurposeMeasure": "پیگیری گلوکز، کتون و GKI",
+  "onboardingProfileTitle": "درباره شما (اختیاری)",
+  "onboardingProfileBody": "می‌توانید این بخش را رد کنید و بعداً در تنظیمات اضافه کنید. فقط برای برآورد کلی انرژی استفاده می‌شود.",
+  "onboardingBirthYear": "سال تولد",
+  "onboardingHeightCm": "قد (سانتی‌متر)",
+  "onboardingWeightKg": "وزن (کیلوگرم)",
+  "onboardingEnergyCoeffTitle": "ضریب برآورد انرژی",
+  "onboardingEnergyCoeffBody": "برآورد کلی انرژی از یکی از دو ضریب منتشرشده استفاده می‌کند. این به هویت جنسی شما مربوط نیست — فقط مشخص می‌کند کدام نسخه معادله بیشتر با شما سازگار است. می‌توانید برآورد انرژی را کاملاً رد کنید.",
+  "onboardingEnergyCoeffSkip": "رد کردن برآورد انرژی",
+  "onboardingScreeningTitle": "چند پرسش ایمنی",
+  "onboardingScreeningBody": "این پرسش‌ها چیزی را تشخیص نمی‌دهند. فقط وقتی مراقبت بیشتری لازم باشد، پیشنهادهای خودکار برنامه و هدف را خاموش می‌کنند.",
+  "onboardingScreeningDiabetes": "دیابت دارم",
+  "onboardingScreeningMedication": "داروی کاهنده گلوکز یا انسولین مصرف می‌کنم",
+  "onboardingScreeningPregnancy": "باردار هستم یا شیر می‌دهم",
+  "onboardingScreeningOrgan": "بیماری کلیه، کبد یا لوزالمعده دارم",
+  "onboardingScreeningEatingDisorder": "سابقه اختلال خوردن دارم",
+  "onboardingScreeningWeightLoss": "کاهش وزن قابل‌توجه ناخواسته داشته‌ام",
+  "onboardingScreeningUnder18": "زیر ۱۸ سال هستم",
+  "onboardingScreeningLockedNote": "به دلیل پاسخ‌های شما، ساخت خودکار برنامه و هدف خاموش می‌ماند. ثبت و یادگیری همچنان در دسترس است. لطفاً این موضوع را با یک متخصص سلامت واجد صلاحیت بررسی کنید.",
+  "onboardingDataTitle": "داده‌های شما",
+  "onboardingDataBody": "سوابق شما فقط روی همین دستگاه می‌ماند. اگر برنامه را بدون خروجی گرفتن از نسخه پشتیبان گم یا حذف کنید، داده‌ها قابل بازیابی نیستند.",
+  "onboardingConsentTitle": "رضایت",
+  "onboardingConsentBody": "خلاصه حریم خصوصی و اطلاعیه‌ی اینکه این برنامه توصیه پزشکی نیست را خوانده و می‌پذیرم. می‌دانم داده‌های من فقط روی همین دستگاه می‌ماند.",
+  "onboardingConsentCheckbox": "می‌پذیرم",
+  "onboardingNext": "بعدی",
+  "onboardingBack": "قبلی",
+  "onboardingFinish": "شروع استفاده از برنامه",
+  "onboardingStepOf": "مرحله {current} از {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "گلوکز ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "کتون خون BHB (mmol/L)",
+  "formSourceType": "نوع منبع",
+  "formNote": "یادداشت (اختیاری)",
+  "formPickTime": "زمان اندازه‌گیری",
+  "formSaveSession": "ذخیره جلسه اندازه‌گیری",
+  "formInvalidValue": "لطفاً یک عدد مثبت معتبر وارد کنید.",
+  "gkiResultHeading": "GKI شما",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "زمان اندازه‌گیری: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "نسخه محاسبه: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "هنوز اندازه‌گیری‌ای نیست",
+  "logEmptyBody": "برای دیدن در اینجا، اولین مقدار گلوکز و کتون خود را اضافه کنید.",
+  "logBandsToggle": "نمایش بازه‌های پژوهشی از مقاله‌ای که خوانده‌اید",
+  "bandsDisclaimer": "این بازه‌ها محدوده‌های طبیعی بالینی یا اهداف درمانی اثبات‌شده نیستند. آن‌ها پیشنهادهای نمونه و غیرتجویزی از یک چارچوب پژوهشی مشخص‌اند. GKI به‌تنهایی سلامت، پاسخ به بیماری یا ایمنی را نشان نمی‌دهد. برای دیدن منبع ضربه بزنید.",
+  "logBandOptimal": "بازه پژوهشی بهینه پیشنهادی (GKI ≤ 1.0)",
+  "logBandTherapeutic": "بازه پژوهشی درمانی پیشنهادی (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "خارج از بازه پژوهشی پیشنهادی ≤ 2.0",
+  "logMatchSimultaneous": "هم‌زمان",
+  "logMatchApproximate": "تطبیق تقریبی",
+  "logTimelineHeading": "خط زمانی",
+  "logChartsHeading": "نمودارها",
+  "logGlucoseChart": "گلوکز (mmol/L)",
+  "logBhbChart": "کتون BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "کپی پیوند منبع",
+  "todayQuickActions": "اقدام‌های سریع",
+  "todayAddMeasurement": "افزودن اندازه‌گیری",
+  "todayAddMeal": "افزودن وعده",
+  "todayAddWeight": "افزودن وزن",
+  "todayAddSymptom": "افزودن علامت",
+  "todayLatestTitle": "آخرین اندازه‌گیری‌ها",
+  "todayLatestEmpty": "هنوز اندازه‌گیری‌ای نیست. از «افزودن اندازه‌گیری» برای ثبت هم‌زمان گلوکز و کتون BHB استفاده کنید.",
+  "todayNutritionTitle": "تغذیه امروز",
+  "todayNutritionEmpty": "امروز وعده‌ای ثبت نشده است. وعده‌ها از زبانه برنامه ثبت می‌شوند.",
+  "todayWeightTitle": "وزن",
+  "todayWeightEmpty": "هنوز ورودی وزنی نیست.",
+  "todaySymptomsTitle": "علائم امروز",
+  "todaySymptomsEmpty": "امروز علامتی ثبت نشده است.",
+  "todayPlansTitle": "وعده‌های برنامه‌ریزی‌شده",
+  "todayPlansEmpty": "برای امروز برنامه وعده‌ای نیست.",
+  "comingSoonTitle": "در به‌روزرسانی بعدی می‌آید",
+  "comingSoonBody": "این فرم ورودی در حال ساخت است. می‌توانید پیشرفت را در مخزن پروژه دنبال کنید.",
+  "mealFormTitle": "ثبت وعده",
+  "mealSearchLabel": "جست‌وجوی غذا",
+  "mealTypeLabel": "نوع وعده",
+  "mealTypeBreakfast": "صبحانه",
+  "mealTypeLunch": "ناهار",
+  "mealTypeDinner": "شام",
+  "mealTypeSnack": "میان‌وعده",
+  "mealTypeCustom": "سفارشی",
+  "mealGramsLabel": "مقدار (گرم)",
+  "mealAddItem": "افزودن غذا",
+  "mealNoteLabel": "یادداشت (اختیاری)",
+  "mealFavoriteToggle": "علامت‌گذاری به‌عنوان مورد علاقه",
+  "mealRepeatSection": "تکرار سریع",
+  "mealRepeatFavorites": "موردعلاقه‌ها",
+  "mealRepeatRecent": "اخیر",
+  "mealSave": "ذخیره وعده",
+  "mealItemsHeading": "موارد",
+  "mealSavedToast": "وعده ذخیره شد.",
+  "mealNeedsItem": "ابتدا حداقل یک غذا اضافه کنید.",
+  "mealTotalsHeading": "مجموع روزانه",
+  "mealTotalsKcal": "انرژی: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "کربوهیدرات خالص: {value} گرم",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "کل کربوهیدرات: {value} گرم",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "فیبر: {value} گرم",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "پروتئین: {value} گرم",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "چربی: {value} گرم",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "معمولاً گزینه مناسبی است",
+  "guideGroupLimit": "ممکن است به محدودیت مقدار یا دفعات نیاز داشته باشد",
+  "guideGroupAvoid": "معمولاً با اهداف کتوژنیک ناسازگار است",
+  "guideWhyHeading": "چرا؟",
+  "guideTypicalPortion": "سهم معمول: {portion} (~{grams} گرم)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "جایگزین‌ها: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "منبع داده: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "گوشت، ماهی و تخم‌مرغ",
+  "guideCardLowCarbVegetables": "سبزیجات کم‌کربوهیدرات",
+  "guideCardFatsOils": "چربی‌ها و روغن‌ها",
+  "guideCardNutsSeeds": "مغزها و دانه‌ها",
+  "guideCardBerries": "توت‌ها",
+  "guideCardDairy": "لبنیات پرچرب",
+  "guideCardFruit": "میوه‌ها",
+  "guideCardLegumes": "حبوبات",
+  "guideCardMilkDrinks": "شیر و نوشیدنی‌های شیرین",
+  "guideCardSugaryDrinks": "نوشیدنی‌های شیرین‌شده",
+  "guideCardStarches": "نان، برنج، سیب‌زمینی",
+  "guideCardSweets": "شیرینی‌ها و دسرها",
+  "logMealRelation": "{hours} ساعت پس از وعده ({mealType}) ثبت شد — فقط زمینه زمانی، نه یک اثر.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "در بازه تحلیل پیش از این مقدار، وعده‌ای ثبت نشده است.",
+  "logRelationWindowLabel": "بازه ارتباط با وعده",
+  "logConfoundersHeading": "چه چیز دیگری می‌تواند بر مقادیر اثر بگذارد؟",
+  "mealTypeShortBreakfast": "صبحانه",
+  "mealTypeShortLunch": "ناهار",
+  "mealTypeShortDinner": "شام",
+  "mealTypeShortSnack": "میان‌وعده",
+  "mealTypeShortCustom": "وعده",
+  "recipePerServing": "{value} وعده",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "آماده‌سازی: {value} دقیقه",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "آلرژن‌ها: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "مواد لازم",
+  "recipeGrams": "{value} گرم",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "مراحل",
+  "recipeStorage": "نگهداری: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "بازه پژوهشی استفاده‌شده در یک مطالعه",
+  "goalLegendClinician": "هدف پزشک من",
+  "goalLegendPersonal": "هدف شخصی پیگیری من",
+  "goalLegendPersonalNote": "هدف شخصی پیگیری یک هدف پزشکی نیست.",
+  "weightValueLabel": "وزن ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "شرایط (اختیاری، مثلاً صبح، بعد از ورزش)",
+  "weightSave": "ذخیره وزن",
+  "symptomFormTitle": "ثبت علامت",
+  "symptomDefinitionLabel": "علامت",
+  "symptomSeverityLabel": "شدت: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "یادداشت (اختیاری)",
+  "symptomSave": "ذخیره علامت",
+  "symptomSavedToast": "علامت ذخیره شد.",
+  "symptomGuidance": "شما یک علامت مهم را علامت‌گذاری کرده‌اید. این برنامه تشخیص نمی‌دهد. از برنامه سلامت خود پیروی کنید و اگر احساس ناخوشی می‌کنید یا علائم شدید است با خدمات اورژانس محلی تماس بگیرید.",
+  "symptomSeizureGuidance": "شما یک رویداد تشنج ثبت کرده‌اید. این برنامه تشخیص نمی‌دهد. لطفاً از برنامه سلامت خود پیروی کنید و با متخصص سلامت خود تماس بگیرید؛ در موارد فوری با اورژانس محلی تماس بگیرید.",
+  "trendsRange7": "۷ روز",
+  "trendsRange30": "۳۰ روز",
+  "trendsRange90": "۹۰ روز",
+  "trendsSummary": "{count} مقدار در {days} روز گذشته. آخرین: {latest}، میانگین: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "در این بازه داده‌ای نیست.",
+  "trendsExplainsTitle": "این نمودار چه چیزی به شما می‌گوید — و چه چیزی نه",
+  "trendsExplainsBody": "نمودار مقادیر خود شما را در طول زمان به‌صورت نقاط خام نشان می‌دهد. تشخیص نمی‌دهد، پیش‌بینی نمی‌کند و علت‌ها را اثبات نمی‌کند. روزهای نبوده به‌صورت شکاف دیده می‌شوند، نه صفر.",
+  "trendsWeightChart": "وزن (کیلوگرم)",
+  "trendsBandsNote": "بازه‌های پژوهشی اختیاری و به‌طور پیش‌فرض خاموش‌اند. برای فعال‌سازی به زبانه گزارش بروید.",
+  "evidenceDiseaseFilter": "نمایش پژوهش‌های ویژه بیماری (از منابعی که خواندن آن‌ها را انتخاب می‌کنید)",
+  "evidenceSectionTitle": "منابع و مقالات علمی",
+  "guideCopyLink": "کپی پیوند منبع",
+  "planTitle": "برنامه هفتگی",
+  "planGenerateDraft": "ساخت پیش‌نویس هفتگی",
+  "planDraftLockedNote": "ساخت خودکار برنامه خاموش می‌ماند: لطفاً ابتدا با یک متخصص سلامت واجد صلاحیت بررسی کنید.",
+  "planCreatedToast": "برنامه هفتگی ساخته شد.",
+  "planItemDay": "روز {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "ساخت فهرست خرید از برنامه",
+  "shoppingTitle": "فهرست خرید",
+  "shoppingUndo": "واگرد",
+  "shoppingAddManual": "افزودن دستی مورد",
+  "shoppingCheckedToggle": "علامت‌گذاری",
+  "shoppingEmpty": "هنوز فهرست خریدی نیست.",
+  "planEmpty": "هنوز برنامه هفتگی‌ای نیست. برای شروع از دستور پخت‌هایتان پیش‌نویس بسازید.",
+  "aboutTitle": "درباره",
+  "aboutSlogan": "دفترچه خصوصی کتو",
+  "aboutVersion": "نسخه {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "متن‌باز",
+  "aboutOpenSourceBody": "N Keto Tracker نرم‌افزار رایگان و متن‌باز با مجوز GPL-3.0 است. می‌توانید کد را با همان مجوز بررسی، تغییر و بازتوزیع کنید.",
+  "aboutPrivacyHeading": "حریم خصوصی",
+  "aboutPrivacyBody": "داده‌های سلامت شما روی همین دستگاه می‌ماند. بدون حساب، بدون تحلیل.",
+  "aboutDisclaimerHeading": "سلب مسئولیت",
+  "aboutDisclaimerBody": "این برنامه برای اطلاعات عمومی و پیگیری شخصی است. توصیه پزشکی، تشخیص یا درمان نیست.",
+  "aboutLicensesButton": "مجوزها",
+  "aboutShareButton": "اشتراک‌گذاری این برنامه",
+  "aboutOtherAppsButton": "برنامه‌های دیگر",
+  "aboutCopiedToast": "در کلیپ‌بورد کپی شد.",
+  "licensesTitle": "مجوزها",
+  "otherAppsTitle": "برنامه‌های دیگر",
+  "otherAppsEmpty": "هنوز برنامه دیگری فهرست نشده است.",
+  "otherAppsCopyLink": "کپی پیوند فروشگاه",
+  "settingsTitle": "تنظیمات",
+  "aboutShareText": "دفترچه خصوصی کتو با پیگیری گلوکز، کتون و GKI. متن‌باز، بدون نیاز به حساب.",
+  "dataManagementTitle": "مدیریت داده‌ها",
+  "dataExportJson": "خروجی داده‌ها (JSON)",
+  "dataExportCsv": "خروجی اندازه‌گیری‌ها (CSV)",
+  "dataImportLabel": "JSON خروجی‌گرفته‌شده را اینجا بچسبانید",
+  "dataImportButton": "ورود داده‌ها",
+  "dataImportSuccess": "{glucose} رکورد گلوکز و {weight} رکورد وزن وارد شد.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ورود ناموفق بود: فایل نامعتبر یا پشتیبانی‌نشده است.",
+  "dataDeleteAll": "حذف همه داده‌های من",
+  "dataDeleteConfirm1": "همه داده‌ها حذف شوند؟ شامل اندازه‌گیری‌ها، وعده‌ها، برنامه‌ها و تنظیمات است. قابل بازگشت نیست.",
+  "dataDeleteConfirm2": "واقعاً مطمئنید؟ برای تأیید DELETE را تایپ کنید.",
+  "dataDeleteTypeDelete": "DELETE را تایپ کنید",
+  "dataDeleteDone": "همه داده‌ها حذف شد ({count} رکورد).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "فایل خروجی آماده است — محل ذخیره را انتخاب کنید.",
+  "settingsAppearance": "ظاهر",
+  "themeSystem": "سیستم",
+  "themeLight": "روشن",
+  "themeDark": "تیره",
+  "settingsLanguage": "زبان",
+  "settingsMore": "بیشتر"
+}

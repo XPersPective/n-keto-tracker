@@ -1,0 +1,452 @@
+{
+  "@@locale": "gl",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Hoxe",
+  "navLog": "Rexistro",
+  "navPlan": "Plan",
+  "navTrends": "Tendencias",
+  "navGuide": "Guía",
+  "pageUnderConstruction": "Esta pantalla está en construción.",
+  "generalInfoDisclaimer": "Só para información xeral; non é consello médico.",
+  "onboardingLanguageTitle": "Escolle o teu idioma",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Os teus datos quedan no dispositivo",
+  "onboardingPrivacyBody": "N Keto Tracker garda as túas medicións, comidas e notas só nesta aplicación, no teu dispositivo. Non hai conta e os teus datos de saúde nunca se envían a ningures. Se borras a aplicación, bórranse os datos; podes exportar unha copia de seguranza cando queiras.",
+  "onboardingMedicalTitle": "Non é consello médico",
+  "onboardingMedicalBody": "Esta aplicación é para información xeral e seguimento persoal. Non é consello médico, diagnóstico nin tratamento, e non substitúe a atención de profesionais sanitarios cualificados.",
+  "onboardingPurposeTitle": "Que queres seguir?",
+  "onboardingPurposeLearn": "Aprender sobre nutrición cetoxénica",
+  "onboardingPurposeMeals": "Planificar comidas",
+  "onboardingPurposeMacros": "Seguir macros e hidratos de carbono netos",
+  "onboardingPurposeMeasure": "Seguir glicosa, cetonas e GKI",
+  "onboardingProfileTitle": "Sobre ti (opcional)",
+  "onboardingProfileBody": "Podes omitilo e engadilo máis tarde en axustes. Só se usa para unha estimación de enerxía xeral.",
+  "onboardingBirthYear": "Ano de nacemento",
+  "onboardingHeightCm": "Altura (cm)",
+  "onboardingWeightKg": "Peso (kg)",
+  "onboardingEnergyCoeffTitle": "Coeficiente de estimación de enerxía",
+  "onboardingEnergyCoeffBody": "A estimación de enerxía xeral usa un de dous coeficientes publicados. Non ten que ver coa túa identidade de xénero: só indica que versión da ecuación che axusta mellor. Tamén podes omitir por completo as estimacións de enerxía.",
+  "onboardingEnergyCoeffSkip": "Omitir estimacións de enerxía",
+  "onboardingScreeningTitle": "Unhas preguntas de seguridade",
+  "onboardingScreeningBody": "Estas preguntas non diagnostican nada. Só desactivan as suxestións automáticas de plan e obxectivos cando se necesita máis coidado.",
+  "onboardingScreeningDiabetes": "Teño diabetes",
+  "onboardingScreeningMedication": "Uso medicamentos para baixar a glicosa ou insulina",
+  "onboardingScreeningPregnancy": "Estou embarazada ou en lactación",
+  "onboardingScreeningOrgan": "Teño unha enfermidade renal, hepática ou pancreática",
+  "onboardingScreeningEatingDisorder": "Teño antecedentes de trastorno alimentario",
+  "onboardingScreeningWeightLoss": "Tiven unha perda de peso importante non intencionada",
+  "onboardingScreeningUnder18": "Teño menos de 18 anos",
+  "onboardingScreeningLockedNote": "Polas túas respostas, a creación automática de plan e obxectivos segue desactivada. As funcións de rexistro e aprendizaxe seguen dispoñibles. Comenta isto cun profesional sanitario cualificado.",
+  "onboardingDataTitle": "Os teus datos",
+  "onboardingDataBody": "Os teus rexistros quedan só neste dispositivo. Se perdes ou desinstalas a aplicación sen exportar unha copia de seguranza, os datos non se poden recuperar.",
+  "onboardingConsentTitle": "Consentimento",
+  "onboardingConsentBody": "Lin e acepto o resumo de privacidade e o aviso de que esta aplicación non é consello médico. Entendo que os meus datos quedan só neste dispositivo.",
+  "onboardingConsentCheckbox": "Acepto",
+  "onboardingNext": "Seguinte",
+  "onboardingBack": "Atrás",
+  "onboardingFinish": "Comezar a usar a aplicación",
+  "onboardingStepOf": "Paso {current} de {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glicosa ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Cetona en sangue BHB (mmol/L)",
+  "formSourceType": "Tipo de fonte",
+  "formNote": "Nota (opcional)",
+  "formPickTime": "Hora da medición",
+  "formSaveSession": "Gardar sesión de medición",
+  "formInvalidValue": "Introduce un número positivo válido.",
+  "gkiResultHeading": "O teu GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Medido o: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Versión do cálculo: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Aínda non hai medicións",
+  "logEmptyBody": "Engade a túa primeira lectura de glicosa e cetonas para velo aquí.",
+  "logBandsToggle": "Mostrar os intervalos de investigación do artigo que liches",
+  "bandsDisclaimer": "Estes intervalos non son rangos clínicos normais nin obxectivos de tratamento probados. Son suxestións representativas e non prescritivas dun marco de investigación concreto. O GKI só non mostra saúde, resposta a unha enfermidade nin seguridade. Toca para ver a fonte.",
+  "logBandOptimal": "Intervalo de investigación óptimo suxerido (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Intervalo de investigación terapéutico suxerido (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Fóra do intervalo de investigación suxerido ≤ 2.0",
+  "logMatchSimultaneous": "simultánea",
+  "logMatchApproximate": "coincidencia aproximada",
+  "logTimelineHeading": "Cronoloxía",
+  "logChartsHeading": "Gráficos",
+  "logGlucoseChart": "Glicosa (mmol/L)",
+  "logBhbChart": "Cetona BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Copiar a ligazón da fonte",
+  "todayQuickActions": "Accións rápidas",
+  "todayAddMeasurement": "Engadir medición",
+  "todayAddMeal": "Engadir comida",
+  "todayAddWeight": "Engadir peso",
+  "todayAddSymptom": "Engadir síntoma",
+  "todayLatestTitle": "Últimas medicións",
+  "todayLatestEmpty": "Aínda non hai medicións. Usa «Engadir medición» para rexistrar glicosa e cetona BHB xuntas.",
+  "todayNutritionTitle": "Nutrición de hoxe",
+  "todayNutritionEmpty": "Hoxe non hai comidas rexistradas. As comidas rexístranse desde a pestana Plan.",
+  "todayWeightTitle": "Peso",
+  "todayWeightEmpty": "Aínda non hai rexistros de peso.",
+  "todaySymptomsTitle": "Síntomas de hoxe",
+  "todaySymptomsEmpty": "Hoxe non hai síntomas rexistrados.",
+  "todayPlansTitle": "Comidas planificadas",
+  "todayPlansEmpty": "Non hai plan de comidas para hoxe.",
+  "comingSoonTitle": "Virá nunha próxima actualización",
+  "comingSoonBody": "Este formulario está en construción. Podes seguir o progreso no repositorio do proxecto.",
+  "mealFormTitle": "Rexistrar unha comida",
+  "mealSearchLabel": "Buscar alimento",
+  "mealTypeLabel": "Tipo de comida",
+  "mealTypeBreakfast": "Almorzo",
+  "mealTypeLunch": "Xantar",
+  "mealTypeDinner": "Cea",
+  "mealTypeSnack": "Merenda",
+  "mealTypeCustom": "Personalizado",
+  "mealGramsLabel": "Cantidade (g)",
+  "mealAddItem": "Engadir alimento",
+  "mealNoteLabel": "Nota (opcional)",
+  "mealFavoriteToggle": "Marcar como favorito",
+  "mealRepeatSection": "Repetición rápida",
+  "mealRepeatFavorites": "Favoritos",
+  "mealRepeatRecent": "Recentes",
+  "mealSave": "Gardar comida",
+  "mealItemsHeading": "Elementos",
+  "mealSavedToast": "Comida gardada.",
+  "mealNeedsItem": "Engade primeiro polo menos un alimento.",
+  "mealTotalsHeading": "Totais diarios",
+  "mealTotalsKcal": "Enerxía: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Hidratos de carbono netos: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Hidratos de carbono totais: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibra: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteína: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Graxa: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Xeralmente unha boa opción",
+  "guideGroupLimit": "Pode requirir límites de ración ou frecuencia",
+  "guideGroupAvoid": "Xeralmente incompatible cos obxectivos cetoxénicos",
+  "guideWhyHeading": "Por que?",
+  "guideTypicalPortion": "Ración típica: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativas: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Fonte de datos: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Carne, peixe e ovos",
+  "guideCardLowCarbVegetables": "Verduras baixas en hidratos de carbono",
+  "guideCardFatsOils": "Graxas e aceites",
+  "guideCardNutsSeeds": "Froitos secos e sementes",
+  "guideCardBerries": "Froitos do bosque",
+  "guideCardDairy": "Lácteos enteiros",
+  "guideCardFruit": "Froitas",
+  "guideCardLegumes": "Legumes",
+  "guideCardMilkDrinks": "Leite e bebidas doces",
+  "guideCardSugaryDrinks": "Bebidas azucradas",
+  "guideCardStarches": "Pan, arroz, pataca",
+  "guideCardSweets": "Doces e sobremesas",
+  "logMealRelation": "Rexistrado {hours} h despois da comida ({mealType}) — só contexto temporal, non un efecto.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Non se rexistrou ningunha comida na xanela de análise antes desta lectura.",
+  "logRelationWindowLabel": "Xanela de relación coa comida",
+  "logConfoundersHeading": "Que máis pode afectar as lecturas?",
+  "mealTypeShortBreakfast": "almorzo",
+  "mealTypeShortLunch": "xantar",
+  "mealTypeShortDinner": "cea",
+  "mealTypeShortSnack": "merenda",
+  "mealTypeShortCustom": "comida",
+  "recipePerServing": "{value} racións",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Preparación: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alérxenos: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredientes",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Pasos",
+  "recipeStorage": "Conservación: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Intervalo de investigación usado nun estudo",
+  "goalLegendClinician": "O obxectivo do meu médico",
+  "goalLegendPersonal": "O meu obxectivo persoal de seguimento",
+  "goalLegendPersonalNote": "Un obxectivo persoal de seguimento non é un obxectivo médico.",
+  "weightValueLabel": "Peso ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Condición (opcional, p. ex. pola mañá, despois de adestrar)",
+  "weightSave": "Gardar peso",
+  "symptomFormTitle": "Rexistrar un síntoma",
+  "symptomDefinitionLabel": "Síntoma",
+  "symptomSeverityLabel": "Gravidade: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Nota (opcional)",
+  "symptomSave": "Gardar síntoma",
+  "symptomSavedToast": "Síntoma gardado.",
+  "symptomGuidance": "Marcaches un síntoma importante. Esta aplicación non diagnostica. Segue o teu propio plan de saúde e contacta cos servizos de emerxencia locais se te atopas mal ou os síntomas son graves.",
+  "symptomSeizureGuidance": "Rexistraches unha convulsión. Esta aplicación non diagnostica. Segue o teu plan de saúde e contacta co teu profesional sanitario; chama aos servizos de emerxencia locais se é urxente.",
+  "trendsRange7": "7 días",
+  "trendsRange30": "30 días",
+  "trendsRange90": "90 días",
+  "trendsSummary": "{count} lecturas nos últimos {days} días. Última: {latest}, media: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Non hai datos neste intervalo.",
+  "trendsExplainsTitle": "Que che di este gráfico — e que non",
+  "trendsExplainsBody": "O gráfico amosa as túas propias lecturas ao longo do tempo como puntos en bruto. Non diagnostica, non prediz e non proba causas. Os días que faltan aparecen como ocos, non como ceros.",
+  "trendsWeightChart": "Peso (kg)",
+  "trendsBandsNote": "Os intervalos de investigación son opcionais e están desactivados por defecto. Mira a pestana Rexistro para activalos.",
+  "evidenceDiseaseFilter": "Mostrar investigación específica de enfermidades (das fontes que elixas ler)",
+  "evidenceSectionTitle": "Fontes e artigos científicos",
+  "guideCopyLink": "Copiar a ligazón da fonte",
+  "planTitle": "Plan semanal",
+  "planGenerateDraft": "Xerar bosquexo semanal",
+  "planDraftLockedNote": "A xeración automática do plan segue desactivada: consúltao primeiro cun profesional sanitario cualificado.",
+  "planCreatedToast": "Plan semanal creado.",
+  "planItemDay": "Día {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Crear lista da compra a partir do plan",
+  "shoppingTitle": "Lista da compra",
+  "shoppingUndo": "Desfacer",
+  "shoppingAddManual": "Engadir elemento manualmente",
+  "shoppingCheckedToggle": "Marcar",
+  "shoppingEmpty": "Aínda non hai lista da compra.",
+  "planEmpty": "Aínda non hai plan semanal. Xera un bosquexo a partir das túas receitas para comezar.",
+  "aboutTitle": "Acerca de",
+  "aboutSlogan": "Diario ceto privado",
+  "aboutVersion": "Versión {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Código aberto",
+  "aboutOpenSourceBody": "N Keto Tracker é software libre e de código aberto baixo a licenza GPL-3.0. Podes inspeccionar, modificar e redistribuír o código baixo a mesma licenza.",
+  "aboutPrivacyHeading": "Privacidade",
+  "aboutPrivacyBody": "Os teus datos de saúde quedan neste dispositivo. Sen conta, sen analíticas.",
+  "aboutDisclaimerHeading": "Aviso legal",
+  "aboutDisclaimerBody": "Esta aplicación é para información xeral e seguimento persoal. Non é consello médico, diagnóstico nin tratamento.",
+  "aboutLicensesButton": "Licenzas",
+  "aboutShareButton": "Compartir esta aplicación",
+  "aboutOtherAppsButton": "Outras aplicacións",
+  "aboutCopiedToast": "Copiado ao portapapeis.",
+  "licensesTitle": "Licenzas",
+  "otherAppsTitle": "Outras aplicacións",
+  "otherAppsEmpty": "Aínda non hai outras aplicacións na lista.",
+  "otherAppsCopyLink": "Copiar a ligazón da tenda",
+  "settingsTitle": "Axustes",
+  "aboutShareText": "Diario ceto privado con seguimento de glicosa, cetonas e GKI. Código aberto, sen necesidade de conta.",
+  "dataManagementTitle": "Xestión de datos",
+  "dataExportJson": "Exportar datos (JSON)",
+  "dataExportCsv": "Exportar medicións (CSV)",
+  "dataImportLabel": "Pega aquí o JSON exportado",
+  "dataImportButton": "Importar datos",
+  "dataImportSuccess": "Importáronse {glucose} rexistros de glicosa e {weight} de peso.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "A importación fallou: ficheiro non válido ou non compatible.",
+  "dataDeleteAll": "Borrar todos os meus datos",
+  "dataDeleteConfirm1": "Borrar TODOS os datos? Inclúe medicións, comidas, plans e axustes. Non se pode desfacer.",
+  "dataDeleteConfirm2": "Estás realmente seguro? Escribe DELETE para confirmar.",
+  "dataDeleteTypeDelete": "Escribe DELETE",
+  "dataDeleteDone": "Borráronse todos os datos ({count} rexistros).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Ficheiro de exportación listo — escolle onde gardalo.",
+  "settingsAppearance": "Aparencia",
+  "themeSystem": "Sistema",
+  "themeLight": "Claro",
+  "themeDark": "Escuro",
+  "settingsLanguage": "Idioma",
+  "settingsMore": "Máis"
+}

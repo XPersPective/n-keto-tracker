@@ -1,0 +1,452 @@
+{
+  "@@locale": "ta",
+  "appTitle": "N Keto Tracker",
+  "navToday": "இன்று",
+  "navLog": "பதிவு",
+  "navPlan": "திட்டம்",
+  "navTrends": "போக்குகள்",
+  "navGuide": "வழிகாட்டி",
+  "pageUnderConstruction": "இந்தத் திரை உருவாக்கப்பட்டு வருகிறது.",
+  "generalInfoDisclaimer": "பொதுத் தகவலுக்கு மட்டும்; மருத்துவ ஆலோசனை அல்ல.",
+  "onboardingLanguageTitle": "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "உங்கள் தரவு உங்கள் சாதனத்திலேயே இருக்கும்",
+  "onboardingPrivacyBody": "N Keto Tracker உங்கள் அளவீடுகள், உணவுகள், குறிப்புகளை உங்கள் சாதனத்திலுள்ள இந்தச் செயலியில் மட்டுமே சேமிக்கிறது. கணக்கு இல்லை, உங்கள் உடல்நலத் தரவு எங்கும் அனுப்பப்படாது. செயலியை நீக்கினால் தரவும் நீங்கும்; எப்போது வேண்டுமானாலும் காப்புப்பிரதியை ஏற்றுமதி செய்யலாம்.",
+  "onboardingMedicalTitle": "மருத்துவ ஆலோசனை அல்ல",
+  "onboardingMedicalBody": "இந்தச் செயலி பொதுத் தகவலுக்கும் தனிப்பட்ட கண்காணிப்புக்கும் உரியது. இது மருத்துவ ஆலோசனை, நோய் கண்டறிதல் அல்லது சிகிச்சை அல்ல; தகுதிவாய்ந்த சுகாதார நிபுணர்களின் பராமரிப்புக்கு மாற்றும் அல்ல.",
+  "onboardingPurposeTitle": "எதைக் கண்காணிக்க விரும்புகிறீர்கள்?",
+  "onboardingPurposeLearn": "கீட்டோஜெனிக் ஊட்டச்சத்து பற்றி அறிய",
+  "onboardingPurposeMeals": "உணவுகளைத் திட்டமிட",
+  "onboardingPurposeMacros": "மேக்ரோ மற்றும் நிகர கார்ப் கண்காணிக்க",
+  "onboardingPurposeMeasure": "குளுக்கோஸ், கீட்டோன், GKI கண்காணிக்க",
+  "onboardingProfileTitle": "உங்களைப் பற்றி (விருப்பம்)",
+  "onboardingProfileBody": "இதைத் தவிர்த்து பின்னர் அமைப்புகளில் சேர்க்கலாம். இது பொதுவான ஆற்றல் மதிப்பீட்டுக்கு மட்டுமே பயன்படும்.",
+  "onboardingBirthYear": "பிறந்த ஆண்டு",
+  "onboardingHeightCm": "உயரம் (செ.மீ)",
+  "onboardingWeightKg": "எடை (கிலோ)",
+  "onboardingEnergyCoeffTitle": "ஆற்றல் மதிப்பீட்டு குணகம்",
+  "onboardingEnergyCoeffBody": "பொது ஆற்றல் மதிப்பீடு வெளியிடப்பட்ட இரண்டு குணகங்களில் ஒன்றைப் பயன்படுத்துகிறது. இது உங்கள் பாலின அடையாளம் பற்றியது அல்ல — சமன்பாட்டின் எந்தப் பதிப்பு உங்களுக்கு மிகவும் பொருந்தும் என்பதே. ஆற்றல் மதிப்பீடுகளை முழுமையாகவும் தவிர்க்கலாம்.",
+  "onboardingEnergyCoeffSkip": "ஆற்றல் மதிப்பீடுகளைத் தவிர்",
+  "onboardingScreeningTitle": "சில பாதுகாப்புக் கேள்விகள்",
+  "onboardingScreeningBody": "இந்தக் கேள்விகள் எதையும் கண்டறியாது. கூடுதல் கவனம் தேவைப்படும்போது தானியங்கி திட்ட, இலக்கு பரிந்துரைகளை மட்டும் அணைக்கும்.",
+  "onboardingScreeningDiabetes": "நீரிழிவு உள்ளது",
+  "onboardingScreeningMedication": "குளுக்கோஸ் குறைக்கும் மருந்து அல்லது இன்சுலின் பயன்படுத்துகிறேன்",
+  "onboardingScreeningPregnancy": "கர்ப்பமாக உள்ளேன் அல்லது பாலூட்டுகிறேன்",
+  "onboardingScreeningOrgan": "சிறுநீரகம், கல்லீரல் அல்லது கணைய நோய் உள்ளது",
+  "onboardingScreeningEatingDisorder": "உணவுக் கோளாறு வரலாறு உள்ளது",
+  "onboardingScreeningWeightLoss": "தற்செயலாக கணிசமாக எடை குறைந்துள்ளது",
+  "onboardingScreeningUnder18": "18 வயதுக்கு உட்பட்டவர்",
+  "onboardingScreeningLockedNote": "உங்கள் பதில்களால் தானியங்கி திட்ட, இலக்கு உருவாக்கம் அணைந்தே இருக்கும். பதிவு, கற்றல் வசதிகள் தொடர்ந்து கிடைக்கும். தயவுசெய்து இதைத் தகுதிவாய்ந்த சுகாதார நிபுணருடன் ஆலோசிக்கவும்.",
+  "onboardingDataTitle": "உங்கள் தரவு",
+  "onboardingDataBody": "உங்கள் பதிவுகள் இந்தச் சாதனத்தில் மட்டுமே இருக்கும். காப்புப்பிரதி ஏற்றுமதி இல்லாமல் செயலியை இழந்தால் அல்லது நீக்கினால் தரவை மீட்க முடியாது.",
+  "onboardingConsentTitle": "ஒப்புதல்",
+  "onboardingConsentBody": "தனியுரிமைச் சுருக்கத்தையும் இந்தச் செயலி மருத்துவ ஆலோசனை அல்ல என்ற அறிவிப்பையும் படித்து ஏற்கிறேன். என் தரவு இந்தச் சாதனத்தில் மட்டுமே இருக்கும் என்பதைப் புரிந்துகொள்கிறேன்.",
+  "onboardingConsentCheckbox": "ஏற்கிறேன்",
+  "onboardingNext": "அடுத்து",
+  "onboardingBack": "பின்",
+  "onboardingFinish": "செயலியைப் பயன்படுத்தத் தொடங்கு",
+  "onboardingStepOf": "படி {current} / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "குளுக்கோஸ் ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "இரத்த கீட்டோன் BHB (mmol/L)",
+  "formSourceType": "மூல வகை",
+  "formNote": "குறிப்பு (விருப்பம்)",
+  "formPickTime": "அளவீட்டு நேரம்",
+  "formSaveSession": "அளவீட்டு அமர்வைச் சேமி",
+  "formInvalidValue": "சரியான நேர்மறை எண்ணை உள்ளிடவும்.",
+  "gkiResultHeading": "உங்கள் GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "அளந்த நேரம்: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "கணக்கீட்டுப் பதிப்பு: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "இன்னும் அளவீடுகள் இல்லை",
+  "logEmptyBody": "இங்கே காண உங்கள் முதல் குளுக்கோஸ், கீட்டோன் அளவீட்டைச் சேர்க்கவும்.",
+  "logBandsToggle": "நீங்கள் படித்த கட்டுரையின் ஆய்வு வரம்புகளைக் காட்டு",
+  "bandsDisclaimer": "இந்த வரம்புகள் மருத்துவ இயல்பு வரம்புகளோ நிரூபிக்கப்பட்ட சிகிச்சை இலக்குகளோ அல்ல. குறிப்பிட்ட ஆய்வு கட்டமைப்பிலிருந்து எடுக்கப்பட்ட பிரதிநிதித்துவ, கட்டளையற்ற பரிந்துரைகள். GKI மட்டும் உடல்நலம், நோய் எதிர்வினை அல்லது பாதுகாப்பைக் காட்டாது. மூலத்தைக் காண தட்டவும்.",
+  "logBandOptimal": "பரிந்துரைக்கப்பட்ட சிறந்த ஆய்வு வரம்பு (GKI ≤ 1.0)",
+  "logBandTherapeutic": "பரிந்துரைக்கப்பட்ட சிகிச்சை ஆய்வு வரம்பு (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "பரிந்துரைக்கப்பட்ட ≤ 2.0 ஆய்வு வரம்புக்கு வெளியே",
+  "logMatchSimultaneous": "ஒரே நேரத்தில்",
+  "logMatchApproximate": "தோராயமான பொருத்தம்",
+  "logTimelineHeading": "காலவரிசை",
+  "logChartsHeading": "வரைபடங்கள்",
+  "logGlucoseChart": "குளுக்கோஸ் (mmol/L)",
+  "logBhbChart": "கீட்டோன் BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "மூல இணைப்பை நகலெடு",
+  "todayQuickActions": "விரைவு செயல்கள்",
+  "todayAddMeasurement": "அளவீடு சேர்",
+  "todayAddMeal": "உணவு சேர்",
+  "todayAddWeight": "எடை சேர்",
+  "todayAddSymptom": "அறிகுறி சேர்",
+  "todayLatestTitle": "சமீபத்திய அளவீடுகள்",
+  "todayLatestEmpty": "இன்னும் அளவீடுகள் இல்லை. குளுக்கோஸ், கீட்டோன் BHB ஐ ஒன்றாகப் பதிவு செய்ய 'அளவீடு சேர்' பயன்படுத்தவும்.",
+  "todayNutritionTitle": "இன்றைய ஊட்டச்சத்து",
+  "todayNutritionEmpty": "இன்று உணவுகள் பதிவு செய்யப்படவில்லை. உணவுகள் திட்டம் தாவலில் பதிவு செய்யப்படும்.",
+  "todayWeightTitle": "எடை",
+  "todayWeightEmpty": "இன்னும் எடை பதிவுகள் இல்லை.",
+  "todaySymptomsTitle": "இன்றைய அறிகுறிகள்",
+  "todaySymptomsEmpty": "இன்று அறிகுறிகள் பதிவு செய்யப்படவில்லை.",
+  "todayPlansTitle": "திட்டமிட்ட உணவுகள்",
+  "todayPlansEmpty": "இன்றைக்கு உணவுத் திட்டம் இல்லை.",
+  "comingSoonTitle": "அடுத்த புதுப்பிப்பில் வருகிறது",
+  "comingSoonBody": "இந்த உள்ளீட்டுப் படிவம் உருவாக்கப்பட்டு வருகிறது. முன்னேற்றத்தை திட்ட களஞ்சியத்தில் பின்தொடரலாம்.",
+  "mealFormTitle": "உணவைப் பதிவு செய்",
+  "mealSearchLabel": "உணவைத் தேடு",
+  "mealTypeLabel": "உணவு வகை",
+  "mealTypeBreakfast": "காலை உணவு",
+  "mealTypeLunch": "மதிய உணவு",
+  "mealTypeDinner": "இரவு உணவு",
+  "mealTypeSnack": "சிற்றுண்டி",
+  "mealTypeCustom": "தனிப்பயன்",
+  "mealGramsLabel": "அளவு (கி)",
+  "mealAddItem": "உணவு சேர்",
+  "mealNoteLabel": "குறிப்பு (விருப்பம்)",
+  "mealFavoriteToggle": "பிடித்ததாகக் குறி",
+  "mealRepeatSection": "விரைவு மீள்",
+  "mealRepeatFavorites": "பிடித்தவை",
+  "mealRepeatRecent": "சமீபத்தியவை",
+  "mealSave": "உணவைச் சேமி",
+  "mealItemsHeading": "உருப்படிகள்",
+  "mealSavedToast": "உணவு சேமிக்கப்பட்டது.",
+  "mealNeedsItem": "முதலில் குறைந்தது ஒரு உணவைச் சேர்க்கவும்.",
+  "mealTotalsHeading": "தினசரி மொத்தம்",
+  "mealTotalsKcal": "ஆற்றல்: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "நிகர கார்ப்: {value} கி",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "மொத்த கார்ப்: {value} கி",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "நார்: {value} கி",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "புரதம்: {value} கி",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "கொழுப்பு: {value} கி",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "பொதுவாக நல்ல தேர்வு",
+  "guideGroupLimit": "அளவு அல்லது அடிக்கடி என்பதில் வரம்பு தேவைப்படலாம்",
+  "guideGroupAvoid": "பொதுவாக கீட்டோஜெனிக் இலக்குகளுடன் பொருந்தாது",
+  "guideWhyHeading": "ஏன்?",
+  "guideTypicalPortion": "வழக்கமான அளவு: {portion} (~{grams} கி)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "மாற்றுகள்: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "தரவு மூலம்: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "இறைச்சி, மீன் மற்றும் முட்டை",
+  "guideCardLowCarbVegetables": "குறைந்த கார்ப் காய்கறிகள்",
+  "guideCardFatsOils": "கொழுப்புகளும் எண்ணெய்களும்",
+  "guideCardNutsSeeds": "கொட்டைகளும் விதைகளும்",
+  "guideCardBerries": "பெர்ரிகள்",
+  "guideCardDairy": "முழு கொழுப்பு பால் பொருட்கள்",
+  "guideCardFruit": "பழங்கள்",
+  "guideCardLegumes": "பருப்பு வகைகள்",
+  "guideCardMilkDrinks": "பாலும் இனிப்பு பானங்களும்",
+  "guideCardSugaryDrinks": "சர்க்கரை பானங்கள்",
+  "guideCardStarches": "ரொட்டி, அரிசி, உருளைக்கிழங்கு",
+  "guideCardSweets": "இனிப்புகளும் இனிப்பு உணவுகளும்",
+  "logMealRelation": "{mealType} உணவுக்கு {hours} மணி நேரம் கழித்துப் பதிவு — நேர சூழல் மட்டுமே, விளைவு அல்ல.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "இந்த அளவீட்டுக்கு முன் பகுப்பாய்வு சாளரத்தில் உணவு பதிவாகவில்லை.",
+  "logRelationWindowLabel": "உணவு தொடர்பு சாளரம்",
+  "logConfoundersHeading": "அளவீடுகளை வேறு எது பாதிக்கலாம்?",
+  "mealTypeShortBreakfast": "காலை உணவு",
+  "mealTypeShortLunch": "மதிய உணவு",
+  "mealTypeShortDinner": "இரவு உணவு",
+  "mealTypeShortSnack": "சிற்றுண்டி",
+  "mealTypeShortCustom": "உணவு",
+  "recipePerServing": "{value} பரிமாறல்",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "தயாரிப்பு: {value} நிமிடம்",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ஒவ்வாமைகள்: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "தேவையான பொருட்கள்",
+  "recipeGrams": "{value} கி",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "படிகள்",
+  "recipeStorage": "சேமிப்பு: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ஒரு ஆய்வில் பயன்படுத்திய வரம்பு",
+  "goalLegendClinician": "என் மருத்துவரின் இலக்கு",
+  "goalLegendPersonal": "என் தனிப்பட்ட கண்காணிப்பு இலக்கு",
+  "goalLegendPersonalNote": "தனிப்பட்ட கண்காணிப்பு இலக்கு மருத்துவ இலக்கு அல்ல.",
+  "weightValueLabel": "எடை ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "நிலை (விருப்பம், எ.கா. காலை, உடற்பயிற்சிக்குப் பின்)",
+  "weightSave": "எடையைச் சேமி",
+  "symptomFormTitle": "அறிகுறியைப் பதிவு செய்",
+  "symptomDefinitionLabel": "அறிகுறி",
+  "symptomSeverityLabel": "தீவிரம்: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "குறிப்பு (விருப்பம்)",
+  "symptomSave": "அறிகுறியைச் சேமி",
+  "symptomSavedToast": "அறிகுறி சேமிக்கப்பட்டது.",
+  "symptomGuidance": "நீங்கள் முக்கியமான அறிகுறியைக் குறித்துள்ளீர்கள். இந்தச் செயலி நோயைக் கண்டறியாது. உங்கள் சொந்த உடல்நலத் திட்டத்தைப் பின்பற்றவும்; உடல்நிலை சரியில்லாமல் இருந்தால் அல்லது அறிகுறிகள் கடுமையாக இருந்தால் உள்ளூர் அவசர சேவைகளைத் தொடர்புகொள்ளவும்.",
+  "symptomSeizureGuidance": "நீங்கள் வலிப்பு நிகழ்வைப் பதிவு செய்துள்ளீர்கள். இந்தச் செயலி நோயைக் கண்டறியாது. தயவுசெய்து உங்கள் உடல்நலத் திட்டத்தைப் பின்பற்றி சுகாதார நிபுணரைத் தொடர்புகொள்ளவும்; அவசரம் என்றால் உள்ளூர் அவசர சேவைகளை அழைக்கவும்.",
+  "trendsRange7": "7 நாட்கள்",
+  "trendsRange30": "30 நாட்கள்",
+  "trendsRange90": "90 நாட்கள்",
+  "trendsSummary": "கடந்த {days} நாட்களில் {count} அளவீடுகள். சமீபத்தியது: {latest}, சராசரி: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "இந்த வரம்பில் தரவு இல்லை.",
+  "trendsExplainsTitle": "இந்த வரைபடம் என்ன சொல்கிறது — எது சொல்லவில்லை",
+  "trendsExplainsBody": "வரைபடம் உங்கள் சொந்த அளவீடுகளை காலப்போக்கில் பச்சைப் புள்ளிகளாகக் காட்டுகிறது. இது நோயைக் கண்டறியாது, முன்கணிக்காது, காரணங்களை நிரூபிக்காது. விடுபட்ட நாட்கள் பூஜ்யமாக அல்ல, இடைவெளிகளாகத் தோன்றும்.",
+  "trendsWeightChart": "எடை (கிலோ)",
+  "trendsBandsNote": "ஆய்வு வரம்புகள் விருப்பத்திற்குரியவை, இயல்பாக அணைந்திருக்கும். இயக்க பதிவு தாவலைப் பார்க்கவும்.",
+  "evidenceDiseaseFilter": "நோய் சார்ந்த ஆய்வுகளைக் காட்டு (நீங்கள் படிக்கத் தேர்ந்தெடுக்கும் மூலங்களிலிருந்து)",
+  "evidenceSectionTitle": "அறிவியல் மூலங்களும் கட்டுரைகளும்",
+  "guideCopyLink": "மூல இணைப்பை நகலெடு",
+  "planTitle": "வாராந்திரத் திட்டம்",
+  "planGenerateDraft": "வாராந்திர வரைவை உருவாக்கு",
+  "planDraftLockedNote": "தானியங்கி திட்ட உருவாக்கம் அணைந்தே இருக்கும்: தயவுசெய்து முதலில் தகுதிவாய்ந்த சுகாதார நிபுணருடன் ஆலோசிக்கவும்.",
+  "planCreatedToast": "வாராந்திரத் திட்டம் உருவாக்கப்பட்டது.",
+  "planItemDay": "நாள் {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "திட்டத்திலிருந்து பொருள் பட்டியலை உருவாக்கு",
+  "shoppingTitle": "பொருள் பட்டியல்",
+  "shoppingUndo": "செயல்தவிர்",
+  "shoppingAddManual": "உருப்படியைக் கைமுறையாகச் சேர்",
+  "shoppingCheckedToggle": "தேர்வு செய்",
+  "shoppingEmpty": "இன்னும் பொருள் பட்டியல் இல்லை.",
+  "planEmpty": "இன்னும் வாராந்திரத் திட்டம் இல்லை. தொடங்க உங்கள் சமையல் குறிப்புகளிலிருந்து வரைவை உருவாக்கவும்.",
+  "aboutTitle": "பற்றி",
+  "aboutSlogan": "தனிப்பட்ட கீட்டோ நாளேடு",
+  "aboutVersion": "பதிப்பு {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "திறந்த மூலம்",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 உரிமத்தின் கீழ் இலவச திறந்த மூல மென்பொருள். அதே உரிமத்தில் குறியீட்டை ஆய்வு செய்யவும், மாற்றவும், மறுபகிர்வு செய்யவும் முடியும்.",
+  "aboutPrivacyHeading": "தனியுரிமை",
+  "aboutPrivacyBody": "உங்கள் உடல்நலத் தரவு இந்தச் சாதனத்திலேயே இருக்கும். கணக்கு இல்லை, பகுப்பாய்வு இல்லை.",
+  "aboutDisclaimerHeading": "பொறுப்புத் துறப்பு",
+  "aboutDisclaimerBody": "இந்தச் செயலி பொதுத் தகவலுக்கும் தனிப்பட்ட கண்காணிப்புக்கும் உரியது. இது மருத்துவ ஆலோசனை, நோய் கண்டறிதல் அல்லது சிகிச்சை அல்ல.",
+  "aboutLicensesButton": "உரிமங்கள்",
+  "aboutShareButton": "இந்தச் செயலியைப் பகிர்",
+  "aboutOtherAppsButton": "பிற செயலிகள்",
+  "aboutCopiedToast": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது.",
+  "licensesTitle": "உரிமங்கள்",
+  "otherAppsTitle": "பிற செயலிகள்",
+  "otherAppsEmpty": "இன்னும் பிற செயலிகள் பட்டியலிடப்படவில்லை.",
+  "otherAppsCopyLink": "ஸ்டோர் இணைப்பை நகலெடு",
+  "settingsTitle": "அமைப்புகள்",
+  "aboutShareText": "குளுக்கோஸ், கீட்டோன், GKI கண்காணிப்புடன் தனிப்பட்ட கீட்டோ நாளேடு. திறந்த மூலம், கணக்கு தேவையில்லை.",
+  "dataManagementTitle": "தரவு மேலாண்மை",
+  "dataExportJson": "தரவை ஏற்றுமதி செய் (JSON)",
+  "dataExportCsv": "அளவீடுகளை ஏற்றுமதி செய் (CSV)",
+  "dataImportLabel": "ஏற்றுமதி செய்த JSON ஐ இங்கே ஒட்டவும்",
+  "dataImportButton": "தரவை இறக்குமதி செய்",
+  "dataImportSuccess": "{glucose} குளுக்கோஸ் மற்றும் {weight} எடை பதிவுகள் இறக்குமதி செய்யப்பட்டன.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "இறக்குமதி தோல்வி: கோப்பு செல்லாதது அல்லது ஆதரிக்கப்படவில்லை.",
+  "dataDeleteAll": "என் எல்லாத் தரவையும் நீக்கு",
+  "dataDeleteConfirm1": "எல்லாத் தரவையும் நீக்கவா? அளவீடுகள், உணவுகள், திட்டங்கள், அமைப்புகள் இதில் அடங்கும். இதைத் திரும்பப் பெற முடியாது.",
+  "dataDeleteConfirm2": "நிச்சயமாக உறுதியா? உறுதிப்படுத்த DELETE என தட்டச்சு செய்யவும்.",
+  "dataDeleteTypeDelete": "DELETE என தட்டச்சு செய்",
+  "dataDeleteDone": "எல்லாத் தரவும் நீக்கப்பட்டது ({count} பதிவுகள்).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ஏற்றுமதி கோப்பு தயார் — எங்கே சேமிப்பது என்பதைத் தேர்ந்தெடுக்கவும்.",
+  "settingsAppearance": "தோற்றம்",
+  "themeSystem": "சிஸ்டம்",
+  "themeLight": "ஒளி",
+  "themeDark": "இருண்ட",
+  "settingsLanguage": "மொழி",
+  "settingsMore": "மேலும்"
+}

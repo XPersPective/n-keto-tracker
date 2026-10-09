@@ -1,0 +1,452 @@
+{
+  "@@locale": "lo",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ມື້ນີ້",
+  "navLog": "ບັນທຶກ",
+  "navPlan": "ແຜນ",
+  "navTrends": "ແນວໂນ້ມ",
+  "navGuide": "ຄູ່ມື",
+  "pageUnderConstruction": "ໜ້າຈໍນີ້ກຳລັງຖືກສ້າງ.",
+  "generalInfoDisclaimer": "ສຳລັບຂໍ້ມູນທົ່ວໄປເທົ່ານັ້ນ; ບໍ່ແມ່ນຄຳແນະນຳທາງການແພດ.",
+  "onboardingLanguageTitle": "ເລືອກພາສາຂອງທ່ານ",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "ຂໍ້ມູນຂອງທ່ານຢູ່ໃນອຸປະກອນຂອງທ່ານ",
+  "onboardingPrivacyBody": "N Keto Tracker ເກັບການວັດແທກ, ອາຫານ ແລະ ບັນທຶກຂອງທ່ານໄວ້ໃນແອັບນີ້ເທົ່ານັ້ນ ໃນອຸປະກອນຂອງທ່ານ. ບໍ່ມີບັນຊີ ແລະ ຂໍ້ມູນສຸຂະພາບຂອງທ່ານບໍ່ຖືກສົ່ງໄປບ່ອນໃດ. ຖ້າລຶບແອັບ ຂໍ້ມູນຂອງທ່ານກໍຈະຖືກລຶບ; ທ່ານສາມາດສົ່ງອອກສຳຮອງຂໍ້ມູນໄດ້ທຸກເວລາ.",
+  "onboardingMedicalTitle": "ບໍ່ແມ່ນຄຳແນະນຳທາງການແພດ",
+  "onboardingMedicalBody": "ແອັບນີ້ມີໄວ້ສຳລັບຂໍ້ມູນທົ່ວໄປ ແລະ ການຕິດຕາມສ່ວນຕົວ. ມັນບໍ່ແມ່ນຄຳແນະນຳທາງການແພດ, ການວິນິໄສ ຫຼື ການປິ່ນປົວ ແລະ ບໍ່ແທນການດູແລຈາກຜູ້ຊ່ຽວຊານດ້ານສຸຂະພາບທີ່ມີຄຸນວຸດທິ.",
+  "onboardingPurposeTitle": "ທ່ານຢາກຕິດຕາມຫຍັງ?",
+  "onboardingPurposeLearn": "ຮຽນຮູ້ກ່ຽວກັບໂພຊະນາການແບບຄີໂຕເຈນິກ",
+  "onboardingPurposeMeals": "ວາງແຜນອາຫານ",
+  "onboardingPurposeMacros": "ຕິດຕາມແມັກໂຄຣ ແລະ ຄາໂບໄຮເດຣດສຸດທິ",
+  "onboardingPurposeMeasure": "ຕິດຕາມກຼູໂຄສ, ຄີໂຕນ ແລະ GKI",
+  "onboardingProfileTitle": "ກ່ຽວກັບທ່ານ (ບໍ່ບັງຄັບ)",
+  "onboardingProfileBody": "ທ່ານຂ້າມສິ່ງນີ້ ແລ້ວເພີ່ມພາຍຫຼັງໃນການຕັ້ງຄ່າໄດ້. ໃຊ້ສຳລັບການຄາດຄະເນພະລັງງານທົ່ວໄປເທົ່ານັ້ນ.",
+  "onboardingBirthYear": "ປີເກີດ",
+  "onboardingHeightCm": "ລວງສູງ (ຊມ)",
+  "onboardingWeightKg": "ນ້ຳໜັກ (ກິໂລ)",
+  "onboardingEnergyCoeffTitle": "ສຳປະສິດການຄາດຄະເນພະລັງງານ",
+  "onboardingEnergyCoeffBody": "ການຄາດຄະເນພະລັງງານທົ່ວໄປໃຊ້ໜຶ່ງໃນສອງສຳປະສິດທີ່ເຜີຍແຜ່ແລ້ວ. ນີ້ບໍ່ກ່ຽວກັບອັດຕະລັກທາງເພດຂອງທ່ານ — ພຽງແຕ່ວ່າສົມຜົນເວີຊັນໃດເໝາະກັບທ່ານທີ່ສຸດ. ທ່ານຍັງຂ້າມການຄາດຄະເນພະລັງງານທັງໝົດໄດ້.",
+  "onboardingEnergyCoeffSkip": "ຂ້າມການຄາດຄະເນພະລັງງານ",
+  "onboardingScreeningTitle": "ຄຳຖາມຄວາມປອດໄພບໍ່ຫຼາຍ",
+  "onboardingScreeningBody": "ຄຳຖາມເຫຼົ່ານີ້ບໍ່ວິນິໄສຫຍັງ. ມັນພຽງແຕ່ປິດຄຳແນະນຳແຜນ ແລະ ເປົ້າໝາຍອັດຕະໂນມັດ ເມື່ອຕ້ອງການຄວາມລະມັດລະວັງເພີ່ມ.",
+  "onboardingScreeningDiabetes": "ເປັນເບົາຫວານ",
+  "onboardingScreeningMedication": "ໃຊ້ຢາລົດກຼູໂຄສ ຫຼື ອິນຊູລິນ",
+  "onboardingScreeningPregnancy": "ຖືພາ ຫຼື ໃຫ້ນົມລູກ",
+  "onboardingScreeningOrgan": "ມີພະຍາດໄຕ, ຕັບ ຫຼື ຕັບອ່ອນ",
+  "onboardingScreeningEatingDisorder": "ເຄີຍມີປະຫວັດຄວາມຜິດປົກກະຕິດ້ານການກິນ",
+  "onboardingScreeningWeightLoss": "ເຄີຍນ້ຳໜັກລົດຫຼາຍໂດຍບໍ່ຕັ້ງໃຈ",
+  "onboardingScreeningUnder18": "ອາຍຸຕ່ຳກວ່າ 18 ປີ",
+  "onboardingScreeningLockedNote": "ເນື່ອງຈາກຄຳຕອບຂອງທ່ານ ການສ້າງແຜນ ແລະ ເປົ້າໝາຍອັດຕະໂນມັດຈະຍັງປິດຢູ່. ຟີເຈີບັນທຶກ ແລະ ການຮຽນຮູ້ຍັງໃຊ້ໄດ້. ກະລຸນາທົບທວນເລື່ອງນີ້ກັບຜູ້ຊ່ຽວຊານດ້ານສຸຂະພາບທີ່ມີຄຸນວຸດທິ.",
+  "onboardingDataTitle": "ຂໍ້ມູນຂອງທ່ານ",
+  "onboardingDataBody": "ບັນທຶກຂອງທ່ານຢູ່ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ. ຖ້າທ່ານເຮັດແອັບຫາຍ ຫຼື ຖອນການຕິດຕັ້ງໂດຍບໍ່ສົ່ງອອກສຳຮອງ ຈະກູ້ຂໍ້ມູນຄືນບໍ່ໄດ້.",
+  "onboardingConsentTitle": "ການຍິນຍອມ",
+  "onboardingConsentBody": "ຂ້ອຍໄດ້ອ່ານ ແລະ ຍອມຮັບສະຫຼຸບຄວາມເປັນສ່ວນຕົວ ແລະ ຂໍ້ແຈ້ງວ່າແອັບນີ້ບໍ່ແມ່ນຄຳແນະນຳທາງການແພດ. ຂ້ອຍເຂົ້າໃຈວ່າຂໍ້ມູນຂອງຂ້ອຍຢູ່ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ.",
+  "onboardingConsentCheckbox": "ຂ້ອຍຍອມຮັບ",
+  "onboardingNext": "ຖັດໄປ",
+  "onboardingBack": "ກັບຄືນ",
+  "onboardingFinish": "ເລີ່ມໃຊ້ແອັບ",
+  "onboardingStepOf": "ຂັ້ນຕອນ {current} ຈາກ {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ກຼູໂຄສ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "ຄີໂຕນໃນເລືອດ BHB (mmol/L)",
+  "formSourceType": "ປະເພດແຫຼ່ງ",
+  "formNote": "ບັນທຶກ (ບໍ່ບັງຄັບ)",
+  "formPickTime": "ເວລາວັດແທກ",
+  "formSaveSession": "ບັນທຶກເຊດຊັນການວັດແທກ",
+  "formInvalidValue": "ກະລຸນາປ້ອນຕົວເລກບວກທີ່ຖືກຕ້ອງ.",
+  "gkiResultHeading": "GKI ຂອງທ່ານ",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "ວັດແທກເມື່ອ: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "ເວີຊັນການຄຳນວນ: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ຍັງບໍ່ມີການວັດແທກ",
+  "logEmptyBody": "ເພີ່ມຄ່າກຼູໂຄສ ແລະ ຄີໂຕນຄັ້ງທຳອິດຂອງທ່ານເພື່ອເບິ່ງຢູ່ບ່ອນນີ້.",
+  "logBandsToggle": "ສະແດງຊ່ວງການຄົ້ນຄວ້າຈາກບົດຄວາມທີ່ທ່ານອ່ານ",
+  "bandsDisclaimer": "ຊ່ວງເຫຼົ່ານີ້ບໍ່ແມ່ນຊ່ວງປົກກະຕິທາງຄລີນິກ ຫຼື ເປົ້າໝາຍການປິ່ນປົວທີ່ພິສູດແລ້ວ. ມັນເປັນຂໍ້ສະເໜີຕົວແທນທີ່ບໍ່ສັ່ງການ ຈາກກອບການຄົ້ນຄວ້າສະເພາະ. GKI ຢ່າງດຽວບໍ່ສະແດງສຸຂະພາບ, ການຕອບສະໜອງຕໍ່ພະຍາດ ຫຼື ຄວາມປອດໄພ. ແຕະເພື່ອເບິ່ງແຫຼ່ງ.",
+  "logBandOptimal": "ຊ່ວງການຄົ້ນຄວ້າທີ່ດີທີ່ສຸດທີ່ແນະນຳ (GKI ≤ 1.0)",
+  "logBandTherapeutic": "ຊ່ວງການຄົ້ນຄວ້າດ້ານການປິ່ນປົວທີ່ແນະນຳ (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "ນອກຊ່ວງການຄົ້ນຄວ້າທີ່ແນະນຳ ≤ 2.0",
+  "logMatchSimultaneous": "ພ້ອມກັນ",
+  "logMatchApproximate": "ກົງກັນໂດຍປະມານ",
+  "logTimelineHeading": "ໄທມ໌ລາຍ",
+  "logChartsHeading": "ແຜນພາບ",
+  "logGlucoseChart": "ກຼູໂຄສ (mmol/L)",
+  "logBhbChart": "ຄີໂຕນ BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ສຳເນົາລິ້ງແຫຼ່ງ",
+  "todayQuickActions": "ການດຳເນີນການດ່ວນ",
+  "todayAddMeasurement": "ເພີ່ມການວັດແທກ",
+  "todayAddMeal": "ເພີ່ມອາຫານ",
+  "todayAddWeight": "ເພີ່ມນ້ຳໜັກ",
+  "todayAddSymptom": "ເພີ່ມອາການ",
+  "todayLatestTitle": "ການວັດແທກຫຼ້າສຸດ",
+  "todayLatestEmpty": "ຍັງບໍ່ມີການວັດແທກ. ໃຊ້ 'ເພີ່ມການວັດແທກ' ເພື່ອບັນທຶກກຼູໂຄສ ແລະ ຄີໂຕນ BHB ພ້ອມກັນ.",
+  "todayNutritionTitle": "ໂພຊະນາການມື້ນີ້",
+  "todayNutritionEmpty": "ມື້ນີ້ຍັງບໍ່ໄດ້ບັນທຶກອາຫານ. ອາຫານຖືກບັນທຶກຈາກແຖບແຜນ.",
+  "todayWeightTitle": "ນ້ຳໜັກ",
+  "todayWeightEmpty": "ຍັງບໍ່ມີບັນທຶກນ້ຳໜັກ.",
+  "todaySymptomsTitle": "ອາການມື້ນີ້",
+  "todaySymptomsEmpty": "ມື້ນີ້ຍັງບໍ່ໄດ້ບັນທຶກອາການ.",
+  "todayPlansTitle": "ອາຫານທີ່ວາງແຜນ",
+  "todayPlansEmpty": "ບໍ່ມີແຜນອາຫານສຳລັບມື້ນີ້.",
+  "comingSoonTitle": "ຈະມາໃນການອັບເດດຕໍ່ໄປ",
+  "comingSoonBody": "ແບບຟອມປ້ອນຂໍ້ມູນນີ້ກຳລັງຖືກສ້າງ. ທ່ານຕິດຕາມຄວາມຄືບໜ້າໄດ້ໃນຄັງຂອງໂປຣເຈັກ.",
+  "mealFormTitle": "ບັນທຶກອາຫານ",
+  "mealSearchLabel": "ຄົ້ນຫາອາຫານ",
+  "mealTypeLabel": "ປະເພດອາຫານ",
+  "mealTypeBreakfast": "ອາຫານເຊົ້າ",
+  "mealTypeLunch": "ອາຫານທ່ຽງ",
+  "mealTypeDinner": "ອາຫານແລງ",
+  "mealTypeSnack": "ອາຫານວ່າງ",
+  "mealTypeCustom": "ກຳນົດເອງ",
+  "mealGramsLabel": "ປະລິມານ (ກຣາມ)",
+  "mealAddItem": "ເພີ່ມອາຫານ",
+  "mealNoteLabel": "ບັນທຶກ (ບໍ່ບັງຄັບ)",
+  "mealFavoriteToggle": "ໝາຍເປັນລາຍການໂປດ",
+  "mealRepeatSection": "ເຮັດຊ້ຳດ່ວນ",
+  "mealRepeatFavorites": "ລາຍການໂປດ",
+  "mealRepeatRecent": "ຫຼ້າສຸດ",
+  "mealSave": "ບັນທຶກອາຫານ",
+  "mealItemsHeading": "ລາຍການ",
+  "mealSavedToast": "ບັນທຶກອາຫານແລ້ວ.",
+  "mealNeedsItem": "ເພີ່ມອາຫານຢ່າງໜ້ອຍໜຶ່ງລາຍການກ່ອນ.",
+  "mealTotalsHeading": "ລວມປະຈຳວັນ",
+  "mealTotalsKcal": "ພະລັງງານ: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "ຄາໂບໄຮເດຣດສຸດທິ: {value} ກຣາມ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "ຄາໂບໄຮເດຣດທັງໝົດ: {value} ກຣາມ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ເສັ້ນໃຍ: {value} ກຣາມ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ໂປຣຕີນ: {value} ກຣາມ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "ໄຂມັນ: {value} ກຣາມ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "ໂດຍທົ່ວໄປເໝາະສົມ",
+  "guideGroupLimit": "ອາດຕ້ອງຈຳກັດປະລິມານ ຫຼື ຄວາມຖີ່",
+  "guideGroupAvoid": "ໂດຍທົ່ວໄປບໍ່ສອດຄ່ອງກັບເປົ້າໝາຍຄີໂຕເຈນິກ",
+  "guideWhyHeading": "ເປັນຫຍັງ?",
+  "guideTypicalPortion": "ປະລິມານປົກກະຕິ: {portion} (~{grams} ກຣາມ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ທາງເລືອກ: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ແຫຼ່ງຂໍ້ມູນ: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "ຊີ້ນ, ປາ ແລະ ໄຂ່",
+  "guideCardLowCarbVegetables": "ຜັກຄາໂບໄຮເດຣດຕ່ຳ",
+  "guideCardFatsOils": "ໄຂມັນ ແລະ ນ້ຳມັນ",
+  "guideCardNutsSeeds": "ຖົ່ວ ແລະ ເມັດພືດ",
+  "guideCardBerries": "ເບີຣີ",
+  "guideCardDairy": "ຜະລິດຕະພັນນົມໄຂມັນເຕັມ",
+  "guideCardFruit": "ໝາກໄມ້",
+  "guideCardLegumes": "ພືດຕະກູນຖົ່ວ",
+  "guideCardMilkDrinks": "ນົມ ແລະ ເຄື່ອງດື່ມຫວານ",
+  "guideCardSugaryDrinks": "ເຄື່ອງດື່ມມີນ້ຳຕານ",
+  "guideCardStarches": "ເຂົ້າຈີ່, ເຂົ້າ, ມັນຝລັ່ງ",
+  "guideCardSweets": "ຂອງຫວານ ແລະ ຂະໜົມ",
+  "logMealRelation": "ບັນທຶກຫຼັງ {mealType} {hours} ຊມ — ເປັນພຽງບໍລິບົດເວລາ, ບໍ່ແມ່ນຜົນກະທົບ.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ບໍ່ມີການບັນທຶກອາຫານໃນໜ້າຕ່າງວິເຄາະກ່ອນຄ່ານີ້.",
+  "logRelationWindowLabel": "ໜ້າຕ່າງຄວາມສຳພັນກັບອາຫານ",
+  "logConfoundersHeading": "ມີຫຍັງອີກທີ່ສາມາດສົ່ງຜົນຕໍ່ຄ່າອ່ານ?",
+  "mealTypeShortBreakfast": "ອາຫານເຊົ້າ",
+  "mealTypeShortLunch": "ອາຫານທ່ຽງ",
+  "mealTypeShortDinner": "ອາຫານແລງ",
+  "mealTypeShortSnack": "ອາຫານວ່າງ",
+  "mealTypeShortCustom": "ອາຫານ",
+  "recipePerServing": "{value} ຈານ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "ກຽມ: {value} ນາທີ",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ສານກໍ່ອາການແພ້: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ສ່ວນປະກອບ",
+  "recipeGrams": "{value} ກຣາມ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ຂັ້ນຕອນ",
+  "recipeStorage": "ການເກັບຮັກສາ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ຊ່ວງການຄົ້ນຄວ້າທີ່ໃຊ້ໃນການສຶກສາ",
+  "goalLegendClinician": "ເປົ້າໝາຍຂອງທ່ານໝໍຂ້ອຍ",
+  "goalLegendPersonal": "ເປົ້າໝາຍການຕິດຕາມສ່ວນຕົວຂອງຂ້ອຍ",
+  "goalLegendPersonalNote": "ເປົ້າໝາຍການຕິດຕາມສ່ວນຕົວບໍ່ແມ່ນເປົ້າໝາຍທາງການແພດ.",
+  "weightValueLabel": "ນ້ຳໜັກ ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "ເງື່ອນໄຂ (ບໍ່ບັງຄັບ, ເຊັ່ນ ຕອນເຊົ້າ, ຫຼັງອອກກຳລັງກາຍ)",
+  "weightSave": "ບັນທຶກນ້ຳໜັກ",
+  "symptomFormTitle": "ບັນທຶກອາການ",
+  "symptomDefinitionLabel": "ອາການ",
+  "symptomSeverityLabel": "ຄວາມຮຸນແຮງ: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "ບັນທຶກ (ບໍ່ບັງຄັບ)",
+  "symptomSave": "ບັນທຶກອາການ",
+  "symptomSavedToast": "ບັນທຶກອາການແລ້ວ.",
+  "symptomGuidance": "ທ່ານໝາຍອາການສຳຄັນ. ແອັບນີ້ບໍ່ວິນິໄສພະຍາດ. ປະຕິບັດຕາມແຜນສຸຂະພາບຂອງທ່ານ ແລະ ຕິດຕໍ່ບໍລິການສຸກເສີນໃນທ້ອງຖິ່ນ ຖ້າຮູ້ສຶກບໍ່ສະບາຍ ຫຼື ອາການຮຸນແຮງ.",
+  "symptomSeizureGuidance": "ທ່ານບັນທຶກເຫດການຊັກ. ແອັບນີ້ບໍ່ວິນິໄສພະຍາດ. ກະລຸນາປະຕິບັດຕາມແຜນສຸຂະພາບຂອງທ່ານ ແລະ ຕິດຕໍ່ຜູ້ຊ່ຽວຊານດ້ານສຸຂະພາບ; ໂທຫາບໍລິການສຸກເສີນທ້ອງຖິ່ນຖ້າດ່ວນ.",
+  "trendsRange7": "7 ວັນ",
+  "trendsRange30": "30 ວັນ",
+  "trendsRange90": "90 ວັນ",
+  "trendsSummary": "{count} ຄ່າອ່ານໃນ {days} ວັນຜ່ານມາ. ຫຼ້າສຸດ: {latest}, ສະເລ່ຍ: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ບໍ່ມີຂໍ້ມູນໃນຊ່ວງນີ້.",
+  "trendsExplainsTitle": "ແຜນພາບນີ້ບອກຫຍັງທ່ານ — ແລະ ບໍ່ບອກຫຍັງ",
+  "trendsExplainsBody": "ແຜນພາບສະແດງຄ່າອ່ານຂອງທ່ານເອງຕາມເວລາເປັນຈຸດດິບ. ມັນບໍ່ວິນິໄສ, ບໍ່ພະຍາກອນ ແລະ ບໍ່ພິສູດສາເຫດ. ມື້ທີ່ຂາດຈະສະແດງເປັນຊ່ອງວ່າງ, ບໍ່ແມ່ນສູນ.",
+  "trendsWeightChart": "ນ້ຳໜັກ (ກິໂລ)",
+  "trendsBandsNote": "ຊ່ວງການຄົ້ນຄວ້າເປັນທາງເລືອກ ແລະ ປິດໄວ້ໂດຍຄ່າເລີ່ມຕົ້ນ. ເບິ່ງແຖບບັນທຶກເພື່ອເປີດ.",
+  "evidenceDiseaseFilter": "ສະແດງການຄົ້ນຄວ້າສະເພາະພະຍາດ (ຈາກແຫຼ່ງທີ່ທ່ານເລືອກອ່ານ)",
+  "evidenceSectionTitle": "ແຫຼ່ງຂໍ້ມູນ ແລະ ບົດຄວາມວິທະຍາສາດ",
+  "guideCopyLink": "ສຳເນົາລິ້ງແຫຼ່ງ",
+  "planTitle": "ແຜນລາຍອາທິດ",
+  "planGenerateDraft": "ສ້າງຮ່າງລາຍອາທິດ",
+  "planDraftLockedNote": "ການສ້າງແຜນອັດຕະໂນມັດຍັງປິດຢູ່: ກະລຸນາທົບທວນກັບຜູ້ຊ່ຽວຊານດ້ານສຸຂະພາບທີ່ມີຄຸນວຸດທິກ່ອນ.",
+  "planCreatedToast": "ສ້າງແຜນລາຍອາທິດແລ້ວ.",
+  "planItemDay": "ມື້ທີ {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "ສ້າງລາຍການຊື້ເຄື່ອງຈາກແຜນ",
+  "shoppingTitle": "ລາຍການຊື້ເຄື່ອງ",
+  "shoppingUndo": "ຍົກເລີກ",
+  "shoppingAddManual": "ເພີ່ມລາຍການດ້ວຍມື",
+  "shoppingCheckedToggle": "ຕິກ",
+  "shoppingEmpty": "ຍັງບໍ່ມີລາຍການຊື້ເຄື່ອງ.",
+  "planEmpty": "ຍັງບໍ່ມີແຜນລາຍອາທິດ. ສ້າງຮ່າງຈາກສູດອາຫານຂອງທ່ານເພື່ອເລີ່ມຕົ້ນ.",
+  "aboutTitle": "ກ່ຽວກັບ",
+  "aboutSlogan": "ບັນທຶກຄີໂຕສ່ວນຕົວ",
+  "aboutVersion": "ເວີຊັນ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ໂອເພນຊອດ",
+  "aboutOpenSourceBody": "N Keto Tracker ເປັນຊອບແວໂອເພນຊອດຟຣີພາຍໃຕ້ໃບອະນຸຍາດ GPL-3.0. ທ່ານສາມາດກວດສອບ, ແກ້ໄຂ ແລະ ແຈກຢາຍໂຄ້ດພາຍໃຕ້ໃບອະນຸຍາດດຽວກັນ.",
+  "aboutPrivacyHeading": "ຄວາມເປັນສ່ວນຕົວ",
+  "aboutPrivacyBody": "ຂໍ້ມູນສຸຂະພາບຂອງທ່ານຢູ່ໃນອຸປະກອນນີ້. ບໍ່ມີບັນຊີ, ບໍ່ມີການວິເຄາະ.",
+  "aboutDisclaimerHeading": "ຂໍ້ປະຕິເສດຄວາມຮັບຜິດຊອບ",
+  "aboutDisclaimerBody": "ແອັບນີ້ມີໄວ້ສຳລັບຂໍ້ມູນທົ່ວໄປ ແລະ ການຕິດຕາມສ່ວນຕົວ. ມັນບໍ່ແມ່ນຄຳແນະນຳທາງການແພດ, ການວິນິໄສ ຫຼື ການປິ່ນປົວ.",
+  "aboutLicensesButton": "ໃບອະນຸຍາດ",
+  "aboutShareButton": "ແບ່ງປັນແອັບນີ້",
+  "aboutOtherAppsButton": "ແອັບອື່ນ",
+  "aboutCopiedToast": "ສຳເນົາໄປຄລິບບອດແລ້ວ.",
+  "licensesTitle": "ໃບອະນຸຍາດ",
+  "otherAppsTitle": "ແອັບອື່ນ",
+  "otherAppsEmpty": "ຍັງບໍ່ມີແອັບອື່ນໃນລາຍການ.",
+  "otherAppsCopyLink": "ສຳເນົາລິ້ງສະໂຕຣ໌",
+  "settingsTitle": "ການຕັ້ງຄ່າ",
+  "aboutShareText": "ບັນທຶກຄີໂຕສ່ວນຕົວພ້ອມການຕິດຕາມກຼູໂຄສ, ຄີໂຕນ ແລະ GKI. ໂອເພນຊອດ, ບໍ່ຕ້ອງມີບັນຊີ.",
+  "dataManagementTitle": "ການຈັດການຂໍ້ມູນ",
+  "dataExportJson": "ສົ່ງອອກຂໍ້ມູນ (JSON)",
+  "dataExportCsv": "ສົ່ງອອກການວັດແທກ (CSV)",
+  "dataImportLabel": "ວາງ JSON ທີ່ສົ່ງອອກໄວ້ບ່ອນນີ້",
+  "dataImportButton": "ນຳເຂົ້າຂໍ້ມູນ",
+  "dataImportSuccess": "ນຳເຂົ້າບັນທຶກກຼູໂຄສ {glucose} ແລະ ນ້ຳໜັກ {weight} ລາຍການແລ້ວ.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ນຳເຂົ້າບໍ່ສຳເລັດ: ໄຟລ໌ບໍ່ຖືກຕ້ອງ ຫຼື ບໍ່ຮອງຮັບ.",
+  "dataDeleteAll": "ລຶບຂໍ້ມູນທັງໝົດຂອງຂ້ອຍ",
+  "dataDeleteConfirm1": "ລຶບຂໍ້ມູນທັງໝົດບໍ? ລວມທັງການວັດແທກ, ອາຫານ, ແຜນ ແລະ ການຕັ້ງຄ່າ. ບໍ່ສາມາດຍົກເລີກໄດ້.",
+  "dataDeleteConfirm2": "ທ່ານແນ່ໃຈແທ້ບໍ? ພິມ DELETE ເພື່ອຢືນຢັນ.",
+  "dataDeleteTypeDelete": "ພິມ DELETE",
+  "dataDeleteDone": "ລຶບຂໍ້ມູນທັງໝົດແລ້ວ ({count} ລາຍການ).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ໄຟລ໌ສົ່ງອອກພ້ອມແລ້ວ — ເລືອກບ່ອນບັນທຶກ.",
+  "settingsAppearance": "ຮູບລັກສະນະ",
+  "themeSystem": "ລະບົບ",
+  "themeLight": "ສະຫວ່າງ",
+  "themeDark": "ມືດ",
+  "settingsLanguage": "ພາສາ",
+  "settingsMore": "ເພີ່ມເຕີມ"
+}

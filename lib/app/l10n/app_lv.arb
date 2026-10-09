@@ -1,0 +1,452 @@
+{
+  "@@locale": "lv",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Šodien",
+  "navLog": "Žurnāls",
+  "navPlan": "Plāns",
+  "navTrends": "Tendences",
+  "navGuide": "Ceļvedis",
+  "pageUnderConstruction": "Šis ekrāns tiek veidots.",
+  "generalInfoDisclaimer": "Tikai vispārējai informācijai; nav medicīnisks padoms.",
+  "onboardingLanguageTitle": "Izvēlieties valodu",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Jūsu dati paliek jūsu ierīcē",
+  "onboardingPrivacyBody": "N Keto Tracker glabā jūsu mērījumus, ēdienreizes un piezīmes tikai šajā lietotnē jūsu ierīcē. Konta nav, un jūsu veselības dati netiek sūtīti nekur. Izdzēšot lietotni, tiek dzēsti arī dati; rezerves kopiju varat eksportēt jebkurā laikā.",
+  "onboardingMedicalTitle": "Nav medicīnisks padoms",
+  "onboardingMedicalBody": "Šī lietotne paredzēta vispārējai informācijai un personiskai uzskaitei. Tā nav medicīnisks padoms, diagnoze vai ārstēšana un neaizstāj kvalificētu veselības aprūpes speciālistu palīdzību.",
+  "onboardingPurposeTitle": "Ko vēlaties sekot?",
+  "onboardingPurposeLearn": "Uzzināt par ketogēno uzturu",
+  "onboardingPurposeMeals": "Plānot ēdienreizes",
+  "onboardingPurposeMacros": "Sekot makro un neto ogļhidrātiem",
+  "onboardingPurposeMeasure": "Sekot glikozei, ketoniem un GKI",
+  "onboardingProfileTitle": "Par jums (nav obligāti)",
+  "onboardingProfileBody": "To varat izlaist un pievienot vēlāk iestatījumos. Izmanto tikai vispārējam enerģijas aprēķinam.",
+  "onboardingBirthYear": "Dzimšanas gads",
+  "onboardingHeightCm": "Augums (cm)",
+  "onboardingWeightKg": "Svars (kg)",
+  "onboardingEnergyCoeffTitle": "Enerģijas aprēķina koeficients",
+  "onboardingEnergyCoeffBody": "Vispārējais enerģijas aprēķins izmanto vienu no diviem publicētiem koeficientiem. Tas nav saistīts ar jūsu dzimumidentitāti — tikai norāda, kura vienādojuma versija jums der labāk. Enerģijas aprēķinus varat arī pilnībā izlaist.",
+  "onboardingEnergyCoeffSkip": "Izlaist enerģijas aprēķinus",
+  "onboardingScreeningTitle": "Daži drošības jautājumi",
+  "onboardingScreeningBody": "Šie jautājumi neko nediagnosticē. Tie tikai izslēdz automātiskos plāna un mērķu ieteikumus, kad nepieciešama papildu piesardzība.",
+  "onboardingScreeningDiabetes": "Man ir diabēts",
+  "onboardingScreeningMedication": "Lietoju glikozi pazeminošas zāles vai insulīnu",
+  "onboardingScreeningPregnancy": "Esmu stāvoklī vai barāju ar krūti",
+  "onboardingScreeningOrgan": "Man ir nieru, aknu vai aizkuņģa dziedzera slimība",
+  "onboardingScreeningEatingDisorder": "Man ir bijuši ēšanas traucējumi",
+  "onboardingScreeningWeightLoss": "Man bijis ievērojams nevēlams svara zudums",
+  "onboardingScreeningUnder18": "Man vēl nav 18 gadu",
+  "onboardingScreeningLockedNote": "Jūsu atbilžu dēļ automātiska plāna un mērķu izveide paliek izslēgta. Ierakstīšana un mācīšanās funkcijas paliek pieejamas. Lūdzu, apspriediet to ar kvalificētu veselības aprūpes speciālistu.",
+  "onboardingDataTitle": "Jūsu dati",
+  "onboardingDataBody": "Jūsu ieraksti paliek tikai šajā ierīcē. Ja zaudēsit vai atinstalēsit lietotni bez rezerves kopijas eksportēšanas, datus atjaunot nevarēs.",
+  "onboardingConsentTitle": "Piekrišana",
+  "onboardingConsentBody": "Esmu izlasījis(-usi) un piekrītu privātuma kopsavilkumam un paziņojumam, ka šī lietotne nav medicīnisks padoms. Saprotu, ka mani dati paliek tikai šajā ierīcē.",
+  "onboardingConsentCheckbox": "Piekrītu",
+  "onboardingNext": "Tālāk",
+  "onboardingBack": "Atpakaļ",
+  "onboardingFinish": "Sākt lietot lietotni",
+  "onboardingStepOf": "{current}. solis no {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glikoze ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Asins ketons BHB (mmol/L)",
+  "formSourceType": "Avota veids",
+  "formNote": "Piezīme (nav obligāta)",
+  "formPickTime": "Mērījuma laiks",
+  "formSaveSession": "Saglabāt mērījumu sesiju",
+  "formInvalidValue": "Lūdzu, ievadiet derīgu pozitīvu skaitli.",
+  "gkiResultHeading": "Jūsu GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Izmērīts: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Aprēķina versija: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Mērījumu vēl nav",
+  "logEmptyBody": "Pievienojiet pirmo glikozes un ketona rādījumu, lai to redzētu šeit.",
+  "logBandsToggle": "Rādīt izlasītā raksta pētījumu diapazonus",
+  "bandsDisclaimer": "Šie diapazoni nav klīniskās normas vai pierādīti ārstēšanas mērķi. Tie ir raksturīgi, neregulējoši ieteikumi no konkrēta pētījumu ietvara. GKI vien nerāda veselību, atbildi uz slimību vai drošību. Pieskarieties, lai redzētu avotu.",
+  "logBandOptimal": "Ieteicamais optimālais pētījuma diapazons (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Ieteicamais terapeitiskais pētījuma diapazons (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Ārpus ieteicamā ≤ 2.0 pētījuma diapazona",
+  "logMatchSimultaneous": "vienlaicīgi",
+  "logMatchApproximate": "aptuvena atbilstība",
+  "logTimelineHeading": "Laika līnija",
+  "logChartsHeading": "Diagrammas",
+  "logGlucoseChart": "Glikoze (mmol/L)",
+  "logBhbChart": "Ketons BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopēt avota saiti",
+  "todayQuickActions": "Ātrās darbības",
+  "todayAddMeasurement": "Pievienot mērījumu",
+  "todayAddMeal": "Pievienot ēdienreizi",
+  "todayAddWeight": "Pievienot svaru",
+  "todayAddSymptom": "Pievienot simptomu",
+  "todayLatestTitle": "Jaunākie mērījumi",
+  "todayLatestEmpty": "Mērījumu vēl nav. Izmantojiet „Pievienot mērījumu”, lai kopā ierakstītu glikozi un ketonu BHB.",
+  "todayNutritionTitle": "Šodienas uzturs",
+  "todayNutritionEmpty": "Šodien nav ierakstītu ēdienreižu. Ēdienreizes tiek ierakstītas cilnē „Plāns”.",
+  "todayWeightTitle": "Svars",
+  "todayWeightEmpty": "Svara ierakstu vēl nav.",
+  "todaySymptomsTitle": "Šodienas simptomi",
+  "todaySymptomsEmpty": "Šodien nav ierakstītu simptomu.",
+  "todayPlansTitle": "Plānotās ēdienreizes",
+  "todayPlansEmpty": "Šodienai nav ēdienreižu plāna.",
+  "comingSoonTitle": "Būs nākamajā atjauninājumā",
+  "comingSoonBody": "Šī ievades veidlapa tiek veidota. Progresu varat sekot projekta krātuvē.",
+  "mealFormTitle": "Ierakstīt ēdienreizi",
+  "mealSearchLabel": "Meklēt ēdienu",
+  "mealTypeLabel": "Ēdienreizes veids",
+  "mealTypeBreakfast": "Brokastis",
+  "mealTypeLunch": "Pusdienas",
+  "mealTypeDinner": "Vakariņas",
+  "mealTypeSnack": "Uzkoda",
+  "mealTypeCustom": "Cits",
+  "mealGramsLabel": "Daudzums (g)",
+  "mealAddItem": "Pievienot ēdienu",
+  "mealNoteLabel": "Piezīme (nav obligāta)",
+  "mealFavoriteToggle": "Atzīmēt kā iecienītu",
+  "mealRepeatSection": "Ātra atkārtošana",
+  "mealRepeatFavorites": "Iecienītie",
+  "mealRepeatRecent": "Nesenie",
+  "mealSave": "Saglabāt ēdienreizi",
+  "mealItemsHeading": "Vienumi",
+  "mealSavedToast": "Ēdienreize saglabāta.",
+  "mealNeedsItem": "Vispirms pievienojiet vismaz vienu ēdienu.",
+  "mealTotalsHeading": "Dienas kopsummas",
+  "mealTotalsKcal": "Enerģija: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Neto ogļhidrāti: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Kopējie ogļhidrāti: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Šķiedrvielas: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Olbaltumvielas: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Tauki: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Parasti laba izvēle",
+  "guideGroupLimit": "Var būt nepieciešami porcijas vai biežuma ierobežojumi",
+  "guideGroupAvoid": "Parasti nav savienojams ar ketogēnajiem mērķiem",
+  "guideWhyHeading": "Kāpēc?",
+  "guideTypicalPortion": "Tipiska porcija: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatīvas: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Datu avots: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Gaļa, zivis un olas",
+  "guideCardLowCarbVegetables": "Dārzeņi ar zemu ogļhidrātu saturu",
+  "guideCardFatsOils": "Tauki un eļļas",
+  "guideCardNutsSeeds": "Rieksti un sēklas",
+  "guideCardBerries": "Ogas",
+  "guideCardDairy": "Pilnpiena produkti",
+  "guideCardFruit": "Augļi",
+  "guideCardLegumes": "Pākšaugi",
+  "guideCardMilkDrinks": "Piens un saldie dzērieni",
+  "guideCardSugaryDrinks": "Cukurotie dzērieni",
+  "guideCardStarches": "Maize, rīsi, kartupeļi",
+  "guideCardSweets": "Saldumi un deserti",
+  "logMealRelation": "Ierakstīts {hours} h pēc ēdienreizes ({mealType}) — tikai laika konteksts, nevis ietekme.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Pirms šī rādījuma analīzes logā nav ierakstīta ēdienreize.",
+  "logRelationWindowLabel": "Saiknes ar ēdienreizi logs",
+  "logConfoundersHeading": "Kas vēl var ietekmēt rādījumus?",
+  "mealTypeShortBreakfast": "brokastis",
+  "mealTypeShortLunch": "pusdienas",
+  "mealTypeShortDinner": "vakariņas",
+  "mealTypeShortSnack": "uzkoda",
+  "mealTypeShortCustom": "ēdienreize",
+  "recipePerServing": "Porcijas: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Sagatavošana: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergēni: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Sastāvdaļas",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Soļi",
+  "recipeStorage": "Uzglabāšana: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Pētījumā izmantotais diapazons",
+  "goalLegendClinician": "Mana ārsta mērķis",
+  "goalLegendPersonal": "Mans personiskais uzskaites mērķis",
+  "goalLegendPersonalNote": "Personisks uzskaites mērķis nav medicīnisks mērķis.",
+  "weightValueLabel": "Svars ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Apstākļi (nav obligāti, piem., no rīta, pēc treniņa)",
+  "weightSave": "Saglabāt svaru",
+  "symptomFormTitle": "Ierakstīt simptomu",
+  "symptomDefinitionLabel": "Simptoms",
+  "symptomSeverityLabel": "Smaguma pakāpe: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Piezīme (nav obligāta)",
+  "symptomSave": "Saglabāt simptomu",
+  "symptomSavedToast": "Simptoms saglabāts.",
+  "symptomGuidance": "Jūs atzīmējāt nozīmīgu simptomu. Šī lietotne nediagnosticē. Ievērojiet savu veselības plānu un sazinieties ar vietējiem neatliekamās palīdzības dienestiem, ja jūtaties slikti vai simptomi ir smagi.",
+  "symptomSeizureGuidance": "Jūs ierakstījāt krampju gadījumu. Šī lietotne nediagnosticē. Lūdzu, ievērojiet savu veselības plānu un sazinieties ar veselības aprūpes speciālistu; steidzamā gadījumā zvaniet vietējiem neatliekamās palīdzības dienestiem.",
+  "trendsRange7": "7 dienas",
+  "trendsRange30": "30 dienas",
+  "trendsRange90": "90 dienas",
+  "trendsSummary": "{count} rādījumi pēdējo {days} dienu laikā. Jaunākais: {latest}, vidējais: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Šajā diapazonā nav datu.",
+  "trendsExplainsTitle": "Ko šī diagramma jums stāsta — un ko ne",
+  "trendsExplainsBody": "Diagramma rāda jūsu pašu rādījumus laika gaitā kā neapstrādātus punktus. Tā nediagnosticē, neprognozē un nepierāda cēloņus. Trūkstošās dienas parādās kā atstarpes, nevis nulles.",
+  "trendsWeightChart": "Svars (kg)",
+  "trendsBandsNote": "Pētījumu diapazoni ir neobligāti un pēc noklusējuma izslēgti. Lai tos ieslēgtu, skatiet cilni „Žurnāls”.",
+  "evidenceDiseaseFilter": "Rādīt konkrētām slimībām veltītus pētījumus (no avotiem, kurus izvēlaties lasīt)",
+  "evidenceSectionTitle": "Zinātniskie avoti un raksti",
+  "guideCopyLink": "Kopēt avota saiti",
+  "planTitle": "Nedēļas plāns",
+  "planGenerateDraft": "Izveidot nedēļas melnrakstu",
+  "planDraftLockedNote": "Automātiska plāna izveide paliek izslēgta: vispirms apspriediet to ar kvalificētu veselības aprūpes speciālistu.",
+  "planCreatedToast": "Nedēļas plāns izveidots.",
+  "planItemDay": "{day}. diena",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Izveidot iepirkumu sarakstu no plāna",
+  "shoppingTitle": "Iepirkumu saraksts",
+  "shoppingUndo": "Atsaukt",
+  "shoppingAddManual": "Pievienot vienumu manuāli",
+  "shoppingCheckedToggle": "Atzīmēt",
+  "shoppingEmpty": "Iepirkumu saraksta vēl nav.",
+  "planEmpty": "Nedēļas plāna vēl nav. Lai sāktu, izveidojiet melnrakstu no savām receptēm.",
+  "aboutTitle": "Par lietotni",
+  "aboutSlogan": "Privāta keto dienasgrāmata",
+  "aboutVersion": "Versija {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Atvērtais kods",
+  "aboutOpenSourceBody": "N Keto Tracker ir bezmaksas atvērtā koda programmatūra ar GPL-3.0 licenci. Kodu varat pārbaudīt, mainīt un izplatīt ar to pašu licenci.",
+  "aboutPrivacyHeading": "Privātums",
+  "aboutPrivacyBody": "Jūsu veselības dati paliek šajā ierīcē. Bez konta, bez analītikas.",
+  "aboutDisclaimerHeading": "Atruna",
+  "aboutDisclaimerBody": "Šī lietotne paredzēta vispārējai informācijai un personiskai uzskaitei. Tā nav medicīnisks padoms, diagnoze vai ārstēšana.",
+  "aboutLicensesButton": "Licences",
+  "aboutShareButton": "Dalīties ar lietotni",
+  "aboutOtherAppsButton": "Citas lietotnes",
+  "aboutCopiedToast": "Nokopēts starpliktuvē.",
+  "licensesTitle": "Licences",
+  "otherAppsTitle": "Citas lietotnes",
+  "otherAppsEmpty": "Citu lietotņu sarakstā vēl nav.",
+  "otherAppsCopyLink": "Kopēt veikala saiti",
+  "settingsTitle": "Iestatījumi",
+  "aboutShareText": "Privāta keto dienasgrāmata ar glikozes, ketonu un GKI uzskaiti. Atvērtais kods, konts nav vajadzīgs.",
+  "dataManagementTitle": "Datu pārvaldība",
+  "dataExportJson": "Eksportēt datus (JSON)",
+  "dataExportCsv": "Eksportēt mērījumus (CSV)",
+  "dataImportLabel": "Ielīmējiet šeit eksportēto JSON",
+  "dataImportButton": "Importēt datus",
+  "dataImportSuccess": "Importēti {glucose} glikozes un {weight} svara ieraksti.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Imports neizdevās: fails nederīgs vai neatbalstīts.",
+  "dataDeleteAll": "Dzēst visus manus datus",
+  "dataDeleteConfirm1": "Dzēst VISUS datus? Tas ietver mērījumus, ēdienreizes, plānus un iestatījumus. To nevar atcelt.",
+  "dataDeleteConfirm2": "Vai tiešām esat pārliecināts? Apstiprināšanai ierakstiet DELETE.",
+  "dataDeleteTypeDelete": "Ierakstiet DELETE",
+  "dataDeleteDone": "Visi dati izdzēsti ({count} ieraksti).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Eksporta fails gatavs — izvēlieties, kur to saglabāt.",
+  "settingsAppearance": "Izskats",
+  "themeSystem": "Sistēmas",
+  "themeLight": "Gaišs",
+  "themeDark": "Tumšs",
+  "settingsLanguage": "Valoda",
+  "settingsMore": "Vairāk"
+}

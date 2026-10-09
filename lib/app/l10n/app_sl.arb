@@ -1,0 +1,452 @@
+{
+  "@@locale": "sl",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Danes",
+  "navLog": "Dnevnik",
+  "navPlan": "Načrt",
+  "navTrends": "Trendi",
+  "navGuide": "Vodnik",
+  "pageUnderConstruction": "Ta zaslon se še izdeluje.",
+  "generalInfoDisclaimer": "Samo za splošne informacije; ni zdravniški nasvet.",
+  "onboardingLanguageTitle": "Izberite jezik",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Vaši podatki ostanejo v vaši napravi",
+  "onboardingPrivacyBody": "N Keto Tracker hrani vaše meritve, obroke in zapiske samo v tej aplikaciji v vaši napravi. Računa ni, vaši zdravstveni podatki pa se nikoli nikamor ne pošiljajo. Z brisanjem aplikacije se izbrišejo tudi podatki; varnostno kopijo lahko kadar koli izvozite.",
+  "onboardingMedicalTitle": "Ni zdravniški nasvet",
+  "onboardingMedicalBody": "Ta aplikacija je namenjena splošnim informacijam in osebnemu spremljanju. Ni zdravniški nasvet, diagnoza ali zdravljenje in ne nadomešča oskrbe usposobljenih zdravstvenih delavcev.",
+  "onboardingPurposeTitle": "Kaj želite spremljati?",
+  "onboardingPurposeLearn": "Izvedeti več o ketogeni prehrani",
+  "onboardingPurposeMeals": "Načrtovati obroke",
+  "onboardingPurposeMacros": "Spremljati makre in neto ogljikove hidrate",
+  "onboardingPurposeMeasure": "Spremljati glukozo, ketone in GKI",
+  "onboardingProfileTitle": "O vas (neobvezno)",
+  "onboardingProfileBody": "To lahko preskočite in dodate pozneje v nastavitvah. Uporablja se samo za splošno oceno energije.",
+  "onboardingBirthYear": "Leto rojstva",
+  "onboardingHeightCm": "Višina (cm)",
+  "onboardingWeightKg": "Teža (kg)",
+  "onboardingEnergyCoeffTitle": "Koeficient za oceno energije",
+  "onboardingEnergyCoeffBody": "Splošna ocena energije uporablja enega od dveh objavljenih koeficientov. Ne gre za vašo spolno identiteto — samo za to, katera različica enačbe vam najbolj ustreza. Ocene energije lahko tudi povsem preskočite.",
+  "onboardingEnergyCoeffSkip": "Preskoči ocene energije",
+  "onboardingScreeningTitle": "Nekaj varnostnih vprašanj",
+  "onboardingScreeningBody": "Ta vprašanja ničesar ne diagnosticirajo. Samo izklopijo samodejne predloge načrta in ciljev, kadar je potrebna dodatna previdnost.",
+  "onboardingScreeningDiabetes": "Imam sladkorno bolezen",
+  "onboardingScreeningMedication": "Jemljem zdravila za znižanje glukoze ali inzulin",
+  "onboardingScreeningPregnancy": "Sem noseča ali dojim",
+  "onboardingScreeningOrgan": "Imam bolezen ledvic, jeter ali trebušne slinavke",
+  "onboardingScreeningEatingDisorder": "Imam motnjo hranjenja v anamnezi",
+  "onboardingScreeningWeightLoss": "Nenamerno sem precej shujšal(a)",
+  "onboardingScreeningUnder18": "Sem mlajši/a od 18 let",
+  "onboardingScreeningLockedNote": "Zaradi vaših odgovorov ostane samodejno ustvarjanje načrta in ciljev izklopljeno. Beleženje in učne funkcije ostanejo na voljo. Prosimo, o tem se posvetujte z usposobljenim zdravstvenim delavcem.",
+  "onboardingDataTitle": "Vaši podatki",
+  "onboardingDataBody": "Vaši zapisi ostanejo samo v tej napravi. Če aplikacijo izgubite ali odstranite brez izvoza varnostne kopije, podatkov ni mogoče obnoviti.",
+  "onboardingConsentTitle": "Soglasje",
+  "onboardingConsentBody": "Prebral(a) sem povzetek zasebnosti in obvestilo, da ta aplikacija ni zdravniški nasvet, ter ju sprejemam. Razumem, da moji podatki ostanejo samo v tej napravi.",
+  "onboardingConsentCheckbox": "Sprejemam",
+  "onboardingNext": "Naprej",
+  "onboardingBack": "Nazaj",
+  "onboardingFinish": "Začni uporabljati aplikacijo",
+  "onboardingStepOf": "Korak {current} od {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukoza ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Ketoni v krvi BHB (mmol/L)",
+  "formSourceType": "Vrsta vira",
+  "formNote": "Opomba (neobvezno)",
+  "formPickTime": "Čas meritve",
+  "formSaveSession": "Shrani sejo meritev",
+  "formInvalidValue": "Vnesite veljavno pozitivno število.",
+  "gkiResultHeading": "Vaš GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Izmerjeno: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Različica izračuna: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Še ni meritev",
+  "logEmptyBody": "Dodajte prvo vrednost glukoze in ketonov, da jo vidite tukaj.",
+  "logBandsToggle": "Pokaži raziskovalna območja iz prebranega članka",
+  "bandsDisclaimer": "Ta območja niso klinična normalna območja ali dokazani cilji zdravljenja. So reprezentativni, nepredpisujoči predlogi iz določenega raziskovalnega okvira. GKI sam ne kaže zdravja, odziva na bolezen ali varnosti. Tapnite za ogled vira.",
+  "logBandOptimal": "Predlagano optimalno raziskovalno območje (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Predlagano terapevtsko raziskovalno območje (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Zunaj predlaganega raziskovalnega območja ≤ 2.0",
+  "logMatchSimultaneous": "istočasno",
+  "logMatchApproximate": "približno ujemanje",
+  "logTimelineHeading": "Časovnica",
+  "logChartsHeading": "Grafikoni",
+  "logGlucoseChart": "Glukoza (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopiraj povezavo do vira",
+  "todayQuickActions": "Hitra dejanja",
+  "todayAddMeasurement": "Dodaj meritev",
+  "todayAddMeal": "Dodaj obrok",
+  "todayAddWeight": "Dodaj težo",
+  "todayAddSymptom": "Dodaj simptom",
+  "todayLatestTitle": "Zadnje meritve",
+  "todayLatestEmpty": "Še ni meritev. Uporabite »Dodaj meritev«, da skupaj zabeležite glukozo in keton BHB.",
+  "todayNutritionTitle": "Današnja prehrana",
+  "todayNutritionEmpty": "Danes ni zabeleženih obrokov. Obroki se beležijo na zavihku Načrt.",
+  "todayWeightTitle": "Teža",
+  "todayWeightEmpty": "Še ni vnosov teže.",
+  "todaySymptomsTitle": "Današnji simptomi",
+  "todaySymptomsEmpty": "Danes ni zabeleženih simptomov.",
+  "todayPlansTitle": "Načrtovani obroki",
+  "todayPlansEmpty": "Za danes ni načrta obrokov.",
+  "comingSoonTitle": "Prihaja v prihodnji posodobitvi",
+  "comingSoonBody": "Ta obrazec za vnos se še izdeluje. Napredek lahko spremljate v repozitoriju projekta.",
+  "mealFormTitle": "Zabeleži obrok",
+  "mealSearchLabel": "Poišči hrano",
+  "mealTypeLabel": "Vrsta obroka",
+  "mealTypeBreakfast": "Zajtrk",
+  "mealTypeLunch": "Kosilo",
+  "mealTypeDinner": "Večerja",
+  "mealTypeSnack": "Prigrizek",
+  "mealTypeCustom": "Po meri",
+  "mealGramsLabel": "Količina (g)",
+  "mealAddItem": "Dodaj hrano",
+  "mealNoteLabel": "Opomba (neobvezno)",
+  "mealFavoriteToggle": "Označi kot priljubljeno",
+  "mealRepeatSection": "Hitro ponavljanje",
+  "mealRepeatFavorites": "Priljubljeno",
+  "mealRepeatRecent": "Nedavno",
+  "mealSave": "Shrani obrok",
+  "mealItemsHeading": "Elementi",
+  "mealSavedToast": "Obrok shranjen.",
+  "mealNeedsItem": "Najprej dodajte vsaj eno živilo.",
+  "mealTotalsHeading": "Dnevne vsote",
+  "mealTotalsKcal": "Energija: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Neto ogljikovi hidrati: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Skupaj ogljikovi hidrati: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Vlaknine: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Beljakovine: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Maščobe: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Na splošno dobra izbira",
+  "guideGroupLimit": "Morda zahteva omejitev porcije ali pogostosti",
+  "guideGroupAvoid": "Na splošno nezdružljivo s ketogenimi cilji",
+  "guideWhyHeading": "Zakaj?",
+  "guideTypicalPortion": "Običajna porcija: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternative: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Vir podatkov: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Meso, ribe in jajca",
+  "guideCardLowCarbVegetables": "Zelenjava z malo ogljikovih hidratov",
+  "guideCardFatsOils": "Maščobe in olja",
+  "guideCardNutsSeeds": "Oreški in semena",
+  "guideCardBerries": "Jagodičevje",
+  "guideCardDairy": "Polnomastni mlečni izdelki",
+  "guideCardFruit": "Sadje",
+  "guideCardLegumes": "Stročnice",
+  "guideCardMilkDrinks": "Mleko in sladke pijače",
+  "guideCardSugaryDrinks": "Sladkane pijače",
+  "guideCardStarches": "Kruh, riž, krompir",
+  "guideCardSweets": "Sladkarije in deserti",
+  "logMealRelation": "Zabeleženo {hours} h po obroku ({mealType}) — samo časovni kontekst, ne učinek.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "V analitičnem oknu pred to meritvijo ni zabeleženega obroka.",
+  "logRelationWindowLabel": "Okno povezave z obrokom",
+  "logConfoundersHeading": "Kaj še lahko vpliva na meritve?",
+  "mealTypeShortBreakfast": "zajtrk",
+  "mealTypeShortLunch": "kosilo",
+  "mealTypeShortDinner": "večerja",
+  "mealTypeShortSnack": "prigrizek",
+  "mealTypeShortCustom": "obrok",
+  "recipePerServing": "Porcij: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Priprava: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergeni: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Sestavine",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Koraki",
+  "recipeStorage": "Shranjevanje: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Raziskovalno območje, uporabljeno v študiji",
+  "goalLegendClinician": "Cilj mojega zdravnika",
+  "goalLegendPersonal": "Moj osebni cilj spremljanja",
+  "goalLegendPersonalNote": "Osebni cilj spremljanja ni zdravstveni cilj.",
+  "weightValueLabel": "Teža ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Okoliščine (neobvezno, npr. zjutraj, po vadbi)",
+  "weightSave": "Shrani težo",
+  "symptomFormTitle": "Zabeleži simptom",
+  "symptomDefinitionLabel": "Simptom",
+  "symptomSeverityLabel": "Resnost: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Opomba (neobvezno)",
+  "symptomSave": "Shrani simptom",
+  "symptomSavedToast": "Simptom shranjen.",
+  "symptomGuidance": "Označili ste pomemben simptom. Ta aplikacija ne postavlja diagnoz. Sledite svojemu zdravstvenemu načrtu in se obrnite na lokalne reševalne službe, če se počutite slabo ali so simptomi hudi.",
+  "symptomSeizureGuidance": "Zabeležili ste epileptični napad. Ta aplikacija ne postavlja diagnoz. Sledite svojemu zdravstvenemu načrtu in se obrnite na zdravstvenega delavca; v nujnem primeru pokličite lokalne reševalne službe.",
+  "trendsRange7": "7 dni",
+  "trendsRange30": "30 dni",
+  "trendsRange90": "90 dni",
+  "trendsSummary": "{count} odčitkov v zadnjih {days} dneh. Zadnji: {latest}, povprečje: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "V tem obdobju ni podatkov.",
+  "trendsExplainsTitle": "Kaj vam ta grafikon pove — in česa ne",
+  "trendsExplainsBody": "Grafikon prikazuje vaše lastne odčitke skozi čas kot surove točke. Ne diagnosticira, ne napoveduje in ne dokazuje vzrokov. Manjkajoči dnevi so prikazani kot vrzeli, ne kot ničle.",
+  "trendsWeightChart": "Teža (kg)",
+  "trendsBandsNote": "Raziskovalna območja so neobvezna in privzeto izklopljena. Za vklop glejte zavihek Dnevnik.",
+  "evidenceDiseaseFilter": "Pokaži raziskave za posamezne bolezni (iz virov, ki jih izberete za branje)",
+  "evidenceSectionTitle": "Znanstveni viri in članki",
+  "guideCopyLink": "Kopiraj povezavo do vira",
+  "planTitle": "Tedenski načrt",
+  "planGenerateDraft": "Ustvari tedenski osnutek",
+  "planDraftLockedNote": "Samodejno ustvarjanje načrta ostane izklopljeno: prosimo, najprej se posvetujte z usposobljenim zdravstvenim delavcem.",
+  "planCreatedToast": "Tedenski načrt ustvarjen.",
+  "planItemDay": "Dan {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Ustvari nakupovalni seznam iz načrta",
+  "shoppingTitle": "Nakupovalni seznam",
+  "shoppingUndo": "Razveljavi",
+  "shoppingAddManual": "Dodaj element ročno",
+  "shoppingCheckedToggle": "Označi",
+  "shoppingEmpty": "Še ni nakupovalnega seznama.",
+  "planEmpty": "Še ni tedenskega načrta. Za začetek ustvarite osnutek iz svojih receptov.",
+  "aboutTitle": "O aplikaciji",
+  "aboutSlogan": "Zasebni keto dnevnik",
+  "aboutVersion": "Različica {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Odprta koda",
+  "aboutOpenSourceBody": "N Keto Tracker je brezplačna programska oprema z odprto kodo pod licenco GPL-3.0. Kodo lahko pregledujete, spreminjate in razširjate pod isto licenco.",
+  "aboutPrivacyHeading": "Zasebnost",
+  "aboutPrivacyBody": "Vaši zdravstveni podatki ostanejo v tej napravi. Brez računa, brez analitike.",
+  "aboutDisclaimerHeading": "Zavrnitev odgovornosti",
+  "aboutDisclaimerBody": "Ta aplikacija je namenjena splošnim informacijam in osebnemu spremljanju. Ni zdravniški nasvet, diagnoza ali zdravljenje.",
+  "aboutLicensesButton": "Licence",
+  "aboutShareButton": "Deli to aplikacijo",
+  "aboutOtherAppsButton": "Druge aplikacije",
+  "aboutCopiedToast": "Kopirano v odložišče.",
+  "licensesTitle": "Licence",
+  "otherAppsTitle": "Druge aplikacije",
+  "otherAppsEmpty": "Drugih aplikacij še ni na seznamu.",
+  "otherAppsCopyLink": "Kopiraj povezavo do trgovine",
+  "settingsTitle": "Nastavitve",
+  "aboutShareText": "Zasebni keto dnevnik s spremljanjem glukoze, ketonov in GKI. Odprta koda, računa ni treba.",
+  "dataManagementTitle": "Upravljanje podatkov",
+  "dataExportJson": "Izvozi podatke (JSON)",
+  "dataExportCsv": "Izvozi meritve (CSV)",
+  "dataImportLabel": "Sem prilepite izvožen JSON",
+  "dataImportButton": "Uvozi podatke",
+  "dataImportSuccess": "Uvoženih {glucose} zapisov glukoze in {weight} zapisov teže.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Uvoz ni uspel: datoteka je neveljavna ali nepodprta.",
+  "dataDeleteAll": "Izbriši vse moje podatke",
+  "dataDeleteConfirm1": "Izbrisati VSE podatke? To vključuje meritve, obroke, načrte in nastavitve. Tega ni mogoče razveljaviti.",
+  "dataDeleteConfirm2": "Ste res prepričani? Za potrditev vnesite DELETE.",
+  "dataDeleteTypeDelete": "Vnesite DELETE",
+  "dataDeleteDone": "Vsi podatki izbrisani ({count} zapisov).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Izvozna datoteka je pripravljena — izberite, kam jo shraniti.",
+  "settingsAppearance": "Videz",
+  "themeSystem": "Sistemska",
+  "themeLight": "Svetla",
+  "themeDark": "Temna",
+  "settingsLanguage": "Jezik",
+  "settingsMore": "Več"
+}

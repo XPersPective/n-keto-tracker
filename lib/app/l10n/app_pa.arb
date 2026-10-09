@@ -1,0 +1,452 @@
+{
+  "@@locale": "pa",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ਅੱਜ",
+  "navLog": "ਲੌਗ",
+  "navPlan": "ਯੋਜਨਾ",
+  "navTrends": "ਰੁਝਾਨ",
+  "navGuide": "ਗਾਈਡ",
+  "pageUnderConstruction": "ਇਹ ਸਕ੍ਰੀਨ ਬਣਾਈ ਜਾ ਰਹੀ ਹੈ।",
+  "generalInfoDisclaimer": "ਸਿਰਫ਼ ਆਮ ਜਾਣਕਾਰੀ ਲਈ; ਡਾਕਟਰੀ ਸਲਾਹ ਨਹੀਂ।",
+  "onboardingLanguageTitle": "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "ਤੁਹਾਡਾ ਡਾਟਾ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਰਹਿੰਦਾ ਹੈ",
+  "onboardingPrivacyBody": "N Keto Tracker ਤੁਹਾਡੇ ਮਾਪ, ਖਾਣਾ ਅਤੇ ਨੋਟਸ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੀ ਇਸ ਐਪ ਵਿੱਚ ਹੀ ਰੱਖਦਾ ਹੈ। ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਹੈ, ਅਤੇ ਤੁਹਾਡਾ ਸਿਹਤ ਡਾਟਾ ਕਿਤੇ ਵੀ ਨਹੀਂ ਭੇਜਿਆ ਜਾਂਦਾ। ਐਪ ਮਿਟਾਉਣ 'ਤੇ ਤੁਹਾਡਾ ਡਾਟਾ ਵੀ ਮਿਟ ਜਾਂਦਾ ਹੈ; ਤੁਸੀਂ ਕਦੇ ਵੀ ਬੈਕਅੱਪ ਐਕਸਪੋਰਟ ਕਰ ਸਕਦੇ ਹੋ।",
+  "onboardingMedicalTitle": "ਡਾਕਟਰੀ ਸਲਾਹ ਨਹੀਂ",
+  "onboardingMedicalBody": "ਇਹ ਐਪ ਆਮ ਜਾਣਕਾਰੀ ਅਤੇ ਨਿੱਜੀ ਟ੍ਰੈਕਿੰਗ ਲਈ ਹੈ। ਇਹ ਡਾਕਟਰੀ ਸਲਾਹ, ਨਿਦਾਨ ਜਾਂ ਇਲਾਜ ਨਹੀਂ ਹੈ ਅਤੇ ਯੋਗ ਸਿਹਤ ਪੇਸ਼ੇਵਰਾਂ ਦੀ ਦੇਖਭਾਲ ਦਾ ਬਦਲ ਨਹੀਂ ਹੈ।",
+  "onboardingPurposeTitle": "ਤੁਸੀਂ ਕੀ ਟ੍ਰੈਕ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "onboardingPurposeLearn": "ਕੀਟੋਜੈਨਿਕ ਪੋਸ਼ਣ ਬਾਰੇ ਸਿੱਖੋ",
+  "onboardingPurposeMeals": "ਖਾਣੇ ਦੀ ਯੋਜਨਾ ਬਣਾਓ",
+  "onboardingPurposeMacros": "ਮੈਕਰੋ ਅਤੇ ਨੈੱਟ ਕਾਰਬਸ ਟ੍ਰੈਕ ਕਰੋ",
+  "onboardingPurposeMeasure": "ਗਲੂਕੋਜ਼, ਕੀਟੋਨ ਅਤੇ GKI ਟ੍ਰੈਕ ਕਰੋ",
+  "onboardingProfileTitle": "ਤੁਹਾਡੇ ਬਾਰੇ (ਵਿਕਲਪਿਕ)",
+  "onboardingProfileBody": "ਤੁਸੀਂ ਇਸਨੂੰ ਛੱਡ ਕੇ ਬਾਅਦ ਵਿੱਚ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਜੋੜ ਸਕਦੇ ਹੋ। ਇਹ ਸਿਰਫ਼ ਆਮ ਊਰਜਾ ਅੰਦਾਜ਼ੇ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+  "onboardingBirthYear": "ਜਨਮ ਸਾਲ",
+  "onboardingHeightCm": "ਕੱਦ (ਸੈਮੀ)",
+  "onboardingWeightKg": "ਭਾਰ (ਕਿਲੋ)",
+  "onboardingEnergyCoeffTitle": "ਊਰਜਾ ਅੰਦਾਜ਼ਾ ਗੁਣਾਂਕ",
+  "onboardingEnergyCoeffBody": "ਆਮ ਊਰਜਾ ਅੰਦਾਜ਼ਾ ਪ੍ਰਕਾਸ਼ਿਤ ਦੋ ਗੁਣਾਂਕਾਂ ਵਿੱਚੋਂ ਇੱਕ ਵਰਤਦਾ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਲਿੰਗ ਪਛਾਣ ਬਾਰੇ ਨਹੀਂ ਹੈ — ਸਿਰਫ਼ ਇਹ ਹੈ ਕਿ ਸਮੀਕਰਨ ਦਾ ਕਿਹੜਾ ਸੰਸਕਰਣ ਤੁਹਾਡੇ ਲਈ ਸਭ ਤੋਂ ਢੁਕਵਾਂ ਹੈ। ਤੁਸੀਂ ਊਰਜਾ ਅੰਦਾਜ਼ੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਛੱਡ ਵੀ ਸਕਦੇ ਹੋ।",
+  "onboardingEnergyCoeffSkip": "ਊਰਜਾ ਅੰਦਾਜ਼ੇ ਛੱਡੋ",
+  "onboardingScreeningTitle": "ਕੁਝ ਸੁਰੱਖਿਆ ਸਵਾਲ",
+  "onboardingScreeningBody": "ਇਹ ਸਵਾਲ ਕੋਈ ਨਿਦਾਨ ਨਹੀਂ ਕਰਦੇ। ਵਾਧੂ ਸਾਵਧਾਨੀ ਦੀ ਲੋੜ ਹੋਣ 'ਤੇ ਇਹ ਸਿਰਫ਼ ਆਟੋਮੈਟਿਕ ਯੋਜਨਾ ਅਤੇ ਟੀਚੇ ਦੇ ਸੁਝਾਅ ਬੰਦ ਕਰਦੇ ਹਨ।",
+  "onboardingScreeningDiabetes": "ਸ਼ੂਗਰ ਹੈ",
+  "onboardingScreeningMedication": "ਗਲੂਕੋਜ਼ ਘਟਾਉਣ ਵਾਲੀ ਦਵਾਈ ਜਾਂ ਇਨਸੁਲਿਨ ਵਰਤਦਾ/ਵਰਤਦੀ ਹਾਂ",
+  "onboardingScreeningPregnancy": "ਗਰਭਵਤੀ ਹਾਂ ਜਾਂ ਦੁੱਧ ਪਿਲਾਉਂਦੀ ਹਾਂ",
+  "onboardingScreeningOrgan": "ਗੁਰਦੇ, ਜਿਗਰ ਜਾਂ ਪੈਨਕ੍ਰੀਅਸ ਦੀ ਬਿਮਾਰੀ ਹੈ",
+  "onboardingScreeningEatingDisorder": "ਖਾਣ-ਪੀਣ ਦੇ ਵਿਕਾਰ ਦਾ ਇਤਿਹਾਸ ਹੈ",
+  "onboardingScreeningWeightLoss": "ਅਣਜਾਣੇ ਵਿੱਚ ਕਾਫ਼ੀ ਭਾਰ ਘਟਿਆ ਹੈ",
+  "onboardingScreeningUnder18": "ਉਮਰ 18 ਸਾਲ ਤੋਂ ਘੱਟ ਹੈ",
+  "onboardingScreeningLockedNote": "ਤੁਹਾਡੇ ਜਵਾਬਾਂ ਕਾਰਨ ਆਟੋਮੈਟਿਕ ਯੋਜਨਾ ਅਤੇ ਟੀਚਾ ਬਣਾਉਣਾ ਬੰਦ ਰਹੇਗਾ। ਰਿਕਾਰਡਿੰਗ ਅਤੇ ਸਿੱਖਣ ਦੀਆਂ ਸਹੂਲਤਾਂ ਉਪਲਬਧ ਰਹਿਣਗੀਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਯੋਗ ਸਿਹਤ ਪੇਸ਼ੇਵਰ ਨਾਲ ਵਿਚਾਰੋ।",
+  "onboardingDataTitle": "ਤੁਹਾਡਾ ਡਾਟਾ",
+  "onboardingDataBody": "ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਸਿਰਫ਼ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਰਹਿੰਦੇ ਹਨ। ਬੈਕਅੱਪ ਐਕਸਪੋਰਟ ਕੀਤੇ ਬਿਨਾਂ ਐਪ ਗੁਆਉਣ ਜਾਂ ਅਣਇੰਸਟਾਲ ਕਰਨ 'ਤੇ ਡਾਟਾ ਵਾਪਸ ਨਹੀਂ ਮਿਲ ਸਕਦਾ।",
+  "onboardingConsentTitle": "ਸਹਿਮਤੀ",
+  "onboardingConsentBody": "ਮੈਂ ਪਰਦੇਦਾਰੀ ਸਾਰ ਅਤੇ ਇਹ ਸੂਚਨਾ ਪੜ੍ਹੀ ਹੈ ਅਤੇ ਮੰਨਦਾ/ਮੰਨਦੀ ਹਾਂ ਕਿ ਇਹ ਐਪ ਡਾਕਟਰੀ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਮੈਂ ਸਮਝਦਾ/ਸਮਝਦੀ ਹਾਂ ਕਿ ਮੇਰਾ ਡਾਟਾ ਸਿਰਫ਼ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਰਹਿੰਦਾ ਹੈ।",
+  "onboardingConsentCheckbox": "ਮੈਂ ਸਹਿਮਤ ਹਾਂ",
+  "onboardingNext": "ਅੱਗੇ",
+  "onboardingBack": "ਪਿੱਛੇ",
+  "onboardingFinish": "ਐਪ ਵਰਤਣਾ ਸ਼ੁਰੂ ਕਰੋ",
+  "onboardingStepOf": "ਕਦਮ {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ਗਲੂਕੋਜ਼ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "ਖੂਨ ਦਾ ਕੀਟੋਨ BHB (mmol/L)",
+  "formSourceType": "ਸਰੋਤ ਦੀ ਕਿਸਮ",
+  "formNote": "ਨੋਟ (ਵਿਕਲਪਿਕ)",
+  "formPickTime": "ਮਾਪ ਦਾ ਸਮਾਂ",
+  "formSaveSession": "ਮਾਪ ਸੈਸ਼ਨ ਸੰਭਾਲੋ",
+  "formInvalidValue": "ਕਿਰਪਾ ਕਰਕੇ ਵੈਧ ਸਕਾਰਾਤਮਕ ਸੰਖਿਆ ਦਰਜ ਕਰੋ।",
+  "gkiResultHeading": "ਤੁਹਾਡਾ GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "ਮਾਪਿਆ ਗਿਆ: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "ਗਣਨਾ ਸੰਸਕਰਣ: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ਹਾਲੇ ਕੋਈ ਮਾਪ ਨਹੀਂ",
+  "logEmptyBody": "ਇੱਥੇ ਵੇਖਣ ਲਈ ਆਪਣੀ ਪਹਿਲੀ ਗਲੂਕੋਜ਼ ਅਤੇ ਕੀਟੋਨ ਰੀਡਿੰਗ ਜੋੜੋ।",
+  "logBandsToggle": "ਤੁਹਾਡੇ ਪੜ੍ਹੇ ਲੇਖ ਦੀਆਂ ਖੋਜ ਹੱਦਾਂ ਵਿਖਾਓ",
+  "bandsDisclaimer": "ਇਹ ਹੱਦਾਂ ਕਲੀਨਿਕਲ ਆਮ ਹੱਦਾਂ ਜਾਂ ਸਾਬਤ ਇਲਾਜ ਟੀਚੇ ਨਹੀਂ ਹਨ। ਇਹ ਕਿਸੇ ਖਾਸ ਖੋਜ ਢਾਂਚੇ ਤੋਂ ਪ੍ਰਤੀਨਿਧੀ, ਗੈਰ-ਹੁਕਮੀ ਸੁਝਾਅ ਹਨ। ਇਕੱਲਾ GKI ਸਿਹਤ, ਬਿਮਾਰੀ ਪ੍ਰਤੀਕਿਰਿਆ ਜਾਂ ਸੁਰੱਖਿਆ ਨਹੀਂ ਦਿਖਾਉਂਦਾ। ਸਰੋਤ ਵੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "logBandOptimal": "ਸੁਝਾਈ ਗਈ ਸਰਵੋਤਮ ਖੋਜ ਹੱਦ (GKI ≤ 1.0)",
+  "logBandTherapeutic": "ਸੁਝਾਈ ਗਈ ਇਲਾਜੀ ਖੋਜ ਹੱਦ (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "ਸੁਝਾਈ ਗਈ ≤ 2.0 ਖੋਜ ਹੱਦ ਤੋਂ ਬਾਹਰ",
+  "logMatchSimultaneous": "ਇੱਕੋ ਸਮੇਂ",
+  "logMatchApproximate": "ਅੰਦਾਜ਼ਨ ਮੇਲ",
+  "logTimelineHeading": "ਟਾਈਮਲਾਈਨ",
+  "logChartsHeading": "ਚਾਰਟ",
+  "logGlucoseChart": "ਗਲੂਕੋਜ਼ (mmol/L)",
+  "logBhbChart": "ਕੀਟੋਨ BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ਸਰੋਤ ਲਿੰਕ ਕਾਪੀ ਕਰੋ",
+  "todayQuickActions": "ਤੇਜ਼ ਕਾਰਵਾਈਆਂ",
+  "todayAddMeasurement": "ਮਾਪ ਜੋੜੋ",
+  "todayAddMeal": "ਖਾਣਾ ਜੋੜੋ",
+  "todayAddWeight": "ਭਾਰ ਜੋੜੋ",
+  "todayAddSymptom": "ਲੱਛਣ ਜੋੜੋ",
+  "todayLatestTitle": "ਤਾਜ਼ਾ ਮਾਪ",
+  "todayLatestEmpty": "ਹਾਲੇ ਕੋਈ ਮਾਪ ਨਹੀਂ। ਗਲੂਕੋਜ਼ ਅਤੇ ਕੀਟੋਨ BHB ਇਕੱਠੇ ਦਰਜ ਕਰਨ ਲਈ 'ਮਾਪ ਜੋੜੋ' ਵਰਤੋ।",
+  "todayNutritionTitle": "ਅੱਜ ਦਾ ਪੋਸ਼ਣ",
+  "todayNutritionEmpty": "ਅੱਜ ਕੋਈ ਖਾਣਾ ਦਰਜ ਨਹੀਂ ਹੋਇਆ। ਖਾਣਾ ਯੋਜਨਾ ਟੈਬ ਤੋਂ ਲੌਗ ਹੁੰਦਾ ਹੈ।",
+  "todayWeightTitle": "ਭਾਰ",
+  "todayWeightEmpty": "ਹਾਲੇ ਕੋਈ ਭਾਰ ਐਂਟਰੀ ਨਹੀਂ।",
+  "todaySymptomsTitle": "ਅੱਜ ਦੇ ਲੱਛਣ",
+  "todaySymptomsEmpty": "ਅੱਜ ਕੋਈ ਲੱਛਣ ਦਰਜ ਨਹੀਂ ਹੋਇਆ।",
+  "todayPlansTitle": "ਯੋਜਨਾਬੱਧ ਖਾਣਾ",
+  "todayPlansEmpty": "ਅੱਜ ਲਈ ਕੋਈ ਖਾਣਾ ਯੋਜਨਾ ਨਹੀਂ।",
+  "comingSoonTitle": "ਆਉਣ ਵਾਲੇ ਅੱਪਡੇਟ ਵਿੱਚ ਆ ਰਿਹਾ ਹੈ",
+  "comingSoonBody": "ਇਹ ਐਂਟਰੀ ਫਾਰਮ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ। ਤੁਸੀਂ ਪ੍ਰੋਜੈਕਟ ਰਿਪੋਜ਼ਟਰੀ ਵਿੱਚ ਪ੍ਰਗਤੀ ਵੇਖ ਸਕਦੇ ਹੋ।",
+  "mealFormTitle": "ਖਾਣਾ ਲੌਗ ਕਰੋ",
+  "mealSearchLabel": "ਭੋਜਨ ਖੋਜੋ",
+  "mealTypeLabel": "ਖਾਣੇ ਦੀ ਕਿਸਮ",
+  "mealTypeBreakfast": "ਨਾਸ਼ਤਾ",
+  "mealTypeLunch": "ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ",
+  "mealTypeDinner": "ਰਾਤ ਦਾ ਖਾਣਾ",
+  "mealTypeSnack": "ਸਨੈਕ",
+  "mealTypeCustom": "ਕਸਟਮ",
+  "mealGramsLabel": "ਮਾਤਰਾ (ਗ੍ਰਾਮ)",
+  "mealAddItem": "ਭੋਜਨ ਜੋੜੋ",
+  "mealNoteLabel": "ਨੋਟ (ਵਿਕਲਪਿਕ)",
+  "mealFavoriteToggle": "ਪਸੰਦੀਦਾ ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਕਰੋ",
+  "mealRepeatSection": "ਤੇਜ਼ ਦੁਹਰਾਓ",
+  "mealRepeatFavorites": "ਪਸੰਦੀਦਾ",
+  "mealRepeatRecent": "ਹਾਲੀਆ",
+  "mealSave": "ਖਾਣਾ ਸੰਭਾਲੋ",
+  "mealItemsHeading": "ਆਈਟਮਾਂ",
+  "mealSavedToast": "ਖਾਣਾ ਸੰਭਾਲਿਆ ਗਿਆ।",
+  "mealNeedsItem": "ਪਹਿਲਾਂ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਭੋਜਨ ਜੋੜੋ।",
+  "mealTotalsHeading": "ਰੋਜ਼ਾਨਾ ਕੁੱਲ",
+  "mealTotalsKcal": "ਊਰਜਾ: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "ਨੈੱਟ ਕਾਰਬਸ: {value} ਗ੍ਰਾ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "ਕੁੱਲ ਕਾਰਬਸ: {value} ਗ੍ਰਾ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ਫਾਈਬਰ: {value} ਗ੍ਰਾ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ਪ੍ਰੋਟੀਨ: {value} ਗ੍ਰਾ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "ਚਰਬੀ: {value} ਗ੍ਰਾ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "ਆਮ ਤੌਰ 'ਤੇ ਚੰਗੀ ਚੋਣ",
+  "guideGroupLimit": "ਮਾਤਰਾ ਜਾਂ ਵਾਰਵਾਰਤਾ ਦੀ ਹੱਦ ਲੋੜੀਂਦੀ ਹੋ ਸਕਦੀ ਹੈ",
+  "guideGroupAvoid": "ਆਮ ਤੌਰ 'ਤੇ ਕੀਟੋਜੈਨਿਕ ਟੀਚਿਆਂ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ",
+  "guideWhyHeading": "ਕਿਉਂ?",
+  "guideTypicalPortion": "ਆਮ ਮਾਤਰਾ: {portion} (~{grams} ਗ੍ਰਾ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ਬਦਲ: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ਡਾਟਾ ਸਰੋਤ: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "ਮਾਸ, ਮੱਛੀ ਅਤੇ ਅੰਡੇ",
+  "guideCardLowCarbVegetables": "ਘੱਟ ਕਾਰਬ ਵਾਲੀਆਂ ਸਬਜ਼ੀਆਂ",
+  "guideCardFatsOils": "ਚਰਬੀ ਅਤੇ ਤੇਲ",
+  "guideCardNutsSeeds": "ਮੇਵੇ ਅਤੇ ਬੀਜ",
+  "guideCardBerries": "ਬੇਰੀਆਂ",
+  "guideCardDairy": "ਪੂਰੀ ਚਰਬੀ ਵਾਲੀ ਡੇਅਰੀ",
+  "guideCardFruit": "ਫਲ",
+  "guideCardLegumes": "ਦਾਲਾਂ",
+  "guideCardMilkDrinks": "ਦੁੱਧ ਅਤੇ ਮਿੱਠੇ ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ",
+  "guideCardSugaryDrinks": "ਖੰਡ ਵਾਲੇ ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ",
+  "guideCardStarches": "ਰੋਟੀ, ਚੌਲ, ਆਲੂ",
+  "guideCardSweets": "ਮਿਠਾਈਆਂ ਅਤੇ ਮਿੱਠੇ ਪਕਵਾਨ",
+  "logMealRelation": "{mealType} ਤੋਂ {hours} ਘੰਟੇ ਬਾਅਦ ਦਰਜ ਕੀਤਾ — ਸਿਰਫ਼ ਸਮੇਂ ਦਾ ਸੰਦਰਭ, ਪ੍ਰਭਾਵ ਨਹੀਂ।",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ਇਸ ਰੀਡਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਵਿਸ਼ਲੇਸ਼ਣ ਵਿੰਡੋ ਵਿੱਚ ਕੋਈ ਖਾਣਾ ਦਰਜ ਨਹੀਂ ਹੋਇਆ।",
+  "logRelationWindowLabel": "ਖਾਣਾ ਸੰਬੰਧ ਵਿੰਡੋ",
+  "logConfoundersHeading": "ਰੀਡਿੰਗਾਂ ਨੂੰ ਹੋਰ ਕੀ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦਾ ਹੈ?",
+  "mealTypeShortBreakfast": "ਨਾਸ਼ਤਾ",
+  "mealTypeShortLunch": "ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ",
+  "mealTypeShortDinner": "ਰਾਤ ਦਾ ਖਾਣਾ",
+  "mealTypeShortSnack": "ਸਨੈਕ",
+  "mealTypeShortCustom": "ਖਾਣਾ",
+  "recipePerServing": "{value} ਸਰਵਿੰਗ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "ਤਿਆਰੀ: {value} ਮਿੰਟ",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ਐਲਰਜਨ: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ਸਮੱਗਰੀ",
+  "recipeGrams": "{value} ਗ੍ਰਾ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ਕਦਮ",
+  "recipeStorage": "ਭੰਡਾਰਨ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ਅਧਿਐਨ ਵਿੱਚ ਵਰਤੀ ਗਈ ਖੋਜ ਹੱਦ",
+  "goalLegendClinician": "ਮੇਰੇ ਡਾਕਟਰ ਦਾ ਟੀਚਾ",
+  "goalLegendPersonal": "ਮੇਰਾ ਨਿੱਜੀ ਟ੍ਰੈਕਿੰਗ ਟੀਚਾ",
+  "goalLegendPersonalNote": "ਨਿੱਜੀ ਟ੍ਰੈਕਿੰਗ ਟੀਚਾ ਡਾਕਟਰੀ ਟੀਚਾ ਨਹੀਂ ਹੈ।",
+  "weightValueLabel": "ਭਾਰ ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "ਹਾਲਤ (ਵਿਕਲਪਿਕ, ਜਿਵੇਂ ਸਵੇਰੇ, ਕਸਰਤ ਤੋਂ ਬਾਅਦ)",
+  "weightSave": "ਭਾਰ ਸੰਭਾਲੋ",
+  "symptomFormTitle": "ਲੱਛਣ ਲੌਗ ਕਰੋ",
+  "symptomDefinitionLabel": "ਲੱਛਣ",
+  "symptomSeverityLabel": "ਗੰਭੀਰਤਾ: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "ਨੋਟ (ਵਿਕਲਪਿਕ)",
+  "symptomSave": "ਲੱਛਣ ਸੰਭਾਲੋ",
+  "symptomSavedToast": "ਲੱਛਣ ਸੰਭਾਲਿਆ ਗਿਆ।",
+  "symptomGuidance": "ਤੁਸੀਂ ਇੱਕ ਅਹਿਮ ਲੱਛਣ ਚਿੰਨ੍ਹਿਤ ਕੀਤਾ ਹੈ। ਇਹ ਐਪ ਨਿਦਾਨ ਨਹੀਂ ਕਰਦੀ। ਆਪਣੀ ਸਿਹਤ ਯੋਜਨਾ ਦੀ ਪਾਲਣਾ ਕਰੋ, ਅਤੇ ਜੇ ਤੁਸੀਂ ਬੀਮਾਰ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ ਜਾਂ ਲੱਛਣ ਗੰਭੀਰ ਹਨ ਤਾਂ ਸਥਾਨਕ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।",
+  "symptomSeizureGuidance": "ਤੁਸੀਂ ਦੌਰੇ ਦੀ ਘਟਨਾ ਦਰਜ ਕੀਤੀ ਹੈ। ਇਹ ਐਪ ਨਿਦਾਨ ਨਹੀਂ ਕਰਦੀ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਸਿਹਤ ਯੋਜਨਾ ਦੀ ਪਾਲਣਾ ਕਰੋ ਅਤੇ ਆਪਣੇ ਸਿਹਤ ਪੇਸ਼ੇਵਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ; ਜ਼ਰੂਰੀ ਹੋਵੇ ਤਾਂ ਸਥਾਨਕ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਨੂੰ ਕਾਲ ਕਰੋ।",
+  "trendsRange7": "7 ਦਿਨ",
+  "trendsRange30": "30 ਦਿਨ",
+  "trendsRange90": "90 ਦਿਨ",
+  "trendsSummary": "ਪਿਛਲੇ {days} ਦਿਨਾਂ ਵਿੱਚ {count} ਰੀਡਿੰਗਾਂ। ਤਾਜ਼ਾ: {latest}, ਔਸਤ: {average}।",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ਇਸ ਹੱਦ ਵਿੱਚ ਕੋਈ ਡਾਟਾ ਨਹੀਂ।",
+  "trendsExplainsTitle": "ਇਹ ਚਾਰਟ ਕੀ ਦੱਸਦਾ ਹੈ — ਅਤੇ ਕੀ ਨਹੀਂ",
+  "trendsExplainsBody": "ਚਾਰਟ ਤੁਹਾਡੀਆਂ ਆਪਣੀਆਂ ਰੀਡਿੰਗਾਂ ਨੂੰ ਸਮੇਂ ਦੇ ਨਾਲ ਕੱਚੇ ਬਿੰਦੂਆਂ ਵਜੋਂ ਦਿਖਾਉਂਦਾ ਹੈ। ਇਹ ਨਿਦਾਨ ਨਹੀਂ ਕਰਦਾ, ਭਵਿੱਖਬਾਣੀ ਨਹੀਂ ਕਰਦਾ ਅਤੇ ਕਾਰਨ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ। ਗੁੰਮ ਦਿਨ ਖਾਲੀ ਥਾਂ ਵਜੋਂ ਦਿਖਦੇ ਹਨ, ਜ਼ੀਰੋ ਵਜੋਂ ਨਹੀਂ।",
+  "trendsWeightChart": "ਭਾਰ (ਕਿਲੋ)",
+  "trendsBandsNote": "ਖੋਜ ਹੱਦਾਂ ਵਿਕਲਪਿਕ ਹਨ ਅਤੇ ਮੂਲ ਰੂਪ ਵਿੱਚ ਬੰਦ ਹਨ। ਚਾਲੂ ਕਰਨ ਲਈ ਲੌਗ ਟੈਬ ਵੇਖੋ।",
+  "evidenceDiseaseFilter": "ਬਿਮਾਰੀ-ਵਿਸ਼ੇਸ਼ ਖੋਜ ਵਿਖਾਓ (ਤੁਹਾਡੇ ਪੜ੍ਹਨ ਲਈ ਚੁਣੇ ਸਰੋਤਾਂ ਤੋਂ)",
+  "evidenceSectionTitle": "ਵਿਗਿਆਨਕ ਸਰੋਤ ਅਤੇ ਲੇਖ",
+  "guideCopyLink": "ਸਰੋਤ ਲਿੰਕ ਕਾਪੀ ਕਰੋ",
+  "planTitle": "ਹਫ਼ਤਾਵਾਰੀ ਯੋਜਨਾ",
+  "planGenerateDraft": "ਹਫ਼ਤਾਵਾਰੀ ਖਰੜਾ ਬਣਾਓ",
+  "planDraftLockedNote": "ਆਟੋਮੈਟਿਕ ਯੋਜਨਾ ਬਣਾਉਣਾ ਬੰਦ ਰਹੇਗਾ: ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਯੋਗ ਸਿਹਤ ਪੇਸ਼ੇਵਰ ਨਾਲ ਵਿਚਾਰੋ।",
+  "planCreatedToast": "ਹਫ਼ਤਾਵਾਰੀ ਯੋਜਨਾ ਬਣ ਗਈ।",
+  "planItemDay": "ਦਿਨ {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "ਯੋਜਨਾ ਤੋਂ ਖਰੀਦਦਾਰੀ ਸੂਚੀ ਬਣਾਓ",
+  "shoppingTitle": "ਖਰੀਦਦਾਰੀ ਸੂਚੀ",
+  "shoppingUndo": "ਵਾਪਸ ਕਰੋ",
+  "shoppingAddManual": "ਆਈਟਮ ਹੱਥੀਂ ਜੋੜੋ",
+  "shoppingCheckedToggle": "ਟਿੱਕ ਕਰੋ",
+  "shoppingEmpty": "ਹਾਲੇ ਕੋਈ ਖਰੀਦਦਾਰੀ ਸੂਚੀ ਨਹੀਂ।",
+  "planEmpty": "ਹਾਲੇ ਕੋਈ ਹਫ਼ਤਾਵਾਰੀ ਯੋਜਨਾ ਨਹੀਂ। ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੀਆਂ ਰੈਸਿਪੀਆਂ ਤੋਂ ਖਰੜਾ ਬਣਾਓ।",
+  "aboutTitle": "ਬਾਰੇ",
+  "aboutSlogan": "ਨਿੱਜੀ ਕੀਟੋ ਜਰਨਲ",
+  "aboutVersion": "ਸੰਸਕਰਣ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ਓਪਨ ਸੋਰਸ",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 ਲਾਇਸੈਂਸ ਅਧੀਨ ਮੁਫ਼ਤ ਓਪਨ-ਸੋਰਸ ਸਾਫਟਵੇਅਰ ਹੈ। ਤੁਸੀਂ ਉਸੇ ਲਾਇਸੈਂਸ ਅਧੀਨ ਕੋਡ ਦੀ ਜਾਂਚ, ਸੋਧ ਅਤੇ ਮੁੜ-ਵੰਡ ਕਰ ਸਕਦੇ ਹੋ।",
+  "aboutPrivacyHeading": "ਪਰਦੇਦਾਰੀ",
+  "aboutPrivacyBody": "ਤੁਹਾਡਾ ਸਿਹਤ ਡਾਟਾ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਰਹਿੰਦਾ ਹੈ। ਕੋਈ ਖਾਤਾ ਨਹੀਂ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ।",
+  "aboutDisclaimerHeading": "ਬੇਦਾਅਵਾ",
+  "aboutDisclaimerBody": "ਇਹ ਐਪ ਆਮ ਜਾਣਕਾਰੀ ਅਤੇ ਨਿੱਜੀ ਟ੍ਰੈਕਿੰਗ ਲਈ ਹੈ। ਇਹ ਡਾਕਟਰੀ ਸਲਾਹ, ਨਿਦਾਨ ਜਾਂ ਇਲਾਜ ਨਹੀਂ ਹੈ।",
+  "aboutLicensesButton": "ਲਾਇਸੈਂਸ",
+  "aboutShareButton": "ਇਹ ਐਪ ਸਾਂਝੀ ਕਰੋ",
+  "aboutOtherAppsButton": "ਹੋਰ ਐਪਾਂ",
+  "aboutCopiedToast": "ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ।",
+  "licensesTitle": "ਲਾਇਸੈਂਸ",
+  "otherAppsTitle": "ਹੋਰ ਐਪਾਂ",
+  "otherAppsEmpty": "ਹਾਲੇ ਕੋਈ ਹੋਰ ਐਪ ਸੂਚੀਬੱਧ ਨਹੀਂ।",
+  "otherAppsCopyLink": "ਸਟੋਰ ਲਿੰਕ ਕਾਪੀ ਕਰੋ",
+  "settingsTitle": "ਸੈਟਿੰਗਾਂ",
+  "aboutShareText": "ਗਲੂਕੋਜ਼, ਕੀਟੋਨ ਅਤੇ GKI ਟ੍ਰੈਕਿੰਗ ਵਾਲਾ ਨਿੱਜੀ ਕੀਟੋ ਜਰਨਲ। ਓਪਨ ਸੋਰਸ, ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।",
+  "dataManagementTitle": "ਡਾਟਾ ਪ੍ਰਬੰਧਨ",
+  "dataExportJson": "ਡਾਟਾ ਐਕਸਪੋਰਟ ਕਰੋ (JSON)",
+  "dataExportCsv": "ਮਾਪ ਐਕਸਪੋਰਟ ਕਰੋ (CSV)",
+  "dataImportLabel": "ਐਕਸਪੋਰਟ ਕੀਤਾ JSON ਇੱਥੇ ਪੇਸਟ ਕਰੋ",
+  "dataImportButton": "ਡਾਟਾ ਇੰਪੋਰਟ ਕਰੋ",
+  "dataImportSuccess": "{glucose} ਗਲੂਕੋਜ਼ ਅਤੇ {weight} ਭਾਰ ਰਿਕਾਰਡ ਇੰਪੋਰਟ ਹੋਏ।",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ਇੰਪੋਰਟ ਅਸਫਲ: ਫਾਈਲ ਅਵੈਧ ਜਾਂ ਅਸਮਰਥਿਤ ਹੈ।",
+  "dataDeleteAll": "ਮੇਰਾ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਓ",
+  "dataDeleteConfirm1": "ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਉਣਾ ਹੈ? ਇਸ ਵਿੱਚ ਮਾਪ, ਖਾਣਾ, ਯੋਜਨਾਵਾਂ ਅਤੇ ਸੈਟਿੰਗਾਂ ਸ਼ਾਮਲ ਹਨ। ਇਹ ਵਾਪਸ ਨਹੀਂ ਹੋ ਸਕਦਾ।",
+  "dataDeleteConfirm2": "ਕੀ ਤੁਹਾਨੂੰ ਸੱਚਮੁੱਚ ਯਕੀਨ ਹੈ? ਪੁਸ਼ਟੀ ਲਈ DELETE ਟਾਈਪ ਕਰੋ।",
+  "dataDeleteTypeDelete": "DELETE ਟਾਈਪ ਕਰੋ",
+  "dataDeleteDone": "ਸਾਰਾ ਡਾਟਾ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ({count} ਰਿਕਾਰਡ)।",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ਐਕਸਪੋਰਟ ਫਾਈਲ ਤਿਆਰ ਹੈ — ਚੁਣੋ ਕਿ ਕਿੱਥੇ ਸੰਭਾਲਣੀ ਹੈ।",
+  "settingsAppearance": "ਦਿੱਖ",
+  "themeSystem": "ਸਿਸਟਮ",
+  "themeLight": "ਲਾਈਟ",
+  "themeDark": "ਡਾਰਕ",
+  "settingsLanguage": "ਭਾਸ਼ਾ",
+  "settingsMore": "ਹੋਰ"
+}

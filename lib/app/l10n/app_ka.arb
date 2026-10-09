@@ -1,0 +1,452 @@
+{
+  "@@locale": "ka",
+  "appTitle": "N Keto Tracker",
+  "navToday": "დღეს",
+  "navLog": "ჟურნალი",
+  "navPlan": "გეგმა",
+  "navTrends": "ტენდენციები",
+  "navGuide": "გზამკვლევი",
+  "pageUnderConstruction": "ეს ეკრანი მზადდება.",
+  "generalInfoDisclaimer": "მხოლოდ ზოგადი ინფორმაციისთვის; არ არის სამედიცინო რჩევა.",
+  "onboardingLanguageTitle": "აირჩიეთ ენა",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "თქვენი მონაცემები თქვენს მოწყობილობაზე რჩება",
+  "onboardingPrivacyBody": "N Keto Tracker თქვენს გაზომვებს, კვებას და ჩანაწერებს ინახავს მხოლოდ ამ აპლიკაციაში, თქვენს მოწყობილობაზე. ანგარიში არ არსებობს და თქვენი ჯანმრთელობის მონაცემები არსად იგზავნება. აპლიკაციის წაშლით მონაცემებიც წაიშლება; სარეზერვო ასლის ექსპორტი ნებისმიერ დროს შეგიძლიათ.",
+  "onboardingMedicalTitle": "არ არის სამედიცინო რჩევა",
+  "onboardingMedicalBody": "ეს აპლიკაცია განკუთვნილია ზოგადი ინფორმაციისა და პირადი აღრიცხვისთვის. ის არ არის სამედიცინო რჩევა, დიაგნოზი ან მკურნალობა და არ ანაცვლებს კვალიფიციური ჯანდაცვის სპეციალისტების დახმარებას.",
+  "onboardingPurposeTitle": "რისი თვალყურის დევნება გსურთ?",
+  "onboardingPurposeLearn": "კეტოგენურ კვებაზე ინფორმაციის მიღება",
+  "onboardingPurposeMeals": "კვების დაგეგმვა",
+  "onboardingPurposeMacros": "მაკროებისა და წმინდა ნახშირწყლების აღრიცხვა",
+  "onboardingPurposeMeasure": "გლუკოზის, კეტონებისა და GKI-ს აღრიცხვა",
+  "onboardingProfileTitle": "თქვენ შესახებ (არასავალდებულო)",
+  "onboardingProfileBody": "შეგიძლიათ გამოტოვოთ და მოგვიანებით დაამატოთ პარამეტრებში. გამოიყენება მხოლოდ ენერგიის ზოგადი შეფასებისთვის.",
+  "onboardingBirthYear": "დაბადების წელი",
+  "onboardingHeightCm": "სიმაღლე (სმ)",
+  "onboardingWeightKg": "წონა (კგ)",
+  "onboardingEnergyCoeffTitle": "ენერგიის შეფასების კოეფიციენტი",
+  "onboardingEnergyCoeffBody": "ენერგიის ზოგადი შეფასება იყენებს ორიდან ერთ გამოქვეყნებულ კოეფიციენტს. ეს არ ეხება თქვენს გენდერულ იდენტობას — უბრალოდ გვიჩვენებს, განტოლების რომელი ვერსია გერგებათ უკეთ. ენერგიის შეფასებების სრულად გამოტოვებაც შეგიძლიათ.",
+  "onboardingEnergyCoeffSkip": "ენერგიის შეფასებების გამოტოვება",
+  "onboardingScreeningTitle": "რამდენიმე უსაფრთხოების კითხვა",
+  "onboardingScreeningBody": "ეს კითხვები არაფერს არ ადგენს დიაგნოზად. ისინი მხოლოდ გამორთავენ გეგმისა და მიზნების ავტომატურ შეთავაზებებს, როცა დამატებითი სიფრთხილეა საჭირო.",
+  "onboardingScreeningDiabetes": "მაქვს დიაბეტი",
+  "onboardingScreeningMedication": "ვიყენებ გლუკოზის დამწევ წამალს ან ინსულინს",
+  "onboardingScreeningPregnancy": "ორსულად ვარ ან ძუძუთი ვკვებავ",
+  "onboardingScreeningOrgan": "მაქვს თირკმლის, ღვიძლის ან პანკრეასის დაავადება",
+  "onboardingScreeningEatingDisorder": "მქონდა კვების დარღვევა",
+  "onboardingScreeningWeightLoss": "მქონდა მნიშვნელოვანი უნებლიე წონის კლება",
+  "onboardingScreeningUnder18": "18 წელზე ნაკლები ასაკის ვარ",
+  "onboardingScreeningLockedNote": "თქვენი პასუხების გამო გეგმისა და მიზნების ავტომატური შექმნა გამორთული რჩება. ჩაწერისა და სწავლის ფუნქციები ხელმისაწვდომია. გთხოვთ, გადაამოწმოთ კვალიფიციურ ჯანდაცვის სპეციალისტთან.",
+  "onboardingDataTitle": "თქვენი მონაცემები",
+  "onboardingDataBody": "თქვენი ჩანაწერები რჩება მხოლოდ ამ მოწყობილობაზე. თუ აპლიკაციას დაკარგავთ ან წაშლით სარეზერვო ასლის ექსპორტის გარეშე, მონაცემების აღდგენა შეუძლებელია.",
+  "onboardingConsentTitle": "თანხმობა",
+  "onboardingConsentBody": "წავიკითხე და ვეთანხმები კონფიდენციალურობის შეჯამებას და გაფრთხილებას, რომ ეს აპლიკაცია არ არის სამედიცინო რჩევა. მესმის, რომ ჩემი მონაცემები რჩება მხოლოდ ამ მოწყობილობაზე.",
+  "onboardingConsentCheckbox": "ვეთანხმები",
+  "onboardingNext": "შემდეგი",
+  "onboardingBack": "უკან",
+  "onboardingFinish": "აპლიკაციის გამოყენების დაწყება",
+  "onboardingStepOf": "ნაბიჯი {current} / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "გლუკოზა ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "სისხლის კეტონი BHB (mmol/L)",
+  "formSourceType": "წყაროს ტიპი",
+  "formNote": "შენიშვნა (არასავალდებულო)",
+  "formPickTime": "გაზომვის დრო",
+  "formSaveSession": "გაზომვის სესიის შენახვა",
+  "formInvalidValue": "გთხოვთ, შეიყვანოთ სწორი დადებითი რიცხვი.",
+  "gkiResultHeading": "თქვენი GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "გაზომილია: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "გამოთვლის ვერსია: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "გაზომვები ჯერ არ არის",
+  "logEmptyBody": "დაამატეთ პირველი გლუკოზისა და კეტონის ჩვენება, რომ აქ ნახოთ.",
+  "logBandsToggle": "წაკითხული სტატიის კვლევის დიაპაზონების ჩვენება",
+  "bandsDisclaimer": "ეს დიაპაზონები არ არის კლინიკური ნორმა ან დადასტურებული სამკურნალო მიზანი. ისინი კონკრეტული კვლევითი ჩარჩოდან აღებული საილუსტრაციო, არადამნიშვნელი შეთავაზებებია. GKI მარტო არ აჩვენებს ჯანმრთელობას, დაავადებაზე რეაგირებას ან უსაფრთხოებას. წყაროს სანახავად შეეხეთ.",
+  "logBandOptimal": "შემოთავაზებული ოპტიმალური კვლევითი დიაპაზონი (GKI ≤ 1.0)",
+  "logBandTherapeutic": "შემოთავაზებული თერაპიული კვლევითი დიაპაზონი (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "შემოთავაზებული ≤ 2.0 კვლევითი დიაპაზონის გარეთ",
+  "logMatchSimultaneous": "ერთდროულად",
+  "logMatchApproximate": "სავარაუდო დამთხვევა",
+  "logTimelineHeading": "დროის ხაზი",
+  "logChartsHeading": "გრაფიკები",
+  "logGlucoseChart": "გლუკოზა (mmol/L)",
+  "logBhbChart": "კეტონი BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "წყაროს ბმულის კოპირება",
+  "todayQuickActions": "სწრაფი მოქმედებები",
+  "todayAddMeasurement": "გაზომვის დამატება",
+  "todayAddMeal": "კვების დამატება",
+  "todayAddWeight": "წონის დამატება",
+  "todayAddSymptom": "სიმპტომის დამატება",
+  "todayLatestTitle": "ბოლო გაზომვები",
+  "todayLatestEmpty": "გაზომვები ჯერ არ არის. გამოიყენეთ „გაზომვის დამატება“ გლუკოზისა და კეტონ BHB-ის ერთად ჩასაწერად.",
+  "todayNutritionTitle": "დღევანდელი კვება",
+  "todayNutritionEmpty": "დღეს კვება ჩაწერილი არ არის. კვება ჩაიწერება „გეგმის“ ჩანართიდან.",
+  "todayWeightTitle": "წონა",
+  "todayWeightEmpty": "წონის ჩანაწერები ჯერ არ არის.",
+  "todaySymptomsTitle": "დღევანდელი სიმპტომები",
+  "todaySymptomsEmpty": "დღეს სიმპტომები ჩაწერილი არ არის.",
+  "todayPlansTitle": "დაგეგმილი კვება",
+  "todayPlansEmpty": "დღევანდელი კვების გეგმა არ არის.",
+  "comingSoonTitle": "მოდის მომდევნო განახლებაში",
+  "comingSoonBody": "ეს შეყვანის ფორმა მზადდება. პროგრესს პროექტის რეპოზიტორიაში თვალყურს ადევნებთ.",
+  "mealFormTitle": "კვების ჩაწერა",
+  "mealSearchLabel": "საკვების ძიება",
+  "mealTypeLabel": "კვების ტიპი",
+  "mealTypeBreakfast": "საუზმე",
+  "mealTypeLunch": "ლანჩი",
+  "mealTypeDinner": "ვახშამი",
+  "mealTypeSnack": "ხრუსტუნა",
+  "mealTypeCustom": "საკუთარი",
+  "mealGramsLabel": "რაოდენობა (გ)",
+  "mealAddItem": "საკვების დამატება",
+  "mealNoteLabel": "შენიშვნა (არასავალდებულო)",
+  "mealFavoriteToggle": "ფავორიტად მონიშვნა",
+  "mealRepeatSection": "სწრაფი გამეორება",
+  "mealRepeatFavorites": "ფავორიტები",
+  "mealRepeatRecent": "ბოლო",
+  "mealSave": "კვების შენახვა",
+  "mealItemsHeading": "ელემენტები",
+  "mealSavedToast": "კვება შენახულია.",
+  "mealNeedsItem": "ჯერ დაამატეთ მინიმუმ ერთი საკვები.",
+  "mealTotalsHeading": "დღიური ჯამები",
+  "mealTotalsKcal": "ენერგია: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "წმინდა ნახშირწყლები: {value} გ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "სულ ნახშირწყლები: {value} გ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ბოჭკო: {value} გ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ცილა: {value} გ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "ცხიმი: {value} გ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "ზოგადად კარგი არჩევანი",
+  "guideGroupLimit": "შეიძლება საჭირო იყოს ულუფის ან სიხშირის შეზღუდვა",
+  "guideGroupAvoid": "ზოგადად შეუთავსებელია კეტოგენურ მიზნებთან",
+  "guideWhyHeading": "რატომ?",
+  "guideTypicalPortion": "ტიპური ულუფა: {portion} (~{grams} გ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ალტერნატივები: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "მონაცემთა წყარო: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "ხორცი, თევზი და კვერცხი",
+  "guideCardLowCarbVegetables": "დაბალნახშირწყლოვანი ბოსტნეული",
+  "guideCardFatsOils": "ცხიმები და ზეთები",
+  "guideCardNutsSeeds": "თხილეული და თესლი",
+  "guideCardBerries": "კენკრა",
+  "guideCardDairy": "სრულცხიმიანი რძის პროდუქტები",
+  "guideCardFruit": "ხილი",
+  "guideCardLegumes": "პარკოსნები",
+  "guideCardMilkDrinks": "რძე და ტკბილი სასმელები",
+  "guideCardSugaryDrinks": "შაქრიანი სასმელები",
+  "guideCardStarches": "პური, ბრინჯი, კარტოფილი",
+  "guideCardSweets": "ტკბილეული და დესერტები",
+  "logMealRelation": "ჩაწერილია {hours} სთ-ის შემდეგ ({mealType}) — მხოლოდ დროითი კონტექსტი, არა ეფექტი.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ამ ჩვენებამდე ანალიზის ფანჯარაში კვება ჩაწერილი არ არის.",
+  "logRelationWindowLabel": "კვებასთან კავშირის ფანჯარა",
+  "logConfoundersHeading": "კიდევ რას შეუძლია გავლენა მოახდინოს ჩვენებებზე?",
+  "mealTypeShortBreakfast": "საუზმე",
+  "mealTypeShortLunch": "ლანჩი",
+  "mealTypeShortDinner": "ვახშამი",
+  "mealTypeShortSnack": "ხრუსტუნა",
+  "mealTypeShortCustom": "კვება",
+  "recipePerServing": "{value} ულუფა",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "მომზადება: {value} წთ",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ალერგენები: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ინგრედიენტები",
+  "recipeGrams": "{value} გ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ნაბიჯები",
+  "recipeStorage": "შენახვა: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "კვლევაში გამოყენებული დიაპაზონი",
+  "goalLegendClinician": "ჩემი ექიმის მიზანი",
+  "goalLegendPersonal": "ჩემი პირადი აღრიცხვის მიზანი",
+  "goalLegendPersonalNote": "პირადი აღრიცხვის მიზანი არ არის სამედიცინო მიზანი.",
+  "weightValueLabel": "წონა ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "პირობა (არასავალდებულო, მაგ. დილით, ვარჯიშის შემდეგ)",
+  "weightSave": "წონის შენახვა",
+  "symptomFormTitle": "სიმპტომის ჩაწერა",
+  "symptomDefinitionLabel": "სიმპტომი",
+  "symptomSeverityLabel": "სიმძიმე: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "შენიშვნა (არასავალდებულო)",
+  "symptomSave": "სიმპტომის შენახვა",
+  "symptomSavedToast": "სიმპტომი შენახულია.",
+  "symptomGuidance": "თქვენ მონიშნეთ მნიშვნელოვანი სიმპტომი. ეს აპლიკაცია დიაგნოზს არ სვამს. იხელმძღვანელეთ თქვენი ჯანმრთელობის გეგმით და დაუკავშირდით ადგილობრივ გადაუდებელ სამსახურს, თუ ცუდად ხართ ან სიმპტომები მძიმეა.",
+  "symptomSeizureGuidance": "თქვენ ჩაწერეთ გულყრის ეპიზოდი. ეს აპლიკაცია დიაგნოზს არ სვამს. გთხოვთ, იხელმძღვანელოთ თქვენი ჯანმრთელობის გეგმით და დაუკავშირდეთ ჯანდაცვის სპეციალისტს; გადაუდებელ შემთხვევაში დარეკეთ ადგილობრივ გადაუდებელ სამსახურში.",
+  "trendsRange7": "7 დღე",
+  "trendsRange30": "30 დღე",
+  "trendsRange90": "90 დღე",
+  "trendsSummary": "{count} ჩვენება ბოლო {days} დღეში. ბოლო: {latest}, საშუალო: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ამ დიაპაზონში მონაცემები არ არის.",
+  "trendsExplainsTitle": "რას გეუბნებათ ეს გრაფიკი — და რას არა",
+  "trendsExplainsBody": "გრაფიკი აჩვენებს თქვენს საკუთარ ჩვენებებს დროში, როგორც დაუმუშავებელ წერტილებს. ის არ სვამს დიაგნოზს, არ ითვალისწინებს მომავალს და არ ადასტურებს მიზეზებს. გამოტოვებული დღეები ჩანს როგორც ხარვეზი და არა როგორც ნული.",
+  "trendsWeightChart": "წონა (კგ)",
+  "trendsBandsNote": "კვლევის დიაპაზონები არასავალდებულოა და ნაგულისხმევად გამორთულია. ჩასართავად იხილეთ „ჟურნალის“ ჩანართი.",
+  "evidenceDiseaseFilter": "დაავადებისთვის სპეციფიკური კვლევების ჩვენება (თქვენ მიერ არჩეული წყაროებიდან)",
+  "evidenceSectionTitle": "სამეცნიერო წყაროები და სტატიები",
+  "guideCopyLink": "წყაროს ბმულის კოპირება",
+  "planTitle": "კვირის გეგმა",
+  "planGenerateDraft": "კვირის დრაფტის შექმნა",
+  "planDraftLockedNote": "გეგმის ავტომატური შექმნა გამორთული რჩება: გთხოვთ, ჯერ გადაამოწმოთ კვალიფიციურ ჯანდაცვის სპეციალისტთან.",
+  "planCreatedToast": "კვირის გეგმა შეიქმნა.",
+  "planItemDay": "დღე {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "საყიდლების სიის შექმნა გეგმიდან",
+  "shoppingTitle": "საყიდლების სია",
+  "shoppingUndo": "გაუქმება",
+  "shoppingAddManual": "ელემენტის ხელით დამატება",
+  "shoppingCheckedToggle": "მონიშვნა",
+  "shoppingEmpty": "საყიდლების სია ჯერ არ არის.",
+  "planEmpty": "კვირის გეგმა ჯერ არ არის. დასაწყებად შექმენით დრაფტი თქვენი რეცეპტებიდან.",
+  "aboutTitle": "შესახებ",
+  "aboutSlogan": "პირადი კეტო დღიური",
+  "aboutVersion": "ვერსია {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ღია კოდი",
+  "aboutOpenSourceBody": "N Keto Tracker უფასო, ღია კოდის პროგრამაა GPL-3.0 ლიცენზიით. კოდის შემოწმება, შეცვლა და გავრცელება იმავე ლიცენზიით შეგიძლიათ.",
+  "aboutPrivacyHeading": "კონფიდენციალურობა",
+  "aboutPrivacyBody": "თქვენი ჯანმრთელობის მონაცემები რჩება ამ მოწყობილობაზე. ანგარიშის გარეშე, ანალიტიკის გარეშე.",
+  "aboutDisclaimerHeading": "პასუხისმგებლობის შეზღუდვა",
+  "aboutDisclaimerBody": "ეს აპლიკაცია განკუთვნილია ზოგადი ინფორმაციისა და პირადი აღრიცხვისთვის. ის არ არის სამედიცინო რჩევა, დიაგნოზი ან მკურნალობა.",
+  "aboutLicensesButton": "ლიცენზიები",
+  "aboutShareButton": "აპლიკაციის გაზიარება",
+  "aboutOtherAppsButton": "სხვა აპლიკაციები",
+  "aboutCopiedToast": "დაკოპირდა ბუფერში.",
+  "licensesTitle": "ლიცენზიები",
+  "otherAppsTitle": "სხვა აპლიკაციები",
+  "otherAppsEmpty": "სხვა აპლიკაციები ჯერ არ არის ჩამოთვლილი.",
+  "otherAppsCopyLink": "მაღაზიის ბმულის კოპირება",
+  "settingsTitle": "პარამეტრები",
+  "aboutShareText": "პირადი კეტო დღიური გლუკოზის, კეტონებისა და GKI-ს აღრიცხვით. ღია კოდი, ანგარიში არ არის საჭირო.",
+  "dataManagementTitle": "მონაცემთა მართვა",
+  "dataExportJson": "მონაცემების ექსპორტი (JSON)",
+  "dataExportCsv": "გაზომვების ექსპორტი (CSV)",
+  "dataImportLabel": "ჩასვით აქ ექსპორტირებული JSON",
+  "dataImportButton": "მონაცემების იმპორტი",
+  "dataImportSuccess": "იმპორტირდა {glucose} გლუკოზის და {weight} წონის ჩანაწერი.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "იმპორტი ვერ მოხერხდა: ფაილი არასწორია ან მხარდაუჭერელია.",
+  "dataDeleteAll": "ჩემი ყველა მონაცემის წაშლა",
+  "dataDeleteConfirm1": "წაიშალოს ყველა მონაცემი? ეს მოიცავს გაზომვებს, კვებას, გეგმებსა და პარამეტრებს. ამის გაუქმება შეუძლებელია.",
+  "dataDeleteConfirm2": "ნამდვილად დარწმუნებული ხართ? დასადასტურებლად აკრიფეთ DELETE.",
+  "dataDeleteTypeDelete": "აკრიფეთ DELETE",
+  "dataDeleteDone": "ყველა მონაცემი წაიშალა ({count} ჩანაწერი).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ექსპორტის ფაილი მზადაა — აირჩიეთ, სად შეინახოთ.",
+  "settingsAppearance": "იერსახე",
+  "themeSystem": "სისტემური",
+  "themeLight": "ღია",
+  "themeDark": "მუქი",
+  "settingsLanguage": "ენა",
+  "settingsMore": "მეტი"
+}

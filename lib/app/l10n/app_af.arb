@@ -1,0 +1,452 @@
+{
+  "@@locale": "af",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Vandag",
+  "navLog": "Logboek",
+  "navPlan": "Plan",
+  "navTrends": "Tendense",
+  "navGuide": "Gids",
+  "pageUnderConstruction": "Hierdie skerm word nog gebou.",
+  "generalInfoDisclaimer": "Slegs vir algemene inligting; nie mediese advies nie.",
+  "onboardingLanguageTitle": "Kies jou taal",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Jou data bly op jou toestel",
+  "onboardingPrivacyBody": "N Keto Tracker hou jou metings, maaltye en notas net in hierdie toep op jou toestel. Daar is geen rekening nie, en jou gesondheidsdata word nêrens heen gestuur nie. As jy die toep uitvee, word jou data uitgevee; jy kan enige tyd 'n rugsteun uitvoer.",
+  "onboardingMedicalTitle": "Nie mediese advies nie",
+  "onboardingMedicalBody": "Hierdie toep is vir algemene inligting en persoonlike opsporing. Dit is nie mediese advies, diagnose of behandeling nie en vervang nie sorg van gekwalifiseerde gesondheidswerkers nie.",
+  "onboardingPurposeTitle": "Wat wil jy dophou?",
+  "onboardingPurposeLearn": "Leer oor ketogeniese voeding",
+  "onboardingPurposeMeals": "Beplan maaltye",
+  "onboardingPurposeMacros": "Hou makro's en netto koolhidrate dop",
+  "onboardingPurposeMeasure": "Hou glukose, ketone en GKI dop",
+  "onboardingProfileTitle": "Oor jou (opsioneel)",
+  "onboardingProfileBody": "Jy kan dit oorslaan en later in instellings byvoeg. Dit word net vir 'n algemene energieskatting gebruik.",
+  "onboardingBirthYear": "Geboortejaar",
+  "onboardingHeightCm": "Lengte (cm)",
+  "onboardingWeightKg": "Gewig (kg)",
+  "onboardingEnergyCoeffTitle": "Energieskattingskoëffisiënt",
+  "onboardingEnergyCoeffBody": "Die algemene energieskatting gebruik een van twee gepubliseerde koëffisiënte. Dit gaan nie oor jou geslagsidentiteit nie — dit is net watter weergawe van die vergelyking jou die beste pas. Jy kan energieskattings ook heeltemal oorslaan.",
+  "onboardingEnergyCoeffSkip": "Slaan energieskattings oor",
+  "onboardingScreeningTitle": "'n Paar veiligheidsvrae",
+  "onboardingScreeningBody": "Hierdie vrae diagnoseer niks nie. Hulle skakel net outomatiese plan- en doelvoorstelle af wanneer ekstra sorg nodig is.",
+  "onboardingScreeningDiabetes": "Het diabetes",
+  "onboardingScreeningMedication": "Gebruik glukoseverlagende medikasie of insulien",
+  "onboardingScreeningPregnancy": "Is swanger of gee borsvoeding",
+  "onboardingScreeningOrgan": "Het nier-, lewer- of pankreassiekte",
+  "onboardingScreeningEatingDisorder": "Het 'n geskiedenis van 'n eetversteuring",
+  "onboardingScreeningWeightLoss": "Het beduidende onbedoelde gewigsverlies gehad",
+  "onboardingScreeningUnder18": "Is onder 18 jaar oud",
+  "onboardingScreeningLockedNote": "As gevolg van jou antwoorde bly outomatiese plan- en doelskepping af. Aanteken- en leerfunksies bly beskikbaar. Bespreek dit asseblief met 'n gekwalifiseerde gesondheidswerker.",
+  "onboardingDataTitle": "Jou data",
+  "onboardingDataBody": "Jou rekords bly net op hierdie toestel. As jy die toep verloor of deïnstalleer sonder 'n rugsteunuitvoer, kan die data nie herstel word nie.",
+  "onboardingConsentTitle": "Toestemming",
+  "onboardingConsentBody": "Ek het die privaatheidsopsomming en die kennisgewing dat hierdie toep nie mediese advies is nie, gelees en aanvaar dit. Ek verstaan dat my data net op hierdie toestel bly.",
+  "onboardingConsentCheckbox": "Ek aanvaar",
+  "onboardingNext": "Volgende",
+  "onboardingBack": "Terug",
+  "onboardingFinish": "Begin die toep gebruik",
+  "onboardingStepOf": "Stap {current} van {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukose ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Bloedketoon BHB (mmol/L)",
+  "formSourceType": "Brontipe",
+  "formNote": "Nota (opsioneel)",
+  "formPickTime": "Metingstyd",
+  "formSaveSession": "Stoor metingsessie",
+  "formInvalidValue": "Voer asseblief 'n geldige positiewe getal in.",
+  "gkiResultHeading": "Jou GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Gemeet om: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Berekeningsweergawe: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Nog geen metings nie",
+  "logEmptyBody": "Voeg jou eerste glukose- en ketoonlesing by om dit hier te sien.",
+  "logBandsToggle": "Wys navorsingsreekse uit die artikel wat jy gelees het",
+  "bandsDisclaimer": "Hierdie reekse is nie kliniese normale reekse of bewese behandelingsteikens nie. Dit is verteenwoordigende, nie-voorskriftelike voorstelle uit 'n spesifieke navorsingsraamwerk. GKI alleen wys nie gesondheid, siekterespons of veiligheid nie. Tik om die bron te sien.",
+  "logBandOptimal": "Voorgestelde optimale navorsingsreeks (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Voorgestelde terapeutiese navorsingsreeks (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Buite die voorgestelde ≤ 2.0 navorsingsreeks",
+  "logMatchSimultaneous": "gelyktydig",
+  "logMatchApproximate": "benaderde passing",
+  "logTimelineHeading": "Tydlyn",
+  "logChartsHeading": "Grafieke",
+  "logGlucoseChart": "Glukose (mmol/L)",
+  "logBhbChart": "Ketoon BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopieer bronskakel",
+  "todayQuickActions": "Vinnige aksies",
+  "todayAddMeasurement": "Voeg meting by",
+  "todayAddMeal": "Voeg maaltyd by",
+  "todayAddWeight": "Voeg gewig by",
+  "todayAddSymptom": "Voeg simptoom by",
+  "todayLatestTitle": "Jongste metings",
+  "todayLatestEmpty": "Nog geen metings nie. Gebruik 'Voeg meting by' om glukose en ketoon BHB saam aan te teken.",
+  "todayNutritionTitle": "Vandag se voeding",
+  "todayNutritionEmpty": "Geen maaltye vandag aangeteken nie. Maaltye word vanaf die Plan-oortjie aangeteken.",
+  "todayWeightTitle": "Gewig",
+  "todayWeightEmpty": "Nog geen gewigsinskrywings nie.",
+  "todaySymptomsTitle": "Vandag se simptome",
+  "todaySymptomsEmpty": "Geen simptome vandag aangeteken nie.",
+  "todayPlansTitle": "Beplande maaltye",
+  "todayPlansEmpty": "Geen maaltydplan vir vandag nie.",
+  "comingSoonTitle": "Kom in 'n komende opdatering",
+  "comingSoonBody": "Hierdie invoervorm word gebou. Jy kan vordering in die projekbewaarplek volg.",
+  "mealFormTitle": "Teken 'n maaltyd aan",
+  "mealSearchLabel": "Soek kos",
+  "mealTypeLabel": "Maaltydtipe",
+  "mealTypeBreakfast": "Ontbyt",
+  "mealTypeLunch": "Middagete",
+  "mealTypeDinner": "Aandete",
+  "mealTypeSnack": "Peuselhappie",
+  "mealTypeCustom": "Eie",
+  "mealGramsLabel": "Hoeveelheid (g)",
+  "mealAddItem": "Voeg kos by",
+  "mealNoteLabel": "Nota (opsioneel)",
+  "mealFavoriteToggle": "Merk as gunsteling",
+  "mealRepeatSection": "Vinnige herhaling",
+  "mealRepeatFavorites": "Gunstelinge",
+  "mealRepeatRecent": "Onlangs",
+  "mealSave": "Stoor maaltyd",
+  "mealItemsHeading": "Items",
+  "mealSavedToast": "Maaltyd gestoor.",
+  "mealNeedsItem": "Voeg eers ten minste een kos by.",
+  "mealTotalsHeading": "Daaglikse totale",
+  "mealTotalsKcal": "Energie: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Netto koolhidrate: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Totale koolhidrate: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Vesel: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Proteïen: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Vet: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Gewoonlik 'n goeie keuse",
+  "guideGroupLimit": "Mag porsie- of frekwensiebeperkings vereis",
+  "guideGroupAvoid": "Gewoonlik onversoenbaar met ketogeniese teikens",
+  "guideWhyHeading": "Hoekom?",
+  "guideTypicalPortion": "Tipiese porsie: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatiewe: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Databron: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Vleis, vis en eiers",
+  "guideCardLowCarbVegetables": "Lae-koolhidraat groente",
+  "guideCardFatsOils": "Vette en olies",
+  "guideCardNutsSeeds": "Neute en sade",
+  "guideCardBerries": "Bessies",
+  "guideCardDairy": "Volroom-suiwel",
+  "guideCardFruit": "Vrugte",
+  "guideCardLegumes": "Peulgewasse",
+  "guideCardMilkDrinks": "Melk en soet drankies",
+  "guideCardSugaryDrinks": "Suikerryke drankies",
+  "guideCardStarches": "Brood, rys, aartappel",
+  "guideCardSweets": "Lekkers en poedings",
+  "logMealRelation": "Aangeteken {hours} h na {mealType} — slegs tydkonteks, nie 'n effek nie.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Geen maaltyd aangeteken binne die ontledingsvenster voor hierdie lesing nie.",
+  "logRelationWindowLabel": "Maaltydverwantskapsvenster",
+  "logConfoundersHeading": "Wat kan lesings nog beïnvloed?",
+  "mealTypeShortBreakfast": "ontbyt",
+  "mealTypeShortLunch": "middagete",
+  "mealTypeShortDinner": "aandete",
+  "mealTypeShortSnack": "peuselhappie",
+  "mealTypeShortCustom": "maaltyd",
+  "recipePerServing": "{value} porsies",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Voorbereiding: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergene: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Bestanddele",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Stappe",
+  "recipeStorage": "Berging: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Navorsingsreeks wat in 'n studie gebruik is",
+  "goalLegendClinician": "My klinikus se teiken",
+  "goalLegendPersonal": "My persoonlike opsporingsdoel",
+  "goalLegendPersonalNote": "'n Persoonlike opsporingsdoel is nie 'n mediese teiken nie.",
+  "weightValueLabel": "Gewig ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Toestand (opsioneel, bv. oggend, na oefening)",
+  "weightSave": "Stoor gewig",
+  "symptomFormTitle": "Teken 'n simptoom aan",
+  "symptomDefinitionLabel": "Simptoom",
+  "symptomSeverityLabel": "Erns: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Nota (opsioneel)",
+  "symptomSave": "Stoor simptoom",
+  "symptomSavedToast": "Simptoom gestoor.",
+  "symptomGuidance": "Jy het 'n beduidende simptoom gemerk. Hierdie toep diagnoseer nie. Volg jou eie gesondheidsplan en kontak jou plaaslike nooddienste as jy sleg voel of simptome ernstig is.",
+  "symptomSeizureGuidance": "Jy het 'n aanvalgebeurtenis aangeteken. Hierdie toep diagnoseer nie. Volg asseblief jou gesondheidsplan en kontak jou gesondheidsorgverskaffer; bel plaaslike nooddienste as dit dringend is.",
+  "trendsRange7": "7 dae",
+  "trendsRange30": "30 dae",
+  "trendsRange90": "90 dae",
+  "trendsSummary": "{count} lesings in die laaste {days} dae. Jongste: {latest}, gemiddeld: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Geen data in hierdie reeks nie.",
+  "trendsExplainsTitle": "Wat hierdie grafiek jou vertel — en wat nie",
+  "trendsExplainsBody": "Die grafiek wys jou eie lesings oor tyd as rou punte. Dit diagnoseer nie, voorspel nie en bewys nie oorsake nie. Ontbrekende dae verskyn as gapings, nie as nulle nie.",
+  "trendsWeightChart": "Gewig (kg)",
+  "trendsBandsNote": "Navorsingsreekse is opsioneel en by verstek af. Sien die Logboek-oortjie om dit aan te skakel.",
+  "evidenceDiseaseFilter": "Wys siektespesifieke navorsing (uit die bronne wat jy kies om te lees)",
+  "evidenceSectionTitle": "Wetenskaplike bronne en artikels",
+  "guideCopyLink": "Kopieer bronskakel",
+  "planTitle": "Weekplan",
+  "planGenerateDraft": "Skep weeklikse konsep",
+  "planDraftLockedNote": "Outomatiese planskepping bly af: hersien dit asseblief eers met 'n gekwalifiseerde gesondheidswerker.",
+  "planCreatedToast": "Weekplan geskep.",
+  "planItemDay": "Dag {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Skep inkopielys uit plan",
+  "shoppingTitle": "Inkopielys",
+  "shoppingUndo": "Ontdoen",
+  "shoppingAddManual": "Voeg handmatige item by",
+  "shoppingCheckedToggle": "Merk af",
+  "shoppingEmpty": "Nog geen inkopielys nie.",
+  "planEmpty": "Nog geen weekplan nie. Skep 'n konsep uit jou resepte om te begin.",
+  "aboutTitle": "Oor",
+  "aboutSlogan": "Private keto-joernaal",
+  "aboutVersion": "Weergawe {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Oopbron",
+  "aboutOpenSourceBody": "N Keto Tracker is gratis oopbron-sagteware onder die GPL-3.0-lisensie. Jy kan die kode onder dieselfde lisensie ondersoek, wysig en herversprei.",
+  "aboutPrivacyHeading": "Privaatheid",
+  "aboutPrivacyBody": "Jou gesondheidsdata bly op hierdie toestel. Geen rekening, geen analitika nie.",
+  "aboutDisclaimerHeading": "Vrywaring",
+  "aboutDisclaimerBody": "Hierdie toep is vir algemene inligting en persoonlike opsporing. Dit is nie mediese advies, diagnose of behandeling nie.",
+  "aboutLicensesButton": "Lisensies",
+  "aboutShareButton": "Deel hierdie toep",
+  "aboutOtherAppsButton": "Ander toepassings",
+  "aboutCopiedToast": "Na knipbord gekopieer.",
+  "licensesTitle": "Lisensies",
+  "otherAppsTitle": "Ander toepassings",
+  "otherAppsEmpty": "Nog geen ander toepassings gelys nie.",
+  "otherAppsCopyLink": "Kopieer winkelskakel",
+  "settingsTitle": "Instellings",
+  "aboutShareText": "Private keto-joernaal met glukose-, ketoon- en GKI-opsporing. Oopbron, geen rekening nodig nie.",
+  "dataManagementTitle": "Databestuur",
+  "dataExportJson": "Voer data uit (JSON)",
+  "dataExportCsv": "Voer metings uit (CSV)",
+  "dataImportLabel": "Plak uitgevoerde JSON hier",
+  "dataImportButton": "Voer data in",
+  "dataImportSuccess": "{glucose} glukose- en {weight} gewigsrekords ingevoer.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Invoer het misluk: lêer ongeldig of nie ondersteun nie.",
+  "dataDeleteAll": "Vee al my data uit",
+  "dataDeleteConfirm1": "Vee AL die data uit? Dit sluit metings, maaltye, planne en instellings in. Dit kan nie ongedaan gemaak word nie.",
+  "dataDeleteConfirm2": "Is jy regtig seker? Tik DELETE om te bevestig.",
+  "dataDeleteTypeDelete": "Tik DELETE",
+  "dataDeleteDone": "Alle data uitgevee ({count} rekords).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Uitvoerlêer gereed — kies waar om dit te stoor.",
+  "settingsAppearance": "Voorkoms",
+  "themeSystem": "Stelsel",
+  "themeLight": "Lig",
+  "themeDark": "Donker",
+  "settingsLanguage": "Taal",
+  "settingsMore": "Meer"
+}

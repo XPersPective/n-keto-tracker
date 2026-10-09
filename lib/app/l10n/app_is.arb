@@ -1,0 +1,452 @@
+{
+  "@@locale": "is",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Í dag",
+  "navLog": "Skrá",
+  "navPlan": "Áætlun",
+  "navTrends": "Þróun",
+  "navGuide": "Leiðarvísir",
+  "pageUnderConstruction": "Þessi skjár er í vinnslu.",
+  "generalInfoDisclaimer": "Aðeins almennar upplýsingar; ekki læknisráð.",
+  "onboardingLanguageTitle": "Veldu tungumál",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Gögnin þín haldast á tækinu þínu",
+  "onboardingPrivacyBody": "N Keto Tracker geymir mælingar þínar, máltíðir og athugasemdir eingöngu í þessu forriti á tækinu þínu. Enginn reikningur er til og heilsugögnin þín eru aldrei send neitt. Ef þú eyðir forritinu eyðast gögnin; þú getur flutt út öryggisafrit hvenær sem er.",
+  "onboardingMedicalTitle": "Ekki læknisráð",
+  "onboardingMedicalBody": "Þetta forrit er til almennra upplýsinga og persónulegrar eftirfylgni. Það er ekki læknisráð, greining eða meðferð og kemur ekki í stað umönnunar hæfra heilbrigðisstarfsmanna.",
+  "onboardingPurposeTitle": "Hvað viltu fylgjast með?",
+  "onboardingPurposeLearn": "Læra um ketógenískt mataræði",
+  "onboardingPurposeMeals": "Skipuleggja máltíðir",
+  "onboardingPurposeMacros": "Fylgjast með fjölvum og hreinum kolvetnum",
+  "onboardingPurposeMeasure": "Fylgjast með glúkósa, ketónum og GKI",
+  "onboardingProfileTitle": "Um þig (valfrjálst)",
+  "onboardingProfileBody": "Þú getur sleppt þessu og bætt við síðar í stillingum. Þetta er aðeins notað fyrir almennt orkumat.",
+  "onboardingBirthYear": "Fæðingarár",
+  "onboardingHeightCm": "Hæð (cm)",
+  "onboardingWeightKg": "Þyngd (kg)",
+  "onboardingEnergyCoeffTitle": "Stuðull orkumats",
+  "onboardingEnergyCoeffBody": "Almennt orkumat notar annan af tveimur útgefnum stuðlum. Þetta snýst ekki um kynvitund þína — aðeins hvaða útgáfa jöfnunnar hentar þér best. Þú getur líka sleppt orkumati alveg.",
+  "onboardingEnergyCoeffSkip": "Sleppa orkumati",
+  "onboardingScreeningTitle": "Nokkrar öryggisspurningar",
+  "onboardingScreeningBody": "Þessar spurningar greina ekkert. Þær slökkva aðeins á sjálfvirkum tillögum um áætlun og markmið þegar aukin varúð er nauðsynleg.",
+  "onboardingScreeningDiabetes": "Er með sykursýki",
+  "onboardingScreeningMedication": "Nota lyf sem lækka blóðsykur eða insúlín",
+  "onboardingScreeningPregnancy": "Er ólétt eða með barn á brjósti",
+  "onboardingScreeningOrgan": "Er með nýrna-, lifrar- eða brissjúkdóm",
+  "onboardingScreeningEatingDisorder": "Hef sögu um átröskun",
+  "onboardingScreeningWeightLoss": "Hef lést verulega án þess að ætla mér það",
+  "onboardingScreeningUnder18": "Er yngri en 18 ára",
+  "onboardingScreeningLockedNote": "Vegna svara þinna er áfram slökkt á sjálfvirkri gerð áætlana og markmiða. Skráning og fræðsla eru áfram í boði. Ræddu þetta við hæfan heilbrigðisstarfsmann.",
+  "onboardingDataTitle": "Gögnin þín",
+  "onboardingDataBody": "Færslur þínar haldast eingöngu á þessu tæki. Ef þú týnir eða fjarlægir forritið án þess að flytja út öryggisafrit er ekki hægt að endurheimta gögnin.",
+  "onboardingConsentTitle": "Samþykki",
+  "onboardingConsentBody": "Ég hef lesið og samþykki yfirlit um persónuvernd og tilkynninguna um að þetta forrit sé ekki læknisráð. Ég skil að gögnin mín haldast eingöngu á þessu tæki.",
+  "onboardingConsentCheckbox": "Ég samþykki",
+  "onboardingNext": "Áfram",
+  "onboardingBack": "Til baka",
+  "onboardingFinish": "Byrja að nota forritið",
+  "onboardingStepOf": "Skref {current} af {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glúkósi ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Blóðketón BHB (mmol/L)",
+  "formSourceType": "Tegund heimildar",
+  "formNote": "Athugasemd (valfrjálst)",
+  "formPickTime": "Tími mælingar",
+  "formSaveSession": "Vista mælilotu",
+  "formInvalidValue": "Sláðu inn gilda jákvæða tölu.",
+  "gkiResultHeading": "GKI þitt",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Mælt: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Útreikningsútgáfa: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Engar mælingar enn",
+  "logEmptyBody": "Bættu við fyrsta glúkósa- og ketónmælingunni til að sjá hana hér.",
+  "logBandsToggle": "Sýna rannsóknarbil úr greininni sem þú last",
+  "bandsDisclaimer": "Þessi bil eru ekki klínísk eðlileg gildi eða sönnuð meðferðarmarkmið. Þetta eru dæmigerðar, ekki ávísandi tillögur úr tilteknum rannsóknarramma. GKI eitt og sér sýnir ekki heilsu, svörun við sjúkdómi eða öryggi. Ýttu til að sjá heimildina.",
+  "logBandOptimal": "Lagt til besta rannsóknarbil (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Lagt til meðferðarlegt rannsóknarbil (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Utan lagðs rannsóknarbils ≤ 2.0",
+  "logMatchSimultaneous": "samtímis",
+  "logMatchApproximate": "áætluð samsvörun",
+  "logTimelineHeading": "Tímalína",
+  "logChartsHeading": "Myndrit",
+  "logGlucoseChart": "Glúkósi (mmol/L)",
+  "logBhbChart": "Ketón BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Afrita tengil á heimild",
+  "todayQuickActions": "Flýtiaðgerðir",
+  "todayAddMeasurement": "Bæta við mælingu",
+  "todayAddMeal": "Bæta við máltíð",
+  "todayAddWeight": "Bæta við þyngd",
+  "todayAddSymptom": "Bæta við einkenni",
+  "todayLatestTitle": "Nýjustu mælingar",
+  "todayLatestEmpty": "Engar mælingar enn. Notaðu „Bæta við mælingu“ til að skrá glúkósa og ketón BHB saman.",
+  "todayNutritionTitle": "Næring dagsins",
+  "todayNutritionEmpty": "Engar máltíðir skráðar í dag. Máltíðir eru skráðar á flipanum Áætlun.",
+  "todayWeightTitle": "Þyngd",
+  "todayWeightEmpty": "Engar þyngdarfærslur enn.",
+  "todaySymptomsTitle": "Einkenni dagsins",
+  "todaySymptomsEmpty": "Engin einkenni skráð í dag.",
+  "todayPlansTitle": "Skipulagðar máltíðir",
+  "todayPlansEmpty": "Engin máltíðaáætlun fyrir daginn í dag.",
+  "comingSoonTitle": "Kemur í væntanlegri uppfærslu",
+  "comingSoonBody": "Þetta innsláttarform er í vinnslu. Þú getur fylgst með framvindu í gagnasafni verkefnisins.",
+  "mealFormTitle": "Skrá máltíð",
+  "mealSearchLabel": "Leita að mat",
+  "mealTypeLabel": "Tegund máltíðar",
+  "mealTypeBreakfast": "Morgunmatur",
+  "mealTypeLunch": "Hádegismatur",
+  "mealTypeDinner": "Kvöldmatur",
+  "mealTypeSnack": "Snarl",
+  "mealTypeCustom": "Sérsniðið",
+  "mealGramsLabel": "Magn (g)",
+  "mealAddItem": "Bæta við mat",
+  "mealNoteLabel": "Athugasemd (valfrjálst)",
+  "mealFavoriteToggle": "Merkja sem uppáhald",
+  "mealRepeatSection": "Fljótleg endurtekning",
+  "mealRepeatFavorites": "Uppáhöld",
+  "mealRepeatRecent": "Nýlegt",
+  "mealSave": "Vista máltíð",
+  "mealItemsHeading": "Atriði",
+  "mealSavedToast": "Máltíð vistuð.",
+  "mealNeedsItem": "Bættu fyrst við að minnsta kosti einu matvæli.",
+  "mealTotalsHeading": "Dagleg samtala",
+  "mealTotalsKcal": "Orka: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Hrein kolvetni: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Kolvetni alls: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Trefjar: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Prótein: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Fita: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Yfirleitt góður kostur",
+  "guideGroupLimit": "Gæti krafist takmörkunar á skammti eða tíðni",
+  "guideGroupAvoid": "Yfirleitt ósamrýmanlegt ketógenískum markmiðum",
+  "guideWhyHeading": "Hvers vegna?",
+  "guideTypicalPortion": "Dæmigerður skammtur: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Valkostir: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Gagnaheimild: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Kjöt, fiskur og egg",
+  "guideCardLowCarbVegetables": "Kolvetnasnautt grænmeti",
+  "guideCardFatsOils": "Fita og olíur",
+  "guideCardNutsSeeds": "Hnetur og fræ",
+  "guideCardBerries": "Ber",
+  "guideCardDairy": "Feitar mjólkurvörur",
+  "guideCardFruit": "Ávextir",
+  "guideCardLegumes": "Belgjurtir",
+  "guideCardMilkDrinks": "Mjólk og sætir drykkir",
+  "guideCardSugaryDrinks": "Sykraðir drykkir",
+  "guideCardStarches": "Brauð, hrísgrjón, kartöflur",
+  "guideCardSweets": "Sælgæti og eftirréttir",
+  "logMealRelation": "Skráð {hours} klst. eftir {mealType} — aðeins tímasamhengi, ekki áhrif.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Engin máltíð skráð í greiningarglugganum fyrir þessa mælingu.",
+  "logRelationWindowLabel": "Gluggi tengsla við máltíð",
+  "logConfoundersHeading": "Hvað annað getur haft áhrif á mælingar?",
+  "mealTypeShortBreakfast": "morgunmatur",
+  "mealTypeShortLunch": "hádegismatur",
+  "mealTypeShortDinner": "kvöldmatur",
+  "mealTypeShortSnack": "snarl",
+  "mealTypeShortCustom": "máltíð",
+  "recipePerServing": "{value} skammtar",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Undirbúningur: {value} mín.",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Ofnæmisvaldar: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Hráefni",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Skref",
+  "recipeStorage": "Geymsla: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Rannsóknarbil notað í rannsókn",
+  "goalLegendClinician": "Markmið læknisins míns",
+  "goalLegendPersonal": "Mitt persónulega eftirfylgnimarkmið",
+  "goalLegendPersonalNote": "Persónulegt eftirfylgnimarkmið er ekki læknisfræðilegt markmið.",
+  "weightValueLabel": "Þyngd ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Aðstæður (valfrjálst, t.d. morgun, eftir æfingu)",
+  "weightSave": "Vista þyngd",
+  "symptomFormTitle": "Skrá einkenni",
+  "symptomDefinitionLabel": "Einkenni",
+  "symptomSeverityLabel": "Alvarleiki: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Athugasemd (valfrjálst)",
+  "symptomSave": "Vista einkenni",
+  "symptomSavedToast": "Einkenni vistað.",
+  "symptomGuidance": "Þú merktir mikilvægt einkenni. Þetta forrit greinir ekki sjúkdóma. Fylgdu eigin heilsuáætlun og hafðu samband við neyðarþjónustu á þínu svæði ef þér líður illa eða einkennin eru alvarleg.",
+  "symptomSeizureGuidance": "Þú skráðir flogakast. Þetta forrit greinir ekki sjúkdóma. Fylgdu heilsuáætlun þinni og hafðu samband við heilbrigðisstarfsmann; hringdu í neyðarþjónustu á þínu svæði ef brýnt er.",
+  "trendsRange7": "7 dagar",
+  "trendsRange30": "30 dagar",
+  "trendsRange90": "90 dagar",
+  "trendsSummary": "{count} mælingar síðustu {days} daga. Nýjast: {latest}, meðaltal: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Engin gögn á þessu bili.",
+  "trendsExplainsTitle": "Hvað þetta myndrit segir þér — og hvað ekki",
+  "trendsExplainsBody": "Myndritið sýnir þínar eigin mælingar yfir tíma sem hrá stig. Það greinir ekki, spáir ekki og sannar ekki orsakir. Dagar sem vantar birtast sem eyður, ekki núll.",
+  "trendsWeightChart": "Þyngd (kg)",
+  "trendsBandsNote": "Rannsóknarbil eru valfrjáls og slökkt á þeim sjálfgefið. Sjáðu flipann Skrá til að kveikja á þeim.",
+  "evidenceDiseaseFilter": "Sýna rannsóknir sértækar fyrir sjúkdóma (úr heimildum sem þú velur að lesa)",
+  "evidenceSectionTitle": "Vísindaheimildir og greinar",
+  "guideCopyLink": "Afrita tengil á heimild",
+  "planTitle": "Vikuáætlun",
+  "planGenerateDraft": "Búa til vikudrög",
+  "planDraftLockedNote": "Sjálfvirk gerð áætlana er áfram slökkt: ræddu þetta fyrst við hæfan heilbrigðisstarfsmann.",
+  "planCreatedToast": "Vikuáætlun búin til.",
+  "planItemDay": "Dagur {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Búa til innkaupalista úr áætlun",
+  "shoppingTitle": "Innkaupalisti",
+  "shoppingUndo": "Afturkalla",
+  "shoppingAddManual": "Bæta við atriði handvirkt",
+  "shoppingCheckedToggle": "Haka við",
+  "shoppingEmpty": "Enginn innkaupalisti enn.",
+  "planEmpty": "Engin vikuáætlun enn. Búðu til drög úr uppskriftunum þínum til að byrja.",
+  "aboutTitle": "Um",
+  "aboutSlogan": "Einkaketódagbók",
+  "aboutVersion": "Útgáfa {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Opinn hugbúnaður",
+  "aboutOpenSourceBody": "N Keto Tracker er ókeypis opinn hugbúnaður með GPL-3.0 leyfi. Þú getur skoðað, breytt og dreift kóðanum undir sama leyfi.",
+  "aboutPrivacyHeading": "Persónuvernd",
+  "aboutPrivacyBody": "Heilsugögnin þín haldast á þessu tæki. Enginn reikningur, engin greining.",
+  "aboutDisclaimerHeading": "Fyrirvari",
+  "aboutDisclaimerBody": "Þetta forrit er til almennra upplýsinga og persónulegrar eftirfylgni. Það er ekki læknisráð, greining eða meðferð.",
+  "aboutLicensesButton": "Leyfi",
+  "aboutShareButton": "Deila þessu forriti",
+  "aboutOtherAppsButton": "Önnur forrit",
+  "aboutCopiedToast": "Afritað á klippiborð.",
+  "licensesTitle": "Leyfi",
+  "otherAppsTitle": "Önnur forrit",
+  "otherAppsEmpty": "Engin önnur forrit skráð enn.",
+  "otherAppsCopyLink": "Afrita tengil í verslun",
+  "settingsTitle": "Stillingar",
+  "aboutShareText": "Einkaketódagbók með eftirfylgni glúkósa, ketóna og GKI. Opinn hugbúnaður, enginn reikningur nauðsynlegur.",
+  "dataManagementTitle": "Gagnastjórnun",
+  "dataExportJson": "Flytja út gögn (JSON)",
+  "dataExportCsv": "Flytja út mælingar (CSV)",
+  "dataImportLabel": "Límdu útfluttan JSON hér",
+  "dataImportButton": "Flytja inn gögn",
+  "dataImportSuccess": "Fluttar inn {glucose} glúkósafærslur og {weight} þyngdarfærslur.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Innflutningur mistókst: skrá ógild eða óstudd.",
+  "dataDeleteAll": "Eyða öllum gögnunum mínum",
+  "dataDeleteConfirm1": "Eyða ÖLLUM gögnum? Það nær yfir mælingar, máltíðir, áætlanir og stillingar. Ekki er hægt að afturkalla þetta.",
+  "dataDeleteConfirm2": "Ertu alveg viss? Sláðu inn DELETE til að staðfesta.",
+  "dataDeleteTypeDelete": "Sláðu inn DELETE",
+  "dataDeleteDone": "Öllum gögnum eytt ({count} færslur).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Útflutningsskrá tilbúin — veldu hvar á að vista hana.",
+  "settingsAppearance": "Útlit",
+  "themeSystem": "Kerfi",
+  "themeLight": "Ljóst",
+  "themeDark": "Dökkt",
+  "settingsLanguage": "Tungumál",
+  "settingsMore": "Meira"
+}

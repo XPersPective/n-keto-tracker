@@ -1,0 +1,452 @@
+{
+  "@@locale": "my",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ယနေ့",
+  "navLog": "မှတ်တမ်း",
+  "navPlan": "အစီအစဉ်",
+  "navTrends": "လမ်းကြောင်း",
+  "navGuide": "လမ်းညွှန်",
+  "pageUnderConstruction": "ဤစခရင်ကို တည်ဆောက်နေဆဲဖြစ်သည်။",
+  "generalInfoDisclaimer": "အထွေထွေအချက်အလက်အတွက်သာ၊ ဆေးဘက်ဆိုင်ရာအကြံမဟုတ်ပါ။",
+  "onboardingLanguageTitle": "သင့်ဘာသာစကားကို ရွေးပါ",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "သင့်ဒေတာသည် သင့်စက်ထဲတွင်သာ ရှိနေမည်",
+  "onboardingPrivacyBody": "N Keto Tracker သည် သင့်တိုင်းတာမှုများ၊ အစားအစာနှင့် မှတ်စုများကို သင့်စက်ရှိ ဤအက်ပ်ထဲတွင်သာ သိမ်းထားသည်။ အကောင့်မရှိဘဲ သင့်ကျန်းမာရေးဒေတာကို ဘယ်နေရာကိုမျှ မပို့ပါ။ အက်ပ်ကိုဖျက်လျှင် ဒေတာပါ ပျက်သွားမည်၊ အရန်ကူးယူမှုကို အချိန်မရွေး ထုတ်ယူနိုင်သည်။",
+  "onboardingMedicalTitle": "ဆေးဘက်ဆိုင်ရာအကြံမဟုတ်ပါ",
+  "onboardingMedicalBody": "ဤအက်ပ်သည် အထွေထွေအချက်အလက်နှင့် ကိုယ်ပိုင်ခြေရာခံမှုအတွက်ဖြစ်သည်။ ဆေးဘက်ဆိုင်ရာအကြံ၊ ရောဂါရှာဖွေခြင်း သို့မဟုတ် ကုသမှု မဟုတ်ဘဲ အရည်အချင်းပြည့်မီ ကျန်းမာရေးပညာရှင်များ၏ စောင့်ရှောက်မှုကို မအစားထိုးနိုင်ပါ။",
+  "onboardingPurposeTitle": "ဘာကို ခြေရာခံချင်ပါသလဲ?",
+  "onboardingPurposeLearn": "ကီတိုဂျင်းနစ် အာဟာရအကြောင်း လေ့လာရန်",
+  "onboardingPurposeMeals": "အစားအစာ စီစဉ်ရန်",
+  "onboardingPurposeMacros": "မက်ခရိုနှင့် သန့်စင်ကာဗိုဟိုက်ဒရိတ် ခြေရာခံရန်",
+  "onboardingPurposeMeasure": "ဂလူးကို့စ်၊ ကီတုန်းနှင့် GKI ခြေရာခံရန်",
+  "onboardingProfileTitle": "သင့်အကြောင်း (မဖြစ်မနေမလို)",
+  "onboardingProfileBody": "ဤအဆင့်ကို ကျော်ပြီး နောက်မှ ဆက်တင်တွင် ထည့်နိုင်သည်။ အထွေထွေစွမ်းအင်ခန့်မှန်းမှုအတွက်သာ အသုံးပြုသည်။",
+  "onboardingBirthYear": "မွေးနှစ်",
+  "onboardingHeightCm": "အမြင့် (စင်တီမီတာ)",
+  "onboardingWeightKg": "ကိုယ်အလေးချိန် (ကီလို)",
+  "onboardingEnergyCoeffTitle": "စွမ်းအင်ခန့်မှန်းမှု ကိန်းဂဏန်း",
+  "onboardingEnergyCoeffBody": "အထွေထွေစွမ်းအင်ခန့်မှန်းမှုသည် ထုတ်ဝေပြီး ကိန်းဂဏန်းနှစ်ခုအနက် တစ်ခုကို သုံးသည်။ ၎င်းသည် သင့်ကျား/မ ဝိသေသနနှင့် မဆိုင်ပါ — ညီမျှခြင်း၏ မည်သည့်ဗားရှင်းက သင့်ကို အကိုက်ညီဆုံးဖြစ်သည်ကိုသာ ပြသည်။ စွမ်းအင်ခန့်မှန်းမှုများကို လုံးဝကျော်လွှားနိုင်သည်။",
+  "onboardingEnergyCoeffSkip": "စွမ်းအင်ခန့်မှန်းမှုများကို ကျော်ရန်",
+  "onboardingScreeningTitle": "လုံခြုံရေးမေးခွန်းအနည်းငယ်",
+  "onboardingScreeningBody": "ဤမေးခွန်းများသည် မည်သည့်အရာကိုမျှ မရောဂါရှာဖွေပါ။ အပိုဂရုစိုက်ရန်လိုသည့်အခါ အလိုအလျောက် အစီအစဉ်နှင့် ပန်းတိုင်အကြံပြုချက်များကိုသာ ပိတ်ပေးသည်။",
+  "onboardingScreeningDiabetes": "ဆီးချိုရောဂါရှိသည်",
+  "onboardingScreeningMedication": "ဂလူးကို့စ်လျှော့ဆေး သို့မဟုတ် အင်ဆူလင် သုံးသည်",
+  "onboardingScreeningPregnancy": "ကိုယ်ဝန်ဆောင် သို့မဟုတ် နို့တိုက်နေသည်",
+  "onboardingScreeningOrgan": "ကျောက်ကပ်၊ အသည်း သို့မဟုတ် ပန်ကရိယရောဂါရှိသည်",
+  "onboardingScreeningEatingDisorder": "စားသောက်ချို့ယွင်းမှု ရာဇဝင်ရှိသည်",
+  "onboardingScreeningWeightLoss": "မရည်ရွယ်ဘဲ ကိုယ်အလေးချိန် သိသိသာသာကျခဲ့သည်",
+  "onboardingScreeningUnder18": "အသက် ၁၈ နှစ်အောက်ဖြစ်သည်",
+  "onboardingScreeningLockedNote": "သင့်အဖြေများကြောင့် အလိုအလျောက် အစီအစဉ်နှင့် ပန်းတိုင်ဖန်တီးမှု ပိတ်ထားဆဲဖြစ်မည်။ မှတ်တမ်းတင်ခြင်းနှင့် လေ့လာခြင်းအင်္ဂါရပ်များ ဆက်ရနိုင်သည်။ ကျေးဇူးပြု၍ အရည်အချင်းပြည့်မီ ကျန်းမာရေးပညာရှင်နှင့် ပြန်လည်ဆွေးနွေးပါ။",
+  "onboardingDataTitle": "သင့်ဒေတာ",
+  "onboardingDataBody": "သင့်မှတ်တမ်းများသည် ဤစက်ထဲတွင်သာ ရှိနေမည်။ အရန်ထုတ်ယူမှုမရှိဘဲ အက်ပ်ကို ပျောက်ဆုံး သို့မဟုတ် ဖယ်ရှားလျှင် ဒေတာကို ပြန်ယူ၍မရပါ။",
+  "onboardingConsentTitle": "သဘောတူညီမှု",
+  "onboardingConsentBody": "ကိုယ်ရေးလုံခြုံမှုအကျဉ်းချုပ်နှင့် ဤအက်ပ်သည် ဆေးဘက်ဆိုင်ရာအကြံမဟုတ်ကြောင်း အသိပေးချက်ကို ဖတ်ပြီး လက်ခံပါသည်။ ကျွန်ုပ်၏ဒေတာသည် ဤစက်ထဲတွင်သာ ရှိနေကြောင်း နားလည်ပါသည်။",
+  "onboardingConsentCheckbox": "လက်ခံပါသည်",
+  "onboardingNext": "ရှေ့သို့",
+  "onboardingBack": "နောက်သို့",
+  "onboardingFinish": "အက်ပ်ကို စတင်အသုံးပြုရန်",
+  "onboardingStepOf": "အဆင့် {current} / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ဂလူးကို့စ် ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "သွေးကီတုန်း BHB (mmol/L)",
+  "formSourceType": "ရင်းမြစ်အမျိုးအစား",
+  "formNote": "မှတ်စု (မဖြစ်မနေမလို)",
+  "formPickTime": "တိုင်းတာချိန်",
+  "formSaveSession": "တိုင်းတာမှုစက်ရှင်ကို သိမ်းရန်",
+  "formInvalidValue": "ခိုင်လုံသော အပေါင်းကိန်းတစ်ခု ထည့်ပါ။",
+  "gkiResultHeading": "သင့် GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "တိုင်းတာချိန်: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "တွက်ချက်မှုဗားရှင်း: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "တိုင်းတာမှု မရှိသေးပါ",
+  "logEmptyBody": "ဤနေရာတွင်ကြည့်ရန် သင့်ပထမဆုံး ဂလူးကို့စ်နှင့် ကီတုန်းတန်ဖိုး ထည့်ပါ။",
+  "logBandsToggle": "သင်ဖတ်ခဲ့သော ဆောင်းပါးမှ သုတေသနအပိုင်းအခြားများကို ပြရန်",
+  "bandsDisclaimer": "ဤအပိုင်းအခြားများသည် လက်တွေ့ကျန်းမာရေးဆိုင်ရာ ပုံမှန်အပိုင်းအခြား သို့မဟုတ် သက်သေပြပြီး ကုသမှုပန်းတိုင်များ မဟုတ်ပါ။ သီးခြားသုတေသနမူဘောင်မှ ကိုယ်စားပြု၊ အမိန့်မပေးသော အကြံပြုချက်များသာဖြစ်သည်။ GKI တစ်ခုတည်းက ကျန်းမာရေး၊ ရောဂါတုံ့ပြန်မှု သို့မဟုတ် လုံခြုံမှုကို မပြပါ။ ရင်းမြစ်ကြည့်ရန် နှိပ်ပါ။",
+  "logBandOptimal": "အကြံပြုထားသော အကောင်းဆုံးသုတေသနအပိုင်းအခြား (GKI ≤ 1.0)",
+  "logBandTherapeutic": "အကြံပြုထားသော ကုထုံးသုတေသနအပိုင်းအခြား (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "အကြံပြုထားသော ≤ 2.0 သုတေသနအပိုင်းအခြားပြင်ပ",
+  "logMatchSimultaneous": "တစ်ပြိုင်နက်",
+  "logMatchApproximate": "ခန့်မှန်းကိုက်ညီမှု",
+  "logTimelineHeading": "အချိန်ဇယား",
+  "logChartsHeading": "ဇယားများ",
+  "logGlucoseChart": "ဂလူးကို့စ် (mmol/L)",
+  "logBhbChart": "ကီတုန်း BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ရင်းမြစ်လင့်ခ်ကို ကူးယူရန်",
+  "todayQuickActions": "အမြန်လုပ်ဆောင်ချက်များ",
+  "todayAddMeasurement": "တိုင်းတာမှုထည့်ရန်",
+  "todayAddMeal": "အစားအစာထည့်ရန်",
+  "todayAddWeight": "ကိုယ်အလေးချိန်ထည့်ရန်",
+  "todayAddSymptom": "လက္ခဏာထည့်ရန်",
+  "todayLatestTitle": "နောက်ဆုံးတိုင်းတာမှုများ",
+  "todayLatestEmpty": "တိုင်းတာမှု မရှိသေးပါ။ ဂလူးကို့စ်နှင့် ကီတုန်း BHB ကို အတူမှတ်တမ်းတင်ရန် 'တိုင်းတာမှုထည့်ရန်' ကို သုံးပါ။",
+  "todayNutritionTitle": "ယနေ့အာဟာရ",
+  "todayNutritionEmpty": "ယနေ့ အစားအစာ မှတ်တမ်းမတင်ရသေးပါ။ အစားအစာများကို အစီအစဉ်တက်ဘ်မှ မှတ်တမ်းတင်သည်။",
+  "todayWeightTitle": "ကိုယ်အလေးချိန်",
+  "todayWeightEmpty": "ကိုယ်အလေးချိန်မှတ်တမ်း မရှိသေးပါ။",
+  "todaySymptomsTitle": "ယနေ့လက္ခဏာများ",
+  "todaySymptomsEmpty": "ယနေ့ လက္ခဏာ မှတ်တမ်းမတင်ရသေးပါ။",
+  "todayPlansTitle": "စီစဉ်ထားသော အစားအစာ",
+  "todayPlansEmpty": "ယနေ့အတွက် အစားအစာအစီအစဉ် မရှိပါ။",
+  "comingSoonTitle": "လာမည့်အပ်ဒိတ်တွင် လာမည်",
+  "comingSoonBody": "ဤထည့်သွင်းပုံစံကို တည်ဆောက်နေဆဲဖြစ်သည်။ တိုးတက်မှုကို ပရောဂျက်သိုလှောင်ရုံတွင် လိုက်ကြည့်နိုင်သည်။",
+  "mealFormTitle": "အစားအစာ မှတ်တမ်းတင်ရန်",
+  "mealSearchLabel": "အစားအစာ ရှာရန်",
+  "mealTypeLabel": "အစားအစာအမျိုးအစား",
+  "mealTypeBreakfast": "နံနက်စာ",
+  "mealTypeLunch": "နေ့လည်စာ",
+  "mealTypeDinner": "ညစာ",
+  "mealTypeSnack": "သရေစာ",
+  "mealTypeCustom": "စိတ်ကြိုက်",
+  "mealGramsLabel": "ပမာဏ (ဂရမ်)",
+  "mealAddItem": "အစားအစာထည့်ရန်",
+  "mealNoteLabel": "မှတ်စု (မဖြစ်မနေမလို)",
+  "mealFavoriteToggle": "အကြိုက်ဆုံးအဖြစ် အမှတ်အသားပြုရန်",
+  "mealRepeatSection": "အမြန်ထပ်ခါ",
+  "mealRepeatFavorites": "အကြိုက်ဆုံး",
+  "mealRepeatRecent": "မကြာသေးမီ",
+  "mealSave": "အစားအစာကို သိမ်းရန်",
+  "mealItemsHeading": "ပစ္စည်းများ",
+  "mealSavedToast": "အစားအစာကို သိမ်းပြီးပါပြီ။",
+  "mealNeedsItem": "အစားအစာအနည်းဆုံးတစ်ခု အရင်ထည့်ပါ။",
+  "mealTotalsHeading": "နေ့စဉ်စုစုပေါင်း",
+  "mealTotalsKcal": "စွမ်းအင်: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "သန့်စင်ကာဗိုဟိုက်ဒရိတ်: {value} ဂရမ်",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "စုစုပေါင်းကာဗိုဟိုက်ဒရိတ်: {value} ဂရမ်",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "အမျှင်ဓာတ်: {value} ဂရမ်",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ပရိုတင်း: {value} ဂရမ်",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "အဆီ: {value} ဂရမ်",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "ယေဘုယျအားဖြင့် သင့်တော်သည်",
+  "guideGroupLimit": "ပမာဏ သို့မဟုတ် အကြိမ်ရေ ကန့်သတ်ရန် လိုနိုင်သည်",
+  "guideGroupAvoid": "ယေဘုယျအားဖြင့် ကီတိုဂျင်းနစ်ပန်းတိုင်များနှင့် မကိုက်ညီပါ",
+  "guideWhyHeading": "ဘာကြောင့်လဲ?",
+  "guideTypicalPortion": "ပုံမှန်ပမာဏ: {portion} (~{grams} ဂရမ်)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "အစားထိုးများ: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ဒေတာရင်းမြစ်: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "အသား၊ ငါးနှင့် ကြက်ဥ",
+  "guideCardLowCarbVegetables": "ကာဗိုဟိုက်ဒရိတ်နည်းသော ဟင်းသီးဟင်းရွက်",
+  "guideCardFatsOils": "အဆီနှင့် ဆီများ",
+  "guideCardNutsSeeds": "အခွံမာသီးနှင့် အစေ့များ",
+  "guideCardBerries": "ဘယ်ရီသီးများ",
+  "guideCardDairy": "အဆီပြည့်နို့ထွက်ပစ္စည်း",
+  "guideCardFruit": "သစ်သီးများ",
+  "guideCardLegumes": "ပဲအမျိုးအစားများ",
+  "guideCardMilkDrinks": "နို့နှင့် အချိုရည်များ",
+  "guideCardSugaryDrinks": "သကြားပါသော အချိုရည်များ",
+  "guideCardStarches": "ပေါင်မုန့်၊ ထမင်း၊ အာလူး",
+  "guideCardSweets": "မုန့်ချိုများနှင့် အချိုပွဲ",
+  "logMealRelation": "{mealType} အစားအစာပြီး {hours} နာရီအကြာတွင် မှတ်တမ်းတင်သည် — အချိန်ဆက်စပ်မှုသာ၊ သက်ရောက်မှုမဟုတ်ပါ။",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ဤတန်ဖိုးမတိုင်မီ ခွဲခြမ်းစိတ်ဖြာချိန်ဝင်းဒိုးအတွင်း အစားအစာ မှတ်တမ်းမတင်ထားပါ။",
+  "logRelationWindowLabel": "အစားအစာဆက်စပ်မှု ဝင်းဒိုး",
+  "logConfoundersHeading": "တန်ဖိုးများကို တခြားဘာတွေ သက်ရောက်နိုင်သလဲ?",
+  "mealTypeShortBreakfast": "နံနက်စာ",
+  "mealTypeShortLunch": "နေ့လည်စာ",
+  "mealTypeShortDinner": "ညစာ",
+  "mealTypeShortSnack": "သရေစာ",
+  "mealTypeShortCustom": "အစားအစာ",
+  "recipePerServing": "{value} ပွဲ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "ပြင်ဆင်ချိန်: {value} မိနစ်",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ဓာတ်မတည့်စေသောအရာများ: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ပါဝင်ပစ္စည်းများ",
+  "recipeGrams": "{value} ဂရမ်",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "အဆင့်များ",
+  "recipeStorage": "သိုလှောင်ခြင်း: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "လေ့လာမှုတစ်ခုတွင် သုံးခဲ့သော သုတေသနအပိုင်းအခြား",
+  "goalLegendClinician": "ကျွန်ုပ်ဆရာဝန်၏ ပန်းတိုင်",
+  "goalLegendPersonal": "ကျွန်ုပ်၏ ကိုယ်ပိုင်ခြေရာခံပန်းတိုင်",
+  "goalLegendPersonalNote": "ကိုယ်ပိုင်ခြေရာခံပန်းတိုင်သည် ဆေးဘက်ဆိုင်ရာပန်းတိုင် မဟုတ်ပါ။",
+  "weightValueLabel": "ကိုယ်အလေးချိန် ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "အခြေအနေ (မဖြစ်မနေမလို၊ ဥပမာ နံနက်၊ လေ့ကျင့်ခန်းပြီးနောက်)",
+  "weightSave": "ကိုယ်အလေးချိန်ကို သိမ်းရန်",
+  "symptomFormTitle": "လက္ခဏာ မှတ်တမ်းတင်ရန်",
+  "symptomDefinitionLabel": "လက္ခဏာ",
+  "symptomSeverityLabel": "ပြင်းထန်မှု: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "မှတ်စု (မဖြစ်မနေမလို)",
+  "symptomSave": "လက္ခဏာကို သိမ်းရန်",
+  "symptomSavedToast": "လက္ခဏာကို သိမ်းပြီးပါပြီ။",
+  "symptomGuidance": "သင်သည် သိသာသောလက္ခဏာတစ်ခုကို အမှတ်အသားပြုထားသည်။ ဤအက်ပ်သည် ရောဂါမရှာဖွေပါ။ သင့်ကိုယ်ပိုင်ကျန်းမာရေးအစီအစဉ်ကို လိုက်နာပြီး မကောင်းဟု ခံစားရလျှင် သို့မဟုတ် လက္ခဏာပြင်းထန်လျှင် ဒေသတွင်းအရေးပေါ်ဝန်ဆောင်မှုကို ဆက်သွယ်ပါ။",
+  "symptomSeizureGuidance": "သင်သည် ဖြတ်ခြင်းဖြစ်စဉ်တစ်ခု မှတ်တမ်းတင်ထားသည်။ ဤအက်ပ်သည် ရောဂါမရှာဖွေပါ။ သင့်ကျန်းမာရေးအစီအစဉ်ကို လိုက်နာပြီး ကျန်းမာရေးပညာရှင်ကို ဆက်သွယ်ပါ၊ အရေးပေါ်ဖြစ်လျှင် ဒေသတွင်းအရေးပေါ်ဝန်ဆောင်မှုကို ခေါ်ပါ။",
+  "trendsRange7": "၇ ရက်",
+  "trendsRange30": "၃၀ ရက်",
+  "trendsRange90": "၉၀ ရက်",
+  "trendsSummary": "လွန်ခဲ့သော {days} ရက်အတွင်း တန်ဖိုး {count} ခု။ နောက်ဆုံး: {latest}၊ ပျမ်းမျှ: {average}။",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ဤအပိုင်းအခြားတွင် ဒေတာ မရှိပါ။",
+  "trendsExplainsTitle": "ဤဇယားက ဘာပြောသလဲ — ဘာမပြောသလဲ",
+  "trendsExplainsBody": "ဇယားသည် သင့်ကိုယ်ပိုင်တန်ဖိုးများကို အချိန်နှင့်အမျှ မစီမံထားသော အမှတ်များအဖြစ် ပြသည်။ ၎င်းသည် ရောဂါမရှာဖွေ၊ ကြိုမတွက်၊ အကြောင်းရင်းကို သက်သေမပြပါ။ ပျောက်နေသောရက်များသည် သုညမဟုတ်ဘဲ ကွက်လပ်အဖြစ် ပေါ်လာမည်။",
+  "trendsWeightChart": "ကိုယ်အလေးချိန် (ကီလို)",
+  "trendsBandsNote": "သုတေသနအပိုင်းအခြားများသည် ရွေးချယ်နိုင်ပြီး မူလအားဖြင့် ပိတ်ထားသည်။ ဖွင့်ရန် မှတ်တမ်းတက်ဘ်ကို ကြည့်ပါ။",
+  "evidenceDiseaseFilter": "ရောဂါအလိုက် သုတေသနများကို ပြရန် (သင်ဖတ်ရန်ရွေးထားသော ရင်းမြစ်များမှ)",
+  "evidenceSectionTitle": "သိပ္ပံရင်းမြစ်များနှင့် ဆောင်းပါးများ",
+  "guideCopyLink": "ရင်းမြစ်လင့်ခ်ကို ကူးယူရန်",
+  "planTitle": "အပတ်စဉ်အစီအစဉ်",
+  "planGenerateDraft": "အပတ်စဉ်မူကြမ်း ဖန်တီးရန်",
+  "planDraftLockedNote": "အလိုအလျောက် အစီအစဉ်ဖန်တီးမှု ပိတ်ထားဆဲဖြစ်မည်။ ကျေးဇူးပြု၍ အရည်အချင်းပြည့်မီ ကျန်းမာရေးပညာရှင်နှင့် အရင်ပြန်လည်ဆွေးနွေးပါ။",
+  "planCreatedToast": "အပတ်စဉ်အစီအစဉ် ဖန်တီးပြီးပါပြီ။",
+  "planItemDay": "နေ့ {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "အစီအစဉ်မှ ဈေးဝယ်စာရင်း ဖန်တီးရန်",
+  "shoppingTitle": "ဈေးဝယ်စာရင်း",
+  "shoppingUndo": "နောက်ပြန်ရန်",
+  "shoppingAddManual": "ပစ္စည်းကို လက်ဖြင့်ထည့်ရန်",
+  "shoppingCheckedToggle": "အမှန်ခြစ်ရန်",
+  "shoppingEmpty": "ဈေးဝယ်စာရင်း မရှိသေးပါ။",
+  "planEmpty": "အပတ်စဉ်အစီအစဉ် မရှိသေးပါ။ စတင်ရန် သင့်ချက်ပြုတ်နည်းများမှ မူကြမ်းဖန်တီးပါ။",
+  "aboutTitle": "အကြောင်း",
+  "aboutSlogan": "ကိုယ်ပိုင် ကီတိုမှတ်တမ်း",
+  "aboutVersion": "ဗားရှင်း {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ဖွင့်လှစ်ထားသောရင်းမြစ်",
+  "aboutOpenSourceBody": "N Keto Tracker သည် GPL-3.0 လိုင်စင်အောက်ရှိ အခမဲ့ဖွင့်လှစ်ထားသောရင်းမြစ်ဆော့ဖ်ဝဲဖြစ်သည်။ ထိုလိုင်စင်အတိုင်း ကုဒ်ကို စစ်ဆေး၊ ပြင်ဆင်၊ ပြန်လည်ဖြန့်ဝေနိုင်သည်။",
+  "aboutPrivacyHeading": "ကိုယ်ရေးလုံခြုံမှု",
+  "aboutPrivacyBody": "သင့်ကျန်းမာရေးဒေတာသည် ဤစက်ထဲတွင်သာ ရှိနေမည်။ အကောင့်မရှိ၊ ခွဲခြမ်းစိတ်ဖြာမှုမရှိ။",
+  "aboutDisclaimerHeading": "တာဝန်ငြင်းဆိုချက်",
+  "aboutDisclaimerBody": "ဤအက်ပ်သည် အထွေထွေအချက်အလက်နှင့် ကိုယ်ပိုင်ခြေရာခံမှုအတွက်ဖြစ်သည်။ ဆေးဘက်ဆိုင်ရာအကြံ၊ ရောဂါရှာဖွေခြင်း သို့မဟုတ် ကုသမှု မဟုတ်ပါ။",
+  "aboutLicensesButton": "လိုင်စင်များ",
+  "aboutShareButton": "ဤအက်ပ်ကို မျှဝေရန်",
+  "aboutOtherAppsButton": "အခြားအက်ပ်များ",
+  "aboutCopiedToast": "ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ။",
+  "licensesTitle": "လိုင်စင်များ",
+  "otherAppsTitle": "အခြားအက်ပ်များ",
+  "otherAppsEmpty": "အခြားအက်ပ်များ စာရင်းမသွင်းရသေးပါ။",
+  "otherAppsCopyLink": "စတိုးလင့်ခ်ကို ကူးယူရန်",
+  "settingsTitle": "ဆက်တင်များ",
+  "aboutShareText": "ဂလူးကို့စ်၊ ကီတုန်းနှင့် GKI ခြေရာခံမှုပါသော ကိုယ်ပိုင်ကီတိုမှတ်တမ်း။ ဖွင့်လှစ်ထားသောရင်းမြစ်၊ အကောင့်မလိုပါ။",
+  "dataManagementTitle": "ဒေတာစီမံခန့်ခွဲမှု",
+  "dataExportJson": "ဒေတာ ထုတ်ယူရန် (JSON)",
+  "dataExportCsv": "တိုင်းတာမှုများ ထုတ်ယူရန် (CSV)",
+  "dataImportLabel": "ထုတ်ယူထားသော JSON ကို ဤနေရာတွင် ကူးထည့်ပါ",
+  "dataImportButton": "ဒေတာ သွင်းရန်",
+  "dataImportSuccess": "ဂလူးကို့စ်မှတ်တမ်း {glucose} ခုနှင့် ကိုယ်အလေးချိန်မှတ်တမ်း {weight} ခု သွင်းပြီးပါပြီ။",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "သွင်းမှု မအောင်မြင်ပါ — ဖိုင်မမှန်ကန် သို့မဟုတ် မပံ့ပိုးပါ။",
+  "dataDeleteAll": "ကျွန်ုပ်၏ဒေတာအားလုံး ဖျက်ရန်",
+  "dataDeleteConfirm1": "ဒေတာအားလုံးကို ဖျက်မလား။ ၎င်းတွင် တိုင်းတာမှုများ၊ အစားအစာ၊ အစီအစဉ်များနှင့် ဆက်တင်များ ပါဝင်သည်။ ပြန်ပြင်၍မရပါ။",
+  "dataDeleteConfirm2": "တကယ်သေချာပါသလား။ အတည်ပြုရန် DELETE ဟု ရိုက်ပါ။",
+  "dataDeleteTypeDelete": "DELETE ဟု ရိုက်ပါ",
+  "dataDeleteDone": "ဒေတာအားလုံး ဖျက်ပြီးပါပြီ (မှတ်တမ်း {count} ခု)။",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ထုတ်ယူဖိုင် အသင့်ဖြစ်ပါပြီ — သိမ်းမည့်နေရာကို ရွေးပါ။",
+  "settingsAppearance": "အသွင်အပြင်",
+  "themeSystem": "စနစ်",
+  "themeLight": "အလင်း",
+  "themeDark": "အမှောင်",
+  "settingsLanguage": "ဘာသာစကား",
+  "settingsMore": "နောက်ထပ်"
+}

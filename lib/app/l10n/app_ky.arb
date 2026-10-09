@@ -1,0 +1,452 @@
+{
+  "@@locale": "ky",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Бүгүн",
+  "navLog": "Журнал",
+  "navPlan": "План",
+  "navTrends": "Тренддер",
+  "navGuide": "Жетекчилик",
+  "pageUnderConstruction": "Бул экран иштелип чыгууда.",
+  "generalInfoDisclaimer": "Жалпы маалымат үчүн гана; медициналык кеңеш эмес.",
+  "onboardingLanguageTitle": "Тилди тандаңыз",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Маалыматыңыз түзмөгүңүздө калат",
+  "onboardingPrivacyBody": "N Keto Tracker өлчөөлөрүңүздү, тамактарыңызды жана жазууларыңызды түзмөгүңүздөгү ушул колдонмодо гана сактайт. Аккаунт жок жана ден соолук маалыматыңыз эч жакка жөнөтүлбөйт. Колдонмону өчүрсөңүз, маалыматыңыз да өчөт; камдык көчүрмөнү каалаган убакта экспорттой аласыз.",
+  "onboardingMedicalTitle": "Медициналык кеңеш эмес",
+  "onboardingMedicalBody": "Бул колдонмо жалпы маалымат жана жеке көзөмөл үчүн. Ал медициналык кеңеш, диагноз же дарылоо эмес жана квалификациялуу саламаттыкты сактоо адистеринин жардамын алмаштырбайт.",
+  "onboardingPurposeTitle": "Эмнени көзөмөлдөгүңүз келет?",
+  "onboardingPurposeLearn": "Кетогендик тамактануу жөнүндө билүү",
+  "onboardingPurposeMeals": "Тамакты пландоо",
+  "onboardingPurposeMacros": "Макролорду жана таза углеводдорду көзөмөлдөө",
+  "onboardingPurposeMeasure": "Глюкоза, кетондор жана GKI көзөмөлдөө",
+  "onboardingProfileTitle": "Өзүңүз жөнүндө (милдеттүү эмес)",
+  "onboardingProfileBody": "Муну өткөрүп жиберип, кийин жөндөөлөрдө кошсоңуз болот. Энергияны жалпы баалоо үчүн гана колдонулат.",
+  "onboardingBirthYear": "Туулган жылы",
+  "onboardingHeightCm": "Бою (см)",
+  "onboardingWeightKg": "Салмагы (кг)",
+  "onboardingEnergyCoeffTitle": "Энергияны баалоо коэффициенти",
+  "onboardingEnergyCoeffBody": "Энергияны жалпы баалоо жарыяланган эки коэффициенттин бирин колдонот. Бул сиздин гендердик өзгөчөлүгүңүзгө тиешеси жок — теңдеменин кайсы вариантынын сизге ылайыктуу экенин гана көрсөтөт. Энергия баасын толугу менен өткөрүп жиберсеңиз да болот.",
+  "onboardingEnergyCoeffSkip": "Энергия баасын өткөрүп жиберүү",
+  "onboardingScreeningTitle": "Бир нече коопсуздук суроосу",
+  "onboardingScreeningBody": "Бул суроолор эч кандай диагноз койбойт. Алар кошумча этият болуу керек болгондо гана план жана максаттардын автоматтык сунуштарын өчүрөт.",
+  "onboardingScreeningDiabetes": "Диабетим бар",
+  "onboardingScreeningMedication": "Глюкозаны төмөндөтүүчү дары же инсулин колдоном",
+  "onboardingScreeningPregnancy": "Кош бойлуумун же бала эмизип жатам",
+  "onboardingScreeningOrgan": "Бөйрөк, боор же уйку безинин оорусу бар",
+  "onboardingScreeningEatingDisorder": "Тамактануу бузулушу болгон",
+  "onboardingScreeningWeightLoss": "Эрким менен эмес олуттуу арыктадым",
+  "onboardingScreeningUnder18": "18 жашка чыга элекмин",
+  "onboardingScreeningLockedNote": "Жоопторуңузга байланыштуу план жана максаттарды автоматтык түзүү өчүк бойдон калат. Жазуу жана үйрөнүү функциялары жеткиликтүү. Муну квалификациялуу саламаттыкты сактоо адиси менен талкуулаңыз.",
+  "onboardingDataTitle": "Маалыматыңыз",
+  "onboardingDataBody": "Жазууларыңыз ушул түзмөктө гана калат. Камдык көчүрмөнү экспорттобой колдонмону жоготсоңуз же өчүрсөңүз, маалыматты калыбына келтирүү мүмкүн эмес.",
+  "onboardingConsentTitle": "Макулдук",
+  "onboardingConsentBody": "Мен купуялуулук кыскача мазмунун жана бул колдонмо медициналык кеңеш эмес экени жөнүндөгү эскертүүнү окудум жана кабыл алам. Маалыматым ушул түзмөктө гана калаарын түшүнөм.",
+  "onboardingConsentCheckbox": "Кабыл алам",
+  "onboardingNext": "Кийинки",
+  "onboardingBack": "Артка",
+  "onboardingFinish": "Колдонмону колдонууну баштоо",
+  "onboardingStepOf": "{current}-кадам / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Глюкоза ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Кандагы кетон BHB (mmol/L)",
+  "formSourceType": "Булак түрү",
+  "formNote": "Эскертме (милдеттүү эмес)",
+  "formPickTime": "Өлчөө убактысы",
+  "formSaveSession": "Өлчөө сессиясын сактоо",
+  "formInvalidValue": "Жарактуу оң сан киргизиңиз.",
+  "gkiResultHeading": "Сиздин GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Өлчөнгөн убакыт: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Эсептөө версиясы: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Азырынча өлчөөлөр жок",
+  "logEmptyBody": "Бул жерде көрүү үчүн биринчи глюкоза жана кетон көрсөткүчүн кошуңуз.",
+  "logBandsToggle": "Окуган макаланын изилдөө диапазондорун көрсөтүү",
+  "bandsDisclaimer": "Бул диапазондор клиникалык норма же далилденген дарылоо максаттары эмес. Алар белгилүү бир изилдөө алкагынан алынган үлгү, буйруксуз сунуштар. GKI жалгыз ден соолукту, ооруга жоопту же коопсуздукту көрсөтпөйт. Булакты көрүү үчүн таптаңыз.",
+  "logBandOptimal": "Сунушталган оптималдуу изилдөө диапазону (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Сунушталган терапиялык изилдөө диапазону (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Сунушталган ≤ 2.0 изилдөө диапазонунан сырткары",
+  "logMatchSimultaneous": "бир убакта",
+  "logMatchApproximate": "болжолдуу дал келүү",
+  "logTimelineHeading": "Убакыт сызыгы",
+  "logChartsHeading": "Графиктер",
+  "logGlucoseChart": "Глюкоза (mmol/L)",
+  "logBhbChart": "Кетон BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Булак шилтемесин көчүрүү",
+  "todayQuickActions": "Тез аракеттер",
+  "todayAddMeasurement": "Өлчөө кошуу",
+  "todayAddMeal": "Тамак кошуу",
+  "todayAddWeight": "Салмак кошуу",
+  "todayAddSymptom": "Белги кошуу",
+  "todayLatestTitle": "Акыркы өлчөөлөр",
+  "todayLatestEmpty": "Азырынча өлчөөлөр жок. Глюкоза менен кетон BHB'ны чогуу жазуу үчүн «Өлчөө кошуу» баскычын колдонуңуз.",
+  "todayNutritionTitle": "Бүгүнкү тамактануу",
+  "todayNutritionEmpty": "Бүгүн тамак жазылган жок. Тамак «План» өтмөгүнөн жазылат.",
+  "todayWeightTitle": "Салмак",
+  "todayWeightEmpty": "Салмак жазуулары азырынча жок.",
+  "todaySymptomsTitle": "Бүгүнкү белгилер",
+  "todaySymptomsEmpty": "Бүгүн белгилер жазылган жок.",
+  "todayPlansTitle": "Пландалган тамактар",
+  "todayPlansEmpty": "Бүгүнкү күнгө тамактануу планы жок.",
+  "comingSoonTitle": "Кийинки жаңыртууда келет",
+  "comingSoonBody": "Бул киргизүү формасы иштелип чыгууда. Жүрүшүн долбоордун репозиторийинен көрө аласыз.",
+  "mealFormTitle": "Тамакты жазуу",
+  "mealSearchLabel": "Тамак издөө",
+  "mealTypeLabel": "Тамак түрү",
+  "mealTypeBreakfast": "Эртең мененки тамак",
+  "mealTypeLunch": "Түшкү тамак",
+  "mealTypeDinner": "Кечки тамак",
+  "mealTypeSnack": "Жеңил тамак",
+  "mealTypeCustom": "Өзүнчө",
+  "mealGramsLabel": "Саны (г)",
+  "mealAddItem": "Тамак кошуу",
+  "mealNoteLabel": "Эскертме (милдеттүү эмес)",
+  "mealFavoriteToggle": "Тандалма катары белгилөө",
+  "mealRepeatSection": "Тез кайталоо",
+  "mealRepeatFavorites": "Тандалмалар",
+  "mealRepeatRecent": "Акыркылар",
+  "mealSave": "Тамакты сактоо",
+  "mealItemsHeading": "Элементтер",
+  "mealSavedToast": "Тамак сакталды.",
+  "mealNeedsItem": "Адегенде жок дегенде бир тамак кошуңуз.",
+  "mealTotalsHeading": "Күндүк жыйынтык",
+  "mealTotalsKcal": "Энергия: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Таза углеводдор: {value} г",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Жалпы углеводдор: {value} г",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Була: {value} г",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Белок: {value} г",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Май: {value} г",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Адатта жакшы тандоо",
+  "guideGroupLimit": "Порцияны же жыштыкты чектөө талап кылынышы мүмкүн",
+  "guideGroupAvoid": "Адатта кетогендик максаттарга ылайык келбейт",
+  "guideWhyHeading": "Эмне үчүн?",
+  "guideTypicalPortion": "Адаттагы порция: {portion} (~{grams} г)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Альтернативалар: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Маалымат булагы: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Эт, балык жана жумуртка",
+  "guideCardLowCarbVegetables": "Углеводу аз жашылчалар",
+  "guideCardFatsOils": "Майлар",
+  "guideCardNutsSeeds": "Жаңгактар жана уруктар",
+  "guideCardBerries": "Жемиштер (мөмө)",
+  "guideCardDairy": "Толук майлуу сүт азыктары",
+  "guideCardFruit": "Мөмө-жемиштер",
+  "guideCardLegumes": "Буурчак өсүмдүктөрү",
+  "guideCardMilkDrinks": "Сүт жана таттуу суусундуктар",
+  "guideCardSugaryDrinks": "Кантты суусундуктар",
+  "guideCardStarches": "Нан, күрүч, картошка",
+  "guideCardSweets": "Таттуулар жана десерттер",
+  "logMealRelation": "{mealType} тамагынан {hours} саат кийин жазылды — убакыт контексти гана, таасир эмес.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Бул көрсөткүчтөн мурунку талдоо терезесинде тамак жазылган эмес.",
+  "logRelationWindowLabel": "Тамак менен байланыш терезеси",
+  "logConfoundersHeading": "Көрсөткүчтөргө дагы эмне таасир этиши мүмкүн?",
+  "mealTypeShortBreakfast": "эртең мененки тамак",
+  "mealTypeShortLunch": "түшкү тамак",
+  "mealTypeShortDinner": "кечки тамак",
+  "mealTypeShortSnack": "жеңил тамак",
+  "mealTypeShortCustom": "тамак",
+  "recipePerServing": "{value} порция",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Даярдоо: {value} мүн",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Аллергендер: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Курамы",
+  "recipeGrams": "{value} г",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Кадамдар",
+  "recipeStorage": "Сактоо: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Изилдөөдө колдонулган диапазон",
+  "goalLegendClinician": "Дарыгеримдин максаты",
+  "goalLegendPersonal": "Менин жеке көзөмөл максатым",
+  "goalLegendPersonalNote": "Жеке көзөмөл максаты медициналык максат эмес.",
+  "weightValueLabel": "Салмак ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Шарт (милдеттүү эмес, мис. эртең менен, машыгуудан кийин)",
+  "weightSave": "Салмакты сактоо",
+  "symptomFormTitle": "Белгини жазуу",
+  "symptomDefinitionLabel": "Белги",
+  "symptomSeverityLabel": "Оордугу: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Эскертме (милдеттүү эмес)",
+  "symptomSave": "Белгини сактоо",
+  "symptomSavedToast": "Белги сакталды.",
+  "symptomGuidance": "Сиз маанилүү белгини белгиледиңиз. Бул колдонмо диагноз койбойт. Өз ден соолук планыңызды аткарыңыз жана өзүңүздү начар сезсеңиз же белгилер оор болсо, жергиликтүү шашылыш жардам кызматына кайрылыңыз.",
+  "symptomSeizureGuidance": "Сиз талма окуясын жаздыңыз. Бул колдонмо диагноз койбойт. Ден соолук планыңызды аткарыңыз жана саламаттыкты сактоо адисине кайрылыңыз; шашылыш учурда жергиликтүү шашылыш жардамга чалыңыз.",
+  "trendsRange7": "7 күн",
+  "trendsRange30": "30 күн",
+  "trendsRange90": "90 күн",
+  "trendsSummary": "Акыркы {days} күндө {count} көрсөткүч. Акыркысы: {latest}, орточо: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Бул диапазондо маалымат жок.",
+  "trendsExplainsTitle": "Бул график эмнени айтат — жана эмнени айтпайт",
+  "trendsExplainsBody": "График сиздин өз көрсөткүчтөрүңүздү убакыт боюнча иштелбеген чекиттер катары көрсөтөт. Ал диагноз койбойт, божомолдобойт жана себептерди далилдебейт. Жетишпеген күндөр нөл эмес, боштук катары көрүнөт.",
+  "trendsWeightChart": "Салмак (кг)",
+  "trendsBandsNote": "Изилдөө диапазондору милдеттүү эмес жана демейки боюнча өчүк. Күйгүзүү үчүн «Журнал» өтмөгүн караңыз.",
+  "evidenceDiseaseFilter": "Ооруга тиешелүү изилдөөлөрдү көрсөтүү (окууну тандаган булактарыңыздан)",
+  "evidenceSectionTitle": "Илимий булактар жана макалалар",
+  "guideCopyLink": "Булак шилтемесин көчүрүү",
+  "planTitle": "Жумалык план",
+  "planGenerateDraft": "Жумалык долбоор түзүү",
+  "planDraftLockedNote": "Планды автоматтык түзүү өчүк бойдон калат: адегенде квалификациялуу саламаттыкты сактоо адиси менен талкуулаңыз.",
+  "planCreatedToast": "Жумалык план түзүлдү.",
+  "planItemDay": "{day}-күн",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Пландан сатып алуу тизмесин түзүү",
+  "shoppingTitle": "Сатып алуу тизмеси",
+  "shoppingUndo": "Кайтаруу",
+  "shoppingAddManual": "Элементти кол менен кошуу",
+  "shoppingCheckedToggle": "Белгилөө",
+  "shoppingEmpty": "Сатып алуу тизмеси азырынча жок.",
+  "planEmpty": "Жумалык план азырынча жок. Баштоо үчүн рецепттериңизден долбоор түзүңүз.",
+  "aboutTitle": "Колдонмо жөнүндө",
+  "aboutSlogan": "Жеке кето күндөлүгү",
+  "aboutVersion": "Версия {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Ачык булак коду",
+  "aboutOpenSourceBody": "N Keto Tracker — GPL-3.0 лицензиясы менен акысыз ачык кодтуу программа. Кодду ошол эле лицензия менен текшерип, өзгөртүп жана таратсаңыз болот.",
+  "aboutPrivacyHeading": "Купуялуулук",
+  "aboutPrivacyBody": "Ден соолук маалыматыңыз ушул түзмөктө калат. Аккаунтсуз, аналитикасыз.",
+  "aboutDisclaimerHeading": "Жоопкерчиликтен баш тартуу",
+  "aboutDisclaimerBody": "Бул колдонмо жалпы маалымат жана жеке көзөмөл үчүн. Ал медициналык кеңеш, диагноз же дарылоо эмес.",
+  "aboutLicensesButton": "Лицензиялар",
+  "aboutShareButton": "Колдонмону бөлүшүү",
+  "aboutOtherAppsButton": "Башка колдонмолор",
+  "aboutCopiedToast": "Буферге көчүрүлдү.",
+  "licensesTitle": "Лицензиялар",
+  "otherAppsTitle": "Башка колдонмолор",
+  "otherAppsEmpty": "Башка колдонмолор азырынча тизмеленген эмес.",
+  "otherAppsCopyLink": "Дүкөн шилтемесин көчүрүү",
+  "settingsTitle": "Жөндөөлөр",
+  "aboutShareText": "Глюкоза, кетон жана GKI көзөмөлү бар жеке кето күндөлүгү. Ачык код, аккаунт талап кылынбайт.",
+  "dataManagementTitle": "Маалыматты башкаруу",
+  "dataExportJson": "Маалыматты экспорттоо (JSON)",
+  "dataExportCsv": "Өлчөөлөрдү экспорттоо (CSV)",
+  "dataImportLabel": "Экспорттолгон JSON'ду бул жерге чапталыңыз",
+  "dataImportButton": "Маалыматты импорттоо",
+  "dataImportSuccess": "{glucose} глюкоза жана {weight} салмак жазуусу импорттолду.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Импорт ишке ашкан жок: файл жараксыз же колдоого алынбайт.",
+  "dataDeleteAll": "Бардык маалыматымды өчүрүү",
+  "dataDeleteConfirm1": "БАРДЫК маалымат өчүрүлсүнбү? Ага өлчөөлөр, тамактар, пландар жана жөндөөлөр кирет. Муну кайтарууга болбойт.",
+  "dataDeleteConfirm2": "Чындап ишенесизби? Ырастоо үчүн DELETE деп терип коюңуз.",
+  "dataDeleteTypeDelete": "DELETE деп териңиз",
+  "dataDeleteDone": "Бардык маалымат өчүрүлдү ({count} жазуу).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Экспорт файлы даяр — кайда сактоону тандаңыз.",
+  "settingsAppearance": "Көрүнүшү",
+  "themeSystem": "Системалык",
+  "themeLight": "Жарык",
+  "themeDark": "Караңгы",
+  "settingsLanguage": "Тил",
+  "settingsMore": "Дагы"
+}

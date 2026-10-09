@@ -1,0 +1,452 @@
+{
+  "@@locale": "cs",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Dnes",
+  "navLog": "Deník",
+  "navPlan": "Plán",
+  "navTrends": "Trendy",
+  "navGuide": "Průvodce",
+  "pageUnderConstruction": "Tato obrazovka se připravuje.",
+  "generalInfoDisclaimer": "Pouze pro obecné informace; nejde o lékařskou radu.",
+  "onboardingLanguageTitle": "Vyberte jazyk",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Vaše data zůstávají ve vašem zařízení",
+  "onboardingPrivacyBody": "N Keto Tracker ukládá vaše měření, jídla a poznámky pouze v této aplikaci ve vašem zařízení. Neexistuje žádný účet a vaše zdravotní data se nikam neodesílají. Smazáním aplikace smažete i svá data; zálohu můžete kdykoli exportovat.",
+  "onboardingMedicalTitle": "Není to lékařská rada",
+  "onboardingMedicalBody": "Tato aplikace slouží k obecným informacím a osobnímu sledování. Není lékařskou radou, diagnózou ani léčbou a nenahrazuje péči kvalifikovaných zdravotnických odborníků.",
+  "onboardingPurposeTitle": "Co chcete sledovat?",
+  "onboardingPurposeLearn": "Dozvědět se o ketogenní výživě",
+  "onboardingPurposeMeals": "Plánovat jídla",
+  "onboardingPurposeMacros": "Sledovat makra a čisté sacharidy",
+  "onboardingPurposeMeasure": "Sledovat glukózu, ketony a GKI",
+  "onboardingProfileTitle": "O vás (nepovinné)",
+  "onboardingProfileBody": "Můžete to přeskočit a doplnit později v nastavení. Používá se pouze pro obecný odhad energie.",
+  "onboardingBirthYear": "Rok narození",
+  "onboardingHeightCm": "Výška (cm)",
+  "onboardingWeightKg": "Hmotnost (kg)",
+  "onboardingEnergyCoeffTitle": "Koeficient odhadu energie",
+  "onboardingEnergyCoeffBody": "Obecný odhad energie používá jeden ze dvou publikovaných koeficientů. Nejde o vaši genderovou identitu — jen o to, která verze rovnice vám nejlépe sedí. Odhady energie můžete také úplně přeskočit.",
+  "onboardingEnergyCoeffSkip": "Přeskočit odhady energie",
+  "onboardingScreeningTitle": "Několik bezpečnostních otázek",
+  "onboardingScreeningBody": "Tyto otázky nic nediagnostikují. Pouze vypínají automatické návrhy plánu a cílů, když je potřeba zvýšená opatrnost.",
+  "onboardingScreeningDiabetes": "Mám cukrovku",
+  "onboardingScreeningMedication": "Užívám léky snižující glukózu nebo inzulin",
+  "onboardingScreeningPregnancy": "Jsem těhotná nebo kojím",
+  "onboardingScreeningOrgan": "Mám onemocnění ledvin, jater nebo slinivky",
+  "onboardingScreeningEatingDisorder": "Mám v anamnéze poruchu příjmu potravy",
+  "onboardingScreeningWeightLoss": "Měl(a) jsem významný nechtěný úbytek hmotnosti",
+  "onboardingScreeningUnder18": "Je mi méně než 18 let",
+  "onboardingScreeningLockedNote": "Kvůli vašim odpovědím zůstává automatické vytváření plánu a cílů vypnuté. Záznam a vzdělávací funkce zůstávají dostupné. Prosím, proberte to s kvalifikovaným zdravotnickým odborníkem.",
+  "onboardingDataTitle": "Vaše data",
+  "onboardingDataBody": "Vaše záznamy zůstávají pouze v tomto zařízení. Pokud aplikaci ztratíte nebo odinstalujete bez exportu zálohy, data nelze obnovit.",
+  "onboardingConsentTitle": "Souhlas",
+  "onboardingConsentBody": "Přečetl(a) jsem shrnutí ochrany soukromí a upozornění, že tato aplikace není lékařskou radou, a souhlasím s nimi. Chápu, že moje data zůstávají pouze v tomto zařízení.",
+  "onboardingConsentCheckbox": "Souhlasím",
+  "onboardingNext": "Další",
+  "onboardingBack": "Zpět",
+  "onboardingFinish": "Začít používat aplikaci",
+  "onboardingStepOf": "Krok {current} z {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukóza ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Ketony v krvi BHB (mmol/L)",
+  "formSourceType": "Typ zdroje",
+  "formNote": "Poznámka (nepovinné)",
+  "formPickTime": "Čas měření",
+  "formSaveSession": "Uložit měřicí relaci",
+  "formInvalidValue": "Zadejte prosím platné kladné číslo.",
+  "gkiResultHeading": "Vaše GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Změřeno: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Verze výpočtu: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Zatím žádná měření",
+  "logEmptyBody": "Přidejte první hodnotu glukózy a ketonů, aby se zde zobrazila.",
+  "logBandsToggle": "Zobrazit výzkumná pásma z článku, který jste četli",
+  "bandsDisclaimer": "Tato pásma nejsou klinická normální rozmezí ani prokázané cíle léčby. Jsou to reprezentativní, nepředpisující návrhy z konkrétního výzkumného rámce. Samotné GKI neukazuje zdraví, odpověď na onemocnění ani bezpečnost. Klepnutím zobrazíte zdroj.",
+  "logBandOptimal": "Navrhované optimální výzkumné pásmo (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Navrhované terapeutické výzkumné pásmo (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Mimo navrhované výzkumné pásmo ≤ 2.0",
+  "logMatchSimultaneous": "současně",
+  "logMatchApproximate": "přibližná shoda",
+  "logTimelineHeading": "Časová osa",
+  "logChartsHeading": "Grafy",
+  "logGlucoseChart": "Glukóza (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopírovat odkaz na zdroj",
+  "todayQuickActions": "Rychlé akce",
+  "todayAddMeasurement": "Přidat měření",
+  "todayAddMeal": "Přidat jídlo",
+  "todayAddWeight": "Přidat hmotnost",
+  "todayAddSymptom": "Přidat příznak",
+  "todayLatestTitle": "Poslední měření",
+  "todayLatestEmpty": "Zatím žádná měření. Pomocí „Přidat měření“ zapište glukózu a keton BHB společně.",
+  "todayNutritionTitle": "Dnešní výživa",
+  "todayNutritionEmpty": "Dnes nejsou zapsána žádná jídla. Jídla se zapisují na kartě Plán.",
+  "todayWeightTitle": "Hmotnost",
+  "todayWeightEmpty": "Zatím žádné záznamy hmotnosti.",
+  "todaySymptomsTitle": "Dnešní příznaky",
+  "todaySymptomsEmpty": "Dnes nejsou zapsány žádné příznaky.",
+  "todayPlansTitle": "Plánovaná jídla",
+  "todayPlansEmpty": "Na dnešek není žádný jídelní plán.",
+  "comingSoonTitle": "Přijde v nadcházející aktualizaci",
+  "comingSoonBody": "Tento formulář se připravuje. Pokrok můžete sledovat v repozitáři projektu.",
+  "mealFormTitle": "Zapsat jídlo",
+  "mealSearchLabel": "Hledat potravinu",
+  "mealTypeLabel": "Typ jídla",
+  "mealTypeBreakfast": "Snídaně",
+  "mealTypeLunch": "Oběd",
+  "mealTypeDinner": "Večeře",
+  "mealTypeSnack": "Svačina",
+  "mealTypeCustom": "Vlastní",
+  "mealGramsLabel": "Množství (g)",
+  "mealAddItem": "Přidat potravinu",
+  "mealNoteLabel": "Poznámka (nepovinné)",
+  "mealFavoriteToggle": "Označit jako oblíbené",
+  "mealRepeatSection": "Rychlé opakování",
+  "mealRepeatFavorites": "Oblíbené",
+  "mealRepeatRecent": "Nedávné",
+  "mealSave": "Uložit jídlo",
+  "mealItemsHeading": "Položky",
+  "mealSavedToast": "Jídlo uloženo.",
+  "mealNeedsItem": "Nejprve přidejte alespoň jednu potravinu.",
+  "mealTotalsHeading": "Denní součty",
+  "mealTotalsKcal": "Energie: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Čisté sacharidy: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Sacharidy celkem: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Vláknina: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Bílkoviny: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Tuky: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Obecně vhodné",
+  "guideGroupLimit": "Může vyžadovat omezení porce nebo četnosti",
+  "guideGroupAvoid": "Obecně neslučitelné s ketogenními cíli",
+  "guideWhyHeading": "Proč?",
+  "guideTypicalPortion": "Typická porce: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativy: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Zdroj dat: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Maso, ryby a vejce",
+  "guideCardLowCarbVegetables": "Zelenina s nízkým obsahem sacharidů",
+  "guideCardFatsOils": "Tuky a oleje",
+  "guideCardNutsSeeds": "Ořechy a semena",
+  "guideCardBerries": "Bobuloviny",
+  "guideCardDairy": "Plnotučné mléčné výrobky",
+  "guideCardFruit": "Ovoce",
+  "guideCardLegumes": "Luštěniny",
+  "guideCardMilkDrinks": "Mléko a slazené nápoje",
+  "guideCardSugaryDrinks": "Slazené nápoje",
+  "guideCardStarches": "Chléb, rýže, brambory",
+  "guideCardSweets": "Sladkosti a dezerty",
+  "logMealRelation": "Zapsáno {hours} h po jídle ({mealType}) — jen časový kontext, ne účinek.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "V analytickém okně před tímto měřením není zapsáno žádné jídlo.",
+  "logRelationWindowLabel": "Okno vztahu k jídlu",
+  "logConfoundersHeading": "Co dalšího může ovlivnit hodnoty?",
+  "mealTypeShortBreakfast": "snídaně",
+  "mealTypeShortLunch": "oběd",
+  "mealTypeShortDinner": "večeře",
+  "mealTypeShortSnack": "svačina",
+  "mealTypeShortCustom": "jídlo",
+  "recipePerServing": "Porcí: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Příprava: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergeny: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredience",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Postup",
+  "recipeStorage": "Skladování: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Výzkumné rozmezí použité ve studii",
+  "goalLegendClinician": "Cíl mého lékaře",
+  "goalLegendPersonal": "Můj osobní cíl sledování",
+  "goalLegendPersonalNote": "Osobní cíl sledování není lékařský cíl.",
+  "weightValueLabel": "Hmotnost ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Podmínky (nepovinné, např. ráno, po cvičení)",
+  "weightSave": "Uložit hmotnost",
+  "symptomFormTitle": "Zapsat příznak",
+  "symptomDefinitionLabel": "Příznak",
+  "symptomSeverityLabel": "Závažnost: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Poznámka (nepovinné)",
+  "symptomSave": "Uložit příznak",
+  "symptomSavedToast": "Příznak uložen.",
+  "symptomGuidance": "Označili jste významný příznak. Tato aplikace nediagnostikuje. Řiďte se svým zdravotním plánem a kontaktujte místní tísňovou linku, pokud se necítíte dobře nebo jsou příznaky závažné.",
+  "symptomSeizureGuidance": "Zapsali jste záchvat. Tato aplikace nediagnostikuje. Řiďte se prosím svým zdravotním plánem a kontaktujte svého zdravotníka; v naléhavém případě volejte místní tísňovou linku.",
+  "trendsRange7": "7 dní",
+  "trendsRange30": "30 dní",
+  "trendsRange90": "90 dní",
+  "trendsSummary": "{count} hodnot za posledních {days} dní. Poslední: {latest}, průměr: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "V tomto rozsahu nejsou žádná data.",
+  "trendsExplainsTitle": "Co vám tento graf říká — a co ne",
+  "trendsExplainsBody": "Graf zobrazuje vaše vlastní hodnoty v čase jako surové body. Nediagnostikuje, nepředpovídá a neprokazuje příčiny. Chybějící dny se zobrazují jako mezery, ne jako nuly.",
+  "trendsWeightChart": "Hmotnost (kg)",
+  "trendsBandsNote": "Výzkumná pásma jsou volitelná a ve výchozím stavu vypnutá. Zapnete je na kartě Deník.",
+  "evidenceDiseaseFilter": "Zobrazit výzkum zaměřený na konkrétní onemocnění (ze zdrojů, které si zvolíte číst)",
+  "evidenceSectionTitle": "Vědecké zdroje a články",
+  "guideCopyLink": "Kopírovat odkaz na zdroj",
+  "planTitle": "Týdenní plán",
+  "planGenerateDraft": "Vytvořit týdenní návrh",
+  "planDraftLockedNote": "Automatické vytváření plánu zůstává vypnuté: nejprve to prosím proberte s kvalifikovaným zdravotnickým odborníkem.",
+  "planCreatedToast": "Týdenní plán vytvořen.",
+  "planItemDay": "Den {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Vytvořit nákupní seznam z plánu",
+  "shoppingTitle": "Nákupní seznam",
+  "shoppingUndo": "Zpět",
+  "shoppingAddManual": "Přidat položku ručně",
+  "shoppingCheckedToggle": "Odškrtnout",
+  "shoppingEmpty": "Zatím žádný nákupní seznam.",
+  "planEmpty": "Zatím žádný týdenní plán. Začněte vytvořením návrhu z vašich receptů.",
+  "aboutTitle": "O aplikaci",
+  "aboutSlogan": "Soukromý keto deník",
+  "aboutVersion": "Verze {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Otevřený kód",
+  "aboutOpenSourceBody": "N Keto Tracker je svobodný software s otevřeným kódem pod licencí GPL-3.0. Kód můžete prohlížet, upravovat a šířit za stejné licence.",
+  "aboutPrivacyHeading": "Soukromí",
+  "aboutPrivacyBody": "Vaše zdravotní data zůstávají v tomto zařízení. Bez účtu, bez analytiky.",
+  "aboutDisclaimerHeading": "Upozornění",
+  "aboutDisclaimerBody": "Tato aplikace slouží k obecným informacím a osobnímu sledování. Není lékařskou radou, diagnózou ani léčbou.",
+  "aboutLicensesButton": "Licence",
+  "aboutShareButton": "Sdílet tuto aplikaci",
+  "aboutOtherAppsButton": "Další aplikace",
+  "aboutCopiedToast": "Zkopírováno do schránky.",
+  "licensesTitle": "Licence",
+  "otherAppsTitle": "Další aplikace",
+  "otherAppsEmpty": "Zatím nejsou uvedeny žádné další aplikace.",
+  "otherAppsCopyLink": "Kopírovat odkaz do obchodu",
+  "settingsTitle": "Nastavení",
+  "aboutShareText": "Soukromý keto deník se sledováním glukózy, ketonů a GKI. Otevřený kód, bez nutnosti účtu.",
+  "dataManagementTitle": "Správa dat",
+  "dataExportJson": "Exportovat data (JSON)",
+  "dataExportCsv": "Exportovat měření (CSV)",
+  "dataImportLabel": "Vložte sem exportovaný JSON",
+  "dataImportButton": "Importovat data",
+  "dataImportSuccess": "Importováno {glucose} záznamů glukózy a {weight} záznamů hmotnosti.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Import selhal: soubor je neplatný nebo nepodporovaný.",
+  "dataDeleteAll": "Smazat všechna moje data",
+  "dataDeleteConfirm1": "Smazat VŠECHNA data? Zahrnuje měření, jídla, plány a nastavení. Nelze vrátit zpět.",
+  "dataDeleteConfirm2": "Opravdu jste si jisti? Pro potvrzení napište DELETE.",
+  "dataDeleteTypeDelete": "Napište DELETE",
+  "dataDeleteDone": "Všechna data smazána ({count} záznamů).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Soubor exportu je připraven — vyberte, kam jej uložit.",
+  "settingsAppearance": "Vzhled",
+  "themeSystem": "Systémový",
+  "themeLight": "Světlý",
+  "themeDark": "Tmavý",
+  "settingsLanguage": "Jazyk",
+  "settingsMore": "Více"
+}

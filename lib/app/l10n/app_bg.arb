@@ -1,0 +1,452 @@
+{
+  "@@locale": "bg",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Днес",
+  "navLog": "Дневник",
+  "navPlan": "План",
+  "navTrends": "Тенденции",
+  "navGuide": "Наръчник",
+  "pageUnderConstruction": "Този екран се изгражда.",
+  "generalInfoDisclaimer": "Само за обща информация; не е медицински съвет.",
+  "onboardingLanguageTitle": "Изберете език",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Данните ви остават на вашето устройство",
+  "onboardingPrivacyBody": "N Keto Tracker пази измерванията, храненията и бележките ви само в това приложение на вашето устройство. Няма акаунт, а здравните ви данни никога не се изпращат никъде. Изтриването на приложението изтрива данните ви; можете да експортирате резервно копие по всяко време.",
+  "onboardingMedicalTitle": "Не е медицински съвет",
+  "onboardingMedicalBody": "Това приложение е за обща информация и лично проследяване. То не е медицински съвет, диагноза или лечение и не замества грижата от квалифицирани здравни специалисти.",
+  "onboardingPurposeTitle": "Какво искате да проследявате?",
+  "onboardingPurposeLearn": "Да науча за кетогенното хранене",
+  "onboardingPurposeMeals": "Да планирам хранения",
+  "onboardingPurposeMacros": "Да следя макроси и нетни въглехидрати",
+  "onboardingPurposeMeasure": "Да следя глюкоза, кетони и GKI",
+  "onboardingProfileTitle": "За вас (по избор)",
+  "onboardingProfileBody": "Можете да пропуснете това и да го добавите по-късно в настройките. Използва се само за обща оценка на енергията.",
+  "onboardingBirthYear": "Година на раждане",
+  "onboardingHeightCm": "Ръст (см)",
+  "onboardingWeightKg": "Тегло (кг)",
+  "onboardingEnergyCoeffTitle": "Коефициент за оценка на енергията",
+  "onboardingEnergyCoeffBody": "Общата оценка на енергията използва един от два публикувани коефициента. Това не е свързано с вашата полова идентичност — просто показва коя версия на уравнението ви подхожда най-добре. Можете и изцяло да пропуснете оценките на енергията.",
+  "onboardingEnergyCoeffSkip": "Пропусни оценките на енергията",
+  "onboardingScreeningTitle": "Няколко въпроса за безопасност",
+  "onboardingScreeningBody": "Тези въпроси не поставят никаква диагноза. Те само изключват автоматичните предложения за план и цели, когато е нужна допълнителна грижа.",
+  "onboardingScreeningDiabetes": "Имам диабет",
+  "onboardingScreeningMedication": "Приемам лекарства за понижаване на глюкозата или инсулин",
+  "onboardingScreeningPregnancy": "Бременна съм или кърмя",
+  "onboardingScreeningOrgan": "Имам заболяване на бъбреците, черния дроб или панкреаса",
+  "onboardingScreeningEatingDisorder": "Имам анамнеза за хранително разстройство",
+  "onboardingScreeningWeightLoss": "Имал(а) съм значителна неволна загуба на тегло",
+  "onboardingScreeningUnder18": "Под 18 години съм",
+  "onboardingScreeningLockedNote": "Поради отговорите ви автоматичното създаване на план и цели остава изключено. Записването и обучението остават налични. Моля, обсъдете това с квалифициран здравен специалист.",
+  "onboardingDataTitle": "Вашите данни",
+  "onboardingDataBody": "Записите ви остават само на това устройство. Ако загубите или деинсталирате приложението без експорт на резервно копие, данните не могат да бъдат възстановени.",
+  "onboardingConsentTitle": "Съгласие",
+  "onboardingConsentBody": "Прочетох и приемам обобщението за поверителност и уведомлението, че приложението не е медицински съвет. Разбирам, че данните ми остават само на това устройство.",
+  "onboardingConsentCheckbox": "Приемам",
+  "onboardingNext": "Напред",
+  "onboardingBack": "Назад",
+  "onboardingFinish": "Започни да използваш приложението",
+  "onboardingStepOf": "Стъпка {current} от {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Глюкоза ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Кетони в кръвта BHB (mmol/L)",
+  "formSourceType": "Тип източник",
+  "formNote": "Бележка (по избор)",
+  "formPickTime": "Час на измерване",
+  "formSaveSession": "Запази сесията на измерване",
+  "formInvalidValue": "Моля, въведете валидно положително число.",
+  "gkiResultHeading": "Вашият GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Измерено на: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Версия на изчислението: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Още няма измервания",
+  "logEmptyBody": "Добавете първото си измерване на глюкоза и кетони, за да го видите тук.",
+  "logBandsToggle": "Показвай изследователските диапазони от прочетената статия",
+  "bandsDisclaimer": "Тези диапазони не са клинични норми или доказани цели на лечение. Те са примерни, непредписващи предложения от конкретна изследователска рамка. GKI сам по себе си не показва здраве, отговор на заболяване или безопасност. Докоснете, за да видите източника.",
+  "logBandOptimal": "Предложен оптимален изследователски диапазон (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Предложен терапевтичен изследователски диапазон (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Извън предложения изследователски диапазон ≤ 2.0",
+  "logMatchSimultaneous": "едновременно",
+  "logMatchApproximate": "приблизително съвпадение",
+  "logTimelineHeading": "Хронология",
+  "logChartsHeading": "Графики",
+  "logGlucoseChart": "Глюкоза (mmol/L)",
+  "logBhbChart": "Кетони BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Копирай връзката към източника",
+  "todayQuickActions": "Бързи действия",
+  "todayAddMeasurement": "Добави измерване",
+  "todayAddMeal": "Добави хранене",
+  "todayAddWeight": "Добави тегло",
+  "todayAddSymptom": "Добави симптом",
+  "todayLatestTitle": "Последни измервания",
+  "todayLatestEmpty": "Още няма измервания. Използвайте „Добави измерване“, за да запишете глюкоза и кетони BHB заедно.",
+  "todayNutritionTitle": "Храненето днес",
+  "todayNutritionEmpty": "Днес няма записани хранения. Храненията се записват от раздела „План“.",
+  "todayWeightTitle": "Тегло",
+  "todayWeightEmpty": "Още няма записи за тегло.",
+  "todaySymptomsTitle": "Симптоми днес",
+  "todaySymptomsEmpty": "Днес няма записани симптоми.",
+  "todayPlansTitle": "Планирани хранения",
+  "todayPlansEmpty": "Няма план за хранене за днес.",
+  "comingSoonTitle": "Идва в следваща актуализация",
+  "comingSoonBody": "Тази форма за въвеждане се изгражда. Можете да следите напредъка в хранилището на проекта.",
+  "mealFormTitle": "Запиши хранене",
+  "mealSearchLabel": "Търсене на храна",
+  "mealTypeLabel": "Вид хранене",
+  "mealTypeBreakfast": "Закуска",
+  "mealTypeLunch": "Обяд",
+  "mealTypeDinner": "Вечеря",
+  "mealTypeSnack": "Междинно хранене",
+  "mealTypeCustom": "Друго",
+  "mealGramsLabel": "Количество (г)",
+  "mealAddItem": "Добави храна",
+  "mealNoteLabel": "Бележка (по избор)",
+  "mealFavoriteToggle": "Маркирай като любимо",
+  "mealRepeatSection": "Бързо повторение",
+  "mealRepeatFavorites": "Любими",
+  "mealRepeatRecent": "Скорошни",
+  "mealSave": "Запази храненето",
+  "mealItemsHeading": "Продукти",
+  "mealSavedToast": "Храненето е запазено.",
+  "mealNeedsItem": "Първо добавете поне един продукт.",
+  "mealTotalsHeading": "Дневни общи стойности",
+  "mealTotalsKcal": "Енергия: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Нетни въглехидрати: {value} г",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Общо въглехидрати: {value} г",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Фибри: {value} г",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Протеин: {value} г",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Мазнини: {value} г",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Обикновено подходящи",
+  "guideGroupLimit": "Може да изискват ограничаване на порцията или честотата",
+  "guideGroupAvoid": "Обикновено несъвместими с кетогенните цели",
+  "guideWhyHeading": "Защо?",
+  "guideTypicalPortion": "Типична порция: {portion} (~{grams} г)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Алтернативи: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Източник на данните: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Месо, риба и яйца",
+  "guideCardLowCarbVegetables": "Зеленчуци с ниско съдържание на въглехидрати",
+  "guideCardFatsOils": "Мазнини и масла",
+  "guideCardNutsSeeds": "Ядки и семена",
+  "guideCardBerries": "Горски плодове",
+  "guideCardDairy": "Млечни продукти с пълна масленост",
+  "guideCardFruit": "Плодове",
+  "guideCardLegumes": "Бобови",
+  "guideCardMilkDrinks": "Мляко и сладки напитки",
+  "guideCardSugaryDrinks": "Захарни напитки",
+  "guideCardStarches": "Хляб, ориз, картофи",
+  "guideCardSweets": "Сладкиши и десерти",
+  "logMealRelation": "Записано {hours} ч след хранене ({mealType}) — само времеви контекст, не ефект.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Няма записано хранене в прозореца за анализ преди това измерване.",
+  "logRelationWindowLabel": "Прозорец на връзката с храненето",
+  "logConfoundersHeading": "Какво друго може да влияе на показанията?",
+  "mealTypeShortBreakfast": "закуска",
+  "mealTypeShortLunch": "обяд",
+  "mealTypeShortDinner": "вечеря",
+  "mealTypeShortSnack": "междинно хранене",
+  "mealTypeShortCustom": "хранене",
+  "recipePerServing": "{value} порции",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Приготвяне: {value} мин",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Алергени: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Съставки",
+  "recipeGrams": "{value} г",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Стъпки",
+  "recipeStorage": "Съхранение: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Изследователски диапазон, използван в проучване",
+  "goalLegendClinician": "Целта на моя лекар",
+  "goalLegendPersonal": "Моята лична цел за проследяване",
+  "goalLegendPersonalNote": "Личната цел за проследяване не е медицинска цел.",
+  "weightValueLabel": "Тегло ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Условие (по избор, напр. сутрин, след тренировка)",
+  "weightSave": "Запази теглото",
+  "symptomFormTitle": "Запиши симптом",
+  "symptomDefinitionLabel": "Симптом",
+  "symptomSeverityLabel": "Тежест: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Бележка (по избор)",
+  "symptomSave": "Запази симптома",
+  "symptomSavedToast": "Симптомът е запазен.",
+  "symptomGuidance": "Отбелязахте значим симптом. Това приложение не поставя диагнози. Следвайте своя здравен план и се свържете с местните спешни служби, ако не се чувствате добре или симптомите са тежки.",
+  "symptomSeizureGuidance": "Записахте пристъп. Това приложение не поставя диагнози. Моля, следвайте здравния си план и се свържете със здравен специалист; при спешност се обадете на местните спешни служби.",
+  "trendsRange7": "7 дни",
+  "trendsRange30": "30 дни",
+  "trendsRange90": "90 дни",
+  "trendsSummary": "{count} показания през последните {days} дни. Последно: {latest}, средно: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Няма данни в този диапазон.",
+  "trendsExplainsTitle": "Какво ви показва тази графика — и какво не",
+  "trendsExplainsBody": "Графиката показва вашите показания във времето като необработени точки. Тя не поставя диагноза, не прогнозира и не доказва причини. Липсващите дни се виждат като пропуски, не като нули.",
+  "trendsWeightChart": "Тегло (кг)",
+  "trendsBandsNote": "Изследователските диапазони са по избор и по подразбиране са изключени. Вижте раздела „Дневник“, за да ги включите.",
+  "evidenceDiseaseFilter": "Показвай изследвания за конкретни заболявания (от източниците, които избирате да четете)",
+  "evidenceSectionTitle": "Научни източници и статии",
+  "guideCopyLink": "Копирай връзката към източника",
+  "planTitle": "Седмичен план",
+  "planGenerateDraft": "Създай седмична чернова",
+  "planDraftLockedNote": "Автоматичното създаване на план остава изключено: първо го обсъдете с квалифициран здравен специалист.",
+  "planCreatedToast": "Седмичният план е създаден.",
+  "planItemDay": "Ден {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Създай списък за пазаруване от плана",
+  "shoppingTitle": "Списък за пазаруване",
+  "shoppingUndo": "Отмяна",
+  "shoppingAddManual": "Добави ръчно",
+  "shoppingCheckedToggle": "Отметни",
+  "shoppingEmpty": "Още няма списък за пазаруване.",
+  "planEmpty": "Още няма седмичен план. Създайте чернова от вашите рецепти, за да започнете.",
+  "aboutTitle": "Относно",
+  "aboutSlogan": "Личен кето дневник",
+  "aboutVersion": "Версия {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Отворен код",
+  "aboutOpenSourceBody": "N Keto Tracker е безплатен софтуер с отворен код под лиценз GPL-3.0. Можете да разглеждате, променяте и разпространявате кода при същия лиценз.",
+  "aboutPrivacyHeading": "Поверителност",
+  "aboutPrivacyBody": "Здравните ви данни остават на това устройство. Без акаунт, без анализи.",
+  "aboutDisclaimerHeading": "Отказ от отговорност",
+  "aboutDisclaimerBody": "Това приложение е за обща информация и лично проследяване. То не е медицински съвет, диагноза или лечение.",
+  "aboutLicensesButton": "Лицензи",
+  "aboutShareButton": "Сподели приложението",
+  "aboutOtherAppsButton": "Други приложения",
+  "aboutCopiedToast": "Копирано в клипборда.",
+  "licensesTitle": "Лицензи",
+  "otherAppsTitle": "Други приложения",
+  "otherAppsEmpty": "Още няма изброени други приложения.",
+  "otherAppsCopyLink": "Копирай връзката към магазина",
+  "settingsTitle": "Настройки",
+  "aboutShareText": "Личен кето дневник с проследяване на глюкоза, кетони и GKI. Отворен код, без нужда от акаунт.",
+  "dataManagementTitle": "Управление на данните",
+  "dataExportJson": "Експортирай данните (JSON)",
+  "dataExportCsv": "Експортирай измерванията (CSV)",
+  "dataImportLabel": "Поставете експортирания JSON тук",
+  "dataImportButton": "Импортирай данни",
+  "dataImportSuccess": "Импортирани са {glucose} записа за глюкоза и {weight} записа за тегло.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Импортът не успя: файлът е невалиден или не се поддържа.",
+  "dataDeleteAll": "Изтрий всичките ми данни",
+  "dataDeleteConfirm1": "Да се изтрият ли ВСИЧКИ данни? Това включва измервания, хранения, планове и настройки. Не може да бъде отменено.",
+  "dataDeleteConfirm2": "Наистина ли сте сигурни? Въведете DELETE, за да потвърдите.",
+  "dataDeleteTypeDelete": "Въведете DELETE",
+  "dataDeleteDone": "Всички данни са изтрити ({count} записа).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Файлът за експорт е готов — изберете къде да го запазите.",
+  "settingsAppearance": "Външен вид",
+  "themeSystem": "Системна",
+  "themeLight": "Светла",
+  "themeDark": "Тъмна",
+  "settingsLanguage": "Език",
+  "settingsMore": "Още"
+}

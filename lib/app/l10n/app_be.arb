@@ -1,0 +1,452 @@
+{
+  "@@locale": "be",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Сёння",
+  "navLog": "Журнал",
+  "navPlan": "План",
+  "navTrends": "Тэндэнцыі",
+  "navGuide": "Даведнік",
+  "pageUnderConstruction": "Гэты экран яшчэ ствараецца.",
+  "generalInfoDisclaimer": "Толькі для агульнай інфармацыі; не з'яўляецца медыцынскай парадай.",
+  "onboardingLanguageTitle": "Выберыце мову",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Вашы даныя застаюцца на вашай прыладзе",
+  "onboardingPrivacyBody": "N Keto Tracker захоўвае вашы вымярэнні, ежу і нататкі толькі ў гэтай праграме на вашай прыладзе. Уліковага запісу няма, а вашы даныя пра здароўе ніколі нікуды не адпраўляюцца. Калі выдаліць праграму, даныя таксама выдаляцца; у любы момант можна экспартаваць рэзервовую копію.",
+  "onboardingMedicalTitle": "Не медыцынская парада",
+  "onboardingMedicalBody": "Гэта праграма прызначана для агульнай інфармацыі і асабістага ўліку. Яна не з'яўляецца медыцынскай парадай, дыягназам або лячэннем і не замяняе дапамогу кваліфікаваных медыкаў.",
+  "onboardingPurposeTitle": "Што вы хочаце адсочваць?",
+  "onboardingPurposeLearn": "Даведацца пра кетагенную дыету",
+  "onboardingPurposeMeals": "Планаваць ежу",
+  "onboardingPurposeMacros": "Сачыць за макраэлементамі і чыстымі вугляводамі",
+  "onboardingPurposeMeasure": "Сачыць за глюкозай, кетонамі і ІГК",
+  "onboardingProfileTitle": "Пра вас (неабавязкова)",
+  "onboardingProfileBody": "Можна прапусціць і дадаць пазней у наладах. Выкарыстоўваецца толькі для агульнай ацэнкі энергіі.",
+  "onboardingBirthYear": "Год нараджэння",
+  "onboardingHeightCm": "Рост (см)",
+  "onboardingWeightKg": "Вага (кг)",
+  "onboardingEnergyCoeffTitle": "Каэфіцыент ацэнкі энергіі",
+  "onboardingEnergyCoeffBody": "Агульная ацэнка энергіі выкарыстоўвае адзін з двух апублікаваных каэфіцыентаў. Гэта не звязана з вашай гендарнай ідэнтычнасцю — проста вызначае, які варыянт ураўнення вам больш падыходзіць. Ацэнку энергіі можна і цалкам прапусціць.",
+  "onboardingEnergyCoeffSkip": "Прапусціць ацэнку энергіі",
+  "onboardingScreeningTitle": "Некалькі пытанняў бяспекі",
+  "onboardingScreeningBody": "Гэтыя пытанні нічога не дыягнастуюць. Яны толькі адключаюць аўтаматычныя прапановы планаў і мэт, калі патрэбна дадатковая асцярожнасць.",
+  "onboardingScreeningDiabetes": "Ёсць дыябет",
+  "onboardingScreeningMedication": "Прымаю глюкозазніжальныя прэпараты або інсулін",
+  "onboardingScreeningPregnancy": "Цяжарная або кармлю грудзьмі",
+  "onboardingScreeningOrgan": "Ёсць захворванне нырак, печані або падстраўнікавай залозы",
+  "onboardingScreeningEatingDisorder": "Было парушэнне харчовых паводзін",
+  "onboardingScreeningWeightLoss": "Была значная ненаўмысная страта вагі",
+  "onboardingScreeningUnder18": "Мне менш за 18 гадоў",
+  "onboardingScreeningLockedNote": "З-за вашых адказаў аўтаматычнае стварэнне планаў і мэт адключана. Запіс і навучанне застаюцца даступнымі. Абмеркуйце гэта з кваліфікаваным медыкам.",
+  "onboardingDataTitle": "Вашы даныя",
+  "onboardingDataBody": "Вашы запісы застаюцца толькі на гэтай прыладзе. Калі вы страціце або выдаліце праграму без экспарту рэзервовай копіі, даныя аднавіць не атрымаецца.",
+  "onboardingConsentTitle": "Згода",
+  "onboardingConsentBody": "Я прачытаў(-ла) і прымаю кароткі змест палітыкі прыватнасці і заўвагу, што гэта праграма не з'яўляецца медыцынскай парадай. Я разумею, што мае даныя застаюцца толькі на гэтай прыладзе.",
+  "onboardingConsentCheckbox": "Я згодны(-на)",
+  "onboardingNext": "Далей",
+  "onboardingBack": "Назад",
+  "onboardingFinish": "Пачаць карыстацца",
+  "onboardingStepOf": "Крок {current} з {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Глюкоза ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Кетон у крыві BHB (mmol/L)",
+  "formSourceType": "Тып крыніцы",
+  "formNote": "Нататка (неабавязкова)",
+  "formPickTime": "Час вымярэння",
+  "formSaveSession": "Захаваць сесію вымярэння",
+  "formInvalidValue": "Увядзіце карэктны дадатны лік.",
+  "gkiResultHeading": "Ваш ІГК",
+  "gkiResultValue": "ІГК: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Вымярэнне: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Версія разліку: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Вымярэнняў пакуль няма",
+  "logEmptyBody": "Дадайце першае вымярэнне глюкозы і кетонаў, каб убачыць яго тут.",
+  "logBandsToggle": "Паказаць даследчыя дыяпазоны з прачытанага артыкула",
+  "bandsDisclaimer": "Гэтыя дыяпазоны не з'яўляюцца клінічнай нормай або даказанымі мэтамі лячэння. Гэта прыкладныя, неабавязковыя прапановы з пэўнай даследчай схемы. Адзін ІГК не паказвае здароўе, рэакцыю на захворванне або бяспеку. Націсніце, каб убачыць крыніцу.",
+  "logBandOptimal": "Прапанаваны аптымальны даследчы дыяпазон (ІГК ≤ 1.0)",
+  "logBandTherapeutic": "Прапанаваны тэрапеўтычны даследчы дыяпазон (1.0 < ІГК ≤ 2.0)",
+  "logBandOutside": "Па-за прапанаваным даследчым дыяпазонам ≤ 2.0",
+  "logMatchSimultaneous": "адначасова",
+  "logMatchApproximate": "прыблізнае супадзенне",
+  "logTimelineHeading": "Храналогія",
+  "logChartsHeading": "Графікі",
+  "logGlucoseChart": "Глюкоза (mmol/L)",
+  "logBhbChart": "Кетон BHB (mmol/L)",
+  "logGkiChart": "ІГК",
+  "logSourceButton": "Скапіяваць спасылку на крыніцу",
+  "todayQuickActions": "Хуткія дзеянні",
+  "todayAddMeasurement": "Дадаць вымярэнне",
+  "todayAddMeal": "Дадаць ежу",
+  "todayAddWeight": "Дадаць вагу",
+  "todayAddSymptom": "Дадаць сімптом",
+  "todayLatestTitle": "Апошнія вымярэнні",
+  "todayLatestEmpty": "Вымярэнняў пакуль няма. Скарыстайце «Дадаць вымярэнне», каб запісаць глюкозу і кетон BHB разам.",
+  "todayNutritionTitle": "Харчаванне сёння",
+  "todayNutritionEmpty": "Сёння ежа не запісана. Ежа запісваецца на ўкладцы «План».",
+  "todayWeightTitle": "Вага",
+  "todayWeightEmpty": "Запісаў вагі пакуль няма.",
+  "todaySymptomsTitle": "Сімптомы сёння",
+  "todaySymptomsEmpty": "Сёння сімптомы не запісаны.",
+  "todayPlansTitle": "Запланаваная ежа",
+  "todayPlansEmpty": "Плана харчавання на сёння няма.",
+  "comingSoonTitle": "Будзе ў наступным абнаўленні",
+  "comingSoonBody": "Гэтая форма ўводу ствараецца. Сачыць за прагрэсам можна ў рэпазіторыі праекта.",
+  "mealFormTitle": "Запісаць ежу",
+  "mealSearchLabel": "Пошук прадукта",
+  "mealTypeLabel": "Тып прыёму ежы",
+  "mealTypeBreakfast": "Снеданне",
+  "mealTypeLunch": "Абед",
+  "mealTypeDinner": "Вячэра",
+  "mealTypeSnack": "Перакус",
+  "mealTypeCustom": "Іншае",
+  "mealGramsLabel": "Колькасць (г)",
+  "mealAddItem": "Дадаць прадукт",
+  "mealNoteLabel": "Нататка (неабавязкова)",
+  "mealFavoriteToggle": "Пазначыць як ўлюбёнае",
+  "mealRepeatSection": "Хуткі паўтор",
+  "mealRepeatFavorites": "Улюбёныя",
+  "mealRepeatRecent": "Нядаўнія",
+  "mealSave": "Захаваць ежу",
+  "mealItemsHeading": "Прадукты",
+  "mealSavedToast": "Ежа захавана.",
+  "mealNeedsItem": "Спачатку дадайце хаця б адзін прадукт.",
+  "mealTotalsHeading": "Вынікі за дзень",
+  "mealTotalsKcal": "Энергія: {value} ккал",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Чыстыя вугляводы: {value} г",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Усяго вугляводаў: {value} г",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Клятчатка: {value} г",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Бялкі: {value} г",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Тлушчы: {value} г",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Звычайна добры выбар",
+  "guideGroupLimit": "Можа патрабаваць абмежавання порцыі або частаты",
+  "guideGroupAvoid": "Звычайна несумяшчальна з мэтамі кетагеннай дыеты",
+  "guideWhyHeading": "Чаму?",
+  "guideTypicalPortion": "Тыповая порцыя: {portion} (~{grams} г)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Альтэрнатывы: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Крыніца даных: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Мяса, рыба і яйкі",
+  "guideCardLowCarbVegetables": "Агародніна з нізкім утрыманнем вугляводаў",
+  "guideCardFatsOils": "Тлушчы і алеі",
+  "guideCardNutsSeeds": "Арэхі і насенне",
+  "guideCardBerries": "Ягады",
+  "guideCardDairy": "Тлустыя малочныя прадукты",
+  "guideCardFruit": "Садавіна",
+  "guideCardLegumes": "Бабовыя",
+  "guideCardMilkDrinks": "Малако і салодкія напоі",
+  "guideCardSugaryDrinks": "Напоі з цукрам",
+  "guideCardStarches": "Хлеб, рыс, бульба",
+  "guideCardSweets": "Салодкае і дэсерты",
+  "logMealRelation": "Запісана праз {hours} г пасля ежы ({mealType}) — толькі кантэкст часу, а не ўплыў.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "У акне аналізу перад гэтым вымярэннем ежа не запісана.",
+  "logRelationWindowLabel": "Акно сувязі з ежай",
+  "logConfoundersHeading": "Што яшчэ можа ўплываць на паказанні?",
+  "mealTypeShortBreakfast": "снеданне",
+  "mealTypeShortLunch": "абед",
+  "mealTypeShortDinner": "вячэра",
+  "mealTypeShortSnack": "перакус",
+  "mealTypeShortCustom": "ежа",
+  "recipePerServing": "Порцый: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Падрыхтоўка: {value} хв",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Алергены: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Інгрэдыенты",
+  "recipeGrams": "{value} г",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Крокі",
+  "recipeStorage": "Захоўванне: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Даследчы дыяпазон, які выкарыстоўваўся ў даследаванні",
+  "goalLegendClinician": "Мэта майго ўрача",
+  "goalLegendPersonal": "Мая асабістая мэта адсочвання",
+  "goalLegendPersonalNote": "Асабістая мэта адсочвання не з'яўляецца медыцынскай мэтай.",
+  "weightValueLabel": "Вага ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Умовы (неабавязкова, напр. раніцай, пасля трэніроўкі)",
+  "weightSave": "Захаваць вагу",
+  "symptomFormTitle": "Запісаць сімптом",
+  "symptomDefinitionLabel": "Сімптом",
+  "symptomSeverityLabel": "Цяжар: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Нататка (неабавязкова)",
+  "symptomSave": "Захаваць сімптом",
+  "symptomSavedToast": "Сімптом захаваны.",
+  "symptomGuidance": "Вы адзначылі значны сімптом. Гэта праграма не ставіць дыягназы. Прытрымлівайцеся свайго плана па здароўі і звярніцеся ў мясцовыя экстраныя службы, калі вам дрэнна або сімптомы моцныя.",
+  "symptomSeizureGuidance": "Вы запісалі прыступ. Гэта праграма не ставіць дыягназы. Прытрымлівайцеся свайго плана па здароўі і звярніцеся да ўрача; пры неадкладным стане выклічце мясцовыя экстраныя службы.",
+  "trendsRange7": "7 дзён",
+  "trendsRange30": "30 дзён",
+  "trendsRange90": "90 дзён",
+  "trendsSummary": "Паказанняў за апошнія {days} дзён: {count}. Апошняе: {latest}, сярэдняе: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "У гэтым дыяпазоне няма даных.",
+  "trendsExplainsTitle": "Што гэты графік паказвае — і што не",
+  "trendsExplainsBody": "Графік паказвае вашы паказанні ў часе ў выглядзе неапрацаваных кропак. Ён не ставіць дыягназ, не прагназуе і не даказвае прычыны. Прапушчаныя дні адлюстроўваюцца як прабелы, а не нулі.",
+  "trendsWeightChart": "Вага (кг)",
+  "trendsBandsNote": "Даследчыя дыяпазоны неабавязковыя і па змаўчанні адключаны. Каб уключыць, гл. укладку «Журнал».",
+  "evidenceDiseaseFilter": "Паказваць даследаванні па канкрэтных захворваннях (з выбраных вамі крыніц)",
+  "evidenceSectionTitle": "Навуковыя крыніцы і артыкулы",
+  "guideCopyLink": "Скапіяваць спасылку на крыніцу",
+  "planTitle": "Тыднёвы план",
+  "planGenerateDraft": "Стварыць чарнавік на тыдзень",
+  "planDraftLockedNote": "Аўтаматычнае стварэнне плана адключана: спачатку абмеркуйце гэта з кваліфікаваным медыкам.",
+  "planCreatedToast": "Тыднёвы план створаны.",
+  "planItemDay": "Дзень {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Стварыць спіс пакупак з плана",
+  "shoppingTitle": "Спіс пакупак",
+  "shoppingUndo": "Адмяніць",
+  "shoppingAddManual": "Дадаць пазіцыю ўручную",
+  "shoppingCheckedToggle": "Адзначыць",
+  "shoppingEmpty": "Спіса пакупак пакуль няма.",
+  "planEmpty": "Тыднёвага плана пакуль няма. Стварыце чарнавік з вашых рэцэптаў, каб пачаць.",
+  "aboutTitle": "Пра праграму",
+  "aboutSlogan": "Прыватны кета-дзённік",
+  "aboutVersion": "Версія {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Адкрыты код",
+  "aboutOpenSourceBody": "N Keto Tracker — бясплатная праграма з адкрытым кодам пад ліцэнзіяй GPL-3.0. Вы можаце вывучаць, змяняць і распаўсюджваць код на той жа ліцэнзіі.",
+  "aboutPrivacyHeading": "Прыватнасць",
+  "aboutPrivacyBody": "Вашы даныя пра здароўе застаюцца на гэтай прыладзе. Без уліковага запісу, без аналітыкі.",
+  "aboutDisclaimerHeading": "Адмова ад адказнасці",
+  "aboutDisclaimerBody": "Гэта праграма прызначана для агульнай інфармацыі і асабістага ўліку. Яна не з'яўляецца медыцынскай парадай, дыягназам або лячэннем.",
+  "aboutLicensesButton": "Ліцэнзіі",
+  "aboutShareButton": "Падзяліцца праграмай",
+  "aboutOtherAppsButton": "Іншыя праграмы",
+  "aboutCopiedToast": "Скапіравана ў буфер абмену.",
+  "licensesTitle": "Ліцэнзіі",
+  "otherAppsTitle": "Іншыя праграмы",
+  "otherAppsEmpty": "Іншых праграм у спісе пакуль няма.",
+  "otherAppsCopyLink": "Скапіяваць спасылку на магазін",
+  "settingsTitle": "Налады",
+  "aboutShareText": "Прыватны кета-дзённік з адсочваннем глюкозы, кетонаў і ІГК. Адкрыты код, уліковы запіс не патрэбны.",
+  "dataManagementTitle": "Кіраванне данымі",
+  "dataExportJson": "Экспартаваць даныя (JSON)",
+  "dataExportCsv": "Экспартаваць вымярэнні (CSV)",
+  "dataImportLabel": "Устаўце экспартаваны JSON сюды",
+  "dataImportButton": "Імпартаваць даныя",
+  "dataImportSuccess": "Імпартавана запісаў глюкозы: {glucose}, запісаў вагі: {weight}.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Імпарт не ўдаўся: файл няправільны або не падтрымліваецца.",
+  "dataDeleteAll": "Выдаліць усе мае даныя",
+  "dataDeleteConfirm1": "Выдаліць УСЕ даныя? Гэта ўключае вымярэнні, ежу, планы і налады. Гэта нельга адмяніць.",
+  "dataDeleteConfirm2": "Вы сапраўды ўпэўнены? Каб пацвердзіць, увядзіце DELETE.",
+  "dataDeleteTypeDelete": "Увядзіце DELETE",
+  "dataDeleteDone": "Усе даныя выдалены (запісаў: {count}).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Файл экспарту гатовы — выберыце, куды яго захаваць.",
+  "settingsAppearance": "Знешні выгляд",
+  "themeSystem": "Сістэмная",
+  "themeLight": "Светлая",
+  "themeDark": "Цёмная",
+  "settingsLanguage": "Мова",
+  "settingsMore": "Яшчэ"
+}

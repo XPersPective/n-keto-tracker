@@ -1,0 +1,452 @@
+{
+  "@@locale": "kn",
+  "appTitle": "N Keto Tracker",
+  "navToday": "ಇಂದು",
+  "navLog": "ಲಾಗ್",
+  "navPlan": "ಯೋಜನೆ",
+  "navTrends": "ಪ್ರವೃತ್ತಿಗಳು",
+  "navGuide": "ಮಾರ್ಗದರ್ಶಿ",
+  "pageUnderConstruction": "ಈ ಪರದೆಯನ್ನು ನಿರ್ಮಿಸಲಾಗುತ್ತಿದೆ.",
+  "generalInfoDisclaimer": "ಸಾಮಾನ್ಯ ಮಾಹಿತಿಗಾಗಿ ಮಾತ್ರ; ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ.",
+  "onboardingLanguageTitle": "ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆರಿಸಿ",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "ನಿಮ್ಮ ಡೇಟಾ ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ",
+  "onboardingPrivacyBody": "N Keto Tracker ನಿಮ್ಮ ಅಳತೆಗಳು, ಊಟ ಮತ್ತು ಟಿಪ್ಪಣಿಗಳನ್ನು ನಿಮ್ಮ ಸಾಧನದ ಈ ಆ್ಯಪ್‌ನಲ್ಲಿ ಮಾತ್ರ ಇಡುತ್ತದೆ. ಖಾತೆ ಇಲ್ಲ, ಮತ್ತು ನಿಮ್ಮ ಆರೋಗ್ಯ ಡೇಟಾವನ್ನು ಎಲ್ಲಿಯೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ. ಆ್ಯಪ್ ಅಳಿಸಿದರೆ ನಿಮ್ಮ ಡೇಟಾ ಸಹ ಅಳಿಸಿಹೋಗುತ್ತದೆ; ಯಾವಾಗ ಬೇಕಾದರೂ ಬ್ಯಾಕಪ್ ರಫ್ತು ಮಾಡಬಹುದು.",
+  "onboardingMedicalTitle": "ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ",
+  "onboardingMedicalBody": "ಈ ಆ್ಯಪ್ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ಮತ್ತು ವೈಯಕ್ತಿಕ ಟ್ರ್ಯಾಕಿಂಗ್‌ಗಾಗಿ. ಇದು ವೈದ್ಯಕೀಯ ಸಲಹೆ, ರೋಗನಿರ್ಣಯ ಅಥವಾ ಚಿಕಿತ್ಸೆ ಅಲ್ಲ ಮತ್ತು ಅರ್ಹ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರ ಆರೈಕೆಗೆ ಬದಲಿ ಅಲ್ಲ.",
+  "onboardingPurposeTitle": "ನೀವು ಏನನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?",
+  "onboardingPurposeLearn": "ಕೀಟೋಜೆನಿಕ್ ಪೋಷಣೆಯ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ",
+  "onboardingPurposeMeals": "ಊಟದ ಯೋಜನೆ ಮಾಡಿ",
+  "onboardingPurposeMacros": "ಮ್ಯಾಕ್ರೋ ಮತ್ತು ನೆಟ್ ಕಾರ್ಬ್ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+  "onboardingPurposeMeasure": "ಗ್ಲೂಕೋಸ್, ಕೀಟೋನ್ ಮತ್ತು GKI ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+  "onboardingProfileTitle": "ನಿಮ್ಮ ಬಗ್ಗೆ (ಐಚ್ಛಿಕ)",
+  "onboardingProfileBody": "ಇದನ್ನು ಬಿಟ್ಟು ನಂತರ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಸೇರಿಸಬಹುದು. ಇದನ್ನು ಸಾಮಾನ್ಯ ಶಕ್ತಿ ಅಂದಾಜಿಗೆ ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ.",
+  "onboardingBirthYear": "ಜನ್ಮ ವರ್ಷ",
+  "onboardingHeightCm": "ಎತ್ತರ (ಸೆಂ.ಮೀ)",
+  "onboardingWeightKg": "ತೂಕ (ಕೆ.ಜಿ)",
+  "onboardingEnergyCoeffTitle": "ಶಕ್ತಿ ಅಂದಾಜು ಗುಣಾಂಕ",
+  "onboardingEnergyCoeffBody": "ಸಾಮಾನ್ಯ ಶಕ್ತಿ ಅಂದಾಜು ಪ್ರಕಟಿತ ಎರಡು ಗುಣಾಂಕಗಳಲ್ಲಿ ಒಂದನ್ನು ಬಳಸುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಲಿಂಗ ಗುರುತಿನ ಬಗ್ಗೆ ಅಲ್ಲ — ಸಮೀಕರಣದ ಯಾವ ಆವೃತ್ತಿ ನಿಮಗೆ ಹೆಚ್ಚು ಹೊಂದುತ್ತದೆ ಎಂಬುದಷ್ಟೇ. ಶಕ್ತಿ ಅಂದಾಜುಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಬಿಡಲೂ ಬಹುದು.",
+  "onboardingEnergyCoeffSkip": "ಶಕ್ತಿ ಅಂದಾಜುಗಳನ್ನು ಬಿಡಿ",
+  "onboardingScreeningTitle": "ಕೆಲವು ಸುರಕ್ಷತಾ ಪ್ರಶ್ನೆಗಳು",
+  "onboardingScreeningBody": "ಈ ಪ್ರಶ್ನೆಗಳು ಯಾವುದನ್ನೂ ರೋಗನಿರ್ಣಯ ಮಾಡುವುದಿಲ್ಲ. ಹೆಚ್ಚುವರಿ ಕಾಳಜಿ ಬೇಕಾದಾಗ ಅವು ಸ್ವಯಂಚಾಲಿತ ಯೋಜನೆ ಮತ್ತು ಗುರಿ ಸಲಹೆಗಳನ್ನು ಮಾತ್ರ ಆಫ್ ಮಾಡುತ್ತವೆ.",
+  "onboardingScreeningDiabetes": "ಮಧುಮೇಹ ಇದೆ",
+  "onboardingScreeningMedication": "ಗ್ಲೂಕೋಸ್ ಕಡಿಮೆ ಮಾಡುವ ಔಷಧಿ ಅಥವಾ ಇನ್ಸುಲಿನ್ ಬಳಸುತ್ತೇನೆ",
+  "onboardingScreeningPregnancy": "ಗರ್ಭಿಣಿ ಅಥವಾ ಹಾಲುಣಿಸುತ್ತಿದ್ದೇನೆ",
+  "onboardingScreeningOrgan": "ಕಿಡ್ನಿ, ಯಕೃತ್ತು ಅಥವಾ ಮೇದೋಜೀರಕ ಗ್ರಂಥಿ ರೋಗ ಇದೆ",
+  "onboardingScreeningEatingDisorder": "ತಿನ್ನುವ ಅಸ್ವಸ್ಥತೆಯ ಇತಿಹಾಸ ಇದೆ",
+  "onboardingScreeningWeightLoss": "ಅನಿಚ್ಛೆಯಿಂದ ಗಮನಾರ್ಹ ತೂಕ ಇಳಿದಿದೆ",
+  "onboardingScreeningUnder18": "18 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸು",
+  "onboardingScreeningLockedNote": "ನಿಮ್ಮ ಉತ್ತರಗಳ ಕಾರಣ ಸ್ವಯಂಚಾಲಿತ ಯೋಜನೆ ಮತ್ತು ಗುರಿ ರಚನೆ ಆಫ್ ಆಗಿಯೇ ಇರುತ್ತದೆ. ದಾಖಲೆ ಮತ್ತು ಕಲಿಕೆ ಸೌಲಭ್ಯಗಳು ಲಭ್ಯವಿರುತ್ತವೆ. ದಯವಿಟ್ಟು ಇದನ್ನು ಅರ್ಹ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರೊಂದಿಗೆ ಪರಿಶೀಲಿಸಿ.",
+  "onboardingDataTitle": "ನಿಮ್ಮ ಡೇಟಾ",
+  "onboardingDataBody": "ನಿಮ್ಮ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತವೆ. ಬ್ಯಾಕಪ್ ರಫ್ತು ಇಲ್ಲದೆ ಆ್ಯಪ್ ಕಳೆದುಕೊಂಡರೆ ಅಥವಾ ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದರೆ ಡೇಟಾ ಮರುಪಡೆಯಲಾಗುವುದಿಲ್ಲ.",
+  "onboardingConsentTitle": "ಒಪ್ಪಿಗೆ",
+  "onboardingConsentBody": "ನಾನು ಗೌಪ್ಯತೆ ಸಾರಾಂಶ ಮತ್ತು ಈ ಆ್ಯಪ್ ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ ಎಂಬ ಸೂಚನೆಯನ್ನು ಓದಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ. ನನ್ನ ಡೇಟಾ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ ಎಂದು ನನಗೆ ಅರ್ಥವಾಗಿದೆ.",
+  "onboardingConsentCheckbox": "ನಾನು ಒಪ್ಪುತ್ತೇನೆ",
+  "onboardingNext": "ಮುಂದೆ",
+  "onboardingBack": "ಹಿಂದೆ",
+  "onboardingFinish": "ಆ್ಯಪ್ ಬಳಸಲು ಪ್ರಾರಂಭಿಸಿ",
+  "onboardingStepOf": "ಹಂತ {current}/{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "ಗ್ಲೂಕೋಸ್ ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "ರಕ್ತದ ಕೀಟೋನ್ BHB (mmol/L)",
+  "formSourceType": "ಮೂಲದ ಪ್ರಕಾರ",
+  "formNote": "ಟಿಪ್ಪಣಿ (ಐಚ್ಛಿಕ)",
+  "formPickTime": "ಅಳತೆಯ ಸಮಯ",
+  "formSaveSession": "ಅಳತೆ ಸೆಷನ್ ಉಳಿಸಿ",
+  "formInvalidValue": "ದಯವಿಟ್ಟು ಮಾನ್ಯ ಧನ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ.",
+  "gkiResultHeading": "ನಿಮ್ಮ GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "ಅಳೆದ ಸಮಯ: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "ಲೆಕ್ಕಾಚಾರ ಆವೃತ್ತಿ: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ಇನ್ನೂ ಯಾವುದೇ ಅಳತೆ ಇಲ್ಲ",
+  "logEmptyBody": "ಇಲ್ಲಿ ನೋಡಲು ನಿಮ್ಮ ಮೊದಲ ಗ್ಲೂಕೋಸ್ ಮತ್ತು ಕೀಟೋನ್ ರೀಡಿಂಗ್ ಸೇರಿಸಿ.",
+  "logBandsToggle": "ನೀವು ಓದಿದ ಲೇಖನದ ಸಂಶೋಧನಾ ಶ್ರೇಣಿಗಳನ್ನು ತೋರಿಸಿ",
+  "bandsDisclaimer": "ಈ ಶ್ರೇಣಿಗಳು ಕ್ಲಿನಿಕಲ್ ಸಾಮಾನ್ಯ ಶ್ರೇಣಿ ಅಥವಾ ಸಾಬೀತಾದ ಚಿಕಿತ್ಸಾ ಗುರಿಗಳಲ್ಲ. ಇವು ನಿರ್ದಿಷ್ಟ ಸಂಶೋಧನಾ ಚೌಕಟ್ಟಿನಿಂದ ಪ್ರತಿನಿಧಿಸುವ, ಆದೇಶಾತ್ಮಕವಲ್ಲದ ಸಲಹೆಗಳು. GKI ಮಾತ್ರ ಆರೋಗ್ಯ, ರೋಗ ಪ್ರತಿಕ್ರಿಯೆ ಅಥವಾ ಸುರಕ್ಷತೆಯನ್ನು ತೋರಿಸುವುದಿಲ್ಲ. ಮೂಲ ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "logBandOptimal": "ಸೂಚಿತ ಅತ್ಯುತ್ತಮ ಸಂಶೋಧನಾ ಶ್ರೇಣಿ (GKI ≤ 1.0)",
+  "logBandTherapeutic": "ಸೂಚಿತ ಚಿಕಿತ್ಸಕ ಸಂಶೋಧನಾ ಶ್ರೇಣಿ (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "ಸೂಚಿತ ≤ 2.0 ಸಂಶೋಧನಾ ಶ್ರೇಣಿಯ ಹೊರಗೆ",
+  "logMatchSimultaneous": "ಏಕಕಾಲದಲ್ಲಿ",
+  "logMatchApproximate": "ಅಂದಾಜು ಹೊಂದಾಣಿಕೆ",
+  "logTimelineHeading": "ಟೈಮ್‌ಲೈನ್",
+  "logChartsHeading": "ಚಾರ್ಟ್‌ಗಳು",
+  "logGlucoseChart": "ಗ್ಲೂಕೋಸ್ (mmol/L)",
+  "logBhbChart": "ಕೀಟೋನ್ BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "ಮೂಲ ಲಿಂಕ್ ನಕಲಿಸಿ",
+  "todayQuickActions": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+  "todayAddMeasurement": "ಅಳತೆ ಸೇರಿಸಿ",
+  "todayAddMeal": "ಊಟ ಸೇರಿಸಿ",
+  "todayAddWeight": "ತೂಕ ಸೇರಿಸಿ",
+  "todayAddSymptom": "ಲಕ್ಷಣ ಸೇರಿಸಿ",
+  "todayLatestTitle": "ಇತ್ತೀಚಿನ ಅಳತೆಗಳು",
+  "todayLatestEmpty": "ಇನ್ನೂ ಯಾವುದೇ ಅಳತೆ ಇಲ್ಲ. ಗ್ಲೂಕೋಸ್ ಮತ್ತು ಕೀಟೋನ್ BHB ಒಟ್ಟಿಗೆ ದಾಖಲಿಸಲು 'ಅಳತೆ ಸೇರಿಸಿ' ಬಳಸಿ.",
+  "todayNutritionTitle": "ಇಂದಿನ ಪೋಷಣೆ",
+  "todayNutritionEmpty": "ಇಂದು ಯಾವುದೇ ಊಟ ದಾಖಲಾಗಿಲ್ಲ. ಊಟವನ್ನು ಯೋಜನೆ ಟ್ಯಾಬ್‌ನಿಂದ ಲಾಗ್ ಮಾಡಲಾಗುತ್ತದೆ.",
+  "todayWeightTitle": "ತೂಕ",
+  "todayWeightEmpty": "ಇನ್ನೂ ತೂಕ ದಾಖಲೆಗಳಿಲ್ಲ.",
+  "todaySymptomsTitle": "ಇಂದಿನ ಲಕ್ಷಣಗಳು",
+  "todaySymptomsEmpty": "ಇಂದು ಯಾವುದೇ ಲಕ್ಷಣ ದಾಖಲಾಗಿಲ್ಲ.",
+  "todayPlansTitle": "ಯೋಜಿತ ಊಟ",
+  "todayPlansEmpty": "ಇಂದಿಗೆ ಊಟದ ಯೋಜನೆ ಇಲ್ಲ.",
+  "comingSoonTitle": "ಮುಂದಿನ ಅಪ್‌ಡೇಟ್‌ನಲ್ಲಿ ಬರುತ್ತಿದೆ",
+  "comingSoonBody": "ಈ ನಮೂದು ಫಾರ್ಮ್ ನಿರ್ಮಾಣ ಹಂತದಲ್ಲಿದೆ. ಪ್ರಗತಿಯನ್ನು ಪ್ರಾಜೆಕ್ಟ್ ರೆಪೊಸಿಟರಿಯಲ್ಲಿ ಅನುಸರಿಸಬಹುದು.",
+  "mealFormTitle": "ಊಟ ಲಾಗ್ ಮಾಡಿ",
+  "mealSearchLabel": "ಆಹಾರ ಹುಡುಕಿ",
+  "mealTypeLabel": "ಊಟದ ಪ್ರಕಾರ",
+  "mealTypeBreakfast": "ಉಪಾಹಾರ",
+  "mealTypeLunch": "ಮಧ್ಯಾಹ್ನದ ಊಟ",
+  "mealTypeDinner": "ರಾತ್ರಿ ಊಟ",
+  "mealTypeSnack": "ಸ್ನ್ಯಾಕ್",
+  "mealTypeCustom": "ಕಸ್ಟಮ್",
+  "mealGramsLabel": "ಪ್ರಮಾಣ (ಗ್ರಾಂ)",
+  "mealAddItem": "ಆಹಾರ ಸೇರಿಸಿ",
+  "mealNoteLabel": "ಟಿಪ್ಪಣಿ (ಐಚ್ಛಿಕ)",
+  "mealFavoriteToggle": "ಮೆಚ್ಚಿನದು ಎಂದು ಗುರುತಿಸಿ",
+  "mealRepeatSection": "ತ್ವರಿತ ಪುನರಾವರ್ತನೆ",
+  "mealRepeatFavorites": "ಮೆಚ್ಚಿನವು",
+  "mealRepeatRecent": "ಇತ್ತೀಚಿನವು",
+  "mealSave": "ಊಟ ಉಳಿಸಿ",
+  "mealItemsHeading": "ಐಟಂಗಳು",
+  "mealSavedToast": "ಊಟ ಉಳಿಸಲಾಗಿದೆ.",
+  "mealNeedsItem": "ಮೊದಲು ಕನಿಷ್ಠ ಒಂದು ಆಹಾರ ಸೇರಿಸಿ.",
+  "mealTotalsHeading": "ದೈನಂದಿನ ಒಟ್ಟು",
+  "mealTotalsKcal": "ಶಕ್ತಿ: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "ನೆಟ್ ಕಾರ್ಬ್‌ಗಳು: {value} ಗ್ರಾಂ",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "ಒಟ್ಟು ಕಾರ್ಬ್‌ಗಳು: {value} ಗ್ರಾಂ",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ನಾರು: {value} ಗ್ರಾಂ",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "ಪ್ರೋಟೀನ್: {value} ಗ್ರಾಂ",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "ಕೊಬ್ಬು: {value} ಗ್ರಾಂ",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "ಸಾಮಾನ್ಯವಾಗಿ ಉತ್ತಮ ಆಯ್ಕೆ",
+  "guideGroupLimit": "ಪ್ರಮಾಣ ಅಥವಾ ಆವರ್ತನ ಮಿತಿ ಬೇಕಾಗಬಹುದು",
+  "guideGroupAvoid": "ಸಾಮಾನ್ಯವಾಗಿ ಕೀಟೋಜೆನಿಕ್ ಗುರಿಗಳಿಗೆ ಹೊಂದುವುದಿಲ್ಲ",
+  "guideWhyHeading": "ಏಕೆ?",
+  "guideTypicalPortion": "ಸಾಮಾನ್ಯ ಪ್ರಮಾಣ: {portion} (~{grams} ಗ್ರಾಂ)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ಪರ್ಯಾಯಗಳು: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "ಡೇಟಾ ಮೂಲ: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "ಮಾಂಸ, ಮೀನು ಮತ್ತು ಮೊಟ್ಟೆ",
+  "guideCardLowCarbVegetables": "ಕಡಿಮೆ ಕಾರ್ಬ್ ತರಕಾರಿಗಳು",
+  "guideCardFatsOils": "ಕೊಬ್ಬು ಮತ್ತು ಎಣ್ಣೆಗಳು",
+  "guideCardNutsSeeds": "ಬೀಜಗಳು ಮತ್ತು ಒಣ ಹಣ್ಣುಗಳು",
+  "guideCardBerries": "ಬೆರ್ರಿಗಳು",
+  "guideCardDairy": "ಪೂರ್ಣ ಕೊಬ್ಬಿನ ಡೈರಿ",
+  "guideCardFruit": "ಹಣ್ಣುಗಳು",
+  "guideCardLegumes": "ದ್ವಿದಳ ಧಾನ್ಯಗಳು",
+  "guideCardMilkDrinks": "ಹಾಲು ಮತ್ತು ಸಿಹಿ ಪಾನೀಯಗಳು",
+  "guideCardSugaryDrinks": "ಸಕ್ಕರೆ ಪಾನೀಯಗಳು",
+  "guideCardStarches": "ಬ್ರೆಡ್, ಅಕ್ಕಿ, ಆಲೂಗಡ್ಡೆ",
+  "guideCardSweets": "ಸಿಹಿ ತಿಂಡಿಗಳು ಮತ್ತು ಡೆಸರ್ಟ್‌ಗಳು",
+  "logMealRelation": "{mealType} ಊಟದ {hours} ಗಂಟೆ ನಂತರ ದಾಖಲಿಸಲಾಗಿದೆ — ಸಮಯದ ಸಂದರ್ಭ ಮಾತ್ರ, ಪರಿಣಾಮವಲ್ಲ.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ಈ ರೀಡಿಂಗ್‌ಗೂ ಮುನ್ನ ವಿಶ್ಲೇಷಣಾ ವಿಂಡೋದಲ್ಲಿ ಯಾವುದೇ ಊಟ ದಾಖಲಾಗಿಲ್ಲ.",
+  "logRelationWindowLabel": "ಊಟ ಸಂಬಂಧ ವಿಂಡೋ",
+  "logConfoundersHeading": "ರೀಡಿಂಗ್‌ಗಳ ಮೇಲೆ ಇನ್ನೇನು ಪರಿಣಾಮ ಬೀರಬಹುದು?",
+  "mealTypeShortBreakfast": "ಉಪಾಹಾರ",
+  "mealTypeShortLunch": "ಮಧ್ಯಾಹ್ನದ ಊಟ",
+  "mealTypeShortDinner": "ರಾತ್ರಿ ಊಟ",
+  "mealTypeShortSnack": "ಸ್ನ್ಯಾಕ್",
+  "mealTypeShortCustom": "ಊಟ",
+  "recipePerServing": "{value} ಬಡಿಸುವಿಕೆ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "ತಯಾರಿ: {value} ನಿಮಿಷ",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "ಅಲರ್ಜನ್‌ಗಳು: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ಪದಾರ್ಥಗಳು",
+  "recipeGrams": "{value} ಗ್ರಾಂ",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ಹಂತಗಳು",
+  "recipeStorage": "ಸಂಗ್ರಹಣೆ: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ಅಧ್ಯಯನದಲ್ಲಿ ಬಳಸಿದ ಸಂಶೋಧನಾ ಶ್ರೇಣಿ",
+  "goalLegendClinician": "ನನ್ನ ವೈದ್ಯರ ಗುರಿ",
+  "goalLegendPersonal": "ನನ್ನ ವೈಯಕ್ತಿಕ ಟ್ರ್ಯಾಕಿಂಗ್ ಗುರಿ",
+  "goalLegendPersonalNote": "ವೈಯಕ್ತಿಕ ಟ್ರ್ಯಾಕಿಂಗ್ ಗುರಿ ವೈದ್ಯಕೀಯ ಗುರಿಯಲ್ಲ.",
+  "weightValueLabel": "ತೂಕ ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "ಸ್ಥಿತಿ (ಐಚ್ಛಿಕ, ಉದಾ. ಬೆಳಿಗ್ಗೆ, ವ್ಯಾಯಾಮದ ನಂತರ)",
+  "weightSave": "ತೂಕ ಉಳಿಸಿ",
+  "symptomFormTitle": "ಲಕ್ಷಣ ಲಾಗ್ ಮಾಡಿ",
+  "symptomDefinitionLabel": "ಲಕ್ಷಣ",
+  "symptomSeverityLabel": "ತೀವ್ರತೆ: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "ಟಿಪ್ಪಣಿ (ಐಚ್ಛಿಕ)",
+  "symptomSave": "ಲಕ್ಷಣ ಉಳಿಸಿ",
+  "symptomSavedToast": "ಲಕ್ಷಣ ಉಳಿಸಲಾಗಿದೆ.",
+  "symptomGuidance": "ನೀವು ಗಮನಾರ್ಹ ಲಕ್ಷಣವನ್ನು ಗುರುತಿಸಿದ್ದೀರಿ. ಈ ಆ್ಯಪ್ ರೋಗನಿರ್ಣಯ ಮಾಡುವುದಿಲ್ಲ. ನಿಮ್ಮ ಸ್ವಂತ ಆರೋಗ್ಯ ಯೋಜನೆ ಅನುಸರಿಸಿ, ಮತ್ತು ಅಸ್ವಸ್ಥರೆನಿಸಿದರೆ ಅಥವಾ ಲಕ್ಷಣಗಳು ತೀವ್ರವಾಗಿದ್ದರೆ ಸ್ಥಳೀಯ ತುರ್ತು ಸೇವೆಗಳನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+  "symptomSeizureGuidance": "ನೀವು ಸೆಳವಿನ ಘಟನೆಯನ್ನು ದಾಖಲಿಸಿದ್ದೀರಿ. ಈ ಆ್ಯಪ್ ರೋಗನಿರ್ಣಯ ಮಾಡುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆರೋಗ್ಯ ಯೋಜನೆ ಅನುಸರಿಸಿ ಮತ್ತು ಆರೋಗ್ಯ ವೃತ್ತಿಪರರನ್ನು ಸಂಪರ್ಕಿಸಿ; ತುರ್ತಾಗಿದ್ದರೆ ಸ್ಥಳೀಯ ತುರ್ತು ಸೇವೆಗಳಿಗೆ ಕರೆ ಮಾಡಿ.",
+  "trendsRange7": "7 ದಿನಗಳು",
+  "trendsRange30": "30 ದಿನಗಳು",
+  "trendsRange90": "90 ದಿನಗಳು",
+  "trendsSummary": "ಕಳೆದ {days} ದಿನಗಳಲ್ಲಿ {count} ರೀಡಿಂಗ್‌ಗಳು. ಇತ್ತೀಚಿನದು: {latest}, ಸರಾಸರಿ: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ಈ ಶ್ರೇಣಿಯಲ್ಲಿ ಡೇಟಾ ಇಲ್ಲ.",
+  "trendsExplainsTitle": "ಈ ಚಾರ್ಟ್ ಏನು ಹೇಳುತ್ತದೆ — ಮತ್ತು ಏನು ಹೇಳುವುದಿಲ್ಲ",
+  "trendsExplainsBody": "ಚಾರ್ಟ್ ನಿಮ್ಮ ಸ್ವಂತ ರೀಡಿಂಗ್‌ಗಳನ್ನು ಕಾಲಕ್ರಮೇಣ ಕಚ್ಚಾ ಬಿಂದುಗಳಾಗಿ ತೋರಿಸುತ್ತದೆ. ಇದು ರೋಗನಿರ್ಣಯ ಮಾಡುವುದಿಲ್ಲ, ಭವಿಷ್ಯ ಹೇಳುವುದಿಲ್ಲ ಮತ್ತು ಕಾರಣಗಳನ್ನು ಸಾಬೀತುಪಡಿಸುವುದಿಲ್ಲ. ಕಾಣೆಯಾದ ದಿನಗಳು ಶೂನ್ಯವಲ್ಲ, ಅಂತರಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+  "trendsWeightChart": "ತೂಕ (ಕೆ.ಜಿ)",
+  "trendsBandsNote": "ಸಂಶೋಧನಾ ಶ್ರೇಣಿಗಳು ಐಚ್ಛಿಕ ಮತ್ತು ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆಫ್. ಆನ್ ಮಾಡಲು ಲಾಗ್ ಟ್ಯಾಬ್ ನೋಡಿ.",
+  "evidenceDiseaseFilter": "ರೋಗ-ನಿರ್ದಿಷ್ಟ ಸಂಶೋಧನೆ ತೋರಿಸಿ (ನೀವು ಓದಲು ಆರಿಸುವ ಮೂಲಗಳಿಂದ)",
+  "evidenceSectionTitle": "ವೈಜ್ಞಾನಿಕ ಮೂಲಗಳು ಮತ್ತು ಲೇಖನಗಳು",
+  "guideCopyLink": "ಮೂಲ ಲಿಂಕ್ ನಕಲಿಸಿ",
+  "planTitle": "ವಾರದ ಯೋಜನೆ",
+  "planGenerateDraft": "ವಾರದ ಕರಡು ರಚಿಸಿ",
+  "planDraftLockedNote": "ಸ್ವಯಂಚಾಲಿತ ಯೋಜನೆ ರಚನೆ ಆಫ್ ಆಗಿಯೇ ಇರುತ್ತದೆ: ದಯವಿಟ್ಟು ಮೊದಲು ಅರ್ಹ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರೊಂದಿಗೆ ಪರಿಶೀಲಿಸಿ.",
+  "planCreatedToast": "ವಾರದ ಯೋಜನೆ ರಚಿಸಲಾಗಿದೆ.",
+  "planItemDay": "ದಿನ {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "ಯೋಜನೆಯಿಂದ ಖರೀದಿ ಪಟ್ಟಿ ರಚಿಸಿ",
+  "shoppingTitle": "ಖರೀದಿ ಪಟ್ಟಿ",
+  "shoppingUndo": "ರದ್ದುಗೊಳಿಸಿ",
+  "shoppingAddManual": "ಕೈಯಾರೆ ಐಟಂ ಸೇರಿಸಿ",
+  "shoppingCheckedToggle": "ಟಿಕ್ ಮಾಡಿ",
+  "shoppingEmpty": "ಇನ್ನೂ ಖರೀದಿ ಪಟ್ಟಿ ಇಲ್ಲ.",
+  "planEmpty": "ಇನ್ನೂ ವಾರದ ಯೋಜನೆ ಇಲ್ಲ. ಆರಂಭಿಸಲು ನಿಮ್ಮ ರೆಸಿಪಿಗಳಿಂದ ಕರಡು ರಚಿಸಿ.",
+  "aboutTitle": "ಕುರಿತು",
+  "aboutSlogan": "ಖಾಸಗಿ ಕೀಟೋ ಜರ್ನಲ್",
+  "aboutVersion": "ಆವೃತ್ತಿ {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "ಓಪನ್ ಸೋರ್ಸ್",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 ಪರವಾನಗಿಯ ಅಡಿಯಲ್ಲಿ ಉಚಿತ, ಓಪನ್-ಸೋರ್ಸ್ ಸಾಫ್ಟ್‌ವೇರ್. ಅದೇ ಪರವಾನಗಿಯಡಿ ಕೋಡ್ ಪರಿಶೀಲಿಸಿ, ಮಾರ್ಪಡಿಸಿ ಮತ್ತು ಮರುವಿತರಿಸಬಹುದು.",
+  "aboutPrivacyHeading": "ಗೌಪ್ಯತೆ",
+  "aboutPrivacyBody": "ನಿಮ್ಮ ಆರೋಗ್ಯ ಡೇಟಾ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ. ಖಾತೆ ಇಲ್ಲ, ಅನಾಲಿಟಿಕ್ಸ್ ಇಲ್ಲ.",
+  "aboutDisclaimerHeading": "ಹಕ್ಕು ನಿರಾಕರಣೆ",
+  "aboutDisclaimerBody": "ಈ ಆ್ಯಪ್ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ಮತ್ತು ವೈಯಕ್ತಿಕ ಟ್ರ್ಯಾಕಿಂಗ್‌ಗಾಗಿ. ಇದು ವೈದ್ಯಕೀಯ ಸಲಹೆ, ರೋಗನಿರ್ಣಯ ಅಥವಾ ಚಿಕಿತ್ಸೆ ಅಲ್ಲ.",
+  "aboutLicensesButton": "ಪರವಾನಗಿಗಳು",
+  "aboutShareButton": "ಈ ಆ್ಯಪ್ ಹಂಚಿಕೊಳ್ಳಿ",
+  "aboutOtherAppsButton": "ಇತರ ಆ್ಯಪ್‌ಗಳು",
+  "aboutCopiedToast": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ.",
+  "licensesTitle": "ಪರವಾನಗಿಗಳು",
+  "otherAppsTitle": "ಇತರ ಆ್ಯಪ್‌ಗಳು",
+  "otherAppsEmpty": "ಇನ್ನೂ ಯಾವುದೇ ಇತರ ಆ್ಯಪ್ ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲ.",
+  "otherAppsCopyLink": "ಸ್ಟೋರ್ ಲಿಂಕ್ ನಕಲಿಸಿ",
+  "settingsTitle": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "aboutShareText": "ಗ್ಲೂಕೋಸ್, ಕೀಟೋನ್ ಮತ್ತು GKI ಟ್ರ್ಯಾಕಿಂಗ್ ಇರುವ ಖಾಸಗಿ ಕೀಟೋ ಜರ್ನಲ್. ಓಪನ್ ಸೋರ್ಸ್, ಖಾತೆ ಬೇಡ.",
+  "dataManagementTitle": "ಡೇಟಾ ನಿರ್ವಹಣೆ",
+  "dataExportJson": "ಡೇಟಾ ರಫ್ತು ಮಾಡಿ (JSON)",
+  "dataExportCsv": "ಅಳತೆಗಳನ್ನು ರಫ್ತು ಮಾಡಿ (CSV)",
+  "dataImportLabel": "ರಫ್ತು ಮಾಡಿದ JSON ಅನ್ನು ಇಲ್ಲಿ ಅಂಟಿಸಿ",
+  "dataImportButton": "ಡೇಟಾ ಆಮದು ಮಾಡಿ",
+  "dataImportSuccess": "{glucose} ಗ್ಲೂಕೋಸ್ ಮತ್ತು {weight} ತೂಕ ದಾಖಲೆಗಳನ್ನು ಆಮದು ಮಾಡಲಾಗಿದೆ.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "ಆಮದು ವಿಫಲವಾಗಿದೆ: ಫೈಲ್ ಅಮಾನ್ಯ ಅಥವಾ ಬೆಂಬಲಿತವಲ್ಲ.",
+  "dataDeleteAll": "ನನ್ನ ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸಿ",
+  "dataDeleteConfirm1": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸಬೇಕೇ? ಇದರಲ್ಲಿ ಅಳತೆಗಳು, ಊಟ, ಯೋಜನೆಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸೇರಿವೆ. ಇದನ್ನು ಹಿಂತಿರುಗಿಸಲಾಗದು.",
+  "dataDeleteConfirm2": "ನೀವು ನಿಜವಾಗಿಯೂ ಖಚಿತವೇ? ದೃಢೀಕರಿಸಲು DELETE ಟೈಪ್ ಮಾಡಿ.",
+  "dataDeleteTypeDelete": "DELETE ಟೈಪ್ ಮಾಡಿ",
+  "dataDeleteDone": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ ({count} ದಾಖಲೆಗಳು).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ರಫ್ತು ಫೈಲ್ ಸಿದ್ಧವಾಗಿದೆ — ಎಲ್ಲಿ ಉಳಿಸಬೇಕೆಂದು ಆರಿಸಿ.",
+  "settingsAppearance": "ರೂಪ",
+  "themeSystem": "ಸಿಸ್ಟಮ್",
+  "themeLight": "ಲೈಟ್",
+  "themeDark": "ಡಾರ್ಕ್",
+  "settingsLanguage": "ಭಾಷೆ",
+  "settingsMore": "ಇನ್ನಷ್ಟು"
+}

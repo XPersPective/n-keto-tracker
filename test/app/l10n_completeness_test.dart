@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:n_keto_tracker/app/l10n/generated/app_localizations.dart';
+import 'package:n_keto_tracker/app/l10n/language_names.dart';
 
 /// ARB anahtar bütünlüğü (MASTER_PROMPT §3.3/§16.3): TR ve EN çeviri
 /// dosyalarının anahtar kümeleri eşit olmalı; hiçbir anahtar boş olmamalı.
@@ -41,7 +43,7 @@ void main() {
         .listSync()
         .whereType<File>()
         .where((f) => f.path.endsWith('.arb'));
-    expect(files.length, greaterThanOrEqualTo(18));
+    expect(files.length, greaterThanOrEqualTo(68));
     for (final f in files) {
       final keys = _readKeys(f.path);
       expect(
@@ -50,6 +52,23 @@ void main() {
         reason: '${f.path} anahtarları EN ile eşit olmalı',
       );
       expect(keys.values.every((v) => v.trim().isNotEmpty), isTrue);
+    }
+  });
+
+  test('Her ARB dili endonym haritasında ve desteklenen yerel ayarlarda', () {
+    final codes = Directory('lib/app/l10n')
+        .listSync()
+        .whereType<File>()
+        .where((f) => f.path.endsWith('.arb'))
+        .map((f) => RegExp(r'app_(.+)\.arb').firstMatch(f.path)!.group(1)!)
+        .toSet();
+    expect(languageEndonyms.keys.toSet(), codes);
+    for (final c in codes) {
+      expect(
+        AppLocalizations.supportedLocales.contains(localeFromCode(c)),
+        isTrue,
+        reason: c,
+      );
     }
   });
 

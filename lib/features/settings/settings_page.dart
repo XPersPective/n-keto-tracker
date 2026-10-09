@@ -17,9 +17,9 @@ class SettingsPage extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
     final repo = ref.read(settingsRepositoryProvider);
     final mode = ref.watch(appThemeModeProvider);
-    final current =
-        ref.watch(appLocaleProvider)?.languageCode ??
-        Localizations.localeOf(context).languageCode;
+    final current = codeFromLocale(
+      ref.watch(appLocaleProvider) ?? Localizations.localeOf(context),
+    );
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.settingsTitle)),

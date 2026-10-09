@@ -1,0 +1,452 @@
+{
+  "@@locale": "az",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Bu gün",
+  "navLog": "Jurnal",
+  "navPlan": "Plan",
+  "navTrends": "Trendlər",
+  "navGuide": "Bələdçi",
+  "pageUnderConstruction": "Bu ekran hazırlanır.",
+  "generalInfoDisclaimer": "Yalnız ümumi məlumat üçündür; tibbi məsləhət deyil.",
+  "onboardingLanguageTitle": "Dilinizi seçin",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Məlumatlarınız cihazınızda qalır",
+  "onboardingPrivacyBody": "N Keto Tracker ölçülərinizi, yeməklərinizi və qeydlərinizi yalnız cihazınızdakı bu tətbiqdə saxlayır. Hesab yoxdur və sağlamlıq məlumatlarınız heç yerə göndərilmir. Tətbiqi silsəniz, məlumatlarınız da silinir; istənilən vaxt ehtiyat nüsxəsini ixrac edə bilərsiniz.",
+  "onboardingMedicalTitle": "Tibbi məsləhət deyil",
+  "onboardingMedicalBody": "Bu tətbiq ümumi məlumat və şəxsi izləmə üçündür. Tibbi məsləhət, diaqnoz və ya müalicə deyil və ixtisaslı səhiyyə mütəxəssislərinin köməyini əvəz etmir.",
+  "onboardingPurposeTitle": "Nəyi izləmək istəyirsiniz?",
+  "onboardingPurposeLearn": "Ketogen qidalanma haqqında öyrənmək",
+  "onboardingPurposeMeals": "Yeməkləri planlaşdırmaq",
+  "onboardingPurposeMacros": "Makroları və xalis karbohidratları izləmək",
+  "onboardingPurposeMeasure": "Qlükoza, keton və GKİ izləmək",
+  "onboardingProfileTitle": "Haqqınızda (könüllü)",
+  "onboardingProfileBody": "Bunu keçib sonra ayarlarda əlavə edə bilərsiniz. Yalnız ümumi enerji təxmini üçün istifadə olunur.",
+  "onboardingBirthYear": "Doğum ili",
+  "onboardingHeightCm": "Boy (sm)",
+  "onboardingWeightKg": "Çəki (kq)",
+  "onboardingEnergyCoeffTitle": "Enerji təxmini əmsalı",
+  "onboardingEnergyCoeffBody": "Ümumi enerji təxmini nəşr olunmuş iki əmsaldan birini istifadə edir. Bu, cinsi kimliyinizlə bağlı deyil — sadəcə tənliyin hansı variantının sizə daha uyğun olduğunu göstərir. Enerji təxminlərini tamamilə də keçə bilərsiniz.",
+  "onboardingEnergyCoeffSkip": "Enerji təxminlərini keç",
+  "onboardingScreeningTitle": "Bir neçə təhlükəsizlik sualı",
+  "onboardingScreeningBody": "Bu suallar heç bir diaqnoz qoymur. Yalnız əlavə diqqət lazım olduqda avtomatik plan və hədəf təkliflərini söndürür.",
+  "onboardingScreeningDiabetes": "Diabetim var",
+  "onboardingScreeningMedication": "Qlükozanı azaldan dərman və ya insulin istifadə edirəm",
+  "onboardingScreeningPregnancy": "Hamiləyəm və ya əmizdirirəm",
+  "onboardingScreeningOrgan": "Böyrək, qaraciyər və ya mədəaltı vəzi xəstəliyim var",
+  "onboardingScreeningEatingDisorder": "Yemək pozuntusu tarixçəm var",
+  "onboardingScreeningWeightLoss": "Əhəmiyyətli qəsdsiz çəki itirmişəm",
+  "onboardingScreeningUnder18": "18 yaşdan kiçiyəm",
+  "onboardingScreeningLockedNote": "Cavablarınıza görə avtomatik plan və hədəf yaradılması söndürülüb. Qeyd və öyrənmə funksiyaları əlçatan qalır. Zəhmət olmasa bunu ixtisaslı səhiyyə mütəxəssisi ilə nəzərdən keçirin.",
+  "onboardingDataTitle": "Məlumatlarınız",
+  "onboardingDataBody": "Qeydləriniz yalnız bu cihazda qalır. Ehtiyat nüsxə ixrac etmədən tətbiqi itirsəniz və ya silsəniz, məlumatları bərpa etmək mümkün olmaz.",
+  "onboardingConsentTitle": "Razılıq",
+  "onboardingConsentBody": "Məxfilik xülasəsini və bu tətbiqin tibbi məsləhət olmadığı barədə bildirişi oxudum və qəbul edirəm. Məlumatlarımın yalnız bu cihazda qaldığını anlayıram.",
+  "onboardingConsentCheckbox": "Qəbul edirəm",
+  "onboardingNext": "Növbəti",
+  "onboardingBack": "Geri",
+  "onboardingFinish": "Tətbiqdən istifadəyə başla",
+  "onboardingStepOf": "Addım {current} / {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Qlükoza ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Qan ketonu BHB (mmol/L)",
+  "formSourceType": "Mənbə növü",
+  "formNote": "Qeyd (könüllü)",
+  "formPickTime": "Ölçmə vaxtı",
+  "formSaveSession": "Ölçmə sessiyasını saxla",
+  "formInvalidValue": "Zəhmət olmasa düzgün müsbət ədəd daxil edin.",
+  "gkiResultHeading": "GKİ-niz",
+  "gkiResultValue": "GKİ: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Ölçülmə vaxtı: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Hesablama versiyası: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Hələ ölçmə yoxdur",
+  "logEmptyBody": "Burada görmək üçün ilk qlükoza və keton göstəricinizi əlavə edin.",
+  "logBandsToggle": "Oxuduğunuz məqalədən tədqiqat aralıqlarını göstər",
+  "bandsDisclaimer": "Bu aralıqlar klinik norma və ya sübut olunmuş müalicə hədəfləri deyil. Onlar müəyyən tədqiqat çərçivəsindən götürülmüş nümunəvi, göstəriş xarakteri daşımayan təkliflərdir. Tək GKİ sağlamlığı, xəstəliyə cavabı və ya təhlükəsizliyi göstərmir. Mənbəni görmək üçün toxunun.",
+  "logBandOptimal": "Təklif olunan optimal tədqiqat aralığı (GKİ ≤ 1.0)",
+  "logBandTherapeutic": "Təklif olunan terapevtik tədqiqat aralığı (1.0 < GKİ ≤ 2.0)",
+  "logBandOutside": "Təklif olunan ≤ 2.0 tədqiqat aralığından kənarda",
+  "logMatchSimultaneous": "eyni vaxtda",
+  "logMatchApproximate": "təxmini uyğunluq",
+  "logTimelineHeading": "Zaman xətti",
+  "logChartsHeading": "Qrafiklər",
+  "logGlucoseChart": "Qlükoza (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKİ",
+  "logSourceButton": "Mənbə linkini kopyala",
+  "todayQuickActions": "Sürətli əməliyyatlar",
+  "todayAddMeasurement": "Ölçmə əlavə et",
+  "todayAddMeal": "Yemək əlavə et",
+  "todayAddWeight": "Çəki əlavə et",
+  "todayAddSymptom": "Simptom əlavə et",
+  "todayLatestTitle": "Son ölçmələr",
+  "todayLatestEmpty": "Hələ ölçmə yoxdur. Qlükoza və keton BHB-ni birlikdə qeyd etmək üçün 'Ölçmə əlavə et' düyməsindən istifadə edin.",
+  "todayNutritionTitle": "Bu günkü qidalanma",
+  "todayNutritionEmpty": "Bu gün yemək qeyd edilməyib. Yeməklər Plan sekmesindən qeyd olunur.",
+  "todayWeightTitle": "Çəki",
+  "todayWeightEmpty": "Hələ çəki qeydi yoxdur.",
+  "todaySymptomsTitle": "Bu günkü simptomlar",
+  "todaySymptomsEmpty": "Bu gün simptom qeyd edilməyib.",
+  "todayPlansTitle": "Planlanmış yeməklər",
+  "todayPlansEmpty": "Bu gün üçün yemək planı yoxdur.",
+  "comingSoonTitle": "Növbəti yeniləmədə gəlir",
+  "comingSoonBody": "Bu daxiletmə forması hazırlanır. Proqresi layihə deposunda izləyə bilərsiniz.",
+  "mealFormTitle": "Yemək qeyd et",
+  "mealSearchLabel": "Qida axtar",
+  "mealTypeLabel": "Yemək növü",
+  "mealTypeBreakfast": "Səhər yeməyi",
+  "mealTypeLunch": "Nahar",
+  "mealTypeDinner": "Şam yeməyi",
+  "mealTypeSnack": "Qəlyanaltı",
+  "mealTypeCustom": "Xüsusi",
+  "mealGramsLabel": "Miqdar (q)",
+  "mealAddItem": "Qida əlavə et",
+  "mealNoteLabel": "Qeyd (könüllü)",
+  "mealFavoriteToggle": "Sevimli kimi işarələ",
+  "mealRepeatSection": "Sürətli təkrar",
+  "mealRepeatFavorites": "Sevimlilər",
+  "mealRepeatRecent": "Son",
+  "mealSave": "Yeməyi saxla",
+  "mealItemsHeading": "Elementlər",
+  "mealSavedToast": "Yemək saxlanıldı.",
+  "mealNeedsItem": "Əvvəlcə ən azı bir qida əlavə edin.",
+  "mealTotalsHeading": "Gündəlik cəmlər",
+  "mealTotalsKcal": "Enerji: {value} kkal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Xalis karbohidrat: {value} q",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Ümumi karbohidrat: {value} q",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Lif: {value} q",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Zülal: {value} q",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Yağ: {value} q",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Ümumiyyətlə yaxşı seçim",
+  "guideGroupLimit": "Porsiya və ya tezlik məhdudiyyəti tələb edə bilər",
+  "guideGroupAvoid": "Ümumiyyətlə ketogen hədəflərlə uyğun deyil",
+  "guideWhyHeading": "Niyə?",
+  "guideTypicalPortion": "Tipik porsiya: {portion} (~{grams} q)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativlər: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Məlumat mənbəyi: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Ət, balıq və yumurta",
+  "guideCardLowCarbVegetables": "Az karbohidratlı tərəvəzlər",
+  "guideCardFatsOils": "Yağlar",
+  "guideCardNutsSeeds": "Qoz-fındıq və toxumlar",
+  "guideCardBerries": "Giləmeyvələr",
+  "guideCardDairy": "Yağlı süd məhsulları",
+  "guideCardFruit": "Meyvələr",
+  "guideCardLegumes": "Paxlalılar",
+  "guideCardMilkDrinks": "Süd və şirin içkilər",
+  "guideCardSugaryDrinks": "Şəkərli içkilər",
+  "guideCardStarches": "Çörək, düyü, kartof",
+  "guideCardSweets": "Şirniyyat və desertlər",
+  "logMealRelation": "{mealType} yeməyindən {hours} saat sonra qeyd edildi — yalnız vaxt konteksti, təsir deyil.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Bu göstəricidən əvvəlki təhlil pəncərəsində yemək qeyd edilməyib.",
+  "logRelationWindowLabel": "Yemək əlaqəsi pəncərəsi",
+  "logConfoundersHeading": "Göstəricilərə başqa nə təsir edə bilər?",
+  "mealTypeShortBreakfast": "səhər yeməyi",
+  "mealTypeShortLunch": "nahar",
+  "mealTypeShortDinner": "şam yeməyi",
+  "mealTypeShortSnack": "qəlyanaltı",
+  "mealTypeShortCustom": "yemək",
+  "recipePerServing": "{value} porsiya",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Hazırlıq: {value} dəq",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergenlər: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Tərkib",
+  "recipeGrams": "{value} q",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Addımlar",
+  "recipeStorage": "Saxlama: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Tədqiqatda istifadə olunan aralıq",
+  "goalLegendClinician": "Həkimimin hədəfi",
+  "goalLegendPersonal": "Şəxsi izləmə hədəfim",
+  "goalLegendPersonalNote": "Şəxsi izləmə hədəfi tibbi hədəf deyil.",
+  "weightValueLabel": "Çəki ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Şərait (könüllü, məs. səhər, məşqdən sonra)",
+  "weightSave": "Çəkini saxla",
+  "symptomFormTitle": "Simptom qeyd et",
+  "symptomDefinitionLabel": "Simptom",
+  "symptomSeverityLabel": "Şiddət: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Qeyd (könüllü)",
+  "symptomSave": "Simptomu saxla",
+  "symptomSavedToast": "Simptom saxlanıldı.",
+  "symptomGuidance": "Əhəmiyyətli simptom qeyd etdiniz. Bu tətbiq diaqnoz qoymur. Öz sağlamlıq planınıza əməl edin və özünüzü pis hiss etsəniz və ya simptomlar şiddətlidirsə, yerli təcili yardım xidmətinə müraciət edin.",
+  "symptomSeizureGuidance": "Qıcolma hadisəsi qeyd etdiniz. Bu tətbiq diaqnoz qoymur. Zəhmət olmasa sağlamlıq planınıza əməl edin və səhiyyə mütəxəssisinizlə əlaqə saxlayın; təcili hallarda yerli təcili yardımı çağırın.",
+  "trendsRange7": "7 gün",
+  "trendsRange30": "30 gün",
+  "trendsRange90": "90 gün",
+  "trendsSummary": "Son {days} gündə {count} göstərici. Sonuncu: {latest}, orta: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Bu aralıqda məlumat yoxdur.",
+  "trendsExplainsTitle": "Bu qrafik nəyi göstərir — və nəyi göstərmir",
+  "trendsExplainsBody": "Qrafik öz göstəricilərinizi zamanla xam nöqtələr kimi göstərir. Diaqnoz qoymur, proqnoz vermir və səbəbləri sübut etmir. Çatışmayan günlər sıfır yox, boşluq kimi görünür.",
+  "trendsWeightChart": "Çəki (kq)",
+  "trendsBandsNote": "Tədqiqat aralıqları könüllüdür və defolt olaraq söndürülüb. Aktiv etmək üçün Jurnal sekmesinə baxın.",
+  "evidenceDiseaseFilter": "Xəstəliyə aid tədqiqatları göstər (oxumağı seçdiyiniz mənbələrdən)",
+  "evidenceSectionTitle": "Elmi mənbələr və məqalələr",
+  "guideCopyLink": "Mənbə linkini kopyala",
+  "planTitle": "Həftəlik plan",
+  "planGenerateDraft": "Həftəlik layihə yarat",
+  "planDraftLockedNote": "Avtomatik plan yaradılması söndürülüb: zəhmət olmasa əvvəlcə ixtisaslı səhiyyə mütəxəssisi ilə nəzərdən keçirin.",
+  "planCreatedToast": "Həftəlik plan yaradıldı.",
+  "planItemDay": "Gün {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Plandan alış-veriş siyahısı yarat",
+  "shoppingTitle": "Alış-veriş siyahısı",
+  "shoppingUndo": "Geri al",
+  "shoppingAddManual": "Əl ilə element əlavə et",
+  "shoppingCheckedToggle": "İşarələ",
+  "shoppingEmpty": "Hələ alış-veriş siyahısı yoxdur.",
+  "planEmpty": "Hələ həftəlik plan yoxdur. Başlamaq üçün reseptlərinizdən layihə yaradın.",
+  "aboutTitle": "Haqqında",
+  "aboutSlogan": "Məxfi keto gündəliyi",
+  "aboutVersion": "Versiya {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Açıq mənbə",
+  "aboutOpenSourceBody": "N Keto Tracker GPL-3.0 lisenziyası ilə pulsuz açıq mənbəli proqramdır. Kodu eyni lisenziya ilə yoxlaya, dəyişdirə və yaya bilərsiniz.",
+  "aboutPrivacyHeading": "Məxfilik",
+  "aboutPrivacyBody": "Sağlamlıq məlumatlarınız bu cihazda qalır. Hesab yoxdur, analitika yoxdur.",
+  "aboutDisclaimerHeading": "Məsuliyyətdən imtina",
+  "aboutDisclaimerBody": "Bu tətbiq ümumi məlumat və şəxsi izləmə üçündür. Tibbi məsləhət, diaqnoz və ya müalicə deyil.",
+  "aboutLicensesButton": "Lisenziyalar",
+  "aboutShareButton": "Bu tətbiqi paylaş",
+  "aboutOtherAppsButton": "Digər tətbiqlər",
+  "aboutCopiedToast": "Buferə kopyalandı.",
+  "licensesTitle": "Lisenziyalar",
+  "otherAppsTitle": "Digər tətbiqlər",
+  "otherAppsEmpty": "Hələ digər tətbiq siyahıya salınmayıb.",
+  "otherAppsCopyLink": "Mağaza linkini kopyala",
+  "settingsTitle": "Ayarlar",
+  "aboutShareText": "Qlükoza, keton və GKİ izləməsi olan məxfi keto gündəliyi. Açıq mənbə, hesab tələb olunmur.",
+  "dataManagementTitle": "Məlumat idarəetməsi",
+  "dataExportJson": "Məlumatları ixrac et (JSON)",
+  "dataExportCsv": "Ölçmələri ixrac et (CSV)",
+  "dataImportLabel": "İxrac olunmuş JSON-u bura yapışdırın",
+  "dataImportButton": "Məlumatları idxal et",
+  "dataImportSuccess": "{glucose} qlükoza və {weight} çəki qeydi idxal edildi.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "İdxal alınmadı: fayl yararsızdır və ya dəstəklənmir.",
+  "dataDeleteAll": "Bütün məlumatlarımı sil",
+  "dataDeleteConfirm1": "BÜTÜN məlumatlar silinsin? Buraya ölçmələr, yeməklər, planlar və ayarlar daxildir. Bunu geri qaytarmaq mümkün deyil.",
+  "dataDeleteConfirm2": "Həqiqətən əminsiniz? Təsdiqləmək üçün DELETE yazın.",
+  "dataDeleteTypeDelete": "DELETE yazın",
+  "dataDeleteDone": "Bütün məlumatlar silindi ({count} qeyd).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "İxrac faylı hazırdır — harada saxlayacağınızı seçin.",
+  "settingsAppearance": "Görünüş",
+  "themeSystem": "Sistem",
+  "themeLight": "Açıq",
+  "themeDark": "Tünd",
+  "settingsLanguage": "Dil",
+  "settingsMore": "Daha çox"
+}

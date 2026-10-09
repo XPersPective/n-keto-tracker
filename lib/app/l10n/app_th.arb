@@ -1,0 +1,452 @@
+{
+  "@@locale": "th",
+  "appTitle": "N Keto Tracker",
+  "navToday": "วันนี้",
+  "navLog": "บันทึก",
+  "navPlan": "แผน",
+  "navTrends": "แนวโน้ม",
+  "navGuide": "คู่มือ",
+  "pageUnderConstruction": "หน้าจอนี้กำลังอยู่ระหว่างการสร้าง",
+  "generalInfoDisclaimer": "เพื่อข้อมูลทั่วไปเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์",
+  "onboardingLanguageTitle": "เลือกภาษาของคุณ",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "ข้อมูลของคุณอยู่ในอุปกรณ์ของคุณ",
+  "onboardingPrivacyBody": "N Keto Tracker เก็บค่าที่วัด มื้ออาหาร และบันทึกของคุณไว้ในแอปนี้บนอุปกรณ์ของคุณเท่านั้น ไม่มีบัญชี และข้อมูลสุขภาพของคุณจะไม่ถูกส่งไปที่ใดเลย หากลบแอป ข้อมูลของคุณก็จะถูกลบด้วย คุณสามารถส่งออกข้อมูลสำรองได้ทุกเมื่อ",
+  "onboardingMedicalTitle": "ไม่ใช่คำแนะนำทางการแพทย์",
+  "onboardingMedicalBody": "แอปนี้มีไว้เพื่อข้อมูลทั่วไปและการติดตามส่วนตัว ไม่ใช่คำแนะนำทางการแพทย์ การวินิจฉัย หรือการรักษา และไม่สามารถแทนการดูแลจากผู้เชี่ยวชาญด้านสุขภาพที่มีคุณสมบัติ",
+  "onboardingPurposeTitle": "คุณต้องการติดตามอะไร",
+  "onboardingPurposeLearn": "เรียนรู้เกี่ยวกับโภชนาการแบบคีโตเจนิก",
+  "onboardingPurposeMeals": "วางแผนมื้ออาหาร",
+  "onboardingPurposeMacros": "ติดตามแมโครและคาร์บสุทธิ",
+  "onboardingPurposeMeasure": "ติดตามกลูโคส คีโตน และ GKI",
+  "onboardingProfileTitle": "เกี่ยวกับคุณ (ไม่บังคับ)",
+  "onboardingProfileBody": "คุณข้ามขั้นตอนนี้แล้วเพิ่มภายหลังในการตั้งค่าได้ ใช้เพื่อประมาณพลังงานโดยทั่วไปเท่านั้น",
+  "onboardingBirthYear": "ปีเกิด",
+  "onboardingHeightCm": "ส่วนสูง (ซม.)",
+  "onboardingWeightKg": "น้ำหนัก (กก.)",
+  "onboardingEnergyCoeffTitle": "สัมประสิทธิ์การประมาณพลังงาน",
+  "onboardingEnergyCoeffBody": "การประมาณพลังงานทั่วไปใช้สัมประสิทธิ์ที่เผยแพร่แล้วหนึ่งในสองค่า ไม่เกี่ยวกับอัตลักษณ์ทางเพศของคุณ — เพียงบอกว่าสมการเวอร์ชันใดเหมาะกับคุณที่สุด คุณยังข้ามการประมาณพลังงานทั้งหมดได้",
+  "onboardingEnergyCoeffSkip": "ข้ามการประมาณพลังงาน",
+  "onboardingScreeningTitle": "คำถามด้านความปลอดภัยสองสามข้อ",
+  "onboardingScreeningBody": "คำถามเหล่านี้ไม่ได้วินิจฉัยอะไร เพียงปิดคำแนะนำแผนและเป้าหมายอัตโนมัติเมื่อต้องระวังเป็นพิเศษ",
+  "onboardingScreeningDiabetes": "เป็นเบาหวาน",
+  "onboardingScreeningMedication": "ใช้ยาลดน้ำตาลหรืออินซูลิน",
+  "onboardingScreeningPregnancy": "ตั้งครรภ์หรือให้นมบุตร",
+  "onboardingScreeningOrgan": "เป็นโรคไต ตับ หรือตับอ่อน",
+  "onboardingScreeningEatingDisorder": "เคยมีประวัติโรคการกิน",
+  "onboardingScreeningWeightLoss": "เคยน้ำหนักลดมากโดยไม่ได้ตั้งใจ",
+  "onboardingScreeningUnder18": "อายุต่ำกว่า 18 ปี",
+  "onboardingScreeningLockedNote": "จากคำตอบของคุณ การสร้างแผนและเป้าหมายอัตโนมัติจะยังคงปิดอยู่ ฟีเจอร์การบันทึกและการเรียนรู้ยังใช้งานได้ โปรดปรึกษาเรื่องนี้กับผู้เชี่ยวชาญด้านสุขภาพที่มีคุณสมบัติ",
+  "onboardingDataTitle": "ข้อมูลของคุณ",
+  "onboardingDataBody": "บันทึกของคุณอยู่ในอุปกรณ์นี้เท่านั้น หากทำแอปหายหรือถอนการติดตั้งโดยไม่ส่งออกข้อมูลสำรอง จะกู้คืนข้อมูลไม่ได้",
+  "onboardingConsentTitle": "ความยินยอม",
+  "onboardingConsentBody": "ฉันได้อ่านและยอมรับสรุปความเป็นส่วนตัวและประกาศว่าแอปนี้ไม่ใช่คำแนะนำทางการแพทย์ ฉันเข้าใจว่าข้อมูลของฉันอยู่ในอุปกรณ์นี้เท่านั้น",
+  "onboardingConsentCheckbox": "ฉันยอมรับ",
+  "onboardingNext": "ถัดไป",
+  "onboardingBack": "ย้อนกลับ",
+  "onboardingFinish": "เริ่มใช้แอป",
+  "onboardingStepOf": "ขั้นตอนที่ {current} จาก {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "กลูโคส ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "คีโตนในเลือด BHB (mmol/L)",
+  "formSourceType": "ประเภทแหล่งที่มา",
+  "formNote": "บันทึก (ไม่บังคับ)",
+  "formPickTime": "เวลาที่วัด",
+  "formSaveSession": "บันทึกรอบการวัด",
+  "formInvalidValue": "โปรดป้อนจำนวนบวกที่ถูกต้อง",
+  "gkiResultHeading": "GKI ของคุณ",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "วัดเมื่อ: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "เวอร์ชันการคำนวณ: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "ยังไม่มีการวัด",
+  "logEmptyBody": "เพิ่มค่ากลูโคสและคีโตนครั้งแรกของคุณเพื่อดูที่นี่",
+  "logBandsToggle": "แสดงช่วงงานวิจัยจากบทความที่คุณอ่าน",
+  "bandsDisclaimer": "ช่วงเหล่านี้ไม่ใช่ค่าปกติทางคลินิกหรือเป้าหมายการรักษาที่พิสูจน์แล้ว เป็นข้อเสนอแนะตัวอย่างที่ไม่ได้กำหนดบังคับจากกรอบการวิจัยเฉพาะ GKI เพียงอย่างเดียวไม่ได้แสดงสุขภาพ การตอบสนองต่อโรค หรือความปลอดภัย แตะเพื่อดูแหล่งที่มา",
+  "logBandOptimal": "ช่วงวิจัยที่เหมาะสมที่สุดที่แนะนำ (GKI ≤ 1.0)",
+  "logBandTherapeutic": "ช่วงวิจัยเชิงการรักษาที่แนะนำ (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "นอกช่วงวิจัยที่แนะนำ ≤ 2.0",
+  "logMatchSimultaneous": "พร้อมกัน",
+  "logMatchApproximate": "จับคู่โดยประมาณ",
+  "logTimelineHeading": "ไทม์ไลน์",
+  "logChartsHeading": "แผนภูมิ",
+  "logGlucoseChart": "กลูโคส (mmol/L)",
+  "logBhbChart": "คีโตน BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "คัดลอกลิงก์แหล่งที่มา",
+  "todayQuickActions": "การทำงานด่วน",
+  "todayAddMeasurement": "เพิ่มการวัด",
+  "todayAddMeal": "เพิ่มมื้ออาหาร",
+  "todayAddWeight": "เพิ่มน้ำหนัก",
+  "todayAddSymptom": "เพิ่มอาการ",
+  "todayLatestTitle": "การวัดล่าสุด",
+  "todayLatestEmpty": "ยังไม่มีการวัด ใช้ “เพิ่มการวัด” เพื่อบันทึกกลูโคสและคีโตน BHB พร้อมกัน",
+  "todayNutritionTitle": "โภชนาการวันนี้",
+  "todayNutritionEmpty": "วันนี้ยังไม่ได้บันทึกมื้ออาหาร บันทึกมื้ออาหารได้จากแท็บแผน",
+  "todayWeightTitle": "น้ำหนัก",
+  "todayWeightEmpty": "ยังไม่มีรายการน้ำหนัก",
+  "todaySymptomsTitle": "อาการวันนี้",
+  "todaySymptomsEmpty": "วันนี้ยังไม่ได้บันทึกอาการ",
+  "todayPlansTitle": "มื้ออาหารที่วางแผนไว้",
+  "todayPlansEmpty": "ไม่มีแผนมื้ออาหารสำหรับวันนี้",
+  "comingSoonTitle": "จะมาในการอัปเดตที่จะถึง",
+  "comingSoonBody": "แบบฟอร์มป้อนข้อมูลนี้กำลังสร้างอยู่ ติดตามความคืบหน้าได้ในที่เก็บโปรเจกต์",
+  "mealFormTitle": "บันทึกมื้ออาหาร",
+  "mealSearchLabel": "ค้นหาอาหาร",
+  "mealTypeLabel": "ประเภทมื้อ",
+  "mealTypeBreakfast": "มื้อเช้า",
+  "mealTypeLunch": "มื้อกลางวัน",
+  "mealTypeDinner": "มื้อเย็น",
+  "mealTypeSnack": "ของว่าง",
+  "mealTypeCustom": "กำหนดเอง",
+  "mealGramsLabel": "ปริมาณ (ก.)",
+  "mealAddItem": "เพิ่มอาหาร",
+  "mealNoteLabel": "บันทึก (ไม่บังคับ)",
+  "mealFavoriteToggle": "ทำเครื่องหมายเป็นรายการโปรด",
+  "mealRepeatSection": "ทำซ้ำด่วน",
+  "mealRepeatFavorites": "รายการโปรด",
+  "mealRepeatRecent": "ล่าสุด",
+  "mealSave": "บันทึกมื้ออาหาร",
+  "mealItemsHeading": "รายการ",
+  "mealSavedToast": "บันทึกมื้ออาหารแล้ว",
+  "mealNeedsItem": "เพิ่มอาหารอย่างน้อยหนึ่งรายการก่อน",
+  "mealTotalsHeading": "ยอดรวมรายวัน",
+  "mealTotalsKcal": "พลังงาน: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "คาร์บสุทธิ: {value} ก.",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "คาร์บทั้งหมด: {value} ก.",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "ใยอาหาร: {value} ก.",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "โปรตีน: {value} ก.",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "ไขมัน: {value} ก.",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "โดยทั่วไปเหมาะสม",
+  "guideGroupLimit": "อาจต้องจำกัดปริมาณหรือความถี่",
+  "guideGroupAvoid": "โดยทั่วไปไม่สอดคล้องกับเป้าหมายคีโตเจนิก",
+  "guideWhyHeading": "เพราะอะไร",
+  "guideTypicalPortion": "ปริมาณทั่วไป: {portion} (~{grams} ก.)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "ทางเลือก: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "แหล่งข้อมูล: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "เนื้อสัตว์ ปลา และไข่",
+  "guideCardLowCarbVegetables": "ผักคาร์บต่ำ",
+  "guideCardFatsOils": "ไขมันและน้ำมัน",
+  "guideCardNutsSeeds": "ถั่วและเมล็ดพืช",
+  "guideCardBerries": "เบอร์รี",
+  "guideCardDairy": "ผลิตภัณฑ์นมไขมันเต็ม",
+  "guideCardFruit": "ผลไม้",
+  "guideCardLegumes": "พืชตระกูลถั่ว",
+  "guideCardMilkDrinks": "นมและเครื่องดื่มหวาน",
+  "guideCardSugaryDrinks": "เครื่องดื่มมีน้ำตาล",
+  "guideCardStarches": "ขนมปัง ข้าว มันฝรั่ง",
+  "guideCardSweets": "ขนมหวานและของหวาน",
+  "logMealRelation": "บันทึกหลัง{mealType} {hours} ชม. — เป็นบริบทด้านเวลาเท่านั้น ไม่ใช่ผลกระทบ",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "ไม่มีมื้ออาหารที่บันทึกในช่วงวิเคราะห์ก่อนค่านี้",
+  "logRelationWindowLabel": "ช่วงความสัมพันธ์กับมื้ออาหาร",
+  "logConfoundersHeading": "อะไรอีกที่อาจมีผลต่อค่าที่วัด",
+  "mealTypeShortBreakfast": "มื้อเช้า",
+  "mealTypeShortLunch": "มื้อกลางวัน",
+  "mealTypeShortDinner": "มื้อเย็น",
+  "mealTypeShortSnack": "ของว่าง",
+  "mealTypeShortCustom": "มื้ออาหาร",
+  "recipePerServing": "{value} เสิร์ฟ",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "เตรียม: {value} นาที",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "สารก่อภูมิแพ้: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "ส่วนผสม",
+  "recipeGrams": "{value} ก.",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "ขั้นตอน",
+  "recipeStorage": "การเก็บรักษา: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "ช่วงงานวิจัยที่ใช้ในการศึกษา",
+  "goalLegendClinician": "เป้าหมายของแพทย์ฉัน",
+  "goalLegendPersonal": "เป้าหมายการติดตามส่วนตัวของฉัน",
+  "goalLegendPersonalNote": "เป้าหมายการติดตามส่วนตัวไม่ใช่เป้าหมายทางการแพทย์",
+  "weightValueLabel": "น้ำหนัก ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "เงื่อนไข (ไม่บังคับ เช่น ตอนเช้า หลังออกกำลังกาย)",
+  "weightSave": "บันทึกน้ำหนัก",
+  "symptomFormTitle": "บันทึกอาการ",
+  "symptomDefinitionLabel": "อาการ",
+  "symptomSeverityLabel": "ความรุนแรง: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "บันทึก (ไม่บังคับ)",
+  "symptomSave": "บันทึกอาการ",
+  "symptomSavedToast": "บันทึกอาการแล้ว",
+  "symptomGuidance": "คุณทำเครื่องหมายอาการสำคัญ แอปนี้ไม่วินิจฉัยโรค โปรดทำตามแผนสุขภาพของคุณ และติดต่อบริการฉุกเฉินในพื้นที่หากรู้สึกไม่สบายหรืออาการรุนแรง",
+  "symptomSeizureGuidance": "คุณบันทึกเหตุการณ์ชัก แอปนี้ไม่วินิจฉัยโรค โปรดทำตามแผนสุขภาพของคุณและติดต่อผู้เชี่ยวชาญด้านสุขภาพ หากเร่งด่วนให้โทรบริการฉุกเฉินในพื้นที่",
+  "trendsRange7": "7 วัน",
+  "trendsRange30": "30 วัน",
+  "trendsRange90": "90 วัน",
+  "trendsSummary": "{count} ค่าใน {days} วันที่ผ่านมา ล่าสุด: {latest} ค่าเฉลี่ย: {average}",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "ไม่มีข้อมูลในช่วงนี้",
+  "trendsExplainsTitle": "แผนภูมินี้บอกอะไร — และไม่บอกอะไร",
+  "trendsExplainsBody": "แผนภูมิแสดงค่าที่คุณวัดเองตามเวลาเป็นจุดดิบ ไม่วินิจฉัย ไม่พยากรณ์ และไม่พิสูจน์สาเหตุ วันที่ขาดจะแสดงเป็นช่องว่าง ไม่ใช่ศูนย์",
+  "trendsWeightChart": "น้ำหนัก (กก.)",
+  "trendsBandsNote": "ช่วงงานวิจัยเป็นตัวเลือกและปิดไว้โดยค่าเริ่มต้น ดูแท็บบันทึกเพื่อเปิดใช้งาน",
+  "evidenceDiseaseFilter": "แสดงงานวิจัยเฉพาะโรค (จากแหล่งที่คุณเลือกอ่าน)",
+  "evidenceSectionTitle": "แหล่งข้อมูลและบทความทางวิทยาศาสตร์",
+  "guideCopyLink": "คัดลอกลิงก์แหล่งที่มา",
+  "planTitle": "แผนรายสัปดาห์",
+  "planGenerateDraft": "สร้างร่างรายสัปดาห์",
+  "planDraftLockedNote": "การสร้างแผนอัตโนมัติยังคงปิดอยู่ โปรดปรึกษาผู้เชี่ยวชาญด้านสุขภาพที่มีคุณสมบัติก่อน",
+  "planCreatedToast": "สร้างแผนรายสัปดาห์แล้ว",
+  "planItemDay": "วันที่ {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "สร้างรายการซื้อของจากแผน",
+  "shoppingTitle": "รายการซื้อของ",
+  "shoppingUndo": "เลิกทำ",
+  "shoppingAddManual": "เพิ่มรายการเอง",
+  "shoppingCheckedToggle": "ทำเครื่องหมาย",
+  "shoppingEmpty": "ยังไม่มีรายการซื้อของ",
+  "planEmpty": "ยังไม่มีแผนรายสัปดาห์ สร้างร่างจากสูตรอาหารของคุณเพื่อเริ่มต้น",
+  "aboutTitle": "เกี่ยวกับ",
+  "aboutSlogan": "ไดอารี่คีโตส่วนตัว",
+  "aboutVersion": "เวอร์ชัน {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "โอเพนซอร์ส",
+  "aboutOpenSourceBody": "N Keto Tracker เป็นซอฟต์แวร์โอเพนซอร์สฟรีภายใต้สัญญาอนุญาต GPL-3.0 คุณตรวจสอบ แก้ไข และเผยแพร่โค้ดซ้ำได้ภายใต้สัญญาอนุญาตเดียวกัน",
+  "aboutPrivacyHeading": "ความเป็นส่วนตัว",
+  "aboutPrivacyBody": "ข้อมูลสุขภาพของคุณอยู่ในอุปกรณ์นี้ ไม่มีบัญชี ไม่มีการวิเคราะห์",
+  "aboutDisclaimerHeading": "ข้อสงวนสิทธิ์",
+  "aboutDisclaimerBody": "แอปนี้มีไว้เพื่อข้อมูลทั่วไปและการติดตามส่วนตัว ไม่ใช่คำแนะนำทางการแพทย์ การวินิจฉัย หรือการรักษา",
+  "aboutLicensesButton": "สัญญาอนุญาต",
+  "aboutShareButton": "แชร์แอปนี้",
+  "aboutOtherAppsButton": "แอปอื่น",
+  "aboutCopiedToast": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+  "licensesTitle": "สัญญาอนุญาต",
+  "otherAppsTitle": "แอปอื่น",
+  "otherAppsEmpty": "ยังไม่มีแอปอื่นในรายการ",
+  "otherAppsCopyLink": "คัดลอกลิงก์ร้านค้า",
+  "settingsTitle": "การตั้งค่า",
+  "aboutShareText": "ไดอารี่คีโตส่วนตัวพร้อมการติดตามกลูโคส คีโตน และ GKI โอเพนซอร์ส ไม่ต้องมีบัญชี",
+  "dataManagementTitle": "การจัดการข้อมูล",
+  "dataExportJson": "ส่งออกข้อมูล (JSON)",
+  "dataExportCsv": "ส่งออกการวัด (CSV)",
+  "dataImportLabel": "วาง JSON ที่ส่งออกไว้ที่นี่",
+  "dataImportButton": "นำเข้าข้อมูล",
+  "dataImportSuccess": "นำเข้าบันทึกกลูโคส {glucose} รายการและน้ำหนัก {weight} รายการแล้ว",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "นำเข้าไม่สำเร็จ: ไฟล์ไม่ถูกต้องหรือไม่รองรับ",
+  "dataDeleteAll": "ลบข้อมูลทั้งหมดของฉัน",
+  "dataDeleteConfirm1": "ลบข้อมูลทั้งหมดหรือไม่ รวมถึงการวัด มื้ออาหาร แผน และการตั้งค่า ไม่สามารถย้อนกลับได้",
+  "dataDeleteConfirm2": "คุณแน่ใจจริงหรือไม่ พิมพ์ DELETE เพื่อยืนยัน",
+  "dataDeleteTypeDelete": "พิมพ์ DELETE",
+  "dataDeleteDone": "ลบข้อมูลทั้งหมดแล้ว ({count} รายการ)",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "ไฟล์ส่งออกพร้อมแล้ว — เลือกที่บันทึก",
+  "settingsAppearance": "รูปลักษณ์",
+  "themeSystem": "ระบบ",
+  "themeLight": "สว่าง",
+  "themeDark": "มืด",
+  "settingsLanguage": "ภาษา",
+  "settingsMore": "เพิ่มเติม"
+}

@@ -1,0 +1,452 @@
+{
+  "@@locale": "zu",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Namuhla",
+  "navLog": "Irekhodi",
+  "navPlan": "Uhlelo",
+  "navTrends": "Izitayela",
+  "navGuide": "Umhlahlandlela",
+  "pageUnderConstruction": "Lesi sikrini siyakhiwa.",
+  "generalInfoDisclaimer": "Ulwazi jikelele kuphela; akuyona iseluleko sezokwelapha.",
+  "onboardingLanguageTitle": "Khetha ulimi lwakho",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Idatha yakho ihlala kudivayisi yakho",
+  "onboardingPrivacyBody": "I-N Keto Tracker igcina izilinganiso zakho, ukudla namanothi kule app kuphela kudivayisi yakho. Awukho u-akhawunti, futhi idatha yakho yezempilo ayiyiswandawo. Uma ususa i-app, idatha yakho nayo iyasuswa; ungathumela ikhophi yokulondoloza noma nini.",
+  "onboardingMedicalTitle": "Akuyona iseluleko sezokwelapha",
+  "onboardingMedicalBody": "Le app yolwazi jikelele nokulandelela komuntu siqu. Akuyona iseluleko sezokwelapha, ukuxilonga noma ukwelashwa, futhi ayithathi indawo yokunakekelwa ochwepheshe bezempilo abafanelekile.",
+  "onboardingPurposeTitle": "Ufuna ukulandelela ini?",
+  "onboardingPurposeLearn": "Funda mayelana nokudla kwe-ketogenic",
+  "onboardingPurposeMeals": "Hlela ukudla",
+  "onboardingPurposeMacros": "Landelela ama-macro nama-carb ahlanzekile",
+  "onboardingPurposeMeasure": "Landelela i-glucose, ama-ketone ne-GKI",
+  "onboardingProfileTitle": "Mayelana nawe (akuphoqelekile)",
+  "onboardingProfileBody": "Ungakweqa lokhu futhi ukwengeze kamuva kuzilungiselelo. Kusetshenziselwa isilinganiso sikaphethiloli jikelele kuphela.",
+  "onboardingBirthYear": "Unyaka wokuzalwa",
+  "onboardingHeightCm": "Ubude (cm)",
+  "onboardingWeightKg": "Isisindo (kg)",
+  "onboardingEnergyCoeffTitle": "I-coefficient yesilinganiso samandla",
+  "onboardingEnergyCoeffBody": "Isilinganiso samandla jikelele sisebenzisa eyodwa kuma-coefficient amabili ashicilelwe. Akukhulumi ngobuwena bobulili — kuphela ukuthi inguqulo yalesi sibalo ikufanele kangcono. Ungaphinda weqe izilinganiso zamandla ngokuphelele.",
+  "onboardingEnergyCoeffSkip": "Beka eceleni izilinganiso zamandla",
+  "onboardingScreeningTitle": "Imibuzo embalwa yokuphepha",
+  "onboardingScreeningBody": "Le mibuzo ayixilongi lutho. Icisha kuphela iziphakamiso ezizenzakalelayo zohlelo nezinhloso uma kudingeka ukunakekelwa okwengeziwe.",
+  "onboardingScreeningDiabetes": "Nginesifo sikashukela",
+  "onboardingScreeningMedication": "Ngisebenzisa umuthi wokwehlisa i-glucose noma i-insulin",
+  "onboardingScreeningPregnancy": "Ngiyakhulelwe noma ngiyancelisa",
+  "onboardingScreeningOrgan": "Nginesifo sezinso, sesibindi noma se-pancreas",
+  "onboardingScreeningEatingDisorder": "Nginomlando wokuphazamiseka kokudla",
+  "onboardingScreeningWeightLoss": "Ngilahlekelwe isisindo esikhulu ngaphandle kokuhlosa",
+  "onboardingScreeningUnder18": "Ngingaphansi kweminyaka eyi-18",
+  "onboardingScreeningLockedNote": "Ngenxa yezimpendulo zakho, ukwenziwa okuzenzakalelayo kohlelo nezinhloso kuhlala kucishiwe. Izici zokurekhoda nokufunda ziyaqhubeka ziyatholakala. Sicela ukubuyekeze lokhu nochwepheshe wezempilo ofanelekile.",
+  "onboardingDataTitle": "Idatha yakho",
+  "onboardingDataBody": "Amarekhodi akho ahlala kule divayisi kuphela. Uma ulahlekelwa noma ukhipha i-app ngaphandle kokuthumela ikhophi yokulondoloza, idatha ayikwazi ukubuyiswa.",
+  "onboardingConsentTitle": "Imvume",
+  "onboardingConsentBody": "Ngifundile futhi ngiyayamukela isifinyezo sobumfihlo nesaziso sokuthi le app akuyona iseluleko sezokwelapha. Ngiyaqonda ukuthi idatha yami ihlala kule divayisi kuphela.",
+  "onboardingConsentCheckbox": "Ngiyayamukela",
+  "onboardingNext": "Okulandelayo",
+  "onboardingBack": "Emuva",
+  "onboardingFinish": "Qala ukusebenzisa i-app",
+  "onboardingStepOf": "Isinyathelo {current} kwezingu-{total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "I-glucose ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "I-ketone yegazi i-BHB (mmol/L)",
+  "formSourceType": "Uhlobo lomthombo",
+  "formNote": "Inothi (akuphoqelekile)",
+  "formPickTime": "Isikhathi sokulinganisa",
+  "formSaveSession": "Londoloza isikhathi sokulinganisa",
+  "formInvalidValue": "Sicela ufake inombolo evumelekile ephozithivu.",
+  "gkiResultHeading": "I-GKI yakho",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Kulinganiswe ngo: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Inguqulo yokubala: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Azikho izilinganiso okwamanje",
+  "logEmptyBody": "Engeza ukufundwa kwakho kokuqala kwe-glucose ne-ketone ukuzeukubone lapha.",
+  "logBandsToggle": "Bonisa imikhawulo yocwaningo evela esihlokweni osifundile",
+  "bandsDisclaimer": "Le mikhawulo akuyona imikhawulo evamile yomtholampilo noma izinhloso zokwelashwa ezifakazelwe. Ziziphakamiso ezimelelayo, ezingeyona ezomyalo, ezivela ohlakeni oluthile locwaningo. I-GKI yodwa ayibonisi impilo, impendulo yesifo noma ukuphepha. Thinta ukuze ubone umthombo.",
+  "logBandOptimal": "Umkhawulo wocwaningo omuhle kakhulu ophakanyisiwe (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Umkhawulo wocwaningo wokwelapha ophakanyisiwe (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Ngaphandle komkhawulo wocwaningo ophakanyisiwe ≤ 2.0",
+  "logMatchSimultaneous": "ngasikhathi sinye",
+  "logMatchApproximate": "ukufana okulinganiselwe",
+  "logTimelineHeading": "Umugqa wesikhathi",
+  "logChartsHeading": "Amashadi",
+  "logGlucoseChart": "I-glucose (mmol/L)",
+  "logBhbChart": "I-ketone BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopisha isixhumanisi somthombo",
+  "todayQuickActions": "Izenzo ezisheshayo",
+  "todayAddMeasurement": "Engeza isilinganiso",
+  "todayAddMeal": "Engeza ukudla",
+  "todayAddWeight": "Engeza isisindo",
+  "todayAddSymptom": "Engeza uphawu",
+  "todayLatestTitle": "Izilinganiso zakamuva",
+  "todayLatestEmpty": "Azikho izilinganiso okwamanje. Sebenzisa 'Engeza isilinganiso' ukurekhoda i-glucose ne-ketone BHB ndawonye.",
+  "todayNutritionTitle": "Ukudla kwanamuhla",
+  "todayNutritionEmpty": "Akukho ukudla okurekhodiwe namuhla. Ukudla kurekhodwa kuthebhu ye-Uhlelo.",
+  "todayWeightTitle": "Isisindo",
+  "todayWeightEmpty": "Azikho izingeniso zesisindo okwamanje.",
+  "todaySymptomsTitle": "Izimpawu zanamuhla",
+  "todaySymptomsEmpty": "Azikho izimpawu ezirekhodiwe namuhla.",
+  "todayPlansTitle": "Ukudla okuhleliwe",
+  "todayPlansEmpty": "Awukho uhlelo lokudla lwanamuhla.",
+  "comingSoonTitle": "Kuyeza kuhlelo olulandelayo",
+  "comingSoonBody": "Leli fomu lokufaka lisakhiwa. Ungalandela inqubekela phambili endaweni yokugcina iphrojekthi.",
+  "mealFormTitle": "Rekhoda ukudla",
+  "mealSearchLabel": "Sesha ukudla",
+  "mealTypeLabel": "Uhlobo lokudla",
+  "mealTypeBreakfast": "Ukudla kwasekuseni",
+  "mealTypeLunch": "Ukudla kwasemini",
+  "mealTypeDinner": "Isidlo sakusihlwa",
+  "mealTypeSnack": "Isikhwama",
+  "mealTypeCustom": "Okukhethiwe",
+  "mealGramsLabel": "Inani (g)",
+  "mealAddItem": "Engeza ukudla",
+  "mealNoteLabel": "Inothi (akuphoqelekile)",
+  "mealFavoriteToggle": "Phawula njengokuthandwayo",
+  "mealRepeatSection": "Phinda ngokushesha",
+  "mealRepeatFavorites": "Okuthandwayo",
+  "mealRepeatRecent": "Kwakamuva",
+  "mealSave": "Londoloza ukudla",
+  "mealItemsHeading": "Izinto",
+  "mealSavedToast": "Ukudla kulondoloziwe.",
+  "mealNeedsItem": "Engeza okungenani ukudla okukodwa kuqala.",
+  "mealTotalsHeading": "Izibalo zosuku",
+  "mealTotalsKcal": "Amandla: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Ama-carb ahlanzekile: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Ama-carb onke: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "I-fiber: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Amaprotheni: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Amafutha: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Ngokuvamile ukukhetha okuhle",
+  "guideGroupLimit": "Kungadinga imikhawulo yesabelo noma imvamisa",
+  "guideGroupAvoid": "Ngokuvamile akuhambisani nezinhloso ze-ketogenic",
+  "guideWhyHeading": "Kungani?",
+  "guideTypicalPortion": "Isabelo esijwayelekile: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Okunye: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Umthombo wedatha: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Inyama, izinhlanzi namaqanda",
+  "guideCardLowCarbVegetables": "Imifino ene-carb ephansi",
+  "guideCardFatsOils": "Amafutha namafutha okupheka",
+  "guideCardNutsSeeds": "Amantongomane nembewu",
+  "guideCardBerries": "Amaberry",
+  "guideCardDairy": "Ubisi olunamafutha aphelele",
+  "guideCardFruit": "Izithelo",
+  "guideCardLegumes": "Ubhontshisi",
+  "guideCardMilkDrinks": "Ubisi nezinkwa eziphuzwayo ezimnandi",
+  "guideCardSugaryDrinks": "Iziphuzo ezinoshukela",
+  "guideCardStarches": "Isinkwa, irayisi, amazambane",
+  "guideCardSweets": "Amaswidi nezidlo zokuphelisa",
+  "logMealRelation": "Kurekhodwe ngamahora angu-{hours} ngemva kwe-{mealType} — umongo wesikhathi kuphela, hhayi umphumela.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Akukho ukudla okurekhodiwe efasitela lokuhlaziya ngaphambi kokufundwa.",
+  "logRelationWindowLabel": "Ifasitela lobudlelwano nokudla",
+  "logConfoundersHeading": "Yini enye engathinta ukufundwa?",
+  "mealTypeShortBreakfast": "ukudla kwasekuseni",
+  "mealTypeShortLunch": "ukudla kwasemini",
+  "mealTypeShortDinner": "isidlo sakusihlwa",
+  "mealTypeShortSnack": "isikhwama",
+  "mealTypeShortCustom": "ukudla",
+  "recipePerServing": "Izabelo ezingu-{value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Ukulungiselela: imizuzu engu-{value}",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Izidala-mbandakanyo: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Izithako",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Izinyathelo",
+  "recipeStorage": "Ukugcina: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Umkhawulo wocwaningo osetshenziswe ocwaningweni",
+  "goalLegendClinician": "Inhloso kadokotela wami",
+  "goalLegendPersonal": "Inhloso yami yokulandelela siqu",
+  "goalLegendPersonalNote": "Inhloso yokulandelela siqu akuyona inhloso yezokwelapha.",
+  "weightValueLabel": "Isisindo ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Isimo (akuphoqelekile, isb. ekuseni, ngemva kokuzivocavoca)",
+  "weightSave": "Londoloza isisindo",
+  "symptomFormTitle": "Rekhoda uphawu",
+  "symptomDefinitionLabel": "Uphawu",
+  "symptomSeverityLabel": "Ukuqina: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Inothi (akuphoqelekile)",
+  "symptomSave": "Londoloza uphawu",
+  "symptomSavedToast": "Uphawu lulondoloziwe.",
+  "symptomGuidance": "Uphawule uphawu olubalulekile. Le app ayixilongi. Landela uhlelo lwakho lwezempilo, futhi uxhumane nezinsizakalo eziphuthumayo zendawo uma uzizwa ungaphilile noma izimpawu zinzima.",
+  "symptomSeizureGuidance": "Urekhode isehlakalo sokuxhuma. Le app ayixilongi. Sicela ulandele uhlelo lwakho lwezempilo futhi uxhumane nochwepheshe wezempilo; shayela izinsizakalo eziphuthumayo zendawo uma kuphuthuma.",
+  "trendsRange7": "Izinsuku ezi-7",
+  "trendsRange30": "Izinsuku ezingu-30",
+  "trendsRange90": "Izinsuku ezingu-90",
+  "trendsSummary": "Ukufundwa okungu-{count} ezinsukwini ezingu-{days} zokugcina. Kwakamuva: {latest}, isilinganiso: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Ayikho idatha kulo mkhawulo.",
+  "trendsExplainsTitle": "Lolu shadi lukutshela ini — nokuthi alukutsheli ini",
+  "trendsExplainsBody": "Ishadi libonisa ukufundwa kwakho ngokuhamba kwesikhathi njengamaphoyinti ahluziwe. Alixilongi, alibikezeli, futhi alifakazeli izimbangela. Izinsuku ezilahlekile zibonakala njengezikhala, hhayi ama-zero.",
+  "trendsWeightChart": "Isisindo (kg)",
+  "trendsBandsNote": "Imikhawulo yocwaningo ayiphoqelekile futhi icishiwe ngokuzenzakalelayo. Bheka ithebhu ye-Irekhodi ukuyivula.",
+  "evidenceDiseaseFilter": "Bonisa ucwaningo olugxile ezifweni (kusuka emithonjeni ekhethe ukuyifunda)",
+  "evidenceSectionTitle": "Imithombo nezihloko zesayensi",
+  "guideCopyLink": "Kopisha isixhumanisi somthombo",
+  "planTitle": "Uhlelo lweviki",
+  "planGenerateDraft": "Dala uhlaka lweviki",
+  "planDraftLockedNote": "Ukudalwa okuzenzakalelayo kohlelo kuhlala kucishiwe: sicela uqale ukubuyekeza nochwepheshe wezempilo ofanelekile.",
+  "planCreatedToast": "Uhlelo lweviki lwakhiwe.",
+  "planItemDay": "Usuku {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Dala uhlu lokuthenga kusuka kuhlelo",
+  "shoppingTitle": "Uhlu lokuthenga",
+  "shoppingUndo": "Hlehlisa",
+  "shoppingAddManual": "Engeza into ngesandla",
+  "shoppingCheckedToggle": "Phawula",
+  "shoppingEmpty": "Awukho uhlu lokuthenga okwamanje.",
+  "planEmpty": "Awukho uhlelo lweviki okwamanje. Dala uhlaka kusuka kumaresiphi akho ukuze uqale.",
+  "aboutTitle": "Mayelana",
+  "aboutSlogan": "Ijenali yangasese ye-keto",
+  "aboutVersion": "Inguqulo {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Umthombo ovulekile",
+  "aboutOpenSourceBody": "I-N Keto Tracker iyisofthiwe yomthombo ovulekile yamahhala ngaphansi kwelayisense ye-GPL-3.0. Ungahlola, ushintshe futhi usabalalise kabusha ikhodi ngaphansi kwelayisense efanayo.",
+  "aboutPrivacyHeading": "Ubumfihlo",
+  "aboutPrivacyBody": "Idatha yakho yezempilo ihlala kule divayisi. Akukho akhawunti, akukho ukuhlaziya.",
+  "aboutDisclaimerHeading": "Isitatimende sokuzihlangula",
+  "aboutDisclaimerBody": "Le app yolwazi jikelele nokulandelela komuntu siqu. Akuyona iseluleko sezokwelapha, ukuxilonga noma ukwelashwa.",
+  "aboutLicensesButton": "Amalayisense",
+  "aboutShareButton": "Yabelana ngale app",
+  "aboutOtherAppsButton": "Ezinye ama-app",
+  "aboutCopiedToast": "Kukopishwe ebhodini lokunamathisela.",
+  "licensesTitle": "Amalayisense",
+  "otherAppsTitle": "Ezinye ama-app",
+  "otherAppsEmpty": "Azikho ezinye ama-app ezifakiwe okwamanje.",
+  "otherAppsCopyLink": "Kopisha isixhumanisi sesitolo",
+  "settingsTitle": "Izilungiselelo",
+  "aboutShareText": "Ijenali yangasese ye-keto enokulandelela i-glucose, ama-ketone ne-GKI. Umthombo ovulekile, akudingeki u-akhawunti.",
+  "dataManagementTitle": "Ukuphathwa kwedatha",
+  "dataExportJson": "Thumela idatha (JSON)",
+  "dataExportCsv": "Thumela izilinganiso (CSV)",
+  "dataImportLabel": "Namathisela i-JSON ethunyelwe lapha",
+  "dataImportButton": "Letha idatha",
+  "dataImportSuccess": "Kulethwe amarekhodi e-glucose angu-{glucose} nesisindo angu-{weight}.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Ukuletha kuhlulekile: ifayela alivumelekile noma alisekelwe.",
+  "dataDeleteAll": "Susa yonke idatha yami",
+  "dataDeleteConfirm1": "Susa YONKE idatha? Lokhu kufaka izilinganiso, ukudla, izinhlelo nezilungiselelo. Akukwazi ukuhlehliswa.",
+  "dataDeleteConfirm2": "Uqinisekile ngempela? Thayipha i-DELETE ukuqinisekisa.",
+  "dataDeleteTypeDelete": "Thayipha i-DELETE",
+  "dataDeleteDone": "Yonke idatha isusiwe (amarekhodi angu-{count}).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Ifayela lokuthumela selilungile — khetha lapho ulondoloza khona.",
+  "settingsAppearance": "Ukubukeka",
+  "themeSystem": "Isistimu",
+  "themeLight": "Okukhanyayo",
+  "themeDark": "Okumnyama",
+  "settingsLanguage": "Ulimi",
+  "settingsMore": "Okungaphezulu"
+}

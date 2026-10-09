@@ -1,0 +1,452 @@
+{
+  "@@locale": "da",
+  "appTitle": "N Keto Tracker",
+  "navToday": "I dag",
+  "navLog": "Log",
+  "navPlan": "Plan",
+  "navTrends": "Tendenser",
+  "navGuide": "Guide",
+  "pageUnderConstruction": "Denne skærm er under udvikling.",
+  "generalInfoDisclaimer": "Kun til generel information; ikke lægelig rådgivning.",
+  "onboardingLanguageTitle": "Vælg dit sprog",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Dine data bliver på din enhed",
+  "onboardingPrivacyBody": "N Keto Tracker gemmer dine målinger, måltider og noter kun i denne app på din enhed. Der er ingen konto, og dine sundhedsdata sendes aldrig nogen steder hen. Hvis du sletter appen, slettes dine data; du kan eksportere en sikkerhedskopi når som helst.",
+  "onboardingMedicalTitle": "Ikke lægelig rådgivning",
+  "onboardingMedicalBody": "Denne app er til generel information og personlig sporing. Den er ikke lægelig rådgivning, diagnose eller behandling og erstatter ikke pleje fra kvalificerede sundhedsfaglige.",
+  "onboardingPurposeTitle": "Hvad vil du spore?",
+  "onboardingPurposeLearn": "Lære om ketogen ernæring",
+  "onboardingPurposeMeals": "Planlægge måltider",
+  "onboardingPurposeMacros": "Spore makroer og nettokulhydrater",
+  "onboardingPurposeMeasure": "Spore glukose, ketoner og GKI",
+  "onboardingProfileTitle": "Om dig (valgfrit)",
+  "onboardingProfileBody": "Du kan springe dette over og tilføje det senere i indstillingerne. Det bruges kun til et generelt energiestimat.",
+  "onboardingBirthYear": "Fødselsår",
+  "onboardingHeightCm": "Højde (cm)",
+  "onboardingWeightKg": "Vægt (kg)",
+  "onboardingEnergyCoeffTitle": "Koefficient til energiestimat",
+  "onboardingEnergyCoeffBody": "Det generelle energiestimat bruger en af to publicerede koefficienter. Det handler ikke om din kønsidentitet — det er blot, hvilken version af ligningen der passer dig bedst. Du kan også springe energiestimater helt over.",
+  "onboardingEnergyCoeffSkip": "Spring energiestimater over",
+  "onboardingScreeningTitle": "Et par sikkerhedsspørgsmål",
+  "onboardingScreeningBody": "Disse spørgsmål diagnosticerer intet. De slår kun automatiske forslag til plan og mål fra, når der er brug for ekstra omhu.",
+  "onboardingScreeningDiabetes": "Har diabetes",
+  "onboardingScreeningMedication": "Bruger blodsukkersænkende medicin eller insulin",
+  "onboardingScreeningPregnancy": "Er gravid eller ammer",
+  "onboardingScreeningOrgan": "Har nyre-, lever- eller bugspytkirtelsygdom",
+  "onboardingScreeningEatingDisorder": "Har haft en spiseforstyrrelse",
+  "onboardingScreeningWeightLoss": "Har haft betydeligt utilsigtet vægttab",
+  "onboardingScreeningUnder18": "Er under 18 år",
+  "onboardingScreeningLockedNote": "På grund af dine svar forbliver automatisk oprettelse af plan og mål slået fra. Registrerings- og læringsfunktioner er stadig tilgængelige. Gennemgå det venligst med en kvalificeret sundhedsfaglig.",
+  "onboardingDataTitle": "Dine data",
+  "onboardingDataBody": "Dine registreringer bliver kun på denne enhed. Hvis du mister eller afinstallerer appen uden en eksporteret sikkerhedskopi, kan dataene ikke gendannes.",
+  "onboardingConsentTitle": "Samtykke",
+  "onboardingConsentBody": "Jeg har læst og accepterer privatlivsoversigten og meddelelsen om, at denne app ikke er lægelig rådgivning. Jeg forstår, at mine data kun bliver på denne enhed.",
+  "onboardingConsentCheckbox": "Jeg accepterer",
+  "onboardingNext": "Næste",
+  "onboardingBack": "Tilbage",
+  "onboardingFinish": "Begynd at bruge appen",
+  "onboardingStepOf": "Trin {current} af {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukose ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Blodketon BHB (mmol/L)",
+  "formSourceType": "Kildetype",
+  "formNote": "Note (valgfrit)",
+  "formPickTime": "Måletidspunkt",
+  "formSaveSession": "Gem målesession",
+  "formInvalidValue": "Indtast et gyldigt positivt tal.",
+  "gkiResultHeading": "Dit GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Målt: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Beregningsversion: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Ingen målinger endnu",
+  "logEmptyBody": "Tilføj din første glukose- og ketonmåling for at se den her.",
+  "logBandsToggle": "Vis forskningsintervaller fra den artikel, du har læst",
+  "bandsDisclaimer": "Disse intervaller er ikke kliniske normalområder eller beviste behandlingsmål. De er repræsentative, ikke-foreskrivende forslag fra en bestemt forskningsramme. GKI alene viser ikke sundhed, sygdomsrespons eller sikkerhed. Tryk for at se kilden.",
+  "logBandOptimal": "Foreslået optimalt forskningsinterval (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Foreslået terapeutisk forskningsinterval (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Uden for det foreslåede forskningsinterval ≤ 2.0",
+  "logMatchSimultaneous": "samtidig",
+  "logMatchApproximate": "omtrentligt match",
+  "logTimelineHeading": "Tidslinje",
+  "logChartsHeading": "Diagrammer",
+  "logGlucoseChart": "Glukose (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopiér kildelink",
+  "todayQuickActions": "Hurtige handlinger",
+  "todayAddMeasurement": "Tilføj måling",
+  "todayAddMeal": "Tilføj måltid",
+  "todayAddWeight": "Tilføj vægt",
+  "todayAddSymptom": "Tilføj symptom",
+  "todayLatestTitle": "Seneste målinger",
+  "todayLatestEmpty": "Ingen målinger endnu. Brug 'Tilføj måling' til at registrere glukose og keton BHB sammen.",
+  "todayNutritionTitle": "Dagens ernæring",
+  "todayNutritionEmpty": "Ingen måltider registreret i dag. Måltider logges fra fanen Plan.",
+  "todayWeightTitle": "Vægt",
+  "todayWeightEmpty": "Ingen vægtregistreringer endnu.",
+  "todaySymptomsTitle": "Dagens symptomer",
+  "todaySymptomsEmpty": "Ingen symptomer registreret i dag.",
+  "todayPlansTitle": "Planlagte måltider",
+  "todayPlansEmpty": "Ingen madplan for i dag.",
+  "comingSoonTitle": "Kommer i en kommende opdatering",
+  "comingSoonBody": "Denne formular er under udvikling. Du kan følge fremskridtet i projektets repository.",
+  "mealFormTitle": "Log et måltid",
+  "mealSearchLabel": "Søg efter mad",
+  "mealTypeLabel": "Måltidstype",
+  "mealTypeBreakfast": "Morgenmad",
+  "mealTypeLunch": "Frokost",
+  "mealTypeDinner": "Aftensmad",
+  "mealTypeSnack": "Mellemmåltid",
+  "mealTypeCustom": "Brugerdefineret",
+  "mealGramsLabel": "Mængde (g)",
+  "mealAddItem": "Tilføj mad",
+  "mealNoteLabel": "Note (valgfrit)",
+  "mealFavoriteToggle": "Markér som favorit",
+  "mealRepeatSection": "Hurtig gentagelse",
+  "mealRepeatFavorites": "Favoritter",
+  "mealRepeatRecent": "Seneste",
+  "mealSave": "Gem måltid",
+  "mealItemsHeading": "Elementer",
+  "mealSavedToast": "Måltid gemt.",
+  "mealNeedsItem": "Tilføj mindst én madvare først.",
+  "mealTotalsHeading": "Daglige totaler",
+  "mealTotalsKcal": "Energi: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Nettokulhydrater: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Kulhydrater i alt: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Fibre: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Protein: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Fedt: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Generelt et godt valg",
+  "guideGroupLimit": "Kan kræve begrænsning af portion eller hyppighed",
+  "guideGroupAvoid": "Generelt uforeneligt med ketogene mål",
+  "guideWhyHeading": "Hvorfor?",
+  "guideTypicalPortion": "Typisk portion: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternativer: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Datakilde: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Kød, fisk og æg",
+  "guideCardLowCarbVegetables": "Grøntsager med lavt kulhydratindhold",
+  "guideCardFatsOils": "Fedtstoffer og olier",
+  "guideCardNutsSeeds": "Nødder og frø",
+  "guideCardBerries": "Bær",
+  "guideCardDairy": "Sødmælksprodukter",
+  "guideCardFruit": "Frugt",
+  "guideCardLegumes": "Bælgfrugter",
+  "guideCardMilkDrinks": "Mælk og søde drikke",
+  "guideCardSugaryDrinks": "Sukkerholdige drikke",
+  "guideCardStarches": "Brød, ris, kartofler",
+  "guideCardSweets": "Slik og desserter",
+  "logMealRelation": "Registreret {hours} t efter {mealType} — kun tidskontekst, ikke en effekt.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Intet måltid registreret i analysevinduet før denne måling.",
+  "logRelationWindowLabel": "Vindue for måltidsrelation",
+  "logConfoundersHeading": "Hvad kan ellers påvirke målinger?",
+  "mealTypeShortBreakfast": "morgenmad",
+  "mealTypeShortLunch": "frokost",
+  "mealTypeShortDinner": "aftensmad",
+  "mealTypeShortSnack": "mellemmåltid",
+  "mealTypeShortCustom": "måltid",
+  "recipePerServing": "{value} portioner",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Tilberedning: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Allergener: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredienser",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Fremgangsmåde",
+  "recipeStorage": "Opbevaring: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Forskningsinterval brugt i et studie",
+  "goalLegendClinician": "Min læges mål",
+  "goalLegendPersonal": "Mit personlige sporingsmål",
+  "goalLegendPersonalNote": "Et personligt sporingsmål er ikke et medicinsk mål.",
+  "weightValueLabel": "Vægt ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Betingelse (valgfrit, fx morgen, efter træning)",
+  "weightSave": "Gem vægt",
+  "symptomFormTitle": "Log et symptom",
+  "symptomDefinitionLabel": "Symptom",
+  "symptomSeverityLabel": "Sværhedsgrad: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Note (valgfrit)",
+  "symptomSave": "Gem symptom",
+  "symptomSavedToast": "Symptom gemt.",
+  "symptomGuidance": "Du har markeret et betydeligt symptom. Denne app stiller ikke diagnoser. Følg din egen sundhedsplan, og kontakt dit lokale alarmcenter, hvis du føler dig utilpas, eller symptomerne er alvorlige.",
+  "symptomSeizureGuidance": "Du har registreret et anfald. Denne app stiller ikke diagnoser. Følg din sundhedsplan og kontakt din sundhedsfaglige; ring til lokale nødtjenester, hvis det haster.",
+  "trendsRange7": "7 dage",
+  "trendsRange30": "30 dage",
+  "trendsRange90": "90 dage",
+  "trendsSummary": "{count} målinger de seneste {days} dage. Seneste: {latest}, gennemsnit: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Ingen data i dette interval.",
+  "trendsExplainsTitle": "Hvad dette diagram fortæller dig — og hvad det ikke gør",
+  "trendsExplainsBody": "Diagrammet viser dine egne målinger over tid som rå punkter. Det diagnosticerer ikke, forudsiger ikke og beviser ikke årsager. Manglende dage vises som huller, ikke nuller.",
+  "trendsWeightChart": "Vægt (kg)",
+  "trendsBandsNote": "Forskningsintervaller er valgfrie og slået fra som standard. Se fanen Log for at aktivere dem.",
+  "evidenceDiseaseFilter": "Vis sygdomsspecifik forskning (fra de kilder, du vælger at læse)",
+  "evidenceSectionTitle": "Videnskabelige kilder og artikler",
+  "guideCopyLink": "Kopiér kildelink",
+  "planTitle": "Ugeplan",
+  "planGenerateDraft": "Opret ugentligt udkast",
+  "planDraftLockedNote": "Automatisk oprettelse af plan forbliver slået fra: gennemgå det først med en kvalificeret sundhedsfaglig.",
+  "planCreatedToast": "Ugeplan oprettet.",
+  "planItemDay": "Dag {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Opret indkøbsliste fra plan",
+  "shoppingTitle": "Indkøbsliste",
+  "shoppingUndo": "Fortryd",
+  "shoppingAddManual": "Tilføj manuel vare",
+  "shoppingCheckedToggle": "Afkryds",
+  "shoppingEmpty": "Ingen indkøbsliste endnu.",
+  "planEmpty": "Ingen ugeplan endnu. Opret et udkast fra dine opskrifter for at komme i gang.",
+  "aboutTitle": "Om",
+  "aboutSlogan": "Privat keto-dagbog",
+  "aboutVersion": "Version {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Åben kildekode",
+  "aboutOpenSourceBody": "N Keto Tracker er gratis software med åben kildekode under GPL-3.0. Du kan se, ændre og videredistribuere koden under samme licens.",
+  "aboutPrivacyHeading": "Privatliv",
+  "aboutPrivacyBody": "Dine sundhedsdata bliver på denne enhed. Ingen konto, ingen analyse.",
+  "aboutDisclaimerHeading": "Ansvarsfraskrivelse",
+  "aboutDisclaimerBody": "Denne app er til generel information og personlig sporing. Den er ikke lægelig rådgivning, diagnose eller behandling.",
+  "aboutLicensesButton": "Licenser",
+  "aboutShareButton": "Del denne app",
+  "aboutOtherAppsButton": "Andre apps",
+  "aboutCopiedToast": "Kopieret til udklipsholderen.",
+  "licensesTitle": "Licenser",
+  "otherAppsTitle": "Andre apps",
+  "otherAppsEmpty": "Ingen andre apps opført endnu.",
+  "otherAppsCopyLink": "Kopiér butikslink",
+  "settingsTitle": "Indstillinger",
+  "aboutShareText": "Privat keto-dagbog med sporing af glukose, ketoner og GKI. Åben kildekode, ingen konto nødvendig.",
+  "dataManagementTitle": "Datahåndtering",
+  "dataExportJson": "Eksportér data (JSON)",
+  "dataExportCsv": "Eksportér målinger (CSV)",
+  "dataImportLabel": "Indsæt eksporteret JSON her",
+  "dataImportButton": "Importér data",
+  "dataImportSuccess": "Importerede {glucose} glukose- og {weight} vægtregistreringer.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Import mislykkedes: filen er ugyldig eller ikke understøttet.",
+  "dataDeleteAll": "Slet alle mine data",
+  "dataDeleteConfirm1": "Slet ALLE data? Det omfatter målinger, måltider, planer og indstillinger. Det kan ikke fortrydes.",
+  "dataDeleteConfirm2": "Er du helt sikker? Skriv DELETE for at bekræfte.",
+  "dataDeleteTypeDelete": "Skriv DELETE",
+  "dataDeleteDone": "Alle data slettet ({count} registreringer).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Eksportfil klar — vælg, hvor den skal gemmes.",
+  "settingsAppearance": "Udseende",
+  "themeSystem": "System",
+  "themeLight": "Lyst",
+  "themeDark": "Mørkt",
+  "settingsLanguage": "Sprog",
+  "settingsMore": "Mere"
+}

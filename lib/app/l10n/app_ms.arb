@@ -1,0 +1,452 @@
+{
+  "@@locale": "ms",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Hari Ini",
+  "navLog": "Log",
+  "navPlan": "Pelan",
+  "navTrends": "Trend",
+  "navGuide": "Panduan",
+  "pageUnderConstruction": "Skrin ini sedang dibina.",
+  "generalInfoDisclaimer": "Untuk maklumat am sahaja; bukan nasihat perubatan.",
+  "onboardingLanguageTitle": "Pilih bahasa anda",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Data anda kekal pada peranti anda",
+  "onboardingPrivacyBody": "N Keto Tracker menyimpan ukuran, hidangan dan nota anda hanya dalam aplikasi ini pada peranti anda. Tiada akaun, dan data kesihatan anda tidak pernah dihantar ke mana-mana. Memadam aplikasi akan memadam data anda; anda boleh mengeksport sandaran bila-bila masa.",
+  "onboardingMedicalTitle": "Bukan nasihat perubatan",
+  "onboardingMedicalBody": "Aplikasi ini untuk maklumat am dan penjejakan peribadi. Ia bukan nasihat perubatan, diagnosis atau rawatan, dan tidak menggantikan penjagaan daripada profesional kesihatan yang berkelayakan.",
+  "onboardingPurposeTitle": "Apa yang anda mahu jejak?",
+  "onboardingPurposeLearn": "Belajar tentang pemakanan ketogenik",
+  "onboardingPurposeMeals": "Merancang hidangan",
+  "onboardingPurposeMacros": "Menjejak makro dan karbohidrat bersih",
+  "onboardingPurposeMeasure": "Menjejak glukosa, keton dan GKI",
+  "onboardingProfileTitle": "Tentang anda (pilihan)",
+  "onboardingProfileBody": "Anda boleh langkau ini dan tambah kemudian dalam tetapan. Ia hanya digunakan untuk anggaran tenaga am.",
+  "onboardingBirthYear": "Tahun lahir",
+  "onboardingHeightCm": "Tinggi (cm)",
+  "onboardingWeightKg": "Berat (kg)",
+  "onboardingEnergyCoeffTitle": "Pekali anggaran tenaga",
+  "onboardingEnergyCoeffBody": "Anggaran tenaga am menggunakan salah satu daripada dua pekali yang diterbitkan. Ini bukan tentang identiti jantina anda — hanya versi persamaan yang paling sesuai dengan anda. Anda juga boleh melangkau anggaran tenaga sepenuhnya.",
+  "onboardingEnergyCoeffSkip": "Langkau anggaran tenaga",
+  "onboardingScreeningTitle": "Beberapa soalan keselamatan",
+  "onboardingScreeningBody": "Soalan ini tidak mendiagnosis apa-apa. Ia hanya mematikan cadangan pelan dan matlamat automatik apabila penjagaan tambahan diperlukan.",
+  "onboardingScreeningDiabetes": "Menghidap diabetes",
+  "onboardingScreeningMedication": "Menggunakan ubat penurun glukosa atau insulin",
+  "onboardingScreeningPregnancy": "Hamil atau menyusu",
+  "onboardingScreeningOrgan": "Menghidap penyakit buah pinggang, hati atau pankreas",
+  "onboardingScreeningEatingDisorder": "Mempunyai sejarah gangguan makan",
+  "onboardingScreeningWeightLoss": "Mengalami penurunan berat badan ketara tanpa sengaja",
+  "onboardingScreeningUnder18": "Berumur di bawah 18 tahun",
+  "onboardingScreeningLockedNote": "Berdasarkan jawapan anda, pembuatan pelan dan matlamat automatik kekal dimatikan. Ciri rakaman dan pembelajaran masih tersedia. Sila bincangkan perkara ini dengan profesional kesihatan yang berkelayakan.",
+  "onboardingDataTitle": "Data anda",
+  "onboardingDataBody": "Rekod anda kekal pada peranti ini sahaja. Jika anda kehilangan atau menyahpasang aplikasi tanpa eksport sandaran, data tidak dapat dipulihkan.",
+  "onboardingConsentTitle": "Persetujuan",
+  "onboardingConsentBody": "Saya telah membaca dan menerima ringkasan privasi serta notis bahawa aplikasi ini bukan nasihat perubatan. Saya faham data saya kekal pada peranti ini sahaja.",
+  "onboardingConsentCheckbox": "Saya terima",
+  "onboardingNext": "Seterusnya",
+  "onboardingBack": "Kembali",
+  "onboardingFinish": "Mula guna aplikasi",
+  "onboardingStepOf": "Langkah {current} daripada {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Glukosa ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Keton darah BHB (mmol/L)",
+  "formSourceType": "Jenis sumber",
+  "formNote": "Nota (pilihan)",
+  "formPickTime": "Masa ukuran",
+  "formSaveSession": "Simpan sesi ukuran",
+  "formInvalidValue": "Sila masukkan nombor positif yang sah.",
+  "gkiResultHeading": "GKI anda",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Diukur pada: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Versi pengiraan: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Belum ada ukuran",
+  "logEmptyBody": "Tambah bacaan glukosa dan keton pertama anda untuk melihatnya di sini.",
+  "logBandsToggle": "Tunjuk julat penyelidikan daripada artikel yang anda baca",
+  "bandsDisclaimer": "Julat ini bukan julat normal klinikal atau sasaran rawatan yang terbukti. Ia adalah cadangan perwakilan yang tidak preskriptif daripada rangka kerja penyelidikan tertentu. GKI sahaja tidak menunjukkan kesihatan, tindak balas penyakit atau keselamatan. Ketik untuk melihat sumber.",
+  "logBandOptimal": "Julat penyelidikan optimum dicadangkan (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Julat penyelidikan terapeutik dicadangkan (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Di luar julat penyelidikan dicadangkan ≤ 2.0",
+  "logMatchSimultaneous": "serentak",
+  "logMatchApproximate": "padanan anggaran",
+  "logTimelineHeading": "Garis masa",
+  "logChartsHeading": "Carta",
+  "logGlucoseChart": "Glukosa (mmol/L)",
+  "logBhbChart": "Keton BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Salin pautan sumber",
+  "todayQuickActions": "Tindakan pantas",
+  "todayAddMeasurement": "Tambah ukuran",
+  "todayAddMeal": "Tambah hidangan",
+  "todayAddWeight": "Tambah berat",
+  "todayAddSymptom": "Tambah simptom",
+  "todayLatestTitle": "Ukuran terkini",
+  "todayLatestEmpty": "Belum ada ukuran. Guna 'Tambah ukuran' untuk merekod glukosa dan keton BHB bersama.",
+  "todayNutritionTitle": "Pemakanan hari ini",
+  "todayNutritionEmpty": "Tiada hidangan direkod hari ini. Hidangan dilog daripada tab Pelan.",
+  "todayWeightTitle": "Berat",
+  "todayWeightEmpty": "Belum ada entri berat.",
+  "todaySymptomsTitle": "Simptom hari ini",
+  "todaySymptomsEmpty": "Tiada simptom direkod hari ini.",
+  "todayPlansTitle": "Hidangan dirancang",
+  "todayPlansEmpty": "Tiada pelan hidangan untuk hari ini.",
+  "comingSoonTitle": "Akan datang dalam kemas kini seterusnya",
+  "comingSoonBody": "Borang entri ini sedang dibina. Anda boleh mengikuti perkembangan dalam repositori projek.",
+  "mealFormTitle": "Log hidangan",
+  "mealSearchLabel": "Cari makanan",
+  "mealTypeLabel": "Jenis hidangan",
+  "mealTypeBreakfast": "Sarapan",
+  "mealTypeLunch": "Makan tengah hari",
+  "mealTypeDinner": "Makan malam",
+  "mealTypeSnack": "Snek",
+  "mealTypeCustom": "Tersuai",
+  "mealGramsLabel": "Kuantiti (g)",
+  "mealAddItem": "Tambah makanan",
+  "mealNoteLabel": "Nota (pilihan)",
+  "mealFavoriteToggle": "Tandakan sebagai kegemaran",
+  "mealRepeatSection": "Ulang pantas",
+  "mealRepeatFavorites": "Kegemaran",
+  "mealRepeatRecent": "Terkini",
+  "mealSave": "Simpan hidangan",
+  "mealItemsHeading": "Item",
+  "mealSavedToast": "Hidangan disimpan.",
+  "mealNeedsItem": "Tambah sekurang-kurangnya satu makanan dahulu.",
+  "mealTotalsHeading": "Jumlah harian",
+  "mealTotalsKcal": "Tenaga: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Karbohidrat bersih: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Jumlah karbohidrat: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Serat: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Protein: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Lemak: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Biasanya pilihan yang baik",
+  "guideGroupLimit": "Mungkin memerlukan had hidangan atau kekerapan",
+  "guideGroupAvoid": "Biasanya tidak serasi dengan sasaran ketogenik",
+  "guideWhyHeading": "Mengapa?",
+  "guideTypicalPortion": "Hidangan biasa: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatif: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Sumber data: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Daging, ikan dan telur",
+  "guideCardLowCarbVegetables": "Sayur rendah karbohidrat",
+  "guideCardFatsOils": "Lemak dan minyak",
+  "guideCardNutsSeeds": "Kacang dan biji",
+  "guideCardBerries": "Beri",
+  "guideCardDairy": "Tenusu penuh lemak",
+  "guideCardFruit": "Buah-buahan",
+  "guideCardLegumes": "Kekacang",
+  "guideCardMilkDrinks": "Susu dan minuman manis",
+  "guideCardSugaryDrinks": "Minuman bergula",
+  "guideCardStarches": "Roti, nasi, kentang",
+  "guideCardSweets": "Gula-gula dan pencuci mulut",
+  "logMealRelation": "Direkod {hours} j selepas hidangan {mealType} — konteks masa sahaja, bukan kesan.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Tiada hidangan direkod dalam tetingkap analisis sebelum bacaan ini.",
+  "logRelationWindowLabel": "Tetingkap hubungan hidangan",
+  "logConfoundersHeading": "Apa lagi yang boleh menjejaskan bacaan?",
+  "mealTypeShortBreakfast": "sarapan",
+  "mealTypeShortLunch": "makan tengah hari",
+  "mealTypeShortDinner": "makan malam",
+  "mealTypeShortSnack": "snek",
+  "mealTypeShortCustom": "hidangan",
+  "recipePerServing": "{value} hidangan",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Penyediaan: {value} min",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergen: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Bahan",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Langkah",
+  "recipeStorage": "Penyimpanan: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Julat penyelidikan yang digunakan dalam kajian",
+  "goalLegendClinician": "Sasaran doktor saya",
+  "goalLegendPersonal": "Matlamat penjejakan peribadi saya",
+  "goalLegendPersonalNote": "Matlamat penjejakan peribadi bukan sasaran perubatan.",
+  "weightValueLabel": "Berat ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Keadaan (pilihan, cth. pagi, selepas senaman)",
+  "weightSave": "Simpan berat",
+  "symptomFormTitle": "Log simptom",
+  "symptomDefinitionLabel": "Simptom",
+  "symptomSeverityLabel": "Tahap keterukan: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Nota (pilihan)",
+  "symptomSave": "Simpan simptom",
+  "symptomSavedToast": "Simptom disimpan.",
+  "symptomGuidance": "Anda menandakan simptom yang ketara. Aplikasi ini tidak mendiagnosis. Ikut pelan kesihatan anda sendiri, dan hubungi perkhidmatan kecemasan tempatan jika anda berasa tidak sihat atau simptom teruk.",
+  "symptomSeizureGuidance": "Anda merekod peristiwa sawan. Aplikasi ini tidak mendiagnosis. Sila ikut pelan kesihatan anda dan hubungi profesional kesihatan anda; hubungi perkhidmatan kecemasan tempatan jika mendesak.",
+  "trendsRange7": "7 hari",
+  "trendsRange30": "30 hari",
+  "trendsRange90": "90 hari",
+  "trendsSummary": "{count} bacaan dalam {days} hari lalu. Terkini: {latest}, purata: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Tiada data dalam julat ini.",
+  "trendsExplainsTitle": "Apa yang carta ini beritahu anda — dan apa yang tidak",
+  "trendsExplainsBody": "Carta menunjukkan bacaan anda sendiri dari semasa ke semasa sebagai titik mentah. Ia tidak mendiagnosis, tidak meramal dan tidak membuktikan punca. Hari yang tiada muncul sebagai jurang, bukan sifar.",
+  "trendsWeightChart": "Berat (kg)",
+  "trendsBandsNote": "Julat penyelidikan adalah pilihan dan dimatikan secara lalai. Lihat tab Log untuk mendayakannya.",
+  "evidenceDiseaseFilter": "Tunjuk penyelidikan khusus penyakit (daripada sumber yang anda pilih untuk dibaca)",
+  "evidenceSectionTitle": "Sumber dan artikel saintifik",
+  "guideCopyLink": "Salin pautan sumber",
+  "planTitle": "Pelan mingguan",
+  "planGenerateDraft": "Jana draf mingguan",
+  "planDraftLockedNote": "Penjanaan pelan automatik kekal dimatikan: sila semak dahulu dengan profesional kesihatan yang berkelayakan.",
+  "planCreatedToast": "Pelan mingguan dicipta.",
+  "planItemDay": "Hari {day}",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Cipta senarai membeli-belah daripada pelan",
+  "shoppingTitle": "Senarai membeli-belah",
+  "shoppingUndo": "Buat asal",
+  "shoppingAddManual": "Tambah item secara manual",
+  "shoppingCheckedToggle": "Tanda",
+  "shoppingEmpty": "Belum ada senarai membeli-belah.",
+  "planEmpty": "Belum ada pelan mingguan. Jana draf daripada resipi anda untuk bermula.",
+  "aboutTitle": "Perihal",
+  "aboutSlogan": "Jurnal keto peribadi",
+  "aboutVersion": "Versi {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Sumber terbuka",
+  "aboutOpenSourceBody": "N Keto Tracker ialah perisian sumber terbuka percuma di bawah lesen GPL-3.0. Anda boleh memeriksa, mengubah suai dan mengedar semula kod di bawah lesen yang sama.",
+  "aboutPrivacyHeading": "Privasi",
+  "aboutPrivacyBody": "Data kesihatan anda kekal pada peranti ini. Tiada akaun, tiada analitik.",
+  "aboutDisclaimerHeading": "Penafian",
+  "aboutDisclaimerBody": "Aplikasi ini untuk maklumat am dan penjejakan peribadi. Ia bukan nasihat perubatan, diagnosis atau rawatan.",
+  "aboutLicensesButton": "Lesen",
+  "aboutShareButton": "Kongsi aplikasi ini",
+  "aboutOtherAppsButton": "Aplikasi lain",
+  "aboutCopiedToast": "Disalin ke papan klip.",
+  "licensesTitle": "Lesen",
+  "otherAppsTitle": "Aplikasi lain",
+  "otherAppsEmpty": "Belum ada aplikasi lain disenaraikan.",
+  "otherAppsCopyLink": "Salin pautan kedai",
+  "settingsTitle": "Tetapan",
+  "aboutShareText": "Jurnal keto peribadi dengan penjejakan glukosa, keton dan GKI. Sumber terbuka, tiada akaun diperlukan.",
+  "dataManagementTitle": "Pengurusan data",
+  "dataExportJson": "Eksport data (JSON)",
+  "dataExportCsv": "Eksport ukuran (CSV)",
+  "dataImportLabel": "Tampal JSON yang dieksport di sini",
+  "dataImportButton": "Import data",
+  "dataImportSuccess": "{glucose} rekod glukosa dan {weight} rekod berat diimport.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Import gagal: fail tidak sah atau tidak disokong.",
+  "dataDeleteAll": "Padam semua data saya",
+  "dataDeleteConfirm1": "Padam SEMUA data? Ini termasuk ukuran, hidangan, pelan dan tetapan. Ini tidak boleh dibuat asal.",
+  "dataDeleteConfirm2": "Anda benar-benar pasti? Taip DELETE untuk mengesahkan.",
+  "dataDeleteTypeDelete": "Taip DELETE",
+  "dataDeleteDone": "Semua data dipadam ({count} rekod).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Fail eksport sedia — pilih tempat untuk menyimpannya.",
+  "settingsAppearance": "Penampilan",
+  "themeSystem": "Sistem",
+  "themeLight": "Cerah",
+  "themeDark": "Gelap",
+  "settingsLanguage": "Bahasa",
+  "settingsMore": "Lagi"
+}

@@ -1,0 +1,452 @@
+{
+  "@@locale": "lt",
+  "appTitle": "N Keto Tracker",
+  "navToday": "Šiandien",
+  "navLog": "Žurnalas",
+  "navPlan": "Planas",
+  "navTrends": "Tendencijos",
+  "navGuide": "Vadovas",
+  "pageUnderConstruction": "Šis ekranas kuriamas.",
+  "generalInfoDisclaimer": "Tik bendrai informacijai; ne medicininis patarimas.",
+  "onboardingLanguageTitle": "Pasirinkite kalbą",
+  "onboardingLanguageEnglish": "English",
+  "onboardingLanguageTurkish": "Türkçe",
+  "onboardingPrivacyTitle": "Jūsų duomenys lieka jūsų įrenginyje",
+  "onboardingPrivacyBody": "N Keto Tracker saugo jūsų matavimus, valgius ir pastabas tik šioje programoje jūsų įrenginyje. Paskyros nėra, o jūsų sveikatos duomenys niekur nesiunčiami. Ištrynus programą, ištrinami ir duomenys; atsarginę kopiją galite eksportuoti bet kada.",
+  "onboardingMedicalTitle": "Ne medicininis patarimas",
+  "onboardingMedicalBody": "Ši programa skirta bendrai informacijai ir asmeniniam stebėjimui. Tai nėra medicininis patarimas, diagnozė ar gydymas ir ji nepakeičia kvalifikuotų sveikatos priežiūros specialistų pagalbos.",
+  "onboardingPurposeTitle": "Ką norite stebėti?",
+  "onboardingPurposeLearn": "Sužinoti apie ketogeninę mitybą",
+  "onboardingPurposeMeals": "Planuoti valgius",
+  "onboardingPurposeMacros": "Stebėti makro ir grynuosius angliavandenius",
+  "onboardingPurposeMeasure": "Stebėti gliukozę, ketonus ir GKI",
+  "onboardingProfileTitle": "Apie jus (neprivaloma)",
+  "onboardingProfileBody": "Tai galite praleisti ir vėliau pridėti nustatymuose. Naudojama tik bendram energijos įvertinimui.",
+  "onboardingBirthYear": "Gimimo metai",
+  "onboardingHeightCm": "Ūgis (cm)",
+  "onboardingWeightKg": "Svoris (kg)",
+  "onboardingEnergyCoeffTitle": "Energijos įvertinimo koeficientas",
+  "onboardingEnergyCoeffBody": "Bendras energijos įvertinimas naudoja vieną iš dviejų paskelbtų koeficientų. Tai nesusiję su jūsų lytine tapatybe — tik parodo, kuri lygties versija jums tinka labiau. Energijos įvertinimus galite ir visai praleisti.",
+  "onboardingEnergyCoeffSkip": "Praleisti energijos įvertinimus",
+  "onboardingScreeningTitle": "Keli saugos klausimai",
+  "onboardingScreeningBody": "Šie klausimai nieko nediagnozuoja. Jie tik išjungia automatinius plano ir tikslų pasiūlymus, kai reikia papildomo atsargumo.",
+  "onboardingScreeningDiabetes": "Sergu diabetu",
+  "onboardingScreeningMedication": "Vartoju gliukozę mažinančius vaistus arba insuliną",
+  "onboardingScreeningPregnancy": "Esu nėščia arba maitinu krūtimi",
+  "onboardingScreeningOrgan": "Sergu inkstų, kepenų ar kasos liga",
+  "onboardingScreeningEatingDisorder": "Anksčiau buvo valgymo sutrikimas",
+  "onboardingScreeningWeightLoss": "Netyčia gerokai sumažėjo svoris",
+  "onboardingScreeningUnder18": "Man dar nėra 18 metų",
+  "onboardingScreeningLockedNote": "Dėl jūsų atsakymų automatinis plano ir tikslų kūrimas lieka išjungtas. Įrašymas ir mokymosi funkcijos lieka prieinamos. Aptarkite tai su kvalifikuotu sveikatos priežiūros specialistu.",
+  "onboardingDataTitle": "Jūsų duomenys",
+  "onboardingDataBody": "Jūsų įrašai lieka tik šiame įrenginyje. Jei prarasite ar pašalinsite programą neeksportavę atsarginės kopijos, duomenų atkurti neįmanoma.",
+  "onboardingConsentTitle": "Sutikimas",
+  "onboardingConsentBody": "Perskaičiau ir sutinku su privatumo santrauka bei pranešimu, kad ši programa nėra medicininis patarimas. Suprantu, kad mano duomenys lieka tik šiame įrenginyje.",
+  "onboardingConsentCheckbox": "Sutinku",
+  "onboardingNext": "Toliau",
+  "onboardingBack": "Atgal",
+  "onboardingFinish": "Pradėti naudoti programą",
+  "onboardingStepOf": "{current} žingsnis iš {total}",
+  "@onboardingStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formGlucoseLabel": "Gliukozė ({unit})",
+  "@formGlucoseLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "formBhbLabel": "Kraujo ketonas BHB (mmol/L)",
+  "formSourceType": "Šaltinio tipas",
+  "formNote": "Pastaba (neprivaloma)",
+  "formPickTime": "Matavimo laikas",
+  "formSaveSession": "Išsaugoti matavimo seansą",
+  "formInvalidValue": "Įveskite tinkamą teigiamą skaičių.",
+  "gkiResultHeading": "Jūsų GKI",
+  "gkiResultValue": "GKI: {value}",
+  "@gkiResultValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormula": "{glucose} mmol/L ÷ {bhb} mmol/L",
+  "@gkiFormula": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "bhb": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiMeasurements": "Išmatuota: {time}",
+  "@gkiMeasurements": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "gkiFormulaVersion": "Skaičiavimo versija: {version}",
+  "@gkiFormulaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "logEmptyTitle": "Matavimų dar nėra",
+  "logEmptyBody": "Pridėkite pirmąjį gliukozės ir ketono rodmenį, kad jį matytumėte čia.",
+  "logBandsToggle": "Rodyti perskaityto straipsnio tyrimų intervalus",
+  "bandsDisclaimer": "Šie intervalai nėra klinikinės normos ar įrodyti gydymo tikslai. Tai pavyzdiniai, nenurodomojo pobūdžio pasiūlymai iš tam tikros tyrimų sistemos. Vien GKI nerodo sveikatos, atsako į ligą ar saugumo. Palieskite, kad pamatytumėte šaltinį.",
+  "logBandOptimal": "Siūlomas optimalus tyrimų intervalas (GKI ≤ 1.0)",
+  "logBandTherapeutic": "Siūlomas terapinis tyrimų intervalas (1.0 < GKI ≤ 2.0)",
+  "logBandOutside": "Už siūlomo ≤ 2.0 tyrimų intervalo ribų",
+  "logMatchSimultaneous": "tuo pačiu metu",
+  "logMatchApproximate": "apytikslis atitikimas",
+  "logTimelineHeading": "Laiko juosta",
+  "logChartsHeading": "Diagramos",
+  "logGlucoseChart": "Gliukozė (mmol/L)",
+  "logBhbChart": "Ketonas BHB (mmol/L)",
+  "logGkiChart": "GKI",
+  "logSourceButton": "Kopijuoti šaltinio nuorodą",
+  "todayQuickActions": "Greiti veiksmai",
+  "todayAddMeasurement": "Pridėti matavimą",
+  "todayAddMeal": "Pridėti valgį",
+  "todayAddWeight": "Pridėti svorį",
+  "todayAddSymptom": "Pridėti simptomą",
+  "todayLatestTitle": "Naujausi matavimai",
+  "todayLatestEmpty": "Matavimų dar nėra. Naudokite „Pridėti matavimą“, kad kartu užfiksuotumėte gliukozę ir ketoną BHB.",
+  "todayNutritionTitle": "Šiandienos mityba",
+  "todayNutritionEmpty": "Šiandien valgių neužfiksuota. Valgiai fiksuojami skirtuke „Planas“.",
+  "todayWeightTitle": "Svoris",
+  "todayWeightEmpty": "Svorio įrašų dar nėra.",
+  "todaySymptomsTitle": "Šiandienos simptomai",
+  "todaySymptomsEmpty": "Šiandien simptomų neužfiksuota.",
+  "todayPlansTitle": "Suplanuoti valgiai",
+  "todayPlansEmpty": "Šiandienai valgių plano nėra.",
+  "comingSoonTitle": "Bus kitame atnaujinime",
+  "comingSoonBody": "Ši įvesties forma kuriama. Eigą galite sekti projekto saugykloje.",
+  "mealFormTitle": "Užfiksuoti valgį",
+  "mealSearchLabel": "Ieškoti maisto",
+  "mealTypeLabel": "Valgio tipas",
+  "mealTypeBreakfast": "Pusryčiai",
+  "mealTypeLunch": "Pietūs",
+  "mealTypeDinner": "Vakarienė",
+  "mealTypeSnack": "Užkandis",
+  "mealTypeCustom": "Kita",
+  "mealGramsLabel": "Kiekis (g)",
+  "mealAddItem": "Pridėti maisto",
+  "mealNoteLabel": "Pastaba (neprivaloma)",
+  "mealFavoriteToggle": "Pažymėti kaip mėgstamą",
+  "mealRepeatSection": "Greitas pakartojimas",
+  "mealRepeatFavorites": "Mėgstami",
+  "mealRepeatRecent": "Naujausi",
+  "mealSave": "Išsaugoti valgį",
+  "mealItemsHeading": "Elementai",
+  "mealSavedToast": "Valgis išsaugotas.",
+  "mealNeedsItem": "Pirmiausia pridėkite bent vieną maisto produktą.",
+  "mealTotalsHeading": "Dienos sumos",
+  "mealTotalsKcal": "Energija: {value} kcal",
+  "@mealTotalsKcal": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsNetCarb": "Grynieji angliavandeniai: {value} g",
+  "@mealTotalsNetCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsTotalCarb": "Angliavandeniai iš viso: {value} g",
+  "@mealTotalsTotalCarb": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFiber": "Skaidulos: {value} g",
+  "@mealTotalsFiber": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsProtein": "Baltymai: {value} g",
+  "@mealTotalsProtein": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mealTotalsFat": "Riebalai: {value} g",
+  "@mealTotalsFat": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideGroupPrefer": "Paprastai gera parinktis",
+  "guideGroupLimit": "Gali reikėti apriboti porciją ar dažnį",
+  "guideGroupAvoid": "Paprastai nesuderinama su ketogeniniais tikslais",
+  "guideWhyHeading": "Kodėl?",
+  "guideTypicalPortion": "Tipinė porcija: {portion} (~{grams} g)",
+  "@guideTypicalPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "guideAlternatives": "Alternatyvos: {value}",
+  "@guideAlternatives": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideDataSource": "Duomenų šaltinis: {value}",
+  "@guideDataSource": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "guideCardMeatFishEggs": "Mėsa, žuvis ir kiaušiniai",
+  "guideCardLowCarbVegetables": "Daržovės, turinčios mažai angliavandenių",
+  "guideCardFatsOils": "Riebalai ir aliejai",
+  "guideCardNutsSeeds": "Riešutai ir sėklos",
+  "guideCardBerries": "Uogos",
+  "guideCardDairy": "Riebūs pieno produktai",
+  "guideCardFruit": "Vaisiai",
+  "guideCardLegumes": "Ankštiniai",
+  "guideCardMilkDrinks": "Pienas ir saldūs gėrimai",
+  "guideCardSugaryDrinks": "Cukringi gėrimai",
+  "guideCardStarches": "Duona, ryžiai, bulvės",
+  "guideCardSweets": "Saldumynai ir desertai",
+  "logMealRelation": "Užfiksuota praėjus {hours} val. po valgio ({mealType}) — tik laiko kontekstas, o ne poveikis.",
+  "@logMealRelation": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "mealType": {
+        "type": "String"
+      }
+    }
+  },
+  "logNoMealRelation": "Analizės lange prieš šį rodmenį valgio neužfiksuota.",
+  "logRelationWindowLabel": "Ryšio su valgiu langas",
+  "logConfoundersHeading": "Kas dar gali paveikti rodmenis?",
+  "mealTypeShortBreakfast": "pusryčiai",
+  "mealTypeShortLunch": "pietūs",
+  "mealTypeShortDinner": "vakarienė",
+  "mealTypeShortSnack": "užkandis",
+  "mealTypeShortCustom": "valgis",
+  "recipePerServing": "Porcijų: {value}",
+  "@recipePerServing": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePrepMinutes": "Paruošimas: {value} min.",
+  "@recipePrepMinutes": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeAllergens": "Alergenai: {value}",
+  "@recipeAllergens": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeIngredientsHeading": "Ingredientai",
+  "recipeGrams": "{value} g",
+  "@recipeGrams": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "recipeStepsHeading": "Žingsniai",
+  "recipeStorage": "Laikymas: {value}",
+  "@recipeStorage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLegendResearch": "Tyrime naudotas intervalas",
+  "goalLegendClinician": "Mano gydytojo tikslas",
+  "goalLegendPersonal": "Mano asmeninis stebėjimo tikslas",
+  "goalLegendPersonalNote": "Asmeninis stebėjimo tikslas nėra medicininis tikslas.",
+  "weightValueLabel": "Svoris ({unit})",
+  "@weightValueLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "weightConditionLabel": "Sąlyga (neprivaloma, pvz., rytas, po treniruotės)",
+  "weightSave": "Išsaugoti svorį",
+  "symptomFormTitle": "Užfiksuoti simptomą",
+  "symptomDefinitionLabel": "Simptomas",
+  "symptomSeverityLabel": "Sunkumas: {value}/10",
+  "@symptomSeverityLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomNoteLabel": "Pastaba (neprivaloma)",
+  "symptomSave": "Išsaugoti simptomą",
+  "symptomSavedToast": "Simptomas išsaugotas.",
+  "symptomGuidance": "Pažymėjote reikšmingą simptomą. Ši programa nediagnozuoja. Laikykitės savo sveikatos plano ir kreipkitės į vietines skubios pagalbos tarnybas, jei jaučiatės blogai ar simptomai sunkūs.",
+  "symptomSeizureGuidance": "Užfiksavote traukulių epizodą. Ši programa nediagnozuoja. Laikykitės savo sveikatos plano ir kreipkitės į sveikatos priežiūros specialistą; skubiu atveju skambinkite vietinėms skubios pagalbos tarnyboms.",
+  "trendsRange7": "7 dienos",
+  "trendsRange30": "30 dienų",
+  "trendsRange90": "90 dienų",
+  "trendsSummary": "{count} rodmenų per paskutines {days} d. Naujausias: {latest}, vidurkis: {average}.",
+  "@trendsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "average": {
+        "type": "String"
+      }
+    }
+  },
+  "trendsEmpty": "Šiame intervale duomenų nėra.",
+  "trendsExplainsTitle": "Ką ši diagrama jums sako — ir ko ne",
+  "trendsExplainsBody": "Diagrama rodo jūsų pačių rodmenis laikui bėgant kaip neapdorotus taškus. Ji nediagnozuoja, neprognozuoja ir neįrodo priežasčių. Trūkstamos dienos rodomos kaip tarpai, o ne nuliai.",
+  "trendsWeightChart": "Svoris (kg)",
+  "trendsBandsNote": "Tyrimų intervalai neprivalomi ir pagal numatytuosius nustatymus išjungti. Norėdami įjungti, žr. skirtuką „Žurnalas“.",
+  "evidenceDiseaseFilter": "Rodyti konkrečioms ligoms skirtus tyrimus (iš šaltinių, kuriuos pasirinksite skaityti)",
+  "evidenceSectionTitle": "Moksliniai šaltiniai ir straipsniai",
+  "guideCopyLink": "Kopijuoti šaltinio nuorodą",
+  "planTitle": "Savaitės planas",
+  "planGenerateDraft": "Sukurti savaitės juodraštį",
+  "planDraftLockedNote": "Automatinis plano kūrimas lieka išjungtas: pirmiausia aptarkite su kvalifikuotu sveikatos priežiūros specialistu.",
+  "planCreatedToast": "Savaitės planas sukurtas.",
+  "planItemDay": "{day} diena",
+  "@planItemDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "planToShopping": "Sukurti pirkinių sąrašą iš plano",
+  "shoppingTitle": "Pirkinių sąrašas",
+  "shoppingUndo": "Anuliuoti",
+  "shoppingAddManual": "Pridėti elementą rankiniu būdu",
+  "shoppingCheckedToggle": "Pažymėti",
+  "shoppingEmpty": "Pirkinių sąrašo dar nėra.",
+  "planEmpty": "Savaitės plano dar nėra. Norėdami pradėti, sukurkite juodraštį iš savo receptų.",
+  "aboutTitle": "Apie",
+  "aboutSlogan": "Privatus keto dienoraštis",
+  "aboutVersion": "Versija {value}",
+  "@aboutVersion": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutOpenSourceHeading": "Atvirasis kodas",
+  "aboutOpenSourceBody": "N Keto Tracker yra nemokama atvirojo kodo programinė įranga pagal GPL-3.0 licenciją. Kodą galite tikrinti, keisti ir platinti pagal tą pačią licenciją.",
+  "aboutPrivacyHeading": "Privatumas",
+  "aboutPrivacyBody": "Jūsų sveikatos duomenys lieka šiame įrenginyje. Be paskyros, be analitikos.",
+  "aboutDisclaimerHeading": "Atsakomybės apribojimas",
+  "aboutDisclaimerBody": "Ši programa skirta bendrai informacijai ir asmeniniam stebėjimui. Tai nėra medicininis patarimas, diagnozė ar gydymas.",
+  "aboutLicensesButton": "Licencijos",
+  "aboutShareButton": "Dalytis šia programa",
+  "aboutOtherAppsButton": "Kitos programos",
+  "aboutCopiedToast": "Nukopijuota į iškarpinę.",
+  "licensesTitle": "Licencijos",
+  "otherAppsTitle": "Kitos programos",
+  "otherAppsEmpty": "Kitų programų sąraše dar nėra.",
+  "otherAppsCopyLink": "Kopijuoti parduotuvės nuorodą",
+  "settingsTitle": "Nustatymai",
+  "aboutShareText": "Privatus keto dienoraštis su gliukozės, ketonų ir GKI stebėjimu. Atvirasis kodas, paskyros nereikia.",
+  "dataManagementTitle": "Duomenų valdymas",
+  "dataExportJson": "Eksportuoti duomenis (JSON)",
+  "dataExportCsv": "Eksportuoti matavimus (CSV)",
+  "dataImportLabel": "Įklijuokite eksportuotą JSON čia",
+  "dataImportButton": "Importuoti duomenis",
+  "dataImportSuccess": "Importuota {glucose} gliukozės ir {weight} svorio įrašų.",
+  "@dataImportSuccess": {
+    "placeholders": {
+      "glucose": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "dataImportInvalid": "Importas nepavyko: failas netinkamas arba nepalaikomas.",
+  "dataDeleteAll": "Ištrinti visus mano duomenis",
+  "dataDeleteConfirm1": "Ištrinti VISUS duomenis? Tai apima matavimus, valgius, planus ir nustatymus. To atšaukti negalima.",
+  "dataDeleteConfirm2": "Ar tikrai esate tikri? Patvirtinimui įveskite DELETE.",
+  "dataDeleteTypeDelete": "Įveskite DELETE",
+  "dataDeleteDone": "Visi duomenys ištrinti ({count} įrašų).",
+  "@dataDeleteDone": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dataExportShared": "Eksporto failas paruoštas — pasirinkite, kur jį išsaugoti.",
+  "settingsAppearance": "Išvaizda",
+  "themeSystem": "Sistemos",
+  "themeLight": "Šviesi",
+  "themeDark": "Tamsi",
+  "settingsLanguage": "Kalba",
+  "settingsMore": "Daugiau"
+}

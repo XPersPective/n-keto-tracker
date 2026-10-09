@@ -129,12 +129,21 @@ class _MealFormState extends ConsumerState<MealForm> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          SegmentedButton<String>(
-            segments: MealRepository.mealTypes
-                .map((t) => ButtonSegment(value: t, label: Text(typeLabel(t))))
-                .toList(),
-            selected: {_mealType},
-            onSelectionChanged: (s) => setState(() => _mealType = s.first),
+          // PB-023: 5 segment SegmentedButton dar ekranda kelime
+          // ortasından kırılıyordu ("Ka/hv/altı"). Bunun yerine
+          // ChoiceChip satırı: her etiket tam görünür, sığmayan
+          // segment bir alt satıra kayar.
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final t in MealRepository.mealTypes)
+                ChoiceChip(
+                  label: Text(typeLabel(t)),
+                  selected: _mealType == t,
+                  onSelected: (_) => setState(() => _mealType = t),
+                ),
+            ],
           ),
           const SizedBox(height: 12),
           TextField(

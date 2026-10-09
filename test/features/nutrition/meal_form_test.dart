@@ -91,4 +91,42 @@ void main() {
     expect(find.text('Add at least one food first.'), findsOneWidget);
     expect((await db.select(db.meal).get()), isEmpty);
   });
+
+  // PB-023: TR yerelinde 5 öğün tipi etiketi kelime ortasından
+  // kırılmadan tam görünür. Önceki SegmentedButton yapısı 1080 px
+  // ekranda "Ka/hv/altı" üretiyordu.
+  testWidgets('PB-023: TR yerelinde 5 öğün tipi tam etiket görünür',
+      (tester) async {
+    await seedFood();
+    // Emülatör genişliği: 1080x2400 mantıksal 360x800.
+    tester.view.physicalSize = const Size(1080, 2400);
+    tester.view.devicePixelRatio = 3;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [appDatabaseProvider.overrideWithValue(db)],
+        child: const MaterialApp(
+          locale: Locale('tr'),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: MealForm(),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    // 5 tip tam etiket.
+    for (final label in ['Kahvaltı', 'Öğle', 'Akşam', 'Ara öğün', 'Özel']) {
+      expect(
+        find.text(label),
+        findsOneWidget,
+        reason: 'TR "$label" etiketi bulunamadı',
+      );
+    }
+    // "Ka", "hv", "altı" gibi kırık parçalar olmamalı.
+    expect(find.text('Ka'), findsNothing);
+    expect(find.text('hv'), findsNothing);
+    expect(find.text('altı'), findsNothing);
+  });
 }

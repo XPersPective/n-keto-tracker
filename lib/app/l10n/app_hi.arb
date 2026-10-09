@@ -183,6 +183,7 @@
   "planGenerateDraft": "साप्ताहिक ड्राफ़्ट बनाएँ",
   "planDraftLockedNote": "स्वचालित योजना निर्माण बंद रहेगा: कृपया पहले किसी योग्य स्वास्थ्य पेशेवर से इस पर चर्चा करें।",
   "planCreatedToast": "साप्ताहिक योजना बन गई।",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "दिन {day}",
   "planToShopping": "योजना से खरीदारी सूची बनाएँ",
   "shoppingTitle": "खरीदारी सूची",

@@ -183,6 +183,7 @@
   "planGenerateDraft": "Создать черновик на неделю",
   "planDraftLockedNote": "Автоматическое создание плана остаётся отключённым: сначала обсудите это с квалифицированным специалистом.",
   "planCreatedToast": "План на неделю создан.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "День {day}",
   "planToShopping": "Создать список покупок из плана",
   "shoppingTitle": "Список покупок",

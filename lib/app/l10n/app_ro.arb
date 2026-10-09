@@ -372,6 +372,7 @@
   "planGenerateDraft": "Generează ciornă săptămânală",
   "planDraftLockedNote": "Generarea automată a planului rămâne dezactivată: te rugăm să discuți mai întâi cu un profesionist calificat din domeniul sănătății.",
   "planCreatedToast": "Planul săptămânal a fost creat.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Ziua {day}",
   "@planItemDay": {
     "placeholders": {

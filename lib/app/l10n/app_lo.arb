@@ -372,6 +372,7 @@
   "planGenerateDraft": "ສ້າງຮ່າງລາຍອາທິດ",
   "planDraftLockedNote": "ການສ້າງແຜນອັດຕະໂນມັດຍັງປິດຢູ່: ກະລຸນາທົບທວນກັບຜູ້ຊ່ຽວຊານດ້ານສຸຂະພາບທີ່ມີຄຸນວຸດທິກ່ອນ.",
   "planCreatedToast": "ສ້າງແຜນລາຍອາທິດແລ້ວ.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "ມື້ທີ {day}",
   "@planItemDay": {
     "placeholders": {

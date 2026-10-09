@@ -183,6 +183,7 @@
   "planGenerateDraft": "Weekconcept maken",
   "planDraftLockedNote": "Automatisch plannen maken blijft uitgeschakeld: bespreek dit eerst met een gekwalificeerde zorgprofessional.",
   "planCreatedToast": "Weekplan gemaakt.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dag {day}",
   "planToShopping": "Boodschappenlijst maken uit plan",
   "shoppingTitle": "Boodschappenlijst",

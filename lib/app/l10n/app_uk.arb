@@ -183,6 +183,7 @@
   "planGenerateDraft": "Створити чернетку на тиждень",
   "planDraftLockedNote": "Автоматичне створення плану залишається вимкненим: спершу обговоріть це з кваліфікованим медичним працівником.",
   "planCreatedToast": "План на тиждень створено.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "День {day}",
   "planToShopping": "Створити список покупок із плану",
   "shoppingTitle": "Список покупок",

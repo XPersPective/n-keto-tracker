@@ -372,6 +372,7 @@
   "planGenerateDraft": "Dala uhlaka lweviki",
   "planDraftLockedNote": "Ukudalwa okuzenzakalelayo kohlelo kuhlala kucishiwe: sicela uqale ukubuyekeza nochwepheshe wezempilo ofanelekile.",
   "planCreatedToast": "Uhlelo lweviki lwakhiwe.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Usuku {day}",
   "@planItemDay": {
     "placeholders": {

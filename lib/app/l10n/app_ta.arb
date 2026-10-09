@@ -372,6 +372,7 @@
   "planGenerateDraft": "வாராந்திர வரைவை உருவாக்கு",
   "planDraftLockedNote": "தானியங்கி திட்ட உருவாக்கம் அணைந்தே இருக்கும்: தயவுசெய்து முதலில் தகுதிவாய்ந்த சுகாதார நிபுணருடன் ஆலோசிக்கவும்.",
   "planCreatedToast": "வாராந்திரத் திட்டம் உருவாக்கப்பட்டது.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "நாள் {day}",
   "@planItemDay": {
     "placeholders": {

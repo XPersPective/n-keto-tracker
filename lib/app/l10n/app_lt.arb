@@ -372,6 +372,7 @@
   "planGenerateDraft": "Sukurti savaitės juodraštį",
   "planDraftLockedNote": "Automatinis plano kūrimas lieka išjungtas: pirmiausia aptarkite su kvalifikuotu sveikatos priežiūros specialistu.",
   "planCreatedToast": "Savaitės planas sukurtas.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day} diena",
   "@planItemDay": {
     "placeholders": {

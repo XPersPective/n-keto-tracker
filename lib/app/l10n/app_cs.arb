@@ -372,6 +372,7 @@
   "planGenerateDraft": "Vytvořit týdenní návrh",
   "planDraftLockedNote": "Automatické vytváření plánu zůstává vypnuté: nejprve to prosím proberte s kvalifikovaným zdravotnickým odborníkem.",
   "planCreatedToast": "Týdenní plán vytvořen.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Den {day}",
   "@planItemDay": {
     "placeholders": {

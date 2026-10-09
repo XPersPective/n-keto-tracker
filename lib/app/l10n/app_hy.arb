@@ -372,6 +372,7 @@
   "planGenerateDraft": "Ստեղծել շաբաթական սևագիր",
   "planDraftLockedNote": "Պլանի ավտոմատ ստեղծումը մնում է անջատված. նախ քննարկեք որակավորված առողջապահական մասնագետի հետ։",
   "planCreatedToast": "Շաբաթական պլանը ստեղծվեց։",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Օր {day}",
   "@planItemDay": {
     "placeholders": {

@@ -372,6 +372,7 @@
   "planGenerateDraft": "Jana draf mingguan",
   "planDraftLockedNote": "Penjanaan pelan automatik kekal dimatikan: sila semak dahulu dengan profesional kesihatan yang berkelayakan.",
   "planCreatedToast": "Pelan mingguan dicipta.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Hari {day}",
   "@planItemDay": {
     "placeholders": {

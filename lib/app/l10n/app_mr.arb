@@ -372,6 +372,7 @@
   "planGenerateDraft": "साप्ताहिक मसुदा तयार करा",
   "planDraftLockedNote": "स्वयंचलित योजना निर्मिती बंद राहील: कृपया आधी पात्र आरोग्य व्यावसायिकासोबत तपासा.",
   "planCreatedToast": "साप्ताहिक योजना तयार झाली.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "दिवस {day}",
   "@planItemDay": {
     "placeholders": {

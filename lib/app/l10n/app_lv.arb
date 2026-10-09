@@ -372,6 +372,7 @@
   "planGenerateDraft": "Izveidot nedēļas melnrakstu",
   "planDraftLockedNote": "Automātiska plāna izveide paliek izslēgta: vispirms apspriediet to ar kvalificētu veselības aprūpes speciālistu.",
   "planCreatedToast": "Nedēļas plāns izveidots.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}. diena",
   "@planItemDay": {
     "placeholders": {

@@ -372,6 +372,7 @@
   "planGenerateDraft": "สร้างร่างรายสัปดาห์",
   "planDraftLockedNote": "การสร้างแผนอัตโนมัติยังคงปิดอยู่ โปรดปรึกษาผู้เชี่ยวชาญด้านสุขภาพที่มีคุณสมบัติก่อน",
   "planCreatedToast": "สร้างแผนรายสัปดาห์แล้ว",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "วันที่ {day}",
   "@planItemDay": {
     "placeholders": {

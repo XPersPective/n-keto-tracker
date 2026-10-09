@@ -372,6 +372,7 @@
   "planGenerateDraft": "Loo nädala mustand",
   "planDraftLockedNote": "Automaatne plaani loomine jääb välja lülitatuks: palun aruta seda kõigepealt kvalifitseeritud tervishoiutöötajaga.",
   "planCreatedToast": "Nädalaplaan loodud.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Päev {day}",
   "@planItemDay": {
     "placeholders": {

@@ -183,6 +183,7 @@
   "planGenerateDraft": "Genera bozza settimanale",
   "planDraftLockedNote": "La generazione automatica del piano resta disattivata: parlane prima con un professionista sanitario qualificato.",
   "planCreatedToast": "Piano settimanale creato.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Giorno {day}",
   "planToShopping": "Crea lista della spesa dal piano",
   "shoppingTitle": "Lista della spesa",

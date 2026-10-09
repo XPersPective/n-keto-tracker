@@ -183,6 +183,7 @@
   "planGenerateDraft": "Buat draf mingguan",
   "planDraftLockedNote": "Pembuatan rencana otomatis tetap nonaktif: mohon konsultasikan dahulu dengan tenaga kesehatan yang berkualifikasi.",
   "planCreatedToast": "Rencana mingguan dibuat.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Hari {day}",
   "planToShopping": "Buat daftar belanja dari rencana",
   "shoppingTitle": "Daftar belanja",

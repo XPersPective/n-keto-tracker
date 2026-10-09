@@ -372,6 +372,7 @@
   "planGenerateDraft": "Izradi tjedni nacrt",
   "planDraftLockedNote": "Automatsko izrađivanje plana ostaje isključeno: prvo to pregledajte s kvalificiranim zdravstvenim djelatnikom.",
   "planCreatedToast": "Tjedni plan izrađen.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dan {day}",
   "@planItemDay": {
     "placeholders": {

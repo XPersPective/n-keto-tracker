@@ -372,6 +372,7 @@
   "planGenerateDraft": "產生每週草稿",
   "planDraftLockedNote": "自動產生計畫功能保持關閉：請先與合格的醫療專業人員討論。",
   "planCreatedToast": "每週計畫已建立。",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "第 {day} 天",
   "@planItemDay": {
     "placeholders": {

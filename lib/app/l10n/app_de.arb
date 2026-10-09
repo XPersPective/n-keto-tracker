@@ -183,6 +183,7 @@
   "planGenerateDraft": "Wochenentwurf erstellen",
   "planDraftLockedNote": "Die automatische Planerstellung bleibt deaktiviert: Bitte besprich das zuerst mit einer qualifizierten Fachkraft im Gesundheitswesen.",
   "planCreatedToast": "Wochenplan erstellt.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Tag {day}",
   "planToShopping": "Einkaufsliste aus dem Plan erstellen",
   "shoppingTitle": "Einkaufsliste",

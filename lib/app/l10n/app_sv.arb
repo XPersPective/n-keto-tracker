@@ -372,6 +372,7 @@
   "planGenerateDraft": "Skapa veckoutkast",
   "planDraftLockedNote": "Automatiskt planskapande förblir avstängt: gå först igenom det med kvalificerad hälso- och sjukvårdspersonal.",
   "planCreatedToast": "Veckoplan skapad.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dag {day}",
   "@planItemDay": {
     "placeholders": {

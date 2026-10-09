@@ -372,6 +372,7 @@
   "planGenerateDraft": "Ustvari tedenski osnutek",
   "planDraftLockedNote": "Samodejno ustvarjanje načrta ostane izklopljeno: prosimo, najprej se posvetujte z usposobljenim zdravstvenim delavcem.",
   "planCreatedToast": "Tedenski načrt ustvarjen.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dan {day}",
   "@planItemDay": {
     "placeholders": {

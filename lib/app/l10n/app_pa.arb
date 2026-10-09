@@ -372,6 +372,7 @@
   "planGenerateDraft": "ਹਫ਼ਤਾਵਾਰੀ ਖਰੜਾ ਬਣਾਓ",
   "planDraftLockedNote": "ਆਟੋਮੈਟਿਕ ਯੋਜਨਾ ਬਣਾਉਣਾ ਬੰਦ ਰਹੇਗਾ: ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਯੋਗ ਸਿਹਤ ਪੇਸ਼ੇਵਰ ਨਾਲ ਵਿਚਾਰੋ।",
   "planCreatedToast": "ਹਫ਼ਤਾਵਾਰੀ ਯੋਜਨਾ ਬਣ ਗਈ।",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "ਦਿਨ {day}",
   "@planItemDay": {
     "placeholders": {

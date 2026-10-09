@@ -183,6 +183,7 @@
   "planGenerateDraft": "生成每周草稿",
   "planDraftLockedNote": "自动生成计划保持关闭：请先与合格的医疗专业人员讨论。",
   "planCreatedToast": "已创建每周计划。",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "第 {day} 天",
   "planToShopping": "根据计划创建购物清单",
   "shoppingTitle": "购物清单",

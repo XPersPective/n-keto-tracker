@@ -372,6 +372,7 @@
   "planGenerateDraft": "Heti vázlat készítése",
   "planDraftLockedNote": "Az automatikus tervkészítés kikapcsolva marad: kérjük, először beszélje meg egy képzett egészségügyi szakemberrel.",
   "planCreatedToast": "Heti terv létrehozva.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}. nap",
   "@planItemDay": {
     "placeholders": {

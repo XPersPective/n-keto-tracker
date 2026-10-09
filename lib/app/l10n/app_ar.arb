@@ -183,6 +183,7 @@
   "planGenerateDraft": "إنشاء مسودة أسبوعية",
   "planDraftLockedNote": "يبقى إنشاء الخطط تلقائيًا معطلًا: يُرجى مراجعة ذلك أولًا مع مختص صحي مؤهل.",
   "planCreatedToast": "تم إنشاء الخطة الأسبوعية.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "اليوم {day}",
   "planToShopping": "إنشاء قائمة تسوق من الخطة",
   "shoppingTitle": "قائمة التسوق",

@@ -372,6 +372,7 @@
   "planGenerateDraft": "Sortu asteko zirriborroa",
   "planDraftLockedNote": "Plan automatikoaren sorkuntza desaktibatuta geratzen da: kontsultatu lehenik osasun-profesional kualifikatu batekin.",
   "planCreatedToast": "Asteko plana sortu da.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}. eguna",
   "@planItemDay": {
     "placeholders": {

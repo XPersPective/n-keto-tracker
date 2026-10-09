@@ -372,6 +372,7 @@
   "planGenerateDraft": "יצירת טיוטה שבועית",
   "planDraftLockedNote": "יצירת תוכנית אוטומטית נשארת כבויה: אנא עברו על כך קודם עם איש מקצוע מוסמך בתחום הבריאות.",
   "planCreatedToast": "התוכנית השבועית נוצרה.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "יום {day}",
   "@planItemDay": {
     "placeholders": {

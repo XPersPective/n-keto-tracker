@@ -372,6 +372,7 @@
   "planGenerateDraft": "7 хоногийн ноорог үүсгэх",
   "planDraftLockedNote": "Төлөвлөгөөг автоматаар үүсгэх нь унтраалттай хэвээр: эхлээд мэргэшсэн эрүүл мэндийн ажилтантай хэлэлцэнэ үү.",
   "planCreatedToast": "7 хоногийн төлөвлөгөө үүслээ.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}-р өдөр",
   "@planItemDay": {
     "placeholders": {

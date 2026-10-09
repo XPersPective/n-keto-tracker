@@ -372,6 +372,7 @@
   "planGenerateDraft": "კვირის დრაფტის შექმნა",
   "planDraftLockedNote": "გეგმის ავტომატური შექმნა გამორთული რჩება: გთხოვთ, ჯერ გადაამოწმოთ კვალიფიციურ ჯანდაცვის სპეციალისტთან.",
   "planCreatedToast": "კვირის გეგმა შეიქმნა.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "დღე {day}",
   "@planItemDay": {
     "placeholders": {

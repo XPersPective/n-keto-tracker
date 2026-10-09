@@ -372,6 +372,7 @@
   "planGenerateDraft": "പ്രതിവാര ഡ്രാഫ്റ്റ് സൃഷ്ടിക്കുക",
   "planDraftLockedNote": "ഓട്ടോമാറ്റിക് പ്ലാൻ നിർമ്മാണം ഓഫ് ആയി തുടരും: ദയവായി ആദ്യം യോഗ്യതയുള്ള ആരോഗ്യ വിദഗ്ധനുമായി പരിശോധിക്കുക.",
   "planCreatedToast": "പ്രതിവാര പ്ലാൻ സൃഷ്ടിച്ചു.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "ദിവസം {day}",
   "@planItemDay": {
     "placeholders": {

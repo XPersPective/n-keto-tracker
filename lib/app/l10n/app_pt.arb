@@ -183,6 +183,7 @@
   "planGenerateDraft": "Gerar rascunho semanal",
   "planDraftLockedNote": "A geração automática de planos continua desativada: converse antes com um profissional de saúde qualificado.",
   "planCreatedToast": "Plano semanal criado.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dia {day}",
   "planToShopping": "Criar lista de compras a partir do plano",
   "shoppingTitle": "Lista de compras",

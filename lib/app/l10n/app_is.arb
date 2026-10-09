@@ -372,6 +372,7 @@
   "planGenerateDraft": "Búa til vikudrög",
   "planDraftLockedNote": "Sjálfvirk gerð áætlana er áfram slökkt: ræddu þetta fyrst við hæfan heilbrigðisstarfsmann.",
   "planCreatedToast": "Vikuáætlun búin til.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dagur {day}",
   "@planItemDay": {
     "placeholders": {

@@ -372,6 +372,7 @@
   "planGenerateDraft": "Стварыць чарнавік на тыдзень",
   "planDraftLockedNote": "Аўтаматычнае стварэнне плана адключана: спачатку абмеркуйце гэта з кваліфікаваным медыкам.",
   "planCreatedToast": "Тыднёвы план створаны.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Дзень {day}",
   "@planItemDay": {
     "placeholders": {

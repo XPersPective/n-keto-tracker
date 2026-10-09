@@ -372,6 +372,7 @@
   "planGenerateDraft": "వారపు డ్రాఫ్ట్ సృష్టించండి",
   "planDraftLockedNote": "ఆటోమేటిక్ ప్లాన్ సృష్టి ఆఫ్‌లోనే ఉంటుంది: దయచేసి ముందు అర్హత గల ఆరోగ్య నిపుణుడితో సమీక్షించండి.",
   "planCreatedToast": "వారపు ప్రణాళిక సృష్టించబడింది.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "రోజు {day}",
   "@planItemDay": {
     "placeholders": {

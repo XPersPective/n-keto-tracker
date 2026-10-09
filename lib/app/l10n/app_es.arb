@@ -183,6 +183,7 @@
   "planGenerateDraft": "Generar borrador semanal",
   "planDraftLockedNote": "La generación automática de planes permanece desactivada: consúltalo antes con un profesional de la salud cualificado.",
   "planCreatedToast": "Plan semanal creado.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Día {day}",
   "planToShopping": "Crear lista de la compra a partir del plan",
   "shoppingTitle": "Lista de la compra",

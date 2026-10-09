@@ -372,6 +372,7 @@
   "planGenerateDraft": "Δημιουργία εβδομαδιαίου προσχεδίου",
   "planDraftLockedNote": "Η αυτόματη δημιουργία πλάνου παραμένει απενεργοποιημένη: συζητήστε το πρώτα με έναν ειδικευμένο επαγγελματία υγείας.",
   "planCreatedToast": "Το εβδομαδιαίο πλάνο δημιουργήθηκε.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Ημέρα {day}",
   "@planItemDay": {
     "placeholders": {

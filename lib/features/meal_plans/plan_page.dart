@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart' show OrderingTerm;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,6 +10,7 @@ import '../../core/database/providers.dart';
 import '../../core/privacy/risk_lock.dart';
 import '../../core/units/plan_generator.dart';
 import '../../core/units/meal_plan_models.dart';
+import '../shopping/shopping_list_page.dart';
 
 /// Plan kataloğu (üretici için): assets/seed/recipes.json ->
 /// RecipeSummary. Testlerde provider override edilir.
@@ -111,20 +113,37 @@ class _PlanPageState extends ConsumerState<PlanPage> {
   Future<void> _toShoppingList(AppLocalizations l10n) async {
     final plan = _plan;
     if (plan == null) return;
-    final repo = PlanRepository(ref.read(appDatabaseProvider));
-    final items = await repo.collectIngredients(
-      dateStartIso: plan.startDateIso,
-      dateEndIso: plan.startDateIso,
-    );
-    final merged = ShoppingMerger.merge(items);
-    await repo.createShoppingList(
-      title: plan.name ?? plan.startDateIso,
-      merged: merged,
-      categoryByFoodId: {},
-    );
+    final db = ref.read(appDatabaseProvider);
+    final repo = PlanRepository(db);
+
+    // Aynı plan için daha önce oluşturulmuş bir liste var mı?
+    // Önce onu aç; kullanıcı her dokunuşta listeyi yeniden yazmasın
+    // (PB-022 adım 4).
+    final existing = await (db.select(db.shoppingList)
+          ..where((s) => s.title.equals(plan.name ?? plan.startDateIso))
+          ..orderBy([(s) => OrderingTerm.desc(s.createdAtUtc)])
+          ..limit(1))
+        .getSingleOrNull();
+    if (existing == null) {
+      final items = await repo.collectIngredients(
+        dateStartIso: plan.startDateIso,
+        dateEndIso: plan.startDateIso,
+      );
+      final merged = ShoppingMerger.merge(items);
+      await repo.createShoppingList(
+        title: plan.name ?? plan.startDateIso,
+        merged: merged,
+        categoryByFoodId: {},
+      );
+    }
     if (!mounted) return;
     ScaffoldMessenger.of(context)
-        .showSnackBar(SnackBar(content: Text(l10n.planCreatedToast)));
+        .showSnackBar(SnackBar(content: Text(l10n.shoppingListOpenedToast)));
+    // PB-022 adım 1: oluşturulan (veya mevcut) listeyi aç. Hem
+    // GoRouter hem de düz Navigator bağlamlarında çalışır.
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => const ShoppingListPage()),
+    );
   }
 
   /// Gün gün kartlar: tarih + öğün adı + porsiyon. İç jeton ('slot-0') ve

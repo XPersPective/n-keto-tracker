@@ -183,6 +183,7 @@
   "planGenerateDraft": "Générer un brouillon hebdomadaire",
   "planDraftLockedNote": "La génération automatique de plans reste désactivée : veuillez d’abord en parler avec un professionnel de santé qualifié.",
   "planCreatedToast": "Plan hebdomadaire créé.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Jour {day}",
   "planToShopping": "Créer une liste de courses à partir du plan",
   "shoppingTitle": "Liste de courses",

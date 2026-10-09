@@ -372,6 +372,7 @@
   "planGenerateDraft": "ساخت پیش‌نویس هفتگی",
   "planDraftLockedNote": "ساخت خودکار برنامه خاموش می‌ماند: لطفاً ابتدا با یک متخصص سلامت واجد صلاحیت بررسی کنید.",
   "planCreatedToast": "برنامه هفتگی ساخته شد.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "روز {day}",
   "@planItemDay": {
     "placeholders": {

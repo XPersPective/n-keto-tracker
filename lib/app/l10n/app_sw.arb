@@ -372,6 +372,7 @@
   "planGenerateDraft": "Tengeneza rasimu ya wiki",
   "planDraftLockedNote": "Uundaji wa kiotomatiki wa mpango unabaki umezimwa: tafadhali jadili kwanza na mtaalamu wa afya aliyehitimu.",
   "planCreatedToast": "Mpango wa wiki umeundwa.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Siku ya {day}",
   "@planItemDay": {
     "placeholders": {

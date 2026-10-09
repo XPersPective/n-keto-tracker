@@ -372,6 +372,7 @@
   "planGenerateDraft": "Skep weeklikse konsep",
   "planDraftLockedNote": "Outomatiese planskepping bly af: hersien dit asseblief eers met 'n gekwalifiseerde gesondheidswerker.",
   "planCreatedToast": "Weekplan geskep.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dag {day}",
   "@planItemDay": {
     "placeholders": {

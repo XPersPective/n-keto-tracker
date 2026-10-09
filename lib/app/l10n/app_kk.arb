@@ -372,6 +372,7 @@
   "planGenerateDraft": "Апталық жоба құру",
   "planDraftLockedNote": "Жоспарды автоматты құру өшірулі қалады: алдымен білікті денсаулық сақтау маманымен талқылаңыз.",
   "planCreatedToast": "Апталық жоспар жасалды.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}-күн",
   "@planItemDay": {
     "placeholders": {

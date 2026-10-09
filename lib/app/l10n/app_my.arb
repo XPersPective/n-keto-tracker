@@ -372,6 +372,7 @@
   "planGenerateDraft": "အပတ်စဉ်မူကြမ်း ဖန်တီးရန်",
   "planDraftLockedNote": "အလိုအလျောက် အစီအစဉ်ဖန်တီးမှု ပိတ်ထားဆဲဖြစ်မည်။ ကျေးဇူးပြု၍ အရည်အချင်းပြည့်မီ ကျန်းမာရေးပညာရှင်နှင့် အရင်ပြန်လည်ဆွေးနွေးပါ။",
   "planCreatedToast": "အပတ်စဉ်အစီအစဉ် ဖန်တီးပြီးပါပြီ။",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "နေ့ {day}",
   "@planItemDay": {
     "placeholders": {

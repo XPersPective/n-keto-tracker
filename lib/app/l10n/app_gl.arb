@@ -372,6 +372,7 @@
   "planGenerateDraft": "Xerar bosquexo semanal",
   "planDraftLockedNote": "A xeración automática do plan segue desactivada: consúltao primeiro cun profesional sanitario cualificado.",
   "planCreatedToast": "Plan semanal creado.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Día {day}",
   "@planItemDay": {
     "placeholders": {

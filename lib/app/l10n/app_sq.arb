@@ -372,6 +372,7 @@
   "planGenerateDraft": "Krijo skicë javore",
   "planDraftLockedNote": "Krijimi automatik i planit mbetet i çaktivizuar: ju lutemi rishikojeni fillimisht me një profesionist të kualifikuar të shëndetësisë.",
   "planCreatedToast": "Plani javor u krijua.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dita {day}",
   "@planItemDay": {
     "placeholders": {

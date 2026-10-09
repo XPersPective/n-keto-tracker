@@ -372,6 +372,7 @@
   "planGenerateDraft": "සතිපතා කෙටුම්පතක් සාදන්න",
   "planDraftLockedNote": "ස්වයංක්‍රීය සැලැස්ම සෑදීම ක්‍රියාවිරහිතව පවතී: කරුණාකර මුලින් සුදුසුකම් ලත් සෞඛ්‍ය වෘත්තිකයෙකු සමඟ සමාලෝචනය කරන්න.",
   "planCreatedToast": "සතිපතා සැලැස්ම සාදන ලදි.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "දිනය {day}",
   "@planItemDay": {
     "placeholders": {

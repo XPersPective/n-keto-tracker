@@ -372,6 +372,7 @@
   "planGenerateDraft": "Opret ugentligt udkast",
   "planDraftLockedNote": "Automatisk oprettelse af plan forbliver slået fra: gennemgå det først med en kvalificeret sundhedsfaglig.",
   "planCreatedToast": "Ugeplan oprettet.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dag {day}",
   "@planItemDay": {
     "placeholders": {

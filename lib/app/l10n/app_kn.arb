@@ -372,6 +372,7 @@
   "planGenerateDraft": "ವಾರದ ಕರಡು ರಚಿಸಿ",
   "planDraftLockedNote": "ಸ್ವಯಂಚಾಲಿತ ಯೋಜನೆ ರಚನೆ ಆಫ್ ಆಗಿಯೇ ಇರುತ್ತದೆ: ದಯವಿಟ್ಟು ಮೊದಲು ಅರ್ಹ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರೊಂದಿಗೆ ಪರಿಶೀಲಿಸಿ.",
   "planCreatedToast": "ವಾರದ ಯೋಜನೆ ರಚಿಸಲಾಗಿದೆ.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "ದಿನ {day}",
   "@planItemDay": {
     "placeholders": {

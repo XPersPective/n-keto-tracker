@@ -372,6 +372,7 @@
   "planGenerateDraft": "ہفتہ وار مسودہ بنائیں",
   "planDraftLockedNote": "خودکار منصوبہ سازی بند رہے گی: براہِ کرم پہلے کسی اہل ماہرِ صحت کے ساتھ دیکھ لیں۔",
   "planCreatedToast": "ہفتہ وار منصوبہ بن گیا۔",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "دن {day}",
   "@planItemDay": {
     "placeholders": {

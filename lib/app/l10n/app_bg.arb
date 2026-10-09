@@ -372,6 +372,7 @@
   "planGenerateDraft": "Създай седмична чернова",
   "planDraftLockedNote": "Автоматичното създаване на план остава изключено: първо го обсъдете с квалифициран здравен специалист.",
   "planCreatedToast": "Седмичният план е създаден.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Ден {day}",
   "@planItemDay": {
     "placeholders": {

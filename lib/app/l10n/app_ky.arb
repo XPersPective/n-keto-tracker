@@ -372,6 +372,7 @@
   "planGenerateDraft": "Жумалык долбоор түзүү",
   "planDraftLockedNote": "Планды автоматтык түзүү өчүк бойдон калат: адегенде квалификациялуу саламаттыкты сактоо адиси менен талкуулаңыз.",
   "planCreatedToast": "Жумалык план түзүлдү.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}-күн",
   "@planItemDay": {
     "placeholders": {

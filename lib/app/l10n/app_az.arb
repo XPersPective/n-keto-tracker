@@ -372,6 +372,7 @@
   "planGenerateDraft": "Həftəlik layihə yarat",
   "planDraftLockedNote": "Avtomatik plan yaradılması söndürülüb: zəhmət olmasa əvvəlcə ixtisaslı səhiyyə mütəxəssisi ilə nəzərdən keçirin.",
   "planCreatedToast": "Həftəlik plan yaradıldı.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Gün {day}",
   "@planItemDay": {
     "placeholders": {

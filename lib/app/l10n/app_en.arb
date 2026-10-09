@@ -457,6 +457,7 @@
   "planGenerateDraft": "Generate weekly draft",
   "planDraftLockedNote": "Automatic plan generation stays off: please review with a qualified health professional first.",
   "planCreatedToast": "Weekly plan created.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Day {day}",
   "planToShopping": "Create shopping list from plan",
   "shoppingTitle": "Shopping list",

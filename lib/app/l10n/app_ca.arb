@@ -372,6 +372,7 @@
   "planGenerateDraft": "Genera un esborrany setmanal",
   "planDraftLockedNote": "La generació automàtica del pla es manté desactivada: consulta-ho primer amb un professional sanitari qualificat.",
   "planCreatedToast": "Pla setmanal creat.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dia {day}",
   "@planItemDay": {
     "placeholders": {

@@ -387,6 +387,7 @@
   "planGenerateDraft": "Taslak üret",
   "planDraftLockedNote": "Otomatik plan üretimi kapalı: lütfen önce uygun bir sağlık uzmanıyla görüşün.",
   "planCreatedToast": "Haftalık plan oluşturuldu.",
+  "shoppingListOpenedToast": "Alışveriş listesi açıldı.",
   "planItemDay": "{day}. gün",
   "planToShopping": "Plandan alışveriş listesi oluştur",
   "shoppingTitle": "Alışveriş listesi",

@@ -183,6 +183,7 @@
   "planGenerateDraft": "Utwórz szkic tygodnia",
   "planDraftLockedNote": "Automatyczne tworzenie planu pozostaje wyłączone: najpierw omów to z wykwalifikowanym pracownikiem ochrony zdrowia.",
   "planCreatedToast": "Utworzono plan tygodniowy.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Dzień {day}",
   "planToShopping": "Utwórz listę zakupów z planu",
   "shoppingTitle": "Lista zakupów",

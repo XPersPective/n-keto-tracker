@@ -372,6 +372,7 @@
   "planGenerateDraft": "Luo viikkoluonnos",
   "planDraftLockedNote": "Automaattinen suunnitelman luonti pysyy pois päältä: käy tämä ensin läpi pätevän terveydenhuollon ammattilaisen kanssa.",
   "planCreatedToast": "Viikkosuunnitelma luotu.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Päivä {day}",
   "@planItemDay": {
     "placeholders": {

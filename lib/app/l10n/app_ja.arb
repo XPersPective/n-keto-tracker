@@ -183,6 +183,7 @@
   "planGenerateDraft": "週間の下書きを作成",
   "planDraftLockedNote": "プランの自動作成はオフのままです。まず資格のある医療専門家とご相談ください。",
   "planCreatedToast": "週間プランを作成しました。",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "{day}日目",
   "planToShopping": "プランから買い物リストを作成",
   "shoppingTitle": "買い物リスト",

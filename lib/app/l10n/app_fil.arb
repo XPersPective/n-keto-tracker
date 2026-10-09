@@ -372,6 +372,7 @@
   "planGenerateDraft": "Gumawa ng lingguhang draft",
   "planDraftLockedNote": "Mananatiling naka-off ang awtomatikong paggawa ng plano: pakisuri muna ito kasama ang kwalipikadong propesyonal sa kalusugan.",
   "planCreatedToast": "Nagawa ang lingguhang plano.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Araw {day}",
   "@planItemDay": {
     "placeholders": {

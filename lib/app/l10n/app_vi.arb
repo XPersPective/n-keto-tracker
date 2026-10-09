@@ -183,6 +183,7 @@
   "planGenerateDraft": "Tạo bản nháp cho tuần",
   "planDraftLockedNote": "Việc tự động tạo kế hoạch vẫn bị tắt: vui lòng trao đổi trước với chuyên gia y tế có trình độ.",
   "planCreatedToast": "Đã tạo kế hoạch tuần.",
+  "shoppingListOpenedToast": "Shopping list opened.",
   "planItemDay": "Ngày {day}",
   "planToShopping": "Tạo danh sách mua sắm từ kế hoạch",
   "shoppingTitle": "Danh sách mua sắm",

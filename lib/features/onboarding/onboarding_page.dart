@@ -82,22 +82,33 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
                     ),
                   const Spacer(),
                   if (_step < _stepCount - 1)
-                    FilledButton(
-                      style: FilledButton.styleFrom(
-                        minimumSize: const Size(96, 48),
+                    Flexible(
+                      child: FilledButton(
+                        style: FilledButton.styleFrom(
+                          minimumSize: const Size(96, 48),
+                        ),
+                        onPressed: () => setState(() => _step++),
+                        child: Text(
+                          l10n.onboardingNext,
+                          textAlign: TextAlign.center,
+                        ),
                       ),
-                      onPressed: () => setState(() => _step++),
-                      child: Text(l10n.onboardingNext),
                     )
                   else
-                    FilledButton(
-                      style: FilledButton.styleFrom(
-                        minimumSize: const Size(96, 48),
+                    // Flexible: uzun çevirilerde (hu, ta, mk...) düğme metni sarılır.
+                    Flexible(
+                      child: FilledButton(
+                        style: FilledButton.styleFrom(
+                          minimumSize: const Size(96, 48),
+                        ),
+                        onPressed: state.consentAccepted
+                            ? () => _finish(l10n)
+                            : null,
+                        child: Text(
+                          l10n.onboardingFinish,
+                          textAlign: TextAlign.center,
+                        ),
                       ),
-                      onPressed: state.consentAccepted
-                          ? () => _finish(l10n)
-                          : null,
-                      child: Text(l10n.onboardingFinish),
                     ),
                 ],
               ),

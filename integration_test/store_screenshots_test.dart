@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:n_keto_tracker/app/app.dart';
+import 'package:n_keto_tracker/app/l10n/language_names.dart';
 import 'package:n_keto_tracker/app/locale_provider.dart';
 import 'package:n_keto_tracker/app/router.dart';
 import 'package:n_keto_tracker/core/database/database.dart';
@@ -24,6 +25,7 @@ import 'package:n_keto_tracker/core/units/glucose.dart';
 /// üretir, ürün davranışını sınamaz.
 
 const _all = 'tr,en,es,pt,fr,de,it,nl,pl,ru,uk,ar,hi,id,vi,ja,ko,zh';
+// Kalan 50 dil: --dart-define=SHOT_LOCALES=af,az,... (languageEndonyms anahtarları).
 const _wanted = String.fromEnvironment('SHOT_LOCALES', defaultValue: _all);
 
 /// (glukoz mg/dL, BHB mmol/L): iki hafta boyunca hafif yükselen keton.
@@ -56,7 +58,7 @@ void main() {
           appDatabaseProvider.overrideWithValue(db),
           appThemeModeProvider.overrideWithValue(mode),
         ],
-        child: NKetoApp(localeOverride: Locale(loc)),
+        child: NKetoApp(localeOverride: localeFromCode(loc)),
       );
 
       // Ana makine, logcat'te SHOTREADY satırını görünce `adb screencap` alır

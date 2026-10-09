@@ -14,6 +14,11 @@ exit 0. ORTAK_UYGULAMA_STANDARDI §0: REKLAM=HAYIR, PRO=HAYIR.
 Commit mesajları, PR açıklamaları ve dosyalar hiçbir yapay zeka adı/ortak yazar
 satırı içermez; katkıcı listesinde yalnız proje sahibi görünür.
 
+Bu kural `project-brain` skill'inin `PB-Agent:` trailer şablonunu geçersiz
+kılar: protocol commit'lerinde **o trailer yazılmaz**. (2026-10-09 notu: PB-018
+ve öncesi commit'lerde `PB-Agent: claude-sonnet-5-5` satırı var; geçmiş
+`preserve` modunda yeniden yazılmaz, ileriye dönük uygulanır.)
+
 ## Compatibility
 
 ### C-010: Flutter stable 3.47.2

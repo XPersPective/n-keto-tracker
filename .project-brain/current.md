@@ -107,11 +107,13 @@ TR/EN, tamamen offline).
 - evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
   kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
 - recipes: RecipesPage + RecipeDetailPage
-- settings: GoalLegend (üç hedef türü), about_page (ORTAK §3.3: sürüm+
-  slogan, açık kaynak, gizlilik, feragat, Lisanslar, Paylaş), data_
-  management_page, other_apps_page (ORTAK §3.6 çevrimdışı uyarlama —
-  gömülü assets/apps.json, ADR-PB-009; bozuk JSON çökmez, URL yalnız
-  kopyala)
+- settings: settings_page (görünüm: sistem/açık/koyu `SegmentedButton` →
+  `AppSettings.themeMode` + `invalidate(appSettingsProvider)`, hemen uygulanır;
+  dil seçimi 68 dil listesi), GoalLegend (üç hedef türü), about_page
+  (ORTAK §3.3: sürüm+ slogan, açık kaynak, gizlilik, feragat, Lisanslar,
+  Paylaş), data_management_page, other_apps_page (ORTAK §3.6 çevrimdışı
+  uyarlama — gömülü assets/apps.json, ADR-PB-009; bozuk JSON çökmez, URL
+  yalnız kopyala)
 - privacy: risk_lock.dart (riskLockProvider + guardPlanGeneration →
   PlanLockedException)
 
@@ -140,8 +142,22 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
   (repo yok; T21 notu)
 - Alerjen değerleri tarif seed'inde serbest metin; gıda rehberi E6
   etiketli (uzman incelemesi yayın öncesi şart)
-- Tema seçimi (ORTAK §3.2) UI'sız: AppSettings.themeMode alanı var,
-  ayar ekranı yok (gerekirse ayrı görev)
 - Emülatör içe aktarma UI girişi adb input özel-karakter kısıtıyla
   elle yürütülemedi; import doğrulaması test süitine dayanır
   (docs/RELEASE_EVIDENCE.md dürüst not)
+
+### Marka ve Platform Varlıkları
+
+**Status:** VERIFIED (PB-019 denetimi)
+
+- `assets/brand/brand_icon_1024.png` tek kaynak (özgün üretim:
+  `tool/gen_brand_icon.py`); platform türevleri `tool/brand/generate_icons.py`
+- Android: `mipmap-*/ic_launcher{,_round,_foreground,_monochrome}.png`
+  (5 yoğunluk) + `mipmap-anydpi-v26/ic_launcher{,_round}.xml`
+  (background+foreground+monochrome) + `values/ic_launcher_background.xml`
+  (#0A3D66) + `drawable-*/splash.png`
+- iOS: `AppIcon.appiconset` içinde 15 `AppIcon-*.png`; `Contents.json` yalnız
+  bunları referanslıyor. Flutter iskeletinin `Icon-App-*.png` kalıntıları ile
+  `assets/brand/example_source_icon.png` PB-019'da silindi
+- Hedef "Flutter varsayılan logosu kalmaz" sağlanıyor; ikon
+  THIRD_PARTY_NOTICES.md Varlıklar tablosunda kayıtlı

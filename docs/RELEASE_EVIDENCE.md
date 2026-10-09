@@ -12,6 +12,37 @@ dışında: `C:/Users/rubicon/AppData/Local/n-keto-symbols/1.0.0+1`.
 Bu dosya MASTER_PROMPT §18 checklist'inin kanıt kaydıdır (PB-008). Her
 madde; test, komut çıktısı veya emülatör kanıtıyla eşlenmiştir.
 
+## 0. Kapsam ve sonraki sürümler (2026-10-09 denetimi)
+
+Bu dosyadaki **yürüyüş kanıtları 1.0.0+1 içindir** (2026-10-03). Sonraki
+sürümlerde değişen ve yeniden kanıtlananlar:
+
+| Sürüm | Değişiklik | Kanıt yeri |
+|---|---|---|
+| 1.0.0+2 | Reklam/satın alma/doğrulama sunucusu kaldırıldı; çevrimdışı ve reklamsız | görev PB-017 (Git geçmişi) |
+| 1.0.0+3 | Arayüz 18 → 68 dil | görev PB-018 (Git geçmişi) |
+| 1.0.0+4 | Uzun yazı sistemlerinde hızlı eylem/onboarding düğme taşması düzeltildi | görev PB-018 (Git geçmişi) |
+
+1.0.0+4 üzerinde otomatik kapılar tekrar koşturuldu ve yeşildir:
+`flutter analyze --fatal-infos` temiz · `flutter test` 265/265 geçti ·
+`dart format --set-exit-if-changed` 0 değişiklik · `tool/check_offline.sh`
+exit 0 · `flutter build apk --release` başarılı (77,3 MB).
+
+Derlenen APK denetimi (`aapt2 dump permissions` / `dump badging`,
+`build-tools/36.0.0`) — manifest taramasından daha güçlü kanıt:
+
+| Denetim | Sonuç |
+|---|---|
+| Paket | `com.crazypenguin.nketotracker` |
+| Sürüm | `versionCode=4`, `versionName=1.0.0` (1.0.0+4) |
+| Uygulama etiketi | `N Keto Tracker` (kısaltma yok, C-021) |
+| İzinler | yalnız kendi imzalı `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` (AndroidX iç yayın alıcısı); **`android.permission.INTERNET` yok** (C-001, C-020) |
+
+**Dürüst sınır:** 1.0.0+2..+4 için 11 adımlık DoD yürüyüşü bu ortamda
+yeniden koşturulmadı — denetim oturumunda `adb`/emülatör yok. Yukarıdaki
+bölüm 7 emülatör kanıtları 1.0.0+1 içindir ve o sürümde geçerlidir. Yeni
+sürümde cihaz üzerinde yürüyüş gerekirse bu bölüm güncellenmelidir.
+
 ---
 
 ## 1. Bilimsel ve klinik güvenlik

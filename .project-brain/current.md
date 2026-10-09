@@ -90,7 +90,10 @@ TR/EN, tamamen offline).
 
 - onboarding: 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı→
   risk taraması→veri+onam); consent_repository (sürüm+SHA-256 hash)
-- dashboard: TodayPage (4 hızlı eylem, boş durumlar)
+- dashboard: TodayPage — "Son ölçümler" kartı FutureProvider ile gerçek
+  veri gösterir (VERIFIED emülatörde GKI 2.0); **besin/ağırlık/semptom/plan
+  kartları `today_page.dart:102-120`'de sabit boş metin (stub), hiçbir
+  zaman dolmaz — PB-021**; 4 hızlı eylem çalışır
 - measurements: MeasurementSessionForm (GKI kartı, kayıt sonrası
   timeline/chart invalidate), LogPage (çizelge + 3 ayrı grafik + bantlar
   varsayılan KAPALI + karıştırıcı eğitim kartı + öğün-ölçüm zamansal
@@ -102,8 +105,9 @@ TR/EN, tamamen offline).
   symptomSavedToast)
 - weight: WeightForm (kg/lb)
 - meal_plans: PlanPage (taslak üret AppBar CTA, risk kilidi; satır
-  alt başlıkları okunur tarif başlığı — PB-011), shopping:
-  ShoppingListPage
+  alt başlıkları okunur tarif başlığı — PB-011; VERIFIED emülatörde 7 günlük
+  plan), shopping: ShoppingListPage **rota kayıtlı ama hiçbir yerden
+  navigasyon yok — kullanıcı erişemiyor (PB-022)**
 - evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
   kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
 - recipes: RecipesPage + RecipeDetailPage

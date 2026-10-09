@@ -38,10 +38,28 @@ Derlenen APK denetimi (`aapt2 dump permissions` / `dump badging`,
 | Uygulama etiketi | `N Keto Tracker` (kısaltma yok, C-021) |
 | İzinler | yalnız kendi imzalı `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` (AndroidX iç yayın alıcısı); **`android.permission.INTERNET` yok** (C-001, C-020) |
 
-**Dürüst sınır:** 1.0.0+2..+4 için 11 adımlık DoD yürüyüşü bu ortamda
-yeniden koşturulmadı — denetim oturumunda `adb`/emülatör yok. Yukarıdaki
-bölüm 7 emülatör kanıtları 1.0.0+1 içindir ve o sürümde geçerlidir. Yeni
-sürümde cihaz üzerinde yürüyüş gerekirse bu bölüm güncellenmelidir.
+**Dürüst sınır:** 1.0.0+2..+4 için 11 adımlık DoD yürüyüşü aşağıda
+**yeniden koşturuldu** (bkz. bölüm 7b). 1.0.0+1 emülatör kanıtları bölüm 7'de
+kalır ve o sürüme aittir.
+
+## 0.1 1.0.0+4 DoD yürüyüşü — yeni bulgular
+
+2026-10-09'da `emulator-5554` üzerinde yeniden koşturulan yürüyüş **dört
+kusur** ortaya çıkardı. Kanıt ekran görüntüleri
+`docs/evidence/screenshots/1.0.0+4/` altında.
+
+| # | Bulgu | Kanıt | Görev |
+|---|---|---|---|
+| 1 | **Bugün ekranının 4 kartı kalıcı boş metin.** Öğün/ağırlık/semptom/plan kaydedildiği hâlde kartlar "kayıt yok" diyor | `dod-21-bugun-kartlari-bos.png`, `dod-24-yeniden-acilis.png` | PB-021 |
+| 2 | **Alışveriş listesi hiç görünmüyor.** Sepet düğmesi listeyi DB'ye yazıyor ama `ShoppingListPage`'e gitmiyor | `dod-23-alisveris-listesi.png` | PB-022 |
+| 3 | **Öğün formunda Türkçe etiketler kelime ortasından kırılıyor** ("Ka/hv/altı", "Ak/şa/m") | `_kahvalti-arama.png` | PB-023 |
+| 4 | **`dod_flow_test.dart` `flutter drive` altında takılıyor** (14+ dk, ilerleme yok) | PB-024 | PB-024 |
+
+1. numaralı bulgunun kod kanıtı: `lib/features/dashboard/today_page.dart:102-120`
+dört kartın `child` alanını doğrudan `Text(l10n.todayNutritionEmpty)` gibi
+sabit metne bağlıyor; yalnız "Son ölçümler" kartı (`30-95`) gerçek veriyle
+besleniyor. `dod-24` bunu çelişkiyle gösteriyor: aynı ekranda üstte canlı
+"GKI 2.0 · 5.0/2.5 mmol/L", hemen altında "Henüz ağırlık kaydı yok".
 
 ---
 
@@ -144,6 +162,44 @@ silme zinciri emülatörde uçtan uca koşturuldu.
 | 9 | Haftalık plandan yerel alışveriş listesi | ✅ "Taslak üret" → 7 günlük plan oluştu (ilk yürüyüş); alışveriş listesi üretimi `plan_repository_test.dart` (collectIngredients+createShoppingList) ile testli. İkinci yürüyüşte (veri silme sonrası) emülatör oturumu kararsızlaştığından (saat sıçraması + yabancı uygulama öne atlamaları) plan üretimi tekrar ekranlanamadı; PB-011 satır başlığı düzeltmesi analyze+195 test ile kanıtlı |
 | 10 | JSON/CSV dışa aktarma; temiz kurulumda import geri yükleme | ✅ Export: paylaşım sheet'i açıldı (logcat kanıtı); tüm veriler silindi (57 kayıt onayı); import geri yükleme `export_import_test.dart` ile kanıtlı (yukarıdaki dürüst not) |
 | 11 | Tüm akış internet izni ve bağlantı olmadan | ✅ `airplane_mode_on=1` boyunca tüm adımlar; manifest'te INTERNET yok |
+
+## 7b. §20 DoD yürüyüşü — 1.0.0+4 (2026-10-09)
+
+Ortam: `emulator-5554` (API 36, x86_64), `flutter drive` yerine **elle yürüyüş**
+(`adb input` + `screencap`/`pull`). Kurulum: `adb uninstall` + `install -r`
+(1.0.0+4, 81.012.100 bayt). Ekran görüntüleri:
+`docs/evidence/screenshots/1.0.0+4/`.
+
+**Çevrimdışı kanıt (hepsi komut çıktısı):**
+
+| Denetim | Komut | Sonuç |
+|---|---|---|
+| Uçak modu | `settings get global airplane_mode_on` | `1` |
+| Wi-Fi | `dumpsys wifi` | `Wi-Fi is disabled` |
+| Mobil veri | `dumpsys telephony.registry` | `mDataConnectionState=0` |
+| Erişim | `ping -c 2 8.8.8.8` | `Network is unreachable` |
+| Uygulama | `monkey … LAUNCHER` | `0ms mobile, 0ms wifi, 137ms not connected` |
+
+| # | Adım | Sonuç / Kanıt |
+|---|---|---|
+| 1 | Türkçe seçimi + onam | ✅ 8 adım; onam kutusu boşken "Uygulamayı kullanmaya başla" **pasif** (`dod-09-adim8-onam.png`) |
+| 2 | Yaş/boy/kilo + katsayı | ✅ 1990/175/80, "Mifflin–St Jeor +5"; metin cinsiyet kimliğiyle ilgili olmadığını söylüyor (`dod-05..07`) |
+| 3 | Yerel besin araması + öğün kaydı | ✅ "yumurta" → Yumurta (bütün) 143 kcal · net 0,7 g/100 g; 100 g'lık Akşam + Kahvaltı öğünü kaydedildi (`dod-11`, `dod-12`) |
+| 4 | 90 mg/dL + 2,5 mmol/L aynı oturum | ✅ Türkçe virgül (`2,5`) kabul edildi (`dod-15b`) |
+| 5 | 90/18=5,0 ve **GKI=2,0** | ✅ `GKI: 2.0` · `5.0 mmol/L ÷ 2.5 mmol/L` · `Hesap sürümü: gki-v1` · feragat satırı yerinde (`dod-16-gki-karti.png`) |
+| 6 | Grafikte GKI 2,0; bant **kapalı**; tedavi yorumu yok | ✅ glukoz 5,0 / BHB 2,5 / GKI 2,0 noktaları; bant anahtarı kapalı ve uyarı metni yine de görünüyor (`dod-18`, `dod-19`) |
+| 7 | Ölçüm öğün bağlamı; nedensellik yok | ✅ "…sonra kaydedilen değer — yalnızca zaman bağlamı, etki beyanı değildir." + karıştırıcı eğitim kartı (`dod-19`) |
+| 8 | Ağırlık + semptom | ✅ 79,5 kg; "Baş ağrısı" 3/10 → doğru toast "Semptom kaydedildi." (`dod-20`) |
+| 9 | Haftalık plan → alışveriş listesi | ⚠️ **KISMİ**: "Taslak üret" 7 günlük plan üretti, okunur tarif başlıklarıyla (`dod-22`). Sepet düğmesi ekranı değiştirmiyor → **PB-022** |
+| 10 | JSON/CSV dışa aktarma | ⚠️ Bu yürüyüşte tekrarlanmadı; 1.0.0+1 kanıtı + `export_import_test.dart` kapsıyor (adb özel karakter kısıtı, yukarıdaki dürüst not) |
+| 11 | Tüm akış çevrimdışı | ✅ `am force-stop` + yeniden açılış: onam koruması `/today`'e yönlendirdi, dil Türkçe kaldı, GKI verisi yaşadı; uçak modu hiç açılmadı (`dod-24-yeniden-acilis.png`) |
+
+**Yürüyüşün doğruladığı düzeltmeler:** yerel tohum üretimde çalışıyor (PB-010
+madde 2), onam koruması yeniden açılışta çalışıyor (madde 4), Türkçe dil
+kalıcılığı (madde 5), semptom toast anahtarı (madde 7), okunur tarif
+başlıkları (PB-011).
+
+**Yürüyüşün bulduğu dört yeni kusur:** bölüm 0.1'e bakınız (PB-021…PB-024).
 
 ## 8. Yürüyüşte bulunan ve giderilen üretim kusurları (PB-010/PB-011)
 

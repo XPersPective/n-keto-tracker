@@ -48,6 +48,10 @@ Thumbs.db
 .screenshots/
 ios/Flutter/AdsConfig.xcconfig
 
+# --- Ruby/Fastlane araç zinciri (yalnız bu makinenin bundler çözümü) ---
+Gemfile.lock
+.bundle/
+
 # --- Flutter iskeleti ekleri (1.1'i zayıflatmaz) ---
 .idea/
 .metadata

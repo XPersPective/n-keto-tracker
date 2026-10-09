@@ -196,7 +196,7 @@
   "todayLatestTitle": "Latest measurements",
   "todayLatestEmpty": "No measurements yet. Use 'Add measurement' to record glucose and ketone BHB together.",
   "todayNutritionTitle": "Today's nutrition",
-  "todayNutritionEmpty": "No meals recorded today. Meals are logged from the Plan tab.",
+  "todayNutritionEmpty": "No meals recorded today. Use the quick actions above to add one.",
   "todayWeightTitle": "Weight",
   "todayWeightEmpty": "No weight entries yet.",
   "todaySymptomsTitle": "Today's symptoms",

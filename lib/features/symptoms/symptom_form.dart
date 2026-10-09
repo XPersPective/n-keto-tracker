@@ -5,6 +5,7 @@ import '../../app/l10n/generated/app_localizations.dart';
 import '../../core/database/database.dart';
 import '../../core/database/providers.dart';
 import '../../core/database/symptom_repository.dart';
+import '../dashboard/today_view_model.dart';
 
 /// Semptom kayıt formu (MASTER_PROMPT §11.2, T23): yerel düzenlenebilir
 /// liste, şiddet 0–10, not. Teşhis YOK — ciddi/yeni belirtide kendi
@@ -113,6 +114,8 @@ class _SymptomFormState extends ConsumerState<SymptomForm> {
                         : _noteController.text,
                   );
                   if (!mounted) return;
+                  // Bugün ekranı önbelleğini tazele (PB-021).
+                  ref.invalidate(todaySymptomsProvider);
                   setState(() => _saved = true);
                 },
                 child: Text(l10n.symptomSave),

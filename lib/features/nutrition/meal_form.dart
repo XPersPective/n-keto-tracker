@@ -5,6 +5,7 @@ import '../../app/l10n/generated/app_localizations.dart';
 import '../../core/database/database.dart';
 import '../../core/database/meal_repository.dart';
 import '../../core/database/providers.dart';
+import '../dashboard/today_view_model.dart';
 
 /// Öğün kayıt sağlayıcıları (test override'ı için).
 final mealRepositoryProvider = Provider<MealRepository>(
@@ -86,6 +87,8 @@ class _MealFormState extends ConsumerState<MealForm> {
               .toList(),
         );
     if (!mounted) return;
+    // Bugün ekranı önbelleğini tazele (PB-021).
+    ref.invalidate(todayMealsProvider);
     ScaffoldMessenger.of(context)
         .showSnackBar(SnackBar(content: Text(l10n.mealSavedToast)));
     Navigator.of(context).pop();

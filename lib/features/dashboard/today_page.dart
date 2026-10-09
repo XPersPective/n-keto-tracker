@@ -5,11 +5,12 @@ import 'package:go_router/go_router.dart';
 import '../../app/l10n/generated/app_localizations.dart';
 import '../../app/theme/surfaces.dart';
 import '../measurements/log_view_model.dart';
+import 'today_view_model.dart';
 
 /// Bugün ekranı (MASTER_PROMPT §5.1): son ölçümler, günlük toplamlar,
-/// hızlı eylemler (≤3 dokunuş), tıbbi-olmayan alt bilgisi. Öğün toplamları
-/// T16'dan, ağırlık T22'den, semptom T23'ten, planlı öğünler T20'den
-/// dolar; o ana kadar dürüst boş durumlar.
+/// hızlı eylemler (≤3 dokunuş), tıbbi-olmayan alt bilgisi. Besin/ağırlık/
+/// semptom/plan kartları bugünün yerel günündeki DB kayıtlarından
+/// canlı olarak dolar (PB-021).
 class TodayPage extends ConsumerWidget {
   const TodayPage({super.key});
 
@@ -17,6 +18,11 @@ class TodayPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final timeline = ref.watch(timelineProvider);
+    final meals = ref.watch(todayMealsProvider);
+    final weight = ref.watch(todayWeightProvider);
+    final symptoms = ref.watch(todaySymptomsProvider);
+    final planEntries = ref.watch(todayPlanEntriesProvider);
+    final isTr = Localizations.localeOf(context).languageCode == 'tr';
 
     return Scaffold(
       appBar: AppBar(
@@ -101,22 +107,94 @@ class TodayPage extends ConsumerWidget {
           const SizedBox(height: 16),
           SectionCard(
             title: l10n.todayNutritionTitle,
-            child: Text(l10n.todayNutritionEmpty),
+            child: meals.when(
+              loading: () => const _SectionLoading(),
+              error: (_, _) => Text(l10n.todayNutritionEmpty),
+              data: (rows) => rows.isEmpty
+                  ? Text(l10n.todayNutritionEmpty)
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (final m in rows)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 4),
+                            child: Text(
+                              isTr
+                                  ? mealTypeLabelTr(m.mealType)
+                                  : mealTypeLabelEn(m.mealType),
+                              style: Theme.of(context).textTheme.bodyMedium,
+                            ),
+                          ),
+                      ],
+                    ),
+            ),
           ),
           const SizedBox(height: 16),
           SectionCard(
             title: l10n.todayWeightTitle,
-            child: Text(l10n.todayWeightEmpty),
+            child: weight.when(
+              loading: () => const _SectionLoading(),
+              error: (_, _) => Text(l10n.todayWeightEmpty),
+              data: (row) {
+                if (row == null) return Text(l10n.todayWeightEmpty);
+                return Text(
+                  '${row.kg.toStringAsFixed(1)} kg',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                );
+              },
+            ),
           ),
           const SizedBox(height: 16),
           SectionCard(
             title: l10n.todaySymptomsTitle,
-            child: Text(l10n.todaySymptomsEmpty),
+            child: symptoms.when(
+              loading: () => const _SectionLoading(),
+              error: (_, _) => Text(l10n.todaySymptomsEmpty),
+              data: (rows) {
+                if (rows.isEmpty) return Text(l10n.todaySymptomsEmpty);
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    for (final s in rows)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 4),
+                        child: Text(
+                          '${isTr ? s.def.nameTr : s.def.nameEn} '
+                          '${s.entry.severity}/10',
+                          style: Theme.of(context).textTheme.bodyMedium,
+                        ),
+                      ),
+                  ],
+                );
+              },
+            ),
           ),
           const SizedBox(height: 16),
           SectionCard(
             title: l10n.todayPlansTitle,
-            child: Text(l10n.todayPlansEmpty),
+            child: planEntries.when(
+              loading: () => const _SectionLoading(),
+              error: (_, _) => Text(l10n.todayPlansEmpty),
+              data: (rows) {
+                if (rows.isEmpty) return Text(l10n.todayPlansEmpty);
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    for (final p in rows)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 4),
+                        child: Text(
+                          (isTr
+                                  ? p.recipe?.titleTr
+                                  : p.recipe?.titleEn) ??
+                              p.entry.mealType,
+                          style: Theme.of(context).textTheme.bodyMedium,
+                        ),
+                      ),
+                  ],
+                );
+              },
+            ),
           ),
           const SizedBox(height: 24),
           Text(
@@ -125,6 +203,23 @@ class TodayPage extends ConsumerWidget {
             textAlign: TextAlign.center,
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SectionLoading extends StatelessWidget {
+  const _SectionLoading();
+  @override
+  Widget build(BuildContext context) {
+    return const SizedBox(
+      height: 24,
+      child: Center(
+        child: SizedBox(
+          width: 18,
+          height: 18,
+          child: CircularProgressIndicator(strokeWidth: 2),
+        ),
       ),
     );
   }

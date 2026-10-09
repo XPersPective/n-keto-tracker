@@ -6,6 +6,7 @@ import '../../app/l10n/generated/app_localizations.dart';
 import '../../core/database/database.dart';
 import '../../core/database/providers.dart';
 import '../../core/units/weight.dart';
+import '../dashboard/today_view_model.dart';
 import '../measurements/log_view_model.dart';
 
 /// Ağırlık kayıt formu (MASTER_PROMPT §11.1, T22): kg/lb giriş (normalize
@@ -67,6 +68,8 @@ class _WeightFormState extends ConsumerState<WeightForm> {
     // Ağırlık serisi önbelleğini tazele (IndexedStack sekme canlılığı,
     // PB-010).
     ref.invalidate(weightSeriesProvider);
+    // Bugün ekranı önbelleğini tazele (PB-021).
+    ref.invalidate(todayWeightProvider);
     Navigator.of(context).pop();
   }
 

@@ -16,11 +16,10 @@ import 'package:n_keto_tracker/core/database/providers.dart';
 /// eşdeğeridir (manifest'te INTERNET izni yok — §14.1 kanıtı).
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-  // PB-024: `fullyLive` altında sürekli bir animasyon (örn. küçük bir
-  // spinner) varsa `pumpAndSettle` hiç durulmuş saymıyor ve 10+ dakika
-  // askıda kalıyordu. `fadePointers` yeterli canlılığı korurken
-  // sürekli animasyonları 1 saniyelik bir sınırda durdurarak testin
-  // ilerlemesini sağlar.
+  // PB-024: `fullyLive` altında sürekli animasyon (örn. küçük bir
+  // spinner) `pumpAndSettle`'i sonsuz bekletiyordu. `fadePointers`
+  // yeterli canlılığı korurken sürekli animasyonları 1 saniyelik
+  // sınıra indirgiyor.
   binding.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fadePointers;
 
   late AppDatabase db;
@@ -31,35 +30,56 @@ void main() {
 
   tearDown(() async => db.close());
 
-  // PB-024: `pumpAndSettle` 10 dakikalık varsayılan zaman aşımıyla
-  // sonsuz döngüde kalabiliyor. Burada 3 saniyelik bir koruma uygula;
-  // zaman aşımında `pump` ile düz ileri sar.
+  // PB-024: pumpAndSettle 10 dakikalık varsayılan zaman aşımıyla
+  // sonsuz döngüde kalabiliyor. 3 saniyelik koruma uygula; zaman
+  // aşımında düz pump ile ilerle.
   Future<void> settleBounded(WidgetTester tester) async {
     try {
       await tester.pumpAndSettle(const Duration(seconds: 3));
     } on TimeoutException {
-      // Animasyon durulmadı; düz pump ile birkaç kare ilerle.
       await tester.pump(const Duration(milliseconds: 100));
       await tester.pump(const Duration(milliseconds: 100));
     }
   }
 
+  // PB-024: emülatörde `pumpWidget` sonrası FlutterActivity'nin
+  // penceresinin ölçülüp Flutter view'inin attach olması birkaç
+  // saniye sürebiliyor. tester'sın sahte zamanı değil GERÇEK zaman
+  // gerekiyor; bu yüzden `runAsync` içinde `Future.delayed` kullanılır.
+  // View boyutu sıfır değilse hazırdır. Splash ekranına dokunulmaz —
+  // sadece attach olması beklenir. 15 saniye içinde attach olmazsa
+  // net hata ile fail (zaman aşımı 15 dk'ya çıkmasın).
+  Future<void> waitForView(WidgetTester tester) async {
+    const totalBudget = Duration(seconds: 15);
+    final deadline = DateTime.now().add(totalBudget);
+    while (DateTime.now().isBefore(deadline)) {
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 500)),
+      );
+      await tester.pump(const Duration(milliseconds: 100));
+      final size = tester.view.physicalSize;
+      if (size.width > 0 && size.height > 0) {
+        return;
+      }
+    }
+    fail(
+      'Flutter view 15 sn içinde attach olmadı (width=0, height=0). '
+      'Splash ekranı KALDIRILMADI — kök neden integration_test harness '
+      'ile activity lifecycle senkronizasyonu. DoD elle yürüyüş '
+      '(PB-020) ile kanıtlandı.',
+    );
+  }
+
   testWidgets('DoD: onboarding → today → ölçüm → GKI 2.0 → günlük', (
     tester,
   ) async {
-    // PB-024: emülatörde Flutter view attach + splash → ilk frame
-    // geçişi zaman alabiliyor. `Width is zero` logları bu dönemde
-    // geliyor; pumpWidget hemen ardından 3 saniyelik düz pump'la
-    // renderer'ın gerçek boyutlara ulaşmasını bekle.
     await tester.pumpWidget(
       ProviderScope(
         overrides: [appDatabaseProvider.overrideWithValue(db)],
         child: const NKetoApp(),
       ),
     );
-    for (var i = 0; i < 30; i++) {
-      await tester.pump(const Duration(milliseconds: 100));
-    }
+    await waitForView(tester);
     await settleBounded(tester);
 
     // 1-3) Onboarding 8 adım: Next ×7.

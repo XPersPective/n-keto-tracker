@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../app/l10n/generated/app_localizations.dart';
 import '../../app/l10n/language_names.dart';
 import '../../core/database/settings_repository.dart';
+import '../../core/database/user_profile_repository.dart';
 import 'consent_repository.dart';
 import 'onboarding_controller.dart';
 
@@ -381,6 +382,9 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
     await ref
         .read(settingsRepositoryProvider)
         .saveOnboardingResult(languageCode: state.languageCode);
+    // Kullanıcı profili kalıcı: doğum yılı, boy, kilo, enerji katsayısı
+    // (PB-025). Skip edilen alanlar null yazılır.
+    await ref.read(userProfileRepositoryProvider).saveFromOnboarding(state);
     ref.invalidate(appSettingsProvider);
     if (mounted) context.go('/today');
   }

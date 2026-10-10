@@ -7,7 +7,7 @@
 - `bundle exec fastlane build_release` — successful obfuscated AAB, 67.7 MB; symbols at `C:/Users/rubicon/AppData/Local/n-keto-symbols/1.0.0+6`. SHA-256: `6B419D64AA6A3F8BA479A4155681901D53AE761BE27FC4C4C687E6CA1ADBEB41`.
 - `bundle exec fastlane deploy_internal` and `bundle exec fastlane deploy_production` — successful. Google Play Developer API confirmed `production` and `internal` each at version name `1.0.0`, version code `6`, release status `completed`.
 - Build warnings: Flutter reported the unused Cupertino icon font; no `CupertinoIcons` use exists in `lib/`. Native build also reported ELF DWARF symbols; Dart obfuscation and split debug info were enabled. This release evidence does not verify that Google review has completed or all locales are live.
-- The full 11-step emulator/device DoD walk was not rerun on +6. The historical +4 walk and subsequent PB-021…PB-024 fixes remain documented below; +6 was verified by the 294-test suite and walking-plan unit/widget tests.
+- The +6 emulator DoD check was attempted but did not launch: `emulator-5556` had an ANR overlay from another app, and `emulator-5554` could not install the debug test APK because Android reported insufficient storage (needed 443,909,867 bytes). No emulator data was cleared. The historical +4 walk and subsequent PB-021…PB-024 fixes remain documented below; +6 was verified by the 294-test suite and walking-plan unit/widget tests.
 - iOS was not uploaded. The iOS project has no `ios/Podfile`; App Store metadata has no locales, and the app record remains Android-only. App Store build, metadata, signing, and listing still need a separate release pass.
 
 The original release-walk evidence below is historical and remains tied to the noted version.

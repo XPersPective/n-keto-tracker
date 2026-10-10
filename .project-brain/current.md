@@ -158,6 +158,8 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
 - Emülatör içe aktarma UI girişi adb input özel-karakter kısıtıyla
   elle yürütülemedi; import doğrulaması test süitine dayanır
   (docs/RELEASE_EVIDENCE.md dürüst not)
+- +6 emulator DoD canlı yürüyüşü doğrulanmadı: 5556'da başka uygulama ANR
+  overlay'i, 5554'te debug APK kurulumuna yetecek boş alan yoktu
 
 ### Marka ve Platform Varlıkları
 

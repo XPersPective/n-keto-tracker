@@ -449,5 +449,49 @@
   "themeLight": "ਲਾਈਟ",
   "themeDark": "ਡਾਰਕ",
   "settingsLanguage": "ਭਾਸ਼ਾ",
-  "settingsMore": "ਹੋਰ"
+  "settingsMore": "ਹੋਰ",
+  "navWalking": "ਤੁਰਨ ਦੀ ਯੋਜਨਾ",
+  "walkingPersonalizedForYou": "ਤੁਹਾਡੇ ਲਈ ਨਿੱਜੀ",
+  "walkingIntensityLabel": "ਸ਼ੁਰੂਆਤੀ ਤੀਬਰਤਾ: {level}",
+  "walkingStartMinutesLabel": "ਹਫ਼ਤਾ 1 {minutes} ਮਿੰਟ/ਦਿਨ ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ",
+  "walkingWeeklyTargetLabel": "ਹਫ਼ਤਾਵਾਰੀ ਨਿਸ਼ਾਨਾ: {minutes} ਮਿੰਟ (WHO ਅਧਾਰ)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "ਹਫ਼ਤਾ {n}",
+  "walkingReferencesTitle": "ਵਿਗਿਆਨਕ ਸੋਮੇ",
+  "walkingReferencesHint": "ਯੋਜਨਾ WHO 2020, ACSM 2011 ਅਤੇ ਤੁਰਨ ਦੇ ਮੈਟਾ-ਵਿਸ਼ਲੇਸ਼ਣ (Murtagh 2015) ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ। ਪੂਰੇ ਹਵਾਲੇ ਲਈ ਸਬੂਤ ਟੈਬ ਵੇਖੋ।",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

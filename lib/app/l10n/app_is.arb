@@ -449,5 +449,49 @@
   "themeLight": "Ljóst",
   "themeDark": "Dökkt",
   "settingsLanguage": "Tungumál",
-  "settingsMore": "Meira"
+  "settingsMore": "Meira",
+  "navWalking": "Gönguáætlun",
+  "walkingPersonalizedForYou": "Sérsniðin fyrir þig",
+  "walkingIntensityLabel": "Upphafsákefð: {level}",
+  "walkingStartMinutesLabel": "Vika 1 byjar á {minutes} mín/dag",
+  "walkingWeeklyTargetLabel": "Vikulegt markmið: {minutes} mín (WHO-grunnur)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Vika {n}",
+  "walkingReferencesTitle": "Vísindaleg heimild",
+  "walkingReferencesHint": "Áætlunin fylgir WHO 2020, ACSM 2011 og göngu meta-greiningu (Murtagh 2015). Sjá Sönnunarflipann fyrir fullar tilvísanir.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

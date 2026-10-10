@@ -449,5 +449,49 @@
   "themeLight": "Vaalea",
   "themeDark": "Tumma",
   "settingsLanguage": "Kieli",
-  "settingsMore": "Lisää"
+  "settingsMore": "Lisää",
+  "navWalking": "Kävelysuunnitelma",
+  "walkingPersonalizedForYou": "Henkilökohtainen sinulle",
+  "walkingIntensityLabel": "Aloitusintensiteetti: {level}",
+  "walkingStartMinutesLabel": "Viikko 1 alkaa {minutes} min/päivä",
+  "walkingWeeklyTargetLabel": "Viikkotavoite: {minutes} min (WHO:n perusta)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Viikko {n}",
+  "walkingReferencesTitle": "Tieteelliset lähteet",
+  "walkingReferencesHint": "Suunnitelma noudattaa WHO 2020, ACSM 2011 ja kävelyn meta-analyysiä (Murtagh 2015). Täydet viitteet Näyttö-välilehdellä.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

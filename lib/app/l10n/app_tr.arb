@@ -464,5 +464,49 @@
   "themeLight": "Açık",
   "themeDark": "Koyu",
   "settingsLanguage": "Dil",
-  "settingsMore": "Diğer"
+  "settingsMore": "Diğer",
+  "navWalking": "Yürüyüş planı",
+  "walkingPersonalizedForYou": "Size özel",
+  "walkingIntensityLabel": "Başlangıç yoğunluğu: {level}",
+  "walkingStartMinutesLabel": "1. hafta {minutes} dk/gün ile başlar",
+  "walkingWeeklyTargetLabel": "Haftalık hedef: {minutes} dk (DSÖ tabanı)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "{n}. hafta",
+  "walkingReferencesTitle": "Bilimsel kaynaklar",
+  "walkingReferencesHint": "Plan DSÖ 2020, ACSM 2011 ve yürüyüş meta-analizini (Murtagh 2015) izler. Tam alıntılar için Kanıtlar sekmesine bakın.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

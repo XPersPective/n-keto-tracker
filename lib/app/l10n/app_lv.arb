@@ -449,5 +449,49 @@
   "themeLight": "Gaišs",
   "themeDark": "Tumšs",
   "settingsLanguage": "Valoda",
-  "settingsMore": "Vairāk"
+  "settingsMore": "Vairāk",
+  "navWalking": "Nūjošanas plāns",
+  "walkingPersonalizedForYou": "Pielāgots jums",
+  "walkingIntensityLabel": "Sākuma intensitāte: {level}",
+  "walkingStartMinutesLabel": "1. nedēļa sākas ar {minutes} min/dienā",
+  "walkingWeeklyTargetLabel": "Nedēļas mērķis: {minutes} min (PVO bāze)",
+  "walkingBmiLabel": "ĶMI: {value}",
+  "walkingWeekTitle": "Nedēļa {n}",
+  "walkingReferencesTitle": "Zinātniskie avoti",
+  "walkingReferencesHint": "Plāns seko PVO 2020, ACSM 2011 un nūjošanas meta-analīzei (Murtagh 2015). Pilnas atsauces skat. Pierādījumu cilnē.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

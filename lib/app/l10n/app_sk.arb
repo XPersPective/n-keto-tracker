@@ -449,5 +449,49 @@
   "themeLight": "Svetlý",
   "themeDark": "Tmavý",
   "settingsLanguage": "Jazyk",
-  "settingsMore": "Viac"
+  "settingsMore": "Viac",
+  "navWalking": "Plán chôdze",
+  "walkingPersonalizedForYou": "Prispôsobené tebe",
+  "walkingIntensityLabel": "Počiatočná intenzita: {level}",
+  "walkingStartMinutesLabel": "1. týždeň začína na {minutes} min/deň",
+  "walkingWeeklyTargetLabel": "Týždenný cieľ: {minutes} min (základ WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Týždeň {n}",
+  "walkingReferencesTitle": "Vedecké zdroje",
+  "walkingReferencesHint": "Plán vychádza z WHO 2020, ACSM 2011 a metaanalýzy chôdze (Murtagh 2015). Úplné citácie nájdeš v záložke Dôkazy.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

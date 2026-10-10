@@ -449,5 +449,49 @@
   "themeLight": "Ljust",
   "themeDark": "Mörkt",
   "settingsLanguage": "Språk",
-  "settingsMore": "Mer"
+  "settingsMore": "Mer",
+  "navWalking": "Vandringsplan",
+  "walkingPersonalizedForYou": "Personlig för dig",
+  "walkingIntensityLabel": "Startintensitet: {level}",
+  "walkingStartMinutesLabel": "Vecka 1 börjar med {minutes} min/dag",
+  "walkingWeeklyTargetLabel": "Veckomål: {minutes} min (WHO-bas)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Vecka {n}",
+  "walkingReferencesTitle": "Vetenskapliga källor",
+  "walkingReferencesHint": "Planen följer WHO 2020, ACSM 2011 och vandringsmetaanalysen (Murtagh 2015). Se fliken Bevis för fullständiga citeringar.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

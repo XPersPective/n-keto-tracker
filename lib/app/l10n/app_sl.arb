@@ -449,5 +449,49 @@
   "themeLight": "Svetla",
   "themeDark": "Temna",
   "settingsLanguage": "Jezik",
-  "settingsMore": "Več"
+  "settingsMore": "Več",
+  "navWalking": "Načrt hoje",
+  "walkingPersonalizedForYou": "Prilagojeno tebi",
+  "walkingIntensityLabel": "Začetna intenzivnost: {level}",
+  "walkingStartMinutesLabel": "1. teden se začne z {minutes} min/dan",
+  "walkingWeeklyTargetLabel": "Tedenski cilj: {minutes} min (osnova WHO)",
+  "walkingBmiLabel": "ITM: {value}",
+  "walkingWeekTitle": "Teden {n}",
+  "walkingReferencesTitle": "Znanstveni viri",
+  "walkingReferencesHint": "Načrt sledi WHO 2020, ACSM 2011 in metaanalizi hoje (Murtagh 2015). Za popolne citate glej zavihek Dokazi.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

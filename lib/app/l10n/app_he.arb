@@ -449,5 +449,49 @@
   "themeLight": "בהיר",
   "themeDark": "כהה",
   "settingsLanguage": "שפה",
-  "settingsMore": "עוד"
+  "settingsMore": "עוד",
+  "navWalking": "תוכנית הליכה",
+  "walkingPersonalizedForYou": "מותאם אישית עבורך",
+  "walkingIntensityLabel": "עצימות פתיחה: {level}",
+  "walkingStartMinutesLabel": "שבוע 1 מתחיל ב-{minutes} דקות/יום",
+  "walkingWeeklyTargetLabel": "יעד שבועי: {minutes} דקות (בסיס ארגון הבריאות העולמי)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "שבוע {n}",
+  "walkingReferencesTitle": "מקורות מדעיים",
+  "walkingReferencesHint": "התוכנית עוקבת אחר ארגון הבריאות העולמי 2020, ACSM 2011 ומטא-אנליזה של הליכה (Murtagh 2015). ראה לשונית ראיות לציטוטים מלאים.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

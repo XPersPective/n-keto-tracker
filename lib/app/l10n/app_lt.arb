@@ -449,5 +449,49 @@
   "themeLight": "Šviesi",
   "themeDark": "Tamsi",
   "settingsLanguage": "Kalba",
-  "settingsMore": "Daugiau"
+  "settingsMore": "Daugiau",
+  "navWalking": "Ėjimo planas",
+  "walkingPersonalizedForYou": "Pritaikyta tau",
+  "walkingIntensityLabel": "Pradinė intensyvumas: {level}",
+  "walkingStartMinutesLabel": "1 savaitė prasideda nuo {minutes} min/dieną",
+  "walkingWeeklyTargetLabel": "Savaitės tikslas: {minutes} min (PSO pagrindas)",
+  "walkingBmiLabel": "KMI: {value}",
+  "walkingWeekTitle": "Savaitė {n}",
+  "walkingReferencesTitle": "Moksliniai šaltiniai",
+  "walkingReferencesHint": "Planas vadovaujasi PSO 2020, ACSM 2011 ir ėjimo meta-analize (Murtagh 2015). Visas citatas žr. Įrodymų skirtuke.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

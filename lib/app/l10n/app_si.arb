@@ -449,5 +449,49 @@
   "themeLight": "ලා",
   "themeDark": "අඳුරු",
   "settingsLanguage": "භාෂාව",
-  "settingsMore": "තවත්"
+  "settingsMore": "තවත්",
+  "navWalking": "ඇවිදීමේ සැලසුම",
+  "walkingPersonalizedForYou": "ඔබට පුද්ගලිකයි",
+  "walkingIntensityLabel": "ආරම්භක තීව්‍රතාව: {level}",
+  "walkingStartMinutesLabel": "1 වන සතිය {minutes} මිනිත්තු/දිනයෙන් ආරම්භ වේ",
+  "walkingWeeklyTargetLabel": "සතික ඉලක්කය: {minutes} මිනිත්තු (WHO මූලධර්මය)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "සතිය {n}",
+  "walkingReferencesTitle": "විද්‍යාත්මක මූලාශ්‍ර",
+  "walkingReferencesHint": "සැලසුම WHO 2020, ACSM 2011 සහ ඇවිදීමේ meta-analysis (Murtagh 2015) අනුගමනය කරයි. සම්පූර්ණ උපුටා දැක්වීම් සඳහා සාක්ෂි ටැබය බලන්න.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -229,5 +229,49 @@
   "themeLight": "Licht",
   "themeDark": "Donker",
   "settingsLanguage": "Taal",
-  "settingsMore": "Meer"
+  "settingsMore": "Meer",
+  "navWalking": "Wandelplan",
+  "walkingPersonalizedForYou": "Voor jou gepersonaliseerd",
+  "walkingIntensityLabel": "Startintensiteit: {level}",
+  "walkingStartMinutesLabel": "Week 1 begint met {minutes} min/dag",
+  "walkingWeeklyTargetLabel": "Wekelijks doel: {minutes} min (WHO-basis)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Week {n}",
+  "walkingReferencesTitle": "Wetenschappelijke bronnen",
+  "walkingReferencesHint": "Het plan volgt WHO 2020, ACSM 2011 en de wandel-meta-analyse (Murtagh 2015). Zie het tabblad Bewijs voor volledige citaten.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

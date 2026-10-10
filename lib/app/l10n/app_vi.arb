@@ -229,5 +229,49 @@
   "themeLight": "Sáng",
   "themeDark": "Tối",
   "settingsLanguage": "Ngôn ngữ",
-  "settingsMore": "Khác"
+  "settingsMore": "Khác",
+  "navWalking": "Kế hoạch đi bộ",
+  "walkingPersonalizedForYou": "Cá nhân hóa cho bạn",
+  "walkingIntensityLabel": "Cường độ bắt đầu: {level}",
+  "walkingStartMinutesLabel": "Tuần 1 bắt đầu với {minutes} phút/ngày",
+  "walkingWeeklyTargetLabel": "Mục tiêu hàng tuần: {minutes} phút (cơ sở WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Tuần {n}",
+  "walkingReferencesTitle": "Nguồn khoa học",
+  "walkingReferencesHint": "Kế hoạch tuân theo WHO 2020, ACSM 2011 và phân tích tổng hợp về đi bộ (Murtagh 2015). Xem tab Bằng chứng để có trích dẫn đầy đủ.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

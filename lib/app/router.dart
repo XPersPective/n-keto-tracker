@@ -18,6 +18,7 @@ import '../features/settings/other_apps_page.dart';
 import '../features/shopping/shopping_list_page.dart';
 import '../features/measurements/measurement_session_form.dart';
 import '../features/onboarding/onboarding_page.dart';
+import '../features/walking/walking_plan_page.dart';
 import 'app_shell.dart';
 
 /// Uygulama yönlendiricisi (MASTER_PROMPT §5): 5 sekmeli ana kabuk +
@@ -80,6 +81,10 @@ final GoRouter appRouter = GoRouter(
                 GoRoute(
                   path: 'shopping',
                   builder: (context, state) => const ShoppingListPage(),
+                ),
+                GoRoute(
+                  path: 'walking',
+                  builder: (context, state) => const WalkingPlanPage(),
                 ),
               ],
             ),

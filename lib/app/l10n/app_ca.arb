@@ -449,5 +449,49 @@
   "themeLight": "Clar",
   "themeDark": "Fosc",
   "settingsLanguage": "Idioma",
-  "settingsMore": "Més"
+  "settingsMore": "Més",
+  "navWalking": "Pla de caminada",
+  "walkingPersonalizedForYou": "Personalitzat per a tu",
+  "walkingIntensityLabel": "Intensitat inicial: {level}",
+  "walkingStartMinutesLabel": "La setmana 1 comença amb {minutes} min/dia",
+  "walkingWeeklyTargetLabel": "Objectiu setmanal: {minutes} min (base OMS)",
+  "walkingBmiLabel": "IMC: {value}",
+  "walkingWeekTitle": "Setmana {n}",
+  "walkingReferencesTitle": "Fonts científiques",
+  "walkingReferencesHint": "El pla segueix OMS 2020, ACSM 2011 i la metaanàlisi de caminada (Murtagh 2015). Consulta la pestanya Evidència per a les cites completes.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

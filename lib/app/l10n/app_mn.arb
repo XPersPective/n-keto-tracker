@@ -449,5 +449,49 @@
   "themeLight": "Цайвар",
   "themeDark": "Харанхуй",
   "settingsLanguage": "Хэл",
-  "settingsMore": "Бусад"
+  "settingsMore": "Бусад",
+  "navWalking": "Алхалтын төлөвлөгөө",
+  "walkingPersonalizedForYou": "Танд зориулсан",
+  "walkingIntensityLabel": "Эхлэх эрчимшлийн түвшин: {level}",
+  "walkingStartMinutesLabel": "1 дэх долоо хоног {minutes} мин/өдөр эхэлнэ",
+  "walkingWeeklyTargetLabel": "Долоо хоногийн зорилго: {minutes} мин (ДЭМБ-ын суурь)",
+  "walkingBmiLabel": "БЖИ: {value}",
+  "walkingWeekTitle": "{n}-р долоо хоног",
+  "walkingReferencesTitle": "Шинжлэх ухааны эх сурвалжууд",
+  "walkingReferencesHint": "Төлөвлөгөө нь ДЭМБ 2020, ACSM 2011 болон алхалтын мета-шинжилгээг (Murtagh 2015) дагаж мөрдөнө. Бүрэн ишлэлүүдийг Нотолгоо таб-аас үзнэ үү.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

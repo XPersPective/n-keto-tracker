@@ -229,5 +229,49 @@
   "themeLight": "라이트",
   "themeDark": "다크",
   "settingsLanguage": "언어",
-  "settingsMore": "더보기"
+  "settingsMore": "더보기",
+  "navWalking": "걷기 계획",
+  "walkingPersonalizedForYou": "맞춤형",
+  "walkingIntensityLabel": "시작 강도: {level}",
+  "walkingStartMinutesLabel": "1주차는 하루 {minutes}분부터 시작",
+  "walkingWeeklyTargetLabel": "주간 목표: {minutes}분 (WHO 기준)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "{n}주차",
+  "walkingReferencesTitle": "과학적 출처",
+  "walkingReferencesHint": "이 계획은 WHO 2020, ACSM 2011 및 걷기 메타분석(Murtagh 2015)을 따릅니다. 전체 인용은 증거 탭을 참고하세요.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

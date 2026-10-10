@@ -449,5 +449,49 @@
   "themeLight": "Világos",
   "themeDark": "Sötét",
   "settingsLanguage": "Nyelv",
-  "settingsMore": "Továbbiak"
+  "settingsMore": "Továbbiak",
+  "navWalking": "Séta terv",
+  "walkingPersonalizedForYou": "Személyre szabva neked",
+  "walkingIntensityLabel": "Kezdő intenzitás: {level}",
+  "walkingStartMinutesLabel": "1. hét {minutes} perccel/nap kezdődik",
+  "walkingWeeklyTargetLabel": "Heti cél: {minutes} perc (WHO alap)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "{n}. hét",
+  "walkingReferencesTitle": "Tudományos források",
+  "walkingReferencesHint": "A terv a WHO 2020, ACSM 2011 és a séta metaanalízis (Murtagh 2015) alapján készült. A teljes hivatkozásokat a Bizonyíték fülön találod.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

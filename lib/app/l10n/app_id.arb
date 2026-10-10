@@ -229,5 +229,49 @@
   "themeLight": "Terang",
   "themeDark": "Gelap",
   "settingsLanguage": "Bahasa",
-  "settingsMore": "Lainnya"
+  "settingsMore": "Lainnya",
+  "navWalking": "Rencana jalan kaki",
+  "walkingPersonalizedForYou": "Dipersonalisasi untuk Anda",
+  "walkingIntensityLabel": "Intensitas awal: {level}",
+  "walkingStartMinutesLabel": "Minggu 1 dimulai dengan {minutes} menit/hari",
+  "walkingWeeklyTargetLabel": "Target mingguan: {minutes} menit (dasar WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Minggu {n}",
+  "walkingReferencesTitle": "Sumber ilmiah",
+  "walkingReferencesHint": "Rencana mengikuti WHO 2020, ACSM 2011, dan meta-analisis jalan kaki (Murtagh 2015). Lihat tab Bukti untuk kutipan lengkap.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

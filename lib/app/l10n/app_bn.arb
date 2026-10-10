@@ -449,5 +449,49 @@
   "themeLight": "লাইট",
   "themeDark": "ডার্ক",
   "settingsLanguage": "ভাষা",
-  "settingsMore": "আরও"
+  "settingsMore": "আরও",
+  "navWalking": "হাঁটার পরিকল্পনা",
+  "walkingPersonalizedForYou": "আপনার জন্য ব্যক্তিগতকরণ",
+  "walkingIntensityLabel": "প্রারম্ভিক তীব্রতা: {level}",
+  "walkingStartMinutesLabel": "সপ্তাহ ১ শুরু হয় {minutes} মিনিট/দিন দিয়ে",
+  "walkingWeeklyTargetLabel": "সাপ্তাহিক লক্ষ্য: {minutes} মিনিট (হু প্রাথমিক)",
+  "walkingBmiLabel": "বিএমআই: {value}",
+  "walkingWeekTitle": "সপ্তাহ {n}",
+  "walkingReferencesTitle": "বৈজ্ঞানিক উৎস",
+  "walkingReferencesHint": "পরিকল্পনা WHO 2020, ACSM 2011 এবং হাঁটার মেটা-বিশ্লেষণ (Murtagh 2015) অনুসরণ করে। সম্পূর্ণ উদ্ধৃতির জন্য প্রমাণ ট্যাব দেখুন।",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

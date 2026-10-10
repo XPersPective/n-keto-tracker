@@ -449,5 +449,49 @@
   "themeLight": "淺色",
   "themeDark": "深色",
   "settingsLanguage": "語言",
-  "settingsMore": "更多"
+  "settingsMore": "更多",
+  "navWalking": "步行計畫",
+  "walkingPersonalizedForYou": "為您個人化",
+  "walkingIntensityLabel": "起始強度:{level}",
+  "walkingStartMinutesLabel": "第1週從每天{minutes}分鐘開始",
+  "walkingWeeklyTargetLabel": "每週目標:{minutes}分鐘 (WHO 基準)",
+  "walkingBmiLabel": "BMI:{value}",
+  "walkingWeekTitle": "第{n}週",
+  "walkingReferencesTitle": "科學來源",
+  "walkingReferencesHint": "本計畫遵循 WHO 2020、ACSM 2011 與步行後設分析 (Murtagh 2015)。完整引用請見證據分頁。",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

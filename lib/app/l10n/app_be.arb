@@ -449,5 +449,49 @@
   "themeLight": "Светлая",
   "themeDark": "Цёмная",
   "settingsLanguage": "Мова",
-  "settingsMore": "Яшчэ"
+  "settingsMore": "Яшчэ",
+  "navWalking": "План хаджэння",
+  "walkingPersonalizedForYou": "Для вас",
+  "walkingIntensityLabel": "Пачатковая інтэнсіўнасць: {level}",
+  "walkingStartMinutesLabel": "Тыдзень 1 пачынаецца з {minutes} хв/дзень",
+  "walkingWeeklyTargetLabel": "Тыднёвая мэта: {minutes} хв (база СААЗ)",
+  "walkingBmiLabel": "ІМТ: {value}",
+  "walkingWeekTitle": "Тыдзень {n}",
+  "walkingReferencesTitle": "Навуковыя крыніцы",
+  "walkingReferencesHint": "План адпавядае СААЗ 2020, ACSM 2011 і мета-аналізу хаджэння (Murtagh 2015). Поўныя цытаты гл. у раздзеле Доказы.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

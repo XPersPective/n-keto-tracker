@@ -229,5 +229,49 @@
   "themeLight": "浅色",
   "themeDark": "深色",
   "settingsLanguage": "语言",
-  "settingsMore": "更多"
+  "settingsMore": "更多",
+  "navWalking": "步行计划",
+  "walkingPersonalizedForYou": "为您个性化定制",
+  "walkingIntensityLabel": "起始强度:{level}",
+  "walkingStartMinutesLabel": "第1周从每天{minutes}分钟开始",
+  "walkingWeeklyTargetLabel": "每周目标:{minutes}分钟 (WHO 基线)",
+  "walkingBmiLabel": "BMI:{value}",
+  "walkingWeekTitle": "第{n}周",
+  "walkingReferencesTitle": "科学来源",
+  "walkingReferencesHint": "本计划遵循 WHO 2020、ACSM 2011 以及步行 meta 分析 (Murtagh 2015)。完整引用请见证据标签。",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

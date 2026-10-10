@@ -449,5 +449,49 @@
   "themeLight": "Cerah",
   "themeDark": "Gelap",
   "settingsLanguage": "Bahasa",
-  "settingsMore": "Lagi"
+  "settingsMore": "Lagi",
+  "navWalking": "Pelan berjalan",
+  "walkingPersonalizedForYou": "Disesuaikan untuk anda",
+  "walkingIntensityLabel": "Keamatan permulaan: {level}",
+  "walkingStartMinutesLabel": "Minggu 1 bermula pada {minutes} min/hari",
+  "walkingWeeklyTargetLabel": "Sasaran mingguan: {minutes} min (asas WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Minggu {n}",
+  "walkingReferencesTitle": "Sumber saintifik",
+  "walkingReferencesHint": "Pelan mengikut WHO 2020, ACSM 2011 dan meta-analisis berjalan (Murtagh 2015). Lihat tab Bukti untuk petikan penuh.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

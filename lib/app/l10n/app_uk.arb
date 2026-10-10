@@ -229,5 +229,49 @@
   "themeLight": "Світла",
   "themeDark": "Темна",
   "settingsLanguage": "Мова",
-  "settingsMore": "Ще"
+  "settingsMore": "Ще",
+  "navWalking": "План ходьби",
+  "walkingPersonalizedForYou": "Для вас",
+  "walkingIntensityLabel": "Початкова інтенсивність: {level}",
+  "walkingStartMinutesLabel": "1-й тиждень починається з {minutes} хв/день",
+  "walkingWeeklyTargetLabel": "Тижнева мета: {minutes} хв (база ВООЗ)",
+  "walkingBmiLabel": "ІМТ: {value}",
+  "walkingWeekTitle": "Тиждень {n}",
+  "walkingReferencesTitle": "Наукові джерела",
+  "walkingReferencesHint": "План базується на ВООЗ 2020, ACSM 2011 та мета-аналізі ходьби (Murtagh 2015). Повні цитати у вкладці Докази.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

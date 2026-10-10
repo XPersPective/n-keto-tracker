@@ -449,5 +449,49 @@
   "themeLight": "အလင်း",
   "themeDark": "အမှောင်",
   "settingsLanguage": "ဘာသာစကား",
-  "settingsMore": "နောက်ထပ်"
+  "settingsMore": "နောက်ထပ်",
+  "navWalking": "လမ်းလျှောက်အစီအစဉ်",
+  "walkingPersonalizedForYou": "သင့်အတွက် စိတ်ကြိုက်",
+  "walkingIntensityLabel": "စတင်သည့် ပြင်းထန်မှု: {level}",
+  "walkingStartMinutesLabel": "အပတ် ၁ ကို {minutes} မိနစ်/နေ့ဖြင့် စတင်သည်",
+  "walkingWeeklyTargetLabel": "အပတ်စဉ် ပန်းတိုင်: {minutes} မိနစ် (WHO အခြေခံ)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "အပတ် {n}",
+  "walkingReferencesTitle": "သိပ္ပံ အရင်းအမြစ်များ",
+  "walkingReferencesHint": "ဤအစီအစဉ်သည် WHO 2020, ACSM 2011 နှင့် လမ်းလျှောက်ခြင်း meta-analysis (Murtagh 2015) ကို လိုက်နာသည်။ အပြည့်အစုံ ကိုးကားချက်များအတွက် သက်သေ tab ကို ကြည့်ပါ။",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

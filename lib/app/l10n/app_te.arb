@@ -449,5 +449,49 @@
   "themeLight": "లైట్",
   "themeDark": "డార్క్",
   "settingsLanguage": "భాష",
-  "settingsMore": "మరిన్ని"
+  "settingsMore": "మరిన్ని",
+  "navWalking": "నడక ప్రణాళిక",
+  "walkingPersonalizedForYou": "మీ కోసం వ్యక్తిగతీకరించబడింది",
+  "walkingIntensityLabel": "ప్రారంభ తీవ్రత: {level}",
+  "walkingStartMinutesLabel": "వారం 1 {minutes} నిమి/రోజుతో ప్రారంభమవుతుంది",
+  "walkingWeeklyTargetLabel": "వారపు లక్ష్యం: {minutes} నిమి (WHO ప్రాతిపదిక)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "వారం {n}",
+  "walkingReferencesTitle": "శాస్త్రీయ మూలాలు",
+  "walkingReferencesHint": "ప్రణాళిక WHO 2020, ACSM 2011 మరియు నడక meta-analysis (Murtagh 2015) ను అనుసరిస్తుంది. పూర్తి ఉటంకనల కోసం ఆధారాల ట్యాబ్ చూడండి.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

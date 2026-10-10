@@ -449,5 +449,49 @@
   "themeLight": "روشن",
   "themeDark": "تیره",
   "settingsLanguage": "زبان",
-  "settingsMore": "بیشتر"
+  "settingsMore": "بیشتر",
+  "navWalking": "برنامه پیاده‌روی",
+  "walkingPersonalizedForYou": "شخصی‌سازی‌شده برای شما",
+  "walkingIntensityLabel": "شدت شروع: {level}",
+  "walkingStartMinutesLabel": "هفته ۱ با {minutes} دقیقه در روز شروع می‌شود",
+  "walkingWeeklyTargetLabel": "هدف هفتگی: {minutes} دقیقه (پایه سازمان بهداشت جهانی)",
+  "walkingBmiLabel": "شاخص توده بدنی: {value}",
+  "walkingWeekTitle": "هفته {n}",
+  "walkingReferencesTitle": "منابع علمی",
+  "walkingReferencesHint": "این برنامه از راهنمای سازمان بهداشت جهانی ۲۰۲۰، ACSM 2011 و فرا‌تحلیل پیاده‌روی (Murtagh 2015) پیروی می‌کند. برای استنادهای کامل به زبانه شواهد مراجعه کنید.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

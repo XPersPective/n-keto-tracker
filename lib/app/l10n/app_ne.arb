@@ -449,5 +449,49 @@
   "themeLight": "लाइट",
   "themeDark": "डार्क",
   "settingsLanguage": "भाषा",
-  "settingsMore": "थप"
+  "settingsMore": "थप",
+  "navWalking": "हिँड्ने योजना",
+  "walkingPersonalizedForYou": "तपाईंको लागि व्यक्तिगत",
+  "walkingIntensityLabel": "सुरुवाती तीव्रता: {level}",
+  "walkingStartMinutesLabel": "हप्ता 1 {minutes} मिनेट/दिन बाट सुरु हुन्छ",
+  "walkingWeeklyTargetLabel": "साप्ताहिक लक्ष्य: {minutes} मिनेट (WHO आधार)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "हप्ता {n}",
+  "walkingReferencesTitle": "वैज्ञानिक स्रोतहरू",
+  "walkingReferencesHint": "योजनाले WHO 2020, ACSM 2011 र हिँड्ने मेटा-विश्लेषण (Murtagh 2015) पालना गर्छ। पूर्ण उद्धरणको लागि प्रमाण ट्याब हेर्नुहोस्।",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

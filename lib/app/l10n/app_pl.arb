@@ -229,5 +229,49 @@
   "themeLight": "Jasny",
   "themeDark": "Ciemny",
   "settingsLanguage": "Język",
-  "settingsMore": "Więcej"
+  "settingsMore": "Więcej",
+  "navWalking": "Plan spacerów",
+  "walkingPersonalizedForYou": "Spersonalizowany dla ciebie",
+  "walkingIntensityLabel": "Początkowa intensywność: {level}",
+  "walkingStartMinutesLabel": "Tydzień 1 zaczyna się od {minutes} min/dzień",
+  "walkingWeeklyTargetLabel": "Cel tygodniowy: {minutes} min (baza WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Tydzień {n}",
+  "walkingReferencesTitle": "Źródła naukowe",
+  "walkingReferencesHint": "Plan opiera się na WHO 2020, ACSM 2011 oraz metaanalizie spacerów (Murtagh 2015). Pełne cytaty w zakładce Dowody.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

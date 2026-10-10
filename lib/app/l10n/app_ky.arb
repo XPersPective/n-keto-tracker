@@ -449,5 +449,49 @@
   "themeLight": "Жарык",
   "themeDark": "Караңгы",
   "settingsLanguage": "Тил",
-  "settingsMore": "Дагы"
+  "settingsMore": "Дагы",
+  "navWalking": "Жөнөкөй басуу планы",
+  "walkingPersonalizedForYou": "Сиз үчүн жекелештирилген",
+  "walkingIntensityLabel": "Баштапкы интенсивдүүлүк: {level}",
+  "walkingStartMinutesLabel": "1-жума {minutes} мин/күндөн башталат",
+  "walkingWeeklyTargetLabel": "Жумалык максат: {minutes} мин (ДССУ негизи)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "{n}-жума",
+  "walkingReferencesTitle": "Илимий булактар",
+  "walkingReferencesHint": "План ДССУ 2020, ACSM 2011 жана басуу мета-талдоосуна (Murtagh 2015) негизделген. Толук шилтемелер үчүн Далилдер кошумча барагын караңыз.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

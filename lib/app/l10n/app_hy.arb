@@ -449,5 +449,49 @@
   "themeLight": "Բաց",
   "themeDark": "Մուգ",
   "settingsLanguage": "Լեզու",
-  "settingsMore": "Ավելին"
+  "settingsMore": "Ավելին",
+  "navWalking": "Քայլելու պլան",
+  "walkingPersonalizedForYou": "Անհատական քեզ համար",
+  "walkingIntensityLabel": "Սկզբնական ինտենսիվություն՝ {level}",
+  "walkingStartMinutesLabel": "1-ին շաբաթը սկսվում է {minutes} րոպե/օր",
+  "walkingWeeklyTargetLabel": "Շաբաթական նպատակ՝ {minutes} րոպե (ԱՀԿ հիմք)",
+  "walkingBmiLabel": "BMI՝ {value}",
+  "walkingWeekTitle": "Շաբաթ {n}",
+  "walkingReferencesTitle": "Գիտական աղբյուրներ",
+  "walkingReferencesHint": "Պլանը հետևում է ԱՀԿ 2020, ACSM 2011 և քայլելու մետա-վերլուծությանը (Murtagh 2015)։ Ամբողջական մեջբերումները տե՛ս Ապացույցներ բաժնում։",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

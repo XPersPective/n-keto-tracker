@@ -449,5 +449,49 @@
   "themeLight": "ലൈറ്റ്",
   "themeDark": "ഡാർക്ക്",
   "settingsLanguage": "ഭാഷ",
-  "settingsMore": "കൂടുതൽ"
+  "settingsMore": "കൂടുതൽ",
+  "navWalking": "നടത്ത പദ്ധതി",
+  "walkingPersonalizedForYou": "നിങ്ങൾക്കായി വ്യക്തിഗതമാക്കിയത്",
+  "walkingIntensityLabel": "ആരംഭ തീവ്രത: {level}",
+  "walkingStartMinutesLabel": "ആഴ്ച 1 ആരംഭിക്കുന്നത് {minutes} മിനിറ്റ്/ദിവസം",
+  "walkingWeeklyTargetLabel": "ആഴ്ചത്തെ ലക്ഷ്യം: {minutes} മിനിറ്റ് (WHO അടിസ്ഥാനം)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "ആഴ്ച {n}",
+  "walkingReferencesTitle": "ശാസ്ത്രീയ സ്രോതസ്സുകൾ",
+  "walkingReferencesHint": "പദ്ധതി WHO 2020, ACSM 2011, നടത്ത മെറ്റാ-വിശകലനം (Murtagh 2015) എന്നിവ പിന്തുടരുന്നു. പൂർണ്ണ ഉദ്ധരണികൾക്ക് Evidence ടാബ് കാണുക.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

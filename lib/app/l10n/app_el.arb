@@ -449,5 +449,49 @@
   "themeLight": "Φωτεινό",
   "themeDark": "Σκούρο",
   "settingsLanguage": "Γλώσσα",
-  "settingsMore": "Περισσότερα"
+  "settingsMore": "Περισσότερα",
+  "navWalking": "Πλάνο περπατήματος",
+  "walkingPersonalizedForYou": "Εξατομικευμένο για σένα",
+  "walkingIntensityLabel": "Αρχική ένταση: {level}",
+  "walkingStartMinutesLabel": "Η εβδομάδα 1 ξεκινά με {minutes} λεπτά/ημέρα",
+  "walkingWeeklyTargetLabel": "Εβδομαδιαίος στόχος: {minutes} λεπτά (βάση ΠΟΥ)",
+  "walkingBmiLabel": "ΔΜΣ: {value}",
+  "walkingWeekTitle": "Εβδομάδα {n}",
+  "walkingReferencesTitle": "Επιστημονικές πηγές",
+  "walkingReferencesHint": "Το πλάνο ακολουθεί τις οδηγίες ΠΟΥ 2020, ACSM 2011 και τη μετα-ανάλυση περπατήματος (Murtagh 2015). Δες τις πλήρεις παραπομπές στην καρτέλα Στοιχεία.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

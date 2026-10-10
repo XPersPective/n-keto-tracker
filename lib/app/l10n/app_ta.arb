@@ -449,5 +449,49 @@
   "themeLight": "ஒளி",
   "themeDark": "இருண்ட",
   "settingsLanguage": "மொழி",
-  "settingsMore": "மேலும்"
+  "settingsMore": "மேலும்",
+  "navWalking": "நடைத்திட்டம்",
+  "walkingPersonalizedForYou": "உங்களுக்காக தனிப்பயனாக்கப்பட்டது",
+  "walkingIntensityLabel": "தொடக்க தீவிரம்: {level}",
+  "walkingStartMinutesLabel": "வாரம் 1 {minutes} நிமி/நாள் இல் தொடங்குகிறது",
+  "walkingWeeklyTargetLabel": "வாராந்திர இலக்கு: {minutes} நிமி (WHO அடிப்படை)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "வாரம் {n}",
+  "walkingReferencesTitle": "அறிவியல் ஆதாரங்கள்",
+  "walkingReferencesHint": "திட்டம் WHO 2020, ACSM 2011 மற்றும் நடை meta-analysis (Murtagh 2015) ஐப் பின்பற்றுகிறது. முழு மேற்கோள்களுக்கு சான்று தாவலைப் பார்க்கவும்.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

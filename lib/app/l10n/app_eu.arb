@@ -449,5 +449,49 @@
   "themeLight": "Argia",
   "themeDark": "Iluna",
   "settingsLanguage": "Hizkuntza",
-  "settingsMore": "Gehiago"
+  "settingsMore": "Gehiago",
+  "navWalking": "Ibiltaldi plana",
+  "walkingPersonalizedForYou": "Zuretzat pertsonalizatua",
+  "walkingIntensityLabel": "Hasierako intentsitatea: {level}",
+  "walkingStartMinutesLabel": "1. astea {minutes} min/egun hasten da",
+  "walkingWeeklyTargetLabel": "Astean helburua: {minutes} min (OME oinarria)",
+  "walkingBmiLabel": "GMI: {value}",
+  "walkingWeekTitle": "{n}. astea",
+  "walkingReferencesTitle": "Iturri zientifikoak",
+  "walkingReferencesHint": "Planak OME 2020, ACSM 2011 eta ibiltaldi metaanalisia (Murtagh 2015) jarraitzen ditu. Erreferentzia osoak ikusteko, joan Ebidentzia fitxara.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

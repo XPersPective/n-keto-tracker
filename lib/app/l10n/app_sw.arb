@@ -449,5 +449,49 @@
   "themeLight": "Mwanga",
   "themeDark": "Giza",
   "settingsLanguage": "Lugha",
-  "settingsMore": "Zaidi"
+  "settingsMore": "Zaidi",
+  "navWalking": "Mpango wa kutembea",
+  "walkingPersonalizedForYou": "Imebinafsishwa kwako",
+  "walkingIntensityLabel": "Ukali wa kuanza: {level}",
+  "walkingStartMinutesLabel": "Wiki ya 1 inaanza na {minutes} dakika/siku",
+  "walkingWeeklyTargetLabel": "Lengo la kila wiki: {minutes} dakika (msingi wa WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Wiki {n}",
+  "walkingReferencesTitle": "Vyanzo vya kisayansi",
+  "walkingReferencesHint": "Mpango unafuata WHO 2020, ACSM 2011 na meta-analysis ya kutembea (Murtagh 2015). Tazama kichupo cha Ushahidi kwa marejeleo kamili.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

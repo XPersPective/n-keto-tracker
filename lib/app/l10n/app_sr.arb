@@ -449,5 +449,49 @@
   "themeLight": "Светла",
   "themeDark": "Тамна",
   "settingsLanguage": "Језик",
-  "settingsMore": "Више"
+  "settingsMore": "Више",
+  "navWalking": "План ходања",
+  "walkingPersonalizedForYou": "Прилагођено теби",
+  "walkingIntensityLabel": "Почетни интензитет: {level}",
+  "walkingStartMinutesLabel": "1. недеља почиње са {minutes} мин/дан",
+  "walkingWeeklyTargetLabel": "Недељни циљ: {minutes} мин (база СЗО)",
+  "walkingBmiLabel": "ИТМ: {value}",
+  "walkingWeekTitle": "Недеља {n}",
+  "walkingReferencesTitle": "Научни извори",
+  "walkingReferencesHint": "План прати СЗО 2020, ACSM 2011 и мета-анализу ходања (Murtagh 2015). За потпуне цитате погледајте картицу Докази.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

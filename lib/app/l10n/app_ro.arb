@@ -449,5 +449,49 @@
   "themeLight": "Luminos",
   "themeDark": "Întunecat",
   "settingsLanguage": "Limbă",
-  "settingsMore": "Mai multe"
+  "settingsMore": "Mai multe",
+  "navWalking": "Plan de mers",
+  "walkingPersonalizedForYou": "Personalizat pentru tine",
+  "walkingIntensityLabel": "Intensitate inițială: {level}",
+  "walkingStartMinutesLabel": "Săptămâna 1 începe cu {minutes} min/zi",
+  "walkingWeeklyTargetLabel": "Obiectiv săptămânal: {minutes} min (bază OMS)",
+  "walkingBmiLabel": "IMC: {value}",
+  "walkingWeekTitle": "Săptămâna {n}",
+  "walkingReferencesTitle": "Surse științifice",
+  "walkingReferencesHint": "Planul urmează OMS 2020, ACSM 2011 și meta-analiza mersului (Murtagh 2015). Vezi fila Dovezi pentru citate complete.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

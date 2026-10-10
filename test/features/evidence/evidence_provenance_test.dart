@@ -12,8 +12,8 @@ void main() {
   ) as Map<String, dynamic>;
   final sources = (doc['sources'] as List).cast<Map<String, dynamic>>();
 
-  test('7 kaynak mevcut', () {
-    expect(sources.length, 7);
+  test('en az 10 kanıt kaynağı mevcut (PB-026: +3 yürüyüş kanıtı)', () {
+    expect(sources.length, greaterThanOrEqualTo(10));
   });
 
   test('her kaynakta provenance alanlarının tamamı dolu', () {
@@ -45,7 +45,7 @@ void main() {
       }
       // En az bir tanımlayıcı (doi/pmid/pmcid).
       expect(
-        (s['doi'] ?? s['pmid'] ?? s['pmcid'] ?? ''),
+        (s['doi'] ?? s['pmid'] ?? s['pmcid'] ?? '').toString(),
         isNotEmpty,
         reason: '${s['id']}: en az bir tanımlayıcı olmalı',
       );

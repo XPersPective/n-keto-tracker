@@ -449,5 +449,49 @@
   "themeLight": "Ашық",
   "themeDark": "Күңгірт",
   "settingsLanguage": "Тіл",
-  "settingsMore": "Қосымша"
+  "settingsMore": "Қосымша",
+  "navWalking": "Жүру жоспары",
+  "walkingPersonalizedForYou": "Сізге арнайы",
+  "walkingIntensityLabel": "Бастапқы қарқындылық: {level}",
+  "walkingStartMinutesLabel": "1-апта {minutes} мин/күннен басталады",
+  "walkingWeeklyTargetLabel": "Апталық мақсат: {minutes} мин (ДДҰ негізі)",
+  "walkingBmiLabel": "ДСИ: {value}",
+  "walkingWeekTitle": "{n}-апта",
+  "walkingReferencesTitle": "Ғылыми дереккөздер",
+  "walkingReferencesHint": "Жоспар ДДҰ 2020, ACSM 2011 және жүру мета-талдауына (Murtagh 2015) негізделген. Толық дәйексөздер үшін Дәлелдер қойындысын қараңыз.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

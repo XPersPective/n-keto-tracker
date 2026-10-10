@@ -229,5 +229,49 @@
   "themeLight": "ライト",
   "themeDark": "ダーク",
   "settingsLanguage": "言語",
-  "settingsMore": "その他"
+  "settingsMore": "その他",
+  "navWalking": "ウォーキング計画",
+  "walkingPersonalizedForYou": "あなた専用に調整",
+  "walkingIntensityLabel": "開始時の強度: {level}",
+  "walkingStartMinutesLabel": "1週目は1日{minutes}分から開始",
+  "walkingWeeklyTargetLabel": "週間目標: {minutes}分 (WHO基準)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "{n}週目",
+  "walkingReferencesTitle": "科学的根拠",
+  "walkingReferencesHint": "本計画はWHO 2020、ACSM 2011、ウォーキングのメタ分析 (Murtagh 2015) に基づきます。詳細はエビデンスタブを参照してください。",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

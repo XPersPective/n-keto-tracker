@@ -449,5 +449,49 @@
   "themeLight": "Açıq",
   "themeDark": "Tünd",
   "settingsLanguage": "Dil",
-  "settingsMore": "Daha çox"
+  "settingsMore": "Daha çox",
+  "navWalking": "Gəzinti planı",
+  "walkingPersonalizedForYou": "Sizin üçün fərdiləşdirilmiş",
+  "walkingIntensityLabel": "Başlanğıc intensivliyi: {level}",
+  "walkingStartMinutesLabel": "1-ci həftə {minutes} dəq/gün ilə başlayır",
+  "walkingWeeklyTargetLabel": "Həftəlik hədəf: {minutes} dəq (ÜST baza)",
+  "walkingBmiLabel": "BKİ: {value}",
+  "walkingWeekTitle": "Həftə {n}",
+  "walkingReferencesTitle": "Elmi mənbələr",
+  "walkingReferencesHint": "Plan ÜST 2020, ACSM 2011 və gəzinti meta-analizini (Murtagh 2015) izləyir. Tam istinadlar üçün Sübutlar bölməsinə baxın.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

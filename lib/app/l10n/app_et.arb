@@ -449,5 +449,49 @@
   "themeLight": "Hele",
   "themeDark": "Tume",
   "settingsLanguage": "Keel",
-  "settingsMore": "Rohkem"
+  "settingsMore": "Rohkem",
+  "navWalking": "Kõnnniplaan",
+  "walkingPersonalizedForYou": "Sulle isikupärastatud",
+  "walkingIntensityLabel": "Algne intensiivsus: {level}",
+  "walkingStartMinutesLabel": "1. nädal algab {minutes} min/päevas",
+  "walkingWeeklyTargetLabel": "Nädalane eesmärk: {minutes} min (WHO alus)",
+  "walkingBmiLabel": "KMI: {value}",
+  "walkingWeekTitle": "Nädal {n}",
+  "walkingReferencesTitle": "Teaduslikud allikad",
+  "walkingReferencesHint": "Plaan järgib WHO 2020, ACSM 2011 ja kõnni metaanalüüsi (Murtagh 2015). Täielikud viited vaata Tõendid vahekaardilt.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

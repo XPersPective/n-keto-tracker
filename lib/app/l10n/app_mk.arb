@@ -449,5 +449,49 @@
   "themeLight": "Светла",
   "themeDark": "Темна",
   "settingsLanguage": "Јазик",
-  "settingsMore": "Повеќе"
+  "settingsMore": "Повеќе",
+  "navWalking": "План за одење",
+  "walkingPersonalizedForYou": "Прилагодено за тебе",
+  "walkingIntensityLabel": "Почетен интензитет: {level}",
+  "walkingStartMinutesLabel": "1. недела почнува со {minutes} мин/ден",
+  "walkingWeeklyTargetLabel": "Неделна цел: {minutes} мин (база на СЗО)",
+  "walkingBmiLabel": "ИТМ: {value}",
+  "walkingWeekTitle": "Недела {n}",
+  "walkingReferencesTitle": "Научни извори",
+  "walkingReferencesHint": "Планот се заснова на СЗО 2020, ACSM 2011 и мета-анализа за одење (Murtagh 2015). За целосни цитати видете ја картичката Докази.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

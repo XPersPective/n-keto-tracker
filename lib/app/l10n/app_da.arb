@@ -449,5 +449,49 @@
   "themeLight": "Lyst",
   "themeDark": "Mørkt",
   "settingsLanguage": "Sprog",
-  "settingsMore": "Mere"
+  "settingsMore": "Mere",
+  "navWalking": "Gangplan",
+  "walkingPersonalizedForYou": "Personlig til dig",
+  "walkingIntensityLabel": "Startintensitet: {level}",
+  "walkingStartMinutesLabel": "Uge 1 starter med {minutes} min/dag",
+  "walkingWeeklyTargetLabel": "Ugentligt mål: {minutes} min (WHO-basis)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Uge {n}",
+  "walkingReferencesTitle": "Videnskabelige kilder",
+  "walkingReferencesHint": "Planen følger WHO 2020, ACSM 2011 og gang-metaanalyse (Murtagh 2015). Se Evidens-fanen for fulde citater.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

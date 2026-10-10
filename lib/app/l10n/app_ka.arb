@@ -449,5 +449,49 @@
   "themeLight": "ღია",
   "themeDark": "მუქი",
   "settingsLanguage": "ენა",
-  "settingsMore": "მეტი"
+  "settingsMore": "მეტი",
+  "navWalking": "სიარულის გეგმა",
+  "walkingPersonalizedForYou": "შენთვის მორგებული",
+  "walkingIntensityLabel": "საწყისი ინტენსივობა: {level}",
+  "walkingStartMinutesLabel": "პირველი კვირა იწყება {minutes} წთ/დღეში",
+  "walkingWeeklyTargetLabel": "კვირის მიზანი: {minutes} წთ (WHO საფუძველი)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "კვირა {n}",
+  "walkingReferencesTitle": "სამეცნიერო წყაროები",
+  "walkingReferencesHint": "გეგმა ეყრდნობა WHO 2020-ს, ACSM 2011-ს და სიარულის მეტა-ანალიზს (Murtagh 2015). სრული ციტატებისთვის იხილეთ მტკიცებულების ჩანართი.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -449,5 +449,49 @@
   "themeLight": "Okukhanyayo",
   "themeDark": "Okumnyama",
   "settingsLanguage": "Ulimi",
-  "settingsMore": "Okungaphezulu"
+  "settingsMore": "Okungaphezulu",
+  "navWalking": "Uhlelo lokuhamba",
+  "walkingPersonalizedForYou": "Lwenziwe ngezifiso zakho",
+  "walkingIntensityLabel": "Ubukhali obokuqala: {level}",
+  "walkingStartMinutesLabel": "Iviki 1 iqala ngo-{minutes} imizuzu/usuku",
+  "walkingWeeklyTargetLabel": "Inhloso yeviki: {minutes} imizuzu (isisekelo se-WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Iviki {n}",
+  "walkingReferencesTitle": "Izithombo zesayensi",
+  "walkingReferencesHint": "Uhlelo lulandela i-WHO 2020, i-ACSM 2011 kanye ne-meta-analysis yokuhamba (Murtagh 2015). Bheka ithebhu Yobufakazi ukuze uthole ukucaphuna okugcwele.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -449,5 +449,49 @@
   "themeLight": "Svijetla",
   "themeDark": "Tamna",
   "settingsLanguage": "Jezik",
-  "settingsMore": "Više"
+  "settingsMore": "Više",
+  "navWalking": "Plan hodanja",
+  "walkingPersonalizedForYou": "Prilagođeno tebi",
+  "walkingIntensityLabel": "Početni intenzitet: {level}",
+  "walkingStartMinutesLabel": "1. tjedan počinje s {minutes} min/dan",
+  "walkingWeeklyTargetLabel": "Tjedni cilj: {minutes} min (WHO baza)",
+  "walkingBmiLabel": "ITM: {value}",
+  "walkingWeekTitle": "Tjedan {n}",
+  "walkingReferencesTitle": "Znanstveni izvori",
+  "walkingReferencesHint": "Plan slijedi WHO 2020, ACSM 2011 i metaanalizu hodanja (Murtagh 2015). Potpune citate vidi na kartici Dokazi.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

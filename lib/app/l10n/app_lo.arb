@@ -449,5 +449,49 @@
   "themeLight": "ສະຫວ່າງ",
   "themeDark": "ມືດ",
   "settingsLanguage": "ພາສາ",
-  "settingsMore": "ເພີ່ມເຕີມ"
+  "settingsMore": "ເພີ່ມເຕີມ",
+  "navWalking": "ແຜນການຍ່າງ",
+  "walkingPersonalizedForYou": "ປັບແຕ່ງສໍາລັບທ່ານ",
+  "walkingIntensityLabel": "ຄວາມເຂັ້ມຂົ້ນເລີ່ມຕົ້ນ: {level}",
+  "walkingStartMinutesLabel": "ອາທິດ 1 ເລີ່ມຕົ້ນທີ່ {minutes} ນາທີ/ມື້",
+  "walkingWeeklyTargetLabel": "ເປົ້າໝາຍອາທິດ: {minutes} ນາທີ (ພື້ນຖານ WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "ອາທິດ {n}",
+  "walkingReferencesTitle": "ແຫຼ່ງອ້າງອິງທາງວິທະຍາສາດ",
+  "walkingReferencesHint": "ແຜນນີ້ອີງຕາມ WHO 2020, ACSM 2011 ແລະ meta-analysis ການຍ່າງ (Murtagh 2015). ເບິ່ງແຖບຫຼັກຖານສໍາລັບການອ້າງອິງເຕັມ.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

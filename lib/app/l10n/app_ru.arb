@@ -229,5 +229,49 @@
   "themeLight": "Светлая",
   "themeDark": "Тёмная",
   "settingsLanguage": "Язык",
-  "settingsMore": "Ещё"
+  "settingsMore": "Ещё",
+  "navWalking": "План ходьбы",
+  "walkingPersonalizedForYou": "Для вас",
+  "walkingIntensityLabel": "Начальная интенсивность: {level}",
+  "walkingStartMinutesLabel": "1-я неделя начинается с {minutes} мин/день",
+  "walkingWeeklyTargetLabel": "Недельная цель: {minutes} мин (база ВОЗ)",
+  "walkingBmiLabel": "ИМТ: {value}",
+  "walkingWeekTitle": "Неделя {n}",
+  "walkingReferencesTitle": "Научные источники",
+  "walkingReferencesHint": "План основан на ВОЗ 2020, ACSM 2011 и мета-анализе ходьбы (Murtagh 2015). Полные цитаты во вкладке Доказательства.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

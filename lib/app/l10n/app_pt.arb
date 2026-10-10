@@ -229,5 +229,49 @@
   "themeLight": "Claro",
   "themeDark": "Escuro",
   "settingsLanguage": "Idioma",
-  "settingsMore": "Mais"
+  "settingsMore": "Mais",
+  "navWalking": "Plano de caminhada",
+  "walkingPersonalizedForYou": "Personalizado para você",
+  "walkingIntensityLabel": "Intensidade inicial: {level}",
+  "walkingStartMinutesLabel": "A semana 1 começa com {minutes} min/dia",
+  "walkingWeeklyTargetLabel": "Meta semanal: {minutes} min (base OMS)",
+  "walkingBmiLabel": "IMC: {value}",
+  "walkingWeekTitle": "Semana {n}",
+  "walkingReferencesTitle": "Fontes científicas",
+  "walkingReferencesHint": "O plano segue OMS 2020, ACSM 2011 e a meta-análise de caminhada (Murtagh 2015). Veja a aba Evidências para citações completas.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

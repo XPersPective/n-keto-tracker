@@ -197,6 +197,50 @@
   "todayLatestEmpty": "No measurements yet. Use 'Add measurement' to record glucose and ketone BHB together.",
   "todayNutritionTitle": "Today's nutrition",
   "todayNutritionEmpty": "No meals recorded today. Use the quick actions above to add one.",
+  "navWalking": "Walking plan",
+  "walkingPersonalizedForYou": "Personalized for you",
+  "walkingIntensityLabel": "Starting intensity: {level}",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "walkingStartMinutesLabel": "Week 1 starts at {minutes} min/day",
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "walkingWeeklyTargetLabel": "Weekly target: {minutes} min (WHO baseline)",
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "walkingBmiLabel": "BMI: {value}",
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "walkingWeekTitle": "Week {n}",
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "walkingReferencesTitle": "Scientific sources",
+  "walkingReferencesHint": "Plan follows WHO 2020, ACSM 2011 and walking meta-analysis (Murtagh 2015). See the Evidence tab for full citations.",
   "todayWeightTitle": "Weight",
   "todayWeightEmpty": "No weight entries yet.",
   "todaySymptomsTitle": "Today's symptoms",

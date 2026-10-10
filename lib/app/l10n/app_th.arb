@@ -449,5 +449,49 @@
   "themeLight": "สว่าง",
   "themeDark": "มืด",
   "settingsLanguage": "ภาษา",
-  "settingsMore": "เพิ่มเติม"
+  "settingsMore": "เพิ่มเติม",
+  "navWalking": "แผนการเดิน",
+  "walkingPersonalizedForYou": "ปรับให้เหมาะกับคุณ",
+  "walkingIntensityLabel": "ความเข้มข้นเริ่มต้น: {level}",
+  "walkingStartMinutesLabel": "สัปดาห์ที่ 1 เริ่มต้นที่ {minutes} นาที/วัน",
+  "walkingWeeklyTargetLabel": "เป้าหมายรายสัปดาห์: {minutes} นาที (พื้นฐาน WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "สัปดาห์ที่ {n}",
+  "walkingReferencesTitle": "แหล่งอ้างอิงทางวิทยาศาสตร์",
+  "walkingReferencesHint": "แผนนี้อิงตาม WHO 2020, ACSM 2011 และการวิเคราะห์เมตาการเดิน (Murtagh 2015) ดูแท็บหลักฐานสำหรับการอ้างอิงฉบับเต็ม",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

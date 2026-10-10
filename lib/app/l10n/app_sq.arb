@@ -449,5 +449,49 @@
   "themeLight": "E çelët",
   "themeDark": "E errët",
   "settingsLanguage": "Gjuha",
-  "settingsMore": "Më shumë"
+  "settingsMore": "Më shumë",
+  "navWalking": "Plan ecjeje",
+  "walkingPersonalizedForYou": "Personalizuar për ty",
+  "walkingIntensityLabel": "Intensiteti fillestar: {level}",
+  "walkingStartMinutesLabel": "Java 1 fillon me {minutes} min/ditë",
+  "walkingWeeklyTargetLabel": "Objektiv javor: {minutes} min (bazë OBSH)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Java {n}",
+  "walkingReferencesTitle": "Burime shkencore",
+  "walkingReferencesHint": "Plani ndjek OBSH 2020, ACSM 2011 dhe meta-analizën e ecjes (Murtagh 2015). Shih skedën Dëshmi për citate të plota.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

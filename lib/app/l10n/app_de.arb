@@ -229,5 +229,49 @@
   "themeLight": "Hell",
   "themeDark": "Dunkel",
   "settingsLanguage": "Sprache",
-  "settingsMore": "Mehr"
+  "settingsMore": "Mehr",
+  "navWalking": "Schrittplan",
+  "walkingPersonalizedForYou": "Personalisiert für dich",
+  "walkingIntensityLabel": "Startintensität: {level}",
+  "walkingStartMinutesLabel": "Woche 1 startet mit {minutes} min/Tag",
+  "walkingWeeklyTargetLabel": "Wöchentliches Ziel: {minutes} min (WHO-Basis)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Woche {n}",
+  "walkingReferencesTitle": "Wissenschaftliche Quellen",
+  "walkingReferencesHint": "Der Plan folgt WHO 2020, ACSM 2011 und der Walking-Metaanalyse (Murtagh 2015). Vollständige Zitate im Evidenz-Tab.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

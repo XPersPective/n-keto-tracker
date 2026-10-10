@@ -449,5 +449,49 @@
   "themeLight": "Light",
   "themeDark": "Dark",
   "settingsLanguage": "Wika",
-  "settingsMore": "Higit pa"
+  "settingsMore": "Higit pa",
+  "navWalking": "Plano sa paglalakad",
+  "walkingPersonalizedForYou": "I-personalize para sa iyo",
+  "walkingIntensityLabel": "Simula na intensity: {level}",
+  "walkingStartMinutesLabel": "Linggo 1 nagsisimula sa {minutes} min/araw",
+  "walkingWeeklyTargetLabel": "Lingguhang layunin: {minutes} min (baseline ng WHO)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "Linggo {n}",
+  "walkingReferencesTitle": "Siyentipikong sanggunian",
+  "walkingReferencesHint": "Ang plano ay sumusunod sa WHO 2020, ACSM 2011 at walking meta-analysis (Murtagh 2015). Tingnan ang Evidence tab para sa kumpletong mga citation.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

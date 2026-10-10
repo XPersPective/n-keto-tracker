@@ -229,5 +229,49 @@
   "themeLight": "فاتح",
   "themeDark": "داكن",
   "settingsLanguage": "اللغة",
-  "settingsMore": "المزيد"
+  "settingsMore": "المزيد",
+  "navWalking": "خطة المشي",
+  "walkingPersonalizedForYou": "مخصصة لك",
+  "walkingIntensityLabel": "شدة البدء: {level}",
+  "walkingStartMinutesLabel": "يبدأ الأسبوع 1 بـ {minutes} دقيقة/يوم",
+  "walkingWeeklyTargetLabel": "الهدف الأسبوعي: {minutes} دقيقة (خط أساس منظمة الصحة العالمية)",
+  "walkingBmiLabel": "مؤشر كتلة الجسم: {value}",
+  "walkingWeekTitle": "الأسبوع {n}",
+  "walkingReferencesTitle": "مصادر علمية",
+  "walkingReferencesHint": "تتبع الخطة إرشادات منظمة الصحة العالمية 2020 و ACSM 2011 والتحليل البعدي للمشي (Murtagh 2015). راجع تبويب الأدلة للاقتباسات الكاملة.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

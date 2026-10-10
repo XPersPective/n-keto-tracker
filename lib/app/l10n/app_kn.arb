@@ -449,5 +449,49 @@
   "themeLight": "ಲೈಟ್",
   "themeDark": "ಡಾರ್ಕ್",
   "settingsLanguage": "ಭಾಷೆ",
-  "settingsMore": "ಇನ್ನಷ್ಟು"
+  "settingsMore": "ಇನ್ನಷ್ಟು",
+  "navWalking": "ನಡೆಯುವ ಯೋಜನೆ",
+  "walkingPersonalizedForYou": "ನಿಮಗಾಗಿ ವೈಯಕ್ತೀಕರಿಸಲಾಗಿದೆ",
+  "walkingIntensityLabel": "ಪ್ರಾರಂಭಿಕ ತೀವ್ರತೆ: {level}",
+  "walkingStartMinutesLabel": "ವಾರ 1 {minutes} ನಿಮಿಷ/ದಿನದಿಂದ ಪ್ರಾರಂಭ",
+  "walkingWeeklyTargetLabel": "ವಾರದ ಗುರಿ: {minutes} ನಿಮಿಷ (WHO ಮೂಲ)",
+  "walkingBmiLabel": "BMI: {value}",
+  "walkingWeekTitle": "ವಾರ {n}",
+  "walkingReferencesTitle": "ವೈಜ್ಞಾನಿಕ ಮೂಲಗಳು",
+  "walkingReferencesHint": "ಯೋಜನೆಯು WHO 2020, ACSM 2011 ಮತ್ತು ನಡೆಯುವ ಮೆಟಾ-ವಿಶ್ಲೇಷಣೆಯನ್ನು (Murtagh 2015) ಅನುಸರಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ ಉಲ್ಲೇಖಗಳಿಗಾಗಿ ಸಾಕ್ಷ್ಯ ಟ್ಯಾಬ್ ನೋಡಿ.",
+  "@walkingIntensityLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingStartMinutesLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingWeeklyTargetLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@walkingBmiLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "@walkingWeekTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
 }

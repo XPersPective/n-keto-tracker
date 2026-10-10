@@ -20,7 +20,11 @@ library;
 
 /// Bir günün yürüyüş reçetesi.
 class WalkingDay {
-  const WalkingDay({required this.week, required this.day, required this.minutes});
+  const WalkingDay({
+    required this.week,
+    required this.day,
+    required this.minutes,
+  });
 
   final int week; // 1..8
   final int day; // 1..7 (Pzt=1..Paz=7)
@@ -59,10 +63,7 @@ class WalkingPlan {
 
 /// BMI sınıflandırması (WHO): <18.5 düşük, 18.5–24.9 normal, 25–29.9
 /// fazla kilolu, ≥30 obez.
-double? computeBmi({
-  required double weightKg,
-  required double heightCm,
-}) {
+double? computeBmi({required double weightKg, required double heightCm}) {
   if (heightCm <= 0) return null;
   final m = heightCm / 100.0;
   return weightKg / (m * m);
@@ -70,10 +71,7 @@ double? computeBmi({
 
 /// Plan yoğunluğunu seç: hareketsiz (sedentary) + yüksek BMI → 'low';
 /// aksi → 'moderate'.
-String pickIntensity({
-  required String activityLevel,
-  required double? bmi,
-}) {
+String pickIntensity({required String activityLevel, required double? bmi}) {
   if (activityLevel == 'sedentary' || (bmi != null && bmi >= 32)) {
     return 'low';
   }
@@ -101,14 +99,8 @@ WalkingPlan buildWalkingPlan({
   final bmi = (heightCm != null && currentWeightKg != null)
       ? computeBmi(weightKg: currentWeightKg, heightCm: heightCm)
       : null;
-  final intensity = pickIntensity(
-    activityLevel: activityLevel,
-    bmi: bmi,
-  );
-  final start = pickStartMinutes(
-    activityLevel: activityLevel,
-    age: age,
-  );
+  final intensity = pickIntensity(activityLevel: activityLevel, bmi: bmi);
+  final start = pickStartMinutes(activityLevel: activityLevel, age: age);
   const target = 150; // WHO haftalık minimum (Moderate)
   final days = <WalkingDay>[];
 
@@ -131,11 +123,7 @@ WalkingPlan buildWalkingPlan({
     bmi: bmi ?? double.nan,
     intensity: intensity,
     days: days,
-    references: const [
-      'walk-acsm-2011',
-      'walk-murtagh-2015',
-      'walk-who-2020',
-    ],
+    references: const ['walk-acsm-2011', 'walk-murtagh-2015', 'walk-who-2020'],
   );
 }
 

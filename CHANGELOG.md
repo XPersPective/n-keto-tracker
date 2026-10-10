@@ -7,6 +7,9 @@ Changelog'a yakın tutulur; tarihler ISO 8601.
 
 ### Eklendi
 
+- Kişisel profile göre haftada beş gün kademeli hedef sunan, kaynakları
+  gösterilen isteğe bağlı 8 haftalık yürüyüş planı.
+
 - Aşama 0: pazar/rekabet araştırması (`docs/research/`), bilimsel kaynak
   doğrulama (EVIDENCE_VERIFICATION; 5. kaynağın ilk yazarı Amaral LJ olarak
   düzeltildi), gereksinim matrisi (105 REQ), tehdit modeli, kanıt içerik

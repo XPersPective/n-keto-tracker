@@ -95,8 +95,9 @@ void main() {
   // PB-023: TR yerelinde 5 öğün tipi etiketi kelime ortasından
   // kırılmadan tam görünür. Önceki SegmentedButton yapısı 1080 px
   // ekranda "Ka/hv/altı" üretiyordu.
-  testWidgets('PB-023: TR yerelinde 5 öğün tipi tam etiket görünür',
-      (tester) async {
+  testWidgets('PB-023: TR yerelinde 5 öğün tipi tam etiket görünür', (
+    tester,
+  ) async {
     await seedFood();
     // Emülatör genişliği: 1080x2400 mantıksal 360x800.
     tester.view.physicalSize = const Size(1080, 2400);

@@ -39,12 +39,8 @@ class WalkingPlanPage extends ConsumerWidget {
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  l10n.walkingStartMinutesLabel(plan.startMinutes),
-                ),
-                Text(
-                  l10n.walkingWeeklyTargetLabel(plan.weeklyTargetMinutes),
-                ),
+                Text(l10n.walkingStartMinutesLabel(plan.startMinutes)),
+                Text(l10n.walkingWeeklyTargetLabel(plan.weeklyTargetMinutes)),
                 if (plan.bmi.isFinite)
                   Text(l10n.walkingBmiLabel(plan.bmi.toStringAsFixed(1))),
               ],
@@ -64,11 +60,8 @@ class WalkingPlanPage extends ConsumerWidget {
                         minutes: plan.days
                             .firstWhere(
                               (e) => e.week == w && e.day == d,
-                              orElse: () => WalkingDay(
-                                week: w,
-                                day: d,
-                                minutes: 0,
-                              ),
+                              orElse: () =>
+                                  WalkingDay(week: w, day: d, minutes: 0),
                             )
                             .minutes,
                         l10n: l10n,
@@ -121,7 +114,11 @@ class WalkingPlanPage extends ConsumerWidget {
 }
 
 class _DayCell extends StatelessWidget {
-  const _DayCell({required this.day, required this.minutes, required this.l10n});
+  const _DayCell({
+    required this.day,
+    required this.minutes,
+    required this.l10n,
+  });
 
   final int day;
   final int minutes;

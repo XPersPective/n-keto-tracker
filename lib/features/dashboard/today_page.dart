@@ -184,9 +184,7 @@ class TodayPage extends ConsumerWidget {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 4),
                         child: Text(
-                          (isTr
-                                  ? p.recipe?.titleTr
-                                  : p.recipe?.titleEn) ??
+                          (isTr ? p.recipe?.titleTr : p.recipe?.titleEn) ??
                               p.entry.mealType,
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),

@@ -100,9 +100,7 @@ void main() {
         activityLevel: 'moderate',
         intensityWeekOverride: null,
       );
-      final pzt = plan.days.firstWhere(
-        (d) => d.week == 1 && d.day == 1,
-      );
+      final pzt = plan.days.firstWhere((d) => d.week == 1 && d.day == 1);
       expect(pzt.minutes, 25); // moderate default
     });
 

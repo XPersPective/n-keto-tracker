@@ -2,8 +2,9 @@
 
 ## Scope
 
-Repository-wide. Flutter mobil uygulaması N Keto Tracker (Android+iOS,
-TR/EN, tamamen offline).
+Repository-wide. Flutter mobil uygulaması N Keto Tracker (Android, 68
+uygulama arayüzü dili; tamamen offline). iOS iskeleti mevcut ancak mağaza
+yayınına hazır değil.
 
 ## Runtime
 
@@ -22,6 +23,7 @@ TR/EN, tamamen offline).
 - Router: go_router (`lib/app/router.dart`) — `/onboarding` + 5 sekme
   (today/log/plan/trends/guide) + alt rotalar (/log/session,
   /meals/new, /weight/new, /symptoms/new, /plan/recipes/{id},
+  /plan/shopping, /plan/walking,
   /settings/about, /settings/data, /settings/other-apps)
 - Veri: Drift + SQLite, SQLCipher şifreli (`pubspec.yaml` hooks:
   sqlite3 source sqlcipher), anahtar flutter_secure_storage
@@ -29,19 +31,23 @@ TR/EN, tamamen offline).
   invalidate eder (IndexedStack sekmeleri canlı tuttuğu için; PB-010)
 - CI: `.github/workflows/ci.yml` (gitleaks → offline+format+analyze+test
   → release APK)
+- Sürüm: `pubspec.yaml` 1.0.0+6; Google Play API production/internal
+  track'lerinde versionCode 6, release status `completed` (2026-10-10)
 
 ## Map
 
 - `lib/main.dart` — giriş (DB + tohum + ProviderScope)
 - `lib/app/` — router, tema (açık/koyu/sistem), l10n ARB (68 dil), locale_provider
 - `lib/core/database/` — Drift+SQLCipher şema/repo'lar/tohumlayıcılar
-- `lib/core/units/` — saf hesap motorları (GKI, eşleştirme, enerji, plan)
+- `lib/core/units/` — saf hesap motorları (GKI, eşleştirme, enerji, öğün planı, yürüyüş planı)
 - `lib/core/privacy/` — risk kilidi
-- `lib/features/*` — ekranlar (dashboard, measurements, nutrition, symptoms, weight, meal_plans, evidence, recipes, settings, onboarding)
+- `lib/features/*` — ekranlar (dashboard, measurements, nutrition, symptoms, weight, meal_plans, walking, shopping, evidence, recipes, settings, onboarding)
 - `fastlane/` — build_release/deploy_internal/deploy_production (reklam/satın alma yok)
 - `integration_test/` + `test_driver/` — DoD akışı + mağaza ekran görüntüsü hattı
 - `android/` — release imzası/R8; kimlikler D:/AppPublishing/apps/n-keto-tracker (repo dışı)
 - `PRIVACY_POLICY.md` — herkese açık kopya: github.com/XPersPective/napp_apps/blob/master/privacy/n-keto-tracker.md
+- Store metadata: repo dışı `D:/AppPublishing/apps/n-keto-tracker/`; Play
+  için 73 locale, locale başına 6 telefon görüntüsü; iOS metadata locale yok
 
 ## Domains
 
@@ -90,10 +96,10 @@ TR/EN, tamamen offline).
 
 - onboarding: 8 adım (dil→gizlilik→tıbbi-olmayan→amaç→profil→katsayı→
   risk taraması→veri+onam); consent_repository (sürüm+SHA-256 hash)
-- dashboard: TodayPage — "Son ölçümler" kartı FutureProvider ile gerçek
-  veri gösterir (VERIFIED emülatörde GKI 2.0); **besin/ağırlık/semptom/plan
-  kartları `today_page.dart:102-120`'de sabit boş metin (stub), hiçbir
-  zaman dolmaz — PB-021**; 4 hızlı eylem çalışır
+- dashboard: TodayPage — son ölçümler, bugünkü öğünler, ağırlık,
+  semptomlar ve güncel plan girdileri FutureProvider ile gerçek veri
+  gösterir; giriş akışları ilgili provider'ları geçersiz kılar (PB-021,
+  `today_page_test.dart`); 4 hızlı eylem çalışır
 - measurements: MeasurementSessionForm (GKI kartı, kayıt sonrası
   timeline/chart invalidate), LogPage (çizelge + 3 ayrı grafik + bantlar
   varsayılan KAPALI + karıştırıcı eğitim kartı + öğün-ölçüm zamansal
@@ -106,8 +112,11 @@ TR/EN, tamamen offline).
 - weight: WeightForm (kg/lb)
 - meal_plans: PlanPage (taslak üret AppBar CTA, risk kilidi; satır
   alt başlıkları okunur tarif başlığı — PB-011; VERIFIED emülatörde 7 günlük
-  plan), shopping: ShoppingListPage **rota kayıtlı ama hiçbir yerden
-  navigasyon yok — kullanıcı erişemiyor (PB-022)**
+  plan); sepet aksiyonu listeyi üretir/varsa tekrar kullanır ve
+  ShoppingListPage'i açar (PB-022)
+- walking: WalkingPlanPage + `walking_plan.dart` — profil/aktivite/BMI
+  girdisine göre 8 haftalık 5 gün yürüyüş planı ve 2 dinlenme günü;
+  kaynaklar yerel kanıt deposundan gösterilir; sayfa ve saf motor testli
 - evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
   kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
 - recipes: RecipesPage + RecipeDetailPage
@@ -142,10 +151,10 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
 
 - Debug attach (hot reload) INTERNET izni kaldırılınca emülatörde
   doğrulanmadı
-- Onboarding profil alanları UserProfile tablosuna henüz yazılmıyor
-  (repo yok; T21 notu)
 - Alerjen değerleri tarif seed'inde serbest metin; gıda rehberi E6
-  etiketli (uzman incelemesi yayın öncesi şart)
+  etiketli (uzman incelemesi gerektirir)
+- iOS release: `ios/Podfile` ve App Store metadata locale yok; Xcode/macOS
+  derleme ve App Store Connect yayın akışı doğrulanmadı
 - Emülatör içe aktarma UI girişi adb input özel-karakter kısıtıyla
   elle yürütülemedi; import doğrulaması test süitine dayanır
   (docs/RELEASE_EVIDENCE.md dürüst not)

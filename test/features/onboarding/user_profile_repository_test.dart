@@ -58,9 +58,7 @@ void main() {
 
   test('alanlar skip edildi → hepsi null', () async {
     final repo = UserProfileRepository(db);
-    await repo.saveFromOnboarding(
-      const OnboardingState(consentAccepted: true),
-    );
+    await repo.saveFromOnboarding(const OnboardingState(consentAccepted: true));
     final row = (await db.select(db.userProfile).get()).single;
     expect(row.birthYear, isNull);
     expect(row.heightCm, isNull);
@@ -68,30 +66,33 @@ void main() {
     expect(row.energyCoefficient, isNull);
   });
 
-  test('ikinci çağrı: mevcut satır güncellenir (yeni satır eklenmez)', () async {
-    final repo = UserProfileRepository(db);
-    await repo.saveFromOnboarding(
-      const OnboardingState(
-        birthYear: 1990,
-        heightCm: 175,
-        weightKg: 80,
-        energyCoefficient: EnergyCoefficient.male2025,
-      ),
-    );
-    await repo.saveFromOnboarding(
-      const OnboardingState(
-        birthYear: 1992,
-        heightCm: 178,
-        weightKg: 82,
-        energyCoefficient: EnergyCoefficient.female161,
-      ),
-    );
-    final rows = await db.select(db.userProfile).get();
-    expect(rows, hasLength(1));
-    final row = rows.single;
-    expect(row.birthYear, 1992);
-    expect(row.heightCm, 178);
-    expect(row.currentWeightKg, 82);
-    expect(row.energyCoefficient, 'female161');
-  });
+  test(
+    'ikinci çağrı: mevcut satır güncellenir (yeni satır eklenmez)',
+    () async {
+      final repo = UserProfileRepository(db);
+      await repo.saveFromOnboarding(
+        const OnboardingState(
+          birthYear: 1990,
+          heightCm: 175,
+          weightKg: 80,
+          energyCoefficient: EnergyCoefficient.male2025,
+        ),
+      );
+      await repo.saveFromOnboarding(
+        const OnboardingState(
+          birthYear: 1992,
+          heightCm: 178,
+          weightKg: 82,
+          energyCoefficient: EnergyCoefficient.female161,
+        ),
+      );
+      final rows = await db.select(db.userProfile).get();
+      expect(rows, hasLength(1));
+      final row = rows.single;
+      expect(row.birthYear, 1992);
+      expect(row.heightCm, 178);
+      expect(row.currentWeightKg, 82);
+      expect(row.energyCoefficient, 'female161');
+    },
+  );
 }

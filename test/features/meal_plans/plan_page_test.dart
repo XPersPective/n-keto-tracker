@@ -79,8 +79,9 @@ void main() {
   // PB-022: Alışveriş listesi oluşturulduktan sonra ekran değişmeli
   // (önceki kod yalnız DB'ye yazıyor, kullanıcı hiçbir yere
   // gitmiyordu) ve "Shopping list opened." toastu gösterilmeli.
-  testWidgets('PB-022: alışveriş sepetine dokununca liste ekranı açılır',
-      (tester) async {
+  testWidgets('PB-022: alışveriş sepetine dokununca liste ekranı açılır', (
+    tester,
+  ) async {
     await seedAll();
     appRouter.go('/plan');
     await tester.pumpWidget(

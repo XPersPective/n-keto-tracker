@@ -119,11 +119,12 @@ class _PlanPageState extends ConsumerState<PlanPage> {
     // Aynı plan için daha önce oluşturulmuş bir liste var mı?
     // Önce onu aç; kullanıcı her dokunuşta listeyi yeniden yazmasın
     // (PB-022 adım 4).
-    final existing = await (db.select(db.shoppingList)
-          ..where((s) => s.title.equals(plan.name ?? plan.startDateIso))
-          ..orderBy([(s) => OrderingTerm.desc(s.createdAtUtc)])
-          ..limit(1))
-        .getSingleOrNull();
+    final existing =
+        await (db.select(db.shoppingList)
+              ..where((s) => s.title.equals(plan.name ?? plan.startDateIso))
+              ..orderBy([(s) => OrderingTerm.desc(s.createdAtUtc)])
+              ..limit(1))
+            .getSingleOrNull();
     if (existing == null) {
       final items = await repo.collectIngredients(
         dateStartIso: plan.startDateIso,
@@ -141,9 +142,9 @@ class _PlanPageState extends ConsumerState<PlanPage> {
         .showSnackBar(SnackBar(content: Text(l10n.shoppingListOpenedToast)));
     // PB-022 adım 1: oluşturulan (veya mevcut) listeyi aç. Hem
     // GoRouter hem de düz Navigator bağlamlarında çalışır.
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(builder: (_) => const ShoppingListPage()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => const ShoppingListPage()));
   }
 
   /// Gün gün kartlar: tarih + öğün adı + porsiyon. İç jeton ('slot-0') ve

@@ -24,11 +24,15 @@ class UserProfileRepository {
     final energyValue = state.energyCoefficient == EnergyCoefficient.skipped
         ? null
         : state.energyCoefficient.name;
-    final existing = await (_db.select(
-      _db.userProfile,
-    )..orderBy([(p) => OrderingTerm.asc(p.id)])..limit(1)).getSingleOrNull();
+    final existing =
+        await (_db.select(_db.userProfile)
+              ..orderBy([(p) => OrderingTerm.asc(p.id)])
+              ..limit(1))
+            .getSingleOrNull();
     if (existing == null) {
-      await _db.into(_db.userProfile).insert(
+      await _db
+          .into(_db.userProfile)
+          .insert(
             UserProfileCompanion.insert(
               birthYear: Value(state.birthYear),
               heightCm: Value(state.heightCm),
@@ -40,8 +44,9 @@ class UserProfileRepository {
           );
       return;
     }
-    await (_db.update(_db.userProfile)..where((p) => p.id.equals(existing.id)))
-        .write(
+    await (_db.update(
+      _db.userProfile,
+    )..where((p) => p.id.equals(existing.id))).write(
       UserProfileCompanion(
         birthYear: Value(state.birthYear),
         heightCm: Value(state.heightCm),

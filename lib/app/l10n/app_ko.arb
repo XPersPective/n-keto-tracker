@@ -82,7 +82,7 @@
   "todayLatestTitle": "최근 측정",
   "todayLatestEmpty": "아직 측정값이 없습니다. ‘측정 추가’로 혈당과 케톤 BHB를 함께 기록하세요.",
   "todayNutritionTitle": "오늘의 영양",
-  "todayNutritionEmpty": "오늘 기록된 식사가 없습니다. 식사는 계획 탭에서 기록합니다.",
+  "todayNutritionEmpty": "오늘 기록된 식사가 없습니다. 위의 빠른 작업으로 추가하세요.",
   "todayWeightTitle": "체중",
   "todayWeightEmpty": "아직 체중 기록이 없습니다.",
   "todaySymptomsTitle": "오늘의 증상",

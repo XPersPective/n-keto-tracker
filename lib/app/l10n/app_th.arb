@@ -130,7 +130,7 @@
   "todayLatestTitle": "การวัดล่าสุด",
   "todayLatestEmpty": "ยังไม่มีการวัด ใช้ “เพิ่มการวัด” เพื่อบันทึกกลูโคสและคีโตน BHB พร้อมกัน",
   "todayNutritionTitle": "โภชนาการวันนี้",
-  "todayNutritionEmpty": "วันนี้ยังไม่ได้บันทึกมื้ออาหาร บันทึกมื้ออาหารได้จากแท็บแผน",
+  "todayNutritionEmpty": "วันนี้ยังไม่ได้บันทึกมื้ออาหาร ใช้การดำเนินการด่วนด้านบนเพื่อเพิ่ม",
   "todayWeightTitle": "น้ำหนัก",
   "todayWeightEmpty": "ยังไม่มีรายการน้ำหนัก",
   "todaySymptomsTitle": "อาการวันนี้",

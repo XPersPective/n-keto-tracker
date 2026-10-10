@@ -82,7 +82,7 @@
   "todayLatestTitle": "Pengukuran terbaru",
   "todayLatestEmpty": "Belum ada pengukuran. Gunakan ‘Tambah pengukuran’ untuk mencatat glukosa dan keton BHB bersamaan.",
   "todayNutritionTitle": "Nutrisi hari ini",
-  "todayNutritionEmpty": "Belum ada makanan tercatat hari ini. Makanan dicatat dari tab Rencana.",
+  "todayNutritionEmpty": "Belum ada makanan tercatat hari ini. Gunakan tindakan cepat di atas untuk menambah.",
   "todayWeightTitle": "Berat",
   "todayWeightEmpty": "Belum ada catatan berat.",
   "todaySymptomsTitle": "Gejala hari ini",

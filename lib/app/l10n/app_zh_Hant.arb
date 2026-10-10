@@ -130,7 +130,7 @@
   "todayLatestTitle": "最近測量",
   "todayLatestEmpty": "尚無測量資料。使用「新增測量」同時記錄血糖與血酮 BHB。",
   "todayNutritionTitle": "今日營養",
-  "todayNutritionEmpty": "今天尚未記錄餐點。餐點請由「計畫」分頁記錄。",
+  "todayNutritionEmpty": "今天尚未記錄餐點。請使用上方的快速操作來新增。",
   "todayWeightTitle": "體重",
   "todayWeightEmpty": "尚無體重記錄。",
   "todaySymptomsTitle": "今日症狀",

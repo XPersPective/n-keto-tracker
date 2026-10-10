@@ -130,7 +130,7 @@
   "todayLatestTitle": "Senaste mätningar",
   "todayLatestEmpty": "Inga mätningar ännu. Använd ”Lägg till mätning” för att registrera glukos och keton BHB tillsammans.",
   "todayNutritionTitle": "Dagens näring",
-  "todayNutritionEmpty": "Inga måltider registrerade idag. Måltider loggas från fliken Plan.",
+  "todayNutritionEmpty": "Inga måltider registrerade idag. Använd snabbåtgärderna ovan för att lägga till en.",
   "todayWeightTitle": "Vikt",
   "todayWeightEmpty": "Inga viktposter ännu.",
   "todaySymptomsTitle": "Dagens symtom",

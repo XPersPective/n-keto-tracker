@@ -130,7 +130,7 @@
   "todayLatestTitle": "Legutóbbi mérések",
   "todayLatestEmpty": "Még nincsenek mérések. A „Mérés hozzáadása” gombbal rögzítheti együtt a glükózt és a keton BHB-t.",
   "todayNutritionTitle": "A mai táplálkozás",
-  "todayNutritionEmpty": "Ma nincs rögzített étkezés. Az étkezéseket a Terv fülön lehet naplózni.",
+  "todayNutritionEmpty": "Ma nincs rögzített étkezés. A fenti gyors műveletekkel adhatsz hozzá egyet.",
   "todayWeightTitle": "Testsúly",
   "todayWeightEmpty": "Még nincs testsúlybejegyzés.",
   "todaySymptomsTitle": "A mai tünetek",

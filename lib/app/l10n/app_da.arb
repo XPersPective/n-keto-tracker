@@ -130,7 +130,7 @@
   "todayLatestTitle": "Seneste målinger",
   "todayLatestEmpty": "Ingen målinger endnu. Brug 'Tilføj måling' til at registrere glukose og keton BHB sammen.",
   "todayNutritionTitle": "Dagens ernæring",
-  "todayNutritionEmpty": "Ingen måltider registreret i dag. Måltider logges fra fanen Plan.",
+  "todayNutritionEmpty": "Ingen måltider registreret i dag. Brug hurtighandlingerne ovenfor for at tilføje et.",
   "todayWeightTitle": "Vægt",
   "todayWeightEmpty": "Ingen vægtregistreringer endnu.",
   "todaySymptomsTitle": "Dagens symptomer",

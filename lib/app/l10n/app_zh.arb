@@ -82,7 +82,7 @@
   "todayLatestTitle": "最近的测量",
   "todayLatestEmpty": "暂无测量记录。使用“添加测量”可同时记录血糖和酮体 BHB。",
   "todayNutritionTitle": "今日营养",
-  "todayNutritionEmpty": "今天没有饮食记录。饮食请在“计划”标签中记录。",
+  "todayNutritionEmpty": "今天没有饮食记录。请使用上方的快捷操作添加。",
   "todayWeightTitle": "体重",
   "todayWeightEmpty": "暂无体重记录。",
   "todaySymptomsTitle": "今日症状",

@@ -82,7 +82,7 @@
   "todayLatestTitle": "Letzte Messungen",
   "todayLatestEmpty": "Noch keine Messungen. Mit „Messung hinzufügen“ erfasst du Glukose und Keton BHB zusammen.",
   "todayNutritionTitle": "Ernährung heute",
-  "todayNutritionEmpty": "Heute sind keine Mahlzeiten erfasst. Mahlzeiten werden im Tab „Plan“ erfasst.",
+  "todayNutritionEmpty": "Heute sind keine Mahlzeiten erfasst. Nutze die Schnellaktionen oben, um eine hinzuzufügen.",
   "todayWeightTitle": "Gewicht",
   "todayWeightEmpty": "Noch keine Gewichtseinträge.",
   "todaySymptomsTitle": "Symptome heute",

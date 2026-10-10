@@ -82,7 +82,7 @@
   "todayLatestTitle": "最新の測定",
   "todayLatestEmpty": "まだ測定がありません。「測定を追加」で血糖とケトン BHB をまとめて記録できます。",
   "todayNutritionTitle": "今日の栄養",
-  "todayNutritionEmpty": "今日は食事が記録されていません。食事は「プラン」タブから記録します。",
+  "todayNutritionEmpty": "今日は食事が記録されていません。上のクイック操作から追加できます。",
   "todayWeightTitle": "体重",
   "todayWeightEmpty": "まだ体重の記録がありません。",
   "todaySymptomsTitle": "今日の症状",

@@ -134,7 +134,9 @@ yayınına hazır değil.
 
 **Status:** VERIFIED
 
-- 3 manifest'te (main/debug/profile) INTERNET izni YOK
+- main/profile/release manifest'lerinde INTERNET izni YOK; debug varyantı
+  Flutter VM servisiyle entegrasyon testi için INTERNET kullanır. Release APK
+  `aapt dump permissions` ile doğrulandı; izin yok.
 - usesCleartextTraffic=false; dataExtractionRules + backup_rules
   (database + FlutterSecureStorage hariç)
 - R8 minify+shrink + proguard-rules.pro; kotlin.incremental=false
@@ -149,8 +151,8 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
 
 ## Known Unknowns
 
-- Debug attach (hot reload) INTERNET izni kaldırılınca emülatörde
-  doğrulanmadı
+- Debug integration attach için `src/debug/AndroidManifest.xml` INTERNET
+  izni gerekir; üretim manifestleri bu izni içermez.
 - Alerjen değerleri tarif seed'inde serbest metin; gıda rehberi E6
   etiketli (uzman incelemesi gerektirir)
 - iOS release: `ios/Podfile` ve App Store metadata locale yok; Xcode/macOS
@@ -158,8 +160,8 @@ crypto — tümü MIT/BSD-3, GPL-3.0 uyumlu (THIRD_PARTY_NOTICES.md)
 - Emülatör içe aktarma UI girişi adb input özel-karakter kısıtıyla
   elle yürütülemedi; import doğrulaması test süitine dayanır
   (docs/RELEASE_EVIDENCE.md dürüst not)
-- +6 emulator DoD canlı yürüyüşü doğrulanmadı: 5556'da başka uygulama ANR
-  overlay'i, 5554'te debug APK kurulumuna yetecek boş alan yoktu
+- +6 Android entegrasyon akışı `flutter drive` ile temiz API 36 AVD'sinde
+  geçti; tam 11 adımlı çevrimdışı UI yürüyüşünün en son kanıtı +4'tür.
 
 ### Marka ve Platform Varlıkları
 

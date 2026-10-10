@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # N Keto Tracker offline kanıtı (MASTER_PROMPT §14.1 / AC3).
 #
-# 1) Android manifest'lerinde (main/debug/profile) INTERNET izni olmamalı.
+# 1) Üretim manifest'lerinde (main/profile/release) INTERNET izni olmamalı.
+#    Debug, Flutter'ın yerel VM servisi için bu izni taşıyabilir; release'e
+#    sızmadığı ayrıca derlenmiş APK üzerinde doğrulanır.
 # 2) pubspec.yaml DOĞRUDAN bağımlılıklarında ağ/telemetri/reklam/analytics
 #    paketi olmamalı.
 #
@@ -12,13 +14,19 @@ cd "$(dirname "$0")/.."
 status=0
 
 # --- 1) INTERNET izni taraması ---
-manifest_hits="$(grep -rn --include='AndroidManifest.xml' 'android.permission.INTERNET' android/app/src 2>/dev/null || true)"
+manifest_hits="$(grep -rn --include='AndroidManifest.xml' 'android.permission.INTERNET' android/app/src/main android/app/src/profile android/app/src/release 2>/dev/null || true)"
 if [ -n "$manifest_hits" ]; then
-  echo "FAIL: INTERNET izni bulundu:"
+  echo "FAIL: Üretim varyantlarında INTERNET izni bulundu:"
   echo "$manifest_hits"
   status=1
 else
-  echo "OK: Android manifest'lerinde INTERNET izni yok"
+  echo "OK: main/profile/release manifest'lerinde INTERNET izni yok"
+fi
+
+debug_hits="$(grep -rn --include='AndroidManifest.xml' 'android.permission.INTERNET' android/app/src/debug 2>/dev/null || true)"
+if [ -n "$debug_hits" ]; then
+  echo "INFO: Flutter VM servisi için debug-only INTERNET izni:"
+  echo "$debug_hits"
 fi
 
 # --- 2) Yasaklı doğrudan bağımlılık taraması ---

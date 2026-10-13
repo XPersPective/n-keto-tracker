@@ -115,10 +115,22 @@ yayınına hazır değil.
   plan); sepet aksiyonu listeyi üretir/varsa tekrar kullanır ve
   ShoppingListPage'i açar (PB-022)
 - walking: WalkingPlanPage + `walking_plan.dart` — profil/aktivite/BMI
-  girdisine göre 8 haftalık 5 gün yürüyüş planı ve 2 dinlenme günü;
-  kaynaklar yerel kanıt deposundan gösterilir; sayfa ve saf motor testli
-- evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection (7 kanıt
-  kaynağı; hastalığa özel yalnız bilinçli filtreyle; URL yalnız kopyala)
+  girdisine göre 8 haftalık plan. **ACSM 2011 üç bileşeni**: hafta içi
+  5 gün yürüyüş + Cmt/Paz kuvvet (ActivityType.strength) günü;
+  `kSourcedFigures` yalnız doğrulanmış kaynak sayılarını listeler,
+  `valuesAreEstimates` + `walkingEstimateNote` ile sezgisel değerler
+  (başlangıç dakikası, %12 artış) dürüstçe etiketlenir. Kanıt kaynakları
+  `walk-who-2020` (PMID 33239350), `walk-acsm-2011` (PMID 21694556),
+  `walk-richardson-2008` (PMID 18195317), `walk-swift-2018`
+  (PMID 30003901) — Europe PMC ile doğrulandı
+- tema: `lib/app/theme/food_icons.dart` — 15 besin kategorisi → Material
+  `IconData` (emoji değil; glyph cihazlar arası tutarsız), şema değişikliği
+  yok (Food.category zaten 15 değer taşıyor)
+- UI: `EmptyState` (lib/app/theme/surfaces.dart) — boş **ve** hata durumlarında
+  ikon + mesaj + ≥48 px eylem düğmesi; Bugün ekranının 4 bölümü bağlı
+- evidence: GuidePage (12 gıda rehberi kartı) + EvidenceSection
+  (11 kanıt kaynağı; hastalığa özel yalnız bilinçli filtreyle;
+  URL yalnız kopyala)
 - recipes: RecipesPage + RecipeDetailPage
 - settings: settings_page (görünüm: sistem/açık/koyu `SegmentedButton` →
   `AppSettings.themeMode` + `invalidate(appSettingsProvider)`, hemen uygulanır;
@@ -133,6 +145,30 @@ yayınına hazır değil.
 ### Platform Sertleştirmesi
 
 **Status:** VERIFIED
+
+## Kanıt ve Sayı Dürüstlüğü (PB-028/PB-029)
+
+- **Doğrulama yöntemi**: PubMed HTML'i cookie/PoW koruması döndürdüğü
+  için `https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>&resultType=core&format=json`
+  kullanılır. Her yeni kanıt kaydı eklenmeden önce bu sorguyla
+  başlık + yazar + dergi doğrulanır.
+- **Yanlış eşleşme yakalandı ve silindi**: `walk-murtagh-2015`
+  (PMID 25952641) gerçekte *J Vasc Interv Radiol* 2015 tavşan karaciğer
+  embolizasyon deneyiymiş. `evidence_provenance_test.dart` artık bu
+  kimliğin geri gelmesini test ile reddediyor.
+- **Kaynak/estim ayrımı zorunludur**: `walking_plan.dart` dosya
+  dokümantasyonunda hangi sayının kaynaklı, hangisinin sezgisel olduğu
+  yazılıdır. Yeni sayı eklenirken `kSourcedFigures`'a eklenmezse
+  tahmin sayılır ve `valuesAreEstimates` notuyla kullanıcıya gösterilir.
+- `test_marketing/store_screenshots_test.dart` mağaza görseli üreticisi
+  (normal test paketine dahil değil); Roboto/Noto Sans binary'leri
+  `tool/marketing/fonts/` altında, uygulama paketine gömülü değil.
+- Docs store metadata'sı repo dışında (`D:/AppPublishing/`); 2026-10-13
+  öncesi üretilen 408 sahte mock görsel (Pillow ile çizilmiş, TR bandı
+  yapıştırılmış, içerik İngilizce kalmış) **kullanılmamalı** — gerçek
+  render hattı bu dosyaya taşınmalı.
+
+### Platform Sertleştirmesi
 
 - main/profile/release manifest'lerinde INTERNET izni YOK; debug varyantı
   Flutter VM servisiyle entegrasyon testi için INTERNET kullanır. Release APK

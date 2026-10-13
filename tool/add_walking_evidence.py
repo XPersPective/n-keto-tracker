@@ -1,4 +1,15 @@
-"""Kanıt kütüphanesine yürüyüş planı için 3 referans ekler."""
+"""Kanıt kütüphanesine doğrulanmış iki yürüyüş kaynağı ekler.
+
+Daha önce eklenen `walk-murtagh-2015` kaydı UYDURMAYDI ve PB-028'de
+silindi: kaydın PMID olarak kullandığı 25952641 numarası yürüyüş
+makalesi değildi (Europe PMC doğrulaması: J Vasc Interv Radiol 2015,
+tavşan karaciğer embolizasyon deneyi).
+
+Buradaki iki kaynak Europe PMC REST API ile 2026-10-13'te doğrulandı:
+  https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>&resultType=core&format=json
+
+Idempotent: kayıt id'si zaten varsa eklemez.
+"""
 import json
 
 P = 'assets/seed/evidence.json'
@@ -7,134 +18,135 @@ with open(P, 'r', encoding='utf-8') as f:
 
 EXTRAS = [
     {
-        'id': 'walk-acsm-2011',
-        'titleTr': 'ACSM Egzersiz reçetesi pozisyonu (2011)',
-        'titleEn': 'ACSM Position Stand: Quantity and Quality of Exercise (2011)',
+        'id': 'walk-richardson-2008',
+        'titleTr': 'Pedometer tabanlı yürüyüş müdahaleleri ve kilo kaybı meta-analizi (2008)',
+        'titleEn': 'A meta-analysis of pedometer-based walking interventions and weight loss',
         'plainSummaryTr': (
-            'American College of Sports Medicine, sağlıklı yetişkinler için haftada en az 150 dk orta '
-            'yoğunluk veya 75 dk şiddetli aerobik aktivite önerir; buna haftada 2+ gün kuvvet çalışması eklenir.'
+            'Dokuz prospektif kohortun (307 katılımcı, medyan 16 hafta) meta-analizi: '
+            'pedometer tabanlı yürüyüş programları başlangıçtan ortalama 1.27 kg (95% GA '
+            '1.85-0.70) kilo kaybı sağlar; haftada ortalama 0.05 kg. Diyet müdahalesi '
+            'içermeyen çalışmalar.'
         ),
         'plainSummaryEn': (
-            'ACSM recommends at least 150 min/week moderate or 75 min/week vigorous aerobic activity '
-            'plus 2+ days of strength training for healthy adults.'
+            'A meta-analysis of nine pedometer-based walking cohorts (307 participants, '
+            'median 16 weeks) found a pooled mean weight change of -1.27 kg '
+            '(95% CI -1.85 to -0.70), about 0.05 kg per week. These studies did not '
+            'include a dietary intervention.'
         ),
-        'claimTr': 'Haftada 150 dk orta yoğunluk, sağlıklı yetişkinler için aerobik taban önerisidir.',
-        'claimEn': '150 min/week of moderate-intensity aerobic activity is the baseline for healthy adults.',
+        'claimTr': (
+            'Pedometer destekli yürüyüş programları orta düzeyde kilo kaybı sağlar '
+            '(havuzlanmış 1.27 kg); daha uzun programlar daha fazla kayıp verir.'
+        ),
+        'claimEn': (
+            'Pedometer-based walking programmes produce modest weight loss '
+            '(pooled -1.27 kg); longer programmes produce more.'
+        ),
         'evidenceLevel': 'E2',
-        'evidenceLabelTr': 'Mesleki rehber (konsensüs)',
-        'evidenceLabelEn': 'Professional guideline (consensus)',
-        'studyType': 'Pozisyon bildirgesi / meta-analiz sentezi',
-        'population': 'Sağlıklı yetişkin 18-65 yaş',
-        'sampleSize': None,
-        'year': 2011,
+        'evidenceLabelTr': 'Meta-analiz (prospektif kohortlar)',
+        'evidenceLabelEn': 'Meta-analysis of prospective cohorts',
+        'studyType': 'Meta-analiz (prospektif kohortlar ve RCT)',
+        'population': 'Yetişkin (obez ve fazla kilolu dahil)',
+        'sampleSize': 307,
+        'year': 2008,
         'authors': [
-            'Garber CE', 'Blissmer B', 'Deschenes MR', 'Franklin BA', 'Lamonte MJ',
-            'Lee IM', 'Nieman DC', 'Swain DP',
+            'Richardson CR', 'Newton TL', 'Abraham JJ', 'Sen A', 'Jimbo M',
+            'Swartz AM',
         ],
-        'journal': 'Medicine & Science in Sports & Exercise',
-        'doi': '10.1249/MSS.0b013e318213fefb',
-        'pmid': 21694556,
+        'journal': 'Annals of Family Medicine',
+        'doi': '10.1370/afm.761',
+        'pmid': 18195317,
+        'pmcid': 'PMC2203404',
+        'canonicalUrl': 'https://doi.org/10.1370/afm.761',
+        'accessedAt': '2026-10-13',
+        'limitationsTr': (
+            'Diyet müdahalesi yoktur; kohortlar heterojendir; bireysel yanıt çok '
+            'değişkendir ve bireysel düzeyde öngörü yapılamaz.'
+        ),
+        'limitationsEn': (
+            'No dietary co-intervention; heterogeneous cohorts; highly variable '
+            'individual response.'
+        ),
+        'conflictsTr': None,
+        'conflictsEn': None,
+        'diseaseSpecific': False,
+    },
+    {
+        'id': 'walk-swift-2018',
+        'titleTr': 'Egzersiz ve fiziksel aktivitenin kilo kaybı ve sürdürmedeki etkisi (2018)',
+        'titleEn': 'The Effects of Exercise and Physical Activity on Weight Loss and Maintenance',
+        'plainSummaryTr': (
+            'Uzman derlemesi: halk sağlığı asgarisindeki 150 dk/hafta orta yoğunluklu '
+            'aerobik aktivite kardiyovasküler sağlığı iyileştirir, ancak enerji kısıtlaması '
+            'olmadan klinik olarak anlamlı kilo kaybı için genellikle yetersizdir. '
+            'Bireysel kilo kaybı yanıtı çok değişkendir.'
+        ),
+        'plainSummaryEn': (
+            'Expert review concluding that the minimum public-health guideline of '
+            '150 min/week moderate aerobic activity improves cardiovascular health but is '
+            'generally inadequate for clinically significant weight loss without caloric '
+            'restriction. Individual weight-loss response is highly variable.'
+        ),
+        'claimTr': (
+            'Enerji kısıtlaması olmadan 150 dk/hafta aerobik aktivite tek başına klinik '
+            'anlamlı kilo kaybı için genellikle yetersizdir.'
+        ),
+        'claimEn': (
+            '150 min/week of aerobic activity alone is generally inadequate for '
+            'clinically significant weight loss without caloric restriction.'
+        ),
+        'evidenceLevel': 'E3',
+        'evidenceLabelTr': 'Uzman/narratif derleme',
+        'evidenceLabelEn': 'Expert narrative review',
+        'studyType': 'Narratift inceleme (meta-analiz değildir)',
+        'population': 'Fazla kilolu ve obez yetişkinler',
+        'sampleSize': None,
+        'year': 2018,
+        'authors': [
+            'Swift DL', 'McGee JE', 'Earnest CP', 'Carlisle E', 'Nygard M',
+            'Johannsen NM',
+        ],
+        'journal': 'Progress in Cardiovascular Diseases',
+        'doi': '10.1016/j.pcad.2018.07.014',
+        'pmid': 30003901,
         'pmcid': None,
-        'canonicalUrl': 'https://doi.org/10.1249/MSS.0b013e318213fefb',
-        'accessedAt': '2026-10-10',
-        'limitationsTr': 'Rehber; meta-analiz değildir; bireysel uyarlama klinisyenle yapılmalıdır.',
-        'limitationsEn': 'Guideline, not a meta-analysis; individualization requires clinician input.',
-        'conflictsTr': None,
-        'conflictsEn': None,
-        'diseaseSpecific': False,
-    },
-    {
-        'id': 'walk-murtagh-2015',
-        'titleTr': 'Yürüyüş ve kilo kaybı meta-analizi (2015)',
-        'titleEn': 'Walking and weight loss: a meta-analysis of randomized controlled trials (2015)',
-        'plainSummaryTr': (
-            'Yetmiş altı RCT’nin meta-analizi: orta yoğunlukta yürüyüş, diyet desteği olmadan '
-            'ortalama 1.5–2.5 kg ek kilo kaybı sağlar; etki doz-yanıt (dk/hafta) ile artar.'
+        'canonicalUrl': 'https://doi.org/10.1016/j.pcad.2018.07.014',
+        'accessedAt': '2026-10-13',
+        'limitationsTr': (
+            'Narratift derleme — sistematik arama ve havuzlama yoktur; nicel etki '
+            'büyüklüğü vermez.'
         ),
-        'plainSummaryEn': (
-            'A meta-analysis of 76 RCTs shows moderate-intensity walking alone yields ~1.5-2.5 kg '
-            'additional weight loss; effect scales with weekly minutes.'
+        'limitationsEn': (
+            'Narrative review - no systematic search or pooling; does not provide a '
+            'quantitative effect size.'
         ),
-        'claimTr': 'Yürüyüş haftada 150-300 dk hedefine çıktığında 12 haftada klinik olarak anlamlı kilo kaybı gözlenir.',
-        'claimEn': 'Reaching 150-300 min/week of walking produces clinically meaningful weight loss over 12 weeks.',
-        'evidenceLevel': 'E2',
-        'evidenceLabelTr': 'Meta-analiz (RCT)',
-        'evidenceLabelEn': 'Meta-analysis of RCTs',
-        'studyType': 'Randomize kontrollü meta-analiz',
-        'population': 'Yetişkin obez/fazla kilolu',
-        'sampleSize': None,
-        'year': 2015,
-        'authors': [
-            'Murtagh EM', 'Murphy MH', 'Milton K', 'Mac An Bhaird C', 'Nauta A',
-            'Pouwels S', 'Fritz J', 'Weggemans RM', 'Stopponi M', 'Pavelka I',
-            'van Nassau F', 'van der Ploeg HP',
-        ],
-        'journal': 'Obesity Reviews',
-        'doi': None,
-        'pmid': 25952641,
-        'pmcid': 'PMC4539438',
-        'canonicalUrl': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4539438/',
-        'accessedAt': '2026-10-10',
-        'limitationsTr': 'Katkı etkisi düşük; diyet + direnç egzersizi eklenmediğinde daha büyük etki beklenir.',
-        'limitationsEn': 'Effect is small without dietary co-intervention.',
-        'conflictsTr': None,
-        'conflictsEn': None,
-        'diseaseSpecific': False,
-    },
-    {
-        'id': 'walk-who-2020',
-        'titleTr': 'DSÖ 2020 Fiziksel aktivite ve sedanter davranış rehberi',
-        'titleEn': 'WHO 2020 Guidelines on Physical Activity and Sedentary Behaviour',
-        'plainSummaryTr': (
-            'DSÖ, yetişkinler için haftada en az 150-300 dk orta yoğunluk aerobik aktivite veya '
-            '75-150 dk şiddetli aktivite önerir; tümü daha iyidir.'
-        ),
-        'plainSummaryEn': (
-            'WHO recommends adults accumulate 150-300 min/week of moderate-intensity or 75-150 '
-            'min/week of vigorous-intensity aerobic activity; more is better.'
-        ),
-        'claimTr': 'Düşük-orta etkiler: insülin direnci, kardiyovasküler risk, metabolik sağlık ve biliş için tutarlı iyileşme.',
-        'claimEn': 'Larger volumes show consistent improvements in insulin sensitivity, cardiovascular risk, metabolic health, and cognition.',
-        'evidenceLevel': 'E1',
-        'evidenceLabelTr': 'DSÖ sistemik rehber',
-        'evidenceLabelEn': 'WHO systematic guideline',
-        'studyType': 'Sistemik derleme + meta-analiz',
-        'population': 'Tüm yetişkinler (18-64 yaş) + yaşlılar (65+)',
-        'sampleSize': None,
-        'year': 2020,
-        'authors': [
-            'Bull FC', 'Al-Ansari SS', 'Biddle S', 'Borodulin K', 'Buman MP',
-            'Carson G', 'Chaput JP', 'Chastin S', 'Chinapaw MJM', 'Donovan R',
-            'Dugandzic T', 'Dunstan D', 'English C', 'Ferguson L', 'Forrest B',
-            'Freeston J', 'Gine-Garriga M', 'Gonzalez-Suarez C', 'Guthold R',
-            'Hammami N', 'Hart L', 'Inoue S', 'Janssen I', 'Kuriyan R', 'Lam FM',
-            'Leblanc AG', 'Lee IM', 'Loyen A', 'Maddison R', 'Martinez-Lemos N',
-            'Matsudo V', 'Meckenzie A', 'Murtagh EM', 'Naik S', 'Owen N', 'Pereira S',
-            'Pesonen EJ', 'Piercy KL', 'Popkin BM', 'Rutter H', 'Salazar-Rojas W',
-            'Salom-diaz JM', 'Sandoval-Puccini A', 'Stamatakis E', 'Teychenne M',
-            'Thyfault JA', 'Troiano RP', 'Tudor-Locke C', 'van der Ploeg HP',
-            'Vandelanotte C', 'Wanner M', 'Weggemans RM', 'Willumsen JF', 'Wood B',
-            'Garcia-Hermoso A', 'Healy GN',
-        ],
-        'journal': 'British Journal of Sports Medicine',
-        'doi': '10.1136/bjsports-2020-102955',
-        'pmid': 33239350,
-        'pmcid': 'PMC7719906',
-        'canonicalUrl': 'https://doi.org/10.1136/bjsports-2020-102955',
-        'accessedAt': '2026-10-10',
-        'limitationsTr': 'Rehber, bireysel sağlık durumlarının yerine geçmez; gebelik ve çocuklarda doz-yanıt sınırlı.',
-        'limitationsEn': 'Guideline is not a substitute for individual clinical assessment; dose-response in pregnancy and children is limited.',
         'conflictsTr': None,
         'conflictsEn': None,
         'diseaseSpecific': False,
     },
 ]
 
-doc['sources'].extend(EXTRAS)
-doc['changeLogTr'] = (doc.get('changeLogTr', '') +
-                     ' | +3 yürüyüş kanıt kaynağı (ACSM 2011, Murtagh 2015, WHO 2020).').strip()
-doc['changeLogEn'] = (doc.get('changeLogEn', '') +
-                     ' | +3 walking evidence sources (ACSM 2011, Murtagh 2015, WHO 2020).').strip()
+existing = {s['id'] for s in doc['sources']}
+added = [s for s in EXTRAS if s['id'] not in existing]
+doc['sources'].extend(added)
+
+doc['changeLogTr'] = (
+    doc.get('changeLogTr', '') +
+    ' | PB-028: walk-murtagh-2015 kaldırıldı (PMID 25952641 yürüyüş makalesi '
+    'değildi; J Vasc Interv Radiol 2015, tavşan embolizasyon deneyi). '
+    '+2 doğrulanmış kaynak: Richardson 2008 pedometre meta-analizi, '
+    'Swift 2018 egzersiz/kilo kaybı derlemesi.'
+).strip()
+doc['changeLogEn'] = (
+    doc.get('changeLogEn', '') +
+    ' | PB-028: removed walk-murtagh-2015 (PMID 25952641 was not a walking '
+    'paper; J Vasc Interv Radiol 2015, rabbit embolization study). '
+    '+2 verified sources: Richardson 2008 pedometer meta-analysis, '
+    'Swift 2018 exercise/weight-loss review.'
+).strip()
+
 with open(P, 'w', encoding='utf-8') as f:
     json.dump(doc, f, ensure_ascii=False, indent=2)
-print(f'Added {len(EXTRAS)} sources. Total: {len(doc["sources"])}')
+    f.write('\n')
+
+print(f'Eklenen: {len(added)} ({", ".join(s["id"] for s in added)})')
+print(f'Toplam kaynak: {len(doc["sources"])}')

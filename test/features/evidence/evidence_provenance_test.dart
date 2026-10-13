@@ -12,8 +12,23 @@ void main() {
   ) as Map<String, dynamic>;
   final sources = (doc['sources'] as List).cast<Map<String, dynamic>>();
 
-  test('en az 10 kanıt kaynağı mevcut (PB-026: +3 yürüyüş kanıtı)', () {
-    expect(sources.length, greaterThanOrEqualTo(10));
+  test('en az 11 kanıt kaynağı mevcut (PB-026 +3, PB-028 +2 doğrulanmış)', () {
+    expect(sources.length, greaterThanOrEqualTo(11));
+  });
+
+  // PB-028: `walk-murtagh-2015` uydurmaydı — PMID 25952641 yürüyüş makalesi
+  // değildi (J Vasc Interv Radiol 2015, tavşan embolizasyon deneyi). Kayıt
+  // silindi; geri gelirse tekrar yanıltıcı olur.
+  test('yanlış eşleşmiş kaynak kayıtları yok (PB-028)', () {
+    final ids = sources.map((s) => s['id'] as String).toList();
+    expect(ids, isNot(contains('walk-murtagh-2015')));
+    // Kalan yürüyüş kaynaklarının PMID/DOI değerleri doğrulanmıştır.
+    final byId = {for (final s in sources) s['id'] as String: s};
+    expect(byId['walk-richardson-2008']?['pmid'], 18195317);
+    expect(byId['walk-richardson-2008']?['pmcid'], 'PMC2203404');
+    expect(byId['walk-swift-2018']?['pmid'], 30003901);
+    expect(byId['walk-acsm-2011']?['pmid'], 21694556);
+    expect(byId['walk-who-2020']?['pmid'], 33239350);
   });
 
   test('her kaynakta provenance alanlarının tamamı dolu', () {

@@ -109,9 +109,20 @@ class TodayPage extends ConsumerWidget {
             title: l10n.todayNutritionTitle,
             child: meals.when(
               loading: () => const _SectionLoading(),
-              error: (_, _) => Text(l10n.todayNutritionEmpty),
+              // PB-031: bos durumda eylem dugmesi — kullanici ne yapacagini bilmeli.
+              error: (_, _) => EmptyState(
+                message: l10n.todayNutritionEmpty,
+                actionLabel: l10n.todayAddMeal,
+                onAction: () => context.push('/meals/new'),
+                icon: Icons.restaurant_outlined,
+              ),
               data: (rows) => rows.isEmpty
-                  ? Text(l10n.todayNutritionEmpty)
+                  ? EmptyState(
+                      message: l10n.todayNutritionEmpty,
+                      actionLabel: l10n.todayAddMeal,
+                      onAction: () => context.push('/meals/new'),
+                      icon: Icons.restaurant_outlined,
+                    )
                   : Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -134,9 +145,21 @@ class TodayPage extends ConsumerWidget {
             title: l10n.todayWeightTitle,
             child: weight.when(
               loading: () => const _SectionLoading(),
-              error: (_, _) => Text(l10n.todayWeightEmpty),
+              error: (_, _) => EmptyState(
+                message: l10n.todayWeightEmpty,
+                actionLabel: l10n.todayAddWeight,
+                onAction: () => context.push('/weight/new'),
+                icon: Icons.monitor_weight_outlined,
+              ),
               data: (row) {
-                if (row == null) return Text(l10n.todayWeightEmpty);
+                if (row == null) {
+                  return EmptyState(
+                    message: l10n.todayWeightEmpty,
+                    actionLabel: l10n.todayAddWeight,
+                    onAction: () => context.push('/weight/new'),
+                    icon: Icons.monitor_weight_outlined,
+                  );
+                }
                 return Text(
                   '${row.kg.toStringAsFixed(1)} kg',
                   style: Theme.of(context).textTheme.bodyLarge,
@@ -149,9 +172,21 @@ class TodayPage extends ConsumerWidget {
             title: l10n.todaySymptomsTitle,
             child: symptoms.when(
               loading: () => const _SectionLoading(),
-              error: (_, _) => Text(l10n.todaySymptomsEmpty),
+              error: (_, _) => EmptyState(
+                message: l10n.todaySymptomsEmpty,
+                actionLabel: l10n.todayAddSymptom,
+                onAction: () => context.push('/symptoms/new'),
+                icon: Icons.healing_outlined,
+              ),
               data: (rows) {
-                if (rows.isEmpty) return Text(l10n.todaySymptomsEmpty);
+                if (rows.isEmpty) {
+                  return EmptyState(
+                    message: l10n.todaySymptomsEmpty,
+                    actionLabel: l10n.todayAddSymptom,
+                    onAction: () => context.push('/symptoms/new'),
+                    icon: Icons.healing_outlined,
+                  );
+                }
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -174,9 +209,21 @@ class TodayPage extends ConsumerWidget {
             title: l10n.todayPlansTitle,
             child: planEntries.when(
               loading: () => const _SectionLoading(),
-              error: (_, _) => Text(l10n.todayPlansEmpty),
+              error: (_, _) => EmptyState(
+                message: l10n.todayPlansEmpty,
+                actionLabel: l10n.planGenerateDraft,
+                onAction: () => context.go('/plan'),
+                icon: Icons.event_note_outlined,
+              ),
               data: (rows) {
-                if (rows.isEmpty) return Text(l10n.todayPlansEmpty);
+                if (rows.isEmpty) {
+                  return EmptyState(
+                    message: l10n.todayPlansEmpty,
+                    actionLabel: l10n.planGenerateDraft,
+                    onAction: () => context.go('/plan'),
+                    icon: Icons.event_note_outlined,
+                  );
+                }
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

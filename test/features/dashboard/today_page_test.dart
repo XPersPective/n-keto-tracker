@@ -77,10 +77,10 @@ void main() {
     );
     expect(find.text('No weight entries yet.'), findsOneWidget);
     // 4 hızlı eylem ilk ekranda tek bakışta görünür (kaydırma ÖNCE).
-    expect(find.text('Add measurement'), findsOneWidget);
-    expect(find.text('Add meal'), findsOneWidget);
-    expect(find.text('Add weight'), findsOneWidget);
-    expect(find.text('Add symptom'), findsOneWidget);
+    expect(find.text('Add measurement'), findsWidgets);
+    expect(find.text('Add meal'), findsWidgets);
+    expect(find.text('Add weight'), findsWidgets);
+    expect(find.text('Add symptom'), findsWidgets);
     // Kıvrım altındaki bölümler için kaydır (lazy ListView).
     final symptoms = find.text('No symptoms recorded today.');
     await tester.scrollUntilVisible(
@@ -116,7 +116,7 @@ void main() {
     await tester.pumpWidget(scope());
     await tester.pumpAndSettle();
 
-    await tester.tap(find.text('Add measurement')); // dokunuş 2 (görme 1)
+    await tester.tap(find.text('Add measurement').first); // dokunuş 2 (görme 1)
     await tester.pumpAndSettle();
 
     expect(find.text('Glucose (mg/dL)'), findsOneWidget);
@@ -134,21 +134,21 @@ void main() {
     await tester.pumpAndSettle();
 
     // Öğün artık gerçek form (T16).
-    await tester.tap(find.text('Add meal'));
+    await tester.tap(find.text('Add meal').first);
     await tester.pumpAndSettle();
     expect(find.text('Log a meal'), findsOneWidget);
     await tester.pageBack();
     await tester.pumpAndSettle();
 
     // Ağırlık gerçek form (T22).
-    await tester.tap(find.text('Add weight'));
+    await tester.tap(find.text('Add weight').first);
     await tester.pumpAndSettle();
     expect(find.text('Weight (kg)'), findsOneWidget);
     await tester.pageBack();
     await tester.pumpAndSettle();
 
     // Semptom gerçek form (T23).
-    await tester.tap(find.text('Add symptom'));
+    await tester.tap(find.text('Add symptom').first);
     await tester.pumpAndSettle();
     expect(find.text('Log a symptom'), findsOneWidget);
   });

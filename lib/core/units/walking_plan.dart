@@ -29,13 +29,38 @@
 /// `sourcedFigures` listesine eklenmezse tahmin sayılır.
 library;
 
-/// Bir günün yürüyüş reçetesi.
+/// Bir günün aktivite reçetesi.
+enum ActivityType {
+  /// Orta yoğunluklu aerobik yürüyüş (ACSM 2011: ≥5 gün/hafta).
+  walking,
+
+  /// Direnç + nöromotor çalışma (ACSM 2011: 2-3 gün/hafta).
+  strength,
+
+  /// Aktif dinlenme — bu planda kullanılmaz, ileriye dönük.
+  rest,
+}
+
+/// Bir günün aktivite reçetesi.
 class WalkingDay {
-  const WalkingDay({required this.week, required this.day, required this.minutes});
+  const WalkingDay({
+    required this.week,
+    required this.day,
+    required this.minutes,
+    this.activity = ActivityType.walking,
+  });
 
   final int week; // 1..8
   final int day; // 1..7 (Pzt=1..Paz=7)
+
+  /// Yürüyüş günlerinde dakika; kuvvet günlerinde 0.
   final int minutes;
+
+  /// Günün aktivite türü. Varsayılan: yürüyüş.
+  final ActivityType activity;
+
+  bool get isWalking => activity == ActivityType.walking;
+  bool get isStrength => activity == ActivityType.strength;
 }
 
 /// Sekiz haftalık plan.
@@ -80,8 +105,21 @@ class WalkingPlan {
 /// Planda kullanılan, doğrulanmış kaynaklara dayanan sayılar.
 const List<String> kSourcedFigures = <String>[
   '150-300 min/week moderate aerobic activity (WHO 2020)',
-  '5 aerobic days/week (ACSM 2011)',
+  '30 min/day on >=5 days/week, >=150 min/week (ACSM 2011)',
+  'Resistance training 2-3 days/week, each major muscle group (ACSM 2011)',
+  'Neuromotor exercise - balance, agility, coordination - 2-3 days/week '
+      '(ACSM 2011)',
+  'Flexibility: 60 s per exercise, >=2 days/week (ACSM 2011)',
 ];
+
+/// Kuvvet günü protokolü.
+///
+/// ACSM 2011 her büyük kas grubunu haftada 2-3 gün çalıştırmayı önerir;
+/// **set sayısını** belirtmez. Aşağıdaki "2 set" sezgisel bir öneridir ve
+/// kaynaklı değildir (PB-032).
+const String kStrengthProtocol =
+    '2 sets per major muscle group (set count is an estimate; ACSM 2011 '
+    'specifies frequency, not set count)';
 
 /// BMI sınıflandırması (WHO): <18.5 düşük, 18.5–24.9 normal, 25–29.9
 /// fazla kilolu, ≥30 obez.
@@ -146,13 +184,18 @@ WalkingPlan buildWalkingPlan({
     // Sezgisel %12 haftalık ilerleme; günlük tavan da sezgisel.
     final factor = 1.0 + 0.12 * (w - 1);
     final daily = (start * factor).round().clamp(start, target ~/ 5 + 5);
-    // ACSM 2011: haftada 5 aerobik gün → Cmt ve Paz dinlenme.
+    // ACSM 2011: haftada ≥5 aerobik gün + 2-3 direnç/nöromotor günü.
+    // Cmt ve Paz kuvvet günü olarak ayrıldı (eski hâlde boştu).
     for (var d = 1; d <= 7; d++) {
-      if (d == 6 || d == 7) {
-        days.add(WalkingDay(week: w, day: d, minutes: 0));
-      } else {
-        days.add(WalkingDay(week: w, day: d, minutes: daily));
-      }
+      final isStrengthDay = d == 6 || d == 7;
+      days.add(
+        WalkingDay(
+          week: w,
+          day: d,
+          minutes: isStrengthDay ? 0 : daily,
+          activity: isStrengthDay ? ActivityType.strength : ActivityType.walking,
+        ),
+      );
     }
   }
 

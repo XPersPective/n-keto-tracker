@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Thamani za mwanzo zilizobainishwa na maendeleo ya wiki ni makadirio yaliyo msingi wa miongozo ya jumla, si upendekezo wa matibabu. Kuenenda peke yake hakuzati kupungua uzito mkubwa (Richardson 2008: takriban 1.3 kg; Swift 2018: dakika 150 kwa wiki kwa kawaida hazitoshi bila mabadiliko ya chakula)."
+  "walkingEstimateNote": "Thamani za mwanzo zilizobainishwa na maendeleo ya wiki ni makadirio yaliyo msingi wa miongozo ya jumla, si upendekezo wa matibabu. Kuenenda peke yake hakuzati kupungua uzito mkubwa (Richardson 2008: takriban 1.3 kg; Swift 2018: dakika 150 kwa wiki kwa kawaida hazitoshi bila mabadiliko ya chakula).",
+  "walkingStrengthDayTitle": "Siku ya nguvu",
+  "walkingProtocolNote": "Siku za nguvu zinalenga makundi makubwa ya misuli, pamoja na usawa na uratibitaji. Ongeza nyumbani mwake: sekunde 60 kwa kila kundi la misuli, angalau siku 2 kwa wiki (ACSM 2011)."
 }

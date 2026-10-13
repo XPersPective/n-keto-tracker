@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Isikupärastatud algväärtused ja nädala edenemine on üldiste juhiste põhjal tehtud hinnangud, mitte meditsiiniretsept. Ainult kõndimine annab harva suurt kaalukaotust (Richardson 2008: umbes 1,3 kg; Swift 2018: 150 min/nädal on tavaliselt ebapiisav ilma toitumismuutusteta)."
+  "walkingEstimateNote": "Isikupärastatud algväärtused ja nädala edenemine on üldiste juhiste põhjal tehtud hinnangud, mitte meditsiiniretsept. Ainult kõndimine annab harva suurt kaalukaotust (Richardson 2008: umbes 1,3 kg; Swift 2018: 150 min/nädal on tavaliselt ebapiisav ilma toitumismuutusteta).",
+  "walkingStrengthDayTitle": "Jõupäev",
+  "walkingProtocolNote": "Jõupäevad suunduvad pearühmade lihastele ning tasakaalu ja koordinatsioonile. Lisa õrn venitus: umbes 60 sekundit lihasrühma kohta vähemalt 2 päeva nädalas (ACSM 2011)."
 }

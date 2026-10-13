@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Fərdi başlanğıc dəyərləri və həftəlik irəliləyiş ümumi tövsiyələrə əsaslanan təxminlərdir; tibbi təyinat deyil. Təkcə gəzmək adətən böyük çəki itkisi yaratmır (Richardson 2008: təxminən 1,3 kq; Swift 2018: 150 dəq/həftə pəhriz dəyişikliyi olmadan adətən kifayət deyil)."
+  "walkingEstimateNote": "Fərdi başlanğıc dəyərləri və həftəlik irəliləyiş ümumi tövsiyələrə əsaslanan təxminlərdir; tibbi təyinat deyil. Təkcə gəzmək adətən böyük çəki itkisi yaratmır (Richardson 2008: təxminən 1,3 kq; Swift 2018: 150 dəq/həftə pəhriz dəyişikliyi olmadan adətən kifayət deyil).",
+  "walkingStrengthDayTitle": "Güc günü",
+  "walkingProtocolNote": "Güc günləri əsas əzələ qruplarını, həmçinin balans və koordinasiyanı hədəfləyir. Yüngül dartışma əlavə edin: hər əzələ qrupu üçün təxminən 60 saniyə, həftədə ən azı 2 gün (ACSM 2011)."
 }

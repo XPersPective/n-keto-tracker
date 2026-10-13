@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "De personlige startværdier og den ugentlige fremgang er estimater baseret på generelle retningslinjer — ikke en medicinsk recept. Gang alene giver sjældent stort vægttab (Richardson 2008: ca. 1,3 kg; Swift 2018: 150 min/uge er som regel ikke nok uden kostændringer)."
+  "walkingEstimateNote": "De personlige startværdier og den ugentlige fremgang er estimater baseret på generelle retningslinjer — ikke en medicinsk recept. Gang alene giver sjældent stort vægttab (Richardson 2008: ca. 1,3 kg; Swift 2018: 150 min/uge er som regel ikke nok uden kostændringer).",
+  "walkingStrengthDayTitle": "Styrketræningsdag",
+  "walkingProtocolNote": "Styrketræningsdage fokuserer på de store muskelgrupper samt balance og koordination. Tilføj let strækning: cirka 60 sekunder pr. muskelgruppe mindst 2 dage om ugen (ACSM 2011)."
 }

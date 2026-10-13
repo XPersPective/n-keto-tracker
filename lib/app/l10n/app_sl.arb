@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Personalizirane začetne vrednosti in tedenski napredek so ocene na podlagi splošnih smernic, ne zdravniški recept. Samo hoja redko povzroči veliko izgubo telesne mase (Richardson 2008: približno 1,3 kg; Swift 2018: 150 min/teden običajno ni dovolj brez spremembe prehrane)."
+  "walkingEstimateNote": "Personalizirane začetne vrednosti in tedenski napredek so ocene na podlagi splošnih smernic, ne zdravniški recept. Samo hoja redko povzroči veliko izgubo telesne mase (Richardson 2008: približno 1,3 kg; Swift 2018: 150 min/teden običajno ni dovolj brez spremembe prehrane).",
+  "walkingStrengthDayTitle": "Dan moči",
+  "walkingProtocolNote": "Dani moči so usmerjeni na glavne skupine mišic ter ravnotežje in koordinacijo. Dodajte nežno raztegovanje: približno 60 sekund na mišično skupino, najmanj 2 dni na teden (ACSM 2011)."
 }

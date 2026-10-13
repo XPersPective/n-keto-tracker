@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Personalizované počiatočné hodnoty a týždenný postup sú odhady založené na všeobecných odporúčaniach, nie na lekárskom predpise. Samotná chôdza zriedka vedie k výraznej strate hmotnosti (Richardson 2008: približne 1,3 kg; Swift 2018: 150 min./týždeň spravidla nestačí bez zmeny stravy)."
+  "walkingEstimateNote": "Personalizované počiatočné hodnoty a týždenný postup sú odhady založené na všeobecných odporúčaniach, nie na lekárskom predpise. Samotná chôdza zriedka vedie k výraznej strate hmotnosti (Richardson 2008: približne 1,3 kg; Swift 2018: 150 min./týždeň spravidla nestačí bez zmeny stravy).",
+  "walkingStrengthDayTitle": "Deň silového tréningu",
+  "walkingProtocolNote": "Dni silového tréningu smerujú na hlavné svalové skupiny, ako aj na rovnováhu a koordináciu. Pridajte jemné naťahovanie: približne 60 sekúnd na svalovú skupinu, najmenej 2 dni v týždni (ACSM 2011)."
 }

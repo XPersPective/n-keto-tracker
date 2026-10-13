@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Els valors inicials personalitzats i el progrés setmanal són estimacions basades en orientacions generals, no una prescripció mèdica. Caminar sol no produeix una gran pèrdua de pes (Richardson 2008: uns 1,3 kg; Swift 2018: 150 min/setmana normalment no és suficient sense canvis dietètics)."
+  "walkingEstimateNote": "Els valors inicials personalitzats i el progrés setmanal són estimacions basades en orientacions generals, no una prescripció mèdica. Caminar sol no produeix una gran pèrdua de pes (Richardson 2008: uns 1,3 kg; Swift 2018: 150 min/setmana normalment no és suficient sense canvis dietètics).",
+  "walkingStrengthDayTitle": "Dia de força",
+  "walkingProtocolNote": "Els dies de forçaenyatenen els principals grups musculars, així com l'equilibri i la coordinació. Afegeix un estirament suau: uns 60 segons per grup muscular almenys 2 dies per setmana (ACSM 2011)."
 }

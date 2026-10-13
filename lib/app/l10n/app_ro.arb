@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Valorile inițiale personalizate și progresul săptămânal sunt estimări bazate pe orientări generale, nu o rețetă medicală. Mersul pe jos singur produce rareori o scădere mare de greutate (Richardson 2008: aproximativ 1,3 kg; Swift 2018: 150 min/săptămână de regulă nu sunt suficiente fără schimbarea alimentației)."
+  "walkingEstimateNote": "Valorile inițiale personalizate și progresul săptămânal sunt estimări bazate pe orientări generale, nu o rețetă medicală. Mersul pe jos singur produce rareori o scădere mare de greutate (Richardson 2008: aproximativ 1,3 kg; Swift 2018: 150 min/săptămână de regulă nu sunt suficiente fără schimbarea alimentației).",
+  "walkingStrengthDayTitle": "Zi de forță",
+  "walkingProtocolNote": "Zilele de forță vizează principalele grupe musculare, precum și echilibrul și coordonarea. Adaugă întindere ușoară: aproximativ 60 de secunde pe grup muscular, cel puțin 2 zile pe săptămână (ACSM 2011)."
 }

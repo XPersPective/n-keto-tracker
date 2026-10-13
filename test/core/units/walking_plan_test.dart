@@ -77,18 +77,54 @@ void main() {
       expect(plan.references, contains('walk-swift-2018'));
     });
 
-    test('hafta 1 gün 6 ve 7 (Cmt, Paz) dinlenme', () {
+    test('hafta 1 gün 6 ve 7 (Cmt, Paz) kuvvet gunu', () {
       final plan = buildWalkingPlan(
         birthYear: 1990,
         heightCm: 170,
         currentWeightKg: 70,
         activityLevel: 'moderate',
       );
-      final restDays = plan.days
+      final weekend = plan.days
           .where((d) => d.week == 1 && (d.day == 6 || d.day == 7))
           .toList();
-      expect(restDays, hasLength(2));
-      expect(restDays.every((d) => d.minutes == 0), isTrue);
+      expect(weekend, hasLength(2));
+      // PB-032: hafta sonu artik bos degil, ACSM 2011 direnc oneri.
+      expect(weekend.every((d) => d.isStrength), isTrue);
+      expect(weekend.every((d) => d.minutes == 0), isTrue);
+    });
+
+    // PB-032: her hafta tam olarak 5 yuruyus + 2 kuvvet gunu.
+    test('her hafta 5 yuruyus + 2 kuvvet gunu', () {
+      final plan = buildWalkingPlan(
+        birthYear: 1990,
+        heightCm: 170,
+        currentWeightKg: 70,
+        activityLevel: 'light',
+      );
+      for (var w = 1; w <= 8; w++) {
+        final week = plan.days.where((d) => d.week == w).toList();
+        expect(week, hasLength(7), reason: 'hafta $w');
+        expect(
+          week.where((d) => d.isWalking),
+          hasLength(5),
+          reason: 'hafta $w yuruyus',
+        );
+        expect(
+          week.where((d) => d.isStrength),
+          hasLength(2),
+          reason: 'hafta $w kuvvet',
+        );
+      }
+    });
+
+    test('kaynak listesi ACSM kuvvet ve esneme onerilerini icerir', () {
+      expect(kSourcedFigures, hasLength(greaterThanOrEqualTo(5)));
+      final joined = kSourcedFigures.join(' ');
+      expect(joined, contains('Resistance training 2-3 days/week'));
+      expect(joined, contains('60 s per exercise'));
+      expect(joined, contains('Neuromotor'));
+      expect(kStrengthProtocol, isNotEmpty);
+      expect(kStrengthProtocol, contains('ACSM 2011'));
     });
 
     test('hafta 1 gün 1 (Pzt) yürüyüş (startMinutes * 1.0)', () {

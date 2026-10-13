@@ -274,5 +274,7 @@
       }
     }
   },
-  "walkingEstimateNote": "I valori iniziali personalizzati e l'avanzamento settimanale sono stime basate su indicazioni generali, non una prescrizione medica. Camminare da solo raramente produce un'elevata perdita di peso (Richardson 2008: circa 1,3 kg; Swift 2018: 150 min/settimana di solito non bastano senza modifiche alimentari)."
+  "walkingEstimateNote": "I valori iniziali personalizzati e l'avanzamento settimanale sono stime basate su indicazioni generali, non una prescrizione medica. Camminare da solo raramente produce un'elevata perdita di peso (Richardson 2008: circa 1,3 kg; Swift 2018: 150 min/settimana di solito non bastano senza modifiche alimentari).",
+  "walkingStrengthDayTitle": "Giorno di forza",
+  "walkingProtocolNote": "I giorni di forza si concentrano sui principali gruppi muscolari, oltre che su equilibrio e coordinazione. Aggiungi un allungamento leggero: circa 60 secondi per gruppo muscolare, almeno 2 giorni a settimana (ACSM 2011)."
 }

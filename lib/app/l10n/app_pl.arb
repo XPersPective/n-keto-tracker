@@ -274,5 +274,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Spersonalizowane wartości początkowe i tygodniowy postęp to szacunki oparte na ogólnych zaleceniach, a nie recepta lekarska. Sam chodzenie rzadko daje dużą utratę masy (Richardson 2008: ok. 1,3 kg; Swift 2018: 150 min/tydzień zwykle nie wystarcza bez zmiany diety)."
+  "walkingEstimateNote": "Spersonalizowane wartości początkowe i tygodniowy postęp to szacunki oparte na ogólnych zaleceniach, a nie recepta lekarska. Sam chodzenie rzadko daje dużą utratę masy (Richardson 2008: ok. 1,3 kg; Swift 2018: 150 min/tydzień zwykle nie wystarcza bez zmiany diety).",
+  "walkingStrengthDayTitle": "Dzień siły",
+  "walkingProtocolNote": "Dni siły koncentrują się na głównych grupach mięśniowych, a także na równowadze i koordynacji. Dodaj delikatne rozciąganie: około 60 sekund na grupę mięśniową, co najmniej 2 dni w tygodniu (ACSM 2011)."
 }

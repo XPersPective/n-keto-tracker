@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Personalizirane početne vrijednosti i tjedni napredak su procjene na temelju općih smjernica, a ne medicinski recept. Samo hodanje rijetko daje veliki gubitak težine (Richardson 2008: oko 1,3 kg; Swift 2018: 150 min/tjedan obično nije dovoljno bez promjene prehrane)."
+  "walkingEstimateNote": "Personalizirane početne vrijednosti i tjedni napredak su procjene na temelju općih smjernica, a ne medicinski recept. Samo hodanje rijetko daje veliki gubitak težine (Richardson 2008: oko 1,3 kg; Swift 2018: 150 min/tjedan obično nije dovoljno bez promjene prehrane).",
+  "walkingStrengthDayTitle": "Dan snage",
+  "walkingProtocolNote": "Dani snage usmjeravaju na glavne skupine mišića, kao i na ravnotežu i koordinaciju. Dodajte nježno istezanje: oko 60 sekundi po mišićnoj skupini najmanje 2 dana u tjednu (ACSM 2011)."
 }

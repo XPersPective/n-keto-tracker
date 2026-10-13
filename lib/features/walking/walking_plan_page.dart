@@ -87,16 +87,20 @@ class WalkingPlanPage extends ConsumerWidget {
                 children: [
                   for (var d = 1; d <= 7; d++)
                     Expanded(
-                      child: _DayCell(
-                        day: d,
-                        minutes: plan.days
-                            .firstWhere(
-                              (e) => e.week == w && e.day == d,
-                              orElse: () =>
-                                  WalkingDay(week: w, day: d, minutes: 0),
-                            )
-                            .minutes,
-                        l10n: l10n,
+                      child: Builder(
+                        builder: (context) {
+                          final day = plan.days.firstWhere(
+                            (e) => e.week == w && e.day == d,
+                            orElse: () =>
+                                WalkingDay(week: w, day: d, minutes: 0),
+                          );
+                          return _DayCell(
+                            day: d,
+                            minutes: day.minutes,
+                            isStrength: day.isStrength,
+                            l10n: l10n,
+                          );
+                        },
                       ),
                     ),
                 ],
@@ -104,6 +108,12 @@ class WalkingPlanPage extends ConsumerWidget {
             ),
             const SizedBox(height: 8),
           ],
+          const SizedBox(height: 8),
+          // PB-032: kuvvet/esneme protokolü (ACSM 2011).
+          Text(
+            l10n.walkingProtocolNote,
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
           const SizedBox(height: 16),
           // Kanıt referansları
           SectionCard(
@@ -149,11 +159,13 @@ class _DayCell extends StatelessWidget {
   const _DayCell({
     required this.day,
     required this.minutes,
+    required this.isStrength,
     required this.l10n,
   });
 
   final int day;
   final int minutes;
+  final bool isStrength;
   final AppLocalizations l10n;
 
   // Pzt=1 .. Paz=7 — MaterialLocalizations'tan lokalize kısa etiketler.
@@ -167,7 +179,7 @@ class _DayCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isRest = minutes == 0;
+    final scheme = Theme.of(context).colorScheme;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 2),
       child: Column(
@@ -180,16 +192,28 @@ class _DayCell extends StatelessWidget {
           Container(
             height: 36,
             decoration: BoxDecoration(
-              color: isRest
-                  ? Theme.of(context).colorScheme.surfaceContainerHighest
-                  : Theme.of(context).colorScheme.primaryContainer,
+              color: isStrength
+                  ? scheme.secondaryContainer
+                  : minutes > 0
+                  ? scheme.primaryContainer
+                  : scheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(8),
             ),
             alignment: Alignment.center,
-            child: Text(
-              isRest ? '–' : '$minutes',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
+            child: isStrength
+                // Kuvvet günü: sayı yerine anlamlı bir simge + tooltip.
+                ? Tooltip(
+                    message: l10n.walkingStrengthDayTitle,
+                    child: Icon(
+                      Icons.fitness_center,
+                      size: 18,
+                      color: scheme.onSecondaryContainer,
+                    ),
+                  )
+                : Text(
+                    minutes > 0 ? '$minutes' : '–',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
           ),
         ],
       ),

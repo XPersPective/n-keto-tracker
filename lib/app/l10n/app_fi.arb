@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Personoidut aloitusarvot ja viikkovahde ovat arvioita yleisten ohjeiden perusteella — eivät lääkkeellistä määräystä. Pelkkä kävely aiheuttaa harvoin suuren painonpudonuksen (Richardson 2008: noin 1,3 kg; Swift 2018: 150 min/vkko riittää harvoin ilman ruokavalion muutosta)."
+  "walkingEstimateNote": "Personoidut aloitusarvot ja viikkovahde ovat arvioita yleisten ohjeiden perusteella — eivät lääkkeellistä määräystä. Pelkkä kävely aiheuttaa harvoin suuren painonpudonuksen (Richardson 2008: noin 1,3 kg; Swift 2018: 150 min/vkko riittää harvoin ilman ruokavalion muutosta).",
+  "walkingStrengthDayTitle": "Voimapäivä",
+  "walkingProtocolNote": "Voimapäivät kohdistuvat suuriin lihasryhmiin sekä tasapainoon ja koordinaatioon. Lisää kevyt venyttely: noin 60 sekuntia lihasryhmää kohti vähintään 2 päivänä viikossa (ACSM 2011)."
 }

@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Vlerat fillestare të personalizuara dhe përparimi javor janë vlerësime të bazuara në udhëzime të përgjithshme, jo recetë mjekësore. Vetëm ecja rrallë herë jep humbje të madhe peshe (Richardson 2008: rreth 1,3 kg; Swift 2018: 150 min/javë zakonisht nuk mjafton pa ndryshim dietë)."
+  "walkingEstimateNote": "Vlerat fillestare të personalizuara dhe përparimi javor janë vlerësime të bazuara në udhëzime të përgjithshme, jo recetë mjekësore. Vetëm ecja rrallë herë jep humbje të madhe peshe (Richardson 2008: rreth 1,3 kg; Swift 2018: 150 min/javë zakonisht nuk mjafton pa ndryshim dietë).",
+  "walkingStrengthDayTitle": "Ditë i forcës",
+  "walkingProtocolNote": "Ditët e forcës synojnë grupet kryesore muskulore, si dhe balancën dhe koordinimin. Shtoni një shtjellje të butë: rreth 60 sekonda për çdo grup muskulor, të paktën 2 ditë në javë (ACSM 2011)."
 }

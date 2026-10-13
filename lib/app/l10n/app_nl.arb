@@ -274,5 +274,7 @@
       }
     }
   },
-  "walkingEstimateNote": "De gepersonaliseerde startwaarden en de voortgang per week zijn schattingen op basis van algemene richtlijnen, geen medisch voorschrift. Alleen wandelen leidt zelden tot groot gewichtsverlies (Richardson 2008: ongeveer 1,3 kg; Swift 2018: 150 min/week is doorgaans niet voldoende zonder dieetaanpassing)."
+  "walkingEstimateNote": "De gepersonaliseerde startwaarden en de voortgang per week zijn schattingen op basis van algemene richtlijnen, geen medisch voorschrift. Alleen wandelen leidt zelden tot groot gewichtsverlies (Richardson 2008: ongeveer 1,3 kg; Swift 2018: 150 min/week is doorgaans niet voldoende zonder dieetaanpassing).",
+  "walkingStrengthDayTitle": "Krachtdag",
+  "walkingProtocolNote": "Krachtdagen richten zich op de grote spiergroepen, plus balans en coördinatie. Voeg gentle reksoefeningen toe: ongeveer 60 seconden per spiergroep, minstens 2 dagen per week (ACSM 2011)."
 }

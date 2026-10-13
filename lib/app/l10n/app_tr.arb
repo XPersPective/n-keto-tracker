@@ -472,6 +472,8 @@
   "walkingWeeklyTargetLabel": "Haftalık hedef: {minutes} dk (DSÖ tabanı)",
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "{n}. hafta",
+  "walkingStrengthDayTitle": "Kuvvet günü",
+  "walkingProtocolNote": "Kuvvet günleri ana kas gruplarını, ayrıca denge ve koordinasyonu hedefler. Hafif esneme ekleyin: kas grubu başına yaklaşık 60 saniye, haftada en az 2 gün (ACSM 2011).",
   "walkingReferencesTitle": "Bilimsel kaynaklar",
   "walkingReferencesHint": "Plan DSÖ 2020, ACSM 2011, Richardson 2008 (pedometre meta-analizi) ve Swift 2018 izler. Tam alıntılar için Kanıtlar sekmesine bakın.",
   "walkingEstimateNote": "Kişisel başlangıç değerleri ve haftalık ilerleme genel rehberlere dayanan tahminlerdir; tıbbi reçe değildir. Yürüyüş tek başına büyük kilo kaybı sağlamaz (Richardson 2008: yaklaşık 1,3 kg; Swift 2018: diyet değişikliği olmadan 150 dk/hafta genellikle yeterli değildir).",

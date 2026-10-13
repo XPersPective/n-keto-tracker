@@ -239,6 +239,8 @@
       }
     }
   },
+  "walkingStrengthDayTitle": "Strength day",
+  "walkingProtocolNote": "Strength days target the major muscle groups plus balance and coordination. Add gentle stretching: about 60 seconds per muscle group on at least 2 days/week (ACSM 2011).",
   "walkingReferencesTitle": "Scientific sources",
   "walkingReferencesHint": "Plan follows WHO 2020, ACSM 2011, Richardson 2008 (pedometer meta-analysis) and Swift 2018. See the Evidence tab for full citations.",
   "walkingEstimateNote": "Personalised start values and weekly progression are estimates based on general guidance — not a medical prescription. Walking alone rarely produces large weight loss (Richardson 2008: about 1.3 kg; Swift 2018: 150 min/week is usually not enough without dietary change).",

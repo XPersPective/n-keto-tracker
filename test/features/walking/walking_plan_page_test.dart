@@ -101,4 +101,27 @@ void main() {
     expect(find.textContaining('tıbbi reçe değildir'), findsOneWidget);
     expect(find.textContaining('Murtagh'), findsNothing);
   });
+
+  // PB-032: kuvvet günleri ve protokol notu görünür.
+  testWidgets('kuvvet günü simgeleri ve protokol notu görünür (EN)', (
+    tester,
+  ) async {
+    tallScreen(tester);
+    addTearDown(() => teardown(tester));
+    await tester.pumpWidget(scope());
+    await tester.pumpAndSettle();
+    // 8 hafta × 2 kuvvet günü = 16 fitness ikonu.
+    expect(find.byIcon(Icons.fitness_center), findsNWidgets(16));
+    // Protokol notu (ACSM 2011).
+    expect(find.textContaining('60 seconds per muscle group'), findsOneWidget);
+  });
+
+  testWidgets('protokol notu Türkçede görünür', (tester) async {
+    tallScreen(tester);
+    addTearDown(() => teardown(tester));
+    await tester.pumpWidget(scope(locale: const Locale('tr')));
+    await tester.pumpAndSettle();
+    expect(find.byIcon(Icons.fitness_center), findsNWidgets(16));
+    expect(find.textContaining('60 saniye'), findsOneWidget);
+  });
 }

@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Nilai mula yang diperibadankan dan kemajuan mingguan ialah anggaran berdasarkan garis panduan umum, bukan preskripsi perubatan. Berjalan kaki sahaja jarang menghasilkan penurunan berat yang besar (Richardson 2008: kira-kira 1.3 kg; Swift 2018: 150 minit/minggu biasanya tidak mencukupi tanpa perubahan diet)."
+  "walkingEstimateNote": "Nilai mula yang diperibadankan dan kemajuan mingguan ialah anggaran berdasarkan garis panduan umum, bukan preskripsi perubatan. Berjalan kaki sahaja jarang menghasilkan penurunan berat yang besar (Richardson 2008: kira-kira 1.3 kg; Swift 2018: 150 minit/minggu biasanya tidak mencukupi tanpa perubahan diet).",
+  "walkingStrengthDayTitle": "Hari kekuatan",
+  "walkingProtocolNote": "Hari kekuatan menyasarkan kumpulan otot utama serta imbangan dan koordinasi. Tambah regangan perlahan: kira-kira 60 saat setiap kumpulan otot, sekurang-kurangnya 2 hari seminggu (ACSM 2011)."
 }

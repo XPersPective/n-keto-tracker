@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "Hasierako balioak pertsonalizatuak eta asteaneko aurrerapena estimazioak dira, oinarrizko gomendioetan oinarrituta — ezagina mediko bat ez dira. Bakarka ibiltzeak ez du ohiko pisu galvanem handurik eragiten (Richardson 2008: gutxi gorabehera 1,3 kg; Swift 2018: 150 min/astea normalean ez da aski elikidetasun aldaketarik gabe)."
+  "walkingEstimateNote": "Hasierako balioak pertsonalizatuak eta asteaneko aurrerapena estimazioak dira, oinarrizko gomendioetan oinarrituta — ezagina mediko bat ez dira. Bakarka ibiltzeak ez du ohiko pisu galvanem handurik eragiten (Richardson 2008: gutxi gorabehera 1,3 kg; Swift 2018: 150 min/astea normalean ez da aski elikidetasun aldaketarik gabe).",
+  "walkingStrengthDayTitle": "Indartze eguna",
+  "walkingProtocolNote": "Indartze egunak muskulu talde handienak, baita orokortasuna eta koordinazioa ere zentratzen dituzte. Gehitu luzatxo aratza: 60 segundo inguru muskulu talde bakoitzeko, astean gutxienez 2 egunetan (ACSM 2011)."
 }

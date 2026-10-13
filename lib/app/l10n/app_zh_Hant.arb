@@ -494,5 +494,7 @@
       }
     }
   },
-  "walkingEstimateNote": "個人化起始值和每週遞增都是基於一般指南的估算，並非醫囑。單靠步行很少能帶來大幅減重（Richardson 2008：約 1.3 公斤；Swift 2018：不改變飲食時每週 150 分鐘通常不夠）。"
+  "walkingEstimateNote": "個人化起始值和每週遞增都是基於一般指南的估算，並非醫囑。單靠步行很少能帶來大幅減重（Richardson 2008：約 1.3 公斤；Swift 2018：不改變飲食時每週 150 分鐘通常不夠）。",
+  "walkingStrengthDayTitle": "力量訓練日",
+  "walkingProtocolNote": "力量訓練日針對主要肌群，同時兼顧平衡與協調。加入輕柔拉伸：每個肌群約 60 秒，每週至少 2 天（ACSM 2011）。"
 }

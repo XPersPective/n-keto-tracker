@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/food_icons.dart';
 import '../../core/database/database.dart';
 import '../../core/database/meal_repository.dart';
 import '../../core/database/providers.dart';
@@ -153,6 +154,7 @@ class _MealFormState extends ConsumerState<MealForm> {
           ),
           ..._results.map(
             (f) => ListTile(
+              leading: FoodIconBadge(category: f.category),
               title: Text(f.nameTr ?? f.canonicalName),
               subtitle: Text(
                 '${f.kcalPer100g.toStringAsFixed(0)} kcal · '
@@ -175,6 +177,10 @@ class _MealFormState extends ConsumerState<MealForm> {
           ),
           ..._items.asMap().entries.map(
             (e) => ListTile(
+              leading: IconButton(
+                icon: const Icon(Icons.delete_outline),
+                onPressed: () => setState(() => _items.removeAt(e.key)),
+              ),
               title: Text(e.value.food.nameTr ?? e.value.food.canonicalName),
               trailing: SizedBox(
                 width: 110,
@@ -191,10 +197,6 @@ class _MealFormState extends ConsumerState<MealForm> {
                     if (g != null) setState(() => e.value.grams = g);
                   },
                 ),
-              ),
-              leading: IconButton(
-                icon: const Icon(Icons.delete_outline),
-                onPressed: () => setState(() => _items.removeAt(e.key)),
               ),
             ),
           ),

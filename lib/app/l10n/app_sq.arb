@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Java {n}",
   "walkingReferencesTitle": "Burime shkencore",
-  "walkingReferencesHint": "Plani ndjek OBSH 2020, ACSM 2011 dhe meta-analizën e ecjes (Murtagh 2015). Shih skedën Dëshmi për citate të plota.",
+  "walkingReferencesHint": "Plani ndjek OBSH 2020, ACSM 2011 dhe meta-analizën e ecjes (Richardson 2008). Shih skedën Dëshmi për citate të plota.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Vlerat fillestare të personalizuara dhe përparimi javor janë vlerësime të bazuara në udhëzime të përgjithshme, jo recetë mjekësore. Vetëm ecja rrallë herë jep humbje të madhe peshe (Richardson 2008: rreth 1,3 kg; Swift 2018: 150 min/javë zakonisht nuk mjafton pa ndryshim dietë)."
 }

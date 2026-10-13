@@ -25,7 +25,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Week {n}',
         'walkingReferencesTitle': 'Wetenskaplike bronne',
-        'walkingReferencesHint': 'Die plan volg WGO 2020, ACSM 2011 en stap-meta-analise (Murtagh 2015). Sien die Bewyslas vir volledige verwysings.',
+        'walkingReferencesHint': 'Die plan volg WGO 2020, ACSM 2011 en stap-meta-analise (Richardson 2008). Sien die Bewyslas vir volledige verwysings.',
+        'walkingEstimateNote': 'Persoonlike beginwaardes en weeklikse vordering is skattings op grond van algemene rigs — nie \'n mediese voorskrif nie. Stap alleen geeef nie groot gewigsverlies nie (Richardson 2008: sowat 1,3 kg; Swift 2018: 150 min/week is sonder dieetverandering gewoonlik onvoldoende).',
     },
     'ar': {
         'navWalking': 'خطة المشي',
@@ -36,7 +37,8 @@ T = {
         'walkingBmiLabel': 'مؤشر كتلة الجسم: {value}',
         'walkingWeekTitle': 'الأسبوع {n}',
         'walkingReferencesTitle': 'مصادر علمية',
-        'walkingReferencesHint': 'تتبع الخطة إرشادات منظمة الصحة العالمية 2020 و ACSM 2011 والتحليل البعدي للمشي (Murtagh 2015). راجع تبويب الأدلة للاقتباسات الكاملة.',
+        'walkingReferencesHint': 'تتبع الخطة إرشادات منظمة الصحة العالمية 2020 و ACSM 2011 والتحليل البعدي للمشي (Richardson 2008). راجع تبويب الأدلة للاقتباسات الكاملة.',
+        'walkingEstimateNote': 'قيم البداية المخصصة وتقدم الأسابيع تقديرات مبنية على إرشادات عامة وليست وصفة طبية. المشي وحده نادراً ما يسبب فقدان وزن كبير (Richardson 2008: نحو 1.3 كجم؛ Swift 2018: 150 دقيقة/أسبوع غالباً غير كافية دون تغيير غذائي).',
     },
     'az': {
         'navWalking': 'Gəzinti planı',
@@ -47,7 +49,8 @@ T = {
         'walkingBmiLabel': 'BKİ: {value}',
         'walkingWeekTitle': 'Həftə {n}',
         'walkingReferencesTitle': 'Elmi mənbələr',
-        'walkingReferencesHint': 'Plan ÜST 2020, ACSM 2011 və gəzinti meta-analizini (Murtagh 2015) izləyir. Tam istinadlar üçün Sübutlar bölməsinə baxın.',
+        'walkingReferencesHint': 'Plan ÜST 2020, ACSM 2011 və gəzinti meta-analizini (Richardson 2008) izləyir. Tam istinadlar üçün Sübutlar bölməsinə baxın.',
+        'walkingEstimateNote': 'Fərdi başlanğıc dəyərləri və həftəlik irəliləyiş ümumi tövsiyələrə əsaslanan təxminlərdir; tibbi təyinat deyil. Təkcə gəzmək adətən böyük çəki itkisi yaratmır (Richardson 2008: təxminən 1,3 kq; Swift 2018: 150 dəq/həftə pəhriz dəyişikliyi olmadan adətən kifayət deyil).',
     },
     'be': {
         'navWalking': 'План хаджэння',
@@ -58,7 +61,8 @@ T = {
         'walkingBmiLabel': 'ІМТ: {value}',
         'walkingWeekTitle': 'Тыдзень {n}',
         'walkingReferencesTitle': 'Навуковыя крыніцы',
-        'walkingReferencesHint': 'План адпавядае СААЗ 2020, ACSM 2011 і мета-аналізу хаджэння (Murtagh 2015). Поўныя цытаты гл. у раздзеле Доказы.',
+        'walkingReferencesHint': 'План адпавядае СААЗ 2020, ACSM 2011 і мета-аналізу хаджэння (Richardson 2008). Поўныя цытаты гл. у раздзеле Доказы.',
+        'walkingEstimateNote': 'Персаналізаваныя пачатковыя значэнні і тыднёвы прагрэс — гэта ацэнкі на аснове агульных рэкамендацый, а не медыцынскі рэцэпт. Толькі хадзіба не даець вялікай страты вагі (Richardson 2008: каля 1,3 кг; Swift 2018: 150 хвін/тыдзень звычайна недастаткова без змены рацыну).',
     },
     'bg': {
         'navWalking': 'План за ходене',
@@ -69,7 +73,8 @@ T = {
         'walkingBmiLabel': 'ИТМ: {value}',
         'walkingWeekTitle': 'Седмица {n}',
         'walkingReferencesTitle': 'Научни източници',
-        'walkingReferencesHint': 'Планът следва СЗО 2020, ACSM 2011 и мета-анализ на ходене (Murtagh 2015). За пълни цитати вижте раздел Доказателства.',
+        'walkingReferencesHint': 'Планът следва СЗО 2020, ACSM 2011 и мета-анализ на ходене (Richardson 2008). За пълни цитати вижте раздел Доказателства.',
+        'walkingEstimateNote': 'Персонализираните начални стойности и седмичното напредване са оценки въз основа на общи насоки, а не медицинска рецепта. Само ходенето рядко води до голяма загуба на тегло (Richardson 2008: около 1,3 кг; Swift 2018: 150 мин/седмица обикновено не е достатъчна без промяна в храненето).',
     },
     'bn': {
         'navWalking': 'হাঁটার পরিকল্পনা',
@@ -80,7 +85,8 @@ T = {
         'walkingBmiLabel': 'বিএমআই: {value}',
         'walkingWeekTitle': 'সপ্তাহ {n}',
         'walkingReferencesTitle': 'বৈজ্ঞানিক উৎস',
-        'walkingReferencesHint': 'পরিকল্পনা WHO 2020, ACSM 2011 এবং হাঁটার মেটা-বিশ্লেষণ (Murtagh 2015) অনুসরণ করে। সম্পূর্ণ উদ্ধৃতির জন্য প্রমাণ ট্যাব দেখুন।',
+        'walkingReferencesHint': 'পরিকল্পনা WHO 2020, ACSM 2011 এবং হাঁটার মেটা-বিশ্লেষণ (Richardson 2008) অনুসরণ করে। সম্পূর্ণ উদ্ধৃতির জন্য প্রমাণ ট্যাব দেখুন।',
+        'walkingEstimateNote': 'ব্যক্তিগত শুরুর মান ও সাপ্তাহিক অগ্রগতি সাধারণ নির্দেশনার উপর ভিত্তিক অনুমান — এটি চিকিৎসা প্রেসক্রিপশন নয়। শুধু হাঁটা বড় ওজন কমায় না (Richardson 2008: প্রায় ১.৩ কেজি; Swift 2018: খাদ্য পরিবর্তন ছাড়া ১৫০ মিনিট/সপ্তাহ সাধারণত যথেষ্ট নয়)।',
     },
     'ca': {
         'navWalking': 'Pla de caminada',
@@ -91,7 +97,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Setmana {n}',
         'walkingReferencesTitle': 'Fonts científiques',
-        'walkingReferencesHint': 'El pla segueix OMS 2020, ACSM 2011 i la metaanàlisi de caminada (Murtagh 2015). Consulta la pestanya Evidència per a les cites completes.',
+        'walkingReferencesHint': 'El pla segueix OMS 2020, ACSM 2011 i la metaanàlisi de caminada (Richardson 2008). Consulta la pestanya Evidència per a les cites completes.',
+        'walkingEstimateNote': 'Els valors inicials personalitzats i el progrés setmanal són estimacions basades en orientacions generals, no una prescripció mèdica. Caminar sol no produeix una gran pèrdua de pes (Richardson 2008: uns 1,3 kg; Swift 2018: 150 min/setmana normalment no és suficient sense canvis dietètics).',
     },
     'cs': {
         'navWalking': 'Plán chůze',
@@ -102,7 +109,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Týden {n}',
         'walkingReferencesTitle': 'Vědecké zdroje',
-        'walkingReferencesHint': 'Plán vychází z WHO 2020, ACSM 2011 a metaanalýzy chůze (Murtagh 2015). Úplné citace najdeš v záložce Důkazy.',
+        'walkingReferencesHint': 'Plán vychází z WHO 2020, ACSM 2011 a metaanalýzy chůze (Richardson 2008). Úplné citace najdeš v záložce Důkazy.',
+        'walkingEstimateNote': 'Personalizované počáteční hodnoty a týdenní postup jsou odhady založené na obecných doporučeních, ne lékařský předpis. Samotná chůze obvykle nevede k velké úbytce hmotnosti (Richardson 2008: asi 1,3 kg; Swift 2018: 150 min/týden zpravidla nestačí bez změny jídelníčku).',
     },
     'da': {
         'navWalking': 'Gangplan',
@@ -113,7 +121,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Uge {n}',
         'walkingReferencesTitle': 'Videnskabelige kilder',
-        'walkingReferencesHint': 'Planen følger WHO 2020, ACSM 2011 og gang-metaanalyse (Murtagh 2015). Se Evidens-fanen for fulde citater.',
+        'walkingReferencesHint': 'Planen følger WHO 2020, ACSM 2011 og gang-metaanalyse (Richardson 2008). Se Evidens-fanen for fulde citater.',
+        'walkingEstimateNote': 'De personlige startværdier og den ugentlige fremgang er estimater baseret på generelle retningslinjer — ikke en medicinsk recept. Gang alene giver sjældent stort vægttab (Richardson 2008: ca. 1,3 kg; Swift 2018: 150 min/uge er som regel ikke nok uden kostændringer).',
     },
     'de': {
         'navWalking': 'Schrittplan',
@@ -124,7 +133,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Woche {n}',
         'walkingReferencesTitle': 'Wissenschaftliche Quellen',
-        'walkingReferencesHint': 'Der Plan folgt WHO 2020, ACSM 2011 und der Walking-Metaanalyse (Murtagh 2015). Vollständige Zitate im Evidenz-Tab.',
+        'walkingReferencesHint': 'Der Plan folgt WHO 2020, ACSM 2011 und der Walking-Metaanalyse (Richardson 2008). Vollständige Zitate im Evidenz-Tab.',
+        'walkingEstimateNote': 'Die persönlichen Startwerte und die Wochensteigerung sind Schätzungen auf Basis allgemeiner Leitlinien — keine medizinische Verordnung. Alleiniges Gehen führt selten zu großem Gewichtsverlust (Richardson 2008: ca. 1,3 kg; Swift 2018: 150 Min./Woche reichen ohne Ernährungsumstellung meist nicht).',
     },
     'el': {
         'navWalking': 'Πλάνο περπατήματος',
@@ -135,7 +145,8 @@ T = {
         'walkingBmiLabel': 'ΔΜΣ: {value}',
         'walkingWeekTitle': 'Εβδομάδα {n}',
         'walkingReferencesTitle': 'Επιστημονικές πηγές',
-        'walkingReferencesHint': 'Το πλάνο ακολουθεί τις οδηγίες ΠΟΥ 2020, ACSM 2011 και τη μετα-ανάλυση περπατήματος (Murtagh 2015). Δες τις πλήρεις παραπομπές στην καρτέλα Στοιχεία.',
+        'walkingReferencesHint': 'Το πλάνο ακολουθεί τις οδηγίες ΠΟΥ 2020, ACSM 2011 και τη μετα-ανάλυση περπατήματος (Richardson 2008). Δες τις πλήρεις παραπομπές στην καρτέλα Στοιχεία.',
+        'walkingEstimateNote': 'Οι εξατομικευμένες αρχικές τιμές και η εβδομαδιαία πρόοδος είναι εκτιμήσεις βασισμένες σε γενικές οδηγίες — όχι ιατρική συνταγή. Η μόνη περπάτηση σπάνια προκαλεί μεγάλη απώλεια βάρους (Richardson 2008: περίπου 1,3 κιλά; Swift 2018: 150 λεπτά/εβδομάδα συνήθως δεν αρκούν χωρίς αλλαγή διατροφής).',
     },
     'es': {
         'navWalking': 'Plan de caminata',
@@ -146,7 +157,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Semana {n}',
         'walkingReferencesTitle': 'Fuentes científicas',
-        'walkingReferencesHint': 'El plan sigue OMS 2020, ACSM 2011 y el metaanálisis de caminata (Murtagh 2015). Consulta la pestaña Evidencia para citas completas.',
+        'walkingReferencesHint': 'El plan sigue OMS 2020, ACSM 2011 y el metaanálisis de caminata (Richardson 2008). Consulta la pestaña Evidencia para citas completas.',
+        'walkingEstimateNote': 'Los valores iniciales personalizados y el progreso semanal son estimaciones basadas en orientaciones generales, no una prescripción médica. Caminar por sí solo rara vez produce una gran pérdida de peso (Richardson 2008: unos 1,3 kg; Swift 2018: 150 min/semana normalmente no basta sin cambios en la dieta).',
     },
     'et': {
         'navWalking': 'Kõnnniplaan',
@@ -157,7 +169,8 @@ T = {
         'walkingBmiLabel': 'KMI: {value}',
         'walkingWeekTitle': 'Nädal {n}',
         'walkingReferencesTitle': 'Teaduslikud allikad',
-        'walkingReferencesHint': 'Plaan järgib WHO 2020, ACSM 2011 ja kõnni metaanalüüsi (Murtagh 2015). Täielikud viited vaata Tõendid vahekaardilt.',
+        'walkingReferencesHint': 'Plaan järgib WHO 2020, ACSM 2011 ja kõnni metaanalüüsi (Richardson 2008). Täielikud viited vaata Tõendid vahekaardilt.',
+        'walkingEstimateNote': 'Isikupärastatud algväärtused ja nädala edenemine on üldiste juhiste põhjal tehtud hinnangud, mitte meditsiiniretsept. Ainult kõndimine annab harva suurt kaalukaotust (Richardson 2008: umbes 1,3 kg; Swift 2018: 150 min/nädal on tavaliselt ebapiisav ilma toitumismuutusteta).',
     },
     'eu': {
         'navWalking': 'Ibiltaldi plana',
@@ -168,7 +181,8 @@ T = {
         'walkingBmiLabel': 'GMI: {value}',
         'walkingWeekTitle': '{n}. astea',
         'walkingReferencesTitle': 'Iturri zientifikoak',
-        'walkingReferencesHint': 'Planak OME 2020, ACSM 2011 eta ibiltaldi metaanalisia (Murtagh 2015) jarraitzen ditu. Erreferentzia osoak ikusteko, joan Ebidentzia fitxara.',
+        'walkingReferencesHint': 'Planak OME 2020, ACSM 2011 eta ibiltaldi metaanalisia (Richardson 2008) jarraitzen ditu. Erreferentzia osoak ikusteko, joan Ebidentzia fitxara.',
+        'walkingEstimateNote': 'Hasierako balioak pertsonalizatuak eta asteaneko aurrerapena estimazioak dira, oinarrizko gomendioetan oinarrituta — ezagina mediko bat ez dira. Bakarka ibiltzeak ez du ohiko pisu galvanem handurik eragiten (Richardson 2008: gutxi gorabehera 1,3 kg; Swift 2018: 150 min/astea normalean ez da aski elikidetasun aldaketarik gabe).',
     },
     'fa': {
         'navWalking': 'برنامه پیاده‌روی',
@@ -179,7 +193,8 @@ T = {
         'walkingBmiLabel': 'شاخص توده بدنی: {value}',
         'walkingWeekTitle': 'هفته {n}',
         'walkingReferencesTitle': 'منابع علمی',
-        'walkingReferencesHint': 'این برنامه از راهنمای سازمان بهداشت جهانی ۲۰۲۰، ACSM 2011 و فرا‌تحلیل پیاده‌روی (Murtagh 2015) پیروی می‌کند. برای استنادهای کامل به زبانه شواهد مراجعه کنید.',
+        'walkingReferencesHint': 'این برنامه از راهنمای سازمان بهداشت جهانی ۲۰۲۰، ACSM 2011 و فرا‌تحلیل پیاده‌روی (Richardson 2008) پیروی می‌کند. برای استنادهای کامل به زبانه شواهد مراجعه کنید.',
+        'walkingEstimateNote': 'مقادیر شروع شخصی‌سازی‌شده و پیشرفت هفتگی تخمین‌هایی بر پایه راهنمایی‌های عمومی هستند — نه نسخه پزشکی. صرفاً پیاده‌روی به کاهش وزن زیاد منجر نمی‌شود (Richardson 2008: حدود ۱٫۳ کیلوگرم؛ Swift 2018: ۱۵۰ دقیقه در هفته بدون تغییر غذایی معمولاً کافی نیست).',
     },
     'fi': {
         'navWalking': 'Kävelysuunnitelma',
@@ -190,7 +205,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Viikko {n}',
         'walkingReferencesTitle': 'Tieteelliset lähteet',
-        'walkingReferencesHint': 'Suunnitelma noudattaa WHO 2020, ACSM 2011 ja kävelyn meta-analyysiä (Murtagh 2015). Täydet viitteet Näyttö-välilehdellä.',
+        'walkingReferencesHint': 'Suunnitelma noudattaa WHO 2020, ACSM 2011 ja kävelyn meta-analyysiä (Richardson 2008). Täydet viitteet Näyttö-välilehdellä.',
+        'walkingEstimateNote': 'Personoidut aloitusarvot ja viikkovahde ovat arvioita yleisten ohjeiden perusteella — eivät lääkkeellistä määräystä. Pelkkä kävely aiheuttaa harvoin suuren painonpudonuksen (Richardson 2008: noin 1,3 kg; Swift 2018: 150 min/vkko riittää harvoin ilman ruokavalion muutosta).',
     },
     'fil': {
         'navWalking': 'Plano sa paglalakad',
@@ -201,7 +217,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Linggo {n}',
         'walkingReferencesTitle': 'Siyentipikong sanggunian',
-        'walkingReferencesHint': 'Ang plano ay sumusunod sa WHO 2020, ACSM 2011 at walking meta-analysis (Murtagh 2015). Tingnan ang Evidence tab para sa kumpletong mga citation.',
+        'walkingReferencesHint': 'Ang plano ay sumusunod sa WHO 2020, ACSM 2011 at walking meta-analysis (Richardson 2008). Tingnan ang Evidence tab para sa kumpletong mga citation.',
+        'walkingEstimateNote': 'Ang mga personalized na panimulang halaga at lingguhang progreso ay mga pagtataya batay sa pangkalahatang gabay, hindi medikal na reseta. Ang paglalakad lamang ay bihirang nagbibigay ng malaking pagbaba ng timbang (Richardson 2008: mga 1,3 kg; Swift 2018: 150 min/linggo kadalasaan ay hindi sapat nang walang pagbabago sa diyeta).',
     },
     'fr': {
         'navWalking': 'Plan de marche',
@@ -212,7 +229,8 @@ T = {
         'walkingBmiLabel': 'IMC : {value}',
         'walkingWeekTitle': 'Semaine {n}',
         'walkingReferencesTitle': 'Sources scientifiques',
-        'walkingReferencesHint': 'Le plan suit OMS 2020, ACSM 2011 et la méta-analyse sur la marche (Murtagh 2015). Voir l’onglet Preuves pour les références complètes.',
+        'walkingReferencesHint': 'Le plan suit OMS 2020, ACSM 2011 et la méta-analyse sur la marche (Richardson 2008). Voir l’onglet Preuves pour les références complètes.',
+        'walkingEstimateNote': 'Les valeurs de départ personnalisées et la progression hebdomadaire sont des estimations fondées sur des recommandations générales, pas une prescription médicale. La marche seule produit rarement une perte de poids importante (Richardson 2008 : environ 1,3 kg ; Swift 2018 : 150 min/semaine suffisent rarement sans modification alimentaire).',
     },
     'gl': {
         'navWalking': 'Plan de camiñada',
@@ -223,7 +241,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Semana {n}',
         'walkingReferencesTitle': 'Fontes científicas',
-        'walkingReferencesHint': 'O plan segue OMS 2020, ACSM 2011 e a metaanálise de camiñada (Murtagh 2015). Consulta a lapela Evidencia para citas completas.',
+        'walkingReferencesHint': 'O plan segue OMS 2020, ACSM 2011 e a metaanálise de camiñada (Richardson 2008). Consulta a lapela Evidencia para citas completas.',
+        'walkingEstimateNote': 'Os valores iniciais personalizados e o progreso semanal son estimas baseadas en orientacións xerais, non unha prescrición médica. Caminar só non produce unha perda grande de peso (Richardson 2008: uns 1,3 kg; Swift 2018: 150 min/semana adoita non abonda sen cambios na dieta).',
     },
     'gu': {
         'navWalking': 'ચાલવાનો પ્લાન',
@@ -234,7 +253,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'અઠવાડિયું {n}',
         'walkingReferencesTitle': 'વૈજ્ઞાનિક સ્ત્રોત',
-        'walkingReferencesHint': 'આ પ્લાન WHO 2020, ACSM 2011 અને ચાલવાના મેટા-વિશ્લેષણ (Murtagh 2015) ને અનુસરે છે. સંપૂર્ણ સંદર્ભો માટે પુરાવા ટેબ જુઓ.',
+        'walkingReferencesHint': 'આ પ્લાન WHO 2020, ACSM 2011 અને ચાલવાના મેટા-વિશ્લેષણ (Richardson 2008) ને અનુસરે છે. સંપૂર્ણ સંદર્ભો માટે પુરાવા ટેબ જુઓ.',
+        'walkingEstimateNote': 'વ્યક્તિગત શરૂઆતી મૂલ્યો અને સાપ્તાહિક પ્રગતિ સામાન્ય માર્ગદર્શન આધારે કરવામાં આવેલા અંદાજો છે — તબીબી પ્રસ્થાપિત નથી. ફક્ત ચાલવાથી મોટા વજન ઘટાડો થતો નથી (Richardson 2008: લગભગ 1.3 કિલો; Swift 2018: આહાર બદલ્યા વગર 150 મિનિટ/અઠવાડિયું સામાન્ય રીતે પૂરતું નથી).',
     },
     'he': {
         'navWalking': 'תוכנית הליכה',
@@ -245,7 +265,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'שבוע {n}',
         'walkingReferencesTitle': 'מקורות מדעיים',
-        'walkingReferencesHint': 'התוכנית עוקבת אחר ארגון הבריאות העולמי 2020, ACSM 2011 ומטא-אנליזה של הליכה (Murtagh 2015). ראה לשונית ראיות לציטוטים מלאים.',
+        'walkingReferencesHint': 'התוכנית עוקבת אחר ארגון הבריאות העולמי 2020, ACSM 2011 ומטא-אנליזה של הליכה (Richardson 2008). ראה לשונית ראיות לציטוטים מלאים.',
+        'walkingEstimateNote': 'ערכי ההתחלה המותאמים אישית והקידום השבועי הם הערכות המבוססות על הנחיות כלליות, לא מרשם רפואי. הליכה לבדה לרוב אינה מייצרת ירידת משקל משמעותית (Richardson 2008: כ-1.3 ק"ג; Swift 2018: 150 דקות/שבוע בדרך כלל אינן מספיקות ללא שינוי תזונתי).',
     },
     'hi': {
         'navWalking': 'चलने की योजना',
@@ -256,7 +277,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'सप्ताह {n}',
         'walkingReferencesTitle': 'वैज्ञानिक स्रोत',
-        'walkingReferencesHint': 'योजना WHO 2020, ACSM 2011 और चलने के मेटा-विश्लेषण (Murtagh 2015) का पालन करती है। पूर्ण उद्धरणों के लिए साक्ष्य टैब देखें।',
+        'walkingReferencesHint': 'योजना WHO 2020, ACSM 2011 और चलने के मेटा-विश्लेषण (Richardson 2008) का पालन करती है। पूर्ण उद्धरणों के लिए साक्ष्य टैब देखें।',
+        'walkingEstimateNote': 'व्यक्तिगत शुरुआती मान और साप्ताहिक प्रगति सामान्य दिशा-निर्देशों पर आधारित अनुमान हैं — चिकित्साीय नुस्खा नहीं। केवल चलना बड़ा वजन घटाता नहीं (Richardson 2008: लगभग 1.3 किग्रा; Swift 2018: आहार बदले बिना 150 मिनट/सप्ताह आमतौर पर पर्याप्त नहीं)।',
     },
     'hr': {
         'navWalking': 'Plan hodanja',
@@ -267,7 +289,8 @@ T = {
         'walkingBmiLabel': 'ITM: {value}',
         'walkingWeekTitle': 'Tjedan {n}',
         'walkingReferencesTitle': 'Znanstveni izvori',
-        'walkingReferencesHint': 'Plan slijedi WHO 2020, ACSM 2011 i metaanalizu hodanja (Murtagh 2015). Potpune citate vidi na kartici Dokazi.',
+        'walkingReferencesHint': 'Plan slijedi WHO 2020, ACSM 2011 i metaanalizu hodanja (Richardson 2008). Potpune citate vidi na kartici Dokazi.',
+        'walkingEstimateNote': 'Personalizirane početne vrijednosti i tjedni napredak su procjene na temelju općih smjernica, a ne medicinski recept. Samo hodanje rijetko daje veliki gubitak težine (Richardson 2008: oko 1,3 kg; Swift 2018: 150 min/tjedan obično nije dovoljno bez promjene prehrane).',
     },
     'hu': {
         'navWalking': 'Séta terv',
@@ -278,7 +301,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': '{n}. hét',
         'walkingReferencesTitle': 'Tudományos források',
-        'walkingReferencesHint': 'A terv a WHO 2020, ACSM 2011 és a séta metaanalízis (Murtagh 2015) alapján készült. A teljes hivatkozásokat a Bizonyíték fülön találod.',
+        'walkingReferencesHint': 'A terv a WHO 2020, ACSM 2011 és a séta metaanalízis (Richardson 2008) alapján készült. A teljes hivatkozásokat a Bizonyíték fülön találod.',
+        'walkingEstimateNote': 'A személyre szabott kezdőértékek és a heti haladás becslések általános irányelvek alapján, nem orvosi előírás. Önmagában a séta ritkán okoz nagy súlyveszteséget (Richardson 2008: kb. 1,3 kg; Swift 2018: 150 perc/hét általában nem elég táplálkozási változtatás nélkül).',
     },
     'hy': {
         'navWalking': 'Քայլելու պլան',
@@ -289,7 +313,8 @@ T = {
         'walkingBmiLabel': 'BMI՝ {value}',
         'walkingWeekTitle': 'Շաբաթ {n}',
         'walkingReferencesTitle': 'Գիտական աղբյուրներ',
-        'walkingReferencesHint': 'Պլանը հետևում է ԱՀԿ 2020, ACSM 2011 և քայլելու մետա-վերլուծությանը (Murtagh 2015)։ Ամբողջական մեջբերումները տե՛ս Ապացույցներ բաժնում։',
+        'walkingReferencesHint': 'Պլանը հետևում է ԱՀԿ 2020, ACSM 2011 և քայլելու մետա-վերլուծությանը (Richardson 2008)։ Ամբողջական մեջբերումները տե՛ս Ապացույցներ բաժնում։',
+        'walkingEstimateNote': 'Անհատական սկզբնական արժեքները և շաբաթական առաջընթացը ընդհանուր ուղղությունների վրա հիմնված գնահատականներ են՝ ոչ թե բժշկական նշանակում։ Միայն քնվելը հազված է մեծ ուզումք նվազեցնել (Richardson 2008՝ մոտ 1,3 կգ; Swift 2018՝ 150 րոպե/շաբաթը սովորաբար բավական չէ սննդային փոփոխությունների դիմումով)։',
     },
     'id': {
         'navWalking': 'Rencana jalan kaki',
@@ -300,7 +325,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Minggu {n}',
         'walkingReferencesTitle': 'Sumber ilmiah',
-        'walkingReferencesHint': 'Rencana mengikuti WHO 2020, ACSM 2011, dan meta-analisis jalan kaki (Murtagh 2015). Lihat tab Bukti untuk kutipan lengkap.',
+        'walkingReferencesHint': 'Rencana mengikuti WHO 2020, ACSM 2011, dan meta-analisis jalan kaki (Richardson 2008). Lihat tab Bukti untuk kutipan lengkap.',
+        'walkingEstimateNote': 'Nilai awal yang dipersonalisasi dan kemajuan mingguan adalah estimasi berdasarkan panduan umum, bukan resep medis. Berjalan kaki saja jarang menghasilkan penurunan berat badan yang besar (Richardson 2008: sekitar 1,3 kg; Swift 2018: 150 menit/minggu biasanya tidak cukup tanpa perubahan diet).',
     },
     'is': {
         'navWalking': 'Gönguáætlun',
@@ -311,7 +337,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Vika {n}',
         'walkingReferencesTitle': 'Vísindaleg heimild',
-        'walkingReferencesHint': 'Áætlunin fylgir WHO 2020, ACSM 2011 og göngu meta-greiningu (Murtagh 2015). Sjá Sönnunarflipann fyrir fullar tilvísanir.',
+        'walkingReferencesHint': 'Áætlunin fylgir WHO 2020, ACSM 2011 og göngu meta-greiningu (Richardson 2008). Sjá Sönnunarflipann fyrir fullar tilvísanir.',
+        'walkingEstimateNote': 'Personalized upphafsgildi og vikuleg framvinda eru áætlanir byggðar á almennum leiðbeiningum, ekki á lyfseði. Gang eitt og sér færir sjaldan mikla þyngdnuþar (Richardson 2008: um 1,3 kg; Swift 2018: 150 mín/viku er yfirleitt ekki næg án mataræðbreytingar).',
     },
     'it': {
         'navWalking': 'Piano di camminata',
@@ -322,7 +349,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Settimana {n}',
         'walkingReferencesTitle': 'Fonti scientifiche',
-        'walkingReferencesHint': 'Il piano segue OMS 2020, ACSM 2011 e la meta-analisi sulla camminata (Murtagh 2015). Vedi la scheda Evidenze per le citazioni complete.',
+        'walkingReferencesHint': 'Il piano segue OMS 2020, ACSM 2011 e la meta-analisi sulla camminata (Richardson 2008). Vedi la scheda Evidenze per le citazioni complete.',
+        'walkingEstimateNote': 'I valori iniziali personalizzati e l\'avanzamento settimanale sono stime basate su indicazioni generali, non una prescrizione medica. Camminare da solo raramente produce un\'elevata perdita di peso (Richardson 2008: circa 1,3 kg; Swift 2018: 150 min/settimana di solito non bastano senza modifiche alimentari).',
     },
     'ja': {
         'navWalking': 'ウォーキング計画',
@@ -333,7 +361,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': '{n}週目',
         'walkingReferencesTitle': '科学的根拠',
-        'walkingReferencesHint': '本計画はWHO 2020、ACSM 2011、ウォーキングのメタ分析 (Murtagh 2015) に基づきます。詳細はエビデンスタブを参照してください。',
+        'walkingReferencesHint': '本計画はWHO 2020、ACSM 2011、ウォーキングのメタ分析 (Richardson 2008) に基づきます。詳細はエビデンスタブを参照してください。',
+        'walkingEstimateNote': '個人の開始値と週間の増加は一般的なガイドラインに基づく推定であり、医療的な処方ではありません。歩くだけでは大きな減量はほとんど期待できません（Richardson 2008: 約1.3 kg、Swift 2018: 食事を変えない限り150分/週では通常不十分）。',
     },
     'ka': {
         'navWalking': 'სიარულის გეგმა',
@@ -344,7 +373,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'კვირა {n}',
         'walkingReferencesTitle': 'სამეცნიერო წყაროები',
-        'walkingReferencesHint': 'გეგმა ეყრდნობა WHO 2020-ს, ACSM 2011-ს და სიარულის მეტა-ანალიზს (Murtagh 2015). სრული ციტატებისთვის იხილეთ მტკიცებულების ჩანართი.',
+        'walkingReferencesHint': 'გეგმა ეყრდნობა WHO 2020-ს, ACSM 2011-ს და სიარულის მეტა-ანალიზს (Richardson 2008). სრული ციტატებისთვის იხილეთ მტკიცებულების ჩანართი.',
+        'walkingEstimateNote': 'პირადი საწყისი მაჩვენებლები და კვირის ზრდა ზოგადი მიმართულებბაზე დაფუძნებული შეფასებებია — არა სამედიცინო რეცეპტი. მხოლოდ სიარული იშვიათად მსხვილ წონის კლის მოგვაწვდის (Richardson 2008: დაახლოებით 1,3 კგ; Swift 2018: 150 წთ/კვირა ჩვეულებრივ საკმარისი არ არის დიეტის შეცვლის გარეშე).',
     },
     'kk': {
         'navWalking': 'Жүру жоспары',
@@ -355,7 +385,8 @@ T = {
         'walkingBmiLabel': 'ДСИ: {value}',
         'walkingWeekTitle': '{n}-апта',
         'walkingReferencesTitle': 'Ғылыми дереккөздер',
-        'walkingReferencesHint': 'Жоспар ДДҰ 2020, ACSM 2011 және жүру мета-талдауына (Murtagh 2015) негізделген. Толық дәйексөздер үшін Дәлелдер қойындысын қараңыз.',
+        'walkingReferencesHint': 'Жоспар ДДҰ 2020, ACSM 2011 және жүру мета-талдауына (Richardson 2008) негізделген. Толық дәйексөздер үшін Дәлелдер қойындысын қараңыз.',
+        'walkingEstimateNote': 'Жеке бастапқы мәндер мен апталық өсу — жалпы ұсыныстарға негізделген бағалаулар, емделу рецепті емес. Тек жүру сирек үлкен салмақ жоғалтуға әкеледі (Richardson 2008: шамамен 1,3 кг; Swift 2018: 150 мин/аптасыз диетаны өзгертпей әдетте жеткіліксіз).',
     },
     'kn': {
         'navWalking': 'ನಡೆಯುವ ಯೋಜನೆ',
@@ -366,7 +397,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'ವಾರ {n}',
         'walkingReferencesTitle': 'ವೈಜ್ಞಾನಿಕ ಮೂಲಗಳು',
-        'walkingReferencesHint': 'ಯೋಜನೆಯು WHO 2020, ACSM 2011 ಮತ್ತು ನಡೆಯುವ ಮೆಟಾ-ವಿಶ್ಲೇಷಣೆಯನ್ನು (Murtagh 2015) ಅನುಸರಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ ಉಲ್ಲೇಖಗಳಿಗಾಗಿ ಸಾಕ್ಷ್ಯ ಟ್ಯಾಬ್ ನೋಡಿ.',
+        'walkingReferencesHint': 'ಯೋಜನೆಯು WHO 2020, ACSM 2011 ಮತ್ತು ನಡೆಯುವ ಮೆಟಾ-ವಿಶ್ಲೇಷಣೆಯನ್ನು (Richardson 2008) ಅನುಸರಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ ಉಲ್ಲೇಖಗಳಿಗಾಗಿ ಸಾಕ್ಷ್ಯ ಟ್ಯಾಬ್ ನೋಡಿ.',
+        'walkingEstimateNote': 'ವೈಯಕ್ತಿಕ ಆರಂಭಿಕ ಮೌಲ್ಯಗಳು ಮತ್ತು ವಾರದ ಪ್ರಗತಿಯು ಸಾಮಾನ್ಯ ಮಾರ್ಗದರ್ಶನಗಳನ್ನು ಆಧರಿಸಿದ ಅಂದಾಜುಗಳು — ಔಷಧಾನ್ನಿರ್ಣಯ ಅಲ್ಲ. ತಾಯ್ತುಪುಡೆ ನಡೆದುವುದು ದೊಡ್ಡ ತೂಕ ಕಡಿಮೆಯಾಗಿಸುವುದಿಲ್ಲ (Richardson 2008: ಸುಮಾರು 1.3 ಕೆಜಿ; Swift 2018: ಆಹಾರ ಬದಲಾವಣೆಯಿಲ್ಲದೆ 150 ನಿಮಿಷ/ವಾರ ಸಾಮಾನ್ಯವಾಗಿ ಸಾಕ್ಷು ಅಲ್ಲ).',
     },
     'ko': {
         'navWalking': '걷기 계획',
@@ -377,7 +409,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': '{n}주차',
         'walkingReferencesTitle': '과학적 출처',
-        'walkingReferencesHint': '이 계획은 WHO 2020, ACSM 2011 및 걷기 메타분석(Murtagh 2015)을 따릅니다. 전체 인용은 증거 탭을 참고하세요.',
+        'walkingReferencesHint': '이 계획은 WHO 2020, ACSM 2011 및 걷기 메타분석(Richardson 2008)을 따릅니다. 전체 인용은 증거 탭을 참고하세요.',
+        'walkingEstimateNote': '개인화된 시작 값과 주간 진행률은 일반 지침에 기반한 추정치이며 의료 처방이 아닙니다. 걷기만으로는 큰 체중 감소가 거의 없습니다 (Richardson 2008: 약 1.3 kg, Swift 2018: 식단 변경 없이는 주 150분이 대개 부족).',
     },
     'ky': {
         'navWalking': 'Жөнөкөй басуу планы',
@@ -388,7 +421,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': '{n}-жума',
         'walkingReferencesTitle': 'Илимий булактар',
-        'walkingReferencesHint': 'План ДССУ 2020, ACSM 2011 жана басуу мета-талдоосуна (Murtagh 2015) негизделген. Толук шилтемелер үчүн Далилдер кошумча барагын караңыз.',
+        'walkingReferencesHint': 'План ДССУ 2020, ACSM 2011 жана басуу мета-талдоосуна (Richardson 2008) негизделген. Толук шилтемелер үчүн Далилдер кошумча барагын караңыз.',
+        'walkingEstimateNote': 'Жеке баштапкы маанилер жана апталык өсүш — жалпы сунуштарга негизделген бөгөмдөр, дарынын рецепти эмес. Жөн гана басуу сейрек чоң салмак жоготууга алып келет (Richardson 2008: болжол менен 1,3 кг; Swift 2018: 150 мүн/жума диетаны өзгөртпөгөндө жетигилексиз).',
     },
     'lo': {
         'navWalking': 'ແຜນການຍ່າງ',
@@ -399,7 +433,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'ອາທິດ {n}',
         'walkingReferencesTitle': 'ແຫຼ່ງອ້າງອິງທາງວິທະຍາສາດ',
-        'walkingReferencesHint': 'ແຜນນີ້ອີງຕາມ WHO 2020, ACSM 2011 ແລະ meta-analysis ການຍ່າງ (Murtagh 2015). ເບິ່ງແຖບຫຼັກຖານສໍາລັບການອ້າງອິງເຕັມ.',
+        'walkingReferencesHint': 'ແຜນນີ້ອີງຕາມ WHO 2020, ACSM 2011 ແລະ meta-analysis ການຍ່າງ (Richardson 2008). ເບິ່ງແຖບຫຼັກຖານສໍາລັບການອ້າງອິງເຕັມ.',
+        'walkingEstimateNote': 'ຄ່າເລີ່ມຕົ້ນແບບກຳນາດສູດນີ້ ແລະ ຄວາມຄືໜະຂອງລາຍອາທິດ ເປັນການປະມາກອນທີ່ອີງຮູ່ບຄຳແນະນຳທົ່ນໄປ ບໍ່ໃຊ່ງເປັນຄຳສັ່ງຢາໄດ້. ການເດີນລູກແດງຢ່າງດຽວເອົາມີຜົນໃນການລົນໄດ້ນ້ອຍ (Richardson 2008: ປະມາດ 1.3 ກິໂລ; Swift 2018: 150 ນາທີ/ອາທິດ ມັນບໍ່ໄພ້ອະນູ້ໃນການປ່ຽນອາຫານ).',
     },
     'lt': {
         'navWalking': 'Ėjimo planas',
@@ -410,7 +445,8 @@ T = {
         'walkingBmiLabel': 'KMI: {value}',
         'walkingWeekTitle': 'Savaitė {n}',
         'walkingReferencesTitle': 'Moksliniai šaltiniai',
-        'walkingReferencesHint': 'Planas vadovaujasi PSO 2020, ACSM 2011 ir ėjimo meta-analize (Murtagh 2015). Visas citatas žr. Įrodymų skirtuke.',
+        'walkingReferencesHint': 'Planas vadovaujasi PSO 2020, ACSM 2011 ir ėjimo meta-analize (Richardson 2008). Visas citatas žr. Įrodymų skirtuke.',
+        'walkingEstimateNote': 'Pritaikytos pradinės vertės ir savaitės pažanga yra įverčiai, pagrįsti bendromis gguidomis, o ne gydytojo receptas. Vien tik vaikščiojimas retai duoda didelį svorio netekimą (Richardson 2008: apie 1,3 kg; Swift 2018: 150 min./savaitė paprastai nepakanka be mitybos pokyčių).',
     },
     'lv': {
         'navWalking': 'Nūjošanas plāns',
@@ -421,7 +457,8 @@ T = {
         'walkingBmiLabel': 'ĶMI: {value}',
         'walkingWeekTitle': 'Nedēļa {n}',
         'walkingReferencesTitle': 'Zinātniskie avoti',
-        'walkingReferencesHint': 'Plāns seko PVO 2020, ACSM 2011 un nūjošanas meta-analīzei (Murtagh 2015). Pilnas atsauces skat. Pierādījumu cilnē.',
+        'walkingReferencesHint': 'Plāns seko PVO 2020, ACSM 2011 un nūjošanas meta-analīzei (Richardson 2008). Pilnas atsauces skat. Pierādījumu cilnē.',
+        'walkingEstimateNote': 'Personalizētās sākuma vērtības un nedēļas progres ir aprēķini, balstoties uz vispārējiem norādījumiem, nevis uz ārsta recepti. Tikai staigāšana reti rada ievērojamu svara zudumu (Richardson 2008: apmēram 1,3 kg; Swift 2018: 150 min/nedēļā parasti nepietiek bez ēdienkartes izmaiņām).',
     },
     'mk': {
         'navWalking': 'План за одење',
@@ -432,7 +469,8 @@ T = {
         'walkingBmiLabel': 'ИТМ: {value}',
         'walkingWeekTitle': 'Недела {n}',
         'walkingReferencesTitle': 'Научни извори',
-        'walkingReferencesHint': 'Планот се заснова на СЗО 2020, ACSM 2011 и мета-анализа за одење (Murtagh 2015). За целосни цитати видете ја картичката Докази.',
+        'walkingReferencesHint': 'Планот се заснова на СЗО 2020, ACSM 2011 и мета-анализа за одење (Richardson 2008). За целосни цитати видете ја картичката Докази.',
+        'walkingEstimateNote': 'Персонализираните почетни вредности и неделниот напредок се проценки засновани на општи насоки, а не медицински рецепт. Самото одење ретко дава големо намалување на тежината (Richardson 2008: околу 1,3 кг; Swift 2018: 150 мин/недела обично не е доволно без промена во исхраната).',
     },
     'ml': {
         'navWalking': 'നടത്ത പദ്ധതി',
@@ -443,7 +481,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'ആഴ്ച {n}',
         'walkingReferencesTitle': 'ശാസ്ത്രീയ സ്രോതസ്സുകൾ',
-        'walkingReferencesHint': 'പദ്ധതി WHO 2020, ACSM 2011, നടത്ത മെറ്റാ-വിശകലനം (Murtagh 2015) എന്നിവ പിന്തുടരുന്നു. പൂർണ്ണ ഉദ്ധരണികൾക്ക് Evidence ടാബ് കാണുക.',
+        'walkingReferencesHint': 'പദ്ധതി WHO 2020, ACSM 2011, നടത്ത മെറ്റാ-വിശകലനം (Richardson 2008) എന്നിവ പിന്തുടരുന്നു. പൂർണ്ണ ഉദ്ധരണികൾക്ക് Evidence ടാബ് കാണുക.',
+        'walkingEstimateNote': 'വ്യക്തിഗത ആരംഭ മൂല്യങ്ങളും പ്രതിവാര പുരോഗതിയും പൊതു മാർഗനിർദ്ദേശങ്ങളെ അടിങ്ങിയുള്ള കണക്കാകാലുകളാണ് — മെഡിക്കൽ പ്രിസ്‌ക്രിപ്ഷനല്ല. നടക്കുന്നത് മാത്രം വലിയ ശരീരം കുറയുന്നതില്ല (Richardson 2008: ഏകദേശം 1.3 കിലോ; Swift 2018: ഭക്ഷണ മാറ്റമില്ലാതെ 150 മിനിറ്റ്/ആഴ്ച പൊതുവായി പോരാഞ്ഞിട്ടില്ല).',
     },
     'mn': {
         'navWalking': 'Алхалтын төлөвлөгөө',
@@ -454,7 +493,8 @@ T = {
         'walkingBmiLabel': 'БЖИ: {value}',
         'walkingWeekTitle': '{n}-р долоо хоног',
         'walkingReferencesTitle': 'Шинжлэх ухааны эх сурвалжууд',
-        'walkingReferencesHint': 'Төлөвлөгөө нь ДЭМБ 2020, ACSM 2011 болон алхалтын мета-шинжилгээг (Murtagh 2015) дагаж мөрдөнө. Бүрэн ишлэлүүдийг Нотолгоо таб-аас үзнэ үү.',
+        'walkingReferencesHint': 'Төлөвлөгөө нь ДЭМБ 2020, ACSM 2011 болон алхалтын мета-шинжилгээг (Richardson 2008) дагаж мөрдөнө. Бүрэн ишлэлүүдийг Нотолгоо таб-аас үзнэ үү.',
+        'walkingEstimateNote': 'Хувийн эхний утгууд болон долоо хоногийн өсөлт нь ерөнхий зөвлөмж дээр суурилсан үнэлгээ бөгөөд эмчилгээний рецепт биш. Зөвхөн явган алхах нь их жин бууруулахгүй (Richardson 2008: ойролцоогоор 1.3 кг; Swift 2018: хоолны өөрчлөгдөөгүйгээр 150 мин/долоо хоног ихэдгүй тогтмол хангалтгүй).',
     },
     'mr': {
         'navWalking': 'चालण्याची योजना',
@@ -465,7 +505,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'आठवडा {n}',
         'walkingReferencesTitle': 'वैज्ञानिक स्रोत',
-        'walkingReferencesHint': 'योजना WHO 2020, ACSM 2011 आणि चालण्याचे मेटा-विश्लेषण (Murtagh 2015) यांचे अनुसरण करते. संपूर्ण संदर्भांसाठी पुरावा टॅब पहा.',
+        'walkingReferencesHint': 'योजना WHO 2020, ACSM 2011 आणि चालण्याचे मेटा-विश्लेषण (Richardson 2008) यांचे अनुसरण करते. संपूर्ण संदर्भांसाठी पुरावा टॅब पहा.',
+        'walkingEstimateNote': 'वैयक्तिक सुरुवातीचे मूल्ये आणि साप्ताहिक प्रगती ही सामान्य मार्गदर्शनावर आधारित अंदाजे आहेत — वैद्यकीयी नाहीत. फक्त चालण्याने मोठ्या वजन घटीत होत नाही (Richardson 2008: सुमारे 1.3 किलो; Swift 2018: आहार बदल्याशिवाय 150 मिनिट/आठवडा सामान्यतः पुरेसा नसते).',
     },
     'ms': {
         'navWalking': 'Pelan berjalan',
@@ -476,7 +517,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Minggu {n}',
         'walkingReferencesTitle': 'Sumber saintifik',
-        'walkingReferencesHint': 'Pelan mengikut WHO 2020, ACSM 2011 dan meta-analisis berjalan (Murtagh 2015). Lihat tab Bukti untuk petikan penuh.',
+        'walkingReferencesHint': 'Pelan mengikut WHO 2020, ACSM 2011 dan meta-analisis berjalan (Richardson 2008). Lihat tab Bukti untuk petikan penuh.',
+        'walkingEstimateNote': 'Nilai mula yang diperibadankan dan kemajuan mingguan ialah anggaran berdasarkan garis panduan umum, bukan preskripsi perubatan. Berjalan kaki sahaja jarang menghasilkan penurunan berat yang besar (Richardson 2008: kira-kira 1.3 kg; Swift 2018: 150 minit/minggu biasanya tidak mencukupi tanpa perubahan diet).',
     },
     'my': {
         'navWalking': 'လမ်းလျှောက်အစီအစဉ်',
@@ -487,7 +529,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'အပတ် {n}',
         'walkingReferencesTitle': 'သိပ္ပံ အရင်းအမြစ်များ',
-        'walkingReferencesHint': 'ဤအစီအစဉ်သည် WHO 2020, ACSM 2011 နှင့် လမ်းလျှောက်ခြင်း meta-analysis (Murtagh 2015) ကို လိုက်နာသည်။ အပြည့်အစုံ ကိုးကားချက်များအတွက် သက်သေ tab ကို ကြည့်ပါ။',
+        'walkingReferencesHint': 'ဤအစီအစဉ်သည် WHO 2020, ACSM 2011 နှင့် လမ်းလျှောက်ခြင်း meta-analysis (Richardson 2008) ကို လိုက်နာသည်။ အပြည့်အစုံ ကိုးကားချက်များအတွက် သက်သေ tab ကို ကြည့်ပါ။',
+        'walkingEstimateNote': 'စိတ်ကြိုက်အလိုက် စတင်တန်းများနဲ့ အပတ်စဉ် တိုးတက်မှုတွေက ယေဘုယျ လမ်းညွှန်ချက်တွေပေါ် အခြေခံထားတဲ့ ခန့်မှန်းချက်တွေသာဖြစ်ပါတယ် — ဆေးညီးအစားတင်မှု မဟုတ်ပါ။ လမ်းလျှောက်ခြင်းတစ်ခုတည်းဖြင့် ကြီးမားသော အလေးချိန်လျော့ချင်မှု ရလေ့ရှားပါသည် (Richardson 2008: 1.3 ကီလိုဂရမ်ခန့်; Swift 2018: အစားအသောက်များမပြောင်းဘဲ 150 မိနစ်/အပတ်သည် ပုံမှန်အား မလုံလောက်ပါ)။',
     },
     'ne': {
         'navWalking': 'हिँड्ने योजना',
@@ -498,7 +541,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'हप्ता {n}',
         'walkingReferencesTitle': 'वैज्ञानिक स्रोतहरू',
-        'walkingReferencesHint': 'योजनाले WHO 2020, ACSM 2011 र हिँड्ने मेटा-विश्लेषण (Murtagh 2015) पालना गर्छ। पूर्ण उद्धरणको लागि प्रमाण ट्याब हेर्नुहोस्।',
+        'walkingReferencesHint': 'योजनाले WHO 2020, ACSM 2011 र हिँड्ने मेटा-विश्लेषण (Richardson 2008) पालना गर्छ। पूर्ण उद्धरणको लागि प्रमाण ट्याब हेर्नुहोस्।',
+        'walkingEstimateNote': 'व्यक्तिगत सुरुवाती मानहरू र साप्ताहिक प्रगति सामान्य निर्देशनमा आधारित अनुमान हुन् — चिकित्सकीय सिफारिस होइनन्। सिर्फ हिँड्नेले ठुलो तौल घटाउँदैन (Richardson 2008: लगभग १.३ केजी; Swift 2018: खाना परिवर्तन बिना १५० मिनेट/हप्ता प्रायः पर्याप्त हुँदैन)।',
     },
     'nl': {
         'navWalking': 'Wandelplan',
@@ -509,7 +553,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Week {n}',
         'walkingReferencesTitle': 'Wetenschappelijke bronnen',
-        'walkingReferencesHint': 'Het plan volgt WHO 2020, ACSM 2011 en de wandel-meta-analyse (Murtagh 2015). Zie het tabblad Bewijs voor volledige citaten.',
+        'walkingReferencesHint': 'Het plan volgt WHO 2020, ACSM 2011 en de wandel-meta-analyse (Richardson 2008). Zie het tabblad Bewijs voor volledige citaten.',
+        'walkingEstimateNote': 'De gepersonaliseerde startwaarden en de voortgang per week zijn schattingen op basis van algemene richtlijnen, geen medisch voorschrift. Alleen wandelen leidt zelden tot groot gewichtsverlies (Richardson 2008: ongeveer 1,3 kg; Swift 2018: 150 min/week is doorgaans niet voldoende zonder dieetaanpassing).',
     },
     'pa': {
         'navWalking': 'ਤੁਰਨ ਦੀ ਯੋਜਨਾ',
@@ -520,7 +565,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'ਹਫ਼ਤਾ {n}',
         'walkingReferencesTitle': 'ਵਿਗਿਆਨਕ ਸੋਮੇ',
-        'walkingReferencesHint': 'ਯੋਜਨਾ WHO 2020, ACSM 2011 ਅਤੇ ਤੁਰਨ ਦੇ ਮੈਟਾ-ਵਿਸ਼ਲੇਸ਼ਣ (Murtagh 2015) ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ। ਪੂਰੇ ਹਵਾਲੇ ਲਈ ਸਬੂਤ ਟੈਬ ਵੇਖੋ।',
+        'walkingReferencesHint': 'ਯੋਜਨਾ WHO 2020, ACSM 2011 ਅਤੇ ਤੁਰਨ ਦੇ ਮੈਟਾ-ਵਿਸ਼ਲੇਸ਼ਣ (Richardson 2008) ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ। ਪੂਰੇ ਹਵਾਲੇ ਲਈ ਸਬੂਤ ਟੈਬ ਵੇਖੋ।',
+        'walkingEstimateNote': 'ਵਿਅਕਤੀਗਤ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ ਅਤੇ ਹਫ਼ਤਾਵਾਰੀ ਤਰੱਕੀ ਆਮ ਸਲਾਹਾਂ ਤੇ ਆਧਾਰਿਤ ਅੰਦਾਜ਼ੇ ਹਨ — ਡਾਕਟਰੀ ਨਿਰਧਾਰਨ ਨਹੀਂ। ਸਿਰਫ਼ ਤੁਰਨਾ ਭਾਰੀ ਪ੍ਰਮਾਣ ਵਜਨ ਘਟਾਉਂਦਾ ਹੈ ਬਹੁਤ ਘੱਟ (Richardson 2008: ਲਗਭਗ 1.3 ਕਿਲੋ; Swift 2018: ਖਾਣ ਪਾਊਟਿ ਬਦਲਣ ਬਿਨਾਂ 150 ਮਿੰਟ/ਹਫ਼ਤਾ ਆਮ ਤੌਰ ਤੇ ਨਾਕਾਫੀ ਹੈ)।',
     },
     'pl': {
         'navWalking': 'Plan spacerów',
@@ -531,7 +577,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Tydzień {n}',
         'walkingReferencesTitle': 'Źródła naukowe',
-        'walkingReferencesHint': 'Plan opiera się na WHO 2020, ACSM 2011 oraz metaanalizie spacerów (Murtagh 2015). Pełne cytaty w zakładce Dowody.',
+        'walkingReferencesHint': 'Plan opiera się na WHO 2020, ACSM 2011 oraz metaanalizie spacerów (Richardson 2008). Pełne cytaty w zakładce Dowody.',
+        'walkingEstimateNote': 'Spersonalizowane wartości początkowe i tygodniowy postęp to szacunki oparte na ogólnych zaleceniach, a nie recepta lekarska. Sam chodzenie rzadko daje dużą utratę masy (Richardson 2008: ok. 1,3 kg; Swift 2018: 150 min/tydzień zwykle nie wystarcza bez zmiany diety).',
     },
     'pt': {
         'navWalking': 'Plano de caminhada',
@@ -542,7 +589,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Semana {n}',
         'walkingReferencesTitle': 'Fontes científicas',
-        'walkingReferencesHint': 'O plano segue OMS 2020, ACSM 2011 e a meta-análise de caminhada (Murtagh 2015). Veja a aba Evidências para citações completas.',
+        'walkingReferencesHint': 'O plano segue OMS 2020, ACSM 2011 e a meta-análise de caminhada (Richardson 2008). Veja a aba Evidências para citações completas.',
+        'walkingEstimateNote': 'Os valores iniciais personalizados e o progresso semanal são estimativas baseadas em orientações gerais, não uma prescrição médica. Caminhar sozinho raramente produz grande perda de peso (Richardson 2008: cerca de 1,3 kg; Swift 2018: 150 min/semana normalmente não basta sem mudança alimentar).',
     },
     'ro': {
         'navWalking': 'Plan de mers',
@@ -553,7 +601,8 @@ T = {
         'walkingBmiLabel': 'IMC: {value}',
         'walkingWeekTitle': 'Săptămâna {n}',
         'walkingReferencesTitle': 'Surse științifice',
-        'walkingReferencesHint': 'Planul urmează OMS 2020, ACSM 2011 și meta-analiza mersului (Murtagh 2015). Vezi fila Dovezi pentru citate complete.',
+        'walkingReferencesHint': 'Planul urmează OMS 2020, ACSM 2011 și meta-analiza mersului (Richardson 2008). Vezi fila Dovezi pentru citate complete.',
+        'walkingEstimateNote': 'Valorile inițiale personalizate și progresul săptămânal sunt estimări bazate pe orientări generale, nu o rețetă medicală. Mersul pe jos singur produce rareori o scădere mare de greutate (Richardson 2008: aproximativ 1,3 kg; Swift 2018: 150 min/săptămână de regulă nu sunt suficiente fără schimbarea alimentației).',
     },
     'ru': {
         'navWalking': 'План ходьбы',
@@ -564,7 +613,8 @@ T = {
         'walkingBmiLabel': 'ИМТ: {value}',
         'walkingWeekTitle': 'Неделя {n}',
         'walkingReferencesTitle': 'Научные источники',
-        'walkingReferencesHint': 'План основан на ВОЗ 2020, ACSM 2011 и мета-анализе ходьбы (Murtagh 2015). Полные цитаты во вкладке Доказательства.',
+        'walkingReferencesHint': 'План основан на ВОЗ 2020, ACSM 2011 и мета-анализе ходьбы (Richardson 2008). Полные цитаты во вкладке Доказательства.',
+        'walkingEstimateNote': 'Персонализированные начальные значения и еженедельный прогресс — это оценки на основе общих рекомендаций, а не врачебное назначение. Только ходьба редко даёт значительную потерю веса (Richardson 2008: около 1,3 кг; Swift 2018: 150 мин/нед. обычно недостаточно без изменения питания).',
     },
     'si': {
         'navWalking': 'ඇවිදීමේ සැලසුම',
@@ -575,7 +625,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'සතිය {n}',
         'walkingReferencesTitle': 'විද්‍යාත්මක මූලාශ්‍ර',
-        'walkingReferencesHint': 'සැලසුම WHO 2020, ACSM 2011 සහ ඇවිදීමේ meta-analysis (Murtagh 2015) අනුගමනය කරයි. සම්පූර්ණ උපුටා දැක්වීම් සඳහා සාක්ෂි ටැබය බලන්න.',
+        'walkingReferencesHint': 'සැලසුම WHO 2020, ACSM 2011 සහ ඇවිදීමේ meta-analysis (Richardson 2008) අනුගමනය කරයි. සම්පූර්ණ උපුටා දැක්වීම් සඳහා සාක්ෂි ටැබය බලන්න.',
+        'walkingEstimateNote': 'පුද්ගලික ආරම්භක අගයන් සහ සතිපතා ප්‍රගමනය යනු සාමාන්‍ය මාර්ගෝපදේශ මත පදනම්වූ ඇස්තමේථන වන අතර, වෛද්‍යාපන නිර්ණායයක් නොවේ. තනි ඇවිදීමෙන් විශාල බර අඩුවීමක් ඉතා දුරින් ඇත (Richardson 2008: ආසන්න 1.3 කිලෝග්‍රෑම්; Swift 2018: ආහාර වෙනස් කිරවන නැතිව මිනිත්තු 150/සතිය සාමාන්‍යයෙන් ප්‍රමාණවත් නොවේ).',
     },
     'sk': {
         'navWalking': 'Plán chôdze',
@@ -586,7 +637,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Týždeň {n}',
         'walkingReferencesTitle': 'Vedecké zdroje',
-        'walkingReferencesHint': 'Plán vychádza z WHO 2020, ACSM 2011 a metaanalýzy chôdze (Murtagh 2015). Úplné citácie nájdeš v záložke Dôkazy.',
+        'walkingReferencesHint': 'Plán vychádza z WHO 2020, ACSM 2011 a metaanalýzy chôdze (Richardson 2008). Úplné citácie nájdeš v záložke Dôkazy.',
+        'walkingEstimateNote': 'Personalizované počiatočné hodnoty a týždenný postup sú odhady založené na všeobecných odporúčaniach, nie na lekárskom predpise. Samotná chôdza zriedka vedie k výraznej strate hmotnosti (Richardson 2008: približne 1,3 kg; Swift 2018: 150 min./týždeň spravidla nestačí bez zmeny stravy).',
     },
     'sl': {
         'navWalking': 'Načrt hoje',
@@ -597,7 +649,8 @@ T = {
         'walkingBmiLabel': 'ITM: {value}',
         'walkingWeekTitle': 'Teden {n}',
         'walkingReferencesTitle': 'Znanstveni viri',
-        'walkingReferencesHint': 'Načrt sledi WHO 2020, ACSM 2011 in metaanalizi hoje (Murtagh 2015). Za popolne citate glej zavihek Dokazi.',
+        'walkingReferencesHint': 'Načrt sledi WHO 2020, ACSM 2011 in metaanalizi hoje (Richardson 2008). Za popolne citate glej zavihek Dokazi.',
+        'walkingEstimateNote': 'Personalizirane začetne vrednosti in tedenski napredek so ocene na podlagi splošnih smernic, ne zdravniški recept. Samo hoja redko povzroči veliko izgubo telesne mase (Richardson 2008: približno 1,3 kg; Swift 2018: 150 min/teden običajno ni dovolj brez spremembe prehrane).',
     },
     'sq': {
         'navWalking': 'Plan ecjeje',
@@ -608,7 +661,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Java {n}',
         'walkingReferencesTitle': 'Burime shkencore',
-        'walkingReferencesHint': 'Plani ndjek OBSH 2020, ACSM 2011 dhe meta-analizën e ecjes (Murtagh 2015). Shih skedën Dëshmi për citate të plota.',
+        'walkingReferencesHint': 'Plani ndjek OBSH 2020, ACSM 2011 dhe meta-analizën e ecjes (Richardson 2008). Shih skedën Dëshmi për citate të plota.',
+        'walkingEstimateNote': 'Vlerat fillestare të personalizuara dhe përparimi javor janë vlerësime të bazuara në udhëzime të përgjithshme, jo recetë mjekësore. Vetëm ecja rrallë herë jep humbje të madhe peshe (Richardson 2008: rreth 1,3 kg; Swift 2018: 150 min/javë zakonisht nuk mjafton pa ndryshim dietë).',
     },
     'sr': {
         'navWalking': 'План ходања',
@@ -619,7 +673,8 @@ T = {
         'walkingBmiLabel': 'ИТМ: {value}',
         'walkingWeekTitle': 'Недеља {n}',
         'walkingReferencesTitle': 'Научни извори',
-        'walkingReferencesHint': 'План прати СЗО 2020, ACSM 2011 и мета-анализу ходања (Murtagh 2015). За потпуне цитате погледајте картицу Докази.',
+        'walkingReferencesHint': 'План прати СЗО 2020, ACSM 2011 и мета-анализу ходања (Richardson 2008). За потпуне цитате погледајте картицу Докази.',
+        'walkingEstimateNote': 'Персонализовани почетне вредности и недељни напредак су процене засноване на општим препорукама, а не медицински рецепт. Само ходање ретко даје велики губитак тежине (Richardson 2008: око 1,3 кг; Swift 2018: 150 мин/недеља обично није довољно без промене исхране).',
     },
     'sv': {
         'navWalking': 'Vandringsplan',
@@ -630,7 +685,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Vecka {n}',
         'walkingReferencesTitle': 'Vetenskapliga källor',
-        'walkingReferencesHint': 'Planen följer WHO 2020, ACSM 2011 och vandringsmetaanalysen (Murtagh 2015). Se fliken Bevis för fullständiga citeringar.',
+        'walkingReferencesHint': 'Planen följer WHO 2020, ACSM 2011 och vandringsmetaanalysen (Richardson 2008). Se fliken Bevis för fullständiga citeringar.',
+        'walkingEstimateNote': 'De personliga startvärdena och veckans framsteg är uppskattningar baserade på allmänna riktlinjer, inte ett medicinskt recept. Enbart promenader ger sällan stor viktnedgång (Richardson 2008: cirka 1,3 kg; Swift 2018: 150 min/vecka räcker sällan utan koständring).',
     },
     'sw': {
         'navWalking': 'Mpango wa kutembea',
@@ -641,7 +697,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Wiki {n}',
         'walkingReferencesTitle': 'Vyanzo vya kisayansi',
-        'walkingReferencesHint': 'Mpango unafuata WHO 2020, ACSM 2011 na meta-analysis ya kutembea (Murtagh 2015). Tazama kichupo cha Ushahidi kwa marejeleo kamili.',
+        'walkingReferencesHint': 'Mpango unafuata WHO 2020, ACSM 2011 na meta-analysis ya kutembea (Richardson 2008). Tazama kichupo cha Ushahidi kwa marejeleo kamili.',
+        'walkingEstimateNote': 'Thamani za mwanzo zilizobainishwa na maendeleo ya wiki ni makadirio yaliyo msingi wa miongozo ya jumla, si upendekezo wa matibabu. Kuenenda peke yake hakuzati kupungua uzito mkubwa (Richardson 2008: takriban 1.3 kg; Swift 2018: dakika 150 kwa wiki kwa kawaida hazitoshi bila mabadiliko ya chakula).',
     },
     'ta': {
         'navWalking': 'நடைத்திட்டம்',
@@ -652,7 +709,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'வாரம் {n}',
         'walkingReferencesTitle': 'அறிவியல் ஆதாரங்கள்',
-        'walkingReferencesHint': 'திட்டம் WHO 2020, ACSM 2011 மற்றும் நடை meta-analysis (Murtagh 2015) ஐப் பின்பற்றுகிறது. முழு மேற்கோள்களுக்கு சான்று தாவலைப் பார்க்கவும்.',
+        'walkingReferencesHint': 'திட்டம் WHO 2020, ACSM 2011 மற்றும் நடை meta-analysis (Richardson 2008) ஐப் பின்பற்றுகிறது. முழு மேற்கோள்களுக்கு சான்று தாவலைப் பார்க்கவும்.',
+        'walkingEstimateNote': 'தனிப்பயனாக்கப்பட்ட தொடக்க மதிப்புகள் மற்றும் வாராந்திர முன்னேற்றம் பொதுமை வழிகாட்டல்களின் அடிப்படையிலான மதிப்பீடுகள் — மருத்துவப் பரிந்துரை அல்ல. நடக்குவது மட்டும் பெரிய எடைக் குறைவை உருவாக்காது (Richardson 2008: சுமார் 1.3 கிலோ; Swift 2018: உணவு மாற்றம் இல்லாமல் 150 நிமிடங்கள்/வாரம் பொதுவாகப் போதாது).',
     },
     'te': {
         'navWalking': 'నడక ప్రణాళిక',
@@ -663,7 +721,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'వారం {n}',
         'walkingReferencesTitle': 'శాస్త్రీయ మూలాలు',
-        'walkingReferencesHint': 'ప్రణాళిక WHO 2020, ACSM 2011 మరియు నడక meta-analysis (Murtagh 2015) ను అనుసరిస్తుంది. పూర్తి ఉటంకనల కోసం ఆధారాల ట్యాబ్ చూడండి.',
+        'walkingReferencesHint': 'ప్రణాళిక WHO 2020, ACSM 2011 మరియు నడక meta-analysis (Richardson 2008) ను అనుసరిస్తుంది. పూర్తి ఉటంకనల కోసం ఆధారాల ట్యాబ్ చూడండి.',
+        'walkingEstimateNote': 'వ్యక్తిగత మొదటి విలువలు మరియు వారపు పురోగతి సాధారణ మార్గదర్శకాలపై ఆధారిత అంచనాలు — వైద్య సూచన కావు. నడక మాత్రమే పెద్ద బరువు తగ్గింపును ఇవ్వదు (Richardson 2008: సుమారు 1.3 కిలో; Swift 2018: ఆహార మార్పు లేకుండా వారానికి 150 నిమిషాలు సాధారణంగా సరిపోదు).',
     },
     'th': {
         'navWalking': 'แผนการเดิน',
@@ -674,7 +733,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'สัปดาห์ที่ {n}',
         'walkingReferencesTitle': 'แหล่งอ้างอิงทางวิทยาศาสตร์',
-        'walkingReferencesHint': 'แผนนี้อิงตาม WHO 2020, ACSM 2011 และการวิเคราะห์เมตาการเดิน (Murtagh 2015) ดูแท็บหลักฐานสำหรับการอ้างอิงฉบับเต็ม',
+        'walkingReferencesHint': 'แผนนี้อิงตาม WHO 2020, ACSM 2011 และการวิเคราะห์เมตาการเดิน (Richardson 2008) ดูแท็บหลักฐานสำหรับการอ้างอิงฉบับเต็ม',
+        'walkingEstimateNote': 'ค่าเริ่มต้นที่ปรับให้เหมาะกับคุณและความคืบหน้ารายสัปดาห์เป็นการประมาณการตามแนวทางทั่วไป ไม่ใช่ใบสั่งยา การเดินเพียงอย่างเดียวไม่ค่อยทำให้น้ำหนักลดลงมาก (Richardson 2008: ประมาณ 1.3 กก.; Swift 2018: 150 นาที/สัปดาห์มักไม่เพียงพอหากไม่เปลี่ยนอาหาร)',
     },
     'tr': {
         'navWalking': 'Yürüyüş planı',
@@ -685,7 +745,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': '{n}. hafta',
         'walkingReferencesTitle': 'Bilimsel kaynaklar',
-        'walkingReferencesHint': 'Plan DSÖ 2020, ACSM 2011 ve yürüyüş meta-analizini (Murtagh 2015) izler. Tam alıntılar için Kanıtlar sekmesine bakın.',
+        'walkingReferencesHint': 'Plan DSÖ 2020, ACSM 2011 ve yürüyüş meta-analizini (Richardson 2008) izler. Tam alıntılar için Kanıtlar sekmesine bakın.',
+        'walkingEstimateNote': 'Kişisel başlangıç değerleri ve haftalık ilerleme genel rehberlere dayanan tahminlerdir; tıbbi reçe değildir. Yürüyüş tek başına büyük kilo kaybı sağlamaz (Richardson 2008: yaklaşık 1,3 kg; Swift 2018: diyet değişikliği olmadan 150 dk/hafta genellikle yeterli değildir).',
     },
     'uk': {
         'navWalking': 'План ходьби',
@@ -696,7 +757,8 @@ T = {
         'walkingBmiLabel': 'ІМТ: {value}',
         'walkingWeekTitle': 'Тиждень {n}',
         'walkingReferencesTitle': 'Наукові джерела',
-        'walkingReferencesHint': 'План базується на ВООЗ 2020, ACSM 2011 та мета-аналізі ходьби (Murtagh 2015). Повні цитати у вкладці Докази.',
+        'walkingReferencesHint': 'План базується на ВООЗ 2020, ACSM 2011 та мета-аналізі ходьби (Richardson 2008). Повні цитати у вкладці Докази.',
+        'walkingEstimateNote': 'Персоналізовані початкові значення та щотижневий прогрес — це оцінки на основі загальних рекомендацій, а не лікарський признак. Лише ходьба рідко дає значну втрату ваги (Richardson 2008: близько 1,3 кг; Swift 2018: 150 хв/тиждень зазвичай недостатньо без зміни харчування).',
     },
     'ur': {
         'navWalking': 'چلنے کا منصوبہ',
@@ -707,7 +769,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'ہفتہ {n}',
         'walkingReferencesTitle': 'سائنسی ذرائع',
-        'walkingReferencesHint': 'منصوبہ WHO 2020، ACSM 2011 اور چلنے کے میٹا تجزیے (Murtagh 2015) کی پیروی کرتا ہے۔ مکمل حوالہ جات کے لیے ثبوت ٹیب دیکھیں۔',
+        'walkingReferencesHint': 'منصوبہ WHO 2020، ACSM 2011 اور چلنے کے میٹا تجزیے (Richardson 2008) کی پیروی کرتا ہے۔ مکمل حوالہ جات کے لیے ثبوت ٹیب دیکھیں۔',
+        'walkingEstimateNote': 'ذاتی شروعاتی قدر اور ہفتہ وار پیش رفت اندازوں کے مطابق ہیں، طبی نسخے نہیں۔ صرف چلنا بڑا وزن کم نہیں کرتا (Richardson 2008: تقریباً 1.3 کلو؛ Swift 2018: گھریلہ تبدیلی کے بغیر 150 منٹ/ہفتہ عام طور پر کافی نہیں)۔',
     },
     'vi': {
         'navWalking': 'Kế hoạch đi bộ',
@@ -718,7 +781,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Tuần {n}',
         'walkingReferencesTitle': 'Nguồn khoa học',
-        'walkingReferencesHint': 'Kế hoạch tuân theo WHO 2020, ACSM 2011 và phân tích tổng hợp về đi bộ (Murtagh 2015). Xem tab Bằng chứng để có trích dẫn đầy đủ.',
+        'walkingReferencesHint': 'Kế hoạch tuân theo WHO 2020, ACSM 2011 và phân tích tổng hợp về đi bộ (Richardson 2008). Xem tab Bằng chứng để có trích dẫn đầy đủ.',
+        'walkingEstimateNote': 'Các giá trị khởi đầu cá nhân hóa và tiến bộ hằng tuần là ước tính dựa trên hướng dẫn chung, không phải đơn thuốc. Đi bộ một mình hiếm khi tạo ra giảm cân đáng kể (Richardson 2008: khoảng 1,3 kg; Swift 2018: 150 phút/tuần thường không đủ nếu không thay đổi chế độ ăn).',
     },
     'zh': {
         'navWalking': '步行计划',
@@ -729,7 +793,8 @@ T = {
         'walkingBmiLabel': 'BMI:{value}',
         'walkingWeekTitle': '第{n}周',
         'walkingReferencesTitle': '科学来源',
-        'walkingReferencesHint': '本计划遵循 WHO 2020、ACSM 2011 以及步行 meta 分析 (Murtagh 2015)。完整引用请见证据标签。',
+        'walkingReferencesHint': '本计划遵循 WHO 2020、ACSM 2011 以及步行 meta 分析 (Richardson 2008)。完整引用请见证据标签。',
+        'walkingEstimateNote': '个性化起始值和每周递增都是基于一般指南的估算，并非医嘱。仅靠步行很少能带来大幅减重（Richardson 2008：约 1.3 公斤；Swift 2018：不改变饮食时每周 150 分钟通常不够）。',
     },
     'zh_Hant': {
         'navWalking': '步行計畫',
@@ -740,7 +805,8 @@ T = {
         'walkingBmiLabel': 'BMI:{value}',
         'walkingWeekTitle': '第{n}週',
         'walkingReferencesTitle': '科學來源',
-        'walkingReferencesHint': '本計畫遵循 WHO 2020、ACSM 2011 與步行後設分析 (Murtagh 2015)。完整引用請見證據分頁。',
+        'walkingReferencesHint': '本計畫遵循 WHO 2020、ACSM 2011 與步行後設分析 (Richardson 2008)。完整引用請見證據分頁。',
+        'walkingEstimateNote': '個人化起始值和每週遞增都是基於一般指南的估算，並非醫囑。單靠步行很少能帶來大幅減重（Richardson 2008：約 1.3 公斤；Swift 2018：不改變飲食時每週 150 分鐘通常不夠）。',
     },
     'zu': {
         'navWalking': 'Uhlelo lokuhamba',
@@ -751,7 +817,8 @@ T = {
         'walkingBmiLabel': 'BMI: {value}',
         'walkingWeekTitle': 'Iviki {n}',
         'walkingReferencesTitle': 'Izithombo zesayensi',
-        'walkingReferencesHint': 'Uhlelo lulandela i-WHO 2020, i-ACSM 2011 kanye ne-meta-analysis yokuhamba (Murtagh 2015). Bheka ithebhu Yobufakazi ukuze uthole ukucaphuna okugcwele.',
+        'walkingReferencesHint': 'Uhlelo lulandela i-WHO 2020, i-ACSM 2011 kanye ne-meta-analysis yokuhamba (Richardson 2008). Bheka ithebhu Yobufakazi ukuze uthole ukucaphuna okugcwele.',
+        'walkingEstimateNote': 'Amanani aqalawe abomuntu ngamunye kanye nokuthuthukisa kwansibili kulinganiselwe ngokuze kusekelwe izindlela ezijulile, hhayi umuthetho wokwelapha. Ukuhamba kuphela akukho lapho kulahlekelwa khona kakhulu (Richardson 2008: cishe 1,3 kg; Swift 2018: imizuzu eyi-150 ngesonto ngokuvamile akwanele ngaphandle kokushintsha ukudla).',
     },
 }
 
@@ -771,10 +838,14 @@ def update_arb(path: str, lang: str) -> bool:
         doc = json.load(f)
     if lang not in T:
         return False
-    expected = T[lang]
+    expected = dict(T[lang])
     changed = False
     for key, val in expected.items():
         if key not in doc:
+            doc[key] = val
+            changed = True
+        elif key == 'walkingReferencesHint' and 'Murtagh' in doc[key]:
+            # PB-028: uydurma "Murtagh 2015" atfını doğrulanmış kaynakla değiştir.
             doc[key] = val
             changed = True
     for key, ph, ph_type in PLACEHOLDERS:

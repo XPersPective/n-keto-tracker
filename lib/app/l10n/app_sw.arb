@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Wiki {n}",
   "walkingReferencesTitle": "Vyanzo vya kisayansi",
-  "walkingReferencesHint": "Mpango unafuata WHO 2020, ACSM 2011 na meta-analysis ya kutembea (Murtagh 2015). Tazama kichupo cha Ushahidi kwa marejeleo kamili.",
+  "walkingReferencesHint": "Mpango unafuata WHO 2020, ACSM 2011 na meta-analysis ya kutembea (Richardson 2008). Tazama kichupo cha Ushahidi kwa marejeleo kamili.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Thamani za mwanzo zilizobainishwa na maendeleo ya wiki ni makadirio yaliyo msingi wa miongozo ya jumla, si upendekezo wa matibabu. Kuenenda peke yake hakuzati kupungua uzito mkubwa (Richardson 2008: takriban 1.3 kg; Swift 2018: dakika 150 kwa wiki kwa kawaida hazitoshi bila mabadiliko ya chakula)."
 }

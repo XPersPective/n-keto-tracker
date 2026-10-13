@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "සතිය {n}",
   "walkingReferencesTitle": "විද්‍යාත්මක මූලාශ්‍ර",
-  "walkingReferencesHint": "සැලසුම WHO 2020, ACSM 2011 සහ ඇවිදීමේ meta-analysis (Murtagh 2015) අනුගමනය කරයි. සම්පූර්ණ උපුටා දැක්වීම් සඳහා සාක්ෂි ටැබය බලන්න.",
+  "walkingReferencesHint": "සැලසුම WHO 2020, ACSM 2011 සහ ඇවිදීමේ meta-analysis (Richardson 2008) අනුගමනය කරයි. සම්පූර්ණ උපුටා දැක්වීම් සඳහා සාක්ෂි ටැබය බලන්න.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "පුද්ගලික ආරම්භක අගයන් සහ සතිපතා ප්‍රගමනය යනු සාමාන්‍ය මාර්ගෝපදේශ මත පදනම්වූ ඇස්තමේථන වන අතර, වෛද්‍යාපන නිර්ණායයක් නොවේ. තනි ඇවිදීමෙන් විශාල බර අඩුවීමක් ඉතා දුරින් ඇත (Richardson 2008: ආසන්න 1.3 කිලෝග්‍රෑම්; Swift 2018: ආහාර වෙනස් කිරවන නැතිව මිනිත්තු 150/සතිය සාමාන්‍යයෙන් ප්‍රමාණවත් නොවේ)."
 }

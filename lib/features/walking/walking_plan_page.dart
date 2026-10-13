@@ -47,6 +47,38 @@ class WalkingPlanPage extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 16),
+          // PB-029: kaynaksız (sezgisel) değerler dürüstçe etiketlenir.
+          if (plan.valuesAreEstimates)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceContainer,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.outlineVariant,
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.info_outline,
+                      size: 18,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        l10n.walkingEstimateNote,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           // Haftalık tablo
           for (var w = 1; w <= 8; w++) ...[
             SectionCard(

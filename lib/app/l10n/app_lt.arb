@@ -458,7 +458,7 @@
   "walkingBmiLabel": "KMI: {value}",
   "walkingWeekTitle": "Savaitė {n}",
   "walkingReferencesTitle": "Moksliniai šaltiniai",
-  "walkingReferencesHint": "Planas vadovaujasi PSO 2020, ACSM 2011 ir ėjimo meta-analize (Murtagh 2015). Visas citatas žr. Įrodymų skirtuke.",
+  "walkingReferencesHint": "Planas vadovaujasi PSO 2020, ACSM 2011 ir ėjimo meta-analize (Richardson 2008). Visas citatas žr. Įrodymų skirtuke.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Pritaikytos pradinės vertės ir savaitės pažanga yra įverčiai, pagrįsti bendromis gguidomis, o ne gydytojo receptas. Vien tik vaikščiojimas retai duoda didelį svorio netekimą (Richardson 2008: apie 1,3 kg; Swift 2018: 150 min./savaitė paprastai nepakanka be mitybos pokyčių)."
 }

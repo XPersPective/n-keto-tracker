@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "{n}. hét",
   "walkingReferencesTitle": "Tudományos források",
-  "walkingReferencesHint": "A terv a WHO 2020, ACSM 2011 és a séta metaanalízis (Murtagh 2015) alapján készült. A teljes hivatkozásokat a Bizonyíték fülön találod.",
+  "walkingReferencesHint": "A terv a WHO 2020, ACSM 2011 és a séta metaanalízis (Richardson 2008) alapján készült. A teljes hivatkozásokat a Bizonyíték fülön találod.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "A személyre szabott kezdőértékek és a heti haladás becslések általános irányelvek alapján, nem orvosi előírás. Önmagában a séta ritkán okoz nagy súlyveszteséget (Richardson 2008: kb. 1,3 kg; Swift 2018: 150 perc/hét általában nem elég táplálkozási változtatás nélkül)."
 }

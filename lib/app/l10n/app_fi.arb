@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Viikko {n}",
   "walkingReferencesTitle": "Tieteelliset lähteet",
-  "walkingReferencesHint": "Suunnitelma noudattaa WHO 2020, ACSM 2011 ja kävelyn meta-analyysiä (Murtagh 2015). Täydet viitteet Näyttö-välilehdellä.",
+  "walkingReferencesHint": "Suunnitelma noudattaa WHO 2020, ACSM 2011 ja kävelyn meta-analyysiä (Richardson 2008). Täydet viitteet Näyttö-välilehdellä.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personoidut aloitusarvot ja viikkovahde ovat arvioita yleisten ohjeiden perusteella — eivät lääkkeellistä määräystä. Pelkkä kävely aiheuttaa harvoin suuren painonpudonuksen (Richardson 2008: noin 1,3 kg; Swift 2018: 150 min/vkko riittää harvoin ilman ruokavalion muutosta)."
 }

@@ -28,7 +28,6 @@ final walkingPlanProvider = Provider.autoDispose<WalkingPlan>((ref) {
     heightCm: profile?.heightCm,
     currentWeightKg: profile?.currentWeightKg,
     activityLevel: profile?.activityLevel ?? 'sedentary',
-    intensityWeekOverride: null,
   );
 });
 

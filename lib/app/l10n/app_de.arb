@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Woche {n}",
   "walkingReferencesTitle": "Wissenschaftliche Quellen",
-  "walkingReferencesHint": "Der Plan folgt WHO 2020, ACSM 2011 und der Walking-Metaanalyse (Murtagh 2015). Vollständige Zitate im Evidenz-Tab.",
+  "walkingReferencesHint": "Der Plan folgt WHO 2020, ACSM 2011 und der Walking-Metaanalyse (Richardson 2008). Vollständige Zitate im Evidenz-Tab.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Die persönlichen Startwerte und die Wochensteigerung sind Schätzungen auf Basis allgemeiner Leitlinien — keine medizinische Verordnung. Alleiniges Gehen führt selten zu großem Gewichtsverlust (Richardson 2008: ca. 1,3 kg; Swift 2018: 150 Min./Woche reichen ohne Ernährungsumstellung meist nicht)."
 }

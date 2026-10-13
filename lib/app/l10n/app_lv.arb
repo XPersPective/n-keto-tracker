@@ -458,7 +458,7 @@
   "walkingBmiLabel": "ĶMI: {value}",
   "walkingWeekTitle": "Nedēļa {n}",
   "walkingReferencesTitle": "Zinātniskie avoti",
-  "walkingReferencesHint": "Plāns seko PVO 2020, ACSM 2011 un nūjošanas meta-analīzei (Murtagh 2015). Pilnas atsauces skat. Pierādījumu cilnē.",
+  "walkingReferencesHint": "Plāns seko PVO 2020, ACSM 2011 un nūjošanas meta-analīzei (Richardson 2008). Pilnas atsauces skat. Pierādījumu cilnē.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personalizētās sākuma vērtības un nedēļas progres ir aprēķini, balstoties uz vispārējiem norādījumiem, nevis uz ārsta recepti. Tikai staigāšana reti rada ievērojamu svara zudumu (Richardson 2008: apmēram 1,3 kg; Swift 2018: 150 min/nedēļā parasti nepietiek bez ēdienkartes izmaiņām)."
 }

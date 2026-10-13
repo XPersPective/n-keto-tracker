@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BKİ: {value}",
   "walkingWeekTitle": "Həftə {n}",
   "walkingReferencesTitle": "Elmi mənbələr",
-  "walkingReferencesHint": "Plan ÜST 2020, ACSM 2011 və gəzinti meta-analizini (Murtagh 2015) izləyir. Tam istinadlar üçün Sübutlar bölməsinə baxın.",
+  "walkingReferencesHint": "Plan ÜST 2020, ACSM 2011 və gəzinti meta-analizini (Richardson 2008) izləyir. Tam istinadlar üçün Sübutlar bölməsinə baxın.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Fərdi başlanğıc dəyərləri və həftəlik irəliləyiş ümumi tövsiyələrə əsaslanan təxminlərdir; tibbi təyinat deyil. Təkcə gəzmək adətən böyük çəki itkisi yaratmır (Richardson 2008: təxminən 1,3 kq; Swift 2018: 150 dəq/həftə pəhriz dəyişikliyi olmadan adətən kifayət deyil)."
 }

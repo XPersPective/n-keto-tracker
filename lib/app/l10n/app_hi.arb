@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "सप्ताह {n}",
   "walkingReferencesTitle": "वैज्ञानिक स्रोत",
-  "walkingReferencesHint": "योजना WHO 2020, ACSM 2011 और चलने के मेटा-विश्लेषण (Murtagh 2015) का पालन करती है। पूर्ण उद्धरणों के लिए साक्ष्य टैब देखें।",
+  "walkingReferencesHint": "योजना WHO 2020, ACSM 2011 और चलने के मेटा-विश्लेषण (Richardson 2008) का पालन करती है। पूर्ण उद्धरणों के लिए साक्ष्य टैब देखें।",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "व्यक्तिगत शुरुआती मान और साप्ताहिक प्रगति सामान्य दिशा-निर्देशों पर आधारित अनुमान हैं — चिकित्साीय नुस्खा नहीं। केवल चलना बड़ा वजन घटाता नहीं (Richardson 2008: लगभग 1.3 किग्रा; Swift 2018: आहार बदले बिना 150 मिनट/सप्ताह आमतौर पर पर्याप्त नहीं)।"
 }

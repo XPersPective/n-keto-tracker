@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Vika {n}",
   "walkingReferencesTitle": "Vísindaleg heimild",
-  "walkingReferencesHint": "Áætlunin fylgir WHO 2020, ACSM 2011 og göngu meta-greiningu (Murtagh 2015). Sjá Sönnunarflipann fyrir fullar tilvísanir.",
+  "walkingReferencesHint": "Áætlunin fylgir WHO 2020, ACSM 2011 og göngu meta-greiningu (Richardson 2008). Sjá Sönnunarflipann fyrir fullar tilvísanir.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personalized upphafsgildi og vikuleg framvinda eru áætlanir byggðar á almennum leiðbeiningum, ekki á lyfseði. Gang eitt og sér færir sjaldan mikla þyngdnuþar (Richardson 2008: um 1,3 kg; Swift 2018: 150 mín/viku er yfirleitt ekki næg án mataræðbreytingar)."
 }

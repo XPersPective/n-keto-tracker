@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "ہفتہ {n}",
   "walkingReferencesTitle": "سائنسی ذرائع",
-  "walkingReferencesHint": "منصوبہ WHO 2020، ACSM 2011 اور چلنے کے میٹا تجزیے (Murtagh 2015) کی پیروی کرتا ہے۔ مکمل حوالہ جات کے لیے ثبوت ٹیب دیکھیں۔",
+  "walkingReferencesHint": "منصوبہ WHO 2020، ACSM 2011 اور چلنے کے میٹا تجزیے (Richardson 2008) کی پیروی کرتا ہے۔ مکمل حوالہ جات کے لیے ثبوت ٹیب دیکھیں۔",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "ذاتی شروعاتی قدر اور ہفتہ وار پیش رفت اندازوں کے مطابق ہیں، طبی نسخے نہیں۔ صرف چلنا بڑا وزن کم نہیں کرتا (Richardson 2008: تقریباً 1.3 کلو؛ Swift 2018: گھریلہ تبدیلی کے بغیر 150 منٹ/ہفتہ عام طور پر کافی نہیں)۔"
 }

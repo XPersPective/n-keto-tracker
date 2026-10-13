@@ -238,7 +238,7 @@
   "walkingBmiLabel": "IMC : {value}",
   "walkingWeekTitle": "Semaine {n}",
   "walkingReferencesTitle": "Sources scientifiques",
-  "walkingReferencesHint": "Le plan suit OMS 2020, ACSM 2011 et la méta-analyse sur la marche (Murtagh 2015). Voir l’onglet Preuves pour les références complètes.",
+  "walkingReferencesHint": "Le plan suit OMS 2020, ACSM 2011 et la méta-analyse sur la marche (Richardson 2008). Voir l’onglet Preuves pour les références complètes.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Les valeurs de départ personnalisées et la progression hebdomadaire sont des estimations fondées sur des recommandations générales, pas une prescription médicale. La marche seule produit rarement une perte de poids importante (Richardson 2008 : environ 1,3 kg ; Swift 2018 : 150 min/semaine suffisent rarement sans modification alimentaire)."
 }

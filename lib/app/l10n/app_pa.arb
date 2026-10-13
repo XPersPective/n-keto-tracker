@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "ਹਫ਼ਤਾ {n}",
   "walkingReferencesTitle": "ਵਿਗਿਆਨਕ ਸੋਮੇ",
-  "walkingReferencesHint": "ਯੋਜਨਾ WHO 2020, ACSM 2011 ਅਤੇ ਤੁਰਨ ਦੇ ਮੈਟਾ-ਵਿਸ਼ਲੇਸ਼ਣ (Murtagh 2015) ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ। ਪੂਰੇ ਹਵਾਲੇ ਲਈ ਸਬੂਤ ਟੈਬ ਵੇਖੋ।",
+  "walkingReferencesHint": "ਯੋਜਨਾ WHO 2020, ACSM 2011 ਅਤੇ ਤੁਰਨ ਦੇ ਮੈਟਾ-ਵਿਸ਼ਲੇਸ਼ਣ (Richardson 2008) ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ। ਪੂਰੇ ਹਵਾਲੇ ਲਈ ਸਬੂਤ ਟੈਬ ਵੇਖੋ।",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "ਵਿਅਕਤੀਗਤ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ ਅਤੇ ਹਫ਼ਤਾਵਾਰੀ ਤਰੱਕੀ ਆਮ ਸਲਾਹਾਂ ਤੇ ਆਧਾਰਿਤ ਅੰਦਾਜ਼ੇ ਹਨ — ਡਾਕਟਰੀ ਨਿਰਧਾਰਨ ਨਹੀਂ। ਸਿਰਫ਼ ਤੁਰਨਾ ਭਾਰੀ ਪ੍ਰਮਾਣ ਵਜਨ ਘਟਾਉਂਦਾ ਹੈ ਬਹੁਤ ਘੱਟ (Richardson 2008: ਲਗਭਗ 1.3 ਕਿਲੋ; Swift 2018: ਖਾਣ ਪਾਊਟਿ ਬਦਲਣ ਬਿਨਾਂ 150 ਮਿੰਟ/ਹਫ਼ਤਾ ਆਮ ਤੌਰ ਤੇ ਨਾਕਾਫੀ ਹੈ)।"
 }

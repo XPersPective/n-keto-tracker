@@ -458,7 +458,7 @@
   "walkingBmiLabel": "ITM: {value}",
   "walkingWeekTitle": "Tjedan {n}",
   "walkingReferencesTitle": "Znanstveni izvori",
-  "walkingReferencesHint": "Plan slijedi WHO 2020, ACSM 2011 i metaanalizu hodanja (Murtagh 2015). Potpune citate vidi na kartici Dokazi.",
+  "walkingReferencesHint": "Plan slijedi WHO 2020, ACSM 2011 i metaanalizu hodanja (Richardson 2008). Potpune citate vidi na kartici Dokazi.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personalizirane početne vrijednosti i tjedni napredak su procjene na temelju općih smjernica, a ne medicinski recept. Samo hodanje rijetko daje veliki gubitak težine (Richardson 2008: oko 1,3 kg; Swift 2018: 150 min/tjedan obično nije dovoljno bez promjene prehrane)."
 }

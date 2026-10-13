@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Vecka {n}",
   "walkingReferencesTitle": "Vetenskapliga källor",
-  "walkingReferencesHint": "Planen följer WHO 2020, ACSM 2011 och vandringsmetaanalysen (Murtagh 2015). Se fliken Bevis för fullständiga citeringar.",
+  "walkingReferencesHint": "Planen följer WHO 2020, ACSM 2011 och vandringsmetaanalysen (Richardson 2008). Se fliken Bevis för fullständiga citeringar.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "De personliga startvärdena och veckans framsteg är uppskattningar baserade på allmänna riktlinjer, inte ett medicinskt recept. Enbart promenader ger sällan stor viktnedgång (Richardson 2008: cirka 1,3 kg; Swift 2018: 150 min/vecka räcker sällan utan koständring)."
 }

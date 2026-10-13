@@ -72,8 +72,26 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    // Hastalığa özel başlık artık görünür.
-    expect(find.textContaining('Clinical research framework'), findsWidgets);
+    // Hastalığa özel kaynaklar (yalnız bu filtre açıkken) listelenir.
+    final diseaseTitles = sources
+        .where((s) => s['diseaseSpecific'] == true)
+        .map((s) => s['titleEn'] as String)
+        .toList();
+    expect(diseaseTitles, isNotEmpty, reason: 'test verisi boş');
+
+    // Liste lazy kurulur: filtre açıldıktan sonra listenin sonuna kadar
+    // kaydır, sonra hastalık kartlarının render edildiğini doğrula.
+    await tester.fling(
+      find.byType(Scrollable).first,
+      const Offset(0, -3000),
+      1000,
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.textContaining(diseaseTitles.first),
+      findsWidgets,
+      reason: 'hastalık kartı görünmüyor: ${diseaseTitles.first}',
+    );
   });
 
   testWidgets('kaynak kartında açma butonu yok; yalnız kopyala (§2.3)', (

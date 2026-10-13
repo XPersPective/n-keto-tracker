@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Tydzień {n}",
   "walkingReferencesTitle": "Źródła naukowe",
-  "walkingReferencesHint": "Plan opiera się na WHO 2020, ACSM 2011 oraz metaanalizie spacerów (Murtagh 2015). Pełne cytaty w zakładce Dowody.",
+  "walkingReferencesHint": "Plan opiera się na WHO 2020, ACSM 2011 oraz metaanalizie spacerów (Richardson 2008). Pełne cytaty w zakładce Dowody.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Spersonalizowane wartości początkowe i tygodniowy postęp to szacunki oparte na ogólnych zaleceniach, a nie recepta lekarska. Sam chodzenie rzadko daje dużą utratę masy (Richardson 2008: ok. 1,3 kg; Swift 2018: 150 min/tydzień zwykle nie wystarcza bez zmiany diety)."
 }

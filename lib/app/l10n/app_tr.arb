@@ -473,7 +473,8 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "{n}. hafta",
   "walkingReferencesTitle": "Bilimsel kaynaklar",
-  "walkingReferencesHint": "Plan DSÖ 2020, ACSM 2011 ve yürüyüş meta-analizini (Murtagh 2015) izler. Tam alıntılar için Kanıtlar sekmesine bakın.",
+  "walkingReferencesHint": "Plan DSÖ 2020, ACSM 2011, Richardson 2008 (pedometre meta-analizi) ve Swift 2018 izler. Tam alıntılar için Kanıtlar sekmesine bakın.",
+  "walkingEstimateNote": "Kişisel başlangıç değerleri ve haftalık ilerleme genel rehberlere dayanan tahminlerdir; tıbbi reçe değildir. Yürüyüş tek başına büyük kilo kaybı sağlamaz (Richardson 2008: yaklaşık 1,3 kg; Swift 2018: diyet değişikliği olmadan 150 dk/hafta genellikle yeterli değildir).",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {

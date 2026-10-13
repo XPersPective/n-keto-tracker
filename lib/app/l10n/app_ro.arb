@@ -458,7 +458,7 @@
   "walkingBmiLabel": "IMC: {value}",
   "walkingWeekTitle": "Săptămâna {n}",
   "walkingReferencesTitle": "Surse științifice",
-  "walkingReferencesHint": "Planul urmează OMS 2020, ACSM 2011 și meta-analiza mersului (Murtagh 2015). Vezi fila Dovezi pentru citate complete.",
+  "walkingReferencesHint": "Planul urmează OMS 2020, ACSM 2011 și meta-analiza mersului (Richardson 2008). Vezi fila Dovezi pentru citate complete.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Valorile inițiale personalizate și progresul săptămânal sunt estimări bazate pe orientări generale, nu o rețetă medicală. Mersul pe jos singur produce rareori o scădere mare de greutate (Richardson 2008: aproximativ 1,3 kg; Swift 2018: 150 min/săptămână de regulă nu sunt suficiente fără schimbarea alimentației)."
 }

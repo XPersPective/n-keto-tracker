@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "వారం {n}",
   "walkingReferencesTitle": "శాస్త్రీయ మూలాలు",
-  "walkingReferencesHint": "ప్రణాళిక WHO 2020, ACSM 2011 మరియు నడక meta-analysis (Murtagh 2015) ను అనుసరిస్తుంది. పూర్తి ఉటంకనల కోసం ఆధారాల ట్యాబ్ చూడండి.",
+  "walkingReferencesHint": "ప్రణాళిక WHO 2020, ACSM 2011 మరియు నడక meta-analysis (Richardson 2008) ను అనుసరిస్తుంది. పూర్తి ఉటంకనల కోసం ఆధారాల ట్యాబ్ చూడండి.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "వ్యక్తిగత మొదటి విలువలు మరియు వారపు పురోగతి సాధారణ మార్గదర్శకాలపై ఆధారిత అంచనాలు — వైద్య సూచన కావు. నడక మాత్రమే పెద్ద బరువు తగ్గింపును ఇవ్వదు (Richardson 2008: సుమారు 1.3 కిలో; Swift 2018: ఆహార మార్పు లేకుండా వారానికి 150 నిమిషాలు సాధారణంగా సరిపోదు)."
 }

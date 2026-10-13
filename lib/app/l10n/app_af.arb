@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Week {n}",
   "walkingReferencesTitle": "Wetenskaplike bronne",
-  "walkingReferencesHint": "Die plan volg WGO 2020, ACSM 2011 en stap-meta-analise (Murtagh 2015). Sien die Bewyslas vir volledige verwysings.",
+  "walkingReferencesHint": "Die plan volg WGO 2020, ACSM 2011 en stap-meta-analise (Richardson 2008). Sien die Bewyslas vir volledige verwysings.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Persoonlike beginwaardes en weeklikse vordering is skattings op grond van algemene rigs — nie 'n mediese voorskrif nie. Stap alleen geeef nie groot gewigsverlies nie (Richardson 2008: sowat 1,3 kg; Swift 2018: 150 min/week is sonder dieetverandering gewoonlik onvoldoende)."
 }

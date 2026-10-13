@@ -458,7 +458,7 @@
   "walkingBmiLabel": "KMI: {value}",
   "walkingWeekTitle": "Nädal {n}",
   "walkingReferencesTitle": "Teaduslikud allikad",
-  "walkingReferencesHint": "Plaan järgib WHO 2020, ACSM 2011 ja kõnni metaanalüüsi (Murtagh 2015). Täielikud viited vaata Tõendid vahekaardilt.",
+  "walkingReferencesHint": "Plaan järgib WHO 2020, ACSM 2011 ja kõnni metaanalüüsi (Richardson 2008). Täielikud viited vaata Tõendid vahekaardilt.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Isikupärastatud algväärtused ja nädala edenemine on üldiste juhiste põhjal tehtud hinnangud, mitte meditsiiniretsept. Ainult kõndimine annab harva suurt kaalukaotust (Richardson 2008: umbes 1,3 kg; Swift 2018: 150 min/nädal on tavaliselt ebapiisav ilma toitumismuutusteta)."
 }

@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "ອາທິດ {n}",
   "walkingReferencesTitle": "ແຫຼ່ງອ້າງອິງທາງວິທະຍາສາດ",
-  "walkingReferencesHint": "ແຜນນີ້ອີງຕາມ WHO 2020, ACSM 2011 ແລະ meta-analysis ການຍ່າງ (Murtagh 2015). ເບິ່ງແຖບຫຼັກຖານສໍາລັບການອ້າງອິງເຕັມ.",
+  "walkingReferencesHint": "ແຜນນີ້ອີງຕາມ WHO 2020, ACSM 2011 ແລະ meta-analysis ການຍ່າງ (Richardson 2008). ເບິ່ງແຖບຫຼັກຖານສໍາລັບການອ້າງອິງເຕັມ.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "ຄ່າເລີ່ມຕົ້ນແບບກຳນາດສູດນີ້ ແລະ ຄວາມຄືໜະຂອງລາຍອາທິດ ເປັນການປະມາກອນທີ່ອີງຮູ່ບຄຳແນະນຳທົ່ນໄປ ບໍ່ໃຊ່ງເປັນຄຳສັ່ງຢາໄດ້. ການເດີນລູກແດງຢ່າງດຽວເອົາມີຜົນໃນການລົນໄດ້ນ້ອຍ (Richardson 2008: ປະມາດ 1.3 ກິໂລ; Swift 2018: 150 ນາທີ/ອາທິດ ມັນບໍ່ໄພ້ອະນູ້ໃນການປ່ຽນອາຫານ)."
 }

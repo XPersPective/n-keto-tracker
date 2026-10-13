@@ -458,7 +458,7 @@
   "walkingBmiLabel": "ITM: {value}",
   "walkingWeekTitle": "Teden {n}",
   "walkingReferencesTitle": "Znanstveni viri",
-  "walkingReferencesHint": "Načrt sledi WHO 2020, ACSM 2011 in metaanalizi hoje (Murtagh 2015). Za popolne citate glej zavihek Dokazi.",
+  "walkingReferencesHint": "Načrt sledi WHO 2020, ACSM 2011 in metaanalizi hoje (Richardson 2008). Za popolne citate glej zavihek Dokazi.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personalizirane začetne vrednosti in tedenski napredek so ocene na podlagi splošnih smernic, ne zdravniški recept. Samo hoja redko povzroči veliko izgubo telesne mase (Richardson 2008: približno 1,3 kg; Swift 2018: 150 min/teden običajno ni dovolj brez spremembe prehrane)."
 }

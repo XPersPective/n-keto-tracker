@@ -79,4 +79,26 @@ void main() {
       findsOneWidget,
     );
   });
+
+  // PB-029: kaynaksız (sezgisel) sayılar "tahmin" notu ile gösterilir.
+  testWidgets('tahmin notu görünür ve uydurma kaynak adı geçmez (EN)', (
+    tester,
+  ) async {
+    tallScreen(tester);
+    addTearDown(() => teardown(tester));
+    await tester.pumpWidget(scope());
+    await tester.pumpAndSettle();
+    expect(find.textContaining('not a medical prescription'), findsOneWidget);
+    expect(find.textContaining('Murtagh'), findsNothing);
+    expect(find.textContaining('Richardson 2008'), findsWidgets);
+  });
+
+  testWidgets('tahmin notu Türkçede görünür', (tester) async {
+    tallScreen(tester);
+    addTearDown(() => teardown(tester));
+    await tester.pumpWidget(scope(locale: const Locale('tr')));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('tıbbi reçe değildir'), findsOneWidget);
+    expect(find.textContaining('Murtagh'), findsNothing);
+  });
 }

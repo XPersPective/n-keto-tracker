@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Minggu {n}",
   "walkingReferencesTitle": "Sumber saintifik",
-  "walkingReferencesHint": "Pelan mengikut WHO 2020, ACSM 2011 dan meta-analisis berjalan (Murtagh 2015). Lihat tab Bukti untuk petikan penuh.",
+  "walkingReferencesHint": "Pelan mengikut WHO 2020, ACSM 2011 dan meta-analisis berjalan (Richardson 2008). Lihat tab Bukti untuk petikan penuh.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Nilai mula yang diperibadankan dan kemajuan mingguan ialah anggaran berdasarkan garis panduan umum, bukan preskripsi perubatan. Berjalan kaki sahaja jarang menghasilkan penurunan berat yang besar (Richardson 2008: kira-kira 1.3 kg; Swift 2018: 150 minit/minggu biasanya tidak mencukupi tanpa perubahan diet)."
 }

@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Tuần {n}",
   "walkingReferencesTitle": "Nguồn khoa học",
-  "walkingReferencesHint": "Kế hoạch tuân theo WHO 2020, ACSM 2011 và phân tích tổng hợp về đi bộ (Murtagh 2015). Xem tab Bằng chứng để có trích dẫn đầy đủ.",
+  "walkingReferencesHint": "Kế hoạch tuân theo WHO 2020, ACSM 2011 và phân tích tổng hợp về đi bộ (Richardson 2008). Xem tab Bằng chứng để có trích dẫn đầy đủ.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Các giá trị khởi đầu cá nhân hóa và tiến bộ hằng tuần là ước tính dựa trên hướng dẫn chung, không phải đơn thuốc. Đi bộ một mình hiếm khi tạo ra giảm cân đáng kể (Richardson 2008: khoảng 1,3 kg; Swift 2018: 150 phút/tuần thường không đủ nếu không thay đổi chế độ ăn)."
 }

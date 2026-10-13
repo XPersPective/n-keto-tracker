@@ -64,17 +64,17 @@ void main() {
         heightCm: null,
         currentWeightKg: null,
         activityLevel: 'sedentary',
-        intensityWeekOverride: null,
       );
       expect(plan.startMinutes, 20);
       expect(plan.weeklyTargetMinutes, 150);
       expect(plan.intensity, 'low'); // sedentary + BMI yok → default
       expect(plan.bmi.isNaN, isTrue);
       expect(plan.days, hasLength(56)); // 8 hafta × 7 gün
-      expect(plan.references, hasLength(3));
+      expect(plan.references, hasLength(4));
       expect(plan.references, contains('walk-who-2020'));
       expect(plan.references, contains('walk-acsm-2011'));
-      expect(plan.references, contains('walk-murtagh-2015'));
+      expect(plan.references, contains('walk-richardson-2008'));
+      expect(plan.references, contains('walk-swift-2018'));
     });
 
     test('hafta 1 gün 6 ve 7 (Cmt, Paz) dinlenme', () {
@@ -83,7 +83,6 @@ void main() {
         heightCm: 170,
         currentWeightKg: 70,
         activityLevel: 'moderate',
-        intensityWeekOverride: null,
       );
       final restDays = plan.days
           .where((d) => d.week == 1 && (d.day == 6 || d.day == 7))
@@ -98,7 +97,6 @@ void main() {
         heightCm: 170,
         currentWeightKg: 70,
         activityLevel: 'moderate',
-        intensityWeekOverride: null,
       );
       final pzt = plan.days.firstWhere((d) => d.week == 1 && d.day == 1);
       expect(pzt.minutes, 25); // moderate default
@@ -110,7 +108,6 @@ void main() {
         heightCm: 170,
         currentWeightKg: 70,
         activityLevel: 'moderate',
-        intensityWeekOverride: null,
       );
       final w1 = plan.days.firstWhere((d) => d.week == 1 && d.day == 1).minutes;
       final w8 = plan.days.firstWhere((d) => d.week == 8 && d.day == 1).minutes;
@@ -123,7 +120,6 @@ void main() {
         heightCm: 170,
         currentWeightKg: 70,
         activityLevel: 'active',
-        intensityWeekOverride: null,
       );
       for (final d in plan.days) {
         if (d.minutes > 0) {
@@ -138,12 +134,64 @@ void main() {
         heightCm: 180,
         currentWeightKg: 90,
         activityLevel: 'sedentary',
-        intensityWeekOverride: null,
       );
       // 90 / 1.8^2 = 27.78
       expect(plan.bmi, closeTo(27.78, 0.1));
       // BMI 27.78 < 32, sedentary → 'low' olmaz; 'moderate'
       expect(plan.intensity, 'low'); // sedentary always 'low'
+    });
+  });
+
+  // PB-029: kullanıcıyı yanıltmayacak şekilde kaynak/estim ayrımı.
+  group('kaynak şeffaflığı', () {
+    test('valuesAreEstimates her zaman true', () {
+      for (final level in ['sedentary', 'light', 'moderate', 'active']) {
+        final plan = buildWalkingPlan(
+          birthYear: 1990,
+          heightCm: 175,
+          currentWeightKg: 80,
+          activityLevel: level,
+        );
+        expect(plan.valuesAreEstimates, isTrue, reason: level);
+      }
+    });
+
+    test('sourcedFigures yalnız doğrulanmış kaynakları içerir', () {
+      expect(kSourcedFigures, isNotEmpty);
+      // Uydurma kaynak (PB-028'de silindi) hiçbir yerde geçmemeli.
+      for (final fig in kSourcedFigures) {
+        expect(fig.contains('Murtagh'), isFalse, reason: fig);
+      }
+      expect(
+        kSourcedFigures.join(' '),
+        anyOf(contains('WHO 2020'), contains('ACSM 2011')),
+      );
+    });
+
+    test('referanslar yalnız doğrulanmış kaynak kimlikleridir', () {
+      final plan = buildWalkingPlan(
+        birthYear: 1990,
+        heightCm: 175,
+        currentWeightKg: 80,
+        activityLevel: 'light',
+      );
+      expect(plan.references, isNot(contains('walk-murtagh-2015')));
+      expect(
+        plan.references,
+        everyElement(
+          anyOf(
+            startsWith('walk-who-'),
+            startsWith('walk-acsm-'),
+            startsWith('walk-richardson-'),
+            startsWith('walk-swift-'),
+          ),
+        ),
+      );
+    });
+
+    test('ageFromBirthYear gelecek yıl için 0 döner', () {
+      final nextYear = DateTime.now().year + 1;
+      expect(ageFromBirthYear(nextYear), 0);
     });
   });
 

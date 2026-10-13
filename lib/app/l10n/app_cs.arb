@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Týden {n}",
   "walkingReferencesTitle": "Vědecké zdroje",
-  "walkingReferencesHint": "Plán vychází z WHO 2020, ACSM 2011 a metaanalýzy chůze (Murtagh 2015). Úplné citace najdeš v záložce Důkazy.",
+  "walkingReferencesHint": "Plán vychází z WHO 2020, ACSM 2011 a metaanalýzy chůze (Richardson 2008). Úplné citace najdeš v záložce Důkazy.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Personalizované počáteční hodnoty a týdenní postup jsou odhady založené na obecných doporučeních, ne lékařský předpis. Samotná chůze obvykle nevede k velké úbytce hmotnosti (Richardson 2008: asi 1,3 kg; Swift 2018: 150 min/týden zpravidla nestačí bez změny jídelníčku)."
 }

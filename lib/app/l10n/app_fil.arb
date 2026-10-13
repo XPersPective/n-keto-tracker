@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Linggo {n}",
   "walkingReferencesTitle": "Siyentipikong sanggunian",
-  "walkingReferencesHint": "Ang plano ay sumusunod sa WHO 2020, ACSM 2011 at walking meta-analysis (Murtagh 2015). Tingnan ang Evidence tab para sa kumpletong mga citation.",
+  "walkingReferencesHint": "Ang plano ay sumusunod sa WHO 2020, ACSM 2011 at walking meta-analysis (Richardson 2008). Tingnan ang Evidence tab para sa kumpletong mga citation.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Ang mga personalized na panimulang halaga at lingguhang progreso ay mga pagtataya batay sa pangkalahatang gabay, hindi medikal na reseta. Ang paglalakad lamang ay bihirang nagbibigay ng malaking pagbaba ng timbang (Richardson 2008: mga 1,3 kg; Swift 2018: 150 min/linggo kadalasaan ay hindi sapat nang walang pagbabago sa diyeta)."
 }

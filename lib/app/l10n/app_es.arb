@@ -238,7 +238,7 @@
   "walkingBmiLabel": "IMC: {value}",
   "walkingWeekTitle": "Semana {n}",
   "walkingReferencesTitle": "Fuentes científicas",
-  "walkingReferencesHint": "El plan sigue OMS 2020, ACSM 2011 y el metaanálisis de caminata (Murtagh 2015). Consulta la pestaña Evidencia para citas completas.",
+  "walkingReferencesHint": "El plan sigue OMS 2020, ACSM 2011 y el metaanálisis de caminata (Richardson 2008). Consulta la pestaña Evidencia para citas completas.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "Los valores iniciales personalizados y el progreso semanal son estimaciones basadas en orientaciones generales, no una prescripción médica. Caminar por sí solo rara vez produce una gran pérdida de peso (Richardson 2008: unos 1,3 kg; Swift 2018: 150 min/semana normalmente no basta sin cambios en la dieta)."
 }

@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "{n}週目",
   "walkingReferencesTitle": "科学的根拠",
-  "walkingReferencesHint": "本計画はWHO 2020、ACSM 2011、ウォーキングのメタ分析 (Murtagh 2015) に基づきます。詳細はエビデンスタブを参照してください。",
+  "walkingReferencesHint": "本計画はWHO 2020、ACSM 2011、ウォーキングのメタ分析 (Richardson 2008) に基づきます。詳細はエビデンスタブを参照してください。",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "個人の開始値と週間の増加は一般的なガイドラインに基づく推定であり、医療的な処方ではありません。歩くだけでは大きな減量はほとんど期待できません（Richardson 2008: 約1.3 kg、Swift 2018: 食事を変えない限り150分/週では通常不十分）。"
 }

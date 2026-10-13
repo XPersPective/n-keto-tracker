@@ -458,7 +458,7 @@
   "walkingBmiLabel": "BMI:{value}",
   "walkingWeekTitle": "第{n}週",
   "walkingReferencesTitle": "科學來源",
-  "walkingReferencesHint": "本計畫遵循 WHO 2020、ACSM 2011 與步行後設分析 (Murtagh 2015)。完整引用請見證據分頁。",
+  "walkingReferencesHint": "本計畫遵循 WHO 2020、ACSM 2011 與步行後設分析 (Richardson 2008)。完整引用請見證據分頁。",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -493,5 +493,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "個人化起始值和每週遞增都是基於一般指南的估算，並非醫囑。單靠步行很少能帶來大幅減重（Richardson 2008：約 1.3 公斤；Swift 2018：不改變飲食時每週 150 分鐘通常不夠）。"
 }

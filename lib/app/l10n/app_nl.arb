@@ -238,7 +238,7 @@
   "walkingBmiLabel": "BMI: {value}",
   "walkingWeekTitle": "Week {n}",
   "walkingReferencesTitle": "Wetenschappelijke bronnen",
-  "walkingReferencesHint": "Het plan volgt WHO 2020, ACSM 2011 en de wandel-meta-analyse (Murtagh 2015). Zie het tabblad Bewijs voor volledige citaten.",
+  "walkingReferencesHint": "Het plan volgt WHO 2020, ACSM 2011 en de wandel-meta-analyse (Richardson 2008). Zie het tabblad Bewijs voor volledige citaten.",
   "@walkingIntensityLabel": {
     "placeholders": {
       "level": {
@@ -273,5 +273,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "walkingEstimateNote": "De gepersonaliseerde startwaarden en de voortgang per week zijn schattingen op basis van algemene richtlijnen, geen medisch voorschrift. Alleen wandelen leidt zelden tot groot gewichtsverlies (Richardson 2008: ongeveer 1,3 kg; Swift 2018: 150 min/week is doorgaans niet voldoende zonder dieetaanpassing)."
 }

@@ -240,7 +240,8 @@
     }
   },
   "walkingReferencesTitle": "Scientific sources",
-  "walkingReferencesHint": "Plan follows WHO 2020, ACSM 2011 and walking meta-analysis (Murtagh 2015). See the Evidence tab for full citations.",
+  "walkingReferencesHint": "Plan follows WHO 2020, ACSM 2011, Richardson 2008 (pedometer meta-analysis) and Swift 2018. See the Evidence tab for full citations.",
+  "walkingEstimateNote": "Personalised start values and weekly progression are estimates based on general guidance — not a medical prescription. Walking alone rarely produces large weight loss (Richardson 2008: about 1.3 kg; Swift 2018: 150 min/week is usually not enough without dietary change).",
   "todayWeightTitle": "Weight",
   "todayWeightEmpty": "No weight entries yet.",
   "todaySymptomsTitle": "Today's symptoms",

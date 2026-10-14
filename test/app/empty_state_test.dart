@@ -52,13 +52,7 @@ void main() {
 
   testWidgets('eylem düğmesi dokunma hedefi ≥48 px (PB-031)', (tester) async {
     await tester.pumpWidget(
-      scope(
-        EmptyState(
-          message: 'X',
-          actionLabel: 'Add',
-          onAction: () {},
-        ),
-      ),
+      scope(EmptyState(message: 'X', actionLabel: 'Add', onAction: () {})),
     );
     final size = tester.getSize(find.byType(FilledButton));
     expect(size.height, greaterThanOrEqualTo(48), reason: 'düğme çok alçak');
@@ -66,9 +60,7 @@ void main() {
 
   testWidgets('verilen ikon render edilir', (tester) async {
     await tester.pumpWidget(
-      scope(
-        const EmptyState(message: 'X', icon: Icons.restaurant_outlined),
-      ),
+      scope(const EmptyState(message: 'X', icon: Icons.restaurant_outlined)),
     );
     expect(find.byIcon(Icons.restaurant_outlined), findsOneWidget);
   });

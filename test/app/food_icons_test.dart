@@ -12,8 +12,20 @@ import 'package:n_keto_tracker/app/theme/food_icons.dart';
 void main() {
   // assets/seed/foods.json içindeki 15 kategori.
   const seedCategories = <String>[
-    'meat', 'poultry', 'fish', 'dairy', 'fats', 'nuts', 'vegetable',
-    'fruit', 'legume', 'grain', 'tuber', 'beverage', 'sweet', 'snack',
+    'meat',
+    'poultry',
+    'fish',
+    'dairy',
+    'fats',
+    'nuts',
+    'vegetable',
+    'fruit',
+    'legume',
+    'grain',
+    'tuber',
+    'beverage',
+    'sweet',
+    'snack',
     'prepared',
   ];
 
@@ -25,7 +37,10 @@ void main() {
         isTrue,
         reason: 'kategori ikonu yok: $c',
       );
-      expect(FoodIcons.foodIconFor(c), isNot(FoodIcons.foodIconFor('__none__')));
+      expect(
+        FoodIcons.foodIconFor(c),
+        isNot(FoodIcons.foodIconFor('__none__')),
+      );
     }
   });
 
@@ -38,7 +53,10 @@ void main() {
     expect(FoodIcons.foodIconFor('vegetable'), Icons.eco_outlined);
     expect(FoodIcons.foodIconFor('fruit'), Icons.apple);
     expect(FoodIcons.foodIconFor('beverage'), Icons.local_cafe_outlined);
-    expect(FoodIcons.foodIconFor('vegetable'), isNot(FoodIcons.foodIconFor('fruit')));
+    expect(
+      FoodIcons.foodIconFor('vegetable'),
+      isNot(FoodIcons.foodIconFor('fruit')),
+    );
   });
 
   testWidgets('FoodIconBadge ikonu daire içinde render eder', (tester) async {

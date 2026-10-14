@@ -96,9 +96,8 @@ class EmptyState extends StatelessWidget {
               Expanded(
                 child: Text(
                   message,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: scheme.onSurfaceVariant,
-                  ),
+                  style: Theme.of(context).textTheme.bodyMedium
+                      ?.copyWith(color: scheme.onSurfaceVariant),
                 ),
               ),
             ],

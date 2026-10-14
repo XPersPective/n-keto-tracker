@@ -193,7 +193,9 @@ WalkingPlan buildWalkingPlan({
           week: w,
           day: d,
           minutes: isStrengthDay ? 0 : daily,
-          activity: isStrengthDay ? ActivityType.strength : ActivityType.walking,
+          activity: isStrengthDay
+              ? ActivityType.strength
+              : ActivityType.walking,
         ),
       );
     }

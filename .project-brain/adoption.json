@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "f4dea7f6-6bcb-46f1-884c-70bbb5fcab03",
+  "state": "CLEANED",
+  "roots": [
+    ".store-automation"
+  ],
+  "sources": [
+    {
+      "path": ".store-automation/config.json",
+      "sha256": "f3cb27ca4de72434bba98e5069637a7e22c53403c4f63fec54685013d3261461",
+      "targets": [
+        {
+          "path": ".project-brain/config.yaml"
+        }
+      ],
+      "drop_reason": ""
+    },
+    {
+      "path": ".store-automation/constraints.md",
+      "sha256": "96dcb35eb029d2638b5a3923373a9a143b55a7cf8289470e8bf4dc6200cbdeb7",
+      "targets": [
+        {
+          "path": ".project-brain/constraints.md"
+        }
+      ],
+      "drop_reason": ""
+    },
+    {
+      "path": ".store-automation/current.md",
+      "sha256": "38f42999755693ce84eb1e442ec7a14a60c1484489068a2cc6d82496d2e682cb",
+      "targets": [
+        {
+          "path": ".project-brain/current.md"
+        }
+      ],
+      "drop_reason": ""
+    },
+    {
+      "path": ".store-automation/product.md",
+      "sha256": "24c4f5cc7a2b9aa8b2c64eb4979c8a5209021b2d1ef718333d7c225651b3bc5a",
+      "targets": [
+        {
+          "path": ".project-brain/target.md"
+        }
+      ],
+      "drop_reason": ""
+    },
+    {
+      "path": ".store-automation/tasks/SA-001.md",
+      "sha256": "0113a55e5587e23c8413c68d5447b25a911b3030b675c05add42d3e70462d85e",
+      "targets": [],
+      "drop_reason": "App Store release, signing, metadata, and upload are publishing/distribution work, which Project Brain excludes."
+    },
+    {
+      "path": ".store-automation/tasks/SA-002.md",
+      "sha256": "ab35b6fe739f6f5812886b1d89089d0f9ef742f1fb54200ad744efb88fbb41cf",
+      "targets": [
+        {
+          "path": ".project-brain/tasks/PB-034.md"
+        }
+      ],
+      "drop_reason": ""
+    },
+    {
+      "path": ".store-automation/tasks/SA-003.md",
+      "sha256": "c549812b7ebd063136d147dad208cb02f3c3853d204f41e04a4987265b0cd2f4",
+      "targets": [
+        {
+          "path": ".project-brain/tasks/PB-033.md"
+        }
+      ],
+      "drop_reason": ""
+    }
+  ],
+  "reviewed_note": "Migrated Store Automation product intent, current map, constraints, commands, and open SA-002/SA-003 work into Project Brain; excluded SA-001 App Store publishing per Project Brain scope; removed its old instruction pointer.",
+  "instruction_removals": [
+    {
+      "path": "AGENTS.md",
+      "text": "<!-- store-automation -->\n## Store Automation\nBefore any work, load the `store-automation` skill for `.store-automation/` and run `store.py boot`; follow it for all work here.",
+      "reason": "Remove obsolete Store Automation pointer after importing project intent, state, constraints, commands, and open work into Project Brain."
+    }
+  ],
+  "source_snapshot": {
+    ".store-automation/config.json": "f3cb27ca4de72434bba98e5069637a7e22c53403c4f63fec54685013d3261461",
+    ".store-automation/constraints.md": "96dcb35eb029d2638b5a3923373a9a143b55a7cf8289470e8bf4dc6200cbdeb7",
+    ".store-automation/current.md": "38f42999755693ce84eb1e442ec7a14a60c1484489068a2cc6d82496d2e682cb",
+    ".store-automation/product.md": "24c4f5cc7a2b9aa8b2c64eb4979c8a5209021b2d1ef718333d7c225651b3bc5a",
+    ".store-automation/tasks/SA-001.md": "0113a55e5587e23c8413c68d5447b25a911b3030b675c05add42d3e70462d85e",
+    ".store-automation/tasks/SA-002.md": "ab35b6fe739f6f5812886b1d89089d0f9ef742f1fb54200ad744efb88fbb41cf",
+    ".store-automation/tasks/SA-003.md": "c549812b7ebd063136d147dad208cb02f3c3853d204f41e04a4987265b0cd2f4"
+  },
+  "target_snapshot": {
+    ".project-brain/config.yaml": "41b26723701b3685af8d7095c3f591953bd9ee2c256223de5961f9b365ba02ef",
+    ".project-brain/constraints.md": "e497ccfc84e78a3ce9ebac8906cd5520dc59893dee6818d2a32abece403ab1a7",
+    ".project-brain/current.md": "cfbff883fa693847f4cc03e0b7b93b532661a9fb62bc85025188465aea00361f",
+    ".project-brain/target.md": "08124063d3235ada280276dea7c8d5165697794b7876dc217ea8bec916dca111",
+    ".project-brain/tasks/PB-034.md": "e667f9b2b4c3e78de2c60909f88cf9eb82265d4cf5dcb8cec3bb8a331e6468bf",
+    ".project-brain/tasks/PB-033.md": "0239e3f4f262292d8d6ecbc7c506df7492a29b7ed691e84f67c1b3f30856f440"
+  },
+  "instruction_snapshot": {
+    "AGENTS.md": "d493d82c57c2bdcec084c0206f73e5eb669cd30f03ac489c38b76fc79359c1a8"
+  },
+  "instruction_after_snapshot": {
+    "AGENTS.md": "1731d166ca14d075147c9b270b03caf4b36a5a0086053bb5d5762715255b53b9"
+  },
+  "ignore_snapshot": {
+    ".gitignore": "5ba1da38805f2b66816a5a01ced7859d43a4dd98f614e9dc8345d225458e7c5e"
+  },
+  "ignore_after_snapshot": {
+    ".gitignore": "5ba1da38805f2b66816a5a01ced7859d43a4dd98f614e9dc8345d225458e7c5e"
+  },
+  "archive": {
+    "path": "D:\\repositories\\.project-brain-archives\\n-keto-tracker-f4dea7f6-6bcb-46f1-884c-70bbb5fcab03.zip",
+    "sha256": "436fad3b3257598ee2c4452feed58ec8d896a787da0be0cabbe283c2c9db936d",
+    "entries": {
+      "sources/.store-automation/config.json": "f3cb27ca4de72434bba98e5069637a7e22c53403c4f63fec54685013d3261461",
+      "sources/.store-automation/constraints.md": "96dcb35eb029d2638b5a3923373a9a143b55a7cf8289470e8bf4dc6200cbdeb7",
+      "sources/.store-automation/current.md": "38f42999755693ce84eb1e442ec7a14a60c1484489068a2cc6d82496d2e682cb",
+      "sources/.store-automation/product.md": "24c4f5cc7a2b9aa8b2c64eb4979c8a5209021b2d1ef718333d7c225651b3bc5a",
+      "sources/.store-automation/tasks/SA-001.md": "0113a55e5587e23c8413c68d5447b25a911b3030b675c05add42d3e70462d85e",
+      "sources/.store-automation/tasks/SA-002.md": "ab35b6fe739f6f5812886b1d89089d0f9ef742f1fb54200ad744efb88fbb41cf",
+      "sources/.store-automation/tasks/SA-003.md": "c549812b7ebd063136d147dad208cb02f3c3853d204f41e04a4987265b0cd2f4",
+      "backups/.gitignore": "5ba1da38805f2b66816a5a01ced7859d43a4dd98f614e9dc8345d225458e7c5e",
+      "backups/AGENTS.md": "d493d82c57c2bdcec084c0206f73e5eb669cd30f03ac489c38b76fc79359c1a8"
+    }
+  }
+}

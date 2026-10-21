@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Персонализираните начални стойности и седмичното напредване са оценки въз основа на общи насоки, а не медицинска рецепта. Само ходенето рядко води до голяма загуба на тегло (Richardson 2008: около 1,3 кг; Swift 2018: 150 мин/седмица обикновено не е достатъчна без промяна в храненето).",
   "walkingStrengthDayTitle": "Ден за сила",
-  "walkingProtocolNote": "Дните за сила насочват основните мускулни групи, както и баланса и координацията. Добавете леко разтягане: около 60 секунди за всяка мускулна група, поне 2 дни седмично (ACSM 2011)."
+  "walkingProtocolNote": "Дните за сила насочват основните мускулни групи, както и баланса и координацията. Добавете леко разтягане: около 60 секунди за всяка мускулна група, поне 2 дни седмично (ACSM 2011).",
+  "todayActivityTitle": "Активност",
+  "todayActivityEmpty": "Няма записана активност за днес. Добавете разходка, бягане или силова тренировка.",
+  "activityWeekProgress": "Последните 7 дни: {minutes} от {target} мин",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "СЗО 2020: поне 150 мин умерена или 75 мин интензивна активност седмично. Минутите бягане се броят двойно.",
+  "activityAddButton": "Добави активност",
+  "activityFormTitle": "Запиши активност",
+  "activityKindWalk": "Разходка",
+  "activityKindRun": "Бягане",
+  "activityKindStrength": "Сила",
+  "activityKindOther": "Друго",
+  "activityDurationLabel": "Продължителност (минути)",
+  "activityDistanceLabel": "Разстояние в км (по избор)",
+  "activityInvalidMinutes": "Въведете продължителност от 1 до 600 минути.",
+  "activitySave": "Запази активността",
+  "activitySavedToast": "Активността е запазена.",
+  "activityDeleteTooltip": "Изтрий тази активност",
+  "activityDisclaimer": "Ако се почувствате зле по време на тренировка, спрете и се консултирайте със здравен специалист. Това приложение не замества медицинския съвет.",
+  "activityMinutes": "{minutes} мин",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мин · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

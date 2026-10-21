@@ -14614,6 +14614,527 @@ class ExportHistoryCompanion extends UpdateCompanion<ExportHistoryRow> {
   }
 }
 
+class $ActivitySessionTable extends ActivitySession
+    with TableInfo<$ActivitySessionTable, ActivitySessionRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $ActivitySessionTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    hasAutoIncrement: true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'PRIMARY KEY AUTOINCREMENT',
+    ),
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  @override
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _startedAtUtcMeta = const VerificationMeta(
+    'startedAtUtc',
+  );
+  @override
+  late final GeneratedColumn<DateTime> startedAtUtc = GeneratedColumn<DateTime>(
+    'started_at_utc',
+    aliasedName,
+    false,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _localOffsetMinutesMeta =
+      const VerificationMeta('localOffsetMinutes');
+  @override
+  late final GeneratedColumn<int> localOffsetMinutes = GeneratedColumn<int>(
+    'local_offset_minutes',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _durationMinutesMeta = const VerificationMeta(
+    'durationMinutes',
+  );
+  @override
+  late final GeneratedColumn<int> durationMinutes = GeneratedColumn<int>(
+    'duration_minutes',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _distanceKmMeta = const VerificationMeta(
+    'distanceKm',
+  );
+  @override
+  late final GeneratedColumn<double> distanceKm = GeneratedColumn<double>(
+    'distance_km',
+    aliasedName,
+    true,
+    type: DriftSqlType.double,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _noteMeta = const VerificationMeta('note');
+  @override
+  late final GeneratedColumn<String> note = GeneratedColumn<String>(
+    'note',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _createdAtUtcMeta = const VerificationMeta(
+    'createdAtUtc',
+  );
+  @override
+  late final GeneratedColumn<DateTime> createdAtUtc = GeneratedColumn<DateTime>(
+    'created_at_utc',
+    aliasedName,
+    false,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: true,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    kind,
+    startedAtUtc,
+    localOffsetMinutes,
+    durationMinutes,
+    distanceKm,
+    note,
+    createdAtUtc,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'activity_session';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ActivitySessionRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('started_at_utc')) {
+      context.handle(
+        _startedAtUtcMeta,
+        startedAtUtc.isAcceptableOrUnknown(
+          data['started_at_utc']!,
+          _startedAtUtcMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_startedAtUtcMeta);
+    }
+    if (data.containsKey('local_offset_minutes')) {
+      context.handle(
+        _localOffsetMinutesMeta,
+        localOffsetMinutes.isAcceptableOrUnknown(
+          data['local_offset_minutes']!,
+          _localOffsetMinutesMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_localOffsetMinutesMeta);
+    }
+    if (data.containsKey('duration_minutes')) {
+      context.handle(
+        _durationMinutesMeta,
+        durationMinutes.isAcceptableOrUnknown(
+          data['duration_minutes']!,
+          _durationMinutesMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_durationMinutesMeta);
+    }
+    if (data.containsKey('distance_km')) {
+      context.handle(
+        _distanceKmMeta,
+        distanceKm.isAcceptableOrUnknown(data['distance_km']!, _distanceKmMeta),
+      );
+    }
+    if (data.containsKey('note')) {
+      context.handle(
+        _noteMeta,
+        note.isAcceptableOrUnknown(data['note']!, _noteMeta),
+      );
+    }
+    if (data.containsKey('created_at_utc')) {
+      context.handle(
+        _createdAtUtcMeta,
+        createdAtUtc.isAcceptableOrUnknown(
+          data['created_at_utc']!,
+          _createdAtUtcMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_createdAtUtcMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  ActivitySessionRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ActivitySessionRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      startedAtUtc: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}started_at_utc'],
+      )!,
+      localOffsetMinutes: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}local_offset_minutes'],
+      )!,
+      durationMinutes: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}duration_minutes'],
+      )!,
+      distanceKm: attachedDatabase.typeMapping.read(
+        DriftSqlType.double,
+        data['${effectivePrefix}distance_km'],
+      ),
+      note: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}note'],
+      ),
+      createdAtUtc: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}created_at_utc'],
+      )!,
+    );
+  }
+
+  @override
+  $ActivitySessionTable createAlias(String alias) {
+    return $ActivitySessionTable(attachedDatabase, alias);
+  }
+}
+
+class ActivitySessionRow extends DataClass
+    implements Insertable<ActivitySessionRow> {
+  final int id;
+  final String kind;
+  final DateTime startedAtUtc;
+  final int localOffsetMinutes;
+  final int durationMinutes;
+  final double? distanceKm;
+  final String? note;
+  final DateTime createdAtUtc;
+  const ActivitySessionRow({
+    required this.id,
+    required this.kind,
+    required this.startedAtUtc,
+    required this.localOffsetMinutes,
+    required this.durationMinutes,
+    this.distanceKm,
+    this.note,
+    required this.createdAtUtc,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    map['kind'] = Variable<String>(kind);
+    map['started_at_utc'] = Variable<DateTime>(startedAtUtc);
+    map['local_offset_minutes'] = Variable<int>(localOffsetMinutes);
+    map['duration_minutes'] = Variable<int>(durationMinutes);
+    if (!nullToAbsent || distanceKm != null) {
+      map['distance_km'] = Variable<double>(distanceKm);
+    }
+    if (!nullToAbsent || note != null) {
+      map['note'] = Variable<String>(note);
+    }
+    map['created_at_utc'] = Variable<DateTime>(createdAtUtc);
+    return map;
+  }
+
+  ActivitySessionCompanion toCompanion(bool nullToAbsent) {
+    return ActivitySessionCompanion(
+      id: Value(id),
+      kind: Value(kind),
+      startedAtUtc: Value(startedAtUtc),
+      localOffsetMinutes: Value(localOffsetMinutes),
+      durationMinutes: Value(durationMinutes),
+      distanceKm: distanceKm == null && nullToAbsent
+          ? const Value.absent()
+          : Value(distanceKm),
+      note: note == null && nullToAbsent ? const Value.absent() : Value(note),
+      createdAtUtc: Value(createdAtUtc),
+    );
+  }
+
+  factory ActivitySessionRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ActivitySessionRow(
+      id: serializer.fromJson<int>(json['id']),
+      kind: serializer.fromJson<String>(json['kind']),
+      startedAtUtc: serializer.fromJson<DateTime>(json['startedAtUtc']),
+      localOffsetMinutes: serializer.fromJson<int>(json['localOffsetMinutes']),
+      durationMinutes: serializer.fromJson<int>(json['durationMinutes']),
+      distanceKm: serializer.fromJson<double?>(json['distanceKm']),
+      note: serializer.fromJson<String?>(json['note']),
+      createdAtUtc: serializer.fromJson<DateTime>(json['createdAtUtc']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'kind': serializer.toJson<String>(kind),
+      'startedAtUtc': serializer.toJson<DateTime>(startedAtUtc),
+      'localOffsetMinutes': serializer.toJson<int>(localOffsetMinutes),
+      'durationMinutes': serializer.toJson<int>(durationMinutes),
+      'distanceKm': serializer.toJson<double?>(distanceKm),
+      'note': serializer.toJson<String?>(note),
+      'createdAtUtc': serializer.toJson<DateTime>(createdAtUtc),
+    };
+  }
+
+  ActivitySessionRow copyWith({
+    int? id,
+    String? kind,
+    DateTime? startedAtUtc,
+    int? localOffsetMinutes,
+    int? durationMinutes,
+    Value<double?> distanceKm = const Value.absent(),
+    Value<String?> note = const Value.absent(),
+    DateTime? createdAtUtc,
+  }) => ActivitySessionRow(
+    id: id ?? this.id,
+    kind: kind ?? this.kind,
+    startedAtUtc: startedAtUtc ?? this.startedAtUtc,
+    localOffsetMinutes: localOffsetMinutes ?? this.localOffsetMinutes,
+    durationMinutes: durationMinutes ?? this.durationMinutes,
+    distanceKm: distanceKm.present ? distanceKm.value : this.distanceKm,
+    note: note.present ? note.value : this.note,
+    createdAtUtc: createdAtUtc ?? this.createdAtUtc,
+  );
+  ActivitySessionRow copyWithCompanion(ActivitySessionCompanion data) {
+    return ActivitySessionRow(
+      id: data.id.present ? data.id.value : this.id,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      startedAtUtc: data.startedAtUtc.present
+          ? data.startedAtUtc.value
+          : this.startedAtUtc,
+      localOffsetMinutes: data.localOffsetMinutes.present
+          ? data.localOffsetMinutes.value
+          : this.localOffsetMinutes,
+      durationMinutes: data.durationMinutes.present
+          ? data.durationMinutes.value
+          : this.durationMinutes,
+      distanceKm: data.distanceKm.present
+          ? data.distanceKm.value
+          : this.distanceKm,
+      note: data.note.present ? data.note.value : this.note,
+      createdAtUtc: data.createdAtUtc.present
+          ? data.createdAtUtc.value
+          : this.createdAtUtc,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ActivitySessionRow(')
+          ..write('id: $id, ')
+          ..write('kind: $kind, ')
+          ..write('startedAtUtc: $startedAtUtc, ')
+          ..write('localOffsetMinutes: $localOffsetMinutes, ')
+          ..write('durationMinutes: $durationMinutes, ')
+          ..write('distanceKm: $distanceKm, ')
+          ..write('note: $note, ')
+          ..write('createdAtUtc: $createdAtUtc')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    id,
+    kind,
+    startedAtUtc,
+    localOffsetMinutes,
+    durationMinutes,
+    distanceKm,
+    note,
+    createdAtUtc,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ActivitySessionRow &&
+          other.id == this.id &&
+          other.kind == this.kind &&
+          other.startedAtUtc == this.startedAtUtc &&
+          other.localOffsetMinutes == this.localOffsetMinutes &&
+          other.durationMinutes == this.durationMinutes &&
+          other.distanceKm == this.distanceKm &&
+          other.note == this.note &&
+          other.createdAtUtc == this.createdAtUtc);
+}
+
+class ActivitySessionCompanion extends UpdateCompanion<ActivitySessionRow> {
+  final Value<int> id;
+  final Value<String> kind;
+  final Value<DateTime> startedAtUtc;
+  final Value<int> localOffsetMinutes;
+  final Value<int> durationMinutes;
+  final Value<double?> distanceKm;
+  final Value<String?> note;
+  final Value<DateTime> createdAtUtc;
+  const ActivitySessionCompanion({
+    this.id = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.startedAtUtc = const Value.absent(),
+    this.localOffsetMinutes = const Value.absent(),
+    this.durationMinutes = const Value.absent(),
+    this.distanceKm = const Value.absent(),
+    this.note = const Value.absent(),
+    this.createdAtUtc = const Value.absent(),
+  });
+  ActivitySessionCompanion.insert({
+    this.id = const Value.absent(),
+    required String kind,
+    required DateTime startedAtUtc,
+    required int localOffsetMinutes,
+    required int durationMinutes,
+    this.distanceKm = const Value.absent(),
+    this.note = const Value.absent(),
+    required DateTime createdAtUtc,
+  }) : kind = Value(kind),
+       startedAtUtc = Value(startedAtUtc),
+       localOffsetMinutes = Value(localOffsetMinutes),
+       durationMinutes = Value(durationMinutes),
+       createdAtUtc = Value(createdAtUtc);
+  static Insertable<ActivitySessionRow> custom({
+    Expression<int>? id,
+    Expression<String>? kind,
+    Expression<DateTime>? startedAtUtc,
+    Expression<int>? localOffsetMinutes,
+    Expression<int>? durationMinutes,
+    Expression<double>? distanceKm,
+    Expression<String>? note,
+    Expression<DateTime>? createdAtUtc,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (kind != null) 'kind': kind,
+      if (startedAtUtc != null) 'started_at_utc': startedAtUtc,
+      if (localOffsetMinutes != null)
+        'local_offset_minutes': localOffsetMinutes,
+      if (durationMinutes != null) 'duration_minutes': durationMinutes,
+      if (distanceKm != null) 'distance_km': distanceKm,
+      if (note != null) 'note': note,
+      if (createdAtUtc != null) 'created_at_utc': createdAtUtc,
+    });
+  }
+
+  ActivitySessionCompanion copyWith({
+    Value<int>? id,
+    Value<String>? kind,
+    Value<DateTime>? startedAtUtc,
+    Value<int>? localOffsetMinutes,
+    Value<int>? durationMinutes,
+    Value<double?>? distanceKm,
+    Value<String?>? note,
+    Value<DateTime>? createdAtUtc,
+  }) {
+    return ActivitySessionCompanion(
+      id: id ?? this.id,
+      kind: kind ?? this.kind,
+      startedAtUtc: startedAtUtc ?? this.startedAtUtc,
+      localOffsetMinutes: localOffsetMinutes ?? this.localOffsetMinutes,
+      durationMinutes: durationMinutes ?? this.durationMinutes,
+      distanceKm: distanceKm ?? this.distanceKm,
+      note: note ?? this.note,
+      createdAtUtc: createdAtUtc ?? this.createdAtUtc,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (startedAtUtc.present) {
+      map['started_at_utc'] = Variable<DateTime>(startedAtUtc.value);
+    }
+    if (localOffsetMinutes.present) {
+      map['local_offset_minutes'] = Variable<int>(localOffsetMinutes.value);
+    }
+    if (durationMinutes.present) {
+      map['duration_minutes'] = Variable<int>(durationMinutes.value);
+    }
+    if (distanceKm.present) {
+      map['distance_km'] = Variable<double>(distanceKm.value);
+    }
+    if (note.present) {
+      map['note'] = Variable<String>(note.value);
+    }
+    if (createdAtUtc.present) {
+      map['created_at_utc'] = Variable<DateTime>(createdAtUtc.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ActivitySessionCompanion(')
+          ..write('id: $id, ')
+          ..write('kind: $kind, ')
+          ..write('startedAtUtc: $startedAtUtc, ')
+          ..write('localOffsetMinutes: $localOffsetMinutes, ')
+          ..write('durationMinutes: $durationMinutes, ')
+          ..write('distanceKm: $distanceKm, ')
+          ..write('note: $note, ')
+          ..write('createdAtUtc: $createdAtUtc')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
@@ -14652,6 +15173,9 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   late final $EvidenceClaimTable evidenceClaim = $EvidenceClaimTable(this);
   late final $ContentVersionTable contentVersion = $ContentVersionTable(this);
   late final $ExportHistoryTable exportHistory = $ExportHistoryTable(this);
+  late final $ActivitySessionTable activitySession = $ActivitySessionTable(
+    this,
+  );
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -14684,6 +15208,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
     evidenceClaim,
     contentVersion,
     exportHistory,
+    activitySession,
   ];
   @override
   StreamQueryUpdateRules get streamUpdateRules => const StreamQueryUpdateRules([
@@ -25163,6 +25688,286 @@ typedef $$ExportHistoryTableProcessedTableManager =
       ExportHistoryRow,
       PrefetchHooks Function()
     >;
+typedef $$ActivitySessionTableCreateCompanionBuilder =
+    ActivitySessionCompanion Function({
+      Value<int> id,
+      required String kind,
+      required DateTime startedAtUtc,
+      required int localOffsetMinutes,
+      required int durationMinutes,
+      Value<double?> distanceKm,
+      Value<String?> note,
+      required DateTime createdAtUtc,
+    });
+typedef $$ActivitySessionTableUpdateCompanionBuilder =
+    ActivitySessionCompanion Function({
+      Value<int> id,
+      Value<String> kind,
+      Value<DateTime> startedAtUtc,
+      Value<int> localOffsetMinutes,
+      Value<int> durationMinutes,
+      Value<double?> distanceKm,
+      Value<String?> note,
+      Value<DateTime> createdAtUtc,
+    });
+
+class $$ActivitySessionTableFilterComposer
+    extends Composer<_$AppDatabase, $ActivitySessionTable> {
+  $$ActivitySessionTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<DateTime> get startedAtUtc => $composableBuilder(
+    column: $table.startedAtUtc,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get localOffsetMinutes => $composableBuilder(
+    column: $table.localOffsetMinutes,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get durationMinutes => $composableBuilder(
+    column: $table.durationMinutes,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<double> get distanceKm => $composableBuilder(
+    column: $table.distanceKm,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<DateTime> get createdAtUtc => $composableBuilder(
+    column: $table.createdAtUtc,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$ActivitySessionTableOrderingComposer
+    extends Composer<_$AppDatabase, $ActivitySessionTable> {
+  $$ActivitySessionTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<DateTime> get startedAtUtc => $composableBuilder(
+    column: $table.startedAtUtc,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get localOffsetMinutes => $composableBuilder(
+    column: $table.localOffsetMinutes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get durationMinutes => $composableBuilder(
+    column: $table.durationMinutes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<double> get distanceKm => $composableBuilder(
+    column: $table.distanceKm,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<DateTime> get createdAtUtc => $composableBuilder(
+    column: $table.createdAtUtc,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$ActivitySessionTableAnnotationComposer
+    extends Composer<_$AppDatabase, $ActivitySessionTable> {
+  $$ActivitySessionTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get startedAtUtc => $composableBuilder(
+    column: $table.startedAtUtc,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get localOffsetMinutes => $composableBuilder(
+    column: $table.localOffsetMinutes,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get durationMinutes => $composableBuilder(
+    column: $table.durationMinutes,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<double> get distanceKm => $composableBuilder(
+    column: $table.distanceKm,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get note =>
+      $composableBuilder(column: $table.note, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get createdAtUtc => $composableBuilder(
+    column: $table.createdAtUtc,
+    builder: (column) => column,
+  );
+}
+
+class $$ActivitySessionTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $ActivitySessionTable,
+          ActivitySessionRow,
+          $$ActivitySessionTableFilterComposer,
+          $$ActivitySessionTableOrderingComposer,
+          $$ActivitySessionTableAnnotationComposer,
+          $$ActivitySessionTableCreateCompanionBuilder,
+          $$ActivitySessionTableUpdateCompanionBuilder,
+          (
+            ActivitySessionRow,
+            BaseReferences<
+              _$AppDatabase,
+              $ActivitySessionTable,
+              ActivitySessionRow
+            >,
+          ),
+          ActivitySessionRow,
+          PrefetchHooks Function()
+        > {
+  $$ActivitySessionTableTableManager(
+    _$AppDatabase db,
+    $ActivitySessionTable table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$ActivitySessionTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$ActivitySessionTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$ActivitySessionTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<DateTime> startedAtUtc = const Value.absent(),
+                Value<int> localOffsetMinutes = const Value.absent(),
+                Value<int> durationMinutes = const Value.absent(),
+                Value<double?> distanceKm = const Value.absent(),
+                Value<String?> note = const Value.absent(),
+                Value<DateTime> createdAtUtc = const Value.absent(),
+              }) => ActivitySessionCompanion(
+                id: id,
+                kind: kind,
+                startedAtUtc: startedAtUtc,
+                localOffsetMinutes: localOffsetMinutes,
+                durationMinutes: durationMinutes,
+                distanceKm: distanceKm,
+                note: note,
+                createdAtUtc: createdAtUtc,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                required String kind,
+                required DateTime startedAtUtc,
+                required int localOffsetMinutes,
+                required int durationMinutes,
+                Value<double?> distanceKm = const Value.absent(),
+                Value<String?> note = const Value.absent(),
+                required DateTime createdAtUtc,
+              }) => ActivitySessionCompanion.insert(
+                id: id,
+                kind: kind,
+                startedAtUtc: startedAtUtc,
+                localOffsetMinutes: localOffsetMinutes,
+                durationMinutes: durationMinutes,
+                distanceKm: distanceKm,
+                note: note,
+                createdAtUtc: createdAtUtc,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<$ActivitySessionTable, ActivitySessionRow>(table),
+                  BaseReferences<
+                    _$AppDatabase,
+                    $ActivitySessionTable,
+                    ActivitySessionRow
+                  >(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$ActivitySessionTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $ActivitySessionTable,
+      ActivitySessionRow,
+      $$ActivitySessionTableFilterComposer,
+      $$ActivitySessionTableOrderingComposer,
+      $$ActivitySessionTableAnnotationComposer,
+      $$ActivitySessionTableCreateCompanionBuilder,
+      $$ActivitySessionTableUpdateCompanionBuilder,
+      (
+        ActivitySessionRow,
+        BaseReferences<
+          _$AppDatabase,
+          $ActivitySessionTable,
+          ActivitySessionRow
+        >,
+      ),
+      ActivitySessionRow,
+      PrefetchHooks Function()
+    >;
 
 class $AppDatabaseManager {
   final _$AppDatabase _db;
@@ -25218,4 +26023,6 @@ class $AppDatabaseManager {
       $$ContentVersionTableTableManager(_db, _db.contentVersion);
   $$ExportHistoryTableTableManager get exportHistory =>
       $$ExportHistoryTableTableManager(_db, _db.exportHistory);
+  $$ActivitySessionTableTableManager get activitySession =>
+      $$ActivitySessionTableTableManager(_db, _db.activitySession);
 }

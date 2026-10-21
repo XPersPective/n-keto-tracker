@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "პირადი საწყისი მაჩვენებლები და კვირის ზრდა ზოგადი მიმართულებბაზე დაფუძნებული შეფასებებია — არა სამედიცინო რეცეპტი. მხოლოდ სიარული იშვიათად მსხვილ წონის კლის მოგვაწვდის (Richardson 2008: დაახლოებით 1,3 კგ; Swift 2018: 150 წთ/კვირა ჩვეულებრივ საკმარისი არ არის დიეტის შეცვლის გარეშე).",
   "walkingStrengthDayTitle": "ძალის დღე",
-  "walkingProtocolNote": "ძალის დღეები მიმართულია მთავარ კუნთხოვლებზე, ასევე ბალანსსა და კოორდინაციაზე. დაამატეთ მსუბუქი გაჭიმვა: დაახლოებით 60 წამი კუნთხის ჯგუფიდან, კვირაში სულ მცირე 2 დღე (ACSM 2011)."
+  "walkingProtocolNote": "ძალის დღეები მიმართულია მთავარ კუნთხოვლებზე, ასევე ბალანსსა და კოორდინაციაზე. დაამატეთ მსუბუქი გაჭიმვა: დაახლოებით 60 წამი კუნთხის ჯგუფიდან, კვირაში სულ მცირე 2 დღე (ACSM 2011).",
+  "todayActivityTitle": "აქტივობა",
+  "todayActivityEmpty": "დღეს აქტივობა არ არის ჩაწერილი. დაამატეთ სიარული, სირბილი ან ძალის ვარჯიში.",
+  "activityWeekProgress": "ბოლო 7 დღე: {minutes} {target} წუთიდან",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ჯანმრთელობის მსოფლიო ორგანიზაცია 2020: კვირაში მინიმუმ 150 წუთი ზომიერი ან 75 წუთი ინტენსიური აქტივობა. სირბილის წუთები ორმაგად ითვლება.",
+  "activityAddButton": "აქტივობის დამატება",
+  "activityFormTitle": "აქტივობის ჩაწერა",
+  "activityKindWalk": "სიარული",
+  "activityKindRun": "სირბილი",
+  "activityKindStrength": "ძალა",
+  "activityKindOther": "სხვა",
+  "activityDurationLabel": "ხანგრძლივობა (წუთები)",
+  "activityDistanceLabel": "მანძილი კმ-ში (არასავალდებულო)",
+  "activityInvalidMinutes": "შეიყვანეთ ხანგრძლივობა 1-დან 600 წუთამდე.",
+  "activitySave": "აქტივობის შენახვა",
+  "activitySavedToast": "აქტივობა შენახულია.",
+  "activityDeleteTooltip": "ამ აქტივობის წაშლა",
+  "activityDisclaimer": "თუ ვარჯიშის დროს ცუდად გრძნობთ თავს, შეწყვიტეთ და ესაუბრეთ ჯანმრთელობის სპეციალისტს. ეს აპი სამედიცინო რჩევას არ ანაცვლებს.",
+  "activityMinutes": "{minutes} წთ",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} წთ · {km} კმ",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

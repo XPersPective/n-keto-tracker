@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Spersonalizowane wartości początkowe i tygodniowy postęp to szacunki oparte na ogólnych zaleceniach, a nie recepta lekarska. Sam chodzenie rzadko daje dużą utratę masy (Richardson 2008: ok. 1,3 kg; Swift 2018: 150 min/tydzień zwykle nie wystarcza bez zmiany diety).",
   "walkingStrengthDayTitle": "Dzień siły",
-  "walkingProtocolNote": "Dni siły koncentrują się na głównych grupach mięśniowych, a także na równowadze i koordynacji. Dodaj delikatne rozciąganie: około 60 sekund na grupę mięśniową, co najmniej 2 dni w tygodniu (ACSM 2011)."
+  "walkingProtocolNote": "Dni siły koncentrują się na głównych grupach mięśniowych, a także na równowadze i koordynacji. Dodaj delikatne rozciąganie: około 60 sekund na grupę mięśniową, co najmniej 2 dni w tygodniu (ACSM 2011).",
+  "todayActivityTitle": "Aktywność",
+  "todayActivityEmpty": "Dziś nie zapisano żadnej aktywności. Dodaj spacer, bieg lub trening siłowy.",
+  "activityWeekProgress": "Ostatnie 7 dni: {minutes} z {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: co najmniej 150 min umiarkowanej lub 75 min intensywnej aktywności tygodniowo. Minuty biegu liczą się podwójnie.",
+  "activityAddButton": "Dodaj aktywność",
+  "activityFormTitle": "Zapisz aktywność",
+  "activityKindWalk": "Spacer",
+  "activityKindRun": "Bieg",
+  "activityKindStrength": "Siła",
+  "activityKindOther": "Inne",
+  "activityDurationLabel": "Czas trwania (minuty)",
+  "activityDistanceLabel": "Dystans w km (opcjonalnie)",
+  "activityInvalidMinutes": "Podaj czas od 1 do 600 minut.",
+  "activitySave": "Zapisz aktywność",
+  "activitySavedToast": "Aktywność zapisana.",
+  "activityDeleteTooltip": "Usuń tę aktywność",
+  "activityDisclaimer": "Jeśli podczas ćwiczeń źle się czujesz, przerwij i porozmawiaj z lekarzem lub specjalistą. Ta aplikacja nie zastępuje porady medycznej.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

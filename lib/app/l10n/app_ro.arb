@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Valorile inițiale personalizate și progresul săptămânal sunt estimări bazate pe orientări generale, nu o rețetă medicală. Mersul pe jos singur produce rareori o scădere mare de greutate (Richardson 2008: aproximativ 1,3 kg; Swift 2018: 150 min/săptămână de regulă nu sunt suficiente fără schimbarea alimentației).",
   "walkingStrengthDayTitle": "Zi de forță",
-  "walkingProtocolNote": "Zilele de forță vizează principalele grupe musculare, precum și echilibrul și coordonarea. Adaugă întindere ușoară: aproximativ 60 de secunde pe grup muscular, cel puțin 2 zile pe săptămână (ACSM 2011)."
+  "walkingProtocolNote": "Zilele de forță vizează principalele grupe musculare, precum și echilibrul și coordonarea. Adaugă întindere ușoară: aproximativ 60 de secunde pe grup muscular, cel puțin 2 zile pe săptămână (ACSM 2011).",
+  "todayActivityTitle": "Activitate",
+  "todayActivityEmpty": "Nicio activitate înregistrată azi. Adaugă o plimbare, o alergare sau un antrenament de forță.",
+  "activityWeekProgress": "Ultimele 7 zile: {minutes} din {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "OMS 2020: cel puțin 150 min de activitate moderată sau 75 min de activitate intensă pe săptămână. Minutele de alergare se numără dublu.",
+  "activityAddButton": "Adaugă activitate",
+  "activityFormTitle": "Înregistrează activitate",
+  "activityKindWalk": "Mers",
+  "activityKindRun": "Alergare",
+  "activityKindStrength": "Forță",
+  "activityKindOther": "Altele",
+  "activityDurationLabel": "Durată (minute)",
+  "activityDistanceLabel": "Distanță în km (opțional)",
+  "activityInvalidMinutes": "Introdu o durată între 1 și 600 de minute.",
+  "activitySave": "Salvează activitatea",
+  "activitySavedToast": "Activitate salvată.",
+  "activityDeleteTooltip": "Șterge această activitate",
+  "activityDisclaimer": "Dacă te simți rău în timpul exercițiilor, oprește-te și discută cu un specialist în sănătate. Aplicația nu înlocuiește sfatul medical.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "I valori iniziali personalizzati e l'avanzamento settimanale sono stime basate su indicazioni generali, non una prescrizione medica. Camminare da solo raramente produce un'elevata perdita di peso (Richardson 2008: circa 1,3 kg; Swift 2018: 150 min/settimana di solito non bastano senza modifiche alimentari).",
   "walkingStrengthDayTitle": "Giorno di forza",
-  "walkingProtocolNote": "I giorni di forza si concentrano sui principali gruppi muscolari, oltre che su equilibrio e coordinazione. Aggiungi un allungamento leggero: circa 60 secondi per gruppo muscolare, almeno 2 giorni a settimana (ACSM 2011)."
+  "walkingProtocolNote": "I giorni di forza si concentrano sui principali gruppi muscolari, oltre che su equilibrio e coordinazione. Aggiungi un allungamento leggero: circa 60 secondi per gruppo muscolare, almeno 2 giorni a settimana (ACSM 2011).",
+  "todayActivityTitle": "Attività",
+  "todayActivityEmpty": "Nessuna attività registrata oggi. Aggiungi una passeggiata, una corsa o un allenamento di forza.",
+  "activityWeekProgress": "Ultimi 7 giorni: {minutes} di {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "OMS 2020: almeno 150 min di attività moderata o 75 min di attività intensa a settimana. I minuti di corsa valgono il doppio.",
+  "activityAddButton": "Aggiungi attività",
+  "activityFormTitle": "Registra attività",
+  "activityKindWalk": "Camminata",
+  "activityKindRun": "Corsa",
+  "activityKindStrength": "Forza",
+  "activityKindOther": "Altro",
+  "activityDurationLabel": "Durata (minuti)",
+  "activityDistanceLabel": "Distanza in km (facoltativa)",
+  "activityInvalidMinutes": "Inserisci una durata da 1 a 600 minuti.",
+  "activitySave": "Salva attività",
+  "activitySavedToast": "Attività salvata.",
+  "activityDeleteTooltip": "Elimina questa attività",
+  "activityDisclaimer": "Se ti senti male durante l'esercizio, fermati e parlane con il tuo professionista sanitario. Questa app non sostituisce il parere medico.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "വ്യക്തിഗത ആരംഭ മൂല്യങ്ങളും പ്രതിവാര പുരോഗതിയും പൊതു മാർഗനിർദ്ദേശങ്ങളെ അടിങ്ങിയുള്ള കണക്കാകാലുകളാണ് — മെഡിക്കൽ പ്രിസ്‌ക്രിപ്ഷനല്ല. നടക്കുന്നത് മാത്രം വലിയ ശരീരം കുറയുന്നതില്ല (Richardson 2008: ഏകദേശം 1.3 കിലോ; Swift 2018: ഭക്ഷണ മാറ്റമില്ലാതെ 150 മിനിറ്റ്/ആഴ്ച പൊതുവായി പോരാഞ്ഞിട്ടില്ല).",
   "walkingStrengthDayTitle": "സ്റ്റ്രെംഗ്ത് ദിവസം",
-  "walkingProtocolNote": "സ്റ്റ്രെംഗ്ത് ദിവസങ്ങൾ പ്രധാന മസ്കിൾ ഗ്രൂപ്പുകളെയും സന്തുലനവും ഏകോപനിയേഷനും ലക്ഷ്യമാക്കുന്നു. നേരിയ സ്ട്രെച്ചിംഗ് ചേർക്കുക: ഓരോ മസ്കിൾ ഗ്രൂപ്പിനും ഏകദേശം 60 സെക്കൻഡ്, ആഴ്ചയിൽ കുറഞ്ഞത് 2 ദിവസം (ACSM 2011)."
+  "walkingProtocolNote": "സ്റ്റ്രെംഗ്ത് ദിവസങ്ങൾ പ്രധാന മസ്കിൾ ഗ്രൂപ്പുകളെയും സന്തുലനവും ഏകോപനിയേഷനും ലക്ഷ്യമാക്കുന്നു. നേരിയ സ്ട്രെച്ചിംഗ് ചേർക്കുക: ഓരോ മസ്കിൾ ഗ്രൂപ്പിനും ഏകദേശം 60 സെക്കൻഡ്, ആഴ്ചയിൽ കുറഞ്ഞത് 2 ദിവസം (ACSM 2011).",
+  "todayActivityTitle": "പ്രവർത്തനം",
+  "todayActivityEmpty": "ഇന്ന് പ്രവർത്തനമൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല. നടത്തം, ഓട്ടം അല്ലെങ്കിൽ ശക്തി വ്യായാമം ചേർക്കുക.",
+  "activityWeekProgress": "കഴിഞ്ഞ 7 ദിവസം: {target} ൽ {minutes} മിനിറ്റ്",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: ആഴ്ചയിൽ കുറഞ്ഞത് 150 മിനിറ്റ് മിതമായ അല്ലെങ്കിൽ 75 മിനിറ്റ് ശക്തമായ പ്രവർത്തനം. ഓട്ടത്തിന്റെ മിനിറ്റുകൾ ഇരട്ടിയായി കണക്കാക്കും.",
+  "activityAddButton": "പ്രവർത്തനം ചേർക്കുക",
+  "activityFormTitle": "പ്രവർത്തനം രേഖപ്പെടുത്തുക",
+  "activityKindWalk": "നടത്തം",
+  "activityKindRun": "ഓട്ടം",
+  "activityKindStrength": "ശക്തി",
+  "activityKindOther": "മറ്റുള്ളവ",
+  "activityDurationLabel": "ദൈർഘ്യം (മിനിറ്റ്)",
+  "activityDistanceLabel": "ദൂരം കി.മീ (ഐച്ഛികം)",
+  "activityInvalidMinutes": "1 മുതൽ 600 മിനിറ്റ് വരെ ദൈർഘ്യം നൽകുക.",
+  "activitySave": "പ്രവർത്തനം സംരക്ഷിക്കുക",
+  "activitySavedToast": "പ്രവർത്തനം സംരക്ഷിച്ചു.",
+  "activityDeleteTooltip": "ഈ പ്രവർത്തനം ഇല്ലാതാക്കുക",
+  "activityDisclaimer": "വ്യായാമത്തിനിടെ അസ്വസ്ഥത തോന്നിയാൽ നിർത്തി ആരോഗ്യ വിദഗ്ധനോട് സംസാരിക്കുക. ഈ ആപ്പ് വൈദ്യോപദേശത്തിന് പകരമല്ല.",
+  "activityMinutes": "{minutes} മിനിറ്റ്",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} മിനിറ്റ് · {km} കി.മീ",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

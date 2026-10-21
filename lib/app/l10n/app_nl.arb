@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "De gepersonaliseerde startwaarden en de voortgang per week zijn schattingen op basis van algemene richtlijnen, geen medisch voorschrift. Alleen wandelen leidt zelden tot groot gewichtsverlies (Richardson 2008: ongeveer 1,3 kg; Swift 2018: 150 min/week is doorgaans niet voldoende zonder dieetaanpassing).",
   "walkingStrengthDayTitle": "Krachtdag",
-  "walkingProtocolNote": "Krachtdagen richten zich op de grote spiergroepen, plus balans en coördinatie. Voeg gentle reksoefeningen toe: ongeveer 60 seconden per spiergroep, minstens 2 dagen per week (ACSM 2011)."
+  "walkingProtocolNote": "Krachtdagen richten zich op de grote spiergroepen, plus balans en coördinatie. Voeg gentle reksoefeningen toe: ongeveer 60 seconden per spiergroep, minstens 2 dagen per week (ACSM 2011).",
+  "todayActivityTitle": "Activiteit",
+  "todayActivityEmpty": "Vandaag is er geen activiteit vastgelegd. Voeg een wandeling, hardlooprondje of krachttraining toe.",
+  "activityWeekProgress": "Afgelopen 7 dagen: {minutes} van {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: minstens 150 min matige of 75 min intensieve activiteit per week. Hardloopminuten tellen dubbel.",
+  "activityAddButton": "Activiteit toevoegen",
+  "activityFormTitle": "Activiteit registreren",
+  "activityKindWalk": "Wandelen",
+  "activityKindRun": "Hardlopen",
+  "activityKindStrength": "Kracht",
+  "activityKindOther": "Overig",
+  "activityDurationLabel": "Duur (minuten)",
+  "activityDistanceLabel": "Afstand in km (optioneel)",
+  "activityInvalidMinutes": "Voer een duur in van 1 tot 600 minuten.",
+  "activitySave": "Activiteit opslaan",
+  "activitySavedToast": "Activiteit opgeslagen.",
+  "activityDeleteTooltip": "Deze activiteit verwijderen",
+  "activityDisclaimer": "Voel je je onwel tijdens het sporten? Stop dan en overleg met je zorgverlener. Deze app vervangt geen medisch advies.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

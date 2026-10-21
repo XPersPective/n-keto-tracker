@@ -77,7 +77,7 @@ void main() {
     final raw = await repo.exportJson();
     final doc = jsonDecode(raw) as Map<String, dynamic>;
     expect(doc['formatVersion'], '1.0');
-    expect(doc['schemaVersion'], 1);
+    expect(doc['schemaVersion'], 2);
     expect(doc['appVersion'], '0.0.0-dev');
     expect(doc['units'], isNotNull);
     expect((doc['warning'] as String).isNotEmpty, isTrue);

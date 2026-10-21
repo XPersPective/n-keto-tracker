@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Жеке баштапкы маанилер жана апталык өсүш — жалпы сунуштарга негизделген бөгөмдөр, дарынын рецепти эмес. Жөн гана басуу сейрек чоң салмак жоготууга алып келет (Richardson 2008: болжол менен 1,3 кг; Swift 2018: 150 мүн/жума диетаны өзгөртпөгөндө жетигилексиз).",
   "walkingStrengthDayTitle": "Күч оюн күнү",
-  "walkingProtocolNote": "Күч оюн күндөрү негизги булдук топторуна, ошондой эле баланс жана координацияга багыт алат. Жумшак созуу кошкуңуз: ар бир булдук тобуна болжолу менен 60 секунд, жумасына кеминде 2 күн (ACSM 2011)."
+  "walkingProtocolNote": "Күч оюн күндөрү негизги булдук топторуна, ошондой эле баланс жана координацияга багыт алат. Жумшак созуу кошкуңуз: ар бир булдук тобуна болжолу менен 60 секунд, жумасына кеминде 2 күн (ACSM 2011).",
+  "todayActivityTitle": "Активдүүлүк",
+  "todayActivityEmpty": "Бүгүн активдүүлүк катталган жок. Басуу, чуркоо же күч машыгуусун кошуңуз.",
+  "activityWeekProgress": "Акыркы 7 күн: {target} мүнөттөн {minutes} мүн",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ДССУ 2020: жумасына кеминде 150 мүн орточо же 75 мүн интенсивдүү активдүүлүк. Чуркоо мүнөттөрү эки эсе санадат.",
+  "activityAddButton": "Активдүүлүк кошуу",
+  "activityFormTitle": "Активдүүлүктү катталыштыруу",
+  "activityKindWalk": "Басуу",
+  "activityKindRun": "Чуркоо",
+  "activityKindStrength": "Күч",
+  "activityKindOther": "Башка",
+  "activityDurationLabel": "Узактыгы (мүнөт)",
+  "activityDistanceLabel": "Аралык км менен (милдеттүү эмес)",
+  "activityInvalidMinutes": "1ден 600 мүнөткө чейинки узактыкты киргизиңиз.",
+  "activitySave": "Активдүүлүктү сактоо",
+  "activitySavedToast": "Активдүүлүк сакталды.",
+  "activityDeleteTooltip": "Бул активдүүлүктү өчүрүү",
+  "activityDisclaimer": "Машыгуу учурунда өзүңүздү начар сезсеңиз, токтоп, саламаттык сактоо адиси менен сүйлөшүңүз. Бул колдонмо медициналык кеңешти алмаштырбайт.",
+  "activityMinutes": "{minutes} мүн",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мүн · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

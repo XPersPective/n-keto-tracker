@@ -6,6 +6,7 @@ import '../../app/l10n/generated/app_localizations.dart';
 import '../../app/theme/surfaces.dart';
 import '../measurements/log_view_model.dart';
 import 'today_view_model.dart';
+import '../activity/activity_card.dart';
 
 /// Bugün ekranı (MASTER_PROMPT §5.1): son ölçümler, günlük toplamlar,
 /// hızlı eylemler (≤3 dokunuş), tıbbi-olmayan alt bilgisi. Besin/ağırlık/
@@ -104,6 +105,11 @@ class TodayPage extends ConsumerWidget {
           ),
           const SizedBox(height: 16),
           SectionCard(title: l10n.todayQuickActions, child: _QuickActions()),
+          const SizedBox(height: 16),
+          SectionCard(
+            title: l10n.todayActivityTitle,
+            child: const ActivityCard(),
+          ),
           const SizedBox(height: 16),
           SectionCard(
             title: l10n.todayNutritionTitle,

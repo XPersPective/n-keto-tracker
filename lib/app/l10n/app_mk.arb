@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Персонализираните почетни вредности и неделниот напредок се проценки засновани на општи насоки, а не медицински рецепт. Самото одење ретко дава големо намалување на тежината (Richardson 2008: околу 1,3 кг; Swift 2018: 150 мин/недела обично не е доволно без промена во исхраната).",
   "walkingStrengthDayTitle": "Ден на сила",
-  "walkingProtocolNote": "Дените на сила се насочуваат кон главните мускулни групи, како и кон рамнотежата и координацијата. Додадете нежно растегнување: околу 60 секунди по мускулна група, најмалку 2 дена неделно (ACSM 2011)."
+  "walkingProtocolNote": "Дените на сила се насочуваат кон главните мускулни групи, како и кон рамнотежата и координацијата. Додадете нежно растегнување: околу 60 секунди по мускулна група, најмалку 2 дена неделно (ACSM 2011).",
+  "todayActivityTitle": "Активност",
+  "todayActivityEmpty": "Денес нема забележана активност. Додајте одење, трчање или вежба за сила.",
+  "activityWeekProgress": "Последните 7 дена: {minutes} од {target} мин",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "СЗО 2020: најмалку 150 мин умерена или 75 мин интензивна активност неделно. Минутите на трчање се броат двојно.",
+  "activityAddButton": "Додај активност",
+  "activityFormTitle": "Запиши активност",
+  "activityKindWalk": "Одење",
+  "activityKindRun": "Трчање",
+  "activityKindStrength": "Сила",
+  "activityKindOther": "Друго",
+  "activityDurationLabel": "Траење (минути)",
+  "activityDistanceLabel": "Растојание во км (по избор)",
+  "activityInvalidMinutes": "Внесете траење од 1 до 600 минути.",
+  "activitySave": "Зачувај активност",
+  "activitySavedToast": "Активноста е зачувана.",
+  "activityDeleteTooltip": "Избриши ја оваа активност",
+  "activityDisclaimer": "Ако се чувствувате лошо за време на вежбање, прекинете и разговарајте со здравствен работник. Апликацијата не ја заменува медицинската совет.",
+  "activityMinutes": "{minutes} мин",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мин · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

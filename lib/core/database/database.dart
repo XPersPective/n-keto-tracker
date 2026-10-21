@@ -17,8 +17,9 @@ const _dbKeyStorageKey = 'n_keto_tracker.db.key.v1';
 /// (ADR-0001). Anahtar ilk açılışta rastgele üretilir ve platform güvenli
 /// deposunda saklanır; DB dosyası düz sqlite3 ile okunamaz.
 ///
-/// - schemaVersion 1: ilk şema. Sonraki değişiklikler ileri yönlü migration
-///   + fixture'lı test ile gelir (MASTER §3.3, §13).
+/// - schemaVersion 1: ilk şema (1.0.0+6 üretim).
+/// - schemaVersion 2: ActivitySession (hareket kaydı); ileri yönlü migration,
+///   migration_test.dart v1→v2 veri korunumunu doğrular.
 /// - Foreign key'ler açılışta etkinleştirilir.
 @DriftDatabase(
   tables: [
@@ -49,6 +50,7 @@ const _dbKeyStorageKey = 'n_keto_tracker.db.key.v1';
     EvidenceClaim,
     ContentVersion,
     ExportHistory,
+    ActivitySession,
   ],
 )
 class AppDatabase extends _$AppDatabase {
@@ -58,10 +60,16 @@ class AppDatabase extends _$AppDatabase {
   AppDatabase.forTesting(super.e);
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
+    onCreate: (m) => m.createAll(),
+    // v2: hareket kaydı (ActivitySession). Yalnız yeni tablo eklenir; mevcut
+    // veriye dokunulmaz (1.0.0+6 kullanıcılarının veritabanı korunur).
+    onUpgrade: (m, from, to) async {
+      if (from < 2) await m.createTable(activitySession);
+    },
     beforeOpen: (details) async {
       await customStatement('PRAGMA foreign_keys = ON');
     },

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "व्यक्तिगत सुरुवाती मानहरू र साप्ताहिक प्रगति सामान्य निर्देशनमा आधारित अनुमान हुन् — चिकित्सकीय सिफारिस होइनन्। सिर्फ हिँड्नेले ठुलो तौल घटाउँदैन (Richardson 2008: लगभग १.३ केजी; Swift 2018: खाना परिवर्तन बिना १५० मिनेट/हप्ता प्रायः पर्याप्त हुँदैन)।",
   "walkingStrengthDayTitle": "बल दिन",
-  "walkingProtocolNote": "बल दिनहरू मुख्य मांसपेशी समूहहरूका साथै सन्तुलन र समन्वयमा पनि केन्द्रित हुन्छन्। हल्का स्ट्रेच थप्नुहोस्: प्रत्येक मांसपेशी समूहमा लगभग 60 सेकेन्ड, हप्तामा कम्तीमा 2 दिन (ACSM 2011)।"
+  "walkingProtocolNote": "बल दिनहरू मुख्य मांसपेशी समूहहरूका साथै सन्तुलन र समन्वयमा पनि केन्द्रित हुन्छन्। हल्का स्ट्रेच थप्नुहोस्: प्रत्येक मांसपेशी समूहमा लगभग 60 सेकेन्ड, हप्तामा कम्तीमा 2 दिन (ACSM 2011)।",
+  "todayActivityTitle": "गतिविधि",
+  "todayActivityEmpty": "आज कुनै गतिविधि दर्ता गरिएको छैन। हिँडाइ, दौड वा बल तालिम थप्नुहोस्।",
+  "activityWeekProgress": "अन्तिम 7 दिन: {target} मध्ये {minutes} मिनेट",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: हप्तामा कम्तीमा 150 मिनेट मध्यम वा 75 मिनेट जोसिलो गतिविधि। दौडका मिनेट दोब्बर गनिन्छ।",
+  "activityAddButton": "गतिविधि थप्नुहोस्",
+  "activityFormTitle": "गतिविधि दर्ता गर्नुहोस्",
+  "activityKindWalk": "हिँडाइ",
+  "activityKindRun": "दौड",
+  "activityKindStrength": "बल",
+  "activityKindOther": "अन्य",
+  "activityDurationLabel": "अवधि (मिनेट)",
+  "activityDistanceLabel": "दूरी किमीमा (ऐच्छिक)",
+  "activityInvalidMinutes": "1 देखि 600 मिनेटबीचको अवधि प्रविष्ट गर्नुहोस्।",
+  "activitySave": "गतिविधि सुरक्षित गर्नुहोस्",
+  "activitySavedToast": "गतिविधि सुरक्षित भयो।",
+  "activityDeleteTooltip": "यो गतिविधि मेटाउनुहोस्",
+  "activityDisclaimer": "व्यायामका बेला अस्वस्थ महसुस भए रोक्नुहोस् र स्वास्थ्य पेशेवरसँग कुरा गर्नुहोस्। यो एप चिकित्सकीय सल्लाहको विकल्प होइन।",
+  "activityMinutes": "{minutes} मिनेट",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} मिनेट · {km} किमी",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

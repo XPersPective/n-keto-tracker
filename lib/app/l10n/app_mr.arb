@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "वैयक्तिक सुरुवातीचे मूल्ये आणि साप्ताहिक प्रगती ही सामान्य मार्गदर्शनावर आधारित अंदाजे आहेत — वैद्यकीयी नाहीत. फक्त चालण्याने मोठ्या वजन घटीत होत नाही (Richardson 2008: सुमारे 1.3 किलो; Swift 2018: आहार बदल्याशिवाय 150 मिनिट/आठवडा सामान्यतः पुरेसा नसते).",
   "walkingStrengthDayTitle": "ताकदीचा दिवस",
-  "walkingProtocolNote": "ताकदीच्या दिवशी मुख्य स्नायुंचे गट तसेच संतुलन आणि समन्वय यांना लक्ष्य करतात. हलके स्ट्रेच जोडा: प्रत्येक स्नायु गटासाठी सुमारे 60 सेकंद, आठवड्याला किमान 2 दिवस (ACSM 2011)."
+  "walkingProtocolNote": "ताकदीच्या दिवशी मुख्य स्नायुंचे गट तसेच संतुलन आणि समन्वय यांना लक्ष्य करतात. हलके स्ट्रेच जोडा: प्रत्येक स्नायु गटासाठी सुमारे 60 सेकंद, आठवड्याला किमान 2 दिवस (ACSM 2011).",
+  "todayActivityTitle": "क्रियाकलाप",
+  "todayActivityEmpty": "आज कोणताही क्रियाकलाप नोंदवलेला नाही. चालणे, धावणे किंवा ताकदीचा व्यायाम जोडा.",
+  "activityWeekProgress": "मागील 7 दिवस: {target} पैकी {minutes} मिनिटे",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: आठवड्यात किमान 150 मिनिटे मध्यम किंवा 75 मिनिटे तीव्र क्रियाकलाप. धावण्याची मिनिटे दुप्पट मोजली जातात.",
+  "activityAddButton": "क्रियाकलाप जोडा",
+  "activityFormTitle": "क्रियाकलाप नोंदवा",
+  "activityKindWalk": "चालणे",
+  "activityKindRun": "धावणे",
+  "activityKindStrength": "ताकद",
+  "activityKindOther": "इतर",
+  "activityDurationLabel": "कालावधी (मिनिटे)",
+  "activityDistanceLabel": "अंतर किमी मध्ये (ऐच्छिक)",
+  "activityInvalidMinutes": "1 ते 600 मिनिटांदरम्यानचा कालावधी टाका.",
+  "activitySave": "क्रियाकलाप जतन करा",
+  "activitySavedToast": "क्रियाकलाप जतन केला.",
+  "activityDeleteTooltip": "हा क्रियाकलाप हटवा",
+  "activityDisclaimer": "व्यायामादरम्यान बरे वाटत नसल्यास थांबा आणि आरोग्य तज्ज्ञांशी बोला. हे अ‍ॅप वैद्यकीय सल्ल्याची जागा घेत नाही.",
+  "activityMinutes": "{minutes} मिनिटे",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} मिनिटे · {km} किमी",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

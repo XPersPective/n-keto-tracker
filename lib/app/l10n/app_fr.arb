@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Les valeurs de départ personnalisées et la progression hebdomadaire sont des estimations fondées sur des recommandations générales, pas une prescription médicale. La marche seule produit rarement une perte de poids importante (Richardson 2008 : environ 1,3 kg ; Swift 2018 : 150 min/semaine suffisent rarement sans modification alimentaire).",
   "walkingStrengthDayTitle": "Jour de renforcement",
-  "walkingProtocolNote": "Les jours de renforcement ciblent les principaux groupes musculaires, ainsi que l'équilibre et la coordination. Ajoutez un étirement doux : environ 60 secondes par groupe musculaire, au moins 2 jours par semaine (ACSM 2011)."
+  "walkingProtocolNote": "Les jours de renforcement ciblent les principaux groupes musculaires, ainsi que l'équilibre et la coordination. Ajoutez un étirement doux : environ 60 secondes par groupe musculaire, au moins 2 jours par semaine (ACSM 2011).",
+  "todayActivityTitle": "Activité",
+  "todayActivityEmpty": "Aucune activité enregistrée aujourd'hui. Ajoutez une marche, une course ou une séance de renforcement.",
+  "activityWeekProgress": "7 derniers jours : {minutes} sur {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "OMS 2020 : au moins 150 min d'activité modérée ou 75 min d'activité intense par semaine. Les minutes de course comptent double.",
+  "activityAddButton": "Ajouter une activité",
+  "activityFormTitle": "Enregistrer une activité",
+  "activityKindWalk": "Marche",
+  "activityKindRun": "Course",
+  "activityKindStrength": "Renforcement",
+  "activityKindOther": "Autre",
+  "activityDurationLabel": "Durée (minutes)",
+  "activityDistanceLabel": "Distance en km (facultatif)",
+  "activityInvalidMinutes": "Saisissez une durée de 1 à 600 minutes.",
+  "activitySave": "Enregistrer l'activité",
+  "activitySavedToast": "Activité enregistrée.",
+  "activityDeleteTooltip": "Supprimer cette activité",
+  "activityDisclaimer": "Si vous vous sentez mal pendant l'effort, arrêtez et parlez-en à votre professionnel de santé. Cette application ne remplace pas un avis médical.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "ব্যক্তিগত শুরুর মান ও সাপ্তাহিক অগ্রগতি সাধারণ নির্দেশনার উপর ভিত্তিক অনুমান — এটি চিকিৎসা প্রেসক্রিপশন নয়। শুধু হাঁটা বড় ওজন কমায় না (Richardson 2008: প্রায় ১.৩ কেজি; Swift 2018: খাদ্য পরিবর্তন ছাড়া ১৫০ মিনিট/সপ্তাহ সাধারণত যথেষ্ট নয়)।",
   "walkingStrengthDayTitle": "শক্তির দিন",
-  "walkingProtocolNote": "শক্তির দিনগুলি প্রধান পেশি গোষ্ঠী এবং ভারসাম্য ও সমন্বয়কে লক্ষ্য করে। হালকা স্ট্রেচ যোগ করুন: প্রতি পেশি গোষ্ঠীতে প্রায় 60 সেকেন্ড, সপ্তাহে অন্তত 2 দিন (ACSM 2011)।"
+  "walkingProtocolNote": "শক্তির দিনগুলি প্রধান পেশি গোষ্ঠী এবং ভারসাম্য ও সমন্বয়কে লক্ষ্য করে। হালকা স্ট্রেচ যোগ করুন: প্রতি পেশি গোষ্ঠীতে প্রায় 60 সেকেন্ড, সপ্তাহে অন্তত 2 দিন (ACSM 2011)।",
+  "todayActivityTitle": "কার্যকলাপ",
+  "todayActivityEmpty": "আজ কোনো কার্যকলাপ লেখা হয়নি। হাঁটা, দৌড় বা শক্তির ব্যায়াম যোগ করুন।",
+  "activityWeekProgress": "শেষ ৭ দিন: {target} মিনিটের মধ্যে {minutes} মিনিট",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: সপ্তাহে কমপক্ষে ১৫০ মিনিট মাঝারি বা ৭৫ মিনিট জোরালো কার্যকলাপ। দৌড়ের মিনিট দ্বিগুণ গণ্য হয়।",
+  "activityAddButton": "কার্যকলাপ যোগ করুন",
+  "activityFormTitle": "কার্যকলাপ লিখুন",
+  "activityKindWalk": "হাঁটা",
+  "activityKindRun": "দৌড়",
+  "activityKindStrength": "শক্তি",
+  "activityKindOther": "অন্যান্য",
+  "activityDurationLabel": "সময়কাল (মিনিট)",
+  "activityDistanceLabel": "দূরত্ব কিমি (ঐচ্ছিক)",
+  "activityInvalidMinutes": "১ থেকে ৬০০ মিনিটের মধ্যে সময় লিখুন।",
+  "activitySave": "কার্যকলাপ সংরক্ষণ করুন",
+  "activitySavedToast": "কার্যকলাপ সংরক্ষিত হয়েছে।",
+  "activityDeleteTooltip": "এই কার্যকলাপ মুছুন",
+  "activityDisclaimer": "ব্যায়ামের সময় অসুস্থ বোধ করলে থামুন এবং স্বাস্থ্যসেবা পেশাজীবীর সঙ্গে কথা বলুন। এই অ্যাপ চিকিৎসা পরামর্শের বিকল্প নয়।",
+  "activityMinutes": "{minutes} মিনিট",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} মিনিট · {km} কিমি",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

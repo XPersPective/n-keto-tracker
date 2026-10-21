@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "ذاتی شروعاتی قدر اور ہفتہ وار پیش رفت اندازوں کے مطابق ہیں، طبی نسخے نہیں۔ صرف چلنا بڑا وزن کم نہیں کرتا (Richardson 2008: تقریباً 1.3 کلو؛ Swift 2018: گھریلہ تبدیلی کے بغیر 150 منٹ/ہفتہ عام طور پر کافی نہیں)۔",
   "walkingStrengthDayTitle": "طاقت کا دن",
-  "walkingProtocolNote": "طاقت کے دن بنیادی عضلاتی گروپوں کے ساتھ ساتھ توازن اور协调 پر بھی توجہ دیتے ہیں۔ ہلکا کھینچو شامل کریں: ہر عضلاتی گروپ کے لیے تقریباً 60 سیکنڈ، ہفتے میں کم از کم 2 دن (ACSM 2011)۔"
+  "walkingProtocolNote": "طاقت کے دن بنیادی عضلاتی گروپوں کے ساتھ ساتھ توازن اور协调 پر بھی توجہ دیتے ہیں۔ ہلکا کھینچو شامل کریں: ہر عضلاتی گروپ کے لیے تقریباً 60 سیکنڈ، ہفتے میں کم از کم 2 دن (ACSM 2011)۔",
+  "todayActivityTitle": "سرگرمی",
+  "todayActivityEmpty": "آج کوئی سرگرمی درج نہیں ہے۔ چہل قدمی، دوڑ یا طاقت کی ورزش شامل کریں۔",
+  "activityWeekProgress": "پچھلے 7 دن: {target} میں سے {minutes} منٹ",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: ہفتے میں کم از کم 150 منٹ درمیانی یا 75 منٹ شدید سرگرمی۔ دوڑ کے منٹ دوگنا شمار ہوتے ہیں۔",
+  "activityAddButton": "سرگرمی شامل کریں",
+  "activityFormTitle": "سرگرمی درج کریں",
+  "activityKindWalk": "چہل قدمی",
+  "activityKindRun": "دوڑ",
+  "activityKindStrength": "طاقت",
+  "activityKindOther": "دیگر",
+  "activityDurationLabel": "دورانیہ (منٹ)",
+  "activityDistanceLabel": "فاصلہ کلومیٹر میں (اختیاری)",
+  "activityInvalidMinutes": "1 سے 600 منٹ کے درمیان دورانیہ درج کریں۔",
+  "activitySave": "سرگرمی محفوظ کریں",
+  "activitySavedToast": "سرگرمی محفوظ ہو گئی۔",
+  "activityDeleteTooltip": "یہ سرگرمی حذف کریں",
+  "activityDisclaimer": "ورزش کے دوران طبیعت خراب ہو تو رک جائیں اور صحت کے ماہر سے بات کریں۔ یہ ایپ طبی مشورے کا متبادل نہیں ہے۔",
+  "activityMinutes": "{minutes} منٹ",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} منٹ · {km} کلومیٹر",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

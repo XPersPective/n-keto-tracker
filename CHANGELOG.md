@@ -7,6 +7,12 @@ Changelog'a yakın tutulur; tarihler ISO 8601.
 
 ### Eklendi
 
+- Hareket kaydı: yürüyüş, koşu, kuvvet ve diğer; süre, isteğe bağlı mesafe
+  ve not. Bugün ekranında haftalık DSÖ 2020 ilerlemesi (koşu dakikası iki kat).
+- Veritabanı şeması 2: hareket tablosu; mevcut veriler migration ile korunur.
+- Dışa/içe aktarma ve tüm veriyi silme hareket kayıtlarını da kapsar.
+- Uygulama arayüzü 68 dilde: 19 yeni metin (hareket) tüm dillere çevrildi.
+
 - Kişisel profile göre haftada beş gün kademeli hedef sunan, kaynakları
   gösterilen isteğe bağlı 8 haftalık yürüyüş planı.
 

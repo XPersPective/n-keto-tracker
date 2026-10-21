@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Жеке бастапқы мәндер мен апталық өсу — жалпы ұсыныстарға негізделген бағалаулар, емделу рецепті емес. Тек жүру сирек үлкен салмақ жоғалтуға әкеледі (Richardson 2008: шамамен 1,3 кг; Swift 2018: 150 мин/аптасыз диетаны өзгертпей әдетте жеткіліксіз).",
   "walkingStrengthDayTitle": "Күш салу күні",
-  "walkingProtocolNote": "Күш салу күндері негізгі бұлшық топтарына, сондай-ақ тең және үйлесімділікке бағыт алады. Жұмсақ созу қосыңыз: бұлшық топтарына шамамен 60 секунд, аптасына кемінде 2 күн (ACSM 2011)."
+  "walkingProtocolNote": "Күш салу күндері негізгі бұлшық топтарына, сондай-ақ тең және үйлесімділікке бағыт алады. Жұмсақ созу қосыңыз: бұлшық топтарына шамамен 60 секунд, аптасына кемінде 2 күн (ACSM 2011).",
+  "todayActivityTitle": "Белсенділік",
+  "todayActivityEmpty": "Бүгін белсенділік тіркелмеген. Серуен, жүгіру немесе күш жаттығуын қосыңыз.",
+  "activityWeekProgress": "Соңғы 7 күн: {target} минуттың {minutes} мин",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ДДҰ 2020: аптасына кемінде 150 мин орташа немесе 75 мин қарқынды белсенділік. Жүгіру минуттары екі есе есептеледі.",
+  "activityAddButton": "Белсенділік қосу",
+  "activityFormTitle": "Белсенділікті тіркеу",
+  "activityKindWalk": "Серуен",
+  "activityKindRun": "Жүгіру",
+  "activityKindStrength": "Күш",
+  "activityKindOther": "Басқа",
+  "activityDurationLabel": "Ұзақтығы (минут)",
+  "activityDistanceLabel": "Қашықтық, км (міндетті емес)",
+  "activityInvalidMinutes": "1-ден 600 минутқа дейінгі ұзақтықты енгізіңіз.",
+  "activitySave": "Белсенділікті сақтау",
+  "activitySavedToast": "Белсенділік сақталды.",
+  "activityDeleteTooltip": "Бұл белсенділікті жою",
+  "activityDisclaimer": "Жаттығу кезінде өзіңізді нашар сезінсеңіз, тоқтап, денсаулық маманымен сөйлесіңіз. Бұл қолданба медициналық кеңесті алмастырмайды.",
+  "activityMinutes": "{minutes} мин",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мин · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

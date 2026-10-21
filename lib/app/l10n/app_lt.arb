@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Pritaikytos pradinės vertės ir savaitės pažanga yra įverčiai, pagrįsti bendromis gguidomis, o ne gydytojo receptas. Vien tik vaikščiojimas retai duoda didelį svorio netekimą (Richardson 2008: apie 1,3 kg; Swift 2018: 150 min./savaitė paprastai nepakanka be mitybos pokyčių).",
   "walkingStrengthDayTitle": "Stiprėjimo diena",
-  "walkingProtocolNote": "Stiprėjimo dienos nukreipiamos į pagrindines raumenų grupes, taip pat į pusiausvyrą ir koordinaciją. Pridėkite švelnų tempimą: apie 60 sekundžių kiekvienai raumenų grupei bent 2 dienas per savaitę (ACSM 2011)."
+  "walkingProtocolNote": "Stiprėjimo dienos nukreipiamos į pagrindines raumenų grupes, taip pat į pusiausvyrą ir koordinaciją. Pridėkite švelnų tempimą: apie 60 sekundžių kiekvienai raumenų grupei bent 2 dienas per savaitę (ACSM 2011).",
+  "todayActivityTitle": "Veikla",
+  "todayActivityEmpty": "Šiandien veikla neįrašyta. Pridėkite pasivaikščiojimą, bėgimą ar jėgos treniruotę.",
+  "activityWeekProgress": "Paskutinės 7 dienos: {minutes} iš {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "PSO 2020: bent 150 min vidutinio arba 75 min intensyvaus aktyvumo per savaitę. Bėgimo minutės skaičiuojamos dvigubai.",
+  "activityAddButton": "Pridėti veiklą",
+  "activityFormTitle": "Įrašyti veiklą",
+  "activityKindWalk": "Ėjimas",
+  "activityKindRun": "Bėgimas",
+  "activityKindStrength": "Jėga",
+  "activityKindOther": "Kita",
+  "activityDurationLabel": "Trukmė (minutėmis)",
+  "activityDistanceLabel": "Atstumas km (neprivalomas)",
+  "activityInvalidMinutes": "Įveskite trukmę nuo 1 iki 600 minučių.",
+  "activitySave": "Išsaugoti veiklą",
+  "activitySavedToast": "Veikla išsaugota.",
+  "activityDeleteTooltip": "Ištrinti šią veiklą",
+  "activityDisclaimer": "Jei treniruotės metu jaučiatės blogai, sustokite ir pasikalbėkite su sveikatos priežiūros specialistu. Ši programa nepakeičia medicininių patarimų.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

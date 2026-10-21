@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "个性化起始值和每周递增都是基于一般指南的估算，并非医嘱。仅靠步行很少能带来大幅减重（Richardson 2008：约 1.3 公斤；Swift 2018：不改变饮食时每周 150 分钟通常不够）。",
   "walkingStrengthDayTitle": "力量训练日",
-  "walkingProtocolNote": "力量训练日针对主要肌群，同时兼顾平衡与协调。加入轻柔拉伸：每个肌群约 60 秒，每周至少 2 天（ACSM 2011）。"
+  "walkingProtocolNote": "力量训练日针对主要肌群，同时兼顾平衡与协调。加入轻柔拉伸：每个肌群约 60 秒，每周至少 2 天（ACSM 2011）。",
+  "todayActivityTitle": "活动",
+  "todayActivityEmpty": "今天还没有记录任何活动。添加一次散步、跑步或力量训练吧。",
+  "activityWeekProgress": "最近 7 天：{minutes}/{target} 分钟",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020：每周至少 150 分钟中等强度或 75 分钟高强度活动。跑步分钟按两倍计算。",
+  "activityAddButton": "添加活动",
+  "activityFormTitle": "记录活动",
+  "activityKindWalk": "散步",
+  "activityKindRun": "跑步",
+  "activityKindStrength": "力量",
+  "activityKindOther": "其他",
+  "activityDurationLabel": "时长（分钟）",
+  "activityDistanceLabel": "距离（公里，可选）",
+  "activityInvalidMinutes": "请输入 1 到 600 分钟的时长。",
+  "activitySave": "保存活动",
+  "activitySavedToast": "活动已保存。",
+  "activityDeleteTooltip": "删除此活动",
+  "activityDisclaimer": "运动时如果感到不适，请停下来并咨询医疗专业人员。本应用不能替代医疗建议。",
+  "activityMinutes": "{minutes} 分钟",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} 分钟 · {km} 公里",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

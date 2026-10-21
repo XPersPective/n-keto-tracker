@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Personalized upphafsgildi og vikuleg framvinda eru áætlanir byggðar á almennum leiðbeiningum, ekki á lyfseði. Gang eitt og sér færir sjaldan mikla þyngdnuþar (Richardson 2008: um 1,3 kg; Swift 2018: 150 mín/viku er yfirleitt ekki næg án mataræðbreytingar).",
   "walkingStrengthDayTitle": "Þjálfunardagur",
-  "walkingProtocolNote": "Þjálfunardagar beina að stæðustu vöðlahópunum og einnig jafnvægi og samhæfningu. Bættu við léttri teygingu: um 60 sekúndur fyrir hverja vöðlahópu, að minnsta kosti 2 daga í viku (ACSM 2011)."
+  "walkingProtocolNote": "Þjálfunardagar beina að stæðustu vöðlahópunum og einnig jafnvægi og samhæfningu. Bættu við léttri teygingu: um 60 sekúndur fyrir hverja vöðlahópu, að minnsta kosti 2 daga í viku (ACSM 2011).",
+  "todayActivityTitle": "Virkni",
+  "todayActivityEmpty": "Engin virkni skráð í dag. Bættu við göngu, hlaupi eða styrktaræfingu.",
+  "activityWeekProgress": "Síðustu 7 dagar: {minutes} af {target} mín",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: að minnsta kosti 150 mín. af hóflegri eða 75 mín. af kröftugri virkni á viku. Hlaupamínútur telja tvöfalt.",
+  "activityAddButton": "Bæta við virkni",
+  "activityFormTitle": "Skrá virkni",
+  "activityKindWalk": "Ganga",
+  "activityKindRun": "Hlaup",
+  "activityKindStrength": "Styrkur",
+  "activityKindOther": "Annað",
+  "activityDurationLabel": "Lengd (mínútur)",
+  "activityDistanceLabel": "Vegalengd í km (valfrjálst)",
+  "activityInvalidMinutes": "Sláðu inn lengd frá 1 til 600 mínútum.",
+  "activitySave": "Vista virkni",
+  "activitySavedToast": "Virkni vistuð.",
+  "activityDeleteTooltip": "Eyða þessari virkni",
+  "activityDisclaimer": "Ef þér líður illa á meðan æfingu stendur skaltu hætta og ræða við heilbrigðisstarfsfólk. Þetta forrit kemur ekki í stað læknisráðgjafar.",
+  "activityMinutes": "{minutes} mín",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} mín · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

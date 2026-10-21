@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Персонализированные начальные значения и еженедельный прогресс — это оценки на основе общих рекомендаций, а не врачебное назначение. Только ходьба редко даёт значительную потерю веса (Richardson 2008: около 1,3 кг; Swift 2018: 150 мин/нед. обычно недостаточно без изменения питания).",
   "walkingStrengthDayTitle": "День силы",
-  "walkingProtocolNote": "Дни силы направлены на основные группы мышц, а также на равновесие и координацию. Добавьте мягкую растяжку: около 60 секунд на каждую группу мышц, минимум 2 дня в неделю (ACSM 2011)."
+  "walkingProtocolNote": "Дни силы направлены на основные группы мышц, а также на равновесие и координацию. Добавьте мягкую растяжку: около 60 секунд на каждую группу мышц, минимум 2 дня в неделю (ACSM 2011).",
+  "todayActivityTitle": "Активность",
+  "todayActivityEmpty": "Сегодня активность не записана. Добавьте прогулку, пробежку или силовую тренировку.",
+  "activityWeekProgress": "Последние 7 дней: {minutes} из {target} мин",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ВОЗ 2020: не менее 150 мин умеренной или 75 мин интенсивной активности в неделю. Минуты бега считаются вдвое.",
+  "activityAddButton": "Добавить активность",
+  "activityFormTitle": "Записать активность",
+  "activityKindWalk": "Ходьба",
+  "activityKindRun": "Бег",
+  "activityKindStrength": "Силовая",
+  "activityKindOther": "Другое",
+  "activityDurationLabel": "Длительность (мин)",
+  "activityDistanceLabel": "Расстояние в км (необязательно)",
+  "activityInvalidMinutes": "Введите длительность от 1 до 600 минут.",
+  "activitySave": "Сохранить активность",
+  "activitySavedToast": "Активность сохранена.",
+  "activityDeleteTooltip": "Удалить эту активность",
+  "activityDisclaimer": "Если во время тренировки вам плохо, остановитесь и поговорите с медицинским специалистом. Это приложение не заменяет медицинскую консультацию.",
+  "activityMinutes": "{minutes} мин",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мин · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

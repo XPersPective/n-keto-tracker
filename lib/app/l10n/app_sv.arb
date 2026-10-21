@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "De personliga startvärdena och veckans framsteg är uppskattningar baserade på allmänna riktlinjer, inte ett medicinskt recept. Enbart promenader ger sällan stor viktnedgång (Richardson 2008: cirka 1,3 kg; Swift 2018: 150 min/vecka räcker sällan utan koständring).",
   "walkingStrengthDayTitle": "Styrkedag",
-  "walkingProtocolNote": "Styrkedagar riktar sig till de stora muskelgrupperna samt balans och koordination. Lägg till mjuk stretching: cirka 60 sekunder per muskelgrupp, minst 2 dagar i veckan (ACSM 2011)."
+  "walkingProtocolNote": "Styrkedagar riktar sig till de stora muskelgrupperna samt balans och koordination. Lägg till mjuk stretching: cirka 60 sekunder per muskelgrupp, minst 2 dagar i veckan (ACSM 2011).",
+  "todayActivityTitle": "Aktivitet",
+  "todayActivityEmpty": "Ingen aktivitet har registrerats idag. Lägg till en promenad, ett löppass eller styrketräning.",
+  "activityWeekProgress": "Senaste 7 dagarna: {minutes} av {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: minst 150 min måttlig eller 75 min kraftig aktivitet per vecka. Löpningsminuter räknas dubbelt.",
+  "activityAddButton": "Lägg till aktivitet",
+  "activityFormTitle": "Registrera aktivitet",
+  "activityKindWalk": "Promenad",
+  "activityKindRun": "Löpning",
+  "activityKindStrength": "Styrka",
+  "activityKindOther": "Annat",
+  "activityDurationLabel": "Längd (minuter)",
+  "activityDistanceLabel": "Distans i km (valfritt)",
+  "activityInvalidMinutes": "Ange en längd på 1 till 600 minuter.",
+  "activitySave": "Spara aktivitet",
+  "activitySavedToast": "Aktiviteten har sparats.",
+  "activityDeleteTooltip": "Ta bort den här aktiviteten",
+  "activityDisclaimer": "Om du mår dåligt under träningen, sluta och prata med din vårdgivare. Appen ersätter inte medicinska råd.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

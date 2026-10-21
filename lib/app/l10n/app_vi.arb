@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Các giá trị khởi đầu cá nhân hóa và tiến bộ hằng tuần là ước tính dựa trên hướng dẫn chung, không phải đơn thuốc. Đi bộ một mình hiếm khi tạo ra giảm cân đáng kể (Richardson 2008: khoảng 1,3 kg; Swift 2018: 150 phút/tuần thường không đủ nếu không thay đổi chế độ ăn).",
   "walkingStrengthDayTitle": "Ngày tập lực",
-  "walkingProtocolNote": "Các ngày tập lực nhắm vào nhóm cơ chính, cũng như sự cân bằng và phối hợp. Hãy thêm động tác co giãn nhẹ: khoảng 60 giây mỗi nhóm cơ, ít nhất 2 ngày mỗi tuần (ACSM 2011)."
+  "walkingProtocolNote": "Các ngày tập lực nhắm vào nhóm cơ chính, cũng như sự cân bằng và phối hợp. Hãy thêm động tác co giãn nhẹ: khoảng 60 giây mỗi nhóm cơ, ít nhất 2 ngày mỗi tuần (ACSM 2011).",
+  "todayActivityTitle": "Hoạt động",
+  "todayActivityEmpty": "Hôm nay chưa ghi nhận hoạt động nào. Thêm buổi đi bộ, chạy bộ hoặc tập sức mạnh.",
+  "activityWeekProgress": "7 ngày qua: {minutes} / {target} phút",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: ít nhất 150 phút hoạt động vừa hoặc 75 phút hoạt động mạnh mỗi tuần. Số phút chạy được tính gấp đôi.",
+  "activityAddButton": "Thêm hoạt động",
+  "activityFormTitle": "Ghi hoạt động",
+  "activityKindWalk": "Đi bộ",
+  "activityKindRun": "Chạy bộ",
+  "activityKindStrength": "Sức mạnh",
+  "activityKindOther": "Khác",
+  "activityDurationLabel": "Thời lượng (phút)",
+  "activityDistanceLabel": "Quãng đường (km, không bắt buộc)",
+  "activityInvalidMinutes": "Nhập thời lượng từ 1 đến 600 phút.",
+  "activitySave": "Lưu hoạt động",
+  "activitySavedToast": "Đã lưu hoạt động.",
+  "activityDeleteTooltip": "Xóa hoạt động này",
+  "activityDisclaimer": "Nếu bạn thấy không khỏe khi tập, hãy dừng lại và trao đổi với chuyên gia y tế. Ứng dụng này không thay thế lời khuyên y khoa.",
+  "activityMinutes": "{minutes} phút",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} phút · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

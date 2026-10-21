@@ -581,5 +581,51 @@
   "themeLight": "Light",
   "themeDark": "Dark",
   "settingsLanguage": "Language",
-  "settingsMore": "More"
+  "settingsMore": "More",
+  "todayActivityTitle": "Activity",
+  "todayActivityEmpty": "No activity logged today. Add a walk, run or strength session.",
+  "activityWeekProgress": "Last 7 days: {minutes} of {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: at least 150 min of moderate or 75 min of vigorous activity a week. Running minutes count double.",
+  "activityAddButton": "Add activity",
+  "activityFormTitle": "Log activity",
+  "activityKindWalk": "Walk",
+  "activityKindRun": "Run",
+  "activityKindStrength": "Strength",
+  "activityKindOther": "Other",
+  "activityDurationLabel": "Duration (minutes)",
+  "activityDistanceLabel": "Distance in km (optional)",
+  "activityInvalidMinutes": "Enter a duration from 1 to 600 minutes.",
+  "activitySave": "Save activity",
+  "activitySavedToast": "Activity saved.",
+  "activityDeleteTooltip": "Delete this activity",
+  "activityDisclaimer": "If you feel unwell during exercise, stop and talk to your health professional. This app does not replace medical advice.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

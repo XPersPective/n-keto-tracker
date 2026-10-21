@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "個人の開始値と週間の増加は一般的なガイドラインに基づく推定であり、医療的な処方ではありません。歩くだけでは大きな減量はほとんど期待できません（Richardson 2008: 約1.3 kg、Swift 2018: 食事を変えない限り150分/週では通常不十分）。",
   "walkingStrengthDayTitle": "筋力の日",
-  "walkingProtocolNote": "筋力の日は主な筋群に加え、バランスと協調性にも焦点を当てます。やさしいストレッチを加えましょう：筋群あたり約60秒、週2日以上（ACSM 2011）。"
+  "walkingProtocolNote": "筋力の日は主な筋群に加え、バランスと協調性にも焦点を当てます。やさしいストレッチを加えましょう：筋群あたり約60秒、週2日以上（ACSM 2011）。",
+  "todayActivityTitle": "アクティビティ",
+  "todayActivityEmpty": "今日の記録はありません。ウォーキング、ランニング、筋トレを追加しましょう。",
+  "activityWeekProgress": "過去7日間: {target}分中 {minutes}分",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: 週に中強度で150分以上、または高強度で75分以上の活動。ランニングの時間は2倍に数えます。",
+  "activityAddButton": "アクティビティを追加",
+  "activityFormTitle": "アクティビティを記録",
+  "activityKindWalk": "ウォーキング",
+  "activityKindRun": "ランニング",
+  "activityKindStrength": "筋トレ",
+  "activityKindOther": "その他",
+  "activityDurationLabel": "時間（分）",
+  "activityDistanceLabel": "距離（km、任意）",
+  "activityInvalidMinutes": "1〜600分の時間を入力してください。",
+  "activitySave": "アクティビティを保存",
+  "activitySavedToast": "アクティビティを保存しました。",
+  "activityDeleteTooltip": "このアクティビティを削除",
+  "activityDisclaimer": "運動中に体調が悪くなったら中止し、医療の専門家に相談してください。このアプリは医学的助言の代わりにはなりません。",
+  "activityMinutes": "{minutes}分",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes}分 · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

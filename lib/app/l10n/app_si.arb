@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "පුද්ගලික ආරම්භක අගයන් සහ සතිපතා ප්‍රගමනය යනු සාමාන්‍ය මාර්ගෝපදේශ මත පදනම්වූ ඇස්තමේථන වන අතර, වෛද්‍යාපන නිර්ණායයක් නොවේ. තනි ඇවිදීමෙන් විශාල බර අඩුවීමක් ඉතා දුරින් ඇත (Richardson 2008: ආසන්න 1.3 කිලෝග්‍රෑම්; Swift 2018: ආහාර වෙනස් කිරවන නැතිව මිනිත්තු 150/සතිය සාමාන්‍යයෙන් ප්‍රමාණවත් නොවේ).",
   "walkingStrengthDayTitle": "බල දිනය",
-  "walkingProtocolNote": "බල දින මධ්‍ය මසුන් ක෫ිතික සමුහිත කණ්ඩෝප සමඟ ඉන්ද්‍රියතා සහ සංයමනය ද ඉලක්ෂ කරයි. මෘදු දිරුම්බාගැනීමක් එක් කරන්න: සෑම මසුන් ක෫ිතික කාණ්ඩයකට ආසන්න තත්පර 60, සතියට අවම වශයෙන් දින 2 (ACSM 2011)."
+  "walkingProtocolNote": "බල දින මධ්‍ය මසුන් ක෫ිතික සමුහිත කණ්ඩෝප සමඟ ඉන්ද්‍රියතා සහ සංයමනය ද ඉලක්ෂ කරයි. මෘදු දිරුම්බාගැනීමක් එක් කරන්න: සෑම මසුන් ක෫ිතික කාණ්ඩයකට ආසන්න තත්පර 60, සතියට අවම වශයෙන් දින 2 (ACSM 2011).",
+  "todayActivityTitle": "Dejavnost",
+  "todayActivityEmpty": "Danes ni zabeležene dejavnosti. Dodajte sprehod, tek ali vadbo za moč.",
+  "activityWeekProgress": "Zadnjih 7 dni: {minutes} od {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "SZO 2020: vsaj 150 min zmerne ali 75 min intenzivne dejavnosti na teden. Minute teka se štejejo dvojno.",
+  "activityAddButton": "Dodaj dejavnost",
+  "activityFormTitle": "Zabeleži dejavnost",
+  "activityKindWalk": "Hoja",
+  "activityKindRun": "Tek",
+  "activityKindStrength": "Moč",
+  "activityKindOther": "Drugo",
+  "activityDurationLabel": "Trajanje (minute)",
+  "activityDistanceLabel": "Razdalja v km (neobvezno)",
+  "activityInvalidMinutes": "Vnesite trajanje od 1 do 600 minut.",
+  "activitySave": "Shrani dejavnost",
+  "activitySavedToast": "Dejavnost shranjena.",
+  "activityDeleteTooltip": "Izbriši to dejavnost",
+  "activityDisclaimer": "Če se med vadbo slabo počutite, nehajte in se posvetujte z zdravstvenim strokovnjakom. Ta aplikacija ne nadomešča zdravniškega nasveta.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

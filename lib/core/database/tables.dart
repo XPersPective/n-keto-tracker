@@ -472,3 +472,20 @@ class ExportHistory extends Table {
   TextColumn get appVersion => text()();
   TextColumn get note => text().nullable()();
 }
+
+// ─── 20. ActivitySession (koşu / yürüyüş / kuvvet kaydı) ───────────────────
+
+/// Kullanıcının elle girdiği hareket kaydı. GPS yok (konum izni yok, C-001);
+/// süre ve isteğe bağlı mesafe kullanıcı tarafından yazılır.
+/// kind: 'walk' | 'run' | 'strength' | 'other'.
+@DataClassName('ActivitySessionRow')
+class ActivitySession extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  TextColumn get kind => text()();
+  DateTimeColumn get startedAtUtc => dateTime()();
+  IntColumn get localOffsetMinutes => integer()();
+  IntColumn get durationMinutes => integer()();
+  RealColumn get distanceKm => real().nullable()();
+  TextColumn get note => text().nullable()();
+  DateTimeColumn get createdAtUtc => dateTime()();
+}

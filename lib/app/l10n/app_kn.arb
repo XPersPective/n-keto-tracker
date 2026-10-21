@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "ವೈಯಕ್ತಿಕ ಆರಂಭಿಕ ಮೌಲ್ಯಗಳು ಮತ್ತು ವಾರದ ಪ್ರಗತಿಯು ಸಾಮಾನ್ಯ ಮಾರ್ಗದರ್ಶನಗಳನ್ನು ಆಧರಿಸಿದ ಅಂದಾಜುಗಳು — ಔಷಧಾನ್ನಿರ್ಣಯ ಅಲ್ಲ. ತಾಯ್ತುಪುಡೆ ನಡೆದುವುದು ದೊಡ್ಡ ತೂಕ ಕಡಿಮೆಯಾಗಿಸುವುದಿಲ್ಲ (Richardson 2008: ಸುಮಾರು 1.3 ಕೆಜಿ; Swift 2018: ಆಹಾರ ಬದಲಾವಣೆಯಿಲ್ಲದೆ 150 ನಿಮಿಷ/ವಾರ ಸಾಮಾನ್ಯವಾಗಿ ಸಾಕ್ಷು ಅಲ್ಲ).",
   "walkingStrengthDayTitle": "ಶಕ್ತಿ ದಿನ",
-  "walkingProtocolNote": "ಶಕ್ತಿ ದಿನಗಳು ಮುಖ್ಯ ಪ್ರಮುಖ ಕಂಪುಗಳ ಜೊತೆಗೆ ಸಮತೋಲನ ಮತ್ತು ಸಂಯೋಜನೆಯನ್ನು ಸೇರಿಸುತ್ತವೆ. ಸೌಮ್ಯ ಸ್ಟ್ರೆಚ್ ಸೇರಿಸಿ: ಪ್ರತಿ ಕಂಪು ಗುಂಪಿಗೆ ಸುಮಾರು 60 ಸೆಕೆಂಡ್, ವಾರಕ್ಕೆ ಕನಿಷ್ಠ 2 ದಿನ (ACSM 2011)."
+  "walkingProtocolNote": "ಶಕ್ತಿ ದಿನಗಳು ಮುಖ್ಯ ಪ್ರಮುಖ ಕಂಪುಗಳ ಜೊತೆಗೆ ಸಮತೋಲನ ಮತ್ತು ಸಂಯೋಜನೆಯನ್ನು ಸೇರಿಸುತ್ತವೆ. ಸೌಮ್ಯ ಸ್ಟ್ರೆಚ್ ಸೇರಿಸಿ: ಪ್ರತಿ ಕಂಪು ಗುಂಪಿಗೆ ಸುಮಾರು 60 ಸೆಕೆಂಡ್, ವಾರಕ್ಕೆ ಕನಿಷ್ಠ 2 ದಿನ (ACSM 2011).",
+  "todayActivityTitle": "ಚಟುವಟಿಕೆ",
+  "todayActivityEmpty": "ಇಂದು ಯಾವುದೇ ಚಟುವಟಿಕೆ ದಾಖಲಾಗಿಲ್ಲ. ನಡಿಗೆ, ಓಟ ಅಥವಾ ಶಕ್ತಿ ವ್ಯಾಯಾಮವನ್ನು ಸೇರಿಸಿ.",
+  "activityWeekProgress": "ಕಳೆದ 7 ದಿನಗಳು: {target} ರಲ್ಲಿ {minutes} ನಿಮಿಷ",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: ವಾರಕ್ಕೆ ಕನಿಷ್ಠ 150 ನಿಮಿಷ ಮಧ್ಯಮ ಅಥವಾ 75 ನಿಮಿಷ ತೀವ್ರ ಚಟುವಟಿಕೆ. ಓಟದ ನಿಮಿಷಗಳು ಎರಡು ಪಟ್ಟು ಎಣಿಕೆಯಾಗುತ್ತವೆ.",
+  "activityAddButton": "ಚಟುವಟಿಕೆ ಸೇರಿಸಿ",
+  "activityFormTitle": "ಚಟುವಟಿಕೆ ದಾಖಲಿಸಿ",
+  "activityKindWalk": "ನಡಿಗೆ",
+  "activityKindRun": "ಓಟ",
+  "activityKindStrength": "ಶಕ್ತಿ",
+  "activityKindOther": "ಇತರೆ",
+  "activityDurationLabel": "ಅವಧಿ (ನಿಮಿಷ)",
+  "activityDistanceLabel": "ದೂರ ಕಿ.ಮೀ. (ಐಚ್ಛಿಕ)",
+  "activityInvalidMinutes": "1 ರಿಂದ 600 ನಿಮಿಷಗಳ ಅವಧಿ ನಮೂದಿಸಿ.",
+  "activitySave": "ಚಟುವಟಿಕೆ ಉಳಿಸಿ",
+  "activitySavedToast": "ಚಟುವಟಿಕೆ ಉಳಿಸಲಾಗಿದೆ.",
+  "activityDeleteTooltip": "ಈ ಚಟುವಟಿಕೆಯನ್ನು ಅಳಿಸಿ",
+  "activityDisclaimer": "ವ್ಯಾಯಾಮದ ವೇಳೆ ಅಸ್ವಸ್ಥತೆ ಅನಿಸಿದರೆ ನಿಲ್ಲಿಸಿ ಮತ್ತು ಆರೋಗ್ಯ ತಜ್ಞರೊಂದಿಗೆ ಮಾತನಾಡಿ. ಈ ಆ್ಯಪ್ ವೈದ್ಯಕೀಯ ಸಲಹೆಗೆ ಬದಲಿಯಲ್ಲ.",
+  "activityMinutes": "{minutes} ನಿಮಿಷ",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} ನಿಮಿಷ · {km} ಕಿ.ಮೀ.",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

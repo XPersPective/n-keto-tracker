@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "A személyre szabott kezdőértékek és a heti haladás becslések általános irányelvek alapján, nem orvosi előírás. Önmagában a séta ritkán okoz nagy súlyveszteséget (Richardson 2008: kb. 1,3 kg; Swift 2018: 150 perc/hét általában nem elég táplálkozási változtatás nélkül).",
   "walkingStrengthDayTitle": "Edzésnap",
-  "walkingProtocolNote": "Az edzésnapok a fő izomcsoportokra, valamint az egyensúlyra és a koordinációra fókuszálnak. Adjunk enyhe nyújtást: izomcsoportonként körülbelül 60 másodperc, hetente legalább 2 napon (ACSM 2011)."
+  "walkingProtocolNote": "Az edzésnapok a fő izomcsoportokra, valamint az egyensúlyra és a koordinációra fókuszálnak. Adjunk enyhe nyújtást: izomcsoportonként körülbelül 60 másodperc, hetente legalább 2 napon (ACSM 2011).",
+  "todayActivityTitle": "Tevékenység",
+  "todayActivityEmpty": "Ma még nincs rögzített tevékenység. Adjon hozzá sétát, futást vagy erőedzést.",
+  "activityWeekProgress": "Az elmúlt 7 nap: {minutes} / {target} perc",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: hetente legalább 150 perc közepes vagy 75 perc erőteljes aktivitás. A futásperc duplán számít.",
+  "activityAddButton": "Tevékenység hozzáadása",
+  "activityFormTitle": "Tevékenység rögzítése",
+  "activityKindWalk": "Séta",
+  "activityKindRun": "Futás",
+  "activityKindStrength": "Erő",
+  "activityKindOther": "Egyéb",
+  "activityDurationLabel": "Időtartam (perc)",
+  "activityDistanceLabel": "Távolság km-ben (opcionális)",
+  "activityInvalidMinutes": "Adjon meg 1 és 600 perc közötti időtartamot.",
+  "activitySave": "Tevékenység mentése",
+  "activitySavedToast": "Tevékenység mentve.",
+  "activityDeleteTooltip": "Ennek a tevékenységnek a törlése",
+  "activityDisclaimer": "Ha edzés közben rosszul érzi magát, hagyja abba, és beszéljen egészségügyi szakemberrel. Ez az alkalmazás nem helyettesíti az orvosi tanácsot.",
+  "activityMinutes": "{minutes} perc",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} perc · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

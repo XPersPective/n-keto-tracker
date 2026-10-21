@@ -511,5 +511,51 @@
         "type": "int"
       }
     }
+  },
+  "todayActivityTitle": "Hareket",
+  "todayActivityEmpty": "Bugün hareket kaydı yok. Yürüyüş, koşu ya da kuvvet çalışmanı ekle.",
+  "activityWeekProgress": "Son 7 gün: {minutes} / {target} dk",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "DSÖ 2020: haftada en az 150 dk orta ya da 75 dk yoğun aktivite. Koşu dakikası iki kat sayılır.",
+  "activityAddButton": "Hareket ekle",
+  "activityFormTitle": "Hareket kaydı",
+  "activityKindWalk": "Yürüyüş",
+  "activityKindRun": "Koşu",
+  "activityKindStrength": "Kuvvet",
+  "activityKindOther": "Diğer",
+  "activityDurationLabel": "Süre (dakika)",
+  "activityDistanceLabel": "Mesafe, km (isteğe bağlı)",
+  "activityInvalidMinutes": "Süre 1 ile 600 dakika arasında olmalı.",
+  "activitySave": "Hareketi kaydet",
+  "activitySavedToast": "Hareket kaydedildi.",
+  "activityDeleteTooltip": "Bu hareketi sil",
+  "activityDisclaimer": "Egzersiz sırasında kendini kötü hissedersen dur ve sağlık uzmanına danış. Bu uygulama tıbbi tavsiye yerine geçmez.",
+  "activityMinutes": "{minutes} dk",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} dk · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
   }
 }

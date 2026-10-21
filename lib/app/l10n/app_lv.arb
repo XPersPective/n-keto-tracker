@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Personalizētās sākuma vērtības un nedēļas progres ir aprēķini, balstoties uz vispārējiem norādījumiem, nevis uz ārsta recepti. Tikai staigāšana reti rada ievērojamu svara zudumu (Richardson 2008: apmēram 1,3 kg; Swift 2018: 150 min/nedēļā parasti nepietiek bez ēdienkartes izmaiņām).",
   "walkingStrengthDayTitle": "Spēka diena",
-  "walkingProtocolNote": "Spēka dienas ir vērstas uz lielākajām muskuļu grupām, kā arī uz līdzsvaru un koordināciju. Pievienojiet maigu stiepšanu: apmēram 60 sekundes katrai muskuļu grupai vismaz 2 dienas nedēļā (ACSM 2011)."
+  "walkingProtocolNote": "Spēka dienas ir vērstas uz lielākajām muskuļu grupām, kā arī uz līdzsvaru un koordināciju. Pievienojiet maigu stiepšanu: apmēram 60 sekundes katrai muskuļu grupai vismaz 2 dienas nedēļā (ACSM 2011).",
+  "todayActivityTitle": "Aktivitāte",
+  "todayActivityEmpty": "Šodien aktivitāte nav reģistrēta. Pievienojiet pastaigu, skrējienu vai spēka treniņu.",
+  "activityWeekProgress": "Pēdējās 7 dienas: {minutes} no {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "PVO 2020: vismaz 150 min mērenas vai 75 min intensīvas aktivitātes nedēļā. Skriešanas minūtes skaitās divkārši.",
+  "activityAddButton": "Pievienot aktivitāti",
+  "activityFormTitle": "Reģistrēt aktivitāti",
+  "activityKindWalk": "Pastaiga",
+  "activityKindRun": "Skriešana",
+  "activityKindStrength": "Spēks",
+  "activityKindOther": "Cits",
+  "activityDurationLabel": "Ilgums (minūtes)",
+  "activityDistanceLabel": "Attālums km (neobligāts)",
+  "activityInvalidMinutes": "Ievadiet ilgumu no 1 līdz 600 minūtēm.",
+  "activitySave": "Saglabāt aktivitāti",
+  "activitySavedToast": "Aktivitāte saglabāta.",
+  "activityDeleteTooltip": "Dzēst šo aktivitāti",
+  "activityDisclaimer": "Ja vingrinājumu laikā jūtaties slikti, apstājieties un runājiet ar veselības aprūpes speciālistu. Šī lietotne neaizstāj medicīnisko padomu.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Nilai mula yang diperibadankan dan kemajuan mingguan ialah anggaran berdasarkan garis panduan umum, bukan preskripsi perubatan. Berjalan kaki sahaja jarang menghasilkan penurunan berat yang besar (Richardson 2008: kira-kira 1.3 kg; Swift 2018: 150 minit/minggu biasanya tidak mencukupi tanpa perubahan diet).",
   "walkingStrengthDayTitle": "Hari kekuatan",
-  "walkingProtocolNote": "Hari kekuatan menyasarkan kumpulan otot utama serta imbangan dan koordinasi. Tambah regangan perlahan: kira-kira 60 saat setiap kumpulan otot, sekurang-kurangnya 2 hari seminggu (ACSM 2011)."
+  "walkingProtocolNote": "Hari kekuatan menyasarkan kumpulan otot utama serta imbangan dan koordinasi. Tambah regangan perlahan: kira-kira 60 saat setiap kumpulan otot, sekurang-kurangnya 2 hari seminggu (ACSM 2011).",
+  "todayActivityTitle": "Aktiviti",
+  "todayActivityEmpty": "Tiada aktiviti direkodkan hari ini. Tambah sesi berjalan kaki, larian atau latihan kekuatan.",
+  "activityWeekProgress": "7 hari lepas: {minutes} daripada {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: sekurang-kurangnya 150 min aktiviti sederhana atau 75 min aktiviti cergas seminggu. Minit larian dikira dua kali ganda.",
+  "activityAddButton": "Tambah aktiviti",
+  "activityFormTitle": "Rekod aktiviti",
+  "activityKindWalk": "Berjalan kaki",
+  "activityKindRun": "Larian",
+  "activityKindStrength": "Kekuatan",
+  "activityKindOther": "Lain-lain",
+  "activityDurationLabel": "Tempoh (minit)",
+  "activityDistanceLabel": "Jarak dalam km (pilihan)",
+  "activityInvalidMinutes": "Masukkan tempoh 1 hingga 600 minit.",
+  "activitySave": "Simpan aktiviti",
+  "activitySavedToast": "Aktiviti disimpan.",
+  "activityDeleteTooltip": "Padam aktiviti ini",
+  "activityDisclaimer": "Jika anda berasa tidak sihat semasa bersenam, berhenti dan bincang dengan profesional kesihatan anda. Aplikasi ini tidak menggantikan nasihat perubatan.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

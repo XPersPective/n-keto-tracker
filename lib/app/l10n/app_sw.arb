@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Thamani za mwanzo zilizobainishwa na maendeleo ya wiki ni makadirio yaliyo msingi wa miongozo ya jumla, si upendekezo wa matibabu. Kuenenda peke yake hakuzati kupungua uzito mkubwa (Richardson 2008: takriban 1.3 kg; Swift 2018: dakika 150 kwa wiki kwa kawaida hazitoshi bila mabadiliko ya chakula).",
   "walkingStrengthDayTitle": "Siku ya nguvu",
-  "walkingProtocolNote": "Siku za nguvu zinalenga makundi makubwa ya misuli, pamoja na usawa na uratibitaji. Ongeza nyumbani mwake: sekunde 60 kwa kila kundi la misuli, angalau siku 2 kwa wiki (ACSM 2011)."
+  "walkingProtocolNote": "Siku za nguvu zinalenga makundi makubwa ya misuli, pamoja na usawa na uratibitaji. Ongeza nyumbani mwake: sekunde 60 kwa kila kundi la misuli, angalau siku 2 kwa wiki (ACSM 2011).",
+  "todayActivityTitle": "Shughuli",
+  "todayActivityEmpty": "Hakuna shughuli iliyorekodiwa leo. Ongeza kutembea, kukimbia au mazoezi ya nguvu.",
+  "activityWeekProgress": "Siku 7 zilizopita: {minutes} kati ya {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: angalau dakika 150 za shughuli ya wastani au 75 za shughuli kali kwa wiki. Dakika za kukimbia zinahesabiwa mara mbili.",
+  "activityAddButton": "Ongeza shughuli",
+  "activityFormTitle": "Rekodi shughuli",
+  "activityKindWalk": "Kutembea",
+  "activityKindRun": "Kukimbia",
+  "activityKindStrength": "Nguvu",
+  "activityKindOther": "Nyingine",
+  "activityDurationLabel": "Muda (dakika)",
+  "activityDistanceLabel": "Umbali kwa km (hiari)",
+  "activityInvalidMinutes": "Weka muda wa dakika 1 hadi 600.",
+  "activitySave": "Hifadhi shughuli",
+  "activitySavedToast": "Shughuli imehifadhiwa.",
+  "activityDeleteTooltip": "Futa shughuli hii",
+  "activityDisclaimer": "Ukijisikia vibaya wakati wa mazoezi, acha na zungumza na mtaalamu wa afya. Programu hii haichukui nafasi ya ushauri wa kitabibu.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

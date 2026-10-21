@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "قيم البداية المخصصة وتقدم الأسابيع تقديرات مبنية على إرشادات عامة وليست وصفة طبية. المشي وحده نادراً ما يسبب فقدان وزن كبير (Richardson 2008: نحو 1.3 كجم؛ Swift 2018: 150 دقيقة/أسبوع غالباً غير كافية دون تغيير غذائي).",
   "walkingStrengthDayTitle": "يوم القوة",
-  "walkingProtocolNote": "تستهدف أيام القوة مجموعات العضلات الرئيسيةAdditionally التوازن والتنسيق. أضف تمددًا لطيفًا: نحو 60 ثانية لكل مجموعة عضلية يوميًا على الأقل (ACSM 2011)."
+  "walkingProtocolNote": "تستهدف أيام القوة مجموعات العضلات الرئيسيةAdditionally التوازن والتنسيق. أضف تمددًا لطيفًا: نحو 60 ثانية لكل مجموعة عضلية يوميًا على الأقل (ACSM 2011).",
+  "todayActivityTitle": "النشاط",
+  "todayActivityEmpty": "لم تُسجَّل أي أنشطة اليوم. أضف جلسة مشي أو جري أو تمارين قوة.",
+  "activityWeekProgress": "آخر 7 أيام: {minutes} من {target} دقيقة",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "منظمة الصحة العالمية 2020: 150 دقيقة على الأقل من النشاط المعتدل أو 75 دقيقة من النشاط الشديد أسبوعياً. تُحسب دقائق الجري مضاعفة.",
+  "activityAddButton": "إضافة نشاط",
+  "activityFormTitle": "تسجيل نشاط",
+  "activityKindWalk": "مشي",
+  "activityKindRun": "جري",
+  "activityKindStrength": "قوة",
+  "activityKindOther": "أخرى",
+  "activityDurationLabel": "المدة (بالدقائق)",
+  "activityDistanceLabel": "المسافة بالكيلومتر (اختياري)",
+  "activityInvalidMinutes": "أدخل مدة من 1 إلى 600 دقيقة.",
+  "activitySave": "حفظ النشاط",
+  "activitySavedToast": "تم حفظ النشاط.",
+  "activityDeleteTooltip": "حذف هذا النشاط",
+  "activityDisclaimer": "إذا شعرت بالتعب أثناء التمرين، توقف وتحدث مع أخصائي الرعاية الصحية. لا يحل هذا التطبيق محل النصيحة الطبية.",
+  "activityMinutes": "{minutes} دقيقة",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} دقيقة · {km} كم",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Personoidut aloitusarvot ja viikkovahde ovat arvioita yleisten ohjeiden perusteella — eivät lääkkeellistä määräystä. Pelkkä kävely aiheuttaa harvoin suuren painonpudonuksen (Richardson 2008: noin 1,3 kg; Swift 2018: 150 min/vkko riittää harvoin ilman ruokavalion muutosta).",
   "walkingStrengthDayTitle": "Voimapäivä",
-  "walkingProtocolNote": "Voimapäivät kohdistuvat suuriin lihasryhmiin sekä tasapainoon ja koordinaatioon. Lisää kevyt venyttely: noin 60 sekuntia lihasryhmää kohti vähintään 2 päivänä viikossa (ACSM 2011)."
+  "walkingProtocolNote": "Voimapäivät kohdistuvat suuriin lihasryhmiin sekä tasapainoon ja koordinaatioon. Lisää kevyt venyttely: noin 60 sekuntia lihasryhmää kohti vähintään 2 päivänä viikossa (ACSM 2011).",
+  "todayActivityTitle": "Aktiivisuus",
+  "todayActivityEmpty": "Tälle päivälle ei ole kirjattu aktiivisuutta. Lisää kävely, juoksu tai voimaharjoittelu.",
+  "activityWeekProgress": "Viimeiset 7 päivää: {minutes} / {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "WHO 2020: vähintään 150 min kohtalaista tai 75 min rasittavaa liikuntaa viikossa. Juoksuminuutit lasketaan kaksinkertaisina.",
+  "activityAddButton": "Lisää aktiivisuus",
+  "activityFormTitle": "Kirjaa aktiivisuus",
+  "activityKindWalk": "Kävely",
+  "activityKindRun": "Juoksu",
+  "activityKindStrength": "Voima",
+  "activityKindOther": "Muu",
+  "activityDurationLabel": "Kesto (minuuttia)",
+  "activityDistanceLabel": "Matka km (valinnainen)",
+  "activityInvalidMinutes": "Anna kesto 1–600 minuuttia.",
+  "activitySave": "Tallenna aktiivisuus",
+  "activitySavedToast": "Aktiivisuus tallennettu.",
+  "activityDeleteTooltip": "Poista tämä aktiivisuus",
+  "activityDisclaimer": "Jos voit pahoin liikunnan aikana, lopeta ja keskustele terveydenhuollon ammattilaisen kanssa. Tämä sovellus ei korvaa lääketieteellistä neuvontaa.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

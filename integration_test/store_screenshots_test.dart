@@ -7,6 +7,7 @@ import 'package:n_keto_tracker/app/app.dart';
 import 'package:n_keto_tracker/app/l10n/language_names.dart';
 import 'package:n_keto_tracker/app/locale_provider.dart';
 import 'package:n_keto_tracker/app/router.dart';
+import 'package:n_keto_tracker/core/database/activity_repository.dart';
 import 'package:n_keto_tracker/core/database/database.dart';
 import 'package:n_keto_tracker/core/database/evidence_seeder.dart';
 import 'package:n_keto_tracker/core/database/food_seeder.dart';
@@ -113,6 +114,19 @@ void main() {
           confirmedByUser: true,
         );
       }
+      // Hareket kayıtları: bugün bir koşu, dün bir yürüyüş (Bugün kartı).
+      final activity = ActivityRepository(db);
+      await activity.add(
+        kind: 'run',
+        durationMinutes: 25,
+        distanceKm: 4,
+        at: now.subtract(const Duration(hours: 2)),
+      );
+      await activity.add(
+        kind: 'walk',
+        durationMinutes: 35,
+        at: now.subtract(const Duration(days: 1)),
+      );
       // Son ölçüm gerçek form üzerinden: GKI sonuç kartı görüntüsü.
       final (glucose, bhb) = _series.last;
       await tester.tap(find.byIcon(Icons.add_chart));

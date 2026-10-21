@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Οι εξατομικευμένες αρχικές τιμές και η εβδομαδιαία πρόοδος είναι εκτιμήσεις βασισμένες σε γενικές οδηγίες — όχι ιατρική συνταγή. Η μόνη περπάτηση σπάνια προκαλεί μεγάλη απώλεια βάρους (Richardson 2008: περίπου 1,3 κιλά; Swift 2018: 150 λεπτά/εβδομάδα συνήθως δεν αρκούν χωρίς αλλαγή διατροφής).",
   "walkingStrengthDayTitle": "Ημέρα δύναμης",
-  "walkingProtocolNote": "Οι ημέρες δύναμης στοχεύουν τις κύριες μυϊκές ομάδες, καθώς και την ισορροπία και τον συντονισμό. Προσθέστε ήπια διάταση: περίπου 60 δευτερόλεπτα ανά μυϊκή ομάδα, τουλάχιστο 2 μέρες την εβδομάδα (ACSM 2011)."
+  "walkingProtocolNote": "Οι ημέρες δύναμης στοχεύουν τις κύριες μυϊκές ομάδες, καθώς και την ισορροπία και τον συντονισμό. Προσθέστε ήπια διάταση: περίπου 60 δευτερόλεπτα ανά μυϊκή ομάδα, τουλάχιστο 2 μέρες την εβδομάδα (ACSM 2011).",
+  "todayActivityTitle": "Δραστηριότητα",
+  "todayActivityEmpty": "Δεν έχει καταγραφεί δραστηριότητα σήμερα. Προσθέστε περπάτημα, τρέξιμο ή προπόνηση δύναμης.",
+  "activityWeekProgress": "Τελευταίες 7 ημέρες: {minutes} από {target} λεπτά",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ΠΟΥ 2020: τουλάχιστον 150 λεπτά μέτριας ή 75 λεπτά έντονης δραστηριότητας την εβδομάδα. Τα λεπτά τρεξίματος μετράνε διπλά.",
+  "activityAddButton": "Προσθήκη δραστηριότητας",
+  "activityFormTitle": "Καταγραφή δραστηριότητας",
+  "activityKindWalk": "Περπάτημα",
+  "activityKindRun": "Τρέξιμο",
+  "activityKindStrength": "Δύναμη",
+  "activityKindOther": "Άλλο",
+  "activityDurationLabel": "Διάρκεια (λεπτά)",
+  "activityDistanceLabel": "Απόσταση σε km (προαιρετικό)",
+  "activityInvalidMinutes": "Εισάγετε διάρκεια από 1 έως 600 λεπτά.",
+  "activitySave": "Αποθήκευση δραστηριότητας",
+  "activitySavedToast": "Η δραστηριότητα αποθηκεύτηκε.",
+  "activityDeleteTooltip": "Διαγραφή αυτής της δραστηριότητας",
+  "activityDisclaimer": "Αν νιώσετε άσχημα κατά την άσκηση, σταματήστε και μιλήστε με τον επαγγελματία υγείας σας. Η εφαρμογή δεν αντικαθιστά ιατρική συμβουλή.",
+  "activityMinutes": "{minutes} λεπτά",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} λεπτά · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

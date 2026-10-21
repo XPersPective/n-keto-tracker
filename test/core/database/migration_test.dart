@@ -42,4 +42,50 @@ void main() {
       await tmp.delete(recursive: true);
     },
   );
+
+  // v1 (1.0.0+6 üretim) → v2: yalnız hareket tablosu eklenir, veri korunur.
+  test('v1 → v2: hareket tablosu eklenir, mevcut veri korunur', () async {
+    final tmp = await Directory.systemTemp.createTemp('nketo_v2');
+    final path = '${tmp.path}/upgrade.db';
+
+    // v1 veritabanını taklit et: v2'de eklenen tablo yok, sürüm 1.
+    final old = AppDatabase.forTesting(NativeDatabase(File(path)));
+    await old
+        .into(old.contextTag)
+        .insert(
+          ContextTagCompanion.insert(
+            id: 'fasting',
+            labelTr: 'Açlık',
+            labelEn: 'Fasting',
+          ),
+        );
+    await old.customStatement('DROP TABLE activity_session');
+    await old.customStatement('PRAGMA user_version = 1');
+    await old.close();
+
+    final upgraded = AppDatabase.forTesting(NativeDatabase(File(path)));
+    final tags = await upgraded.select(upgraded.contextTag).get();
+    expect(tags.single.id, 'fasting');
+
+    await upgraded
+        .into(upgraded.activitySession)
+        .insert(
+          ActivitySessionCompanion.insert(
+            kind: 'run',
+            startedAtUtc: DateTime.utc(2026, 10, 21),
+            localOffsetMinutes: 0,
+            durationMinutes: 30,
+            createdAtUtc: DateTime.utc(2026, 10, 21),
+          ),
+        );
+    expect(await upgraded.select(upgraded.activitySession).get(), hasLength(1));
+
+    final integrity = await upgraded
+        .customSelect('PRAGMA integrity_check')
+        .get();
+    expect(integrity.single.data['integrity_check'], 'ok');
+
+    await upgraded.close();
+    await tmp.delete(recursive: true);
+  });
 }

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:drift/drift.dart';
 
 import '../../core/units/csv_safety.dart';
+import 'activity_repository.dart';
 import 'database.dart';
 
 /// Dışa/içe aktarma ve tüm verileri silme (MASTER_PROMPT §14.3, T26).
@@ -20,7 +21,7 @@ class ExportImportRepository {
   final String appVersion;
 
   static const String formatVersion = '1.0';
-  static const int schemaVersion = 1;
+  static const int schemaVersion = 2;
 
   /// Tüm kullanıcı verilerini okunabilir JSON olarak dışa aktarır.
   Future<String> exportJson() async {
@@ -56,6 +57,19 @@ class ExportImportRepository {
             'measuredAtUtc': w.measuredAtUtc.toIso8601String(),
             'localOffsetMinutes': w.localOffsetMinutes,
             'conditionNote': w.conditionNote,
+          },
+      ],
+      // v2: hareket kayıtları (koşu, yürüyüş, kuvvet, diğer). v1 dosyalarında
+      // bu alan yoktur; içe aktarma bunu isteğe bağlı kabul eder.
+      'activitySessions': [
+        for (final a in await _db.select(_db.activitySession).get())
+          {
+            'kind': a.kind,
+            'startedAtUtc': a.startedAtUtc.toIso8601String(),
+            'localOffsetMinutes': a.localOffsetMinutes,
+            'durationMinutes': a.durationMinutes,
+            'distanceKm': a.distanceKm,
+            'note': a.note,
           },
       ],
     };
@@ -139,6 +153,32 @@ class ExportImportRepository {
       );
     }
 
+    final activityRows = <ActivitySessionCompanion>[];
+    for (final a in (doc['activitySessions'] as List? ?? []).cast<Map>()) {
+      final kind = a['kind'] as String?;
+      final duration = (a['durationMinutes'] as num?)?.toInt();
+      final distance = (a['distanceKm'] as num?)?.toDouble();
+      if (kind == null ||
+          !ActivityRepository.kinds.contains(kind) ||
+          duration == null ||
+          duration < 1 ||
+          duration > 600 ||
+          (distance != null && distance <= 0)) {
+        throw const ImportValidationException('invalid activity row');
+      }
+      activityRows.add(
+        ActivitySessionCompanion.insert(
+          kind: kind,
+          startedAtUtc: DateTime.parse(a['startedAtUtc'] as String),
+          localOffsetMinutes: (a['localOffsetMinutes'] ?? 0) as int,
+          durationMinutes: duration,
+          distanceKm: Value(distance),
+          note: Value(a['note'] as String?),
+          createdAtUtc: DateTime.now().toUtc(),
+        ),
+      );
+    }
+
     return _db.transaction(() async {
       for (final row in glucoseRows) {
         await _db.into(_db.glucoseMeasurement).insert(row);
@@ -146,13 +186,18 @@ class ExportImportRepository {
       for (final row in weightRows) {
         await _db.into(_db.weightEntry).insert(row);
       }
+      for (final row in activityRows) {
+        await _db.into(_db.activitySession).insert(row);
+      }
       await _db
           .into(_db.exportHistory)
           .insert(
             ExportHistoryCompanion.insert(
               exportedAtUtc: DateTime.now().toUtc(),
               format: 'json-import',
-              recordCount: Value(glucoseRows.length + weightRows.length),
+              recordCount: Value(
+                glucoseRows.length + weightRows.length + activityRows.length,
+              ),
               schemaVersion: schemaVersion,
               appVersion: appVersion,
             ),
@@ -160,6 +205,7 @@ class ExportImportRepository {
       return ImportResult(
         glucoseCount: glucoseRows.length,
         weightCount: weightRows.length,
+        activityCount: activityRows.length,
       );
     });
   }
@@ -176,6 +222,7 @@ class ExportImportRepository {
       deleted += await _db.delete(_db.meal).go();
       deleted += await _db.delete(_db.weightEntry).go();
       deleted += await _db.delete(_db.symptomEntry).go();
+      deleted += await _db.delete(_db.activitySession).go();
       deleted += await _db.delete(_db.mealPlanEntry).go();
       deleted += await _db.delete(_db.mealPlan).go();
       deleted += await _db.delete(_db.shoppingListItem).go();
@@ -189,8 +236,15 @@ class ExportImportRepository {
 }
 
 class ImportResult {
-  const ImportResult({required this.glucoseCount, required this.weightCount});
+  const ImportResult({
+    required this.glucoseCount,
+    required this.weightCount,
+    this.activityCount = 0,
+  });
 
   final int glucoseCount;
   final int weightCount;
+
+  /// v2 dosyalarındaki hareket kayıtlarının sayısı (v1 dosyalarında 0).
+  final int activityCount;
 }

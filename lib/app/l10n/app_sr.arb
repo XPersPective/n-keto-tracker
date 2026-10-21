@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Персонализовани почетне вредности и недељни напредак су процене засноване на општим препорукама, а не медицински рецепт. Само ходање ретко даје велики губитак тежине (Richardson 2008: око 1,3 кг; Swift 2018: 150 мин/недеља обично није довољно без промене исхране).",
   "walkingStrengthDayTitle": "Дан снаге",
-  "walkingProtocolNote": "Дан снаге су усмерени на главне групе мишића, као и на равнотежу и координацију. Додајте нежно истезање: око 60 секунди по мишићној групи, најмање 2 дана недељно (ACSM 2011)."
+  "walkingProtocolNote": "Дан снаге су усмерени на главне групе мишића, као и на равнотежу и координацију. Додајте нежно истезање: око 60 секунди по мишићној групи, најмање 2 дана недељно (ACSM 2011).",
+  "todayActivityTitle": "Активност",
+  "todayActivityEmpty": "Данас нема забележене активности. Додајте шетњу, трчање или вежбу снаге.",
+  "activityWeekProgress": "Последњих 7 дана: {minutes} од {target} мин",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "СЗО 2020: најмање 150 мин умерене или 75 мин интензивне активности недељно. Минути трчања рачунају се двоструко.",
+  "activityAddButton": "Додај активност",
+  "activityFormTitle": "Забележи активност",
+  "activityKindWalk": "Ходање",
+  "activityKindRun": "Трчање",
+  "activityKindStrength": "Снага",
+  "activityKindOther": "Остало",
+  "activityDurationLabel": "Трајање (минути)",
+  "activityDistanceLabel": "Растојање у км (по жељи)",
+  "activityInvalidMinutes": "Унесите трајање од 1 до 600 минута.",
+  "activitySave": "Сачувај активност",
+  "activitySavedToast": "Активност је сачувана.",
+  "activityDeleteTooltip": "Обриши ову активност",
+  "activityDisclaimer": "Ако се осећате лоше током вежбања, прекините и разговарајте са здравственим радником. Ова апликација не замењује медицински савет.",
+  "activityMinutes": "{minutes} мин",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} мин · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Els valors inicials personalitzats i el progrés setmanal són estimacions basades en orientacions generals, no una prescripció mèdica. Caminar sol no produeix una gran pèrdua de pes (Richardson 2008: uns 1,3 kg; Swift 2018: 150 min/setmana normalment no és suficient sense canvis dietètics).",
   "walkingStrengthDayTitle": "Dia de força",
-  "walkingProtocolNote": "Els dies de forçaenyatenen els principals grups musculars, així com l'equilibri i la coordinació. Afegeix un estirament suau: uns 60 segons per grup muscular almenys 2 dies per setmana (ACSM 2011)."
+  "walkingProtocolNote": "Els dies de forçaenyatenen els principals grups musculars, així com l'equilibri i la coordinació. Afegeix un estirament suau: uns 60 segons per grup muscular almenys 2 dies per setmana (ACSM 2011).",
+  "todayActivityTitle": "Activitat",
+  "todayActivityEmpty": "Avui no hi ha activitat registrada. Afegeix una passejada, una cursa o una sessió de força.",
+  "activityWeekProgress": "Últims 7 dies: {minutes} de {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "OMS 2020: com a mínim 150 min d'activitat moderada o 75 min d'activitat intensa a la setmana. Els minuts de córrer compten doble.",
+  "activityAddButton": "Afegeix activitat",
+  "activityFormTitle": "Registra activitat",
+  "activityKindWalk": "Passejada",
+  "activityKindRun": "Cursa",
+  "activityKindStrength": "Força",
+  "activityKindOther": "Altres",
+  "activityDurationLabel": "Durada (minuts)",
+  "activityDistanceLabel": "Distància en km (opcional)",
+  "activityInvalidMinutes": "Introdueix una durada de l'1 als 600 minuts.",
+  "activitySave": "Desa l'activitat",
+  "activitySavedToast": "Activitat desada.",
+  "activityDeleteTooltip": "Elimina aquesta activitat",
+  "activityDisclaimer": "Si et sents malament durant l'exercici, para i consulta el teu professional de la salut. Aquesta aplicació no substitueix el consell mèdic.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "Personalizirane začetne vrednosti in tedenski napredek so ocene na podlagi splošnih smernic, ne zdravniški recept. Samo hoja redko povzroči veliko izgubo telesne mase (Richardson 2008: približno 1,3 kg; Swift 2018: 150 min/teden običajno ni dovolj brez spremembe prehrane).",
   "walkingStrengthDayTitle": "Dan moči",
-  "walkingProtocolNote": "Dani moči so usmerjeni na glavne skupine mišic ter ravnotežje in koordinacijo. Dodajte nežno raztegovanje: približno 60 sekund na mišično skupino, najmanj 2 dni na teden (ACSM 2011)."
+  "walkingProtocolNote": "Dani moči so usmerjeni na glavne skupine mišic ter ravnotežje in koordinacijo. Dodajte nežno raztegovanje: približno 60 sekund na mišično skupino, najmanj 2 dni na teden (ACSM 2011).",
+  "todayActivityTitle": "Dejavnost",
+  "todayActivityEmpty": "Danes ni zabeležene dejavnosti. Dodajte sprehod, tek ali vadbo za moč.",
+  "activityWeekProgress": "Zadnjih 7 dni: {minutes} od {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "SZO 2020: vsaj 150 min zmerne ali 75 min intenzivne dejavnosti na teden. Minute teka se štejejo dvakrat.",
+  "activityAddButton": "Dodaj dejavnost",
+  "activityFormTitle": "Zabeleži dejavnost",
+  "activityKindWalk": "Hoja",
+  "activityKindRun": "Tek",
+  "activityKindStrength": "Moč",
+  "activityKindOther": "Drugo",
+  "activityDurationLabel": "Trajanje (minute)",
+  "activityDistanceLabel": "Razdalja v km (neobvezno)",
+  "activityInvalidMinutes": "Vnesite trajanje od 1 do 600 minut.",
+  "activitySave": "Shrani dejavnost",
+  "activitySavedToast": "Dejavnost shranjena.",
+  "activityDeleteTooltip": "Izbriši to dejavnost",
+  "activityDisclaimer": "Če se med vadbo slabo počutite, nehajte in se posvetujte z zdravstvenim strokovnjakom. Ta aplikacija ne nadomešča zdravniškega nasveta.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

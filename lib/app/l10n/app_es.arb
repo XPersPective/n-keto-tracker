@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Los valores iniciales personalizados y el progreso semanal son estimaciones basadas en orientaciones generales, no una prescripción médica. Caminar por sí solo rara vez produce una gran pérdida de peso (Richardson 2008: unos 1,3 kg; Swift 2018: 150 min/semana normalmente no basta sin cambios en la dieta).",
   "walkingStrengthDayTitle": "Día de fuerza",
-  "walkingProtocolNote": "Los días de fuerza se dirigen a los principales grupos musculares, además del equilibrio y la coordinación. Añade estiramiento suave: unos 60 segundos por grupo muscular al menos 2 días por semana (ACSM 2011)."
+  "walkingProtocolNote": "Los días de fuerza se dirigen a los principales grupos musculares, además del equilibrio y la coordinación. Añade estiramiento suave: unos 60 segundos por grupo muscular al menos 2 días por semana (ACSM 2011).",
+  "todayActivityTitle": "Actividad",
+  "todayActivityEmpty": "Hoy no hay actividad registrada. Añade una caminata, una carrera o una sesión de fuerza.",
+  "activityWeekProgress": "Últimos 7 días: {minutes} de {target} min",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "OMS 2020: al menos 150 min de actividad moderada o 75 min de intensa a la semana. Los minutos de carrera cuentan doble.",
+  "activityAddButton": "Añadir actividad",
+  "activityFormTitle": "Registrar actividad",
+  "activityKindWalk": "Caminar",
+  "activityKindRun": "Correr",
+  "activityKindStrength": "Fuerza",
+  "activityKindOther": "Otra",
+  "activityDurationLabel": "Duración (minutos)",
+  "activityDistanceLabel": "Distancia en km (opcional)",
+  "activityInvalidMinutes": "Introduce una duración de 1 a 600 minutos.",
+  "activitySave": "Guardar actividad",
+  "activitySavedToast": "Actividad guardada.",
+  "activityDeleteTooltip": "Eliminar esta actividad",
+  "activityDisclaimer": "Si te sientes mal durante el ejercicio, para y habla con tu profesional de salud. Esta app no sustituye el consejo médico.",
+  "activityMinutes": "{minutes} min",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} min · {km} km",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

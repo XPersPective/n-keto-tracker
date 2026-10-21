@@ -276,5 +276,51 @@
   },
   "walkingEstimateNote": "Персоналізовані початкові значення та щотижневий прогрес — це оцінки на основі загальних рекомендацій, а не лікарський признак. Лише ходьба рідко дає значну втрату ваги (Richardson 2008: близько 1,3 кг; Swift 2018: 150 хв/тиждень зазвичай недостатньо без зміни харчування).",
   "walkingStrengthDayTitle": "День сили",
-  "walkingProtocolNote": "Дні сили спрямовані на основні групи м’язів, а також на рівновагу та координацію. Додайте м’яке розтягнення: близько 60 секунд на кожну групу м’язів, щонайменше 2 дні на тиждень (ACSM 2011)."
+  "walkingProtocolNote": "Дні сили спрямовані на основні групи м’язів, а також на рівновагу та координацію. Додайте м’яке розтягнення: близько 60 секунд на кожну групу м’язів, щонайменше 2 дні на тиждень (ACSM 2011).",
+  "todayActivityTitle": "Активність",
+  "todayActivityEmpty": "Сьогодні активність не записано. Додайте прогулянку, біг або силове тренування.",
+  "activityWeekProgress": "Останні 7 днів: {minutes} з {target} хв",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "ВООЗ 2020: щонайменше 150 хв помірної або 75 хв інтенсивної активності на тиждень. Хвилини бігу зараховуються подвійно.",
+  "activityAddButton": "Додати активність",
+  "activityFormTitle": "Записати активність",
+  "activityKindWalk": "Ходьба",
+  "activityKindRun": "Біг",
+  "activityKindStrength": "Силова",
+  "activityKindOther": "Інше",
+  "activityDurationLabel": "Тривалість (хвилини)",
+  "activityDistanceLabel": "Відстань у км (необов’язково)",
+  "activityInvalidMinutes": "Введіть тривалість від 1 до 600 хвилин.",
+  "activitySave": "Зберегти активність",
+  "activitySavedToast": "Активність збережено.",
+  "activityDeleteTooltip": "Видалити цю активність",
+  "activityDisclaimer": "Якщо під час тренування вам погано, зупиніться і поговоріть з медичним фахівцем. Цей застосунок не замінює медичну консультацію.",
+  "activityMinutes": "{minutes} хв",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} хв · {km} км",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

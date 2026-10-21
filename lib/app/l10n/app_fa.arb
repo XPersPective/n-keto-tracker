@@ -496,5 +496,51 @@
   },
   "walkingEstimateNote": "مقادیر شروع شخصی‌سازی‌شده و پیشرفت هفتگی تخمین‌هایی بر پایه راهنمایی‌های عمومی هستند — نه نسخه پزشکی. صرفاً پیاده‌روی به کاهش وزن زیاد منجر نمی‌شود (Richardson 2008: حدود ۱٫۳ کیلوگرم؛ Swift 2018: ۱۵۰ دقیقه در هفته بدون تغییر غذایی معمولاً کافی نیست).",
   "walkingStrengthDayTitle": "روز قدرت",
-  "walkingProtocolNote": "روزهای قدرت بر گروه‌های اصلی عضلانی و نیز تعادل و هماهنگی تمرکز دارند. کشش ملایم اضافه کنید: حدود ۶۰ ثانیه برای هر گروه عضلانی، دست‌کم ۲ روز در هفته (ACSM 2011)."
+  "walkingProtocolNote": "روزهای قدرت بر گروه‌های اصلی عضلانی و نیز تعادل و هماهنگی تمرکز دارند. کشش ملایم اضافه کنید: حدود ۶۰ ثانیه برای هر گروه عضلانی، دست‌کم ۲ روز در هفته (ACSM 2011).",
+  "todayActivityTitle": "فعالیت",
+  "todayActivityEmpty": "امروز فعالیتی ثبت نشده است. پیاده‌روی، دویدن یا تمرین قدرتی اضافه کنید.",
+  "activityWeekProgress": "۷ روز گذشته: {minutes} از {target} دقیقه",
+  "@activityWeekProgress": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "activityWeekNote": "سازمان جهانی بهداشت ۲۰۲۰: حداقل ۱۵۰ دقیقه فعالیت متوسط یا ۷۵ دقیقه فعالیت شدید در هفته. دقایق دویدن دو برابر حساب می‌شوند.",
+  "activityAddButton": "افزودن فعالیت",
+  "activityFormTitle": "ثبت فعالیت",
+  "activityKindWalk": "پیاده‌روی",
+  "activityKindRun": "دویدن",
+  "activityKindStrength": "قدرتی",
+  "activityKindOther": "سایر",
+  "activityDurationLabel": "مدت (دقیقه)",
+  "activityDistanceLabel": "مسافت به کیلومتر (اختیاری)",
+  "activityInvalidMinutes": "مدتی بین ۱ تا ۶۰۰ دقیقه وارد کنید.",
+  "activitySave": "ذخیره فعالیت",
+  "activitySavedToast": "فعالیت ذخیره شد.",
+  "activityDeleteTooltip": "حذف این فعالیت",
+  "activityDisclaimer": "اگر هنگام ورزش احساس ناخوشی کردید، بایستید و با متخصص سلامت خود صحبت کنید. این برنامه جایگزین مشاوره پزشکی نیست.",
+  "activityMinutes": "{minutes} دقیقه",
+  "@activityMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "activityRowWithDistance": "{minutes} دقیقه · {km} کیلومتر",
+  "@activityRowWithDistance": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

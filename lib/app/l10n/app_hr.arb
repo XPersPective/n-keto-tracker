@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, kretanje i vaši brojevi na jednom mjestu",
+  "onboardingWelcomeBody": "Zabilježite obrok u nekoliko sekundi, izmjerite šetnju ili trčanje i saznajte što vaši brojevi znače. Znanstveni izvori uvijek su na dodir.",
+  "onboardingSafetyPageTitle": "Prvo sigurnost",
+  "onboardingReadyTitle": "Gotovo ste",
+  "onboardingReadyBody": "Sve na ovoj stranici je neobavezno. Kasnije to možete promijeniti u Postavkama.",
+  "todayStepsTitle": "3 koraka za danas",
+  "todayStepMeal": "Zabilježi obrok",
+  "todayStepActivity": "Zabilježi kretanje",
+  "todayStepMeasure": "Dodaj mjerenje",
+  "todayStepsProgress": "{done} od 3 završeno",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Sva 3 koraka završena. Do sutra.",
+  "timerTitle": "Mjerač aktivnosti",
+  "timerOpen": "Otvori mjerač",
+  "timerStart": "Pokreni",
+  "timerPause": "Pauza",
+  "timerResume": "Nastavi",
+  "timerFinish": "Završi i spremi",
+  "timerHint": "Vaše se vrijeme automatski sprema. Možete pauzirati ili zaustaviti u bilo kojem trenutku."
 }

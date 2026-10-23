@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, движение и вашите показатели — на едно място",
+  "onboardingWelcomeBody": "Записвайте хранене за секунди, засичайте разходка или бягане и вижте какво означават показателите ви. Научните източници са винаги на едно докосване.",
+  "onboardingSafetyPageTitle": "Първо безопасност",
+  "onboardingReadyTitle": "Почти готово",
+  "onboardingReadyBody": "Всичко на тази страница е по избор. Можете да го промените по-късно в Настройки.",
+  "todayStepsTitle": "3-те стъпки за днес",
+  "todayStepMeal": "Запиши хранене",
+  "todayStepActivity": "Запиши движение",
+  "todayStepMeasure": "Добави измерване",
+  "todayStepsProgress": "Изпълнени: {done} от 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Всичките 3 са изпълнени. До утре.",
+  "timerTitle": "Таймер за активност",
+  "timerOpen": "Отвори таймера",
+  "timerStart": "Старт",
+  "timerPause": "Пауза",
+  "timerResume": "Продължи",
+  "timerFinish": "Завърши и запази",
+  "timerHint": "Времето ви се запазва автоматично. Можете да поставите на пауза или да спрете по всяко време."
 }

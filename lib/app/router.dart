@@ -21,6 +21,7 @@ import '../features/onboarding/onboarding_page.dart';
 import '../features/walking/walking_plan_page.dart';
 import 'app_shell.dart';
 import '../features/activity/activity_form.dart';
+import '../features/activity/activity_timer_page.dart';
 
 /// Uygulama yönlendiricisi (MASTER_PROMPT §5): 5 sekmeli ana kabuk +
 /// onboarding akışı. Profil, ayarlar ve veri yönetimi sonraki görevlerde
@@ -125,6 +126,10 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '/settings/other-apps',
       builder: (context, state) => const OtherAppsPage(),
+    ),
+    GoRoute(
+      path: '/activity/timer',
+      builder: (context, state) => const ActivityTimerPage(),
     ),
     GoRoute(
       path: '/activity/new',

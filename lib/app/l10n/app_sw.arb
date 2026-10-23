@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, mazoezi na namba zako, mahali pamoja",
+  "onboardingWelcomeBody": "Rekodi mlo kwa sekunde chache, pima matembezi au mbio, na uone maana ya namba zako. Vyanzo vya kisayansi viko umbali wa mguso mmoja tu.",
+  "onboardingSafetyPageTitle": "Usalama kwanza",
+  "onboardingReadyTitle": "Karibu tayari",
+  "onboardingReadyBody": "Kila kitu kwenye ukurasa huu ni cha hiari. Unaweza kubadilisha baadaye katika Mipangilio.",
+  "todayStepsTitle": "Hatua zako 3 za leo",
+  "todayStepMeal": "Rekodi mlo",
+  "todayStepActivity": "Rekodi mazoezi",
+  "todayStepMeasure": "Ongeza kipimo",
+  "todayStepsProgress": "{done} kati ya 3 zimekamilika",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Hatua zote 3 zimekamilika. Tutaonana kesho.",
+  "timerTitle": "Kipima muda cha shughuli",
+  "timerOpen": "Fungua kipima muda",
+  "timerStart": "Anza",
+  "timerPause": "Sitisha",
+  "timerResume": "Endelea",
+  "timerFinish": "Maliza na uhifadhi",
+  "timerHint": "Muda wako unahifadhiwa kiotomatiki. Unaweza kusitisha au kusimamisha wakati wowote."
 }

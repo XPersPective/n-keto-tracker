@@ -6,7 +6,7 @@ import '../../app/l10n/language_names.dart';
 
 /// Onboarding adım sayısı: dil → gizlilik → tıbbi-olmayan → amaç → profil
 /// → enerji katsayısı → risk taraması → veri kalıcılığı + onam (MASTER §4).
-const onboardingStepCount = 8;
+const onboardingStepCount = 3;
 
 /// Kullanım amacı seçimi (çoklu; yalnız ana ekranı sadeleştirir,
 /// hastalık modu OLUŞTURMAZ).

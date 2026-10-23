@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, moviment i les teves xifres, en un sol lloc",
+  "onboardingWelcomeBody": "Registra un menjar en segons, cronometra una passejada o cursa i veu què signifiquen les teves xifres. Les fonts científiques sempre són a un toc.",
+  "onboardingSafetyPageTitle": "Primer la seguretat",
+  "onboardingReadyTitle": "Gairebé a punt",
+  "onboardingReadyBody": "Tot el que hi ha en aquesta pàgina és opcional. Ho pots canviar més tard a Configuració.",
+  "todayStepsTitle": "Els 3 passos d'avui",
+  "todayStepMeal": "Registra un menjar",
+  "todayStepActivity": "Registra moviment",
+  "todayStepMeasure": "Afegeix una mesura",
+  "todayStepsProgress": "{done} de 3 fets",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Els 3 passos fets. Ens veiem demà.",
+  "timerTitle": "Cronòmetre d'activitat",
+  "timerOpen": "Obre el cronòmetre",
+  "timerStart": "Inicia",
+  "timerPause": "Pausa",
+  "timerResume": "Reprèn",
+  "timerFinish": "Acaba i desa",
+  "timerHint": "El temps es desa automàticament. Pots aturar o pausar quan vulguis."
 }

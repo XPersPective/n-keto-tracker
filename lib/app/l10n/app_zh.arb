@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "饮食、运动与你的数值，一站式管理",
+  "onboardingWelcomeBody": "几秒钟记录一餐，为散步或跑步计时，并看懂你的数值含义。科学依据随时一点即达。",
+  "onboardingSafetyPageTitle": "安全第一",
+  "onboardingReadyTitle": "即将完成",
+  "onboardingReadyBody": "本页所有内容均为可选。之后可在设置中更改。",
+  "todayStepsTitle": "今天的 3 个步骤",
+  "todayStepMeal": "记录一餐",
+  "todayStepActivity": "记录运动",
+  "todayStepMeasure": "添加测量",
+  "todayStepsProgress": "已完成 {done}/3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3 个步骤全部完成，明天见。",
+  "timerTitle": "运动计时器",
+  "timerOpen": "打开计时器",
+  "timerStart": "开始",
+  "timerPause": "暂停",
+  "timerResume": "继续",
+  "timerFinish": "结束并保存",
+  "timerHint": "时间会自动保存，随时可以暂停或结束。"
 }

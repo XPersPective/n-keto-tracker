@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Κέτο, κίνηση και οι αριθμοί σας, σε ένα μέρος",
+  "onboardingWelcomeBody": "Καταγράψτε ένα γεύμα σε δευτερόλεπτα, χρονομετρήστε έναν περίπατο ή τρέξιμο και δείτε τι σημαίνουν οι αριθμοί σας. Οι επιστημονικές πηγές είναι πάντα ένα άγγιγμα μακριά.",
+  "onboardingSafetyPageTitle": "Πρώτα η ασφάλεια",
+  "onboardingReadyTitle": "Σχεδόν έτοιμο",
+  "onboardingReadyBody": "Όλα όσα βλέπετε σε αυτή τη σελίδα είναι προαιρετικά. Μπορείτε να τα αλλάξετε αργότερα στις Ρυθμίσεις.",
+  "todayStepsTitle": "Τα 3 βήματα της ημέρας",
+  "todayStepMeal": "Καταγραφή γεύματος",
+  "todayStepActivity": "Καταγραφή κίνησης",
+  "todayStepMeasure": "Προσθήκη μέτρησης",
+  "todayStepsProgress": "{done} από 3 ολοκληρωμένα",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Και τα 3 ολοκληρώθηκαν. Τα λέμε αύριο.",
+  "timerTitle": "Χρονόμετρο δραστηριότητας",
+  "timerOpen": "Άνοιγμα χρονομέτρου",
+  "timerStart": "Έναρξη",
+  "timerPause": "Παύση",
+  "timerResume": "Συνέχεια",
+  "timerFinish": "Ολοκλήρωση και αποθήκευση",
+  "timerHint": "Ο χρόνος σας αποθηκεύεται αυτόματα. Μπορείτε να κάνετε παύση ή διακοπή όποτε θέλετε."
 }

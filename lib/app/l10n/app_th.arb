@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "คีโต กิจกรรม และตัวเลขของคุณ รวมไว้ที่เดียว",
+  "onboardingWelcomeBody": "บันทึกมื้ออาหารภายในไม่กี่วินาที จับเวลาการเดินหรือการวิ่ง แล้วดูว่าตัวเลขของคุณหมายความว่าอะไร แหล่งอ้างอิงทางวิทยาศาสตร์อยู่ห่างเพียงแตะเดียวเสมอ",
+  "onboardingSafetyPageTitle": "ความปลอดภัยมาก่อน",
+  "onboardingReadyTitle": "เกือบพร้อมแล้ว",
+  "onboardingReadyBody": "ทุกอย่างในหน้านี้เป็นทางเลือก คุณเปลี่ยนภายหลังได้ในการตั้งค่า",
+  "todayStepsTitle": "3 ขั้นตอนของวันนี้",
+  "todayStepMeal": "บันทึกมื้ออาหาร",
+  "todayStepActivity": "บันทึกการเคลื่อนไหว",
+  "todayStepMeasure": "เพิ่มการวัดค่า",
+  "todayStepsProgress": "ทำแล้ว {done} จาก 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "ทำครบทั้ง 3 ขั้นตอนแล้ว พบกันพรุ่งนี้",
+  "timerTitle": "ตัวจับเวลากิจกรรม",
+  "timerOpen": "เปิดตัวจับเวลา",
+  "timerStart": "เริ่ม",
+  "timerPause": "หยุดชั่วคราว",
+  "timerResume": "ทำต่อ",
+  "timerFinish": "เสร็จสิ้นและบันทึก",
+  "timerHint": "เวลาของคุณจะถูกบันทึกอัตโนมัติ คุณหยุดชั่วคราวหรือหยุดเมื่อใดก็ได้"
 }

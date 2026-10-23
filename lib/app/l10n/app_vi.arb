@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, vận động và các chỉ số của bạn, trong một nơi",
+  "onboardingWelcomeBody": "Ghi bữa ăn trong vài giây, bấm giờ đi bộ hoặc chạy bộ, và xem các chỉ số của bạn có ý nghĩa gì. Nguồn khoa học luôn chỉ cách một lần chạm.",
+  "onboardingSafetyPageTitle": "An toàn là trên hết",
+  "onboardingReadyTitle": "Gần xong rồi",
+  "onboardingReadyBody": "Mọi thứ trên trang này đều không bắt buộc. Bạn có thể thay đổi sau trong Cài đặt.",
+  "todayStepsTitle": "3 bước hôm nay",
+  "todayStepMeal": "Ghi bữa ăn",
+  "todayStepActivity": "Ghi vận động",
+  "todayStepMeasure": "Thêm số đo",
+  "todayStepsProgress": "Đã xong {done}/3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Đã hoàn thành cả 3 bước. Hẹn gặp lại ngày mai.",
+  "timerTitle": "Bộ hẹn giờ vận động",
+  "timerOpen": "Mở bộ hẹn giờ",
+  "timerStart": "Bắt đầu",
+  "timerPause": "Tạm dừng",
+  "timerResume": "Tiếp tục",
+  "timerFinish": "Kết thúc và lưu",
+  "timerHint": "Thời gian của bạn được lưu tự động. Bạn có thể tạm dừng hoặc dừng bất cứ lúc nào."
 }

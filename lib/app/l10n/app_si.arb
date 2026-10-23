@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "කීටෝ, ක්‍රියාකාරකම් සහ ඔබේ සංඛ්‍යා එකම තැනක",
+  "onboardingWelcomeBody": "තත්පර කිහිපයකින් ආහාර සටහන් කරන්න, ඇවිදීම හෝ දිවීම කාලය මැනින් සහ ඔබේ සංඛ්‍යාවල තේරුම බලන්න. විද්‍යාත්මක මූලාශ්‍ර සැමවිටම එක් ස්පර්ශයකින් ළඟයි.",
+  "onboardingSafetyPageTitle": "පළමුව ආරක්ෂාව",
+  "onboardingReadyTitle": "ඉක්මනින් සූදානම්",
+  "onboardingReadyBody": "මේ පිටුවේ සියල්ල විකල්පයි. පසුව සැකසුම් තුළ වෙනස් කළ හැක.",
+  "todayStepsTitle": "අද පියවර 3",
+  "todayStepMeal": "ආහාරය සටහන් කරන්න",
+  "todayStepActivity": "ක්‍රියාකාරකම සටහන් කරන්න",
+  "todayStepMeasure": "මිනුමක් එක් කරන්න",
+  "todayStepsProgress": "3න් {done} සම්පූර්ණයි",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "පියවර තුනම සම්පූර්ණයි. හෙට හමුවෙමු.",
+  "timerTitle": "ක්‍රියාකාරකම් ටයිමරය",
+  "timerOpen": "ටයිමරය විවෘත කරන්න",
+  "timerStart": "ආරම්භ",
+  "timerPause": "විරාමය",
+  "timerResume": "දිගටම",
+  "timerFinish": "අවසන් කර සුරකින්න",
+  "timerHint": "ඔබේ කාලය ස්වයංක්‍රියව සුරැකේ. ඕනෑම වේලාවක විරාම හෝ නවත්වන්න පුළුවන්."
 }

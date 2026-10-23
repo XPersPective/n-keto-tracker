@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "કીટો, હલનચલન અને તમારા આંકડા, એક જ જગ્યાએ",
+  "onboardingWelcomeBody": "સેકન્ડોમાં ભોજન નોંધો, ચાલવા કે દોડવાનો સમય માપો, અને તમારા આંકડાનો અર્થ જુઓ. વૈજ્ઞાનિક સ્ત્રોત હંમેશાં એક ટૅપ દૂર છે.",
+  "onboardingSafetyPageTitle": "પહેલાં સલામતી",
+  "onboardingReadyTitle": "લગભગ તૈયાર",
+  "onboardingReadyBody": "આ પૃષ્ઠ પરનું બધું વૈકલ્પિક છે. તમે પછીથી સેટિંગ્સમાં બદલી શકો છો.",
+  "todayStepsTitle": "આજના 3 પગલાં",
+  "todayStepMeal": "ભોજન નોંધો",
+  "todayStepActivity": "હલનચલન નોંધો",
+  "todayStepMeasure": "માપ ઉમેરો",
+  "todayStepsProgress": "{done}/3 પૂર્ણ",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3 બધાં પૂર્ણ. કાલે મળીશું.",
+  "timerTitle": "પ્રવૃત્તિ ટાઇમર",
+  "timerOpen": "ટાઇમર ખોલો",
+  "timerStart": "શરૂ કરો",
+  "timerPause": "થોભાવો",
+  "timerResume": "ચાલુ રાખો",
+  "timerFinish": "સમાપ્ત કરો અને સાચવો",
+  "timerHint": "તમારો સમય આપમેળે સાચવાય છે. ગમે ત્યારે થોભાવી કે રોકી શકો છો."
 }

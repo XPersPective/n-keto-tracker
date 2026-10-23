@@ -627,5 +627,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, movement and your numbers, in one place",
+  "onboardingWelcomeBody": "Log a meal in seconds, time a walk or run, and see what your numbers mean. Scientific sources are always one tap away.",
+  "onboardingSafetyPageTitle": "Safety first",
+  "onboardingReadyTitle": "Almost there",
+  "onboardingReadyBody": "Everything on this page is optional. You can change it later in Settings.",
+  "todayStepsTitle": "Today's 3 steps",
+  "todayStepMeal": "Log a meal",
+  "todayStepActivity": "Log movement",
+  "todayStepMeasure": "Add a measurement",
+  "todayStepsProgress": "{done} of 3 done",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "All 3 done. See you tomorrow.",
+  "timerTitle": "Activity timer",
+  "timerOpen": "Open timer",
+  "timerStart": "Start",
+  "timerPause": "Pause",
+  "timerResume": "Resume",
+  "timerFinish": "Finish and save",
+  "timerHint": "Your time is saved automatically. You can pause or stop anytime."
 }

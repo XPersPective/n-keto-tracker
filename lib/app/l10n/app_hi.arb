@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "कीटो, गतिविधि और आपके आँकड़े, एक ही जगह",
+  "onboardingWelcomeBody": "सेकंडों में भोजन दर्ज करें, पैदल चलने या दौड़ने का समय लें, और देखें कि आपके आँकड़ों का क्या मतलब है। वैज्ञानिक स्रोत हमेशा एक टैप दूर हैं।",
+  "onboardingSafetyPageTitle": "पहले सुरक्षा",
+  "onboardingReadyTitle": "लगभग हो गया",
+  "onboardingReadyBody": "इस पेज की हर चीज़ वैकल्पिक है। आप इसे बाद में सेटिंग्स में बदल सकते हैं।",
+  "todayStepsTitle": "आज के 3 कदम",
+  "todayStepMeal": "भोजन दर्ज करें",
+  "todayStepActivity": "गतिविधि दर्ज करें",
+  "todayStepMeasure": "एक माप जोड़ें",
+  "todayStepsProgress": "{done} में से 3 पूरे",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "तीनों कदम पूरे हुए। कल मिलते हैं।",
+  "timerTitle": "गतिविधि टाइमर",
+  "timerOpen": "टाइमर खोलें",
+  "timerStart": "शुरू करें",
+  "timerPause": "रोकें",
+  "timerResume": "जारी रखें",
+  "timerFinish": "समाप्त करें और सहेजें",
+  "timerHint": "आपका समय अपने-आप सहेजा जाता है। आप कभी भी रोक या बंद कर सकते हैं।"
 }

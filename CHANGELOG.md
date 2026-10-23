@@ -7,6 +7,12 @@ Changelog'a yakın tutulur; tarihler ISO 8601.
 
 ### Eklendi
 
+- Yeni başlangıç: üç sayfada hoş geldin, güvenlik/onam ve isteğe bağlı profil.
+- Bugün ekranında "Bugünün 3 adımı" (öğün, hareket, ölçüm) ve ilerleme.
+- Hareket zamanlayıcısı: tür seç, başlat, duraklat, bitir; süre otomatik kaydedilir.
+- Besin ve tariflerde açık lisanslı fotoğraflar (Wikimedia Commons); atıflar
+  Lisanslar sayfasında. Fotoğrafı olmayan besinlerde kategori ikonu gösterilir.
+
 - Hareket kaydı: yürüyüş, koşu, kuvvet ve diğer; süre, isteğe bağlı mesafe
   ve not. Bugün ekranında haftalık DSÖ 2020 ilerlemesi (koşu dakikası iki kat).
 - Veritabanı şeması 2: hareket tablosu; mevcut veriler migration ile korunur.

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, kustība un jūsu rādītāji vienuviet",
+  "onboardingWelcomeBody": "Reģistrējiet maltīti dažās sekundēs, izmēriet pastaigu vai skrējienu un redziet, ko nozīmē jūsu rādītāji. Zinātniskie avoti vienmēr ir viena pieskāriena attālumā.",
+  "onboardingSafetyPageTitle": "Vispirms drošība",
+  "onboardingReadyTitle": "Gandrīz gatavs",
+  "onboardingReadyBody": "Viss šajā lapā ir neobligāts. Vēlāk to varat mainīt iestatījumos.",
+  "todayStepsTitle": "Šodienas 3 soļi",
+  "todayStepMeal": "Reģistrēt maltīti",
+  "todayStepActivity": "Reģistrēt kustību",
+  "todayStepMeasure": "Pievienot mērījumu",
+  "todayStepsProgress": "Pabeigti {done} no 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Visi 3 soļi pabeigti. Uz redzēšanos rīt.",
+  "timerTitle": "Aktivitātes taimeris",
+  "timerOpen": "Atvērt taimeri",
+  "timerStart": "Sākt",
+  "timerPause": "Pauze",
+  "timerResume": "Turpināt",
+  "timerFinish": "Pabeigt un saglabāt",
+  "timerHint": "Jūsu laiks tiek saglabāts automātiski. Varat pauzēt vai apturēt jebkurā brīdī."
 }

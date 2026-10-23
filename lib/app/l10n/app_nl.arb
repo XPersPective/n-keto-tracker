@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, beweging en je cijfers, op één plek",
+  "onboardingWelcomeBody": "Registreer een maaltijd in seconden, meet een wandeling of hardlooprondje en zie wat je cijfers betekenen. Wetenschappelijke bronnen zijn altijd één tik verwijderd.",
+  "onboardingSafetyPageTitle": "Veiligheid eerst",
+  "onboardingReadyTitle": "Bijna klaar",
+  "onboardingReadyBody": "Alles op deze pagina is optioneel. Je kunt het later wijzigen onder Instellingen.",
+  "todayStepsTitle": "Je 3 stappen voor vandaag",
+  "todayStepMeal": "Maaltijd registreren",
+  "todayStepActivity": "Beweging registreren",
+  "todayStepMeasure": "Meting toevoegen",
+  "todayStepsProgress": "{done} van 3 gedaan",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Alle 3 gedaan. Tot morgen!",
+  "timerTitle": "Activiteitstimer",
+  "timerOpen": "Timer openen",
+  "timerStart": "Start",
+  "timerPause": "Pauze",
+  "timerResume": "Hervatten",
+  "timerFinish": "Afronden en opslaan",
+  "timerHint": "Je tijd wordt automatisch opgeslagen. Je kunt altijd pauzeren of stoppen."
 }

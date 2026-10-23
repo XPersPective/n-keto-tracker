@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "കീറ്റോ, ചലനവും നിങ്ങളുടെ കണക്കുകളും ഒരിടത്ത്",
+  "onboardingWelcomeBody": "സെക്കൻഡുകൾക്കുള്ളിൽ ഭക്ഷണം രേഖപ്പെടുത്തൂ, നടത്തമോ ഓട്ടമോ സമയം അളക്കൂ, നിങ്ങളുടെ കണക്കുകളുടെ അർത്ഥവും കാണൂ. ശാസ്ത്രീയ സ്രോതസ്സുകൾ എപ്പോഴും ഒരു സ്പർശനം അകലെയാണ്.",
+  "onboardingSafetyPageTitle": "ആദ്യം സുരക്ഷ",
+  "onboardingReadyTitle": "ഏതാണ്ട് തയ്യാർ",
+  "onboardingReadyBody": "ഈ പേജിലുള്ളതെല്ലാം ഐച്ഛികമാണ്. പിന്നീട് ക്രമീകരണങ്ങളിൽ മാറ്റാം.",
+  "todayStepsTitle": "ഇന്നത്തെ 3 ഘട്ടങ്ങൾ",
+  "todayStepMeal": "ഭക്ഷണം രേഖപ്പെടുത്തുക",
+  "todayStepActivity": "ചലനം രേഖപ്പെടുത്തുക",
+  "todayStepMeasure": "അളവ് ചേർക്കുക",
+  "todayStepsProgress": "3 ൽ {done} പൂർത്തിയായി",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "മൂന്ന് ഘട്ടങ്ങളും പൂർത്തിയായി. നാളെ കാണാം.",
+  "timerTitle": "പ്രവർത്തന ടൈമർ",
+  "timerOpen": "ടൈമർ തുറക്കുക",
+  "timerStart": "ആരംഭിക്കുക",
+  "timerPause": "താൽക്കാലികമായി നിർത്തുക",
+  "timerResume": "തുടരുക",
+  "timerFinish": "പൂർത്തിയാക്കി സംരക്ഷിക്കുക",
+  "timerHint": "നിങ്ങളുടെ സമയം സ്വയമേവ സംരക്ഷിക്കപ്പെടുന്നു. എപ്പോൾ വേണമെങ്കിലും നിർത്താം."
 }

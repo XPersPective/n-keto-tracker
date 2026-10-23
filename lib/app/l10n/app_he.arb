@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "קטו, תנועה והמספרים שלכם, במקום אחד",
+  "onboardingWelcomeBody": "רשמו ארוחה בשניות, תזמנו הליכה או ריצה, וראו מה המספרים שלכם אומרים. מקורות מדעיים תמיד במרחק הקשה אחת.",
+  "onboardingSafetyPageTitle": "קודם כל בטיחות",
+  "onboardingReadyTitle": "כמעט סיימתם",
+  "onboardingReadyBody": "הכול בעמוד הזה אופציונלי. אפשר לשנות בהמשך בהגדרות.",
+  "todayStepsTitle": "3 השלבים של היום",
+  "todayStepMeal": "רישום ארוחה",
+  "todayStepActivity": "רישום תנועה",
+  "todayStepMeasure": "הוספת מדידה",
+  "todayStepsProgress": "{done} מתוך 3 הושלמו",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "כל 3 השלבים הושלמו. נתראה מחר.",
+  "timerTitle": "טיימר פעילות",
+  "timerOpen": "פתיחת הטיימר",
+  "timerStart": "התחלה",
+  "timerPause": "השהיה",
+  "timerResume": "המשך",
+  "timerFinish": "סיום ושמירה",
+  "timerHint": "הזמן שלכם נשמר אוטומטית. אפשר להשהות או לעצור בכל רגע."
 }

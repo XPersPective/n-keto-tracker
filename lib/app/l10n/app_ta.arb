@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "கீட்டோ, செயல்பாடு மற்றும் உங்கள் எண்கள் ஒரே இடத்தில்",
+  "onboardingWelcomeBody": "சில நொடிகளில் உணவைப் பதிவு செய்யுங்கள், நடை அல்லது ஓட்டத்தின் நேரத்தை அளவிடுங்கள், உங்கள் எண்களின் பொருளைப் பாருங்கள். அறிவியல் ஆதாரங்கள் எப்போதும் ஒரு தொடுதல் தொலைவில்.",
+  "onboardingSafetyPageTitle": "முதலில் பாதுகாப்பு",
+  "onboardingReadyTitle": "கிட்டத்தட்ட தயார்",
+  "onboardingReadyBody": "இந்தப் பக்கத்தில் உள்ள அனைத்தும் விருப்பத்தேர்வு. பின்னர் அமைப்புகளில் மாற்றலாம்.",
+  "todayStepsTitle": "இன்றைய 3 படிகள்",
+  "todayStepMeal": "உணவைப் பதிவு செய்",
+  "todayStepActivity": "செயல்பாட்டைப் பதிவு செய்",
+  "todayStepMeasure": "அளவீட்டைச் சேர்",
+  "todayStepsProgress": "3இல் {done} முடிந்தது",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "மூன்று படிகளும் முடிந்தன. நாளை சந்திப்போம்.",
+  "timerTitle": "செயல்பாட்டு டைமர்",
+  "timerOpen": "டைமரைத் திற",
+  "timerStart": "தொடங்கு",
+  "timerPause": "இடைநிறுத்து",
+  "timerResume": "தொடர்",
+  "timerFinish": "முடித்துச் சேமி",
+  "timerHint": "உங்கள் நேரம் தானாகச் சேமிக்கப்படும். எப்போது வேண்டுமானாலும் இடைநிறுத்தலாம் அல்லது நிறுத்தலாம்."
 }

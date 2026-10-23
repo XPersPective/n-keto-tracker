@@ -82,13 +82,14 @@ void main() {
     await waitForView(tester);
     await settleBounded(tester);
 
-    // 1-3) Onboarding 8 adım: Next ×7.
-    for (var i = 0; i < 7; i++) {
-      await tester.tap(find.text('Next'));
-      await settleBounded(tester);
-    }
-    // 4) Onam kutusu + bitir.
+    // 1-3) Onboarding 3 sayfa: Next ×2 (onam işaretlenmeden ileri gitmez).
+    await tester.tap(find.text('Next'));
+    await settleBounded(tester);
+    // 4) Onam kutusu + ileri + bitir.
+    await tester.ensureVisible(find.text('I accept'));
     await tester.tap(find.text('I accept'));
+    await settleBounded(tester);
+    await tester.tap(find.text('Next'));
     await settleBounded(tester);
     await tester.tap(find.text('Start using the app'));
     await settleBounded(tester);

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, mișcare și cifrele tale, într-un singur loc",
+  "onboardingWelcomeBody": "Înregistrează o masă în câteva secunde, cronometrează o plimbare sau o alergare și vezi ce înseamnă cifrele tale. Sursele științifice sunt mereu la o atingere distanță.",
+  "onboardingSafetyPageTitle": "Întâi siguranța",
+  "onboardingReadyTitle": "Aproape gata",
+  "onboardingReadyBody": "Tot ce vezi pe această pagină este opțional. Poți schimba mai târziu din Setări.",
+  "todayStepsTitle": "Cei 3 pași de azi",
+  "todayStepMeal": "Înregistrează o masă",
+  "todayStepActivity": "Înregistrează mișcarea",
+  "todayStepMeasure": "Adaugă o măsurătoare",
+  "todayStepsProgress": "{done} din 3 finalizați",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Toți cei 3 pași sunt gata. Ne vedem mâine.",
+  "timerTitle": "Cronometru de activitate",
+  "timerOpen": "Deschide cronometrul",
+  "timerStart": "Pornește",
+  "timerPause": "Pauză",
+  "timerResume": "Reia",
+  "timerFinish": "Termină și salvează",
+  "timerHint": "Timpul tău se salvează automat. Poți pune pe pauză sau opri oricând."
 }

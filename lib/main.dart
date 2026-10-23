@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app/app.dart';
@@ -26,6 +28,16 @@ Future<void> _seedContent(AppDatabase db) async {
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Besin fotoğrafları Wikimedia Commons'tan açık lisansla alındı; atıflar
+  // (yazar, lisans, kaynak) Flutter'ın lisans sayfasında gösterilir (CC BY).
+  LicenseRegistry.addLicense(() async* {
+    final credits = await rootBundle.loadString(
+      'assets/food_images/CREDITS.md',
+    );
+    yield LicenseEntryWithLineBreaks([
+      'Food photos (Wikimedia Commons)',
+    ], credits);
+  });
   final db = AppDatabase();
   await _seedContent(db);
   runApp(

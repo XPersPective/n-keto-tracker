@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "케토, 활동, 그리고 내 수치를 한 곳에서",
+  "onboardingWelcomeBody": "식사를 몇 초 만에 기록하고, 걷기나 달리기 시간을 재고, 내 수치의 의미를 확인하세요. 과학적 근거는 언제나 한 번의 탭으로 볼 수 있습니다.",
+  "onboardingSafetyPageTitle": "안전이 우선입니다",
+  "onboardingReadyTitle": "거의 다 됐어요",
+  "onboardingReadyBody": "이 화면의 모든 항목은 선택 사항입니다. 나중에 설정에서 바꿀 수 있습니다.",
+  "todayStepsTitle": "오늘의 3단계",
+  "todayStepMeal": "식사 기록하기",
+  "todayStepActivity": "활동 기록하기",
+  "todayStepMeasure": "측정 추가하기",
+  "todayStepsProgress": "3개 중 {done}개 완료",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3단계를 모두 마쳤어요. 내일 또 만나요.",
+  "timerTitle": "활동 타이머",
+  "timerOpen": "타이머 열기",
+  "timerStart": "시작",
+  "timerPause": "일시정지",
+  "timerResume": "계속",
+  "timerFinish": "끝내고 저장",
+  "timerHint": "시간은 자동으로 저장됩니다. 언제든 일시정지하거나 멈출 수 있습니다."
 }

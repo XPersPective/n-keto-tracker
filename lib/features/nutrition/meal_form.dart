@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
-import '../../app/theme/food_icons.dart';
+import '../../app/theme/food_photo.dart';
 import '../../core/database/database.dart';
 import '../../core/database/meal_repository.dart';
 import '../../core/database/providers.dart';
@@ -154,7 +154,7 @@ class _MealFormState extends ConsumerState<MealForm> {
           ),
           ..._results.map(
             (f) => ListTile(
-              leading: FoodIconBadge(category: f.category),
+              leading: FoodPhoto(id: f.id, category: f.category),
               title: Text(f.nameTr ?? f.canonicalName),
               subtitle: Text(
                 '${f.kcalPer100g.toStringAsFixed(0)} kcal · '

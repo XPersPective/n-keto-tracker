@@ -84,11 +84,15 @@ void main() {
       await tester.pumpAndSettle();
 
       // Onboarding: 7 × İleri → onam → bitir (dilden bağımsız).
-      for (var i = 0; i < 7; i++) {
-        await tester.tap(find.byType(FilledButton).last);
-        await tester.pumpAndSettle();
-      }
-      await tester.tap(find.byType(Checkbox));
+      // Üç sayfa: hoş geldin → güvenlik + onam (onam işaretlenmeden ileri yok)
+      // → hazırım.
+      await tester.tap(find.byType(FilledButton).last);
+      await tester.pumpAndSettle();
+      // Onam kutusu güvenlik sayfasındaki son CheckboxListTile (dilden bağımsız).
+      await tester.ensureVisible(find.byType(CheckboxListTile).last);
+      await tester.tap(find.byType(CheckboxListTile).last);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byType(FilledButton).last);
       await tester.pumpAndSettle();
       await tester.tap(find.byType(FilledButton).last);
       await tester.pumpAndSettle();

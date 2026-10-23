@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "ಕೀಟೊ, ಚಟುವಟಿಕೆ ಮತ್ತು ನಿಮ್ಮ ಅಂಕಿಅಂಶಗಳು ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ",
+  "onboardingWelcomeBody": "ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಊಟವನ್ನು ದಾಖಲಿಸಿ, ನಡಿಗೆ ಅಥವಾ ಓಟದ ಸಮಯವನ್ನು ಅಳೆಯಿರಿ ಮತ್ತು ನಿಮ್ಮ ಅಂಕಿಅಂಶಗಳ ಅರ್ಥವನ್ನು ನೋಡಿ. ವೈಜ್ಞಾನಿಕ ಮೂಲಗಳು ಯಾವಾಗಲೂ ಒಂದು ಸ್ಪರ್ಶದ ದೂರದಲ್ಲಿವೆ.",
+  "onboardingSafetyPageTitle": "ಮೊದಲು ಸುರಕ್ಷತೆ",
+  "onboardingReadyTitle": "ಬಹುತೇಕ ಸಿದ್ಧ",
+  "onboardingReadyBody": "ಈ ಪುಟದಲ್ಲಿರುವ ಎಲ್ಲವೂ ಐಚ್ಛಿಕ. ನಂತರ ಸೆಟ್ಟಿಂಗ್ಸ್‌ನಲ್ಲಿ ಬದಲಾಯಿಸಬಹುದು.",
+  "todayStepsTitle": "ಇಂದಿನ 3 ಹಂತಗಳು",
+  "todayStepMeal": "ಊಟವನ್ನು ದಾಖಲಿಸಿ",
+  "todayStepActivity": "ಚಟುವಟಿಕೆಯನ್ನು ದಾಖಲಿಸಿ",
+  "todayStepMeasure": "ಅಳತೆ ಸೇರಿಸಿ",
+  "todayStepsProgress": "3 ರಲ್ಲಿ {done} ಪೂರ್ಣ",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "ಮೂರೂ ಹಂತಗಳು ಪೂರ್ಣ. ನಾಳೆ ಭೇಟಿಯಾಗೋಣ.",
+  "timerTitle": "ಚಟುವಟಿಕೆ ಟೈಮರ್",
+  "timerOpen": "ಟೈಮರ್ ತೆರೆಯಿರಿ",
+  "timerStart": "ಪ್ರಾರಂಭಿಸಿ",
+  "timerPause": "ವಿರಾಮ",
+  "timerResume": "ಮುಂದುವರಿಸಿ",
+  "timerFinish": "ಮುಗಿಸಿ ಮತ್ತು ಉಳಿಸಿ",
+  "timerHint": "ನಿಮ್ಮ ಸಮಯ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉಳಿಯುತ್ತದೆ. ಯಾವಾಗ ಬೇಕಾದರೂ ವಿರಾಮ ಅಥವಾ ನಿಲ್ಲಿಸಬಹುದು."
 }

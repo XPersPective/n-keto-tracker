@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "კეტო, აქტივობა და თქვენი ციფრები ერთ ადგილას",
+  "onboardingWelcomeBody": "წამებში ჩაწერეთ საკვები, დროში გაზომეთ სიარული ან სირბილი და ნახეთ, რას ნიშნავს თქვენი ციფრები. სამეცნიერო წყაროები ყოველთვის ერთი შეხებით ხელმისაწვდომია.",
+  "onboardingSafetyPageTitle": "ჯერ უსაფრთხოება",
+  "onboardingReadyTitle": "თითქმის მზად ხართ",
+  "onboardingReadyBody": "ამ გვერდზე ყველაფერი არასავალდებულოა. მოგვიანებით პარამეტრებში შეგიძლიათ შეცვალოთ.",
+  "todayStepsTitle": "დღევანდელი 3 ნაბიჯი",
+  "todayStepMeal": "საკვების ჩაწერა",
+  "todayStepActivity": "აქტივობის ჩაწერა",
+  "todayStepMeasure": "გაზომვის დამატება",
+  "todayStepsProgress": "{done} 3-დან შესრულებულია",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "სამივე ნაბიჯი შესრულებულია. ხვალ შევხვდებით.",
+  "timerTitle": "აქტივობის ტაიმერი",
+  "timerOpen": "ტაიმერის გახსნა",
+  "timerStart": "დაწყება",
+  "timerPause": "პაუზა",
+  "timerResume": "გაგრძელება",
+  "timerFinish": "დასრულება და შენახვა",
+  "timerHint": "თქვენი დრო ავტომატურად ინახება. ნებისმიერ დროს შეგიძლიათ პაუზა ან შეწყვეტა."
 }

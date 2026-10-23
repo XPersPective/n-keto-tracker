@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "কিটো, চলাচল আর আপনার সংখ্যা — এক জায়গায়",
+  "onboardingWelcomeBody": "সেকেন্ডের মধ্যে একটি খাবার লিখুন, হাঁটা বা দৌড়ের সময় মাপুন, আর আপনার সংখ্যার মানে দেখুন। বৈজ্ঞানিক সূত্র সবসময় এক ট্যাপ দূরে।",
+  "onboardingSafetyPageTitle": "আগে নিরাপত্তা",
+  "onboardingReadyTitle": "প্রায় হয়ে গেছে",
+  "onboardingReadyBody": "এই পাতার সবকিছু ঐচ্ছিক। পরে সেটিংসে বদলাতে পারবেন।",
+  "todayStepsTitle": "আজকের ৩টি ধাপ",
+  "todayStepMeal": "একটি খাবার লিখুন",
+  "todayStepActivity": "চলাচল লিখুন",
+  "todayStepMeasure": "একটি পরিমাপ যোগ করুন",
+  "todayStepsProgress": "{done}/৩ সম্পন্ন",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "৩টিই সম্পন্ন। আগামীকাল আবার দেখা হবে।",
+  "timerTitle": "কার্যকলাপ টাইমার",
+  "timerOpen": "টাইমার খুলুন",
+  "timerStart": "শুরু",
+  "timerPause": "বিরতি",
+  "timerResume": "চালিয়ে যান",
+  "timerFinish": "শেষ করে সংরক্ষণ",
+  "timerHint": "আপনার সময় স্বয়ংক্রিয়ভাবে সংরক্ষিত হয়। যেকোনো সময় বিরতি বা থামাতে পারবেন।"
 }

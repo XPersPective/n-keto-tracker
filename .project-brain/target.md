@@ -2,7 +2,9 @@
 Status: DRAFT
 
 ## Goal
-"devral tüm isleri bitir" — mevcut N Keto Tracker projesindeki açık işleri doğrula, güvenli ve yetkili kapsamda kalan işleri tamamla, doğrulanamayanları kanıtlı biçimde bloke et. (user, imported)
+Kullanıcının sözleri (2026-10-23): "Bu keto tracker hiç kullanıcı dostu değil; kullanıcı dostu olmak zorunda. Google Play'deki görsellerle uygulamanın kendisi arasında dağlar kadar fark var. Menü gösteriyorsan fotoğrafları olacak. Her şey mükemmel olmak zorunda. Bilimsellik ön planda ama kullanıcı dostu. Spor ve beslenmenin birçok ayağı olacak; hemen kullanıcıyı saracak bir uygulama. Arayüzü, frontend'i, her şeyi sen düşün ve yaz. Düzelt ve Google Play'e gönder, yayınla."
+
+Önceki hedef (imported): "devral tüm isleri bitir" — mevcut N Keto Tracker projesindeki açık işleri doğrula, güvenli ve yetkili kapsamda kalan işleri tamamla, doğrulanamayanları kanıtlı biçimde bloke et. (user, imported)
 
 ## Target State
 ### Uygulama

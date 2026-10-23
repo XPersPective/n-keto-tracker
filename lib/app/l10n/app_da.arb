@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, bevægelse og dine tal — samlet ét sted",
+  "onboardingWelcomeBody": "Registrer et måltid på få sekunder, tag tid på en gåtur eller løbetur, og se hvad dine tal betyder. Videnskabelige kilder er altid ét tryk væk.",
+  "onboardingSafetyPageTitle": "Sikkerhed først",
+  "onboardingReadyTitle": "Næsten klar",
+  "onboardingReadyBody": "Alt på denne side er valgfrit. Du kan ændre det senere under Indstillinger.",
+  "todayStepsTitle": "Dagens 3 trin",
+  "todayStepMeal": "Registrer et måltid",
+  "todayStepActivity": "Registrer bevægelse",
+  "todayStepMeasure": "Tilføj en måling",
+  "todayStepsProgress": "{done} af 3 gennemført",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Alle 3 gennemført. Vi ses i morgen.",
+  "timerTitle": "Aktivitetstimer",
+  "timerOpen": "Åbn timeren",
+  "timerStart": "Start",
+  "timerPause": "Pause",
+  "timerResume": "Fortsæt",
+  "timerFinish": "Afslut og gem",
+  "timerHint": "Din tid gemmes automatisk. Du kan sætte på pause eller stoppe når som helst."
 }

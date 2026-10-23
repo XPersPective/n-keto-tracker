@@ -557,5 +557,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, hareket ve ölçümlerin tek yerde",
+  "onboardingWelcomeBody": "Öğününü saniyeler içinde kaydet, yürüyüşünü ya da koşunu zamanla ve sayıların ne anlama geldiğini gör. Bilimsel kaynaklar her zaman bir dokunuş uzakta.",
+  "onboardingSafetyPageTitle": "Önce güvenlik",
+  "onboardingReadyTitle": "Neredeyse hazırsın",
+  "onboardingReadyBody": "Bu sayfadaki her şey isteğe bağlı. Daha sonra Ayarlar'dan değiştirebilirsin.",
+  "todayStepsTitle": "Bugünün 3 adımı",
+  "todayStepMeal": "Bir öğün kaydet",
+  "todayStepActivity": "Hareketini kaydet",
+  "todayStepMeasure": "Bir ölçüm ekle",
+  "todayStepsProgress": "{done} / 3 tamam",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3'ü de tamam. Yarın yine buradayız.",
+  "timerTitle": "Hareket zamanlayıcı",
+  "timerOpen": "Zamanlayıcıyı aç",
+  "timerStart": "Başlat",
+  "timerPause": "Duraklat",
+  "timerResume": "Devam et",
+  "timerFinish": "Bitir ve kaydet",
+  "timerHint": "Süren otomatik kaydedilir. İstediğin zaman duraklatıp durdurabilirsin."
 }

@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, Bewegung und deine Werte an einem Ort",
+  "onboardingWelcomeBody": "Erfasse eine Mahlzeit in Sekunden, stoppe einen Spaziergang oder Lauf und sieh, was deine Werte bedeuten. Wissenschaftliche Quellen sind immer nur einen Fingertipp entfernt.",
+  "onboardingSafetyPageTitle": "Sicherheit zuerst",
+  "onboardingReadyTitle": "Fast geschafft",
+  "onboardingReadyBody": "Alles auf dieser Seite ist optional. Du kannst es später in den Einstellungen ändern.",
+  "todayStepsTitle": "Deine 3 Schritte für heute",
+  "todayStepMeal": "Mahlzeit erfassen",
+  "todayStepActivity": "Bewegung erfassen",
+  "todayStepMeasure": "Messung hinzufügen",
+  "todayStepsProgress": "{done} von 3 erledigt",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Alle 3 erledigt. Bis morgen!",
+  "timerTitle": "Aktivitäts-Timer",
+  "timerOpen": "Timer öffnen",
+  "timerStart": "Start",
+  "timerPause": "Pause",
+  "timerResume": "Weiter",
+  "timerFinish": "Beenden und speichern",
+  "timerHint": "Deine Zeit wird automatisch gespeichert. Du kannst jederzeit pausieren oder beenden."
 }

@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "الكيتو والحركة وأرقامك، في مكان واحد",
+  "onboardingWelcomeBody": "سجّل وجبة في ثوانٍ، وقِس مدة المشي أو الجري، واعرف ما تعنيه أرقامك. المصادر العلمية على بُعد نقرة واحدة دائماً.",
+  "onboardingSafetyPageTitle": "السلامة أولاً",
+  "onboardingReadyTitle": "أنت على وشك الانتهاء",
+  "onboardingReadyBody": "كل ما في هذه الصفحة اختياري. يمكنك تغييره لاحقاً من الإعدادات.",
+  "todayStepsTitle": "خطوات اليوم الثلاث",
+  "todayStepMeal": "سجّل وجبة",
+  "todayStepActivity": "سجّل الحركة",
+  "todayStepMeasure": "أضف قياساً",
+  "todayStepsProgress": "{done} من 3 مكتملة",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "اكتملت الخطوات الثلاث. نراك غداً.",
+  "timerTitle": "مؤقت النشاط",
+  "timerOpen": "افتح المؤقت",
+  "timerStart": "ابدأ",
+  "timerPause": "توقف مؤقتاً",
+  "timerResume": "استئناف",
+  "timerFinish": "إنهاء وحفظ",
+  "timerHint": "يُحفظ وقتك تلقائياً. يمكنك الإيقاف المؤقت أو الإنهاء في أي وقت."
 }

@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, gerak, dan angka Anda dalam satu tempat",
+  "onboardingWelcomeBody": "Catat makanan dalam hitungan detik, ukur waktu jalan kaki atau lari, dan lihat arti angka Anda. Sumber ilmiah selalu hanya satu ketukan jauhnya.",
+  "onboardingSafetyPageTitle": "Keselamatan dulu",
+  "onboardingReadyTitle": "Hampir selesai",
+  "onboardingReadyBody": "Semua di halaman ini bersifat opsional. Anda bisa mengubahnya nanti di Pengaturan.",
+  "todayStepsTitle": "3 langkah hari ini",
+  "todayStepMeal": "Catat makanan",
+  "todayStepActivity": "Catat gerakan",
+  "todayStepMeasure": "Tambah pengukuran",
+  "todayStepsProgress": "{done} dari 3 selesai",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Ketiga langkah selesai. Sampai jumpa besok.",
+  "timerTitle": "Pengatur waktu aktivitas",
+  "timerOpen": "Buka pengatur waktu",
+  "timerStart": "Mulai",
+  "timerPause": "Jeda",
+  "timerResume": "Lanjutkan",
+  "timerFinish": "Selesai dan simpan",
+  "timerHint": "Waktu Anda disimpan otomatis. Anda bisa menjeda atau menghentikannya kapan saja."
 }

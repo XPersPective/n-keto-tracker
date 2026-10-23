@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/food_photo.dart';
 import '../../app/theme/surfaces.dart';
 import '../../core/database/database.dart';
 import '../../core/database/plan_repository.dart';
@@ -49,7 +50,9 @@ class PlanPage extends ConsumerStatefulWidget {
 class _PlanPageState extends ConsumerState<PlanPage> {
   MealPlanRow? _plan;
   List<MealPlanEntryRow> _entries = [];
-  Map<String, String> _recipeTitles = const {};
+  // Tarif başlıkları iki dilde; seçim build'de (uygulama dili) yapılır.
+  Map<String, String> _recipeTitlesTr = const {};
+  Map<String, String> _recipeTitlesEn = const {};
 
   Future<void> _load() async {
     final db = ref.read(appDatabaseProvider);
@@ -59,15 +62,19 @@ class _PlanPageState extends ConsumerState<PlanPage> {
     final entries = await (db.select(
       db.mealPlanEntry,
     )..where((e) => e.mealPlanId.equals(latest.id))).get();
-    final titles = <String, String>{
-      for (final r in await db.select(db.recipe).get())
-        r.id: (r.titleTr ?? r.titleEn ?? r.id),
+    final recipes = await db.select(db.recipe).get();
+    final titlesTr = <String, String>{
+      for (final r in recipes) r.id: (r.titleTr ?? r.titleEn ?? r.id),
+    };
+    final titlesEn = <String, String>{
+      for (final r in recipes) r.id: (r.titleEn ?? r.titleTr ?? r.id),
     };
     if (!mounted) return;
     setState(() {
       _plan = latest;
       _entries = entries;
-      _recipeTitles = titles;
+      _recipeTitlesTr = titlesTr;
+      _recipeTitlesEn = titlesEn;
     });
   }
 
@@ -155,6 +162,9 @@ class _PlanPageState extends ConsumerState<PlanPage> {
     MealPlanRow plan,
   ) {
     final loc = MaterialLocalizations.of(context);
+    final recipeTitles = Localizations.localeOf(context).languageCode == 'tr'
+        ? _recipeTitlesTr
+        : _recipeTitlesEn;
     final start = DateTime.tryParse(plan.startDateIso);
     final byDay = <int, List<MealPlanEntryRow>>{};
     for (final e in _entries) {
@@ -184,9 +194,12 @@ class _PlanPageState extends ConsumerState<PlanPage> {
                       ..sort((a, b) => a.mealType.compareTo(b.mealType))))
                   ListTile(
                     contentPadding: EdgeInsets.zero,
-                    leading: const Icon(Icons.restaurant_outlined),
+                    leading: FoodPhoto(
+                      id: e.recipeId ?? '',
+                      category: 'recipe',
+                    ),
                     // Tarif başlığı okunur etiket; eksikse kısa id (PB-011).
-                    title: Text(_recipeTitles[e.recipeId] ?? e.recipeId ?? ''),
+                    title: Text(recipeTitles[e.recipeId] ?? e.recipeId ?? ''),
                     subtitle: Text(
                       '${slotLabel(e.mealType)} · '
                       '${l10n.recipePerServing(servings(e.servings))}',

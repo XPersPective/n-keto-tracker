@@ -7,6 +7,7 @@ import '../../app/theme/surfaces.dart';
 import '../measurements/log_view_model.dart';
 import 'today_view_model.dart';
 import '../activity/activity_card.dart';
+import 'daily_checklist.dart';
 
 /// Bugün ekranı (MASTER_PROMPT §5.1): son ölçümler, günlük toplamlar,
 /// hızlı eylemler (≤3 dokunuş), tıbbi-olmayan alt bilgisi. Besin/ağırlık/
@@ -39,6 +40,11 @@ class TodayPage extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          SectionCard(
+            title: l10n.todayStepsTitle,
+            child: const DailyChecklist(),
+          ),
+          const SizedBox(height: 16),
           HeroCard(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

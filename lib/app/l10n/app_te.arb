@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "కీటో, కార్యకలాపం మరియు మీ సంఖ్యలు ఒకే చోట",
+  "onboardingWelcomeBody": "సెకన్లలో భోజనం నమోదు చేయండి, నడక లేదా పరుగు సమయాన్ని కొలవండి, మీ సంఖ్యల అర్థాన్ని చూడండి. శాస్త్రీయ మూలాలు ఎప్పుడూ ఒక్క స్పర్శ దూరంలోనే ఉంటాయి.",
+  "onboardingSafetyPageTitle": "ముందు భద్రత",
+  "onboardingReadyTitle": "దాదాపు సిద్ధం",
+  "onboardingReadyBody": "ఈ పేజీలో ఉన్నవన్నీ ఐచ్ఛికం. తర్వాత సెట్టింగ్స్‌లో మార్చుకోవచ్చు.",
+  "todayStepsTitle": "ఈరోజు 3 దశలు",
+  "todayStepMeal": "భోజనం నమోదు చేయండి",
+  "todayStepActivity": "కార్యకలాపం నమోదు చేయండి",
+  "todayStepMeasure": "కొలత జోడించండి",
+  "todayStepsProgress": "3లో {done} పూర్తయ్యాయి",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "మూడు దశలూ పూర్తయ్యాయి. రేపు కలుద్దాం.",
+  "timerTitle": "కార్యకలాప టైమర్",
+  "timerOpen": "టైమర్ తెరవండి",
+  "timerStart": "ప్రారంభించు",
+  "timerPause": "పాజ్",
+  "timerResume": "కొనసాగించు",
+  "timerFinish": "ముగించి సేవ్ చేయి",
+  "timerHint": "మీ సమయం ఆటోమేటిక్‌గా సేవ్ అవుతుంది. ఎప్పుడైనా పాజ్ లేదా ఆపవచ్చు."
 }

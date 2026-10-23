@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "ຄີໂຕ, ການເຄື່ອນໄຫວ ແລະ ຕົວເລກຂອງທ່ານ ໃນບ່ອນດຽວ",
+  "onboardingWelcomeBody": "ບັນທຶກອາຫານໃນບໍ່ເທົ່າໃດວິນາທີ, ຈັບເວລາການຍ່າງ ຫຼື ແລ່ນ ແລະ ເບິ່ງວ່າຕົວເລກຂອງທ່ານໝາຍເຖິງຫຍັງ. ແຫຼ່ງວິທະຍາສາດຢູ່ໃກ້ສະເໝີ ພຽງແຕະດຽວ.",
+  "onboardingSafetyPageTitle": "ຄວາມປອດໄພກ່ອນ",
+  "onboardingReadyTitle": "ເກືອບສຳເລັດແລ້ວ",
+  "onboardingReadyBody": "ທຸກຢ່າງໃນໜ້ານີ້ເປັນທາງເລືອກ. ທ່ານສາມາດປ່ຽນໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ.",
+  "todayStepsTitle": "3 ຂັ້ນຕອນຂອງມື້ນີ້",
+  "todayStepMeal": "ບັນທຶກອາຫານ",
+  "todayStepActivity": "ບັນທຶກການເຄື່ອນໄຫວ",
+  "todayStepMeasure": "ເພີ່ມການວັດແທກ",
+  "todayStepsProgress": "{done} ໃນ 3 ສຳເລັດແລ້ວ",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "ສຳເລັດທັງ 3 ຂັ້ນຕອນແລ້ວ. ພົບກັນມື້ອື່ນ.",
+  "timerTitle": "ຕົວຈັບເວລາກິດຈະກຳ",
+  "timerOpen": "ເປີດຕົວຈັບເວລາ",
+  "timerStart": "ເລີ່ມ",
+  "timerPause": "ຢຸດຊົ່ວຄາວ",
+  "timerResume": "ດຳເນີນຕໍ່",
+  "timerFinish": "ສິ້ນສຸດ ແລະ ບັນທຶກ",
+  "timerHint": "ເວລາຂອງທ່ານຖືກບັນທຶກອັດຕະໂນມັດ. ທ່ານສາມາດຢຸດຊົ່ວຄາວ ຫຼື ຢຸດໄດ້ທຸກເວລາ."
 }

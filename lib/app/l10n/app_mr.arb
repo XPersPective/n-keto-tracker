@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "केटो, हालचाल आणि तुमची आकडेवारी एकाच ठिकाणी",
+  "onboardingWelcomeBody": "सेकंदात जेवण नोंदवा, चालण्याची किंवा धावण्याची वेळ मोजा आणि तुमच्या आकड्यांचा अर्थ पहा. वैज्ञानिक स्रोत नेहमी एका टॅपवर आहेत.",
+  "onboardingSafetyPageTitle": "आधी सुरक्षितता",
+  "onboardingReadyTitle": "जवळजवळ तयार",
+  "onboardingReadyBody": "या पानावरील सर्व गोष्टी ऐच्छिक आहेत. नंतर सेटिंग्जमध्ये बदलू शकता.",
+  "todayStepsTitle": "आजची 3 पावले",
+  "todayStepMeal": "जेवण नोंदवा",
+  "todayStepActivity": "हालचाल नोंदवा",
+  "todayStepMeasure": "मोजमाप जोडा",
+  "todayStepsProgress": "3 पैकी {done} पूर्ण",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "तिन्ही पावले पूर्ण. उद्या भेटू.",
+  "timerTitle": "क्रियाकलाप टाइमर",
+  "timerOpen": "टाइमर उघडा",
+  "timerStart": "सुरू करा",
+  "timerPause": "थांबवा",
+  "timerResume": "पुन्हा सुरू करा",
+  "timerFinish": "पूर्ण करा आणि जतन करा",
+  "timerHint": "तुमचा वेळ आपोआप जतन होतो. कधीही थांबवू किंवा संपवू शकता."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, движење и вашите показатели — на едно место",
+  "onboardingWelcomeBody": "Запишете оброк за секунди, измерете одење или трчање и дознајте што значат вашите показатели. Научните извори се секогаш на допир.",
+  "onboardingSafetyPageTitle": "Прво безбедност",
+  "onboardingReadyTitle": "Речиси готово",
+  "onboardingReadyBody": "Сè на оваа страница е изборно. Подоцна можете да го промените во Поставки.",
+  "todayStepsTitle": "3 чекори за денес",
+  "todayStepMeal": "Запиши оброк",
+  "todayStepActivity": "Запиши движење",
+  "todayStepMeasure": "Додај мерење",
+  "todayStepsProgress": "Завршени {done} од 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Сите 3 чекори се завршени. До утре.",
+  "timerTitle": "Таймер за активност",
+  "timerOpen": "Отвори го таjмерот",
+  "timerStart": "Започни",
+  "timerPause": "Пауза",
+  "timerResume": "Продолжи",
+  "timerFinish": "Заврши и зачувај",
+  "timerHint": "Вашето време се зачувува автоматски. Можете да паузирате или да прекинете во секое време."
 }

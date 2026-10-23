@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, atividade e seus números, em um só lugar",
+  "onboardingWelcomeBody": "Registre uma refeição em segundos, cronometre uma caminhada ou corrida e veja o que os seus números significam. As fontes científicas estão sempre a um toque.",
+  "onboardingSafetyPageTitle": "Segurança em primeiro lugar",
+  "onboardingReadyTitle": "Quase pronto",
+  "onboardingReadyBody": "Tudo nesta página é opcional. Você pode mudar depois em Configurações.",
+  "todayStepsTitle": "Seus 3 passos de hoje",
+  "todayStepMeal": "Registrar refeição",
+  "todayStepActivity": "Registrar atividade",
+  "todayStepMeasure": "Adicionar medição",
+  "todayStepsProgress": "{done} de 3 concluídos",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Os 3 passos concluídos. Até amanhã!",
+  "timerTitle": "Cronômetro de atividade",
+  "timerOpen": "Abrir cronômetro",
+  "timerStart": "Iniciar",
+  "timerPause": "Pausar",
+  "timerResume": "Retomar",
+  "timerFinish": "Concluir e salvar",
+  "timerHint": "Seu tempo é salvo automaticamente. Você pode pausar ou parar a qualquer momento."
 }

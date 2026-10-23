@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, активность и ваши показатели — в одном месте",
+  "onboardingWelcomeBody": "Запишите приём пищи за несколько секунд, засеките прогулку или пробежку и узнайте, что значат ваши показатели. Научные источники всегда в одном касании.",
+  "onboardingSafetyPageTitle": "Сначала безопасность",
+  "onboardingReadyTitle": "Почти готово",
+  "onboardingReadyBody": "Всё на этой странице необязательно. Позже это можно изменить в Настройках.",
+  "todayStepsTitle": "Ваши 3 шага на сегодня",
+  "todayStepMeal": "Записать приём пищи",
+  "todayStepActivity": "Записать активность",
+  "todayStepMeasure": "Добавить измерение",
+  "todayStepsProgress": "Выполнено {done} из 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Все 3 шага выполнены. До завтра!",
+  "timerTitle": "Таймер активности",
+  "timerOpen": "Открыть таймер",
+  "timerStart": "Старт",
+  "timerPause": "Пауза",
+  "timerResume": "Продолжить",
+  "timerFinish": "Завершить и сохранить",
+  "timerHint": "Время сохраняется автоматически. Можно приостановить или остановить в любой момент."
 }

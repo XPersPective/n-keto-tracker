@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "کیٹو، سرگرمی اور آپ کے اعداد، ایک ہی جگہ",
+  "onboardingWelcomeBody": "چند سیکنڈ میں کھانا درج کریں، چہل قدمی یا دوڑ کا وقت ناپیں، اور دیکھیں کہ آپ کے اعداد کا کیا مطلب ہے۔ سائنسی ماخذ ہمیشہ ایک ٹیپ کے فاصلے پر ہیں۔",
+  "onboardingSafetyPageTitle": "پہلے حفاظت",
+  "onboardingReadyTitle": "تقریباً تیار",
+  "onboardingReadyBody": "اس صفحے کی ہر چیز اختیاری ہے۔ آپ بعد میں ترتیبات میں تبدیل کر سکتے ہیں۔",
+  "todayStepsTitle": "آج کے 3 مراحل",
+  "todayStepMeal": "کھانا درج کریں",
+  "todayStepActivity": "سرگرمی درج کریں",
+  "todayStepMeasure": "پیمائش شامل کریں",
+  "todayStepsProgress": "3 میں سے {done} مکمل",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "تینوں مراحل مکمل ہو گئے۔ کل ملتے ہیں۔",
+  "timerTitle": "سرگرمی ٹائمر",
+  "timerOpen": "ٹائمر کھولیں",
+  "timerStart": "شروع کریں",
+  "timerPause": "روکیں",
+  "timerResume": "جاری رکھیں",
+  "timerFinish": "ختم کریں اور محفوظ کریں",
+  "timerHint": "آپ کا وقت خود بخود محفوظ ہو جاتا ہے۔ آپ کسی بھی وقت روک یا بند کر سکتے ہیں۔"
 }

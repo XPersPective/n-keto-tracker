@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, идэвх болон таны үзүүлэлтүүд нэг дор",
+  "onboardingWelcomeBody": "Хоолоо секундэд бүртгэ, алхалт эсвэл гүйлтийн хугацааг хэмжиж, үзүүлэлтээ ойлгоорой. Шинжлэх ухааны эх сурвалж үргэлж нэг товшилтын зайд байна.",
+  "onboardingSafetyPageTitle": "Эхлээд аюулгүй байдал",
+  "onboardingReadyTitle": "Бараг бэлэн",
+  "onboardingReadyBody": "Энэ хуудасны бүх зүйл сонголттой. Дараа нь Тохиргоонд өөрчилж болно.",
+  "todayStepsTitle": "Өнөөдрийн 3 алхам",
+  "todayStepMeal": "Хоол бүртгэх",
+  "todayStepActivity": "Идэвх бүртгэх",
+  "todayStepMeasure": "Хэмжилт нэмэх",
+  "todayStepsProgress": "3-аас {done} хийгдсэн",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3 алхам бүгд хийгдлээ. Маргааш уулзацгаая.",
+  "timerTitle": "Идэвхийн таймер",
+  "timerOpen": "Таймерыг нээх",
+  "timerStart": "Эхлэх",
+  "timerPause": "Түр зогсоох",
+  "timerResume": "Үргэлжлүүлэх",
+  "timerFinish": "Дуусгаж хадгалах",
+  "timerHint": "Таны цаг автоматаар хадгалагдана. Хүссэн үедээ түр зогсоох эсвэл зогсоож болно."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, pohyb a vaše čísla na jednom místě",
+  "onboardingWelcomeBody": "Zapište jídlo během několika sekund, změřte chůzi nebo běh a zjistěte, co vaše čísla znamenají. Vědecké zdroje jsou vždy o jedno klepnutí dál.",
+  "onboardingSafetyPageTitle": "Nejdřív bezpečnost",
+  "onboardingReadyTitle": "Už skoro hotovo",
+  "onboardingReadyBody": "Vše na této stránce je volitelné. Později to můžete změnit v Nastavení.",
+  "todayStepsTitle": "3 kroky na dnes",
+  "todayStepMeal": "Zapsat jídlo",
+  "todayStepActivity": "Zapsat pohyb",
+  "todayStepMeasure": "Přidat měření",
+  "todayStepsProgress": "Splněno {done} z 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Všechny 3 kroky splněny. Na viděnou zítra.",
+  "timerTitle": "Časovač aktivity",
+  "timerOpen": "Otevřít časovač",
+  "timerStart": "Spustit",
+  "timerPause": "Pozastavit",
+  "timerResume": "Pokračovat",
+  "timerFinish": "Dokončit a uložit",
+  "timerHint": "Váš čas se ukládá automaticky. Kdykoli můžete pozastavit nebo zastavit."
 }

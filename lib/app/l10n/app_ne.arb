@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "केटो, गतिविधि र तपाईंका संख्याहरू एउटै ठाउँमा",
+  "onboardingWelcomeBody": "सेकेन्डभित्र खाना दर्ता गर्नुहोस्, हिँडाइ वा दौडको समय नाप्नुहोस् र तपाईंका संख्याको अर्थ हेर्नुहोस्। वैज्ञानिक स्रोतहरू सधैँ एक ट्याप टाढा छन्।",
+  "onboardingSafetyPageTitle": "पहिले सुरक्षा",
+  "onboardingReadyTitle": "लगभग तयार",
+  "onboardingReadyBody": "यो पृष्ठका सबै कुरा ऐच्छिक हुन्। पछि सेटिङमा परिवर्तन गर्न सक्नुहुन्छ।",
+  "todayStepsTitle": "आजका 3 चरण",
+  "todayStepMeal": "खाना दर्ता गर्नुहोस्",
+  "todayStepActivity": "गतिविधि दर्ता गर्नुहोस्",
+  "todayStepMeasure": "मापन थप्नुहोस्",
+  "todayStepsProgress": "3 मध्ये {done} पूरा",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "तीनवटै चरण पूरा भयो। भोलि भेटौँला।",
+  "timerTitle": "गतिविधि टाइमर",
+  "timerOpen": "टाइमर खोल्नुहोस्",
+  "timerStart": "सुरु गर्नुहोस्",
+  "timerPause": "रोक्नुहोस्",
+  "timerResume": "जारी राख्नुहोस्",
+  "timerFinish": "सकाउनुहोस् र सुरक्षित गर्नुहोस्",
+  "timerHint": "तपाईंको समय स्वतः सुरक्षित हुन्छ। जुनसुकै बेला रोक्न वा बन्द गर्न सक्नुहुन्छ।"
 }

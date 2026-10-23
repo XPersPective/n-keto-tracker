@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, movemento e os teus números, nun só lugar",
+  "onboardingWelcomeBody": "Rexistra unha comida en segundos, cronometra un paseo ou unha carreira e mira o que significan os teus números. As fontes científicas sempre están a un toque.",
+  "onboardingSafetyPageTitle": "Primeiro a seguridade",
+  "onboardingReadyTitle": "Case listo",
+  "onboardingReadyBody": "Todo o desta páxina é opcional. Podes cambialo máis tarde en Axustes.",
+  "todayStepsTitle": "Os 3 pasos de hoxe",
+  "todayStepMeal": "Rexistrar unha comida",
+  "todayStepActivity": "Rexistrar movemento",
+  "todayStepMeasure": "Engadir unha medición",
+  "todayStepsProgress": "{done} de 3 feitos",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Os 3 pasos feitos. Ata mañá.",
+  "timerTitle": "Cronómetro de actividade",
+  "timerOpen": "Abrir o cronómetro",
+  "timerStart": "Iniciar",
+  "timerPause": "Pausar",
+  "timerResume": "Retomar",
+  "timerFinish": "Rematar e gardar",
+  "timerHint": "O teu tempo gárdase automaticamente. Podes pausar ou parar cando queiras."
 }

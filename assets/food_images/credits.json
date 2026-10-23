@@ -1,0 +1,810 @@
+{
+  "items": {
+    "seed-beef-ground-fatty": {
+      "title": "File:Standing-rib-roast.jpg",
+      "article": "Beef",
+      "author": "Michael C. Berch, aka MCB at en.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Standing-rib-roast.jpg"
+    },
+    "seed-beef-ground-lean": {
+      "title": "File:Standing-rib-roast.jpg",
+      "article": "Beef",
+      "author": "Michael C. Berch, aka MCB at en.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Standing-rib-roast.jpg"
+    },
+    "seed-beef-steak-sirloin": {
+      "title": "File:Standing-rib-roast.jpg",
+      "article": "Beef",
+      "author": "Michael C. Berch, aka MCB at en.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Standing-rib-roast.jpg"
+    },
+    "seed-chicken-breast": {
+      "title": "File:Male_and_female_chicken_sitting_together.jpg",
+      "article": "Chicken",
+      "author": "Andrei Niemimäki from Turku, Finland",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Male_and_female_chicken_sitting_together.jpg"
+    },
+    "seed-chicken-thigh": {
+      "title": "File:Male_and_female_chicken_sitting_together.jpg",
+      "article": "Chicken",
+      "author": "Andrei Niemimäki from Turku, Finland",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Male_and_female_chicken_sitting_together.jpg"
+    },
+    "seed-chicken-thigh-skin": {
+      "title": "File:Male_and_female_chicken_sitting_together.jpg",
+      "article": "Chicken",
+      "author": "Andrei Niemimäki from Turku, Finland",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Male_and_female_chicken_sitting_together.jpg"
+    },
+    "seed-sardine": {
+      "title": "File:Sardines_-_鰯(いわし).jpg",
+      "article": "Sardines",
+      "author": "TANAKA Juuyoh (田中十洋)",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sardines_-_%E9%B0%AF(%E3%81%84%E3%82%8F%E3%81%97).jpg"
+    },
+    "seed-anchovy": {
+      "title": "File:Anchovy_closeup.jpg",
+      "article": "Anchovy",
+      "author": "unknown",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Anchovy_closeup.jpg"
+    },
+    "seed-sea-bream": {
+      "title": "File:Bream.jpg",
+      "article": "bream",
+      "author": "GoOdCoNtEnT at English Wikipedia",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Bream.jpg"
+    },
+    "seed-mackerel": {
+      "title": "File:Trachurus_declivis.jpg",
+      "article": "Mackerel",
+      "author": "Richard Ling",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Trachurus_declivis.jpg"
+    },
+    "seed-trout": {
+      "title": "File:Salmo_trutta.jpg",
+      "article": "Trout",
+      "author": "Eric Engbretson for U.S. Fish and Wildlife Service",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Salmo_trutta.jpg"
+    },
+    "seed-mussel": {
+      "title": "File:CornishMussels.JPG",
+      "article": "Mussels",
+      "author": "Wilson44691 at English Wikipedia",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:CornishMussels.JPG"
+    },
+    "seed-pastirma": {
+      "title": "File:Standing-rib-roast.jpg",
+      "article": "beef",
+      "author": "Michael C. Berch, aka MCB at en.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Standing-rib-roast.jpg"
+    },
+    "seed-egg": {
+      "title": "File:Adolphe_Millot_oeufs-fixed.jpg",
+      "article": "Egg",
+      "author": "Adolphe Millot",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Adolphe_Millot_oeufs-fixed.jpg"
+    },
+    "seed-egg-white": {
+      "title": "File:Chicken_egg01_monovular.jpg",
+      "article": "Egg white",
+      "author": "miya",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chicken_egg01_monovular.jpg"
+    },
+    "seed-egg-yolk": {
+      "title": "File:Raw_egg.jpg",
+      "article": "Egg yolk",
+      "author": "by jefras a.k.a Joăo Estęvăo A. de Freitas. \"There are no usage restrictions for this photo.\"",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Raw_egg.jpg"
+    },
+    "seed-white-cheese": {
+      "title": "File:Cheese_platter.jpg",
+      "article": "cheese",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cheese_platter.jpg"
+    },
+    "seed-kasar-cheese": {
+      "title": "File:Cacio_cavallo_with_slices.jpg",
+      "article": "Kashar cheese",
+      "author": "Peachyeung316",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cacio_cavallo_with_slices.jpg"
+    },
+    "seed-cheddar": {
+      "title": "File:Somerset-Cheddar.jpg",
+      "article": "Cheddar cheese",
+      "author": "J.P.Lon",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Somerset-Cheddar.jpg"
+    },
+    "seed-parmesan": {
+      "title": "File:Parmigiano_Reggiano,_Italien,_Europäische_Union.jpg",
+      "article": "Parmesan",
+      "author": "Naturpuur",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Parmigiano_Reggiano,_Italien,_Europ%C3%A4ische_Union.jpg"
+    },
+    "seed-mozzarella": {
+      "title": "File:Mozzarella_di_bufala3.jpg",
+      "article": "Mozzarella",
+      "author": "Popo le Chien",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mozzarella_di_bufala3.jpg"
+    },
+    "seed-tulum-cheese": {
+      "title": "File:Turkish_cheese._Istanbul,_Turkey,_Southeastern_Europe.jpg",
+      "article": "Tulum cheese",
+      "author": "Mstyslav Chernov",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Turkish_cheese._Istanbul,_Turkey,_Southeastern_Europe.jpg"
+    },
+    "seed-greek-yogurt": {
+      "title": "File:Joghurt.jpg",
+      "article": "yogurt",
+      "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Joghurt.jpg"
+    },
+    "seed-yogurt-whole": {
+      "title": "File:Joghurt.jpg",
+      "article": "Yogurt",
+      "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Joghurt.jpg"
+    },
+    "seed-whole-milk": {
+      "title": "File:Glass_of_Milk_(33657535532).jpg",
+      "article": "Milk",
+      "author": "NIAID",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Glass_of_Milk_(33657535532).jpg"
+    },
+    "seed-kaymak": {
+      "title": "File:Clotted_cream_(cropped).JPG",
+      "article": "Clotted cream",
+      "author": "Biggishben",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Clotted_cream_(cropped).JPG"
+    },
+    "seed-butter": {
+      "title": "File:Švédský_koláč_naruby_904_(cropped).JPG",
+      "article": "Butter",
+      "author": "Matěj Baťha",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%C5%A0v%C3%A9dsk%C3%BD_kol%C3%A1%C4%8D_naruby_904_(cropped).JPG"
+    },
+    "seed-olive-oil": {
+      "title": "File:Oliven_V1.jpg",
+      "article": "Olive oil",
+      "author": "Poyraz 72",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Oliven_V1.jpg"
+    },
+    "seed-almond": {
+      "title": "File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg",
+      "article": "Almonds",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+    },
+    "seed-walnut": {
+      "title": "File:Walnuts_-_whole_and_open_with_halved_kernel.jpg",
+      "article": "Walnuts",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Walnuts_-_whole_and_open_with_halved_kernel.jpg"
+    },
+    "seed-hazelnut": {
+      "title": "File:Hazelnuts_(Corylus_avellana)_-_whole_with_kernels.jpg",
+      "article": "Hazelnuts",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Hazelnuts_(Corylus_avellana)_-_whole_with_kernels.jpg"
+    },
+    "seed-pistachio": {
+      "title": "File:Pistachio_vera.jpg",
+      "article": "Pistachios",
+      "author": "THOR",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Pistachio_vera.jpg"
+    },
+    "seed-peanut": {
+      "title": "File:Arachis_hypogaea_-_Köhler–s_Medizinal-Pflanzen-163.jpg",
+      "article": "Peanut",
+      "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Arachis_hypogaea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg"
+    },
+    "seed-cashew": {
+      "title": "File:Cashew_apples.jpg",
+      "article": "Cashews",
+      "author": "Abhishek Jacob",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg"
+    },
+    "seed-sunflower-seed": {
+      "title": "File:Sunflower_Seeds_Kaldari.jpg",
+      "article": "Sunflower seeds",
+      "author": "Kaldari",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Sunflower_Seeds_Kaldari.jpg"
+    },
+    "seed-pumpkin-seed": {
+      "title": "File:Pepita_de_calabaza.jpg",
+      "article": "Pumpkin seeds",
+      "author": "Dmitry Makeev",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Pepita_de_calabaza.jpg"
+    },
+    "seed-peanut-butter": {
+      "title": "File:2020-03-24_20_57_22_An_open_jar_of_Skippy_Creamy_Peanut_Butter_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg",
+      "article": "Peanut butter",
+      "author": "Famartin",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:2020-03-24_20_57_22_An_open_jar_of_Skippy_Creamy_Peanut_Butter_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg"
+    },
+    "seed-tahini": {
+      "title": "File:Tahina.JPG",
+      "article": "Tahini",
+      "author": "Gilabrand",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tahina.JPG"
+    },
+    "seed-chia": {
+      "title": "File:Seed_of_chia_(Salvia_hispanica)Salvia_hispanica_group.jpg",
+      "article": "Chia seeds",
+      "author": "Keegan Fields",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Seed_of_chia_(Salvia_hispanica)Salvia_hispanica_group.jpg"
+    },
+    "seed-lettuce": {
+      "title": "File:Iceberg_lettuce_in_SB.jpg",
+      "article": "Lettuce",
+      "author": "en:User:Geographer",
+      "license": "CC BY 1.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_in_SB.jpg"
+    },
+    "seed-arugula": {
+      "title": "File:Eruca_sativa_sl11.jpg",
+      "article": "Arugula",
+      "author": "Stefan.lefnaer",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Eruca_sativa_sl11.jpg"
+    },
+    "seed-cucumber": {
+      "title": "File:ARS_cucumber.jpg",
+      "article": "Cucumber",
+      "author": "Stephen Ausmus, USDA ARS",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:ARS_cucumber.jpg"
+    },
+    "seed-tomato": {
+      "title": "File:Tomato_je.jpg",
+      "article": "Tomato",
+      "author": "Softeis",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tomato_je.jpg"
+    },
+    "seed-eggplant": {
+      "title": "File:Solanum_melongena_24_08_2012_(1).JPG",
+      "article": "Eggplant",
+      "author": "Joydeep",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Solanum_melongena_24_08_2012_(1).JPG"
+    },
+    "seed-zucchini": {
+      "title": "File:CSA-Striped-Zucchini.jpg",
+      "article": "Zucchini",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:CSA-Striped-Zucchini.jpg"
+    },
+    "seed-cauliflower": {
+      "title": "File:Chou-fleur_02.jpg",
+      "article": "Cauliflower",
+      "author": "Coyau",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chou-fleur_02.jpg"
+    },
+    "seed-green-beans": {
+      "title": "File:French_beans_J1.JPG",
+      "article": "beans",
+      "author": "Jamain",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:French_beans_J1.JPG"
+    },
+    "seed-okra": {
+      "title": "File:Hong_Kong_Okra_Aug_25_2012.JPG",
+      "article": "Okra",
+      "author": "Earth100",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Okra_Aug_25_2012.JPG"
+    },
+    "seed-mushroom": {
+      "title": "File:Sparrige_Schüppling_(Pholiota_squarrosa).jpg",
+      "article": "Mushroom",
+      "author": "Holger Krisp",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sparrige_Sch%C3%BCppling_(Pholiota_squarrosa).jpg"
+    },
+    "seed-onion": {
+      "title": "File:Mixed_onions.jpg",
+      "article": "Onion",
+      "author": "Colin",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mixed_onions.jpg"
+    },
+    "seed-leek": {
+      "title": "File:Leek_on_white_background_-_0947.jpg",
+      "article": "Leek",
+      "author": "Amada44",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Leek_on_white_background_-_0947.jpg"
+    },
+    "seed-carrot": {
+      "title": "File:Vegetable-Carrot-Bundle-wStalks.jpg",
+      "article": "Carrot",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg"
+    },
+    "seed-beetroot": {
+      "title": "File:Detroitdarkredbeets.png",
+      "article": "Beetroot",
+      "author": "BriannaWalther",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Detroitdarkredbeets.png"
+    },
+    "seed-avocado": {
+      "title": "File:Persea_americana_fruit_2.JPG",
+      "article": "Avocado",
+      "author": "B.navez",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG"
+    },
+    "seed-spring-onion": {
+      "title": "File:CSA-Red-Spring-Onions.jpg",
+      "article": "Spring onion",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:CSA-Red-Spring-Onions.jpg"
+    },
+    "seed-strawberry": {
+      "title": "File:Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg",
+      "article": "Strawberry",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg"
+    },
+    "seed-raspberry": {
+      "title": "File:Raspberry_-_halved_(Rubus_idaeus).jpg",
+      "article": "Raspberry",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Raspberry_-_halved_(Rubus_idaeus).jpg"
+    },
+    "seed-blackberry": {
+      "title": "File:Ripe,_ripening,_and_green_blackberries.jpg",
+      "article": "Blackberry",
+      "author": "Ragesoss",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ripe,_ripening,_and_green_blackberries.jpg"
+    },
+    "seed-lemon": {
+      "title": "File:P1030323.JPG",
+      "article": "Lemon",
+      "author": "Elena Chochkova",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:P1030323.JPG"
+    },
+    "seed-grapes": {
+      "title": "File:Grapes,_Rostov-on-Don,_Russia.jpg",
+      "article": "Grapes",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Grapes,_Rostov-on-Don,_Russia.jpg"
+    },
+    "seed-watermelon": {
+      "title": "File:Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg",
+      "article": "Watermelon",
+      "author": "Fred Hsu (Wikipedia:User:Fred Hsu on en.wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg"
+    },
+    "seed-pomegranate": {
+      "title": "File:Pomegranate_Juice_(2019).jpg",
+      "article": "Pomegranate",
+      "author": "Augustus Binu : flickr",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Pomegranate_Juice_(2019).jpg"
+    },
+    "seed-raisins": {
+      "title": "File:Raisins_01.jpg",
+      "article": "Raisins",
+      "author": "Paweł Kuźniar (Jojo_1, Jojo)",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Raisins_01.jpg"
+    },
+    "seed-lentil-cooked": {
+      "title": "File:3_types_of_lentil.png",
+      "article": "Lentils",
+      "author": "User:Justinc",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:3_types_of_lentil.png"
+    },
+    "seed-kidney-bean-cooked": {
+      "title": "File:French_beans_J1.JPG",
+      "article": "beans",
+      "author": "Jamain",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:French_beans_J1.JPG"
+    },
+    "seed-white-bread": {
+      "title": "File:Korb_mit_Brötchen.JPG",
+      "article": "Bread",
+      "author": "3268zauber",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Korb_mit_Br%C3%B6tchen.JPG"
+    },
+    "seed-whole-wheat-bread": {
+      "title": "File:Korb_mit_Brötchen.JPG",
+      "article": "Bread",
+      "author": "3268zauber",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Korb_mit_Br%C3%B6tchen.JPG"
+    },
+    "seed-bulgur-cooked": {
+      "title": "File:Bulgur.jpg",
+      "article": "Bulgur",
+      "author": "Myself",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Bulgur.jpg"
+    },
+    "seed-pasta-cooked": {
+      "title": "File:(Pasta)_by_David_Adam_Kess_(pic.2).jpg",
+      "article": "Pasta",
+      "author": "David Adam Kess",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:(Pasta)_by_David_Adam_Kess_(pic.2).jpg"
+    },
+    "seed-couscous-cooked": {
+      "title": "File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+      "article": "Couscous",
+      "author": "Lmmima",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg"
+    },
+    "seed-oatmeal-dry": {
+      "title": "File:AvenaSativa3.jpg",
+      "article": "Oats",
+      "author": "Christian Fischer",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:AvenaSativa3.jpg"
+    },
+    "seed-potato-boiled": {
+      "title": "File:Patates.jpg",
+      "article": "Potato",
+      "author": "Scott Bauer, USDA ARS",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+    },
+    "seed-sweet-potato": {
+      "title": "File:Ipomoea_batatas_006.JPG",
+      "article": "Sweet potato",
+      "author": "Llez",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG"
+    },
+    "seed-turkish-coffee": {
+      "title": "File:Türk_Kahvesi_-_Bakir_Cezve.jpg",
+      "article": "Turkish coffee",
+      "author": "Eaeeae",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg"
+    },
+    "seed-black-tea": {
+      "title": "File:Cup_of_black_tea.JPG",
+      "article": "Black tea",
+      "author": "AntanO",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG"
+    },
+    "seed-orange-juice": {
+      "title": "File:Orangejuice.jpg",
+      "article": "Orange juice",
+      "author": "rawpixel.com",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Orangejuice.jpg"
+    },
+    "seed-honey": {
+      "title": "File:Runny_hunny.jpg",
+      "article": "Honey",
+      "author": "Scott Bauer, USDA ARS",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg"
+    },
+    "seed-table-sugar": {
+      "title": "File:Sucre_blanc_cassonade_complet_rapadura.jpg",
+      "article": "Sugar",
+      "author": "Romain Behar",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Sucre_blanc_cassonade_complet_rapadura.jpg"
+    },
+    "seed-milk-chocolate": {
+      "title": "File:Three_Bars_(1).jpg",
+      "article": "Chocolate",
+      "author": "Lynnereal",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg"
+    },
+    "seed-dark-chocolate-85": {
+      "title": "File:Green_and_Black's_dark_chocolate_bar_2.jpg",
+      "article": "Dark chocolate",
+      "author": "Mx. Granger",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg"
+    },
+    "seed-potato-chips": {
+      "title": "File:Potato-Chips.jpg",
+      "article": "Potato chips",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Potato-Chips.jpg"
+    },
+    "seed-popcorn": {
+      "title": "File:Popcorn_-_Studio_-_2011.jpg",
+      "article": "Popcorn",
+      "author": "Bill Ebbesen",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Popcorn_-_Studio_-_2011.jpg"
+    },
+    "seed-cauliflower-rice": {
+      "title": "File:Chou-fleur_02.jpg",
+      "article": "Cauliflower rice",
+      "author": "Coyau",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chou-fleur_02.jpg"
+    },
+    "seed-bone-broth": {
+      "title": "File:Making_stock_for_pho_bo.jpg",
+      "article": "Bone broth",
+      "author": "Blue Lotus",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Making_stock_for_pho_bo.jpg"
+    },
+    "seed-tzatziki": {
+      "title": "File:Cacik-1.jpg",
+      "article": "Tzatziki",
+      "author": "Rainer Zenz",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cacik-1.jpg"
+    },
+    "seed-humus": {
+      "title": "File:Lebanese_style_hummus.jpg",
+      "article": "Hummus",
+      "author": "Beyrouthhh at English Wikipedia",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg"
+    },
+    "seed-mayonnaise": {
+      "title": "File:Mayonnaise_(1).jpg",
+      "article": "Mayonnaise",
+      "author": "jules",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mayonnaise_(1).jpg"
+    },
+    "seed-apple-cider-vinegar": {
+      "title": "File:Apple_Cider_Vinegar_(4108653248).jpg",
+      "article": "Apple cider vinegar",
+      "author": "Veganbaking.net from USA",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Apple_Cider_Vinegar_(4108653248).jpg"
+    },
+    "seed-protein-powder-whey": {
+      "title": "File:Iron_powder.JPG",
+      "article": "powder",
+      "author": "Anonimski",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Iron_powder.JPG"
+    },
+    "seed-gouda": {
+      "title": "File:Chesses_gouda_affinage.JPG",
+      "article": "Gouda cheese",
+      "author": "No machine-readable author provided. Alpha.prim~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Chesses_gouda_affinage.JPG"
+    },
+    "seed-beef-salami": {
+      "title": "File:Salame_di_Sauris.jpg",
+      "article": "salami",
+      "author": "Petar43",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Salame_di_Sauris.jpg"
+    },
+    "seed-red-lentil-soup": {
+      "title": "File:Asparagus_soup_(spargelsuppe).jpg",
+      "article": "soup",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg"
+    },
+    "seed-calamari-fried": {
+      "title": "File:Babbo-_Squid_Ink_pasta_with_green_chilis,_rock_shrimp_and_guanciale.jpg",
+      "article": "Fried calamari",
+      "author": "Jeffrey_Allen",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Babbo-_Squid_Ink_pasta_with_green_chilis,_rock_shrimp_and_guanciale.jpg"
+    },
+    "seed-psyllium": {
+      "title": "File:Plantago_afra_kz6.jpg",
+      "article": "Psyllium husk",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Plantago_afra_kz6.jpg"
+    },
+    "seed-almond-flour": {
+      "title": "File:Almond_meal_by_hand.jpg",
+      "article": "Almond flour",
+      "author": "Yun Huang Yong",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Almond_meal_by_hand.jpg"
+    },
+    "seed-coconut-flour": {
+      "title": "File:Cocos_nucifera_-_Köhler–s_Medizinal-Pflanzen-187.jpg",
+      "article": "Coconut flour",
+      "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg"
+    },
+    "seed-tomato-paste": {
+      "title": "File:Tomato_paste_on_spoon.jpg",
+      "article": "Tomato paste",
+      "author": "SKopp",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tomato_paste_on_spoon.jpg"
+    },
+    "seed-recipe-cheese-omelette": {
+      "title": "File:Gorgonzola_+_Bacon_Omelette_@_Omelegg_@_Amsterdam_(16600947041).jpg",
+      "article": "omelette",
+      "author": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Gorgonzola_%2B_Bacon_Omelette_@_Omelegg_@_Amsterdam_(16600947041).jpg"
+    },
+    "seed-recipe-beef-saute": {
+      "title": "File:Leek-Sauté.JPG",
+      "article": "sauté",
+      "author": "Jasenlee",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Leek-Saut%C3%A9.JPG"
+    },
+    "seed-recipe-walnut-yogurt": {
+      "title": "File:Walnuts_-_whole_and_open_with_halved_kernel.jpg",
+      "article": "walnuts",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Walnuts_-_whole_and_open_with_halved_kernel.jpg"
+    },
+    "seed-recipe-chicken-soup": {
+      "title": "File:Chicken_Noodle_Soup.jpg",
+      "article": "Chicken soup",
+      "author": "Hoyabird8",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chicken_Noodle_Soup.jpg"
+    },
+    "seed-recipe-baked-thigh-zucchini": {
+      "title": "File:CSA-Striped-Zucchini.jpg",
+      "article": "zucchini",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:CSA-Striped-Zucchini.jpg"
+    },
+    "seed-recipe-tuna-salad": {
+      "title": "File:Tuna_fish_sandwiches_for_the_National_School_Lunch_Program_(1).jpg",
+      "article": "Tuna salad",
+      "author": "U.S. Department of Agriculture",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Tuna_fish_sandwiches_for_the_National_School_Lunch_Program_(1).jpg"
+    },
+    "seed-recipe-veggie-omelette": {
+      "title": "File:Gorgonzola_+_Bacon_Omelette_@_Omelegg_@_Amsterdam_(16600947041).jpg",
+      "article": "omelette",
+      "author": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Gorgonzola_%2B_Bacon_Omelette_@_Omelegg_@_Amsterdam_(16600947041).jpg"
+    },
+    "seed-recipe-almond-bread": {
+      "title": "File:Korb_mit_Brötchen.JPG",
+      "article": "bread",
+      "author": "3268zauber",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Korb_mit_Br%C3%B6tchen.JPG"
+    }
+  },
+  "missing": [
+    "seed-lamb-chop",
+    "seed-lamb-leg-roast",
+    "seed-turkey-breast",
+    "seed-salmon",
+    "seed-sardine",
+    "seed-sea-bass",
+    "seed-tuna-canned",
+    "seed-shrimp",
+    "seed-ayran",
+    "seed-butter",
+    "seed-coconut-oil",
+    "seed-sunflower-oil",
+    "seed-olives-green",
+    "seed-olives-black",
+    "seed-flaxseed",
+    "seed-spinach",
+    "seed-kale",
+    "seed-parsley",
+    "seed-dill",
+    "seed-green-pepper",
+    "seed-broccoli",
+    "seed-cabbage",
+    "seed-garlic",
+    "seed-olive-veg",
+    "seed-asparagus",
+    "seed-celeriac",
+    "seed-blueberry",
+    "seed-orange",
+    "seed-apple",
+    "seed-pear",
+    "seed-banana",
+    "seed-melon",
+    "seed-peach",
+    "seed-apricot",
+    "seed-fig",
+    "seed-dates",
+    "seed-dried-apricot",
+    "seed-dried-fig",
+    "seed-chickpea-cooked",
+    "seed-simit",
+    "seed-corn",
+    "seed-cola",
+    "seed-baklava",
+    "seed-grilled-meatball",
+    "seed-mustard",
+    "seed-kefir",
+    "seed-labneh",
+    "seed-camembert",
+    "seed-chicken-shish",
+    "seed-pickles",
+    "seed-cabbage-pickle",
+    "seed-recipe-salmon-broccoli",
+    "seed-recipe-chicken-salad",
+    "seed-recipe-cauliflower-mash-meatballs",
+    "seed-recipe-avocado-egg",
+    "seed-recipe-cheese-walnut-plate",
+    "seed-recipe-shrimp-pan",
+    "seed-recipe-baked-lamb",
+    "seed-recipe-spinach-eggs",
+    "seed-menemen-no-bread",
+    "seed-recipe-menemen",
+    "seed-recipe-broccoli-soup",
+    "seed-recipe-chicken-mushroom",
+    "seed-recipe-salmon-salad",
+    "seed-pumpkin-veg",
+    "seed-rice-white-cooked",
+    "seed-sucuk",
+    "seed-beef-liver",
+    "seed-heavy-cream"
+  ]
+}

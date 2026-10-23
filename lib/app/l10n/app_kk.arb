@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, қозғалыс және сіздің көрсеткіштеріңіз бір жерде",
+  "onboardingWelcomeBody": "Тамақты секундтарда жазыңыз, серуен немесе жүгіруді уақытпен өлшеңіз және көрсеткіштеріңіз нені білдіретінін көріңіз. Ғылыми деректер әрқашан бір түрту қашықтықта.",
+  "onboardingSafetyPageTitle": "Алдымен қауіпсіздік",
+  "onboardingReadyTitle": "Дерлік дайын",
+  "onboardingReadyBody": "Бұл беттегі барлығы міндетті емес. Кейін Параметрлерде өзгерте аласыз.",
+  "todayStepsTitle": "Бүгінгі 3 қадам",
+  "todayStepMeal": "Тамақты жазу",
+  "todayStepActivity": "Қозғалысты жазу",
+  "todayStepMeasure": "Өлшем қосу",
+  "todayStepsProgress": "3-тен {done} орындалды",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3 қадамның бәрі орындалды. Ертең кездесеміз.",
+  "timerTitle": "Белсенділік таймері",
+  "timerOpen": "Таймерді ашу",
+  "timerStart": "Бастау",
+  "timerPause": "Үзіліс",
+  "timerResume": "Жалғастыру",
+  "timerFinish": "Аяқтау және сақтау",
+  "timerHint": "Уақытыңыз автоматты түрде сақталады. Кез келген уақытта үзе немесе тоқтата аласыз."
 }

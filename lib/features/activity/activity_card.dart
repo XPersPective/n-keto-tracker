@@ -73,11 +73,16 @@ class ActivityCard extends ConsumerWidget {
           },
         ),
         const SizedBox(height: 12),
-        FilledButton.tonalIcon(
-          style: FilledButton.styleFrom(minimumSize: const Size(48, 48)),
+        FilledButton.icon(
+          style: FilledButton.styleFrom(minimumSize: const Size(48, 56)),
+          onPressed: () => context.push('/activity/timer'),
+          icon: const Icon(Icons.timer_outlined),
+          label: Text(l10n.timerOpen),
+        ),
+        TextButton(
+          style: TextButton.styleFrom(minimumSize: const Size(48, 48)),
           onPressed: () => context.push('/activity/new'),
-          icon: const Icon(Icons.add),
-          label: Text(l10n.activityAddButton),
+          child: Text(l10n.activityAddButton),
         ),
       ],
     );

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "کتو، حرکت و عددهایتان، در یک جا",
+  "onboardingWelcomeBody": "یک وعده را در چند ثانیه ثبت کنید، مدت پیاده‌روی یا دویدن را اندازه بگیرید و ببینید عددهایتان یعنی چه. منابع علمی همیشه یک لمس فاصله دارند.",
+  "onboardingSafetyPageTitle": "اول ایمنی",
+  "onboardingReadyTitle": "تقریباً آماده‌اید",
+  "onboardingReadyBody": "همه موارد این صفحه اختیاری است. بعداً می‌توانید در تنظیمات تغییرشان دهید.",
+  "todayStepsTitle": "سه گام امروز",
+  "todayStepMeal": "ثبت یک وعده",
+  "todayStepActivity": "ثبت حرکت",
+  "todayStepMeasure": "افزودن یک اندازه‌گیری",
+  "todayStepsProgress": "{done} از ۳ انجام شد",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "هر سه گام انجام شد. فردا می‌بینمت.",
+  "timerTitle": "زمان‌سنج فعالیت",
+  "timerOpen": "باز کردن زمان‌سنج",
+  "timerStart": "شروع",
+  "timerPause": "توقف موقت",
+  "timerResume": "ادامه",
+  "timerFinish": "پایان و ذخیره",
+  "timerHint": "زمانتان به‌طور خودکار ذخیره می‌شود. هر وقت خواستید می‌توانید متوقف یا تمام کنید."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, hərəkət və rəqəmləriniz — bir yerdə",
+  "onboardingWelcomeBody": "Yeməyi saniyələr içində qeyd edin, gəzinti və ya qaçışın vaxtını ölçün və rəqəmlərin nə demək olduğunu görün. Elmi mənbələr həmişə bir toxunuş məsafəsindədir.",
+  "onboardingSafetyPageTitle": "Əvvəl təhlükəsizlik",
+  "onboardingReadyTitle": "Az qaldı",
+  "onboardingReadyBody": "Bu səhifədəki hər şey isteğe bağlıdır. Sonra Ayarlar-dan dəyişə bilərsiniz.",
+  "todayStepsTitle": "Bu günün 3 addımı",
+  "todayStepMeal": "Yemək qeyd et",
+  "todayStepActivity": "Hərəkəti qeyd et",
+  "todayStepMeasure": "Ölçü əlavə et",
+  "todayStepsProgress": "3-dən {done} tamamlandı",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Hər üç addım tamamlandı. Sabah görüşərik.",
+  "timerTitle": "Fəaliyyət taymeri",
+  "timerOpen": "Taymeri aç",
+  "timerStart": "Başla",
+  "timerPause": "Fasilə",
+  "timerResume": "Davam et",
+  "timerFinish": "Bitir və yadda saxla",
+  "timerHint": "Vaxtınız avtomatik yadda saxlanılır. İstənilən vaxt fasilə verə və ya dayandıra bilərsiniz."
 }

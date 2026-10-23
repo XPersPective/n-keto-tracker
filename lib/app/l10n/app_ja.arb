@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "ケト、運動、あなたの数値をひとつに",
+  "onboardingWelcomeBody": "食事を数秒で記録し、ウォーキングやランニングの時間を計り、数値の意味を確かめましょう。科学的な情報源はいつも一タップの距離にあります。",
+  "onboardingSafetyPageTitle": "まずは安全から",
+  "onboardingReadyTitle": "もうすぐです",
+  "onboardingReadyBody": "このページの内容はすべて任意です。あとから設定でいつでも変更できます。",
+  "todayStepsTitle": "今日の3つのステップ",
+  "todayStepMeal": "食事を記録",
+  "todayStepActivity": "運動を記録",
+  "todayStepMeasure": "測定を追加",
+  "todayStepsProgress": "{done}/3 完了",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3つすべて完了しました。また明日。",
+  "timerTitle": "運動タイマー",
+  "timerOpen": "タイマーを開く",
+  "timerStart": "開始",
+  "timerPause": "一時停止",
+  "timerResume": "再開",
+  "timerFinish": "終了して保存",
+  "timerHint": "時間は自動で保存されます。いつでも一時停止や終了ができます。"
 }

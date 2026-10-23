@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, кыймыл жана сиздин көрсөткүчтөрүңүз бир жерде",
+  "onboardingWelcomeBody": "Тамакты секунддарда катталыңыз, басууну же чуркоону убакытка алыңыз жана көрсөткүчтөрүңүздүн маанисин көрүңүз. Илимий булактар ар дайым бир басуу аралыгында.",
+  "onboardingSafetyPageTitle": "Адегенде коопсуздук",
+  "onboardingReadyTitle": "Дээрлик даяр",
+  "onboardingReadyBody": "Бул беттеги баары милдеттүү эмес. Кийинчерээк Жөндөөлөрдөн өзгөртө аласыз.",
+  "todayStepsTitle": "Бүгүнкү 3 кадам",
+  "todayStepMeal": "Тамак катталсын",
+  "todayStepActivity": "Кыймыл катталсын",
+  "todayStepMeasure": "Өлчөм кошуу",
+  "todayStepsProgress": "3төн {done} аткарылды",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3 кадам тең аткарылды. Эртең жолугабыз.",
+  "timerTitle": "Активдүүлүк таймери",
+  "timerOpen": "Таймерди ачуу",
+  "timerStart": "Баштоо",
+  "timerPause": "Тыныгуу",
+  "timerResume": "Улантуу",
+  "timerFinish": "Бүтүрүп сактоо",
+  "timerHint": "Убактыңыз автоматтык түрдө сакталат. Каалаган убакта токтотсоңуз болот."
 }

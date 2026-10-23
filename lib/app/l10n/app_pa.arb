@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "ਕੀਟੋ, ਗਤੀਵਿਧੀ ਅਤੇ ਤੁਹਾਡੇ ਅੰਕੜੇ, ਇੱਕੋ ਥਾਂ",
+  "onboardingWelcomeBody": "ਸਕਿੰਟਾਂ ਵਿੱਚ ਖਾਣਾ ਦਰਜ ਕਰੋ, ਸੈਰ ਜਾਂ ਦੌੜ ਦਾ ਸਮਾਂ ਮਾਪੋ ਅਤੇ ਆਪਣੇ ਅੰਕੜਿਆਂ ਦਾ ਮਤਲਬ ਦੇਖੋ। ਵਿਗਿਆਨਕ ਸਰੋਤ ਹਮੇਸ਼ਾ ਇੱਕ ਟੈਪ ਦੂਰ ਹਨ।",
+  "onboardingSafetyPageTitle": "ਪਹਿਲਾਂ ਸੁਰੱਖਿਆ",
+  "onboardingReadyTitle": "ਲਗਭਗ ਤਿਆਰ",
+  "onboardingReadyBody": "ਇਸ ਪੰਨੇ ਦੀ ਹਰ ਚੀਜ਼ ਵਿਕਲਪਿਕ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ।",
+  "todayStepsTitle": "ਅੱਜ ਦੇ 3 ਕਦਮ",
+  "todayStepMeal": "ਖਾਣਾ ਦਰਜ ਕਰੋ",
+  "todayStepActivity": "ਗਤੀਵਿਧੀ ਦਰਜ ਕਰੋ",
+  "todayStepMeasure": "ਮਾਪ ਜੋੜੋ",
+  "todayStepsProgress": "3 ਵਿੱਚੋਂ {done} ਪੂਰੇ",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "ਤਿੰਨੇ ਕਦਮ ਪੂਰੇ ਹੋਏ। ਕੱਲ੍ਹ ਮਿਲਾਂਗੇ।",
+  "timerTitle": "ਗਤੀਵਿਧੀ ਟਾਈਮਰ",
+  "timerOpen": "ਟਾਈਮਰ ਖੋਲ੍ਹੋ",
+  "timerStart": "ਸ਼ੁਰੂ ਕਰੋ",
+  "timerPause": "ਰੋਕੋ",
+  "timerResume": "ਜਾਰੀ ਰੱਖੋ",
+  "timerFinish": "ਖਤਮ ਕਰੋ ਅਤੇ ਸੰਭਾਲੋ",
+  "timerHint": "ਤੁਹਾਡਾ ਸਮਾਂ ਆਪਣੇ ਆਪ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ। ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੋਕ ਸਕਦੇ ਹੋ।"
 }

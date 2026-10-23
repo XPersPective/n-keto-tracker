@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, pergerakan dan nombor anda di satu tempat",
+  "onboardingWelcomeBody": "Rekod makanan dalam beberapa saat, ukur masa berjalan kaki atau lari, dan lihat maksud nombor anda. Sumber saintifik sentiasa hanya satu ketukan jauhnya.",
+  "onboardingSafetyPageTitle": "Keselamatan dahulu",
+  "onboardingReadyTitle": "Hampir siap",
+  "onboardingReadyBody": "Semua di halaman ini adalah pilihan. Anda boleh menukarnya kemudian dalam Tetapan.",
+  "todayStepsTitle": "3 langkah hari ini",
+  "todayStepMeal": "Rekod makanan",
+  "todayStepActivity": "Rekod pergerakan",
+  "todayStepMeasure": "Tambah ukuran",
+  "todayStepsProgress": "{done} daripada 3 selesai",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Ketiga-tiga langkah selesai. Jumpa esok.",
+  "timerTitle": "Pemasa aktiviti",
+  "timerOpen": "Buka pemasa",
+  "timerStart": "Mula",
+  "timerPause": "Jeda",
+  "timerResume": "Sambung",
+  "timerFinish": "Tamat dan simpan",
+  "timerHint": "Masa anda disimpan secara automatik. Anda boleh menjeda atau berhenti bila-bila masa."
 }

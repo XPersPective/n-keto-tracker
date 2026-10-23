@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Քետո, շարժում և ձեր թվերը՝ մեկ տեղում",
+  "onboardingWelcomeBody": "Վայրկյանների ընթացքում գրանցեք սնունդը, չափեք քայլքը կամ վազքը և տեսեք, թե ձեր թվերն ինչ են նշանակում։ Գիտական աղբյուրները միշտ մեկ հպումով հասանելի են։",
+  "onboardingSafetyPageTitle": "Նախ անվտանգությունը",
+  "onboardingReadyTitle": "Գրեթե պատրաստ է",
+  "onboardingReadyBody": "Այս էջի ամեն ինչ կամավոր է։ Հետագայում կարող եք փոխել Կարգավորումներում։",
+  "todayStepsTitle": "Այսօրվա 3 քայլը",
+  "todayStepMeal": "Գրանցել սնունդ",
+  "todayStepActivity": "Գրանցել շարժում",
+  "todayStepMeasure": "Ավելացնել չափում",
+  "todayStepsProgress": "{done}/3՝ կատարված",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Բոլոր 3 քայլը կատարված է։ Մինչև վաղը։",
+  "timerTitle": "Ակտիվության տայմեր",
+  "timerOpen": "Բացել տայմերը",
+  "timerStart": "Սկսել",
+  "timerPause": "Դադար",
+  "timerResume": "Շարունակել",
+  "timerFinish": "Ավարտել և պահել",
+  "timerHint": "Ձեր ժամանակը ինքնաբերաբար պահվում է։ Կարող եք դադարեցնել կամ կանգնեցնել ցանկացած պահի։"
 }

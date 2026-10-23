@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/l10n/generated/app_localizations.dart';
+import '../../app/theme/food_photo.dart';
 import '../../core/database/database.dart';
 import '../../core/database/providers.dart';
 
@@ -33,6 +34,7 @@ class RecipesPage extends ConsumerWidget {
             itemBuilder: (context, index) {
               final r = recipes[index];
               return ListTile(
+                leading: FoodPhoto(id: r.id, category: 'recipe'),
                 title: Text((isTr ? r.titleTr : r.titleEn) ?? r.titleTr ?? ''),
                 subtitle: Text(
                   AppLocalizations.of(context)!

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, beweging en jou syfers, op een plek",
+  "onboardingWelcomeBody": "Teken 'n maaltyd in sekondes aan, tyd 'n wandeling of hardloop, en sien wat jou syfers beteken. Wetenskaplike bronne is altyd een tik weg.",
+  "onboardingSafetyPageTitle": "Veiligheid eers",
+  "onboardingReadyTitle": "Byna klaar",
+  "onboardingReadyBody": "Alles op hierdie bladsy is opsioneel. Jy kan dit later in Instellings verander.",
+  "todayStepsTitle": "Vandag se 3 stappe",
+  "todayStepMeal": "Teken 'n maaltyd aan",
+  "todayStepActivity": "Teken beweging aan",
+  "todayStepMeasure": "Voeg 'n meting by",
+  "todayStepsProgress": "{done} van 3 voltooi",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Almal 3 voltooi. Tot môre.",
+  "timerTitle": "Aktiwiteitstydopnemer",
+  "timerOpen": "Maak tydopnemer oop",
+  "timerStart": "Begin",
+  "timerPause": "Pouse",
+  "timerResume": "Hervat",
+  "timerFinish": "Voltooi en stoor",
+  "timerHint": "Jou tyd word outomaties gestoor. Jy kan enige tyd pouseer of stop."
 }

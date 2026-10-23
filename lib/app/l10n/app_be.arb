@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кета, рух і вашы паказчыкі — у адным месцы",
+  "onboardingWelcomeBody": "Запішыце прыём ежы за некалькі секунд, засеките хаданне або бег і даведайцеся, што азначаюць вашы паказчыкі. Навуковыя крыніцы — заўсёды адзін дотык.",
+  "onboardingSafetyPageTitle": "Бяспека перш за ўсё",
+  "onboardingReadyTitle": "Амаль гатова",
+  "onboardingReadyBody": "Усё на гэтай старонцы неабавязкова. Вы зможаце змяніць гэта пазней у Наладах.",
+  "todayStepsTitle": "3 крокі на сёння",
+  "todayStepMeal": "Запісаць ежу",
+  "todayStepActivity": "Запісаць актыўнасць",
+  "todayStepMeasure": "Дадаць вымярэнне",
+  "todayStepsProgress": "Выканана: {done} з 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Усе 3 крокі выкананы. Да заўтра.",
+  "timerTitle": "Таймер актыўнасці",
+  "timerOpen": "Адкрыць таймер",
+  "timerStart": "Пачаць",
+  "timerPause": "Паўза",
+  "timerResume": "Працягнуць",
+  "timerFinish": "Скончыць і захаваць",
+  "timerHint": "Ваш час захоўваецца аўтаматычна. Можна прыпыніць або спыніць у любы момант."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, rörelse och dina siffror på ett ställe",
+  "onboardingWelcomeBody": "Registrera en måltid på sekunder, ta tid på en promenad eller ett löppass och se vad dina siffror betyder. Vetenskapliga källor är alltid en knapptryckning bort.",
+  "onboardingSafetyPageTitle": "Säkerhet först",
+  "onboardingReadyTitle": "Nästan klar",
+  "onboardingReadyBody": "Allt på den här sidan är valfritt. Du kan ändra det senare under Inställningar.",
+  "todayStepsTitle": "Dagens 3 steg",
+  "todayStepMeal": "Registrera en måltid",
+  "todayStepActivity": "Registrera rörelse",
+  "todayStepMeasure": "Lägg till en mätning",
+  "todayStepsProgress": "{done} av 3 klara",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Alla 3 klara. Vi ses imorgon!",
+  "timerTitle": "Aktivitetstimer",
+  "timerOpen": "Öppna timern",
+  "timerStart": "Starta",
+  "timerPause": "Paus",
+  "timerResume": "Fortsätt",
+  "timerFinish": "Avsluta och spara",
+  "timerHint": "Din tid sparas automatiskt. Du kan pausa eller stoppa när som helst."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, активност и ваши показатељи на једном месту",
+  "onboardingWelcomeBody": "Забележите оброк за неколико секунди, измерите шетњу или трчање и сазнајте шта ваши показатељи значе. Научни извори су увек на дохват руке.",
+  "onboardingSafetyPageTitle": "Прво безбедност",
+  "onboardingReadyTitle": "Скоро готово",
+  "onboardingReadyBody": "Све на овој страници је необавезно. Касније то можете променити у Подешавањима.",
+  "todayStepsTitle": "3 корака за данас",
+  "todayStepMeal": "Забележи оброк",
+  "todayStepActivity": "Забележи кретање",
+  "todayStepMeasure": "Додај мерење",
+  "todayStepsProgress": "Завршено {done} од 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Сва 3 корака су завршена. До сутра.",
+  "timerTitle": "Тајмер активности",
+  "timerOpen": "Отвори тајмер",
+  "timerStart": "Покрени",
+  "timerPause": "Пауза",
+  "timerResume": "Настави",
+  "timerFinish": "Заврши и сачувај",
+  "timerHint": "Ваше време се чува аутоматски. Можете паузирати или зауставити у било ком тренутку."
 }

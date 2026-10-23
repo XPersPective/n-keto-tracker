@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, dejavnost in vaše številke na enem mestu",
+  "onboardingWelcomeBody": "Zabeležite obrok v nekaj sekundah, izmerite sprehod ali tek in preverite, kaj vaše številke pomenijo. Znanstveni viri so vedno en dotik stran.",
+  "onboardingSafetyPageTitle": "Najprej varnost",
+  "onboardingReadyTitle": "Skoraj končano",
+  "onboardingReadyBody": "Vse na tej strani je neobvezno. Kasneje lahko to spremenite v Nastavitvah.",
+  "todayStepsTitle": "3 koraki za danes",
+  "todayStepMeal": "Zabeleži obrok",
+  "todayStepActivity": "Zabeleži gibanje",
+  "todayStepMeasure": "Dodaj meritev",
+  "todayStepsProgress": "Opravljeno {done} od 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Vseh 3 korakov je opravljenih. Na svidenje jutri.",
+  "timerTitle": "Časovnik dejavnosti",
+  "timerOpen": "Odpri časovnik",
+  "timerStart": "Začni",
+  "timerPause": "Premor",
+  "timerResume": "Nadaljuj",
+  "timerFinish": "Zaključi in shrani",
+  "timerHint": "Vaš čas se samodejno shrani. Kadar koli lahko naredite premor ali ustavite."
 }

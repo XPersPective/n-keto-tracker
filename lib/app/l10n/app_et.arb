@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, liikumine ja sinu näitajad ühes kohas",
+  "onboardingWelcomeBody": "Sisesta toidukord sekunditega, mõõda kõnd või jooksu ja vaata, mida su näitajad tähendavad. Teaduslikud allikad on alati ühe puudutuse kaugusel.",
+  "onboardingSafetyPageTitle": "Esmalt ohutus",
+  "onboardingReadyTitle": "Peaaegu valmis",
+  "onboardingReadyBody": "Kõik sellel lehel on valikuline. Saad seda hiljem Seadetes muuta.",
+  "todayStepsTitle": "Tänased 3 sammu",
+  "todayStepMeal": "Sisesta toidukord",
+  "todayStepActivity": "Sisesta liikumine",
+  "todayStepMeasure": "Lisa mõõtmine",
+  "todayStepsProgress": "{done} / 3 tehtud",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Kõik 3 sammu tehtud. Näeme homme.",
+  "timerTitle": "Tegevuse taimer",
+  "timerOpen": "Ava taimer",
+  "timerStart": "Alusta",
+  "timerPause": "Peata",
+  "timerResume": "Jätka",
+  "timerFinish": "Lõpeta ja salvesta",
+  "timerHint": "Su aeg salvestatakse automaatselt. Saad igal ajal peatada või lõpetada."
 }

@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, aktywność i Twoje wyniki w jednym miejscu",
+  "onboardingWelcomeBody": "Zapisz posiłek w kilka sekund, zmierz spacer lub bieg i sprawdź, co oznaczają Twoje wyniki. Źródła naukowe są zawsze o jedno dotknięcie dalej.",
+  "onboardingSafetyPageTitle": "Najpierw bezpieczeństwo",
+  "onboardingReadyTitle": "Prawie gotowe",
+  "onboardingReadyBody": "Wszystko na tej stronie jest opcjonalne. Później możesz to zmienić w Ustawieniach.",
+  "todayStepsTitle": "Twoje 3 kroki na dziś",
+  "todayStepMeal": "Zapisz posiłek",
+  "todayStepActivity": "Zapisz aktywność",
+  "todayStepMeasure": "Dodaj pomiar",
+  "todayStepsProgress": "Wykonano {done} z 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Wszystkie 3 kroki wykonane. Do jutra!",
+  "timerTitle": "Minutnik aktywności",
+  "timerOpen": "Otwórz minutnik",
+  "timerStart": "Start",
+  "timerPause": "Pauza",
+  "timerResume": "Wznów",
+  "timerFinish": "Zakończ i zapisz",
+  "timerHint": "Twój czas zapisuje się automatycznie. Możesz w każdej chwili wstrzymać lub zakończyć."
 }

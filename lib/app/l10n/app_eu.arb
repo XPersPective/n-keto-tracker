@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, mugimendua eta zure zenbakiak leku bakarrean",
+  "onboardingWelcomeBody": "Erregistratu otordu bat segundotan, neurtu paseo edo korrika bat eta ikusi zure zenbakiek zer esan nahi duten. Iturri zientifikoak beti ukitu bakarra dira.",
+  "onboardingSafetyPageTitle": "Lehenik segurtasuna",
+  "onboardingReadyTitle": "Ia prest",
+  "onboardingReadyBody": "Orri honetako guztia aukerakoa da. Geroago Ezarpenetan alda dezakezu.",
+  "todayStepsTitle": "Gaurko 3 urrats",
+  "todayStepMeal": "Erregistratu otordu bat",
+  "todayStepActivity": "Erregistratu mugimendua",
+  "todayStepMeasure": "Gehitu neurketa bat",
+  "todayStepsProgress": "{done}/3 eginda",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "3ak eginda. Bihar arte.",
+  "timerTitle": "Jarduera-denboragailua",
+  "timerOpen": "Ireki denboragailua",
+  "timerStart": "Hasi",
+  "timerPause": "Pausatu",
+  "timerResume": "Jarraitu",
+  "timerFinish": "Amaitu eta gorde",
+  "timerHint": "Zure denbora automatikoki gordetzen da. Edonoiz pausatu edo gelditu zaitezke."
 }

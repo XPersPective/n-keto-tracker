@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, hreyfing og tölurnar þínar á einum stað",
+  "onboardingWelcomeBody": "Skráðu máltíð á nokkrum sekúndum, tímaðu göngu eða hlaup og sjáðu hvað tölurnar þínar þýða. Vísindaheimildir eru alltaf einum smelli í burtu.",
+  "onboardingSafetyPageTitle": "Öryggi fyrst",
+  "onboardingReadyTitle": "Næstum tilbúið",
+  "onboardingReadyBody": "Allt á þessari síðu er valfrjálst. Þú getur breytt því síðar í Stillingum.",
+  "todayStepsTitle": "3 skref dagsins",
+  "todayStepMeal": "Skrá máltíð",
+  "todayStepActivity": "Skrá hreyfingu",
+  "todayStepMeasure": "Bæta við mælingu",
+  "todayStepsProgress": "{done} af 3 lokið",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Öll 3 skrefin eru búin. Sjáumst á morgun.",
+  "timerTitle": "Æfingatímamælir",
+  "timerOpen": "Opna tímamælinn",
+  "timerStart": "Byrja",
+  "timerPause": "Hlé",
+  "timerResume": "Halda áfram",
+  "timerFinish": "Ljúka og vista",
+  "timerHint": "Tíminn þinn er vistaður sjálfkrafa. Þú getur gert hlé eða stöðvað hvenær sem er."
 }

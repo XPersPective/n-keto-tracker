@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, liike ja lukusi yhdessä paikassa",
+  "onboardingWelcomeBody": "Kirjaa ateria sekunneissa, ajasta kävely tai juoksu ja katso, mitä lukusi tarkoittavat. Tieteelliset lähteet ovat aina yhden napautuksen päässä.",
+  "onboardingSafetyPageTitle": "Turvallisuus ensin",
+  "onboardingReadyTitle": "Melkein valmis",
+  "onboardingReadyBody": "Kaikki tällä sivulla on valinnaista. Voit muuttaa sitä myöhemmin Asetuksissa.",
+  "todayStepsTitle": "Tämän päivän 3 askelta",
+  "todayStepMeal": "Kirjaa ateria",
+  "todayStepActivity": "Kirjaa liike",
+  "todayStepMeasure": "Lisää mittaus",
+  "todayStepsProgress": "{done}/3 tehty",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Kaikki 3 tehty. Nähdään huomenna.",
+  "timerTitle": "Aktiivisuusajastin",
+  "timerOpen": "Avaa ajastin",
+  "timerStart": "Aloita",
+  "timerPause": "Tauko",
+  "timerResume": "Jatka",
+  "timerFinish": "Lopeta ja tallenna",
+  "timerHint": "Aikasi tallennetaan automaattisesti. Voit keskeyttää tai lopettaa milloin tahansa."
 }

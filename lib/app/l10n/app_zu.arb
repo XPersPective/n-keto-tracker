@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, ukunyakaza nezinombolo zakho endaweni eyodwa",
+  "onboardingWelcomeBody": "Rekhoda ukudla ngamasekhondi, ukhiphe isikhathi sokuhamba noma sokugijima, bese ubona ukuthi izinombolo zakho zisho ini. Imithombo yesayensi ihlala ngokuthinta okukodwa.",
+  "onboardingSafetyPageTitle": "Ukuphepha kuqala",
+  "onboardingReadyTitle": "Cishe sekulungile",
+  "onboardingReadyBody": "Konke kulelikhasi kukhethwa. Ungakushintsha kamuva Kumasethingi.",
+  "todayStepsTitle": "Izinyathelo ezi-3 zanamuhla",
+  "todayStepMeal": "Rekhoda ukudla",
+  "todayStepActivity": "Rekhoda ukunyakaza",
+  "todayStepMeasure": "Engeza ukulinganisa",
+  "todayStepsProgress": "{done} kwezi-3 ziqedile",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Zonke ezi-3 ziqedile. Sizobonana kusasa.",
+  "timerTitle": "Isikhathi somsebenzi",
+  "timerOpen": "Vula isikhathi",
+  "timerStart": "Qala",
+  "timerPause": "Misa isikhashana",
+  "timerResume": "Qhubeka",
+  "timerFinish": "Qeda bese gcina",
+  "timerHint": "Isikhathi sakho sigcinwa ngokuzenzakalelayo. Ungamisa noma umise noma nini."
 }

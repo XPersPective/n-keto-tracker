@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, activité et vos chiffres, au même endroit",
+  "onboardingWelcomeBody": "Notez un repas en quelques secondes, chronométrez une marche ou une course et comprenez ce que disent vos chiffres. Les sources scientifiques sont toujours à une pression.",
+  "onboardingSafetyPageTitle": "La sécurité d'abord",
+  "onboardingReadyTitle": "Presque terminé",
+  "onboardingReadyBody": "Tout ce qui est sur cette page est facultatif. Vous pourrez le modifier plus tard dans les Réglages.",
+  "todayStepsTitle": "Vos 3 étapes du jour",
+  "todayStepMeal": "Noter un repas",
+  "todayStepActivity": "Noter une activité",
+  "todayStepMeasure": "Ajouter une mesure",
+  "todayStepsProgress": "{done} sur 3 faites",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Les 3 étapes sont faites. À demain !",
+  "timerTitle": "Minuteur d'activité",
+  "timerOpen": "Ouvrir le minuteur",
+  "timerStart": "Démarrer",
+  "timerPause": "Pause",
+  "timerResume": "Reprendre",
+  "timerFinish": "Terminer et enregistrer",
+  "timerHint": "Votre temps est enregistré automatiquement. Vous pouvez mettre en pause ou arrêter à tout moment."
 }

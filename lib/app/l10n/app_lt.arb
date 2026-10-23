@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, judėjimas ir jūsų rodikliai vienoje vietoje",
+  "onboardingWelcomeBody": "Įrašykite valgį per kelias sekundes, pamatuokite pasivaikščiojimą ar bėgimą ir sužinokite, ką reiškia jūsų rodikliai. Moksliniai šaltiniai visada vienu palietimu.",
+  "onboardingSafetyPageTitle": "Pirmiausia saugumas",
+  "onboardingReadyTitle": "Beveik baigta",
+  "onboardingReadyBody": "Viskas šiame puslapyje yra neprivaloma. Vėliau tai galite pakeisti Nustatymuose.",
+  "todayStepsTitle": "Šiandienos 3 žingsniai",
+  "todayStepMeal": "Įrašyti valgį",
+  "todayStepActivity": "Įrašyti judėjimą",
+  "todayStepMeasure": "Pridėti matavimą",
+  "todayStepsProgress": "Atlikta {done} iš 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Visi 3 žingsniai atlikti. Iki rytojaus.",
+  "timerTitle": "Veiklos laikmatis",
+  "timerOpen": "Atidaryti laikmatį",
+  "timerStart": "Pradėti",
+  "timerPause": "Pauzė",
+  "timerResume": "Tęsti",
+  "timerFinish": "Baigti ir išsaugoti",
+  "timerHint": "Jūsų laikas išsaugomas automatiškai. Bet kada galite sustabdyti ar pristabdyti."
 }

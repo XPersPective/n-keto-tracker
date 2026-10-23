@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, galaw, at ang iyong mga numero, sa iisang lugar",
+  "onboardingWelcomeBody": "Magtala ng pagkain sa ilang segundo, sukatin ang lakad o takbo, at tingnan kung ano ang ibig sabihin ng iyong mga numero. Laging isang tap lang ang layo ang mga siyentipikong sanggunian.",
+  "onboardingSafetyPageTitle": "Kaligtasan muna",
+  "onboardingReadyTitle": "Malapit na",
+  "onboardingReadyBody": "Opsyonal ang lahat sa pahinang ito. Maaari mo itong baguhin mamaya sa Mga Setting.",
+  "todayStepsTitle": "3 hakbang ngayon",
+  "todayStepMeal": "Magtala ng pagkain",
+  "todayStepActivity": "Magtala ng galaw",
+  "todayStepMeasure": "Magdagdag ng sukat",
+  "todayStepsProgress": "{done} sa 3 ang tapos",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Tapos na ang 3. Kita-kits bukas.",
+  "timerTitle": "Timer ng aktibidad",
+  "timerOpen": "Buksan ang timer",
+  "timerStart": "Simulan",
+  "timerPause": "I-pause",
+  "timerResume": "Ipagpatuloy",
+  "timerFinish": "Tapusin at i-save",
+  "timerHint": "Awtomatikong nise-save ang oras mo. Maaari mong i-pause o itigil anumang oras."
 }

@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, mozgás és a számaid egy helyen",
+  "onboardingWelcomeBody": "Rögzíts egy étkezést másodpercek alatt, mérd meg a sétát vagy futást, és nézd meg, mit jelentenek a számaid. A tudományos források mindig egy koppintásnyira vannak.",
+  "onboardingSafetyPageTitle": "Elsőként a biztonság",
+  "onboardingReadyTitle": "Majdnem kész",
+  "onboardingReadyBody": "Az oldal minden eleme nem kötelező. Később a Beállításokban módosíthatod.",
+  "todayStepsTitle": "A mai 3 lépés",
+  "todayStepMeal": "Étkezés rögzítése",
+  "todayStepActivity": "Mozgás rögzítése",
+  "todayStepMeasure": "Mérés hozzáadása",
+  "todayStepsProgress": "{done}/3 kész",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Mind a 3 lépés kész. Holnap találkozunk.",
+  "timerTitle": "Aktivitásidőzítő",
+  "timerOpen": "Időzítő megnyitása",
+  "timerStart": "Indítás",
+  "timerPause": "Szünet",
+  "timerResume": "Folytatás",
+  "timerFinish": "Befejezés és mentés",
+  "timerHint": "Az idődet automatikusan menti. Bármikor szüneteltetheted vagy leállíthatod."
 }

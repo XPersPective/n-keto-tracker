@@ -88,7 +88,10 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
                         style: FilledButton.styleFrom(
                           minimumSize: const Size(96, 48),
                         ),
-                        onPressed: () => setState(() => _step++),
+                        // Güvenlik sayfasında onam işaretlenmeden ilerlenmez.
+                        onPressed: _step == 1 && !state.consentAccepted
+                            ? null
+                            : () => setState(() => _step++),
                         child: Text(
                           l10n.onboardingNext,
                           textAlign: TextAlign.center,
@@ -123,43 +126,43 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
   Widget _buildStep(BuildContext context, int step, OnboardingState state) {
     final l10n = AppLocalizations.of(context)!;
     final controller = ref.read(onboardingControllerProvider.notifier);
+    final theme = Theme.of(context);
     switch (step) {
+      // 1/3: hoş geldin, dil ve hedef — tek ekranda, tek dokunuşla.
       case 0:
         return _StepScaffold(
-          title: l10n.onboardingLanguageTitle,
-          child: RadioGroup<String>(
-            groupValue: state.languageCode,
-            onChanged: (v) async {
-              if (v == null) return;
-              controller.setLanguage(v);
-              // Seçim arayüze anında yansır (kayıt satırı onboarding bitişinde
-              // tamamlanma bayrağıyla birlikte güncellenir).
-              await ref.read(settingsRepositoryProvider).saveLanguage(v);
-              ref.invalidate(appSettingsProvider);
-            },
-            child: Column(
-              children: [
-                for (final e in languageEndonyms.entries)
-                  RadioListTile<String>(title: Text(e.value), value: e.key),
-              ],
-            ),
-          ),
-        );
-      case 1:
-        return _StepScaffold(
-          title: l10n.onboardingPrivacyTitle,
-          body: l10n.onboardingPrivacyBody,
-        );
-      case 2:
-        return _StepScaffold(
-          title: l10n.onboardingMedicalTitle,
-          body: l10n.onboardingMedicalBody,
-        );
-      case 3:
-        return _StepScaffold(
-          title: l10n.onboardingPurposeTitle,
+          title: l10n.onboardingWelcomeTitle,
+          body: l10n.onboardingWelcomeBody,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Text(
+                l10n.onboardingLanguageTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              RadioGroup<String>(
+                groupValue: state.languageCode,
+                onChanged: (v) async {
+                  if (v == null) return;
+                  controller.setLanguage(v);
+                  // Seçim arayüze anında yansır (kayıt satırı onboarding bitişinde
+                  // tamamlanma bayrağıyla birlikte güncellenir).
+                  await ref.read(settingsRepositoryProvider).saveLanguage(v);
+                  ref.invalidate(appSettingsProvider);
+                },
+                child: Column(
+                  children: [
+                    for (final e in languageEndonyms.entries)
+                      RadioListTile<String>(title: Text(e.value), value: e.key),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                l10n.onboardingPurposeTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
               _purposeTile(
                 controller,
                 state,
@@ -187,83 +190,34 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
             ],
           ),
         );
-      case 4:
-        return _StepScaffold(
-          title: l10n.onboardingProfileTitle,
-          body: l10n.onboardingProfileBody,
-          child: Column(
-            children: [
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: l10n.onboardingBirthYear,
-                ),
-                keyboardType: TextInputType.number,
-                onChanged: (v) {
-                  final year = int.tryParse(v);
-                  if (year != null) {
-                    controller.setProfile(birthYear: year);
-                  }
-                },
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                decoration: InputDecoration(labelText: l10n.onboardingHeightCm),
-                keyboardType: const TextInputType.numberWithOptions(
-                  decimal: true,
-                ),
-                onChanged: (v) {
-                  final h = double.tryParse(v.replaceAll(',', '.'));
-                  if (h != null) controller.setProfile(heightCm: h);
-                },
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                decoration: InputDecoration(labelText: l10n.onboardingWeightKg),
-                keyboardType: const TextInputType.numberWithOptions(
-                  decimal: true,
-                ),
-                onChanged: (v) {
-                  final w = double.tryParse(v.replaceAll(',', '.'));
-                  if (w != null) controller.setProfile(weightKg: w);
-                },
-              ),
-            ],
-          ),
-        );
-      case 5:
-        return _StepScaffold(
-          title: l10n.onboardingEnergyCoeffTitle,
-          body: l10n.onboardingEnergyCoeffBody,
-          child: RadioGroup<EnergyCoefficient>(
-            groupValue: state.energyCoefficient,
-            onChanged: (v) {
-              if (v != null) controller.setEnergyCoefficient(v);
-            },
-            child: Column(
-              children: [
-                RadioListTile<EnergyCoefficient>(
-                  title: const Text('Mifflin–St Jeor +5'),
-                  value: EnergyCoefficient.male2025,
-                ),
-                RadioListTile<EnergyCoefficient>(
-                  title: const Text('Mifflin–St Jeor −161'),
-                  value: EnergyCoefficient.female161,
-                ),
-                RadioListTile<EnergyCoefficient>(
-                  title: Text(l10n.onboardingEnergyCoeffSkip),
-                  value: EnergyCoefficient.skipped,
-                ),
-              ],
-            ),
-          ),
-        );
-      case 6:
+      // 2/3: güvenlik, gizlilik ve onam. Onam işaretlenmeden ileri gidilmez.
+      case 1:
         final risk = state.riskAnswers;
         return _StepScaffold(
-          title: l10n.onboardingScreeningTitle,
-          body: l10n.onboardingScreeningBody,
+          title: l10n.onboardingSafetyPageTitle,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Text(
+                l10n.onboardingMedicalTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingMedicalBody),
+              const SizedBox(height: 16),
+              Text(
+                l10n.onboardingPrivacyTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingPrivacyBody),
+              const SizedBox(height: 16),
+              Text(
+                l10n.onboardingScreeningTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingScreeningBody),
               _riskTile(
                 controller,
                 risk,
@@ -310,31 +264,107 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
                 const SizedBox(height: 8),
                 Text(
                   l10n.onboardingScreeningLockedNote,
-                  style: Theme.of(context).textTheme.bodyMedium,
+                  style: theme.textTheme.bodyMedium,
                 ),
               ],
-            ],
-          ),
-        );
-      case 7:
-        return _StepScaffold(
-          title: l10n.onboardingDataTitle,
-          body: l10n.onboardingDataBody,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+              const SizedBox(height: 16),
+              Text(
+                l10n.onboardingDataTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingDataBody),
+              const SizedBox(height: 12),
               Text(
                 l10n.onboardingConsentTitle,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: theme.textTheme.titleMedium,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 4),
               Text(l10n.onboardingConsentBody),
-              const SizedBox(height: 12),
               CheckboxListTile(
                 title: Text(l10n.onboardingConsentCheckbox),
                 value: state.consentAccepted,
                 controlAffinity: ListTileControlAffinity.leading,
                 onChanged: (v) => controller.setConsentAccepted(v ?? false),
+              ),
+            ],
+          ),
+        );
+      // 3/3: isteğe bağlı profil ve enerji; "Hazırım" ile biter.
+      case 2:
+        return _StepScaffold(
+          title: l10n.onboardingReadyTitle,
+          body: l10n.onboardingReadyBody,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                l10n.onboardingProfileTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingProfileBody),
+              const SizedBox(height: 12),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: l10n.onboardingBirthYear,
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (v) {
+                  final year = int.tryParse(v);
+                  if (year != null) controller.setProfile(birthYear: year);
+                },
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                decoration: InputDecoration(labelText: l10n.onboardingHeightCm),
+                keyboardType: const TextInputType.numberWithOptions(
+                  decimal: true,
+                ),
+                onChanged: (v) {
+                  final h = double.tryParse(v.replaceAll(',', '.'));
+                  if (h != null) controller.setProfile(heightCm: h);
+                },
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                decoration: InputDecoration(labelText: l10n.onboardingWeightKg),
+                keyboardType: const TextInputType.numberWithOptions(
+                  decimal: true,
+                ),
+                onChanged: (v) {
+                  final w = double.tryParse(v.replaceAll(',', '.'));
+                  if (w != null) controller.setProfile(weightKg: w);
+                },
+              ),
+              const SizedBox(height: 16),
+              Text(
+                l10n.onboardingEnergyCoeffTitle,
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.onboardingEnergyCoeffBody),
+              RadioGroup<EnergyCoefficient>(
+                groupValue: state.energyCoefficient,
+                onChanged: (v) {
+                  if (v != null) controller.setEnergyCoefficient(v);
+                },
+                child: Column(
+                  children: [
+                    RadioListTile<EnergyCoefficient>(
+                      title: const Text('Mifflin-St Jeor +5'),
+                      value: EnergyCoefficient.male2025,
+                    ),
+                    RadioListTile<EnergyCoefficient>(
+                      title: const Text('Mifflin-St Jeor -161'),
+                      value: EnergyCoefficient.female161,
+                    ),
+                    RadioListTile<EnergyCoefficient>(
+                      title: Text(l10n.onboardingEnergyCoeffSkip),
+                      value: EnergyCoefficient.skipped,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

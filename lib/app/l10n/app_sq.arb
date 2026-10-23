@@ -542,5 +542,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Keto, aktiviteti dhe numrat e tu, në një vend",
+  "onboardingWelcomeBody": "Regjistro një vakt në sekonda, mat një ecje ose vrapim dhe shiko çfarë do të thonë numrat e tu. Burimet shkencore janë gjithmonë vetëm një prekje larg.",
+  "onboardingSafetyPageTitle": "Siguria së pari",
+  "onboardingReadyTitle": "Gati pothuajse",
+  "onboardingReadyBody": "Gjithçka në këtë faqe është opsionale. Mund ta ndryshosh më vonë te Cilësimet.",
+  "todayStepsTitle": "3 hapat e sotëm",
+  "todayStepMeal": "Regjistro një vakt",
+  "todayStepActivity": "Regjistro lëvizjen",
+  "todayStepMeasure": "Shto një matje",
+  "todayStepsProgress": "{done} nga 3 të kryera",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Të 3 hapat u kryen. Shihemi nesër.",
+  "timerTitle": "Kronometër aktiviteti",
+  "timerOpen": "Hap kronometrin",
+  "timerStart": "Fillo",
+  "timerPause": "Pauzë",
+  "timerResume": "Vazhdo",
+  "timerFinish": "Përfundo dhe ruaj",
+  "timerHint": "Koha jote ruhet automatikisht. Mund ta pauzosh ose ndalosh në çdo kohë."
 }

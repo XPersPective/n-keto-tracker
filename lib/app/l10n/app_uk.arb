@@ -322,5 +322,30 @@
         "type": "String"
       }
     }
-  }
+  },
+  "onboardingWelcomeTitle": "Кето, активність і ваші показники — в одному місці",
+  "onboardingWelcomeBody": "Запишіть прийом їжі за кілька секунд, засічіть прогулянку чи біг і дізнайтеся, що означають ваші показники. Наукові джерела завжди за один дотик.",
+  "onboardingSafetyPageTitle": "Спершу безпека",
+  "onboardingReadyTitle": "Майже готово",
+  "onboardingReadyBody": "Усе на цій сторінці необов’язкове. Пізніше це можна змінити в Налаштуваннях.",
+  "todayStepsTitle": "3 кроки на сьогодні",
+  "todayStepMeal": "Записати прийом їжі",
+  "todayStepActivity": "Записати активність",
+  "todayStepMeasure": "Додати вимірювання",
+  "todayStepsProgress": "Виконано {done} з 3",
+  "@todayStepsProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "todayStepsDone": "Усі 3 кроки виконано. До завтра!",
+  "timerTitle": "Таймер активності",
+  "timerOpen": "Відкрити таймер",
+  "timerStart": "Старт",
+  "timerPause": "Пауза",
+  "timerResume": "Продовжити",
+  "timerFinish": "Завершити й зберегти",
+  "timerHint": "Ваш час зберігається автоматично. Можна призупинити або зупинити будь-коли."
 }

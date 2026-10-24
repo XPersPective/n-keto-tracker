@@ -6,7 +6,7 @@ architecture:
 git:
   history_mode: "unknown"
   commit: "auto"
-  push: "manual"
+  push: every-task
 
 commands:
   test: "flutter test"

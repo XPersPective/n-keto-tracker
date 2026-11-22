@@ -1,8 +1,8 @@
 {
-  "contract": "cbf22df0c50d5006",
-  "epoch": "0c11a930035eca41",
+  "contract": "8d0abf091783951a",
+  "epoch": "60e939c3a3b68085",
   "independent": false,
   "intent": "120a53e16e96a383",
-  "note": "First App Store candidate and real iPhone/iPad storefront assets are explicitly requested. Reuse the existing Flutter capture integration without changing production UI.",
+  "note": "Keep the signed release prep, actual iPhone/iPad media and the required public privacy link tied to current offline, encrypted local-data behavior.",
   "protocol": 1
 }

@@ -56,12 +56,6 @@ def capture(family, output):
     if device["state"] != "Booted":
         simctl("boot", udid)
     simctl("bootstatus", udid, "-b")
-    simctl(
-        "status_bar", udid, "override",
-        "--time", "9:41", "--dataNetwork", "wifi", "--wifiMode", "active",
-        "--wifiBars", "3", "--cellularMode", "active", "--cellularBars", "4",
-        "--batteryState", "unplugged", "--batteryLevel", "100",
-    )
     expected = {(language, screen) for language in LANGUAGES for screen in SCREENS}
     captured = set()
     command = [

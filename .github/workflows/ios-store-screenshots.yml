@@ -1,0 +1,51 @@
+name: iOS App Store screenshots
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: Exact source commit to capture
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: macos-15
+    timeout-minutes: 29
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [iphone, ipad]
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify source and simulator tools
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+        run: |
+          [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ && "$(git rev-parse HEAD)" == "$EXPECTED_SHA" ]]
+          xcodebuild -version
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.2'
+          channel: stable
+          cache: false
+      - name: Capture the real iOS app in English and Turkish
+        env:
+          DEVICE: ${{ matrix.device }}
+        run: |
+          flutter pub get --enforce-lockfile
+          python3 tool/capture_ios_store.py "$DEVICE" build/ios-store
+      - name: Retain verified screenshots for one day
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-store-${{ matrix.device }}
+          path: build/ios-store/*/*.png
+          if-no-files-found: error
+          retention-days: 1

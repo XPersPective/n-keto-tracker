@@ -1,8 +1,8 @@
 {
-  "contract": "4fbad15a713ef4ad",
-  "epoch": "2b2732c33310702b",
+  "contract": "cbf22df0c50d5006",
+  "epoch": "0c11a930035eca41",
   "independent": false,
   "intent": "120a53e16e96a383",
-  "note": "Use the confirmed 2026-11-22 first iOS release target and preserve encrypted on-device storage and the Android package ID.",
+  "note": "First App Store candidate and real iPhone/iPad storefront assets are explicitly requested. Reuse the existing Flutter capture integration without changing production UI.",
   "protocol": 1
 }

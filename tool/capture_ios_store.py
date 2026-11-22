@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 import re
 import struct
@@ -37,9 +38,7 @@ def select_device(family):
     return max(simulators, key=lambda entry: (entry[0], entry[1]["name"]))[1]
 
 
-def screenshot(udid, path, family):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    simctl("io", udid, "screenshot", str(path))
+def verify_screenshot(path, family):
     with path.open("rb") as image:
         header = image.read(24)
     if header[:8] != b"\x89PNG\r\n\x1a\n" or header[12:16] != b"IHDR":
@@ -56,31 +55,34 @@ def capture(family, output):
     if device["state"] != "Booted":
         simctl("boot", udid)
     simctl("bootstatus", udid, "-b")
-    expected = {(language, screen) for language in LANGUAGES for screen in SCREENS}
-    captured = set()
+    simctl("ui", udid, "appearance", "light")
+    simctl(
+        "status_bar", udid, "override", "--time", "9:41",
+        "--dataNetwork", "wifi", "--wifiMode", "active", "--wifiBars", "3",
+        "--cellularMode", "active", "--cellularBars", "4",
+        "--batteryState", "discharging", "--batteryLevel", "100",
+    )
     command = [
         "flutter", "drive", "--no-pub", "--no-publish-port", "-d", udid,
         "--driver=test_driver/integration_test.dart",
         "--target=integration_test/store_screenshots_test.dart",
         "--dart-define=SHOT_LOCALES=" + ",".join(LANGUAGES),
+        "--dart-define=SHOT_USE_DRIVER=true",
     ]
-    with subprocess.Popen(
-        command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1,
-    ) as driver:
-        for line in driver.stdout:
-            print(line, end="", flush=True)
-            marker = re.search(r"SHOTREADY ([a-z]+)/([a-z\d_]+)", line)
-            if marker:
-                language, screen = marker.groups()
-                key = (language, screen)
-                if key in expected and key not in captured:
-                    screenshot(udid, output / language / f"{screen}.png", family)
-                    captured.add(key)
-        if driver.wait() != 0:
-            raise RuntimeError("The store screenshot harness failed")
-    if expected != captured:
-        raise RuntimeError(f"Missing screenshots: {sorted(expected - captured)}")
-    print(f"Verified {len(captured)} {family} screenshots with App Store dimensions.")
+    subprocess.run(
+        command, check=True, timeout=23 * 60,
+        env={**os.environ, "SHOT_DIR": str(output.resolve())},
+    )
+    expected = {
+        output / language / f"{screen}.png"
+        for language in LANGUAGES
+        for screen in SCREENS
+    }
+    if expected != set(output.rglob("*.png")):
+        raise RuntimeError("Unexpected store screenshot file set")
+    for path in sorted(expected):
+        verify_screenshot(path, family)
+    print(f"Verified {len(expected)} {family} screenshots with App Store dimensions.")
 
 
 if __name__ == "__main__":

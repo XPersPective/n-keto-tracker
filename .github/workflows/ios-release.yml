@@ -1,0 +1,216 @@
+name: iOS App Store candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: Exact commit to build
+        type: string
+        required: true
+      sign:
+        description: Export an App Store-signed IPA
+        type: boolean
+        default: false
+      upload:
+        description: Validate and upload the signed IPA to App Store Connect
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-app-store
+  cancel-in-progress: false
+
+jobs:
+  candidate:
+    runs-on: macos-15
+    timeout-minutes: 35
+    env:
+      BUNDLE_ID: com.crazypenguin.nketotracker
+      APPLE_TEAM_ID: 53X3279WA3
+      PROFILE_NAME: N Keto Tracker App Store
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Verify source and read candidate version
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+          SIGN: ${{ inputs.sign }}
+          UPLOAD: ${{ inputs.upload }}
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ && "$(git rev-parse HEAD)" == "$EXPECTED_SHA" ]]
+          [[ "$UPLOAD" == false || "$SIGN" == true ]]
+          xcodebuild -version
+          RELEASE_DIR="$RUNNER_TEMP/nketo-ios"
+          install -d -m 700 "$RELEASE_DIR"
+          printf 'RELEASE_DIR=%s\n' "$RELEASE_DIR" >> "$GITHUB_ENV"
+          read -r version build < <(python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          match = re.search(r'^version: ([0-9]+\.[0-9]+\.[0-9]+)\+([1-9][0-9]*)$', Path('pubspec.yaml').read_text(), re.MULTILINE)
+          if not match:
+              raise SystemExit('Invalid release version in pubspec.yaml')
+          print(*match.groups())
+          PY
+          )
+          printf 'APP_VERSION=%s\nBUILD_NUMBER=%s\n' "$version" "$build" >> "$GITHUB_ENV"
+          printf 'Source: %s\n\nCandidate: %s (%s)\n' "$EXPECTED_SHA" "$version" "$build" >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.2'
+          channel: stable
+          cache: false
+
+      - name: Resolve locked packages and check offline boundaries
+        run: |
+          flutter pub get --enforce-lockfile
+          bash tool/check_offline.sh
+
+      - name: Build native release without signing
+        if: ${{ !inputs.sign }}
+        run: flutter build ios --release --no-codesign
+
+      - name: Import the existing distribution certificate and app profile
+        if: ${{ inputs.sign }}
+        env:
+          DIST_P12_BASE64: ${{ secrets.IOS_DIST_P12_BASE64 }}
+          DIST_P12_PASSWORD: ${{ secrets.IOS_DIST_P12_PASSWORD }}
+          PROFILE_BASE64: ${{ secrets.IOS_APP_STORE_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+          umask 077
+          [[ -n "$DIST_P12_BASE64" && -n "$DIST_P12_PASSWORD" && -n "$PROFILE_BASE64" ]]
+          printf '%s' "$DIST_P12_BASE64" | base64 -D > "$RELEASE_DIR/distribution.p12"
+          printf '%s' "$PROFILE_BASE64" | base64 -D > "$RELEASE_DIR/app.mobileprovision"
+          security cms -D -i "$RELEASE_DIR/app.mobileprovision" -o "$RELEASE_DIR/profile.plist"
+          python3 - <<'PY'
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import os
+          import plistlib
+          import uuid
+
+          root = Path(os.environ['RELEASE_DIR'])
+          profile = plistlib.loads((root / 'profile.plist').read_bytes())
+          team = os.environ['APPLE_TEAM_ID']
+          bundle = os.environ['BUNDLE_ID']
+          name = os.environ['PROFILE_NAME']
+          valid = (
+              profile['Name'] == name
+              and team in profile['TeamIdentifier']
+              and profile['Entitlements']['application-identifier'] == team + '.' + bundle
+              and not profile['Entitlements'].get('get-task-allow', False)
+              and 'ProvisionedDevices' not in profile
+              and not profile.get('ProvisionsAllDevices', False)
+              and profile['ExpirationDate'] > datetime.now(timezone.utc).replace(tzinfo=None)
+          )
+          if not valid:
+              raise SystemExit('Expected an active App Store profile for the candidate')
+          (root / 'profile-id').write_text(str(uuid.UUID(profile['UUID'])).upper())
+          options = {
+              'method': 'app-store-connect',
+              'teamID': team,
+              'signingStyle': 'manual',
+              'signingCertificate': 'Apple Distribution',
+              'provisioningProfiles': {bundle: name},
+              'manageAppVersionAndBuildNumber': False,
+          }
+          (root / 'ExportOptions.plist').write_bytes(plistlib.dumps(options))
+          PY
+          profile_folder="$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"
+          install -d -m 700 "$profile_folder"
+          install -m 600 "$RELEASE_DIR/app.mobileprovision" "$profile_folder/$(cat "$RELEASE_DIR/profile-id").mobileprovision"
+          keychain="$RELEASE_DIR/signing.keychain-db"
+          keychain_password="$(openssl rand -hex 24)"
+          echo "::add-mask::$keychain_password"
+          security create-keychain -p "$keychain_password" "$keychain"
+          security set-keychain-settings -lut 7200 "$keychain"
+          security unlock-keychain -p "$keychain_password" "$keychain"
+          security list-keychains -d user -s "$keychain"
+          security import "$RELEASE_DIR/distribution.p12" -f pkcs12 -P "$DIST_P12_PASSWORD" -k "$keychain" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$keychain_password" "$keychain" >/dev/null
+          security find-identity -v -p codesigning "$keychain" | grep -Fq '1 valid identities found'
+
+      - name: Apply signing to the Runner target
+        if: ${{ inputs.sign }}
+        run: |
+          ruby -rxcodeproj <<'RUBY'
+          project = Xcodeproj::Project.open('ios/Runner.xcodeproj')
+          target = project.targets.find do |candidate|
+            candidate.name == 'Runner' && candidate.product_type == 'com.apple.product-type.application'
+          end
+          abort 'Runner target missing' unless target
+          target.build_configurations.each do |configuration|
+            settings = configuration.build_settings
+            abort 'Unexpected Runner bundle ID' unless settings['PRODUCT_BUNDLE_IDENTIFIER'] == ENV.fetch('BUNDLE_ID')
+            settings['CODE_SIGN_STYLE'] = 'Manual'
+            settings['DEVELOPMENT_TEAM'] = ENV.fetch('APPLE_TEAM_ID')
+            settings['CODE_SIGN_IDENTITY'] = 'Apple Distribution'
+            settings['CODE_SIGN_IDENTITY[sdk=iphoneos*]'] = 'Apple Distribution'
+            settings['PROVISIONING_PROFILE_SPECIFIER'] = ENV.fetch('PROFILE_NAME')
+          end
+          project.save
+          RUBY
+
+      - name: Build and verify signed IPA
+        if: ${{ inputs.sign }}
+        run: |
+          set -euo pipefail
+          flutter build ipa --release --export-options-plist="$RELEASE_DIR/ExportOptions.plist"
+          files=(build/ios/ipa/*.ipa)
+          [[ "${#files[@]}" == 1 && -f "${files[0]}" ]]
+          ipa="${files[0]}"
+          unzip -q "$ipa" -d "$RELEASE_DIR/ipa"
+          app="$RELEASE_DIR/ipa/Payload/Runner.app"
+          codesign --verify --deep --strict "$app"
+          cmp -s "$RELEASE_DIR/app.mobileprovision" "$app/embedded.mobileprovision"
+          [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$app/Info.plist")" == "$BUNDLE_ID" ]]
+          [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" == "$APP_VERSION" ]]
+          [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Info.plist")" == "$BUILD_NUMBER" ]]
+          codesign -dv --verbose=4 "$app" > "$RELEASE_DIR/signature.log" 2>&1
+          grep -Fxq "TeamIdentifier=$APPLE_TEAM_ID" "$RELEASE_DIR/signature.log"
+          printf 'IPA_PATH=%s\n' "$ipa" >> "$GITHUB_ENV"
+          printf 'Signed and verified IPA SHA-256: %s\n' "$(shasum -a 256 "$ipa" | cut -d' ' -f1)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Retain the verified IPA for one day
+        if: ${{ inputs.sign }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: nketo-ios-${{ env.APP_VERSION }}-${{ env.BUILD_NUMBER }}
+          path: ${{ env.IPA_PATH }}
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Validate and upload to App Store Connect
+        if: ${{ inputs.upload }}
+        env:
+          ASC_API_KEY: ${{ secrets.ASC_KEY_P8 }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          umask 077
+          [[ "$ASC_KEY_ID" =~ ^[A-Z0-9]{10}$ && "$ASC_ISSUER_ID" =~ ^[a-f0-9-]{36}$ && -n "$ASC_API_KEY" ]]
+          export API_PRIVATE_KEYS_DIR="$RELEASE_DIR/private_keys"
+          install -d -m 700 "$API_PRIVATE_KEYS_DIR"
+          printf '%s\n' "$ASC_API_KEY" > "$API_PRIVATE_KEYS_DIR/AuthKey_$ASC_KEY_ID.p8"
+          xcrun altool --validate-app -f "$IPA_PATH" -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          xcrun altool --upload-app -f "$IPA_PATH" -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+
+      - name: Remove ephemeral signing material
+        if: ${{ always() && inputs.sign }}
+        run: |
+          if [[ -f "$RELEASE_DIR/profile-id" ]]; then
+            rm -f "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles/$(cat "$RELEASE_DIR/profile-id").mobileprovision"
+          fi
+          security delete-keychain "$RELEASE_DIR/signing.keychain-db" 2>/dev/null || true
+          rm -f "$RELEASE_DIR/distribution.p12" "$RELEASE_DIR/app.mobileprovision" "$RELEASE_DIR/profile.plist"
+          rm -f "$RELEASE_DIR/private_keys"/AuthKey_*.p8

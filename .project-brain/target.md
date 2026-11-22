@@ -1,7 +1,9 @@
 # Target Architecture
-Status: DRAFT
+Status: CONFIRMED
 
 ## Goal
+Kullanıcı (2026-11-22): Mevcut uygulamaları App Store’a yükle ve yayın sorunlarını çöz. İlk iOS sürümü için ücretsiz GitHub Actions kullan; Android kimliği ve çevrimdışı veri mimarisi korunur.
+
 Kullanıcının sözleri (2026-10-23): "Bu keto tracker hiç kullanıcı dostu değil; kullanıcı dostu olmak zorunda. Google Play'deki görsellerle uygulamanın kendisi arasında dağlar kadar fark var. Menü gösteriyorsan fotoğrafları olacak. Her şey mükemmel olmak zorunda. Bilimsellik ön planda ama kullanıcı dostu. Spor ve beslenmenin birçok ayağı olacak; hemen kullanıcıyı saracak bir uygulama. Arayüzü, frontend'i, her şeyi sen düşün ve yaz. Düzelt ve Google Play'e gönder, yayınla."
 
 Önceki hedef (imported): "devral tüm isleri bitir" — mevcut N Keto Tracker projesindeki açık işleri doğrula, güvenli ve yetkili kapsamda kalan işleri tamamla, doğrulanamayanları kanıtlı biçimde bloke et. (user, imported)
@@ -20,7 +22,7 @@ Kullanıcının sözleri (2026-10-23): "Bu keto tracker hiç kullanıcı dostu d
 
 ## Platforms
 - Android: Google Play (mevcut durum, doğrula).
-- iOS: kaynak iskeleti; yayın akışı doğrulanmamış.
+- iOS: GitHub Actions üzerinden App Store’a imzalı ilk derleme; paket kimliği yayın kaydıyla eşleşir.
 
 ## Success Conditions
 - [machine] Flutter testleri, analiz, format ve offline denetimi yeşil.
@@ -35,4 +37,4 @@ Kullanıcının sözleri (2026-10-23): "Bu keto tracker hiç kullanıcı dostu d
 - App Store/Play Store yayınlama ve dağıtımı Project Brain kapsamı dışındadır.
 
 ## Open Decisions
-- OD-001 OPEN: iOS yayın hedefi ve paket kimliği ne zaman kesinleştirilecek? -> iOS release.
+- OD-001 RESOLVED (2026-11-22): Kullanıcı iOS yayınını istedi. İlk sürümde yayın kaydındaki com.crazypenguin.nketotracker kimliği kullanılacak; eski Flutter iOS paket kimliği Apple’da kayıtlı değildi.

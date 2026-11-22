@@ -1,0 +1,8 @@
+{
+  "contract": "4fbad15a713ef4ad",
+  "epoch": "2b2732c33310702b",
+  "independent": false,
+  "intent": "120a53e16e96a383",
+  "note": "Use the confirmed 2026-11-22 first iOS release target and preserve encrypted on-device storage and the Android package ID.",
+  "protocol": 1
+}

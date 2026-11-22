@@ -35,6 +35,6 @@ Sources: `android/**`, `ios/**`, `fastlane/**`, `.github/**`, `integration_test/
 - Android Play version 1.0.0+6 (reverify); iOS release and latest full 11-step evidence are incomplete.
 
 ## Known Unknowns
-- iOS/macOS build and App Store flow cannot be verified on this Windows host; publishing is out of scope.
+- iOS first release is planned in PB-040 using hosted macOS GitHub Actions. The registry bundle com.crazypenguin.nketotracker and active App Store profile are registered with Apple; the application listing and signed compilation still require readback.
 - Latest 11-step offline integration emulator evidence is incomplete.
 - `test_marketing/` is untracked; inspect the screenshot pipeline before changing it.

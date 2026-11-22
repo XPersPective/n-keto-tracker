@@ -1,4 +1,6 @@
 schema_version: 4
+skill_version: "4.0.6"
+protocol_version: "1"
 
 architecture:
   mode: "single"
@@ -6,7 +8,7 @@ architecture:
 git:
   history_mode: "unknown"
   commit: "auto"
-  push: every-task
+  push: "every-task"
 
 commands:
   test: "flutter test"

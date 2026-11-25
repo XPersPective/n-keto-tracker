@@ -28,6 +28,8 @@ import 'package:n_keto_tracker/core/units/glucose.dart';
 const _all = 'tr,en,es,pt,fr,de,it,nl,pl,ru,uk,ar,hi,id,vi,ja,ko,zh';
 // Kalan 50 dil: --dart-define=SHOT_LOCALES=af,az,... (languageEndonyms anahtarları).
 const _wanted = String.fromEnvironment('SHOT_LOCALES', defaultValue: _all);
+const _useDriverScreenshots = bool.fromEnvironment('SHOT_USE_DRIVER');
+const _iosStoreScreens = {'1_today', '2_gki', '3_log', '4_trends', '5_plan'};
 
 /// (glukoz mg/dL, BHB mmol/L): iki hafta boyunca hafif yükselen keton.
 const _series = [
@@ -62,10 +64,17 @@ void main() {
         child: NKetoApp(localeOverride: localeFromCode(loc)),
       );
 
-      // Ana makine, logcat'te SHOTREADY satırını görünce `adb screencap` alır
-      // (flutter drive'ın ekran görüntüsü kanalı Android'de güvenilir değil).
       Future<void> shot(String name) async {
         await tester.pumpAndSettle(const Duration(milliseconds: 400));
+        if (_useDriverScreenshots) {
+          if (!_iosStoreScreens.contains(name)) return;
+          if (name == '5_plan') {
+            await tester.pumpAndSettle(const Duration(seconds: 5));
+          }
+          await binding.takeScreenshot('$loc/$name');
+          return;
+        }
+        // Android capture still reads SHOTREADY from logcat.
         // ignore: avoid_print
         print('SHOTREADY $loc/$name');
         await tester.runAsync(
